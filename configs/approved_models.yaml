@@ -1,0 +1,51 @@
+# Authoritative runtime model registry (single source of truth).
+# Governance: B1/Elo is the SOLE approved runtime model. V8 and the market blend are shadow-only.
+# This file is NOT trading config; it does not touch trading/risk/provider/scraping settings.
+schema_version: "1.0"
+
+approved_model:
+  approved_model_id: B1_ELO
+  name: "Elo-only three-way model (ternary Elo, r=0.4)"
+  implementation: "wcdrawlab.models.baselines.TernaryEloModel"
+  model_version: "1.0.0"
+  commit_hash: "e78cde4376605f6e787a375fe12162c3f81240d0"
+  approved_tag: "tier-1-complete"
+  training_cutoff: "per-match: Elo uses only matches strictly before kickoff (parameter-free, r=0.4)"
+  feature_schema_version: "research_modeling_table_v1"
+  data_snapshot_ref: "data/processed/source_provenance.json (retrieved 2026-06-20)"
+  approval_date: "2026-06-21"
+  approval_evidence: "notes/research/tier_2_baseline_gate.md ; outputs/research/tier2/bootstrap_vs_elo.csv"
+  allowed_runtime_uses:
+    - primary_forecast
+    - advancement_probabilities
+    - paper_trade_decision_input
+    - risk_calculation_input
+    - prediction_ledger_approved
+    - model_performance_claims
+
+# Experimental, SHADOW-ONLY models. They have NO runtime authority and must never drive
+# displayed forecasts, advancement probabilities, paper-trade intents, risk calculations,
+# Kalshi integration, performance claims, or approved prediction ledgers.
+experimental_models:
+  - model_id: V8_ELO_BLEND_LOGIT
+    name: "Standardized logit (strength+group-state) blended 0.85 with ternary-Elo"
+    implementation: "src/wcdrawlab/research/candidate.py (CandidateModel)"
+    prediction_mode: shadow
+    no_runtime_authority: true
+    reason_not_approved: "Worse than B1 on the 2026 prequential (RPS 0.225 vs 0.174; log-loss 1.092 vs 0.958) and no significant dev-fold improvement (bootstrap dRPS vs B1 CI includes 0)."
+    restrictions: [shadow_only, no_decisions, no_risk, no_kalshi, no_approved_ledger, no_performance_claims]
+  - model_id: MARKET_ELO_BLEND
+    name: "0.6*market(no-vig) + 0.4*ternary-Elo"
+    implementation: "scripts/market_anchored_forecast.py"
+    prediction_mode: shadow
+    no_runtime_authority: true
+    reason_not_approved: "Market (B6) is not validatable before 2020 (Odds API history starts 2020-06); no cross-fold backtest. Forecast-aid only, evaluated prospectively."
+    restrictions: [shadow_only, no_decisions, no_risk, no_kalshi, no_approved_ledger, no_performance_claims]
+
+# Historical/shadow artifacts (preserved, never deleted; relabeled as shadow/historical):
+historical_shadow_artifacts:
+  - "outputs/research/forecasts/forecast_2026_market_anchored.csv  # MARKET_ELO_BLEND (shadow)"
+  - "outputs/research/forecasts/forecast_2026_md2_md3.csv          # V8/ensemble era (shadow)"
+  - "outputs/research/forecasts/advancement_2026*.csv              # simulations from shadow probs"
+  - "data/processed/forecast_ledger.csv                            # prospective shadow ledger (model/mkt/blend)"
+  - "outputs/research/prequential_2026.csv                         # historical OOS comparison"
