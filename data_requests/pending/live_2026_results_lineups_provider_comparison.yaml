@@ -1,0 +1,110 @@
+# Provider comparison for LIVE 2026 World Cup results/lineups/events (PLAN ONLY — no purchase).
+# Need: 2026 fixtures/results/status/standings/lineups/cards/subs/events at near-live latency,
+# compatible with the existing read-only provider interface (wcdrawlab.providers.interface).
+# Prices are indicative — verify current pricing before any purchase.
+source_id: live_2026_results_lineups_provider_comparison
+status: research_note
+requested_by: claude_code
+
+providers:
+  - name: API-Football (api-sports.io)
+    fixtures_results: yes
+    final_status: yes
+    standings: yes
+    lineups: yes
+    cards_subs_events: yes
+    statistics: yes
+    latency: near-live (~15s-1min)
+    historical_2022_events: yes (free tier already validated)
+    api_docs: https://www.api-football.com/documentation-v3
+    account_required: yes (already have a working DIRECT key)
+    free_tier: "100 req/day, seasons 2022-2024 only (NO 2026)"
+    paid_tier: "Pro ~$25-30/mo (≈7,500 req/day) unlocks current season incl. 2026"
+    est_monthly_cost: "~$25-30"
+    rate_limits: "Pro ~450/min, 7500/day (verify)"
+    tos_risk: low (documented commercial API)
+    interface_compatible: "YES — adapter already exists (src/wcdrawlab/providers/api_football.py); only a plan upgrade needed, no code change"
+
+  - name: SportMonks Football API
+    fixtures_results: yes
+    final_status: yes
+    standings: yes
+    lineups: yes
+    cards_subs_events: yes
+    statistics: yes
+    latency: near-live
+    historical_2022_events: yes (plan-dependent)
+    api_docs: https://docs.sportmonks.com/football
+    account_required: yes
+    free_tier: "limited (Danish/Scottish leagues only) — WC not on free"
+    paid_tier: "World Cup / European plans ~$25-50+/mo"
+    est_monthly_cost: "~$30-50"
+    rate_limits: "per-entity rate limits (verify)"
+    tos_risk: low
+    interface_compatible: "moderate — new adapter behind the interface (different JSON shape)"
+
+  - name: football-data.org (paid tiers)
+    fixtures_results: yes (authoritative; FREE already used for 2026)
+    final_status: yes
+    standings: yes
+    lineups: "limited / not full event detail"
+    cards_subs_events: "partial (paid)"
+    statistics: limited
+    latency: near-live for scores
+    historical_2022_events: partial
+    api_docs: https://www.football-data.org/documentation/quickstart
+    account_required: yes (already have a working key)
+    free_tier: "10 req/min; WC results/standings INCLUDED (already in use)"
+    paid_tier: "~€/mo tiers for more competitions/throughput"
+    est_monthly_cost: "free covers results; paid optional"
+    rate_limits: "free 10/min"
+    tos_risk: low
+    interface_compatible: "YES (adapter exists); but does NOT close the lineups/events gap"
+
+  - name: TheSportsDB
+    fixtures_results: yes
+    final_status: yes
+    standings: partial
+    lineups: "partial (community-sourced)"
+    cards_subs_events: "partial / inconsistent"
+    statistics: limited
+    latency: minutes
+    historical_2022_events: partial
+    api_docs: https://www.thesportsdb.com/api.php
+    account_required: yes (Patreon key)
+    free_tier: "test key, rate-limited"
+    paid_tier: "Patreon ~$3-9/mo"
+    est_monthly_cost: "~$3-9"
+    rate_limits: "low"
+    tos_risk: low-medium
+    quality_risk: "HIGH — community data; coverage/accuracy for live WC events unreliable"
+    interface_compatible: "moderate (new adapter)"
+
+  - name: Sportradar / Stats Perform (Opta)
+    fixtures_results: yes
+    final_status: yes
+    standings: yes
+    lineups: yes
+    cards_subs_events: yes (official, richest incl. xG)
+    statistics: yes (deepest)
+    latency: real-time
+    historical_2022_events: yes
+    api_docs: enterprise (NDA)
+    account_required: yes (sales contract)
+    free_tier: none
+    paid_tier: "enterprise (hundreds-thousands/mo, annual contract)"
+    est_monthly_cost: "$$$$ (enterprise)"
+    rate_limits: contract-defined
+    tos_risk: low (official) but heavy contract
+    interface_compatible: "new adapter; overkill for this project's scale/budget"
+
+recommendation:
+  preferred: "API-Football Pro (~$25-30/mo) — cheapest path that unlocks 2026 live fixtures/lineups/
+              events/standings AND reuses the EXISTING adapter unchanged (just a plan upgrade)."
+  low_cost_fallback: "football-data.org (free, already integrated) for results/standings — closes the
+                      RESULTS gap at $0; pair with TheSportsDB Patreon (~$3-9/mo) ONLY if cheap
+                      lineup/event coverage is needed and its quality is accepted (verify first)."
+  not_recommended_now: "SportMonks (fine but redundant w/ API-Football); Sportradar/Opta (enterprise overkill)."
+user_action_required:
+  - "If live 2026 lineups/events are wanted: approve an API-Football Pro upgrade (~$25-30/mo)."
+  - "Otherwise: no purchase — results/standings already free via football-data.org."
