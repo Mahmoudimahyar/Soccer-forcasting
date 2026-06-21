@@ -352,6 +352,25 @@ normalized_schemas:
       altitude_m: {type: float}
       kind: {type: enum, values: [forecast, observed]}
 
+  R_travel_rest_conditions:
+    primary_key: [match_id, team_id]
+    timestamp_semantics: "Derived from matches STRICTLY BEFORE this kickoff + this match's (pre-known) venue."
+    source_priority: [official_feed, football_data_org, open_dataset]
+    missingness_behavior: "First match of a team has no prior -> rest_days/travel are null (not zero)."
+    feature_eligibility_rule: "pre_match: prev_match_kickoff_utc < kickoff_utc; venue/altitude known pre-tournament."
+    usability: pre_match
+    leakage_risks: "Never use a LATER match to compute rest/travel; only the team's previous match."
+    conflict_handling: "Non-critical; derived feature. Venue coords from data/reference/venues_2026.csv."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      prev_match_kickoff_utc: {type: timestamp}
+      rest_days: {type: float, note: "days since the team's previous match (strictly before)"}
+      prev_venue: {type: string}
+      travel_km: {type: float, note: "great-circle distance from previous venue to this venue"}
+      altitude_m: {type: float, note: "this match's venue altitude (heat/altitude proxy)"}
+      timezone_shift_hours: {type: float, required: false}
+
   Q_player_availability_injuries_suspensions:
     primary_key: [match_id, player_id, status_published_utc]
     timestamp_semantics: "status_published_utc = when the availability/injury/suspension was announced."
