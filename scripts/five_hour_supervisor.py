@@ -57,16 +57,25 @@ def iso(dt):
 
 
 class Supervisor:
-    def __init__(self, hours, dry_run, max_credits, odds_interval, fd_interval, tick):
-        self.start = utcnow()
-        self.deadline = self.start + timedelta(hours=hours)
+    def __init__(self, hours, dry_run, max_credits, odds_interval, fd_interval, tick, resume_latest=False):
         self.dry = dry_run
         self.max_credits = max_credits
         self.odds_interval = odds_interval
         self.fd_interval = fd_interval
         self.tick = tick
-        sess = self.start.strftime("session_%Y%m%dT%H%M%SZ")
-        self.dir = ROOT / "outputs/live_shadow" / sess
+        resumed = None
+        if resume_latest:
+            cands = sorted((ROOT / "outputs/live_shadow").glob("session_*/state.json"))
+            if cands:
+                resumed = cands[-1].parent
+        if resumed is not None:
+            self.dir = resumed
+            st = json.loads((resumed / "state.json").read_text(encoding="utf-8"))
+            self.start = datetime.fromisoformat(st["started"])
+        else:
+            self.start = utcnow()
+            self.dir = ROOT / "outputs/live_shadow" / self.start.strftime("session_%Y%m%dT%H%M%SZ")
+        self.deadline = self.start + timedelta(hours=hours)
         self.logs = ROOT / "logs"
         if not dry_run:
             self.dir.mkdir(parents=True, exist_ok=True); self.logs.mkdir(parents=True, exist_ok=True)
@@ -299,8 +308,10 @@ def main():
     p.add_argument("--odds-interval", type=int, default=600)
     p.add_argument("--fd-interval", type=int, default=600)
     p.add_argument("--tick", type=int, default=60)
+    p.add_argument("--resume-latest", action="store_true", help="resume the most recent session (restart-safe)")
     a = p.parse_args()
-    Supervisor(a.hours, a.dry_run, a.max_credits, a.odds_interval, a.fd_interval, a.tick).run()
+    Supervisor(a.hours, a.dry_run, a.max_credits, a.odds_interval, a.fd_interval, a.tick,
+               resume_latest=a.resume_latest).run()
 
 
 if __name__ == "__main__":
