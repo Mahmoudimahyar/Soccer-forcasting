@@ -1,0 +1,102 @@
+# Research note (PLAN ONLY — no spend, no scraping, no new provider added).
+# Goal: can we get timestamp-valid pre-match 1X2 odds for the 2010/2014/2018 WC GROUP STAGES, so a
+# market-blended model could be SELECTED on development folds (not just shown on the 2022 gate)?
+source_id: historical_odds_dev_folds
+status: research_note  # not a connector request; a feasibility finding
+requested_by: claude_code
+objective: >
+  Leakage-safe market-model selection requires pre-match odds on the dev folds (2010/2014/2018).
+  This documents whether any legal/open source can supply them.
+
+candidate_sources:
+  - name: The Odds API (historical)
+    url: https://the-odds-api.com/
+    years_covered: "2020-06 -> present"
+    world_cup_coverage: "2022 only (2026 live)"
+    timestamp_availability: "yes (snapshot timestamps)"
+    odds_timing: "any pre-kickoff snapshot"
+    one_x_two: yes
+    totals_btts: yes
+    license_terms: "commercial API, paid credits"
+    account_required: yes (already have)
+    cost: "credits"
+    quality_risk: low
+    team_name_risk: low
+    supports_dev_fold_selection: "NO — history starts 2020-06; 2010/2014/2018 NOT covered."
+
+  - name: football-data.co.uk
+    url: https://www.football-data.co.uk/
+    years_covered: "1990s -> present"
+    world_cup_coverage: "NONE — domestic club leagues only (no internationals/World Cup)"
+    timestamp_availability: "no (match-level closing-ish odds, no snapshot time)"
+    odds_timing: unknown/closing
+    one_x_two: yes (club)
+    totals_btts: partial
+    license_terms: "free for personal use"
+    account_required: no
+    cost: free
+    quality_risk: low (but wrong competition)
+    team_name_risk: n/a
+    supports_dev_fold_selection: "NO — no World Cup data."
+
+  - name: OddsPortal
+    url: https://www.oddsportal.com/
+    years_covered: "2000s -> present"
+    world_cup_coverage: "yes (2010/2014/2018 WC odds visible)"
+    timestamp_availability: "opening + closing shown, but not a clean machine timestamp"
+    odds_timing: "opening/closing"
+    one_x_two: yes
+    totals_btts: yes
+    license_terms: "TERMS PROHIBIT SCRAPING / automated access"
+    account_required: yes
+    cost: free (UI)
+    quality_risk: medium
+    team_name_risk: medium
+    supports_dev_fold_selection: "NO — scraping disallowed by terms; not an approved method."
+
+  - name: Betfair Historical Data (exchange)
+    url: https://historicdata.betfair.com/
+    years_covered: "~2016 -> present (football); sparse earlier"
+    world_cup_coverage: "2018 partial (exchange), 2010/2014 effectively unavailable"
+    timestamp_availability: "yes (tick-level), but heavy/complex"
+    odds_timing: "full in-play + pre-off"
+    one_x_two: yes (match odds market)
+    totals_btts: partial
+    license_terms: "paid PRO data; license required"
+    account_required: yes
+    cost: "paid (per-market files)"
+    quality_risk: medium (exchange != bookmaker consensus)
+    team_name_risk: medium
+    supports_dev_fold_selection: "PARTIAL at best — 2018 maybe; 2010/2014 no. Paid + complex."
+
+  - name: Kaggle / academic WC odds datasets
+    url: "various (kaggle.com, academic repos)"
+    years_covered: "varies"
+    world_cup_coverage: "some include 2010/2014/2018 closing odds"
+    timestamp_availability: "USUALLY NONE (closing only, no issue time)"
+    odds_timing: "closing (often), provenance unclear"
+    one_x_two: yes (usually)
+    totals_btts: rare
+    license_terms: "varies; often unclear / re-scraped from OddsPortal"
+    account_required: no (Kaggle account)
+    cost: free
+    quality_risk: "HIGH — provenance/timing unverified; often derivative of disallowed scrapes"
+    team_name_risk: medium
+    supports_dev_fold_selection: "NOT SAFELY — no verifiable pre-kickoff timestamp; provenance weak."
+
+conclusion: >
+  There is NO clean, openly-licensed, timestamp-valid pre-match odds source for the 2010/2014/2018
+  World Cup group stages. The Odds API does not reach before 2020-06; football-data.co.uk has no
+  internationals; OddsPortal prohibits scraping; Betfair historical is paid and effectively starts
+  ~2016/2018; Kaggle/academic copies lack verifiable pre-kickoff timestamps and clean licensing.
+  Therefore a leakage-safe market-model SELECTION on the dev folds is NOT currently possible.
+  DO NOT fabricate a development odds set from 2022 (it is the release gate).
+
+implications:
+  - "A market blend cannot clear the frozen promotion protocol (no significant dev-fold evidence)."
+  - "Options: (a) keep market as a shadow/forecast-aid only; (b) treat the live-2026 prequential as
+     prospective out-of-sample validation (deployment-period, not a pre-selection dev fold);
+     (c) acquire a paid, timestamped, multi-WC historical odds feed (coverage 2010-2018 is doubtful)."
+user_action_required:
+  - "Decide whether to (a) accept market as shadow-only, or (b) fund a paid historical odds source
+     IF one can be shown to cover 2010-2018 with verifiable pre-kickoff timestamps (likely cannot)."

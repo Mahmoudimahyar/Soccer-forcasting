@@ -13,8 +13,53 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass
 
+import pandas as pd
+
 from wcdrawlab.inplay.engine import InPlayConfig, InPlayState, update_inplay_probabilities
 from wcdrawlab.research.scoreline import ScorelineModel
+
+
+def event_known_by(elapsed_minute, decision_minute) -> bool:
+    """An event is usable at a decision minute only if it has already happened (elapsed <= decision)."""
+    return elapsed_minute is not None and elapsed_minute <= decision_minute
+
+
+def pre_match_odds_eligible(snapshot_utc, kickoff_utc) -> bool:
+    """A pre-match odds snapshot is usable only if observed strictly before kickoff."""
+    return pd.Timestamp(snapshot_utc) < pd.Timestamp(kickoff_utc)
+
+
+def lineup_eligible(published_utc, decision_utc) -> bool:
+    """A lineup/standings/tournament-state fact is usable only if published at/before the decision."""
+    return pd.Timestamp(published_utc) <= pd.Timestamp(decision_utc)
+
+
+def state_from_events(events: list[dict], decision_minute: int, team_a: str,
+                      home_team: str, away_team: str) -> dict:
+    """Leakage-safe match state oriented to team_a, using ONLY events with elapsed <= decision_minute.
+    events: API-Football-style [{time:{elapsed}, team:{name}, type, detail}]. Own goals credit the
+    opponent; missed penalties are ignored; red cards counted from Card/'Red' detail."""
+    gA = gB = rA = rB = 0
+    for e in events:
+        elapsed = (e.get("time") or {}).get("elapsed")
+        if not event_known_by(elapsed, decision_minute):
+            continue  # future event -> excluded (no leakage)
+        etype = e.get("type"); det = str(e.get("detail") or "")
+        eteam = (e.get("team") or {}).get("name", "")
+        if etype == "Goal":
+            if "Missed" in det:
+                continue
+            scorer = (home_team if eteam == away_team else away_team) if det == "Own Goal" else eteam
+            if scorer == team_a:
+                gA += 1
+            else:
+                gB += 1
+        elif etype == "Card" and "Red" in det:
+            if eteam == team_a:
+                rA += 1
+            else:
+                rB += 1
+    return {"goals_a": gA, "goals_b": gB, "red_cards_a": rA, "red_cards_b": rB}
 
 
 def risk_band(entropy: float) -> str:
