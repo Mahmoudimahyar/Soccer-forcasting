@@ -1,0 +1,23 @@
+{
+  "international_results": {
+    "name": "international_results",
+    "url": "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
+    "destination": "data/raw/international_results.csv",
+    "kind": "match_results",
+    "notes": "General men's international match results. Does not include World Cup group labels."
+  },
+  "jf_worldcup_matches": {
+    "name": "jf_worldcup_matches",
+    "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/matches.csv",
+    "destination": "data/raw/jf_worldcup_matches.csv",
+    "kind": "worldcup_matches",
+    "notes": "Structured FIFA World Cup match-level data. Column names may change upstream; use normalize_worldcup_matches()."
+  },
+  "jf_worldcup_tournaments": {
+    "name": "jf_worldcup_tournaments",
+    "url": "https://raw.githubusercontent.com/jfjelstul/worldcup/master/data-csv/tournaments.csv",
+    "destination": "data/raw/jf_worldcup_tournaments.csv",
+    "kind": "worldcup_metadata",
+    "notes": "Structured tournament metadata for the jfjelstul/worldcup dataset."
+  }
+}

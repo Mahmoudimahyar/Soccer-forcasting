@@ -1,0 +1,2 @@
+match_id,outcome_label,market_ticker,book_side,mapping_status,reviewed_by,reviewed_at_utc,notes
+2026_A_01,team_a_win,EXAMPLE-TICKER,bid,draft,,,"Replace with actual reviewed Kalshi market mapping"

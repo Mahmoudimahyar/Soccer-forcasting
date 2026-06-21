@@ -1,0 +1,26 @@
+random_seed: 42
+max_goals: 8
+rating_join_tolerance_days: 45
+market:
+  min_raw_edge: 0.04
+  safety_margin: 0.02
+  fractional_kelly: 0.25
+simulation:
+  n_sims: 20000
+  third_place_slots: 8
+  groups: 12
+  teams_per_group: 4
+models:
+  draw_calibrator:
+    features:
+      - p_draw_score
+      - p_draw_market
+      - abs_elo_delta
+      - expected_total_goals
+      - mutual_draw_utility
+      - must_win_pressure_max
+      - third_place_safety_min
+      - prior_group_draws
+      - prior_group_goals_per_match
+      - low_block_risk
+      - travel_fatigue

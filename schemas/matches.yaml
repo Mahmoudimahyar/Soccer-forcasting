@@ -1,0 +1,16 @@
+required_columns:
+  match_id: unique string/int
+  kickoff_utc: timestamp
+  tournament: string
+  stage: string  # group, r32, r16, qf, sf, final
+  group: string nullable
+  matchday: int nullable  # 1,2,3 for group stage
+  team_a: string
+  team_b: string
+  goals_a: int nullable before played
+  goals_b: int nullable before played
+  venue: string nullable
+  neutral: bool
+notes:
+  - For betting backtests, odds_snapshot_time must be <= kickoff_utc.
+  - For rankings, rating_date must be <= kickoff_utc.

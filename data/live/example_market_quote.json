@@ -1,0 +1,8 @@
+{
+  "market_ticker": "EXAMPLE-MARKET",
+  "yes_bid_cents": 44,
+  "yes_ask_cents": 46,
+  "observed_at_utc": "2026-06-20T12:00:00+00:00",
+  "status": "open",
+  "volume": 100
+}

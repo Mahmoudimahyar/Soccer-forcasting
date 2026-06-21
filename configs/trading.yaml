@@ -1,0 +1,19 @@
+# LOCKED RUNTIME POLICY: research agents must not modify this file.
+mode: paper  # paper | demo | live
+require_human_confirmation: true
+allow_unattended_live: false
+
+risk:
+  max_order_cost_cents: 500
+  max_event_exposure_cents: 1500
+  max_daily_loss_cents: 1000
+  max_open_orders: 4
+  min_edge_after_uncertainty: 0.04
+  max_market_spread_cents: 5
+  max_prediction_age_seconds: 30
+  max_market_age_seconds: 10
+  min_model_confidence: 0.55
+  max_contracts_per_order: 10
+  no_trade_if_stale_data: true
+  no_trade_if_market_closed: true
+  no_trade_if_model_version_unapproved: true

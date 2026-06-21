@@ -1,0 +1,74 @@
+# Official 2026 FIFA World Cup group-stage format and tiebreak rules.
+# Stored with provenance per Tier-1 requirement.
+# STATUS: IMPLEMENTED in the ACTIVE simulator src/wcdrawlab/simulation/official_standings.py
+# (head-to-head before overall GD, recursive; drawing of lots removed). The legacy
+# src/wcdrawlab/simulation/standings.py (simplified order) is retained only as a baseline.
+schema_version: "2.0"
+retrieved_at_utc: "2026-06-20"
+source_name: "FIFA 2026 regulations Article 13, via FIFA.com + MLSSoccer.com/FOX/Yahoo (corroborated)"
+source_url: "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/groups-how-teams-qualify-tie-breakers"
+secondary_source_url: "https://www.mlssoccer.com/news/2026-fifa-world-cup-tiebreakers-how-can-teams-advance"
+provenance_note: >
+  Confirmed from FIFA's official tie-breaker article and corroborated by MLSSoccer/FOX/Yahoo, all
+  citing Article 13 of the 2026 regulations. 2026 REVERSES the 1998-2022 order: head-to-head now
+  comes BEFORE overall goal difference, and drawing of lots is removed. For a betting-grade system,
+  also archive the official FIFA regulations PDF with a content hash.
+
+format:
+  teams: 48
+  groups: 12
+  group_size: 4
+  group_matches: 72        # 12 groups x 6 round-robin matches
+  advance_per_group: 2     # top two
+  best_third_place_advance: 8   # of 12 third-placed teams
+  knockout_teams: 32       # 12 winners + 12 runners-up + 8 best thirds
+
+# (a) Ranking teams WITHIN a group, in order:
+within_group_tiebreakers:
+  - id: points
+    desc: "Points (win 3, draw 1, loss 0) from all group matches"
+  - id: h2h_points
+    desc: "Points in head-to-head matches among the tied teams (NEW for 2026: H2H before overall GD)"
+  - id: h2h_goal_difference
+    desc: "Goal difference in head-to-head matches among the tied teams"
+  - id: h2h_goals_for
+    desc: "Goals scored in head-to-head matches among the tied teams"
+  - id: overall_goal_difference
+    desc: "Goal difference in all group matches"
+  - id: overall_goals_for
+    desc: "Goals scored in all group matches"
+  - id: fair_play
+    desc: "Fair-play points (fewer disciplinary points is better)"
+  - id: fifa_ranking_or_draw
+    desc: "FIFA ranking / drawing of lots as final separator"
+
+# (b) Ranking the THIRD-placed teams across all 12 groups (best 8 advance):
+third_place_tiebreakers:
+  - id: points
+  - id: overall_goal_difference
+  - id: overall_goals_for
+  - id: fair_play
+  - id: fifa_ranking_or_draw
+  note: >
+    Third-place ranking compares teams from different groups, so head-to-head does not apply;
+    overall points, then GD, then goals, then fair play, then FIFA ranking / lots.
+
+implementation:
+  active_engine: "src/wcdrawlab/simulation/official_standings.py"
+  implements: ["points", "h2h_points", "h2h_goal_difference", "h2h_goals_for",
+               "overall_goal_difference", "overall_goals_for", "conduct", "fifa_ranking"]
+  recursive_h2h: true   # re-applies H2H to any subset still tied after partial separation
+  third_place: ["points", "overall_goal_difference", "overall_goals_for", "conduct", "fifa_ranking"]
+  tests: "tests/test_official_tiebreak.py (two-team, three-team, H2H-GD, H2H-goals, conduct, 12-third ranking, exactly-8-advance, seed)"
+  production_wiring: "scripts/forecast_2026.py, scripts/market_anchored_forecast.py import simulate_group_stage_official"
+
+legacy_baseline:
+  file: "src/wcdrawlab/simulation/standings.py + group_simulator.py"
+  order: ["points", "overall_goal_difference", "overall_goals_for", "fair_play", "fifa_ranking"]
+  note: "Simplified (no head-to-head). RETAINED ONLY AS A BASELINE; never used for 2026 production forecasts."
+
+residual_limitation:
+  conduct_and_fifa_rank: >
+    Within the simulator, conduct (cards) and fifa_rank default to neutral when those inputs are
+    absent in the fixture data, so they act as separators only when supplied. Head-to-head, overall
+    GD and goals are fully implemented and exercised by tests.

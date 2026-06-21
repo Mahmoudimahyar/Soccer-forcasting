@@ -1,0 +1,14 @@
+{
+  "market_ticker": "EXAMPLE-MARKET",
+  "book_side": "bid",
+  "limit_price_cents": 45,
+  "contracts": 2,
+  "model_probability": 0.56,
+  "model_probability_lower": 0.53,
+  "market_probability": 0.45,
+  "prediction_created_at_utc": "2026-06-20T12:00:00+00:00",
+  "market_observed_at_utc": "2026-06-20T12:00:00+00:00",
+  "model_version": "approved-v1",
+  "rationale": "Example only. Replace after a reviewed prediction and approved market mapping.",
+  "event_key": "example-event"
+}

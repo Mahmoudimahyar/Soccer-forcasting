@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Secrets — never commit (real secrets live in .env, which is ignored)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+credentials*
+secrets*
+
+# Raw provider/API responses, generated/processed data, caches (reproducible from scripts)
+data/raw/
+data/processed/
+data/cache/
+data/raw/private/
+
+# Generated prediction outputs
+outputs/

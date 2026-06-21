@@ -1,0 +1,6 @@
+{
+  "event_exposure_cents": 0,
+  "daily_realized_pnl_cents": 0,
+  "open_order_count": 0,
+  "approved_model_versions": ["approved-v1"]
+}

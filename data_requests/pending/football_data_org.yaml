@@ -1,0 +1,34 @@
+source_id: football_data_org
+status: approved  # draft | needs_user_account | approved | rejected  -- KEY SUPPLIED 2026-06-20, INTEGRATED
+requested_by: claude_code
+purpose: >
+  Authoritative live 2026 World Cup structure (groups A-L, matchday 1/2/3) and freshest
+  finished results. Used to replace the seed-anchored 2026 reconstruction with an official
+  source and to keep results current beyond martj42's ~2-day upstream lag.
+fields_requested:
+  - utcDate, stage, group, matchday, status
+  - homeTeam.name / awayTeam.name
+  - score.fullTime.home / score.fullTime.away
+prediction_use: >
+  scripts/fetch_footballdata_2026.py -> data/processed/results_2026_footballdata.csv;
+  scripts/build_research_table.py uses it for the 2026 group rows (group/matchday/results)
+  and supplements the martj42 Elo history with the freshest finished 2026 matches.
+historical_coverage: "Current WC season (2026) via competitions/WC/matches; free tier covers WC."
+live_latency: "Near-live; results appear shortly after full time."
+account_required: true
+estimated_cost: "free tier (10 req/min)"
+terms_url: "https://www.football-data.org/"
+robots_checked: not_applicable  # sanctioned API
+rate_limit: "free tier ~10 requests/minute"
+quality_risks:
+  - "Team-name spellings (Bosnia-Herzegovina, Czechia, South Korea) -> handled by canon()"
+  - "Free tier omits real odds (the `odds` field is locked) -> we use The Odds API instead"
+leakage_risk: >
+  Only FINISHED results are ingested for state/Elo; upcoming matches carry NaN goals and never
+  contribute to pre-match features. Validated: 12/12 reconstructed groups match this source.
+implementation_plan:
+  - "Fetch competitions/WC/matches with X-Auth-Token (FOOTBALL_DATA_KEY)"
+  - "Raw snapshot data/raw/footballdata_wc_2026.json; normalized results CSV"
+  - "Covered by existing leakage/quality tests (group state, strict-before aggregates)"
+user_action_required:
+  - "Already supplied FOOTBALL_DATA_KEY; no further action."

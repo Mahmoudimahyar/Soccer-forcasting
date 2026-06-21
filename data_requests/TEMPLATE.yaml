@@ -1,0 +1,26 @@
+# Claude Code must create a new file under data_requests/pending/ for any new
+# provider, authenticated API, or scraped domain. Do not implement the connector
+# until the user marks status: approved and supplies any required account/key.
+source_id: example_provider
+status: needs_user_account  # draft | needs_user_account | approved | rejected
+requested_by: claude_code
+purpose: "What incremental predictive information will this source provide?"
+fields_requested:
+  - field_name
+prediction_use: "Which feature/module consumes these fields?"
+historical_coverage: "Years/tournaments available"
+live_latency: "Expected update cadence"
+account_required: true
+estimated_cost: "free tier / paid tier / unknown"
+terms_url: "https://..."
+robots_checked: not_applicable
+rate_limit: "unknown"
+quality_risks:
+  - "Potential selection bias / provider drift / missingness"
+leakage_risk: "Explain why data exists before kickoff or how it is gated in-play."
+implementation_plan:
+  - "Adapter path"
+  - "Raw snapshot storage"
+  - "Schema and tests"
+user_action_required:
+  - "Create account and add key to .env"

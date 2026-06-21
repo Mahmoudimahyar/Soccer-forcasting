@@ -1,0 +1,52 @@
+# This file is read by the fixed evaluator. Claude Code may propose changes only
+# through a reviewed experiment commit; it must not alter trading configuration.
+objective:
+  weights:
+    rps: 0.40
+    log_loss: 0.25
+    draw_brier: 0.20
+    draw_calibration_error: 0.15
+  promotion:
+    minimum_relative_improvement: 0.002
+    no_fold_regression_tolerance: 0.001
+    require_all_holdouts: true
+
+folds:
+  - name: world_cup_2018
+    train_before_year: 2018
+    test_year: 2018
+    stage: group
+  - name: world_cup_2022
+    train_before_year: 2022
+    test_year: 2022
+    stage: group
+  - name: world_cup_2026_matchday_1_locked
+    train_before_year: 2026
+    test_year: 2026
+    stage: group
+    matchday: 1
+    locked: true
+
+leakage_guard:
+  forbidden_columns:
+    - goals_a
+    - goals_b
+    - outcome
+    - is_draw
+    - final_score
+    - post_match_xg
+    - closing_odds_after_kickoff
+    - result
+  allowed_prefixes:
+    - p_
+    - elo_
+    - fifa_
+    - market_
+    - prior_
+    - schedule_
+    - travel_
+    - low_block_
+    - matchday
+    - confed_
+    - team_
+    - venue_

@@ -1,0 +1,17 @@
+# Only domains listed here may be fetched by the built-in scraper. This is a policy
+# allowlist, not a legal determination. The agent must still inspect terms and robots.txt.
+allowed_domains:
+  - fifa.com
+  - inside.fifa.com
+  - canada.ca
+  - open-meteo.com
+  - api-football.com
+  - the-odds-api.com
+
+rules:
+  respect_robots_txt: true
+  max_requests_per_minute_per_domain: 12
+  cache_ttl_seconds: 900
+  forbid_login: true
+  forbid_paywall_bypass: true
+  forbid_captcha_bypass: true

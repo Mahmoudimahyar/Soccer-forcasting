@@ -1,0 +1,66 @@
+# In-play / match-event schema (Tier-1 definition; consumed by Tier-4/5 in-play models).
+# No event data flows yet (the working API-Football key is the RapidAPI type and is rejected by
+# the in-repo adapter). This schema fixes the contract + leakage rules so the event pipeline,
+# when built, is point-in-time reproducible and carries full provenance.
+schema_version: "1.0"
+
+# Provenance envelope — required on EVERY raw event record (see notes/research/provenance_policy.md)
+provenance_envelope:
+  source_name: {type: string, required: true}
+  source_url_or_endpoint: {type: string, required: true}
+  retrieved_at_utc: {type: timestamp, required: true}
+  published_or_event_time_utc: {type: timestamp, required: true, note: "the event's real clock time"}
+  match_id: {type: string, required: true}
+  provider_event_id: {type: string, required: false}
+  raw_payload_hash: {type: string, required: true, note: "sha256 of raw payload"}
+  schema_version: {type: string, required: true}
+  quality_status: {type: enum, values: [ok, partial, suspect, conflict], required: true}
+
+# A single in-play event row
+event:
+  match_id: {type: string, required: true}
+  decision_timestamp_utc: {type: timestamp, required: true,
+    note: "the time at which this event is KNOWN; all features for a prediction must satisfy published_or_event_time_utc <= decision_timestamp_utc"}
+  minute: {type: int, note: "match minute"}
+  stoppage_minute: {type: int, default: 0}
+  period: {type: enum, values: [pre, first_half, half_time, second_half, full_time]}
+  event_type:
+    type: enum
+    # precise taxonomy (Tier-5 targets reference these)
+    values: [kickoff, goal, own_goal, penalty_goal, penalty_missed, penalty_awarded,
+             shot, shot_on_target, yellow_card, second_yellow, red_card,
+             substitution, corner, free_kick, offside, var_review, injury, full_time]
+  team_id: {type: string, note: "team the event is attributed to"}
+  player_id: {type: string, required: false}
+  player_off_id: {type: string, required: false, note: "substitution: outgoing"}
+  player_on_id: {type: string, required: false, note: "substitution: incoming"}
+  x: {type: float, required: false, note: "pitch coords if available"}
+  y: {type: float, required: false}
+  detail: {type: string, required: false}
+
+# Per-decision match-state snapshot (what the in-play model conditions on)
+state_snapshot:
+  match_id: {type: string, required: true}
+  decision_timestamp_utc: {type: timestamp, required: true}
+  minute: {type: int}
+  score_home: {type: int}
+  score_away: {type: int}
+  red_cards_home: {type: int}
+  red_cards_away: {type: int}
+  on_pitch_home: {type: int, default: 11}
+  on_pitch_away: {type: int, default: 11}
+  subs_used_home: {type: int}
+  subs_used_away: {type: int}
+  # optional, only when timestamped pre-decision:
+  shots_home: {type: int, required: false}
+  shots_away: {type: int, required: false}
+  xg_home: {type: float, required: false}
+  xg_away: {type: float, required: false}
+  data_completeness: {type: float, note: "0-1 share of expected feeds present"}
+  feed_disagreement_flag: {type: bool, default: false,
+    note: "true if critical feeds disagree; in-play model must abstain/degrade confidence"}
+
+leakage_rules:
+  - "Every feature: published_or_event_time_utc <= decision_timestamp_utc (strict event-time)."
+  - "Final score / post-match xG / post-match stats are NEVER used to predict the same match."
+  - "Simultaneous events resolved by published_or_event_time_utc; ties excluded from each other."

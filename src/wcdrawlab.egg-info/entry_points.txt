@@ -1,0 +1,2 @@
+[console_scripts]
+wcdrawlab = wcdrawlab.cli:main

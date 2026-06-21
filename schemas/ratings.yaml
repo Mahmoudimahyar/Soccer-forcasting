@@ -1,0 +1,12 @@
+elo_columns:
+  team: string
+  rating_date: timestamp
+  elo: float
+fifa_columns:
+  team: string
+  release_date: timestamp
+  fifa_rank: int
+  fifa_points: float
+notes:
+  - Raw FIFA points are not comparable across ranking eras.
+  - Use within-release z-scores or percentiles.

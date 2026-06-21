@@ -1,0 +1,14 @@
+required_columns:
+  match_id: string/int
+  snapshot_time: timestamp
+  book: string
+  odds_a: float
+  odds_draw: float
+  odds_b: float
+optional_columns:
+  closing: bool
+  market: string
+notes:
+  - Convert decimal odds to implied probabilities.
+  - Remove overround before edge calculation.
+  - Never use odds snapshots after kickoff.

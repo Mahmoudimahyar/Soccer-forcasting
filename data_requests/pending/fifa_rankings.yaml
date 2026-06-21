@@ -1,0 +1,46 @@
+source_id: fifa_world_ranking_history
+status: approved  # draft | needs_user_account | approved | rejected  -- INTEGRATED 2026-06-20
+requested_by: claude_code
+integration_note: >
+  Integrated 2026-06-20 from the OPEN dataset Dato-Futbol/fifa-ranking (no account needed;
+  1992–2024 monthly). scripts/fetch_fifa_rankings.py -> data/processed/fifa_rankings.csv;
+  joined time-safely in build_research_table.py (asof release_date<=kickoff). Coverage 75/75
+  WC teams. Enables baseline B2 (FIFA-only, dev composite 0.3985 — weaker than Elo). NOT added
+  to the production candidate: cycle-2b showed FIFA trades one selection fold for the other
+  (0.78-corr with Elo) and is STALE for 2026 (dataset ends 2024-09 → ~635-day age, flagged
+  fifa_is_stale). A fresher release (2025–2026) would be the upgrade; see notes/research/20260620_cycle_2.md.
+purpose: >
+  Release-dated FIFA/Elo-style world ranking history (points + rank per release). Enables
+  baseline B2 (FIFA-only) as a genuine model rather than the current generic logit, and adds
+  a release-normalized strength feature complementary to our internal Elo. No free no-account
+  source for this is wired today: seed_ratings_2026.csv holds demo Elo values, not FIFA points,
+  so B2 and any FIFA-rank feature are currently unavailable.
+fields_requested:
+  - team
+  - release_date (UTC; the official ranking publication date)
+  - fifa_rank
+  - fifa_points
+prediction_use: >
+  ratings.standardize_fifa_release -> fifa_points_z, fifa_rank_percentile ->
+  features.add_strength_deltas -> fifa_z_delta, fifa_rank_pct_delta; baseline B2.
+historical_coverage: "FIFA men's ranking published since 1992 (monthly in recent years) — ample for all folds 1998-2026."
+live_latency: "New release roughly monthly; well before WC kickoffs (time-safe by construction)."
+account_required: true
+estimated_cost: "free if sourced from an open ranking dataset; verify license before ingest"
+terms_url: "https://inside.fifa.com/fifa-world-ranking (official) ; or a clearly-licensed mirror"
+robots_checked: pending  # must verify robots.txt + scraping policy before any fetch
+rate_limit: "n/a for a static historical dump; per-site if scraped"
+quality_risks:
+  - "Team-name reconciliation vs martj42/jfjelstul (reuse ingest.canonical_team_name)"
+  - "Ranking methodology changed in 2018 (SUM formula) -> normalize within release (z-score) to stay comparable"
+  - "Mirror datasets may lag or omit releases"
+leakage_risk: >
+  Join is as-of release_date <= kickoff_utc (data.asof_join_team_rating). Post-tournament
+  ranking updates must never be used; only the release published before each match.
+implementation_plan:
+  - "Prefer a clearly-licensed open dataset; if a page must be scraped, add it to configs/scraping_allowlist.yaml and respect robots.txt"
+  - "Raw snapshot stored under data/raw/fifa_rankings/ with source URL + retrieval time"
+  - "Normalize to schemas/ratings.yaml fifa block: team, release_date, fifa_rank, fifa_points"
+  - "Tests: release_date<=kickoff guard; within-release z-score; name-canonicalization coverage"
+user_action_required:
+  - "Approve a specific licensed source for FIFA ranking history (or confirm the official page may be fetched under robots.txt), then add FOOTBALL_DATA_KEY if a keyed API is chosen"

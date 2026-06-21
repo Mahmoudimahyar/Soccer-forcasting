@@ -1,0 +1,32 @@
+source_id: api_football
+status: blocked  # draft | needs_user_account | approved | rejected | blocked
+requested_by: claude_code
+purpose: >
+  Live in-play events, confirmed lineups, injuries/suspensions, per-match statistics and
+  standings for 2026 in-play and squad-availability features.
+blocker: >
+  The supplied API_FOOTBALL_KEY is REJECTED by the in-repo adapter, which targets the DIRECT
+  host https://v3.football.api-sports.io with header `x-apisports-key`. /status returned
+  HTTP 200 with errors={"token":"Error/Missing application key."}. This signature means the
+  key is almost certainly a **RapidAPI** key (which requires host
+  `api-football-v1.p.rapidapi.com` + headers `x-rapidapi-key` / `x-rapidapi-host`), not a
+  direct api-sports.io dashboard key. The adapter `src/wcdrawlab/providers/api_football.py`
+  is in the protected set and was NOT modified.
+fields_requested:
+  - fixtures, fixtures/events, fixtures/lineups, fixtures/statistics, standings
+prediction_use: "in-play model + lineup/injury/availability features (future cycle)"
+historical_coverage: "API-Football covers many seasons on paid tiers"
+live_latency: "near-live during matches"
+account_required: true
+estimated_cost: "free tier 100 req/day (direct) ; RapidAPI tiers vary"
+terms_url: "https://www.api-football.com/documentation-v3"
+robots_checked: not_applicable
+rate_limit: "100/day free (direct)"
+leakage_risk: "in-play events must be gated to decision_timestamp; lineups available pre-kickoff only at official release"
+user_action_required:
+  - "EITHER provide a DIRECT api-sports.io key from https://dashboard.api-football.com (works with the current adapter unchanged)"
+  - "OR explicitly approve a one-line change to providers/api_football.py to use the RapidAPI host/headers (requires lifting the providers/ edit restriction for that file)."
+note: >
+  Not on the critical path: football-data.org already supplies authoritative live results +
+  standings, and The Odds API supplies market prices. API-Football is only needed for in-play
+  events / lineups / injuries in a later cycle.

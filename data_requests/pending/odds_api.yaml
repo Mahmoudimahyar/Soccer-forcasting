@@ -1,0 +1,55 @@
+source_id: the_odds_api
+status: approved  # draft | needs_user_account | approved | rejected  -- KEY SUPPLIED 2026-06-20, INTEGRATED
+requested_by: claude_code
+integration_note: >
+  ODDS_API_KEY supplied 2026-06-20. Live sport key 'soccer_fifa_world_cup' is active.
+  Fetched via scripts/fetch_odds_2026.py (raw snapshot data/raw/odds/), normalized to
+  no-vig consensus by scripts/build_market_features.py -> data/processed/market_features_2026.csv
+  (40/44 upcoming matches; up to 48 books). B6 now LIVE for 2026 forecasting (prospective).
+  Only 6 of 500 free credits used for the live snapshot.
+historical_update: >
+  2026-06-20: account upgraded to the paid 20K plan ($30/mo) -> historical endpoint active.
+  The Odds API history starts 2020-06, so 2018 is unavailable; 2022 IS. Pulled pre-kickoff
+  (~90 min) no-vig consensus for all 48 2022 WC group matches (32-35 books) via
+  scripts/fetch_historical_odds_2022.py -> data/processed/market_features_2022.csv (2,430 of
+  20,000 credits). Backtest (scripts/backtest_2022_market.py): the market beats all models;
+  it drove the cycle-3 candidate fix (ELO_BLEND_WEIGHT 0.5->0.85). See notes/research/20260620_cycle_3.md.
+purpose: >
+  Timestamped multi-book pre-match 1X2 + totals snapshots. This is the single highest-value
+  missing input. It unlocks baseline B6 (no-vig market consensus), market-residual features,
+  and closing-line-value (CLV) measurement. The market is the strongest single probability
+  benchmark; we currently cannot build or beat it because no real odds exist (only the
+  explicit demo placeholder data/seed/sample_odds_2026.csv, book=seed_demo_not_real_odds).
+fields_requested:
+  - match_id (mappable to our team_a/team_b + kickoff_utc)
+  - snapshot_time (UTC, strictly <= kickoff)
+  - bookmaker
+  - odds_home / odds_draw / odds_away (decimal)
+  - totals line + over/under odds
+prediction_use: >
+  market.no_vig_from_decimal_odds -> p_*_market features in research_modeling_table.csv
+  (currently all NaN with market_is_missing=1); baseline B6; market.edge_scan + CLV in the
+  backtest; market_total_goals feeds features.add_low_block_risk.
+historical_coverage: "The Odds API historical endpoint: rolling snapshots (recent seasons); soccer WC market from 2022 onward typically."
+live_latency: "Pre-match snapshots on demand; poll cadence chosen by us (e.g., T-24h, T-2h, T-15m)."
+account_required: true
+estimated_cost: "free tier (500 req/mo) to start; paid tiers for denser snapshots"
+terms_url: "https://the-odds-api.com/"
+robots_checked: not_applicable  # sanctioned API, not scraping
+rate_limit: "free tier ~500 requests/month; usage headers returned per call"
+quality_risks:
+  - "Book coverage varies by match; some WC group games may have thin markets"
+  - "Snapshot density on free tier is low -> closing line may be approximated"
+  - "Bookmaker set differs across snapshots -> consensus must handle changing membership"
+leakage_risk: >
+  Each row carries snapshot_time; the time-safe join (data.asof_join / pipeline market block)
+  keeps only snapshots with snapshot_time <= kickoff. Closing odds captured AFTER kickoff are
+  forbidden (already in the leakage guard as closing_odds_after_kickoff). In-play odds must be
+  gated to decision_timestamp.
+implementation_plan:
+  - "Adapter already stubbed: src/wcdrawlab/providers/odds_api.py (do not modify until approved)"
+  - "Raw JSON snapshots stored under data/raw/odds/<date>/ with source URL + retrieval time"
+  - "Normalize to schemas/odds.yaml: match_id, snapshot_time, book, odds_a, odds_draw, odds_b"
+  - "Tests: snapshot_time<=kickoff guard; no-vig sums to 1; consensus across books; missingness flags"
+user_action_required:
+  - "Create a free account at the-odds-api.com and add ODDS_API_KEY to .env"
