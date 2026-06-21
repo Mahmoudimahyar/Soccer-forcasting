@@ -1,29 +1,33 @@
-# Setup Status — Safe Configuration Audit (Tier-1 refresh, 2026-06-20)
+# Setup Status — autoresearch session (2026-06-21)
 
-One-way SET/MISSING check only. **No secret values are read, printed, or stored.** Live trading
-stays disabled: `KALSHI_ENABLE_LIVE_TRADING=false`, `TRADING_MODE=paper`.
+Safe configuration + connectivity audit. **No `.env` value printed/copied/logged.** Only SET/MISSING
+and HTTP status class. `pytest -q` → **91 passed** (documented before any model work). Trading remains
+paper: `KALSHI_ENABLE_LIVE_TRADING` is false and Kalshi trading credentials are absent.
+(Supersedes the 2026-06-20 Tier-1 refresh; findings consistent.)
 
-| Variable | Status | Provider / account | Needed | Capability blocked until configured |
+| variable | status | note |
+|---|---|---|
+| API_FOOTBALL_KEY | **SET** | but **rejected by both direct + RapidAPI** (see BLOCKERS.md / source_readiness_audit.md) |
+| ODDS_API_KEY | **SET** | working (2xx); ~13,100/≈20k requests remaining |
+| FOOTBALL_DATA_KEY | **SET** | working (2xx); ~10/min free tier |
+| KALSHI_ENV | SET | demo |
+| KALSHI_API_KEY_ID | **MISSING** | no Kalshi trading credential present |
+| KALSHI_PRIVATE_KEY_PATH | **MISSING** | — |
+| KALSHI_ENABLE_LIVE_TRADING | SET = **false** | paper mode (unchanged, not modified) |
+
+## Connectivity (minimal read-only, no quota burn)
+| provider | connectivity | live-data capability now | quota/rate concern | blocker |
 |---|---|---|---|---|
-| `API_FOOTBALL_KEY` | **SET** but **NOT WORKING** | API-Football — must be a **direct** key from dashboard.api-football.com (the supplied key is a RapidAPI-type key, rejected by the in-repo adapter's direct host) | Later (in-play, Tier 4) | Live lineups / events / in-play stats. Not on the Tier-1 critical path. |
-| `ODDS_API_KEY` | **SET** (paid 20K plan) | The Odds API | Now | ✅ Working — live + historical odds (B6, market features, beat-market analysis). |
-| `FOOTBALL_DATA_KEY` | **SET** | football-data.org | Now | ✅ Working — authoritative 2026 results/standings/schedule. |
-| `KALSHI_ENV` | **SET** (=demo) | Kalshi demo | Later | Paper/demo market mapping (Tier 5+). |
-| `KALSHI_API_KEY_ID` | **MISSING** | Kalshi **demo** account | Later | Demo market-data access; not needed until forecasting + paper replay proven. |
-| `KALSHI_PRIVATE_KEY_PATH` | **MISSING** | Kalshi **demo** key file | Later | Signing demo requests. |
-| `KALSHI_ENABLE_LIVE_TRADING` | **SET** (=false) | — | Never (research) | Must remain `false`. No action. |
+| The Odds API | success (2xx) | WC2026 pre-match + in-play odds; historical odds from 2020-06 | ~13.1k requests left; historical endpoint uses credits | none |
+| football-data.org | success (2xx) | WC2026 fixtures/results/standings (authoritative) | ~10 req/min free | lineups/events paid |
+| Open-Meteo | success (2xx, keyless) | venue weather forecast/archive | fair-use | none |
+| API-Football | **auth fail** | none (key invalid on both auth modes) | — | **key correction needed** |
 
-## Accounts needed NOW for live data
-- **The Odds API** → ✅ configured and working (paid plan).
-- **football-data.org** → ✅ configured and working.
-- **API-Football** → ⚠️ key present but wrong type; needs a **direct api-sports.io key**. Required
-  only when in-play (Tier 4) work begins, not for Tier 1.
-
-## Needed LATER
-- **Kalshi demo** (`KALSHI_ENV`, `KALSHI_API_KEY_ID`, `KALSHI_PRIVATE_KEY_PATH`) — after the
-  forecasting + paper-replay system is proven. Keep `KALSHI_ENABLE_LIVE_TRADING=false`.
-
-## Security note (unchanged)
-Keys currently live in `.env.example`, which is NOT gitignored (only `.env` is). Recommend moving
-secrets to `.env` and restoring `.env.example` to blank placeholders. These files are protected and
-are not edited by this agent.
+## Capability summary
+- **Usable now:** results/fixtures/standings (football-data.org), timestamped odds (Odds API),
+  weather (Open-Meteo), open historical datasets (already ingested).
+- **Not usable now:** confirmed lineups / injuries / event timelines (blocked on API-Football key or
+  a licensed event feed).
+- **Exact blocker:** API-Football key authenticates under neither direct api-sports.io nor RapidAPI.
+  Needs a valid direct dashboard key (adapter works unchanged) or a subscribed RapidAPI key + an
+  approved one-line adapter change. Not on B1's critical path. Full detail in `BLOCKERS.md`.

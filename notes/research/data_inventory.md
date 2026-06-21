@@ -139,3 +139,37 @@ seed anchors and is verified by the builder/tests in the next phase.
 | jfjelstul tournaments | meta | meta | meta | ❌ | ❌ |
 | seed 2026 matches | ❌ | ❌ | ❌ | structure anchor | demo |
 | seed ratings/odds | ❌ | ❌ | ❌ | ❌ | demo only |
+
+---
+
+## 10. Autoresearch refresh (2026-06-21) — processed-table census
+
+Measured directly this session. `research_modeling_table.csv` = **369 rows × 66 cols, 0 duplicate
+`match_id`**, WC group coverage 1998–2026 (48/yr for 1998–2022; **33 for 2026** = MD1 + early MD2).
+
+| processed dataset | rows | role |
+|---|---|---|
+| `research_modeling_table.csv` | 369 | main leakage-safe modeling table (train/validate/locked) |
+| `elo_history.csv` | 49,438 | internal time-safe Elo (strict `<kickoff`) |
+| `fifa_rankings.csv` | 67,883 | release-dated FIFA points/rank (B2 feature) |
+| `results_2026_footballdata.csv` | 72 | authoritative 2026 results (33 finished) |
+| `market_features_2026.csv` | 39 | no-vig consensus, upcoming MD2/MD3 (shadow) |
+| `market_features_2022.csv` | 48 | no-vig consensus, 2022 gate (only backtestable odds fold) |
+| `intl_market_dataset.csv` / `_sharp.csv` | 341 / 336 | auxiliary intl matches+odds 2020–2026 (off-WC validation) |
+| `forecast_targets_2026.csv` / `forecast_ledger.csv` | 39 / 39 | upcoming MD2/MD3 targets + frozen shadow ledger |
+| `squad_features_tm.csv` | 128 | Transfermarkt squad values (orthogonal strength proxy) |
+| `groups_2026.csv` | 12 | official 12-group structure |
+
+**Raw:** martj42 results (3.7 MB), jfjelstul matches/tournaments, football-data 2026 JSON, FIFA
+(dato), Transfermarkt duckdb (206 MB). Hashes in `data/processed/source_provenance.json`.
+
+**Duplicate / mismatch / leakage checks (this session):** research table has 0 duplicate match_id;
+team names canonicalized across sources (`wcdrawlab.ingest.canonical_team_name`); leakage guards
+enforced by `runner.leakage_safe_feature_frame` (drops goals/outcome/post-match/closing-odds) +
+`tests/test_research_leakage.py`. **No pre-2020 odds** (Odds API history starts 2020-06) → only the
+2022 fold is market-backtestable; the market/proxy feature columns are **inert (zero) in historical
+folds**, confirmed by the sweep (full≡lean).
+
+**Usability:** table is usable for training/validation (1998–2018), release gate (2022), locked
+transfer (2026-MD1), and live prequential (remaining 2026). Live runtime results come from
+football-data.org (authoritative); martj42 lags ~2 days so is not the live source.

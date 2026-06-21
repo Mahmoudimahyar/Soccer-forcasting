@@ -1,0 +1,51 @@
+# RESEARCH-ONLY selection config (does NOT alter the frozen configs/research.yaml).
+# Dev folds only (2010/2014/2018) for candidate selection, so 2022 (gate) and 2026-MD1 (locked)
+# are never used to choose architecture/features/hyperparameters. Same objective + leakage guard.
+objective:
+  weights:
+    rps: 0.40
+    log_loss: 0.25
+    draw_brier: 0.20
+    draw_calibration_error: 0.15
+  promotion:
+    minimum_relative_improvement: 0.002
+    no_fold_regression_tolerance: 0.001
+    require_all_holdouts: true
+
+folds:
+  - name: dev_world_cup_2010
+    train_before_year: 2010
+    test_year: 2010
+    stage: group
+  - name: dev_world_cup_2014
+    train_before_year: 2014
+    test_year: 2014
+    stage: group
+  - name: dev_world_cup_2018
+    train_before_year: 2018
+    test_year: 2018
+    stage: group
+
+leakage_guard:
+  forbidden_columns:
+    - goals_a
+    - goals_b
+    - outcome
+    - is_draw
+    - final_score
+    - post_match_xg
+    - closing_odds_after_kickoff
+    - result
+  allowed_prefixes:
+    - p_
+    - elo_
+    - fifa_
+    - market_
+    - prior_
+    - schedule_
+    - travel_
+    - low_block_
+    - matchday
+    - confed_
+    - team_
+    - venue_
