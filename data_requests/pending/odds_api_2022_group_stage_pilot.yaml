@@ -1,0 +1,65 @@
+# Pilot request: historical pre-kickoff 1X2 odds for the 2022 World Cup group stage.
+# PLAN ONLY — no Odds API credits are spent until the user explicitly approves this request.
+source_id: odds_api_2022_group_stage_pilot
+status: needs_user_approval  # draft | needs_user_approval | approved | rejected
+requested_by: claude_code
+purpose: >
+  Backfill ONE pre-kickoff no-vig 1X2 snapshot per 2022 WC group match to enable a paired-bootstrap
+  market-vs-B1 test on a real World-Cup fold. 2022 is the only WC fold with obtainable odds (Odds
+  API history starts 2020-06; 2018 and earlier are unavailable).
+
+# --- precise, minimal scope (pilot 1) ---
+scope:
+  competition: "2022 FIFA World Cup, group stage only (48 matches)"
+  market: "h2h ONLY"           # no totals, no spreads, no props
+  regions: "us ONLY"           # single region
+  snapshot_per_match: 1        # one snapshot per match
+  snapshot_target: "60-90 minutes before each kickoff (closest available historical snapshot)"
+  odds_format: "decimal"
+  date_format: "iso"
+  endpoint: "GET /v4/historical/sports/soccer_fifa_world_cup/odds"
+
+# --- credit budget (HARD CAP enforced) ---
+cost_model:
+  live_request_cost_formula: "credits = markets x regions = 1 x 1 = 1 (live)"
+  historical_multiplier: 10     # The Odds API charges historical requests at 10x the live cost
+  cost_per_snapshot_credits: 10 # 1 (h2h x us) x 10 (historical)
+  expected_snapshot_requests: 48
+  expected_event_discovery_requests: "~6 (one historical events listing per match-day window)"
+  expected_total_credits: 480           # 48 x 10
+  discovery_overhead_credits_est: 60    # generous buffer for events listing / retries
+  HARD_CAP_credits: 600                 # abort if projected spend would exceed this
+  current_quota_remaining: "~13,100 (ample headroom)"
+
+# --- execution guardrails (only after approval) ---
+execution:
+  dry_run_first: true   # print planned request URLs + projected credit total; confirm <= 600
+  abort_if_projected_over_cap: true
+  one_snapshot_only: true
+  store: "append-only raw store (wcdrawlab.ingestion.raw_store), schema N (pre_match_odds_snapshots)"
+  leakage_rule: "snapshot_utc must be <= kickoff_utc; reject any snapshot at/after kickoff"
+  normalization: "no-vig (proportional de-margining) -> p_a/p_draw/p_b consensus across books"
+
+fallback_if_data_missing:
+  - "If the 60-90 min snapshot is unavailable for a match, take the LATEST snapshot strictly before kickoff and record the actual offset."
+  - "If no pre-kickoff snapshot exists for a match, mark it MISSING (do not substitute a post-kickoff price); report coverage count."
+  - "If projected credits would exceed 600, abort and report; do not partially spend beyond the cap."
+
+historical_coverage: "2022 WC group stage (Nov 2022); within Odds API history (>= 2020-06)."
+live_latency: "n/a (historical backfill)"
+account_required: false   # uses existing ODDS_API_KEY (already configured + working)
+estimated_cost: "<= 600 credits (target 480); free of new account"
+terms_url: "https://the-odds-api.com/liveapi/guides/v4/#get-historical-odds"
+robots_checked: not_applicable
+rate_limit: "well within remaining quota"
+quality_risks:
+  - "Snapshot timing varies by match; record actual pre-kickoff offset per match."
+  - "Book coverage for 2022 may vary; no-vig consensus computed from whatever books are present."
+leakage_risk: "Controlled: only snapshots strictly before kickoff are accepted into pre_match schema N."
+test_plan:
+  - "Unit test: no-vig normalization sums to 1 and removes margin (sanitized fixture)."
+  - "Leakage test: any snapshot_utc >= kickoff_utc is rejected."
+  - "After backfill: paired bootstrap market-anchored candidate vs B1 on the 2022 fold."
+user_action_required:
+  - "APPROVE this pilot to authorize spending up to 600 Odds API historical credits (target ~480)."
+  - "Until approved, NO historical odds are downloaded (per your instruction)."

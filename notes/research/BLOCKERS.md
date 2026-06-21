@@ -1,22 +1,17 @@
 # Research Blockers
 
-## B-1: API-Football key not authenticated (lineups / events / injuries unavailable)
-- **Status:** OPEN. Account-dependent; needs your action.
-- **Evidence (live-tested both auth modes, 2026-06-21, no secret exposed):**
-  - Direct `v3.football.api-sports.io` + `x-apisports-key` → HTTP 200 with an `errors` token object
-    (key not valid for direct dashboard auth).
-  - RapidAPI `api-football-v1.p.rapidapi.com` + `x-rapidapi-key`/`x-rapidapi-host` → 4xx (not a
-    valid/subscribed RapidAPI key for this API).
-- **Impact:** no confirmed lineups, injuries/suspensions, or event timelines → research priorities
-  #2/#3/#9 and the in-play model's live event inputs are blocked. **Not on B1's critical path**
-  (results/standings come from football-data.org; odds from The Odds API).
-- **Exact action needed from you (either one):**
-  1. Provide a **direct api-sports.io dashboard key** (https://dashboard.api-football.com) — the
-     existing adapter works unchanged; or
-  2. Provide a **RapidAPI key with an active API-Football subscription** AND approve a one-line
-     host/header change to `src/wcdrawlab/providers/api_football.py` (currently protected).
-- **Workaround in use:** continue with football-data.org + The Odds API + Open-Meteo + open
-  historical datasets. Request on file: `data_requests/pending/api_football.yaml` (status: blocked).
+## B-1: API-Football — AUTH RESOLVED 2026-06-21 (coverage caveat remains)
+- **Status:** **AUTH RESOLVED.** The key now authenticates on the direct host (HTTP 200,
+  `errors:[]`, valid Free plan, 100 req/day). It is a 32-char hex **direct API-Sports** key — the
+  earlier rejection no longer reproduces (key was corrected). Full detail:
+  `notes/research/api_football_diagnostic.md`. **No auth action needed.**
+- **Remaining caveat (coverage, not auth):** the **Free** plan is limited (older seasons / subset of
+  leagues, 100/day) and may **not** cover the live 2026 World Cup. One low-cost `GET /fixtures?
+  league=<WC>&season=2026` check is needed to confirm 2026 coverage (not run — only one diagnostic
+  request was authorized).
+- **Impact if free tier lacks 2026:** confirmed lineups/injuries/events for 2026 would need a paid
+  tier or another licensed feed. **Not on B1's critical path** (results/standings via football-data.org).
+- **Next action:** run the single coverage check; if 2026 is excluded, decide on a paid tier.
 
 ## B-2: No pre-2020 historical odds (market model only validatable on 2022)
 - **Status:** OPEN (data limitation, not an account error). The Odds API historical coverage starts
