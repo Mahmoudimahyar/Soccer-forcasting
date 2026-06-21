@@ -1,0 +1,370 @@
+# Canonical live-data contracts (Data Enrichment Gate 1, section 2).
+#
+# Defines (a) the append-only RAW provenance envelope required on EVERY ingested record, and
+# (b) normalized schemas A-Q. No live feed flows from these yet; this fixes the contract so that
+# any future ingestion is point-in-time reproducible, leakage-safe, and reconcilable.
+#
+# Companion prose: docs/LIVE_DATA_CONTRACTS.md. Reconciliation: docs/EVENT_RECONCILIATION_POLICY.md.
+# Extends the Tier-1 schemas/events.yaml (kept) with a fuller envelope + per-domain tables.
+schema_version: "1.0"
+
+# ---------------------------------------------------------------------------------------------
+# RAW provenance envelope — required on every raw record (append-only, immutable once written).
+# ---------------------------------------------------------------------------------------------
+raw_provenance_envelope:
+  source_name:            {type: string,    required: true,  note: "canonical source id, e.g. the_odds_api"}
+  provider_endpoint:      {type: string,    required: true,  note: "logical endpoint, e.g. /v4/.../odds"}
+  retrieval_timestamp_utc: {type: timestamp, required: true,  note: "when WE fetched it (ingest clock)"}
+  event_timestamp_utc:    {type: timestamp, required: false, note: "real-world clock time of the event, if supplied"}
+  published_timestamp_utc: {type: timestamp, required: false, note: "when the source published/observed it, if supplied"}
+  match_id:               {type: string,    required: true,  note: "OUR canonical match id (schema A)"}
+  provider_match_id:      {type: string,    required: false, note: "provider's native match/fixture id"}
+  provider_event_id:      {type: string,    required: false, note: "provider's native event id (for event rows)"}
+  source_url_or_endpoint: {type: string,    required: true}
+  raw_payload_hash:       {type: string,    required: true,  note: "sha256 of the exact raw bytes"}
+  schema_version:         {type: string,    required: true}
+  ingestion_run_id:       {type: string,    required: true,  note: "uuid grouping one ingestion run"}
+  quality_status:         {type: enum, values: [ok, partial, suspect, conflict], required: true}
+  reconciliation_status:  {type: enum, values: [single_source, reconciled, unresolved, superseded], required: true,
+                           default: single_source}
+
+# Decision-time rule reused by every in-play-eligible schema below.
+decision_time_rule: >
+  A record is eligible for a prediction made at decision_timestamp_utc ONLY IF its
+  effective_known_time <= decision_timestamp_utc, where effective_known_time =
+  coalesce(published_timestamp_utc, event_timestamp_utc, retrieval_timestamp_utc). Post-match
+  aggregates may never inform a prediction about the same match.
+
+usability_values: [pre_match, in_play, post_match, never]
+
+# ---------------------------------------------------------------------------------------------
+# NORMALIZED SCHEMAS A-Q. Each normalized row also stores raw_payload_hash (link to its raw row).
+# ---------------------------------------------------------------------------------------------
+normalized_schemas:
+
+  A_fixtures_match_identity:
+    primary_key: [match_id]
+    timestamp_semantics: "kickoff_utc is the scheduled/actual kickoff; identity is immutable once a match is mapped."
+    source_priority: [official_feed, football_data_org, api_football, open_dataset]
+    missingness_behavior: "match_id is mandatory; a fixture without a confirmed kickoff_utc is quality_status=partial and not usable for time-gated features."
+    feature_eligibility_rule: "Identity/venue/neutral are static and pre_match eligible. goals_* are post_match only."
+    usability: pre_match
+    leakage_risks: "Final goals_a/goals_b must never feed a pre-match or same-match in-play prediction."
+    conflict_handling: "Identity conflicts (different teams/kickoff for same match_id) => reconciliation_status=unresolved; never auto-merge."
+    fields:
+      match_id: {type: string, required: true}
+      provider_match_id: {type: string}
+      kickoff_utc: {type: timestamp, required: true}
+      tournament: {type: string, required: true}
+      stage: {type: string, note: "group, r32, r16, qf, sf, final"}
+      group: {type: string}
+      matchday: {type: int}
+      team_a: {type: string, required: true}
+      team_b: {type: string, required: true}
+      venue: {type: string}
+      venue_lat: {type: float}
+      venue_lon: {type: float}
+      neutral: {type: bool, default: true}
+      goals_a: {type: int, note: "post_match only"}
+      goals_b: {type: int, note: "post_match only"}
+      status: {type: enum, values: [scheduled, live, finished, suspended, cancelled]}
+
+  B_lineups_benches:
+    primary_key: [match_id, team_id, player_id, role]
+    timestamp_semantics: "lineup_published_utc = official lineup release (~60 min pre-kickoff). Use published time for gating."
+    source_priority: [official_feed, api_football, secondary_provider]
+    missingness_behavior: "If no confirmed lineup before decision_timestamp, lineup features are absent (do NOT impute a probable XI as confirmed)."
+    feature_eligibility_rule: "Eligible pre_match only AFTER lineup_published_utc <= decision_timestamp; before release, treat as unknown."
+    usability: pre_match
+    leakage_risks: "Do not backfill the actual XI to a decision made before the official release time."
+    conflict_handling: "Provider XI disagreements => keep both raw; canonical XI from highest-priority source; flag feed_disagreement."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      player_id: {type: string, required: true}
+      player_name: {type: string}
+      role: {type: enum, values: [starter, bench], required: true}
+      position: {type: string, note: "GK/DF/MF/FW or detailed"}
+      shirt_number: {type: int}
+      formation: {type: string, note: "team formation string, e.g. 4-3-3"}
+      lineup_published_utc: {type: timestamp, required: true}
+
+  C_substitutions:
+    primary_key: [match_id, team_id, player_off_id, player_on_id, minute]
+    timestamp_semantics: "event_timestamp_utc = when the sub occurred; minute is match clock."
+    source_priority: [official_feed, api_football, secondary_provider]
+    missingness_behavior: "Missing subs degrade on_pitch counts; mark state_snapshot.data_completeness < 1."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp."
+    usability: in_play
+    leakage_risks: "A future sub must not inform an earlier-minute decision."
+    conflict_handling: "Critical event: reconcile (see policy). Disagreement => reconciliation_status=unresolved, excluded from approved in-play features."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      player_off_id: {type: string}
+      player_on_id: {type: string}
+      minute: {type: int}
+      stoppage_minute: {type: int, default: 0}
+      event_timestamp_utc: {type: timestamp}
+
+  D_goals:
+    primary_key: [match_id, team_id, minute, sequence]
+    timestamp_semantics: "event_timestamp_utc = goal time; minute is match clock; sequence disambiguates same-minute goals."
+    source_priority: [official_feed, api_football, football_data_org, secondary_provider]
+    missingness_behavior: "A missing goal corrupts score state -> data_completeness < 1; in-play model must degrade/abstain."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp."
+    usability: in_play
+    leakage_risks: "Full-time score / later goals must never inform an earlier in-play decision; never inform pre-match."
+    conflict_handling: "Critical event: reconcile by provider ids else (team, minute±tolerance, scorer). Disagreement => unresolved."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      scorer_player_id: {type: string}
+      assist_player_id: {type: string}
+      minute: {type: int}
+      stoppage_minute: {type: int, default: 0}
+      sequence: {type: int, default: 0}
+      goal_type: {type: enum, values: [open_play, penalty, own_goal, free_kick, header]}
+      event_timestamp_utc: {type: timestamp}
+
+  E_yellow_cards:
+    primary_key: [match_id, player_id, minute, sequence]
+    timestamp_semantics: "event_timestamp_utc = caution time; minute match clock."
+    source_priority: [official_feed, api_football, secondary_provider]
+    missingness_behavior: "Missing cautions reduce discipline-state completeness; flag partial."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp."
+    usability: in_play
+    leakage_risks: "Later cautions must not inform earlier decisions."
+    conflict_handling: "Critical event: reconcile; disagreement => unresolved (affects second-yellow inference)."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      player_id: {type: string}
+      minute: {type: int}
+      stoppage_minute: {type: int, default: 0}
+      sequence: {type: int, default: 0}
+      event_timestamp_utc: {type: timestamp}
+
+  F_second_yellows:
+    primary_key: [match_id, player_id, minute]
+    timestamp_semantics: "Second caution => dismissal; event_timestamp_utc = time of second yellow."
+    source_priority: [official_feed, api_football, secondary_provider]
+    missingness_behavior: "Must be derivable from two E_yellow rows; if only a red is reported, link via reconciliation."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp; implies a red (G)."
+    usability: in_play
+    leakage_risks: "As goals; future dismissal must not leak backward."
+    conflict_handling: "Critical: must agree with E (two yellows) and G (resulting red); else unresolved."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      player_id: {type: string}
+      minute: {type: int}
+      stoppage_minute: {type: int, default: 0}
+      first_yellow_minute: {type: int}
+      event_timestamp_utc: {type: timestamp}
+
+  G_red_cards:
+    primary_key: [match_id, player_id, minute]
+    timestamp_semantics: "event_timestamp_utc = dismissal time; covers straight red and second-yellow red."
+    source_priority: [official_feed, api_football, secondary_provider]
+    missingness_behavior: "Missing red corrupts on_pitch counts; degrade in-play state."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp; decrements on_pitch."
+    usability: in_play
+    leakage_risks: "Future red must not inform earlier decisions; never pre-match."
+    conflict_handling: "Critical: reconcile; straight-vs-second-yellow type disagreement => unresolved."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      player_id: {type: string}
+      minute: {type: int}
+      stoppage_minute: {type: int, default: 0}
+      red_type: {type: enum, values: [straight, second_yellow]}
+      event_timestamp_utc: {type: timestamp}
+
+  H_penalties:
+    primary_key: [match_id, team_id, minute, sequence]
+    timestamp_semantics: "event_timestamp_utc = award/taken time; distinguishes in-play pen vs shootout."
+    source_priority: [official_feed, api_football, secondary_provider]
+    missingness_behavior: "Missing penalty outcome affects score/xG; degrade."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp."
+    usability: in_play
+    leakage_risks: "Outcome must not leak before the event time."
+    conflict_handling: "Critical: reconcile award + outcome; disagreement => unresolved."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      taker_player_id: {type: string}
+      minute: {type: int}
+      sequence: {type: int, default: 0}
+      phase: {type: enum, values: [in_play, shootout]}
+      outcome: {type: enum, values: [scored, missed, saved, awarded_only]}
+      event_timestamp_utc: {type: timestamp}
+
+  I_shots_and_on_target:
+    primary_key: [match_id, team_id, minute, sequence]
+    timestamp_semantics: "event_timestamp_utc = shot time; xg optional if provider supplies pre-decision."
+    source_priority: [api_football, secondary_provider]
+    missingness_behavior: "Shot streams are often partial/delayed; treat as optional, never required for approved features."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp; post-match shot totals are post_match only."
+    usability: in_play
+    leakage_risks: "Post-match xG/shot totals must never inform same-match prediction; delayed shot feeds risk look-ahead if mis-timestamped."
+    conflict_handling: "Non-critical: keep highest-priority; large disagreement lowers confidence, not a hard block."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      player_id: {type: string}
+      minute: {type: int}
+      sequence: {type: int, default: 0}
+      on_target: {type: bool}
+      xg: {type: float, note: "single-shot xG if supplied"}
+      event_timestamp_utc: {type: timestamp}
+
+  J_corners:
+    primary_key: [match_id, team_id, minute, sequence]
+    timestamp_semantics: "event_timestamp_utc = corner time."
+    source_priority: [api_football, secondary_provider]
+    missingness_behavior: "Optional; missingness lowers set-piece feature completeness only."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp."
+    usability: in_play
+    leakage_risks: "Post-match corner totals are post_match only."
+    conflict_handling: "Non-critical: highest-priority wins; disagreement lowers confidence."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      minute: {type: int}
+      sequence: {type: int, default: 0}
+      event_timestamp_utc: {type: timestamp}
+
+  K_free_kicks_set_pieces:
+    primary_key: [match_id, team_id, minute, sequence]
+    timestamp_semantics: "event_timestamp_utc = set-piece time; type distinguishes free kick/throw/goal kick where supported."
+    source_priority: [api_football, secondary_provider]
+    missingness_behavior: "Often unsupported; entirely optional. Absent != zero."
+    feature_eligibility_rule: "in_play eligible at effective_known_time <= decision_timestamp."
+    usability: in_play
+    leakage_risks: "Post-match totals post_match only."
+    conflict_handling: "Non-critical."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      set_piece_type: {type: enum, values: [free_kick, throw_in, goal_kick, corner, other]}
+      minute: {type: int}
+      sequence: {type: int, default: 0}
+      event_timestamp_utc: {type: timestamp}
+
+  L_match_status_minute:
+    primary_key: [match_id, observed_at_utc]
+    timestamp_semantics: "observed_at_utc = clock-state snapshot time; minute/period are the live state at that instant."
+    source_priority: [official_feed, football_data_org, api_football]
+    missingness_behavior: "If status/minute stale beyond freshness, in-play model must abstain."
+    feature_eligibility_rule: "in_play eligible at observed_at_utc <= decision_timestamp; the freshest valid snapshot wins."
+    usability: in_play
+    leakage_risks: "A later clock state must not be attributed to an earlier decision."
+    conflict_handling: "Critical: kickoff/final-whistle/status disagreement => unresolved; minute disagreement within tolerance => take official feed."
+    fields:
+      match_id: {type: string, required: true}
+      observed_at_utc: {type: timestamp, required: true}
+      minute: {type: int}
+      stoppage_minute: {type: int, default: 0}
+      period: {type: enum, values: [pre, first_half, half_time, second_half, extra_time, penalties, full_time]}
+      status: {type: enum, values: [scheduled, live, paused, finished, suspended]}
+      kickoff_utc: {type: timestamp}
+      final_whistle_utc: {type: timestamp}
+
+  M_team_statistics:
+    primary_key: [match_id, team_id, observed_at_utc]
+    timestamp_semantics: "observed_at_utc = stat snapshot time; in-play stats are cumulative-to-that-instant."
+    source_priority: [api_football, secondary_provider]
+    missingness_behavior: "Optional; never required for approved features. Absent stats != zero."
+    feature_eligibility_rule: "in_play eligible at observed_at_utc <= decision_timestamp; FULL-MATCH stats are post_match only."
+    usability: in_play
+    leakage_risks: "Final/full-match team stats must never inform same-match prediction."
+    conflict_handling: "Non-critical: highest-priority; disagreement lowers confidence."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      observed_at_utc: {type: timestamp, required: true}
+      possession_pct: {type: float}
+      shots: {type: int}
+      shots_on_target: {type: int}
+      corners: {type: int}
+      fouls: {type: int}
+      passes: {type: int}
+      pass_accuracy_pct: {type: float}
+      xg_cumulative: {type: float}
+
+  N_pre_match_odds_snapshots:
+    primary_key: [match_id, bookmaker, market, snapshot_utc]
+    timestamp_semantics: "snapshot_utc = time the odds were observed; MUST be <= kickoff_utc for pre-match use."
+    source_priority: [the_odds_api, secondary_provider]
+    missingness_behavior: "If no snapshot before kickoff, market feature absent for that match (B6 unavailable)."
+    feature_eligibility_rule: "pre_match eligible only when snapshot_utc <= kickoff_utc (and <= decision_timestamp). Closing line = last snapshot <= kickoff."
+    usability: pre_match
+    leakage_risks: "Never use a post-kickoff odds snapshot as a pre-match feature. Historical odds start 2020-06 (no pre-2020)."
+    conflict_handling: "Multiple books retained; no-vig consensus computed downstream; keep every book's raw row."
+    fields:
+      match_id: {type: string, required: true}
+      bookmaker: {type: string, required: true}
+      market: {type: enum, values: [h2h, totals, spreads], default: h2h}
+      snapshot_utc: {type: timestamp, required: true}
+      price_home: {type: float}
+      price_draw: {type: float}
+      price_away: {type: float}
+      odds_format: {type: enum, values: [decimal], default: decimal}
+
+  O_in_play_odds_snapshots:
+    primary_key: [match_id, bookmaker, market, snapshot_utc]
+    timestamp_semantics: "snapshot_utc = observation time during the match; the live price at that instant."
+    source_priority: [the_odds_api, secondary_provider]
+    missingness_behavior: "Sparse/suspended markets common; absence != information. Use only fresh snapshots."
+    feature_eligibility_rule: "in_play eligible at snapshot_utc <= decision_timestamp; respect freshness window."
+    usability: in_play
+    leakage_risks: "A later live price must not inform an earlier decision; suspended-market prices are stale."
+    conflict_handling: "Retain all books; reconciliation not required (prices, not events) but flag wide cross-book disagreement."
+    fields:
+      match_id: {type: string, required: true}
+      bookmaker: {type: string, required: true}
+      market: {type: enum, values: [h2h, totals, spreads], default: h2h}
+      snapshot_utc: {type: timestamp, required: true}
+      price_home: {type: float}
+      price_draw: {type: float}
+      price_away: {type: float}
+      market_status: {type: enum, values: [open, suspended, closed]}
+
+  P_weather_venue_conditions:
+    primary_key: [match_id, forecast_or_obs_time_utc, source_name]
+    timestamp_semantics: "issued_at_utc = when forecast was issued; valid_time_utc = the hour it describes. Pre-match uses forecast issued <= decision."
+    source_priority: [open_meteo, secondary_provider]
+    missingness_behavior: "Optional; absence drops weather features only (low priority)."
+    feature_eligibility_rule: "pre_match eligible when the forecast was ISSUED at issued_at_utc <= decision_timestamp (forecasts are inherently pre-match)."
+    usability: pre_match
+    leakage_risks: "Use forecast-as-of-decision, NOT post-match observed weather (observed is post_match)."
+    conflict_handling: "Non-critical: highest-priority source; keep raw."
+    fields:
+      match_id: {type: string, required: true}
+      issued_at_utc: {type: timestamp}
+      valid_time_utc: {type: timestamp}
+      temperature_c: {type: float}
+      apparent_temperature_c: {type: float}
+      humidity_pct: {type: float}
+      precipitation_mm: {type: float}
+      wind_speed_kmh: {type: float}
+      altitude_m: {type: float}
+      kind: {type: enum, values: [forecast, observed]}
+
+  Q_player_availability_injuries_suspensions:
+    primary_key: [match_id, player_id, status_published_utc]
+    timestamp_semantics: "status_published_utc = when the availability/injury/suspension was announced."
+    source_priority: [official_feed, api_football, approved_announcement]
+    missingness_behavior: "Absent availability != available; mark unknown. Suspensions are deterministic from card accumulation (cross-check)."
+    feature_eligibility_rule: "pre_match eligible when status_published_utc <= decision_timestamp; unconfirmed rumors are NEVER auto-ingested."
+    usability: pre_match
+    leakage_risks: "Do not backfill a later-confirmed injury to an earlier decision; rumor != fact."
+    conflict_handling: "Reconcile against official source; rumor/secondary disagreement => unresolved, excluded from approved features."
+    fields:
+      match_id: {type: string, required: true}
+      team_id: {type: string, required: true}
+      player_id: {type: string, required: true}
+      availability: {type: enum, values: [available, doubtful, out_injured, suspended, unknown]}
+      reason: {type: string}
+      status_published_utc: {type: timestamp, required: true}

@@ -1,0 +1,29 @@
+# Referee assignment + discipline history (cards-per-game tendencies).
+source_id: referee_history
+status: draft  # source not yet identified; needs user direction + approval
+requested_by: claude_code
+purpose: >
+  Match referee identity + historical discipline tendencies (cards/penalties per game) to inform
+  card/red-card and discipline models, and as a minor pre-match adjustment.
+fields_requested:
+  - referee_name
+  - referee_id
+  - historical_cards_per_game
+  - historical_penalties_per_game
+prediction_use: "Card/red-card models (Tier 5); minor pre-match discipline prior."
+historical_coverage: "Depends on chosen source (Transfermarkt referee pages / official appointments)."
+live_latency: "referee announced pre-match (official appointment)."
+account_required: true
+estimated_cost: "unknown (source not yet selected)"
+terms_url: "TBD once a compliant source is selected"
+robots_checked: required_before_any_fetch
+rate_limit: "unknown"
+quality_risks:
+  - "Referee tendencies are noisy/low-N; confounded with team style and competition."
+leakage_risk: "Use only the appointed referee + history dated before kickoff."
+implementation_plan:
+  - "Identify a terms-compliant source first; NO scraping until approved"
+  - "Raw snapshot + normalized referee schema; point-in-time gating"
+  - "Tests with sanitized fixtures"
+user_action_required:
+  - "Select/approve a specific compliant referee-data source; low priority (rank 8)."

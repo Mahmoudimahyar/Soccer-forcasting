@@ -1,0 +1,28 @@
+# Formal request for the (keyless) Open-Meteo source already used for venue features.
+source_id: open_meteo
+status: draft  # draft | needs_user_account | approved | rejected
+requested_by: claude_code
+purpose: "Venue weather (temp, apparent temp, humidity, precip, wind) as pre-match condition features."
+fields_requested:
+  - temperature_2m
+  - apparent_temperature
+  - relative_humidity_2m
+  - precipitation
+  - wind_speed_10m
+prediction_use: "Schema P (weather_venue_conditions); low-priority pre-match feature; future xG/heat models."
+historical_coverage: "Archive API (archive-api.open-meteo.com) for past dates; forecast horizon 16 days."
+live_latency: "forecast refresh hourly; used pre-match only (forecast issued <= decision)."
+account_required: false
+estimated_cost: "free (keyless, non-commercial fair use)"
+terms_url: "https://open-meteo.com/en/terms"
+robots_checked: not_applicable
+rate_limit: "fair-use; ~10k/day free"
+quality_risks:
+  - "Forecast revisions; must store issued_at_utc and use forecast-as-of-decision, not observed."
+leakage_risk: "Use only forecasts ISSUED before the decision timestamp; never post-match observed weather."
+implementation_plan:
+  - "Adapter exists: src/wcdrawlab/providers/open_meteo.py (read-only)"
+  - "Raw snapshot via wcdrawlab.ingestion.raw_store; normalized schema P"
+  - "Tests with sanitized fixtures"
+user_action_required:
+  - "Approve as a low-priority supplemental source (no account needed)."

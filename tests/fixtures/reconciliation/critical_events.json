@@ -1,0 +1,18 @@
+{
+  "_note": "Sanitized synthetic fixtures only. Fake match/team/player ids. No real API payloads, no secrets.",
+  "candidates": [
+    {"source_name": "official_feed",     "match_id": "MX1", "event_type": "goal", "team_id": "TA", "minute": 23, "player_id": "p9",  "provider_event_id": "off-1"},
+    {"source_name": "football_data_org", "match_id": "MX1", "event_type": "goal", "team_id": "TA", "minute": 24, "player_id": "p9",  "provider_event_id": "fd-7"},
+
+    {"source_name": "official_feed",     "match_id": "MX1", "event_type": "goal", "team_id": "TB", "minute": 55, "player_id": "p14", "provider_event_id": "off-2"},
+    {"source_name": "api_football",      "match_id": "MX1", "event_type": "goal", "team_id": "TB", "minute": 55, "player_id": "p17", "provider_event_id": "af-3"},
+
+    {"source_name": "api_football",      "match_id": "MX1", "event_type": "substitution", "team_id": "TA", "minute": 70, "attrs": {"player_off_id": "p9", "player_on_id": "p22"}},
+
+    {"source_name": "official_feed",     "match_id": "MX1", "event_type": "red_card", "team_id": "TB", "minute": 80, "player_id": "p18", "attrs": {"red_type": "straight"}},
+    {"source_name": "football_data_org", "match_id": "MX1", "event_type": "red_card", "team_id": "TB", "minute": 81, "player_id": "p18", "attrs": {"red_type": "straight"}},
+
+    {"source_name": "official_feed",     "match_id": "MX1", "event_type": "kickoff", "team_id": "NA", "minute": 0, "attrs": {"kickoff_utc": "2026-06-21T18:00:00Z"}},
+    {"source_name": "secondary_provider","match_id": "MX1", "event_type": "kickoff", "team_id": "NA", "minute": 0, "attrs": {"kickoff_utc": "2026-06-21T18:05:00Z"}}
+  ]
+}

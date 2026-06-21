@@ -1,0 +1,28 @@
+# StatsBomb Open Data — free historical event-level data (incl. some World Cups).
+source_id: statsbomb_open_data
+status: needs_user_account  # draft | needs_user_account | approved | rejected ; here: needs license sign-off
+requested_by: claude_code
+purpose: >
+  Historical event-level data (shots+xG, passes, goals, cards, lineups) for past tournaments to
+  build/validate event-timeline and xG features OFFLINE before any live event feed exists.
+fields_requested:
+  - events (shots, xg, passes, goals, cards, subs)
+  - lineups
+  - matches/competitions
+prediction_use: "Schemas B,C,D,E,G,H,I (historical only); xG model R&D; in-play model training data."
+historical_coverage: "Selected competitions incl. some men's/women's World Cups (varies by release)."
+live_latency: "none (historical dump via GitHub repo, no live feed)."
+account_required: false
+estimated_cost: "free"
+terms_url: "https://github.com/statsbomb/open-data (StatsBomb non-commercial user agreement)"
+robots_checked: not_applicable
+rate_limit: "n/a (static repo download)"
+quality_risks:
+  - "Coverage gaps across tournaments; schema versioning; non-commercial license limits use."
+leakage_risk: "Historical/post-match data: usable ONLY for other-match history / model training, never to predict the same match in-play."
+implementation_plan:
+  - "New read-only loader (no scraping; direct file download)"
+  - "Raw snapshot + normalized schemas (historical); content hashes in source_provenance"
+  - "Tests with a tiny sanitized fixture"
+user_action_required:
+  - "Confirm the StatsBomb non-commercial user agreement is acceptable for this research project."

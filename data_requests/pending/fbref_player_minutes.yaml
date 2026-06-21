@@ -1,0 +1,30 @@
+# FBref / club-level player minutes, form, fatigue, role (player-state features).
+source_id: fbref_player_minutes
+status: needs_user_account  # requires approval + robots/terms review before any fetch
+requested_by: claude_code
+purpose: >
+  Per-player club minutes, recent form, fixture congestion / fatigue, and role to build a
+  player-state feature set for squad-availability and (later) player/event models.
+fields_requested:
+  - player_minutes_by_match
+  - starts_subs
+  - recent_form_window
+  - position_role
+prediction_use: "Player-state features (Tier 5); squad-availability adjustments to team strength."
+historical_coverage: "Multiple seasons of club competitions."
+live_latency: "post-matchday updates (not in-play)."
+account_required: true
+estimated_cost: "free data, but access via scraping or a licensed mirror; license review required"
+terms_url: "https://www.sports-reference.com/termsofuse.html"
+robots_checked: required_before_any_fetch
+rate_limit: "strict; aggressive crawling prohibited by terms"
+quality_risks:
+  - "Terms restrict bulk scraping; name/id mapping to national-team players is noisy; selection bias."
+leakage_risk: "Use only club data dated before the WC match decision timestamp; no post-cutoff form."
+implementation_plan:
+  - "NO scraping until explicitly approved. Prefer a licensed/open mirror or the soccerdata library under its terms."
+  - "Raw snapshot + normalized player-state schema; strict point-in-time gating"
+  - "Tests with sanitized fixtures"
+user_action_required:
+  - "Approve a specific, terms-compliant access method (licensed mirror or approved library) before any fetch."
+  - "Confirm robots.txt/terms review; this source is NOT fetched until then."
