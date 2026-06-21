@@ -97,6 +97,7 @@ def intent_from_position_decision(
     event_key: str,
     book_side_for_buy: str,
     book_side_for_reduce: str,
+    model_id: str | None = None,
 ) -> TradeIntent | None:
     if decision.action == "hold" or decision.delta_contracts == 0:
         return None
@@ -117,6 +118,7 @@ def intent_from_position_decision(
             model_version=model_version,
             rationale=decision.reason,
             event_key=event_key,
+            model_id=model_id,
         )
     if quote.yes_bid_cents is None:
         return None
@@ -133,4 +135,5 @@ def intent_from_position_decision(
         model_version=model_version,
         rationale=decision.reason,
         event_key=event_key,
+        model_id=model_id,
     )

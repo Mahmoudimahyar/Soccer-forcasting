@@ -54,6 +54,12 @@ decision_timestamp, source_manifest_id, feature_schema_version, commit_hash`.
   `approved_forecast` raises rather than substituting a shadow model.
 - Decision / paper-trade / risk / Kalshi paths must call `require_decision_model(envelope)`, which
   raises `ShadowDecisionError` for any non-approved prediction.
+- The actual paper-trade risk gate is **registry-bound**: `TradeIntent` carries a `model_id`, and
+  `RiskGate.evaluate` (`src/wcdrawlab/trading/risk.py`) rejects the intent whenever that `model_id`
+  is not the approved runtime model (`is_approved`). A shadow model (V8 / market blend) therefore
+  **cannot produce a paper/demo/live decision**, in addition to the pre-existing
+  `approved_model_versions` check. (No risk caps, live-trading settings, provider credentials, or
+  scraping policy were changed; trading stays in paper mode.)
 - The envelope's `prediction_mode` is **derived from the registry**, so it is **impossible to label
   a V8 or market-blend forecast as approved**; `label_shadow()` refuses the approved id.
 

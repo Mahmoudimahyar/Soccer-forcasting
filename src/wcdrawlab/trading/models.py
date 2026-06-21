@@ -43,6 +43,10 @@ class TradeIntent:
     rationale: str
     event_key: str
     client_order_id: str = field(default_factory=lambda: str(uuid.uuid4()))
+    # Governance: the registry model id that produced this prediction. When set, the risk gate
+    # requires it to be the approved runtime model (shadow models are rejected). None = legacy
+    # intent (falls back to the model_version approval check only).
+    model_id: str | None = None
 
     @property
     def edge_after_uncertainty(self) -> float:

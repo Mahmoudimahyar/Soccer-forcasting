@@ -111,3 +111,44 @@ def test_fail_closed_when_approved_model_inputs_missing():
     bad = _matches().drop(columns=["elo_delta"])
     with pytest.raises(RuntimeError):
         approved_forecast(bad)
+
+
+# --- paper-decision (risk gate) is registry-bound: shadow models cannot produce a trade decision ---
+from datetime import datetime, timezone  # noqa: E402
+
+from wcdrawlab.trading.models import MarketQuote, TradeIntent  # noqa: E402
+from wcdrawlab.trading.risk import PortfolioRiskState, RiskGate, TradingPolicy  # noqa: E402
+
+
+def _intent(model_id):
+    now = datetime.now(timezone.utc)
+    return TradeIntent(
+        market_ticker="TEST-MKT", book_side="bid", limit_price_cents=45, contracts=2,
+        model_probability=0.56, model_probability_lower=0.53, market_probability=0.45,
+        prediction_created_at_utc=now, market_observed_at_utc=now,
+        model_version="approved-v1", rationale="test", event_key="ev", model_id=model_id,
+    )
+
+
+def _approve_everything_but_model():
+    # state/policy that pass every OTHER gate so we isolate the model-identity check
+    now = datetime.now(timezone.utc)
+    quote = MarketQuote("TEST-MKT", yes_bid_cents=44, yes_ask_cents=46, observed_at_utc=now)
+    state = PortfolioRiskState(approved_model_versions=frozenset({"approved-v1"}))
+    return quote, state, now
+
+
+def test_paper_decision_rejects_shadow_model_id():
+    quote, state, now = _approve_everything_but_model()
+    dec = RiskGate(TradingPolicy()).evaluate(_intent(V8), quote, state, now=now, confidence_score=0.7)
+    assert not dec.approved
+    assert "model is shadow/experimental: not approved for runtime decisions" in dec.reasons
+    # market blend too
+    dec2 = RiskGate(TradingPolicy()).evaluate(_intent(MKT), quote, state, now=now, confidence_score=0.7)
+    assert not dec2.approved
+
+
+def test_paper_decision_accepts_approved_model_id():
+    quote, state, now = _approve_everything_but_model()
+    dec = RiskGate(TradingPolicy()).evaluate(_intent("B1_ELO"), quote, state, now=now, confidence_score=0.7)
+    assert dec.approved, dec.reasons

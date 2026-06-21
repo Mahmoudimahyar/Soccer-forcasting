@@ -88,4 +88,10 @@ class RiskGate:
                 failures.append("market quote is stale")
         if self.policy.no_trade_if_model_version_unapproved and intent.model_version not in state.approved_model_versions:
             failures.append("model version is not approved for runtime")
+        # Registry-bound governance gate: a shadow/experimental model (e.g. V8, market blend) can
+        # never drive a paper/demo/live decision. Enforced whenever the intent carries a model_id.
+        if intent.model_id is not None:
+            from wcdrawlab.runtime import is_approved  # lazy import avoids any import-time cycle
+            if not is_approved(intent.model_id):
+                failures.append("model is shadow/experimental: not approved for runtime decisions")
         return RiskDecision(approved=not failures, reasons=tuple(failures) if failures else ("approved",))
