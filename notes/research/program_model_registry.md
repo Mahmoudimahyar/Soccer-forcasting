@@ -27,7 +27,16 @@ Single list of every model and its status. Authoritative approval source remains
 | In-play live-xG (StatsBomb) | in-play | 2-comp LOGO (WC2022+Copa2024, 68 matches): no sig W/D/L gain; cumulative xG hurts next-goal | NEGATIVE (research-only) |
 | In-play M2fit (data-fitted goal-rate) | in-play | base 1.35→1.14, k 0.20→0.15 from actual goals; RPS 0.1306, beats M1 dRPS −0.013 | improves M2 anchor (research-only) |
 
-## OUT-OF-SAMPLE on the LIVE 2026 World Cup (UPDATED 2026-06-22 — Pro plan)
+## NESTED CV CORRECTION (2026-06-22, sprint evaluation-reset-event-expansion)
+Proper nested leave-one-competition-out on 302 StatsBomb men's international matches (NO 2026, no
+test-peeking): inner selection picks **plain M2 (4/6 folds)** / M5 (2/6); **M2temp, M2fit, M2fit_temp,
+and all xG variants are NEVER selected**. Nested-selected outer RPS 0.1487 vs plain **M2 LOGO 0.1474**
+vs M1 0.1528; nested-vs-M1 dRPS −0.0042 CI [−0.0083,+0.0002] (ns). **M2fit_temp does NOT survive**; the
+earlier "best" was selection-on-test. **Reference in-play model = M2.** xG adds nothing (all 6
+pre-registered families ns). See `inplay_nested_evaluation.md`, `inplay_model_selection_report.md`,
+`inplay_xg_preregistered_results.md`. B1 remains the sole runtime model.
+
+## OUT-OF-SAMPLE on the LIVE 2026 World Cup (UPDATED 2026-06-22 — Pro plan; SUPERSEDED by nested CV above for model RANKING)
 Decisive test: fit on 5 pre-2026 competitions, predict 30 finished 2026 matches (held out, never tuned).
 - **In-play >> static B1: M1 vs M0 dRPS −0.0447, CI [−0.084,−0.005] → SIGNIFICANT** (RPS 0.190→0.146,
   ~24%). The in-play layer is the program's first improvement **validated out-of-sample on the actual
