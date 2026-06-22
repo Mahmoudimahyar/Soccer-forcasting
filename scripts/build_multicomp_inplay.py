@@ -34,7 +34,8 @@ def main():
     p.add_argument("--interval", type=float, default=7.0)
     p.add_argument("--key-env", default="API_FOOTBALL_KEY", help="env var holding the API-Football key")
     a = p.parse_args()
-    assert a.season in (2022, 2023, 2024), "free tier seasons 2022-2024 only"
+    # free tier is season-gated to 2022-2024; the paid Pro plan unlocks the current 2026 season too.
+    assert a.season in (2022, 2023, 2024, 2025, 2026), "supported seasons: 2022-2026"
     H = {"x-apisports-key": os.getenv(a.key_env) or ""}
     assert H["x-apisports-key"], f"{a.key_env} not set"
     cache = ROOT / f"data/raw/api_football_{a.competition_id.lower()}"; cache.mkdir(parents=True, exist_ok=True)

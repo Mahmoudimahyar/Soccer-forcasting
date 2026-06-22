@@ -23,6 +23,16 @@ Single list of every model and its status. Authoritative approval source remains
 | In-play M6 market-anchored | in-play | ≈ M2 (dRPS −0.0004, CI incl 0); beats M1 3/3 | market ≈ Elo anchor (no sig. edge); research-only |
 | In-play M2cal recalibrated | in-play | worse out-of-competition calibration | rejected |
 
+## OUT-OF-SAMPLE on the LIVE 2026 World Cup (UPDATED 2026-06-22 — Pro plan)
+Decisive test: fit on 5 pre-2026 competitions, predict 30 finished 2026 matches (held out, never tuned).
+- **In-play >> static B1: M1 vs M0 dRPS −0.0447, CI [−0.084,−0.005] → SIGNIFICANT** (RPS 0.190→0.146,
+  ~24%). The in-play layer is the program's first improvement **validated out-of-sample on the actual
+  target event**.
+- Among in-play models, differences are **not significant at n=30** (M5/M2cal/M2 vs M1 all ns).
+- Calibration (draw) on 2026: **M2cal ECE 0.057 and M5 0.059 are best; transparent M2 is worst (0.093)**
+  — recalibration/ensembling generalize better OOS than the transparent Poisson. See
+  `inplay_2026_holdout.md`. Nothing promoted; B1 remains sole runtime model.
+
 ## Shadow-candidate status (UPDATED 2026-06-21 — multi-competition unblocked on free tier)
 **M2 (remaining-time Poisson) and M6 (market-anchored) = SHADOW-CANDIDATES** (research-only, NOT
 runtime-approved). On leave-one-COMPETITION-out across **5 competitions / 5 confederations** (WC2022 +
