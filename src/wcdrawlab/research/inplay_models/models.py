@@ -163,6 +163,31 @@ _HFEATS = ["score_diff", "decision_minute", "remaining_minutes", "elo_delta_home
            "score_home", "score_away"]
 
 
+class M6_MarketInplay:
+    """Market-anchored in-play: derive PRE-MATCH supremacy from the market W/D/L (instead of Elo),
+    then apply the SAME remaining-time Poisson dynamics as M2. Falls back to Elo when market missing.
+    Tests whether market pre-match info beats Elo pre-match info in-play. Research-only."""
+    model_id = "M6_market_inplay"
+    def fit(self, train): return self
+    def predict_wld(self, df):
+        out = np.zeros((len(df), 3))
+        for i, (_, row) in enumerate(df.reset_index(drop=True).iterrows()):
+            ph, pa = row.get("p_home_market"), row.get("p_away_market")
+            if pd.notna(ph) and pd.notna(pa) and (ph + pa) > 0:
+                p2 = float(ph) / (float(ph) + float(pa))  # 2-way home share
+                p2 = min(max(p2, 1e-4), 1 - 1e-4)
+                delta = 400.0 * np.log10(p2 / (1 - p2))   # market-implied elo_delta (home)
+            else:
+                delta = float(row["elo_delta_home"])      # fall back to Elo
+            lh, la = pregame_lambdas(delta)
+            st = InPlayState(minute=float(row["decision_minute"]), goals_a=int(row["score_home"]),
+                             goals_b=int(row["score_away"]), red_cards_a=int(row["red_home"]),
+                             red_cards_b=int(row["red_away"]))
+            p = update_inplay_probabilities(lh, la, st)
+            out[i] = [p.p_a_win, p.p_draw, p.p_b_win]
+        return normalize_probs(out)
+
+
 class M3_GoalHazard:
     """P(any goal in next 5 minutes). Native target: goal_within_5."""
     model_id = "M3_goal_hazard"

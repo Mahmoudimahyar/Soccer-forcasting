@@ -60,10 +60,13 @@ def main():
     print(f"  fetched {fetched} new event files (cached total: {len(list(cache.glob('events_*.json')))})")
 
     elo = pd.read_csv(ROOT / "data/processed/elo_history.csv")
-    df = build_state_for_competition(cache, a.competition_id, elo)
+    mkt_path = ROOT / "data/processed/intl_market_sharp.csv"
+    market = pd.read_csv(mkt_path) if mkt_path.exists() else None
+    df = build_state_for_competition(cache, a.competition_id, elo, market_df=market)
     outp = ROOT / f"data/processed/inplay_state_{a.competition_id.lower()}.parquet"
     df.to_parquet(outp, index=False)
-    print(f"  built {len(df)} state rows, {df.match_id.nunique()} matches -> {outp.name}")
+    cov = df.groupby("match_id").p_home_market.first().notna().mean() if len(df) else 0
+    print(f"  built {len(df)} state rows, {df.match_id.nunique()} matches, market coverage {cov:.0%} -> {outp.name}")
 
 
 if __name__ == "__main__":

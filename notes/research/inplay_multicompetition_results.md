@@ -49,6 +49,19 @@ poorly across tournaments. **Conclusion: the raw, transparent, unfitted Poisson 
 recalibration is not adopted.** This strengthens M2's case as the robust shadow-candidate. (M2's own
 draw calibration is acceptable: slope 0.83, ECE 0.022 across 3 competitions.)
 
+## Market-anchored in-play (M6) — does The Odds API beat Elo in-play? (no new spend)
+Using pre-match market odds already held in `intl_market_sharp.csv` (coverage: WC2022 100%, Euro2024
+100%, Copa2024 92%), **M6** anchors the in-play model on the **market's** pre-match supremacy instead
+of Elo's, with the same remaining-time Poisson dynamics. Leave-one-competition-out:
+- M6 RPS **0.1306** vs M2 **0.1313** — essentially tied (M6 marginally better on RPS/log-loss).
+- **M6 vs M2 paired bootstrap: dRPS −0.0004, CI [−0.008, +0.007] → NOT significant.**
+- M6 also beats M1 on 3/3 competitions (PASS the shadow bar).
+
+**Answer to "is the Odds API enough?":** for the in-play W/D/L anchor, **market and Elo are
+statistically equivalent** here (no significant edge either way) — the Odds API is a fine alternative
+anchor but not an improvement, and it provides **no** lineups/xG/events, so it does **not** unblock the
+player/tactical plane. Both M2 (Elo) and M6 (market) stand as research-only shadow-candidates.
+
 ## Governance
 Research-only; M2 is a SHADOW-CANDIDATE, **not runtime-approved**; B1 remains the sole approved
 pre-match model; no trading; no protected files changed.

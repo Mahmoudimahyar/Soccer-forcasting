@@ -19,7 +19,9 @@ Single list of every model and its status. Authoritative approval source remains
 | In-play M2 remaining Poisson | in-play | RPS 0.155 (best), CI vs M1 incl 0 | research leader (not shadow-ready) |
 | In-play M3 goal hazard | next-goal | fails vs base rate | rejected (sparse features) |
 | In-play M4 competing-risk | next-goal team | LL 1.03 < base 1.08 | weak signal |
-| In-play M5 ensemble | in-play | beats M1 with match-level significance | research leader (not shadow-ready) |
+| In-play M5 ensemble | in-play | beats M1 with match-level significance | research leader |
+| In-play M6 market-anchored | in-play | ≈ M2 (dRPS −0.0004, CI incl 0); beats M1 3/3 | market ≈ Elo anchor (no sig. edge); research-only |
+| In-play M2cal recalibrated | in-play | worse out-of-competition calibration | rejected |
 
 ## Shadow-candidate status (UPDATED 2026-06-21 — multi-competition unblocked on free tier)
 **M2 (remaining-time Poisson) = SHADOW-CANDIDATE** (research-only, NOT runtime-approved). On

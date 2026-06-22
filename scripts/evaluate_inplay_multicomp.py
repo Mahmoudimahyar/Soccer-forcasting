@@ -12,7 +12,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from wcdrawlab.research.inplay_models.models import (  # noqa: E402
-    M0_StaticB1, M1_TimeScore, M2_RemainingPoisson, M5_Ensemble, M2cal_CalibratedPoisson)
+    M0_StaticB1, M1_TimeScore, M2_RemainingPoisson, M5_Ensemble, M2cal_CalibratedPoisson, M6_MarketInplay)
 from wcdrawlab.research import inplay_eval as E  # noqa: E402
 
 OUT = ROOT / "outputs/research/inplay_multicomp"; OUT.mkdir(parents=True, exist_ok=True)
@@ -36,8 +36,8 @@ if len(comps) < 2:
     print("only one competition available -> cross-competition holdout NOT yet possible (need >=2)."); sys.exit(0)
 
 WLD = {"M0_static_b1": M0_StaticB1, "M1_time_score": M1_TimeScore,
-       "M2_remaining_poisson": M2_RemainingPoisson, "M5_ensemble": M5_Ensemble,
-       "M2cal_calibrated_poisson": M2cal_CalibratedPoisson}
+       "M2_remaining_poisson": M2_RemainingPoisson, "M6_market_inplay": M6_MarketInplay,
+       "M5_ensemble": M5_Ensemble, "M2cal_calibrated_poisson": M2cal_CalibratedPoisson}
 Y = df.final_wld.map({"H": 0, "D": 1, "A": 2}).to_numpy()
 
 # leave-one-COMPETITION-out OOF predictions
@@ -79,6 +79,14 @@ for k, P in oof.items():
     bt.append({"model": k, **r})
 boot = pd.DataFrame(bt); boot.to_csv(OUT / "logo_competition_bootstrap_vs_M1.csv", index=False)
 print("\n=== match-level bootstrap vs M1 (neg=better) ==="); print(boot.to_string(index=False))
+
+# KEY QUESTION: does market-anchored in-play (M6) beat Elo-anchored in-play (M2)?
+if "M6_market_inplay" in oof:
+    cmp = E.paired_match_bootstrap(E.rps_per_row(oof["M6_market_inplay"], Y),
+                                   E.rps_per_row(oof["M2_remaining_poisson"], Y), df.match_id.to_numpy())
+    print("\n=== M6 (market-anchored) vs M2 (Elo-anchored) in-play, RPS (neg=M6 better) ===")
+    print(f"  dRPS_mean={cmp['delta_mean']:.4f} CI=[{cmp['ci_low']:.4f},{cmp['ci_high']:.4f}] "
+          f"M6_better_sig={cmp['a_better_sig']} M6_worse_sig={cmp['a_worse_sig']}")
 
 # does any model beat M1 on EACH held-out competition (the >=2-holdout SHADOW bar)?
 print("\n=== SHADOW-CANDIDATE check: beats M1 on every held-out competition? ===")

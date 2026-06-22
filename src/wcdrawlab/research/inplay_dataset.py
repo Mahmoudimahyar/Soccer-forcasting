@@ -118,8 +118,35 @@ def _resolve_elo(lookup: dict, date_str: str, pair: frozenset, tol_days: int = 2
     return best[1:]  # (listed_a, ea, eb)
 
 
+def _market_lookup(market_df: pd.DataFrame) -> dict:
+    """frozenset{canon teams} -> list of (ts, listed_team_a, p_a, p_draw, p_b)."""
+    out: dict = {}
+    if market_df is None:
+        return out
+    m = market_df.copy()
+    m["ts"] = pd.to_datetime(m["kickoff_utc"], errors="coerce", utc=True)
+    for r in m.itertuples():
+        key = frozenset((canonical_team_name(r.team_a), canonical_team_name(r.team_b)))
+        out.setdefault(key, []).append((r.ts, canonical_team_name(r.team_a),
+                                        float(r.p_a_market), float(r.p_draw_market), float(r.p_b_market)))
+    return out
+
+
+def _resolve_market(lookup: dict, date_str: str, pair: frozenset, home: str, tol_days: int = 2):
+    """Return (p_home, p_draw, p_away) market probs oriented to home, or None."""
+    entries = lookup.get(pair)
+    if not entries:
+        return None
+    target = pd.to_datetime(date_str, errors="coerce", utc=True)
+    best = min(entries, key=lambda x: abs((x[0] - target).days) if (pd.notna(x[0]) and pd.notna(target)) else 10**6)
+    if pd.notna(best[0]) and pd.notna(target) and abs((best[0] - target).days) > tol_days:
+        return None
+    listed_a, pa, pdr, pb = best[1], best[2], best[3], best[4]
+    return (pa, pdr, pb) if listed_a == home else (pb, pdr, pa)
+
+
 def build_state_for_competition(cache_dir: str | Path, competition_id: str,
-                                elo_history: pd.DataFrame) -> pd.DataFrame:
+                                elo_history: pd.DataFrame, market_df: pd.DataFrame | None = None) -> pd.DataFrame:
     """Generalized in-play state builder for ANY cached competition (API-Football fixtures+events) +
     pre-match Elo from elo_history. Same schema as build_state_table; group = competition_id (the
     leave-one-COMPETITION-out fold unit); market columns NaN (optional). Research-only."""
@@ -127,6 +154,7 @@ def build_state_for_competition(cache_dir: str | Path, competition_id: str,
     fixtures = {f["fixture"]["id"]: f for f in json.loads((cache / "fixtures.json").read_text(encoding="utf-8"))["response"]}
     grp = {i: f for i, f in fixtures.items() if "group" in str(f.get("league", {}).get("round", "")).lower()}
     elo = _elo_lookup_from_history(elo_history)
+    mkt_lut = _market_lookup(market_df)
     rows = []
     for fid, f in sorted(grp.items()):
         ev_path = cache / f"events_{fid}.json"
@@ -150,6 +178,7 @@ def build_state_for_competition(cache_dir: str | Path, competition_id: str,
         listed_a, ea, eb = rec
         elo_delta_home = (ea - eb) if listed_a == home else (eb - ea)
         ep = normalize_probs(ternary_elo_probs(np.array([elo_delta_home])))[0]
+        mp = _resolve_market(mkt_lut, date, frozenset((home, away)), home)
         goals = _goal_minutes(events, home, away); reds = _red_minutes(events, home, away)
         points = sorted(set(FIXED_MINUTES) | {(e.get("time") or {}).get("elapsed") for e in events
                                               if (e.get("time") or {}).get("elapsed") is not None})
@@ -177,7 +206,8 @@ def build_state_for_competition(cache_dir: str | Path, competition_id: str,
                 "unknown_lineup_flag": 1, "unknown_substitution_detail_flag": 0,
                 "shots_available": 0, "xg_available": 0, "corners_available": 0, "setpieces_available": 0,
                 "elo_delta_home": elo_delta_home, "p_home_elo": ep[0], "p_draw_elo": ep[1], "p_away_elo": ep[2],
-                "p_home_market": np.nan, "p_draw_market": np.nan, "p_away_market": np.nan, "pregame_completeness": 0.5,
+                "p_home_market": (mp[0] if mp else np.nan), "p_draw_market": (mp[1] if mp else np.nan),
+                "p_away_market": (mp[2] if mp else np.nan), "pregame_completeness": (0.75 if mp else 0.5),
                 "final_wld": final_out, "final_score_home": fh, "final_score_away": fa, "final_gd": fh - fa,
                 "next_goal_team": fut[0][1] if fut else "none",
                 "goal_within_1": gw(1), "goal_within_3": gw(3), "goal_within_5": gw(5), "goal_within_10": gw(10),
