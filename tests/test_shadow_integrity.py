@@ -57,3 +57,12 @@ def test_detects_blend_weight_drift():
 def test_detects_bad_novig():
     df = _good(); df.loc[df.index[0], "p_a_market"] = 0.9  # market no longer sums to 1
     assert si.check_novig_sums_to_one(df)[0] is False
+
+
+def test_duplicate_type_per_match_warning():
+    df = _good()
+    dup = df.copy(); dup["source_snapshot_timestamp"] = "2026-06-22T16:35:00Z"  # same type, new ts
+    both = pd.concat([df, dup])
+    ok, viol = si.check_no_duplicate_type_per_match(both)
+    assert ok is False and len(viol) >= 1            # detects the double capture
+    assert si.check_no_duplicate_type_per_match(df)[0] is True  # clean set: no warning

@@ -67,6 +67,19 @@ def check_blend_weights_frozen(df: pd.DataFrame, tol: float = 1e-6) -> tuple[boo
     return (not v, v)
 
 
+def check_no_duplicate_type_per_match(df: pd.DataFrame) -> tuple[bool, list[str]]:
+    """WARNING-level: same (match_id, model, snapshot_type) captured at >1 snapshot timestamp.
+    Not a leakage failure (each snapshot is independently pre-kickoff), but signals a double capture
+    (e.g. overlapping supervisor instances). Reported separately; does not flip hard integrity."""
+    if "snapshot_type" not in df.columns:
+        return (True, [])
+    d = df[df["snapshot_type"].notna()]
+    g = d.groupby(["match_id", "model_version", "snapshot_type"]).source_snapshot_timestamp.nunique()
+    dups = g[g > 1]
+    return (dups.empty, [] if dups.empty else
+            [f"{k} captured at {int(v)} timestamps" for k, v in dups.items()])
+
+
 def run_all(df: pd.DataFrame) -> dict:
     checks = {
         "no_duplicate_snapshots": check_no_duplicate_snapshots,
