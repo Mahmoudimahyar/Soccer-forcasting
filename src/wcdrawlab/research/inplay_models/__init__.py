@@ -5,6 +5,6 @@ forecasts, advancement, paper decisions, risk, or Kalshi. 2022-only foundation; 
 """
 from wcdrawlab.research.inplay_models.models import (  # noqa: F401
     M0_StaticB1, M1_TimeScore, M2_RemainingPoisson, M3_GoalHazard, M4_CompetingRisk, M5_Ensemble,
-    M6_MarketInplay, M2cal_CalibratedPoisson, TemperatureScaled, temperature_scale,
+    M6_MarketInplay, M2cal_CalibratedPoisson, M2fit_FittedPoisson, TemperatureScaled, temperature_scale,
     WLD_MODELS, full_output_envelope, pregame_lambdas, remaining_lambdas,
 )

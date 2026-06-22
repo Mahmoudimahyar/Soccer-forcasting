@@ -153,6 +153,41 @@ class M2cal_CalibratedPoisson:
         return normalize_probs(full)
 
 
+class M2fit_FittedPoisson:
+    """Like M2 but the pre-match goal-rate mapping is FIT to actual goals on the training competitions
+    (Poisson GLM: team_goals ~ exp(b0 +/- k*elo_delta/100)) instead of the hand-set base=1.35,k=0.20.
+    Cross-fit per competition in LOGO -> leakage-safe. Research-only."""
+    model_id = "m2fit_poisson"
+    def __init__(self):
+        self.base_, self.k_ = 1.35, 0.20
+
+    def fit(self, train):
+        from sklearn.linear_model import PoissonRegressor
+        m = train.drop_duplicates("match_id")
+        d = m["elo_delta_home"].to_numpy(dtype=float) / 100.0
+        gh = m["final_score_home"].to_numpy(dtype=float); ga = m["final_score_away"].to_numpy(dtype=float)
+        X = np.concatenate([d, -d]).reshape(-1, 1)
+        y = np.concatenate([gh, ga])
+        ok = np.isfinite(X[:, 0]) & np.isfinite(y)
+        if ok.sum() >= 20:
+            reg = PoissonRegressor(alpha=1e-6, fit_intercept=True, max_iter=500).fit(X[ok], y[ok])
+            self.base_ = float(np.exp(reg.intercept_)); self.k_ = float(reg.coef_[0])
+        return self
+
+    def predict_wld(self, df):
+        out = np.zeros((len(df), 3))
+        for i, (_, row) in enumerate(df.reset_index(drop=True).iterrows()):
+            delta = float(row["elo_delta_home"])
+            lh = self.base_ * np.exp(self.k_ * delta / 100.0)
+            la = self.base_ * np.exp(-self.k_ * delta / 100.0)
+            st = InPlayState(minute=float(row["decision_minute"]), goals_a=int(row["score_home"]),
+                             goals_b=int(row["score_away"]), red_cards_a=int(row["red_home"]),
+                             red_cards_b=int(row["red_away"]))
+            p = update_inplay_probabilities(lh, la, st)
+            out[i] = [p.p_a_win, p.p_draw, p.p_b_win]
+        return normalize_probs(out)
+
+
 def temperature_scale(p: np.ndarray, T: float) -> np.ndarray:
     """Temper a probability matrix: p' = softmax(log(p)/T). T>1 reduces overconfidence."""
     z = np.log(np.clip(p, 1e-9, 1.0)) / max(T, 1e-6)

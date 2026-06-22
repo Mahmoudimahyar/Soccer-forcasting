@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from wcdrawlab.research.inplay_models.models import (  # noqa: E402
     M0_StaticB1, M1_TimeScore, M2_RemainingPoisson, M5_Ensemble, M2cal_CalibratedPoisson,
-    M6_MarketInplay, TemperatureScaled)
+    M6_MarketInplay, M2fit_FittedPoisson, TemperatureScaled)
 from wcdrawlab.research import inplay_eval as E  # noqa: E402
 
 OUT = ROOT / "outputs/research/inplay_multicomp"; OUT.mkdir(parents=True, exist_ok=True)
@@ -39,8 +39,10 @@ if len(comps) < 2:
 WLD = {"M0_static_b1": M0_StaticB1, "M1_time_score": M1_TimeScore,
        "M2_remaining_poisson": M2_RemainingPoisson, "M6_market_inplay": M6_MarketInplay,
        "M5_ensemble": M5_Ensemble, "M2cal_calibrated_poisson": M2cal_CalibratedPoisson,
+       "M2fit_poisson": M2fit_FittedPoisson,
        "M5temp_ensemble": lambda: TemperatureScaled(M5_Ensemble),
-       "M2temp_poisson": lambda: TemperatureScaled(M2_RemainingPoisson)}
+       "M2temp_poisson": lambda: TemperatureScaled(M2_RemainingPoisson),
+       "M2fit_temp": lambda: TemperatureScaled(M2fit_FittedPoisson)}
 Y = df.final_wld.map({"H": 0, "D": 1, "A": 2}).to_numpy()
 
 # leave-one-COMPETITION-out OOF predictions
@@ -59,7 +61,7 @@ print("\n=== leave-one-competition-out W/D/L ==="); print(metrics.to_string(inde
 
 # calibration slope/intercept for the Poisson vs its recalibrated variant
 print("\n=== draw calibration (slope/intercept, ideal 1/0; ECE) ===")
-for k in ["M2_remaining_poisson", "M2temp_poisson", "M5_ensemble", "M5temp_ensemble", "M2cal_calibrated_poisson"]:
+for k in ["M2_remaining_poisson", "M2fit_poisson", "M2temp_poisson", "M2fit_temp", "M5_ensemble", "M5temp_ensemble", "M2cal_calibrated_poisson"]:
     if k not in oof:
         continue
     s, ic = E.calibration_slope_intercept(oof[k][:, 1], (Y == 1).astype(int))

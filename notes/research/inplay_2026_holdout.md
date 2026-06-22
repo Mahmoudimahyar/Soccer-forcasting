@@ -54,6 +54,22 @@ the held-out 2026 World Cup:
 - Implemented as a reusable, unit-tested `TemperatureScaled` wrapper (1 dof → minimal overfit risk),
   research-only. `scripts/eval_2026_recalibration.py` reproduces the table.
 
+## Second improvement: data-fitted goal-rate anchor (`M2fit`)
+The in-play Poisson anchor used hand-set constants (`base=1.35`, elo-coeff `0.20`). Fitting them to
+**actual goals** (Poisson GLM on the 5 training competitions, leakage-safe) gives **base 1.14, k 0.15**
+— the hand-set base was a touch high. Combined with temperature scaling:
+
+| model | RPS 2026 | full 6-comp LOGO RPS | LOGO log-loss | LOGO draw-Brier |
+|---|---|---|---|---|
+| M2 (hand-set) | 0.1488 | 0.1309 | 0.761 | 0.1588 |
+| M2temp | 0.1439 | 0.1307 | 0.737 | 0.1584 |
+| M2fit | 0.1471 | 0.1306 | 0.760 | 0.1592 |
+| **M2fit_temp** | **0.1429** | **0.1307** | **0.7358** | **0.1582** |
+
+**`M2fit_temp` is the best in-play model**: best 2026-OOS RPS, best LOGO log-loss + draw-Brier, RPS
+best-tier, beats M1 significantly. Two parsimonious, leakage-safe levers (fit the anchor to goals;
+temper the output) — no new inputs. Unit-tested (`tests/test_temperature_scaling.py`). Research-only.
+
 ## Implications
 - **Robust claim:** in-play >> static, validated OOS on 2026. Promote nothing to runtime (B1 stays sole
   approved); this strengthens the in-play plane as a research/ shadow capability.

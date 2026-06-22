@@ -8,7 +8,8 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from wcdrawlab.research.inplay_models.models import temperature_scale, TemperatureScaled  # noqa: E402
+from wcdrawlab.research.inplay_models.models import (  # noqa: E402
+    temperature_scale, TemperatureScaled, M2fit_FittedPoisson)
 
 
 def test_temperature_identity_and_monotonicity():
@@ -48,3 +49,32 @@ def test_temperature_scaled_picks_T_above_one_and_reduces_logloss():
     ll = lambda P: -np.log(np.clip(P[np.arange(len(y)), y], 1e-12, 1)).mean()
     assert ll(cal) < ll(base)  # calibration reduces log-loss for an overconfident model
     assert ts.model_id == "fake_temp"
+
+
+def _inplay_frame(n=80, seed=0):
+    rng = np.random.RandomState(seed)
+    delta = rng.uniform(-300, 300, n)
+    gh = rng.poisson(1.4 * np.exp(0.25 * delta / 100.0))
+    ga = rng.poisson(1.4 * np.exp(-0.25 * delta / 100.0))
+    wld = np.where(gh > ga, "H", np.where(ga > gh, "A", "D"))
+    return pd.DataFrame({
+        "match_id": np.arange(n), "elo_delta_home": delta,
+        "final_score_home": gh, "final_score_away": ga, "final_wld": wld,
+        "decision_minute": 0.0, "score_home": 0, "score_away": 0, "red_home": 0, "red_away": 0,
+    })
+
+
+def test_m2fit_recovers_goalrate_mapping_from_data():
+    m = M2fit_FittedPoisson().fit(_inplay_frame())
+    # data generated with base=1.4, k=0.25 -> fitted params should be in the right ballpark
+    assert 0.9 < m.base_ < 2.2
+    assert m.k_ > 0.05  # home favored when elo_delta>0
+    # predictions are valid probability rows
+    P = m.predict_wld(_inplay_frame(n=10, seed=1))
+    assert P.shape == (10, 3)
+    assert np.allclose(P.sum(axis=1), 1.0) and (P >= 0).all()
+
+
+def test_m2fit_falls_back_to_defaults_on_tiny_data():
+    m = M2fit_FittedPoisson().fit(_inplay_frame(n=5))  # < 20 matches -> keep hand-set defaults
+    assert m.base_ == 1.35 and m.k_ == 0.20
