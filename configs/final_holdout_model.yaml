@@ -1,0 +1,34 @@
+model_id: m2fit_temp_frozen
+architecture: M2fit_temp = data-fit goal-rate Poisson (base,k) + remaining-time in-play
+  update + temperature scaling
+approval_status: research_only
+research_only: true
+experimental: true
+not_runtime_approved: true
+model_parameters:
+  base: 1.1372204312211578
+  k: 0.1540712710156593
+  temperature: 1.4
+trained_on: 5 pre-2026 competitions (WC2022, Euro2024, Copa2024, AFCON2023, AsianCup2023);
+  NO 2026 match
+feature_schema_version: inplay_v1
+feature_schema:
+- elo_delta_home
+- decision_minute
+- score_home
+- score_away
+- red_home
+- red_away
+pre_match_anchor: elo_delta_home from elo_history.csv (Elo; market NOT used by this
+  frozen model)
+allowed_data_sources:
+- api_football_pro (fixtures/events for live state)
+- elo_history.csv
+output_schema:
+- p_home_win
+- p_draw
+- p_away_win
+scoring_only: true
+freeze_statement: No 2026 match (finished or future) may influence model architecture,
+  parameters, temperature, features, or selection. Future 2026 matches are scored
+  by this frozen version only.
