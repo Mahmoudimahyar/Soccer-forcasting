@@ -132,8 +132,30 @@ class M5_Ensemble:
         return normalize_probs(full)
 
 
+class M2cal_CalibratedPoisson:
+    """M2 with a cross-fitted multinomial recalibration of its W/D/L (fit on TRAIN folds only).
+    Addresses M2's mild draw overconfidence (slope<1). Research-only."""
+    model_id = "M2cal_calibrated_poisson"
+    def __init__(self):
+        self.m2 = M2_RemainingPoisson(); self.cal = LogisticRegression(max_iter=2000, C=1.0); self._fit = False
+    def fit(self, train):
+        P = self.m2.predict_wld(train); y = train["final_wld"].map({"H": 0, "D": 1, "A": 2})
+        self.cal.fit(np.log(np.clip(P, 1e-9, 1)), y); self.classes_ = list(self.cal.classes_); self._fit = True
+        return self
+    def predict_wld(self, df):
+        P = self.m2.predict_wld(df)
+        if not self._fit:
+            return P
+        raw = self.cal.predict_proba(np.log(np.clip(P, 1e-9, 1)))
+        full = np.full((len(df), 3), 1e-9)
+        for j, c in enumerate(self.classes_):
+            full[:, int(c)] = raw[:, j]
+        return normalize_probs(full)
+
+
 WLD_MODELS = {"M0_static_b1": M0_StaticB1, "M1_time_score": M1_TimeScore,
-              "M2_remaining_poisson": M2_RemainingPoisson, "M5_ensemble": M5_Ensemble}
+              "M2_remaining_poisson": M2_RemainingPoisson, "M5_ensemble": M5_Ensemble,
+              "M2cal_calibrated_poisson": M2cal_CalibratedPoisson}
 
 
 # ---- next-event models ----

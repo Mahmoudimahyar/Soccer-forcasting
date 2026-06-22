@@ -41,6 +41,14 @@ but is more overfit-prone (fitted calibrator). **M2 is the research-only in-play
 - More competitions (AFCON 2023, Nations League, friendlies) are fetchable on the **free tier across
   additional daily-quota windows** — not blocked, just rate-paced.
 
+## Recalibration experiment — REJECTED (honest negative result)
+A cross-fitted multinomial recalibration of M2 (`M2cal`, fit on train competitions, applied to the
+held-out one) **made out-of-competition calibration worse**: draw slope 0.83→0.64, ECE 0.022→0.055,
+RPS 0.131→0.135. The per-fold calibrator overfits the training competitions' draw rate and transfers
+poorly across tournaments. **Conclusion: the raw, transparent, unfitted Poisson (M2) generalizes best;
+recalibration is not adopted.** This strengthens M2's case as the robust shadow-candidate. (M2's own
+draw calibration is acceptable: slope 0.83, ECE 0.022 across 3 competitions.)
+
 ## Governance
 Research-only; M2 is a SHADOW-CANDIDATE, **not runtime-approved**; B1 remains the sole approved
 pre-match model; no trading; no protected files changed.

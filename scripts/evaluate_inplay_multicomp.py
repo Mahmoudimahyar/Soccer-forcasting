@@ -12,7 +12,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from wcdrawlab.research.inplay_models.models import (  # noqa: E402
-    M0_StaticB1, M1_TimeScore, M2_RemainingPoisson, M5_Ensemble)
+    M0_StaticB1, M1_TimeScore, M2_RemainingPoisson, M5_Ensemble, M2cal_CalibratedPoisson)
 from wcdrawlab.research import inplay_eval as E  # noqa: E402
 
 OUT = ROOT / "outputs/research/inplay_multicomp"; OUT.mkdir(parents=True, exist_ok=True)
@@ -36,7 +36,8 @@ if len(comps) < 2:
     print("only one competition available -> cross-competition holdout NOT yet possible (need >=2)."); sys.exit(0)
 
 WLD = {"M0_static_b1": M0_StaticB1, "M1_time_score": M1_TimeScore,
-       "M2_remaining_poisson": M2_RemainingPoisson, "M5_ensemble": M5_Ensemble}
+       "M2_remaining_poisson": M2_RemainingPoisson, "M5_ensemble": M5_Ensemble,
+       "M2cal_calibrated_poisson": M2cal_CalibratedPoisson}
 Y = df.final_wld.map({"H": 0, "D": 1, "A": 2}).to_numpy()
 
 # leave-one-COMPETITION-out OOF predictions
@@ -52,6 +53,12 @@ for k, P in oof.items():
                  "log_loss": float(E.logloss_per_row(P, Y).mean()), "draw_brier": E.draw_brier(P, Y)})
 metrics = pd.DataFrame(rows); metrics.to_csv(OUT / "logo_competition_metrics.csv", index=False)
 print("\n=== leave-one-competition-out W/D/L ==="); print(metrics.to_string(index=False))
+
+# calibration slope/intercept for the Poisson vs its recalibrated variant
+print("\n=== draw calibration (slope/intercept, ideal 1/0; ECE) ===")
+for k in ["M2_remaining_poisson", "M2cal_calibrated_poisson"]:
+    s, ic = E.calibration_slope_intercept(oof[k][:, 1], (Y == 1).astype(int))
+    print(f"  {k}: slope={s:.3f} intercept={ic:.3f} ECE={E.ece(oof[k][:, 1], (Y==1).astype(int)):.4f}")
 
 # per-competition (held-out) breakdown
 per = []
