@@ -10,6 +10,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from wcdrawlab.research.player_plane_dataset import (  # noqa: E402
     fixtures_index, player_match_records, startxi_by_match, team_xg,
     prior_form_lookup, xi_prior_strength, build_player_plane_features,
+    team_prior_minutes, key_player_availability,
 )
 
 # two matches, same two teams/players; M1 kicks off before M2
@@ -108,6 +109,21 @@ def test_build_features_end_to_end(tmp_path):
     # M1 has no priors -> strengths NaN
     row1 = df[df.match_id == M1].iloc[0]
     assert row1.home_xi_strength != row1.home_xi_strength
+
+
+def test_key_player_availability_is_leakage_safe(tmp_path):
+    ppdir, fxp = _write_comp(tmp_path)
+    idx = fixtures_index(fxp)
+    tmin = team_prior_minutes(player_match_records(ppdir, idx))
+    # at M1 the team has NO prior minutes -> key set undefined -> NaN availability
+    a1, c1 = key_player_availability(tmin.get(T1, []), idx[M1]["kickoff"], [P1])
+    assert a1 != a1 and c1 == 0.0
+    # at M2, P1 has prior minutes (from M1) and IS in the XI -> availability 1.0
+    a2, c2 = key_player_availability(tmin.get(T1, []), idx[M2]["kickoff"], [P1])
+    assert abs(a2 - 1.0) < 1e-9 and c2 > 0
+    # if the key player is NOT in today's XI -> availability 0.0
+    a3, _ = key_player_availability(tmin.get(T1, []), idx[M2]["kickoff"], [999])
+    assert abs(a3 - 0.0) < 1e-9
 
 
 def test_startxi_and_xg_parsers(tmp_path):

@@ -126,6 +126,30 @@ def xi_prior_strength(xi: list, before: datetime, lut: dict) -> tuple:
     return (float(np.mean(vals)) if vals else np.nan, cov)
 
 
+def team_prior_minutes(records: pd.DataFrame) -> dict:
+    """team_id -> list of (kickoff, player_id, minutes), for leakage-safe key-player identification."""
+    lut: dict = {}
+    for r in records.itertuples():
+        lut.setdefault(r.team_id, []).append((r.kickoff, r.player_id, r.minutes or 0))
+    return lut
+
+
+def key_player_availability(team_min_list: list, before: datetime, xi: list, topk: int = 6) -> tuple:
+    """Fraction of a team's top-`topk` players (by cumulative minutes in matches STRICTLY BEFORE
+    `before`) who appear in today's starting XI. Captures rotation / key absences — orthogonal to Elo.
+    Returns (availability, coverage)."""
+    mins: dict = {}
+    for (ko, pid, m) in team_min_list:
+        if ko < before:
+            mins[pid] = mins.get(pid, 0.0) + (m or 0)
+    ranked = [pid for pid, mm in sorted(mins.items(), key=lambda x: -x[1]) if mm > 0][:topk]
+    if not ranked:
+        return (np.nan, 0.0)
+    xis = set(xi)
+    avail = sum(1 for pid in ranked if pid in xis) / len(ranked)
+    return (float(avail), len(ranked) / topk)
+
+
 def build_player_plane_features(comp_caches: dict) -> pd.DataFrame:
     """comp_caches: {competition_id: (player_plane_dir, fixtures_json_path)} ->
     per-match pre-match feature table. Prior form is computed from the POOLED cross-competition history
@@ -141,6 +165,7 @@ def build_player_plane_features(comp_caches: dict) -> pd.DataFrame:
         per_comp[comp] = (Path(ppdir), fidx)
     records = pd.concat(all_recs, ignore_index=True) if all_recs else pd.DataFrame()
     lut = prior_form_lookup(records)
+    tmin = team_prior_minutes(records)
 
     rows = []
     for comp, (ppdir, fidx) in per_comp.items():
@@ -152,14 +177,20 @@ def build_player_plane_features(comp_caches: dict) -> pd.DataFrame:
                 continue
             ko = meta["kickoff"]
             h, a = meta["home_id"], meta["away_id"]
-            hs, hc = xi_prior_strength(tt.get(h, {}).get("xi", []), ko, lut)
-            as_, ac = xi_prior_strength(tt.get(a, {}).get("xi", []), ko, lut)
+            h_xi, a_xi = tt.get(h, {}).get("xi", []), tt.get(a, {}).get("xi", [])
+            hs, hc = xi_prior_strength(h_xi, ko, lut)
+            as_, ac = xi_prior_strength(a_xi, ko, lut)
+            hka, hkc = key_player_availability(tmin.get(h, []), ko, h_xi)
+            aka, akc = key_player_availability(tmin.get(a, []), ko, a_xi)
             rows.append({
                 "competition": comp, "match_id": fid, "kickoff_utc": ko.isoformat(),
                 "home_id": h, "away_id": a, "home_name": meta["home_name"], "away_name": meta["away_name"],
                 "home_xi_strength": hs, "away_xi_strength": as_,
                 "strength_diff": (hs - as_) if (pd.notna(hs) and pd.notna(as_)) else np.nan,
                 "home_cov": hc, "away_cov": ac,
+                "home_key_avail": hka, "away_key_avail": aka,
+                "keyavail_diff": (hka - aka) if (pd.notna(hka) and pd.notna(aka)) else np.nan,
+                "keyavail_cov": min(hkc, akc),
                 "home_formation": tt.get(h, {}).get("formation"), "away_formation": tt.get(a, {}).get("formation"),
                 "final_wld": meta["final_wld"],
                 "home_xg": (xg.get(fid, {}) or {}).get(h, np.nan), "away_xg": (xg.get(fid, {}) or {}).get(a, np.nan),
