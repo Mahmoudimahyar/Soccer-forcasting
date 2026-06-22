@@ -6,7 +6,9 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-from wcdrawlab.research.inplay_dataset import _elo_lookup_from_history, build_state_for_competition  # noqa: E402
+from wcdrawlab.research.inplay_dataset import (  # noqa: E402
+    _elo_lookup_from_history, _resolve_elo, build_state_for_competition)
+from wcdrawlab.ingest import canonical_team_name as c  # noqa: E402
 
 
 def test_elo_lookup_builds_without_itertuples_error():
@@ -15,8 +17,18 @@ def test_elo_lookup_builds_without_itertuples_error():
                       "elo_b_pre": [1800.0, 1700.0], "elo_a_post": [1, 1], "elo_b_post": [1, 1]})
     lut = _elo_lookup_from_history(e)
     assert len(lut) == 2
-    from wcdrawlab.ingest import canonical_team_name as c
-    assert (("2024-06-14", frozenset((c("Germany"), c("Scotland")))) in lut)
+    assert frozenset((c("Germany"), c("Scotland"))) in lut
+
+
+def test_resolve_elo_is_date_tolerant():
+    e = pd.DataFrame({"date": ["2024-06-21T00:30:00Z"], "team_a": ["Argentina"], "team_b": ["Canada"],
+                      "elo_a_pre": [2100.0], "elo_b_pre": [1850.0], "elo_a_post": [1], "elo_b_post": [1]})
+    lut = _elo_lookup_from_history(e)
+    pair = frozenset((c("Argentina"), c("Canada")))
+    # fixture logged a day earlier (timezone boundary) still resolves within tolerance
+    assert _resolve_elo(lut, "2024-06-20", pair, tol_days=2) is not None
+    # far-away date does not resolve
+    assert _resolve_elo(lut, "2024-08-01", pair, tol_days=2) is None
 
 
 def test_build_state_for_competition_euro2024_if_cached():

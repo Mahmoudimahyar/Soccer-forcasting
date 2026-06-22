@@ -93,14 +93,29 @@ def _red_minutes(events, home, away):
 
 
 def _elo_lookup_from_history(elo_history: pd.DataFrame) -> dict:
-    """(date 'YYYY-MM-DD', frozenset{canon teams}) -> (listed_team_a, elo_a_pre, elo_b_pre)."""
+    """frozenset{canon teams} -> list of (pd.Timestamp date, listed_team_a, elo_a_pre, elo_b_pre).
+    Date-tolerant matching (via _resolve_elo) handles timezone date-boundary differences."""
     e = elo_history.copy()
-    e["dkey"] = pd.to_datetime(e["date"], errors="coerce", utc=True).dt.strftime("%Y-%m-%d")
-    out = {}
+    e["ts"] = pd.to_datetime(e["date"], errors="coerce", utc=True)
+    out: dict = {}
     for r in e.itertuples():
-        key = (r.dkey, frozenset((canonical_team_name(r.team_a), canonical_team_name(r.team_b))))
-        out[key] = (canonical_team_name(r.team_a), float(r.elo_a_pre), float(r.elo_b_pre))
+        key = frozenset((canonical_team_name(r.team_a), canonical_team_name(r.team_b)))
+        out.setdefault(key, []).append((r.ts, canonical_team_name(r.team_a), float(r.elo_a_pre), float(r.elo_b_pre)))
     return out
+
+
+def _resolve_elo(lookup: dict, date_str: str, pair: frozenset, tol_days: int = 2):
+    """Nearest elo_history entry for the team pair within +/- tol_days of the fixture date."""
+    entries = lookup.get(pair)
+    if not entries:
+        return None
+    target = pd.to_datetime(date_str, errors="coerce", utc=True)
+    if pd.isna(target):
+        return entries[0][1:]
+    best = min(entries, key=lambda x: abs((x[0] - target).days) if pd.notna(x[0]) else 10**6)
+    if pd.notna(best[0]) and abs((best[0] - target).days) > tol_days:
+        return None
+    return best[1:]  # (listed_a, ea, eb)
 
 
 def build_state_for_competition(cache_dir: str | Path, competition_id: str,
@@ -129,9 +144,9 @@ def build_state_for_competition(cache_dir: str | Path, competition_id: str,
         if fh is None or fa is None:
             continue
         final_out = "H" if fh > fa else ("D" if fh == fa else "A")
-        rec = elo.get((date, frozenset((home, away))))
+        rec = _resolve_elo(elo, date, frozenset((home, away)))
         if rec is None:
-            continue  # no pre-match Elo -> skip (fail closed, no imputation)
+            continue  # no pre-match Elo within tolerance -> skip (fail closed, no imputation)
         listed_a, ea, eb = rec
         elo_delta_home = (ea - eb) if listed_a == home else (eb - ea)
         ep = normalize_probs(ternary_elo_probs(np.array([elo_delta_home])))[0]
