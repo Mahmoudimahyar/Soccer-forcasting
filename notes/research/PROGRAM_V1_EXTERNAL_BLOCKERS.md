@@ -1,3 +1,5 @@
+> **SUPERSEDED 2026-06-21 (same day):** this report's 'fully blocked' conclusion was PREMATURE. API-Football's free tier covers Euro/Copa/AFCON/Nations-League/friendlies (2022-2024), so the multi-competition in-play plane is UNBLOCKED. See `inplay_multicompetition_results.md` + `RESUME_NEXT_TASK.md`. Genuinely-blocked items now: player plane (lineups/xG -> paid API-Football Pro) and more competitions (free-tier daily quota, rate-paced).
+
 # World Cup Predictor V1 — External Blockers Report
 
 **Terminal state: EXTERNALLY BLOCKED** (not complete). All independent, lawful, scientifically valid
