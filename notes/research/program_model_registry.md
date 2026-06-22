@@ -25,10 +25,10 @@ Single list of every model and its status. Authoritative approval source remains
 
 ## Shadow-candidate status (UPDATED 2026-06-21 — multi-competition unblocked on free tier)
 **M2 (remaining-time Poisson) and M6 (market-anchored) = SHADOW-CANDIDATES** (research-only, NOT
-runtime-approved). On leave-one-COMPETITION-out across **4 competitions / 4 confederations** (WC2022 +
-Euro2024 + Copa2024 + AFCON2023-partial; 132 matches) both beat M1 on **4/4 held-out competitions**
-with match-level bootstrap support (M2 dRPS −0.0165 CI [−0.025,−0.008]; M6 −0.0173 CI [−0.029,−0.006]);
-M2 calibration slope 0.77, ECE 0.037. **Market ≈ Elo in-play** (M6 vs M2 CI includes 0). M5 also
+runtime-approved). On leave-one-COMPETITION-out across **5 competitions / 5 confederations** (WC2022 +
+Euro2024 + Copa2024 + AFCON2023 + AsianCup2023-partial; 151 matches) both beat M1 on **5/5 held-out
+competitions** with match-level bootstrap support (M2 dRPS −0.0145 CI [−0.021,−0.008]; M6 −0.0152 CI
+[−0.024,−0.007]); M2 calibration slope 0.74, ECE 0.039. **Market ≈ Elo in-play** (M6 vs M2 CI includes 0). M5 also
 passes; M2cal recalibration rejected. Criteria met: ≥2 (here 4) independent holdouts ✓, match-level
 bootstrap ✓, point-in-time collectable ✓, separate from runtime ✓, calibration acceptable ✓.
 **Still research-only; runtime promotion needs separate human approval.** More competitions

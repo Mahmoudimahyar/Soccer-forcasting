@@ -22,7 +22,6 @@ import os
 import requests
 from wcdrawlab.research.inplay_dataset import build_state_for_competition  # noqa: E402
 
-H = {"x-apisports-key": os.getenv("API_FOOTBALL_KEY") or ""}
 BASE = "https://v3.football.api-sports.io"
 
 
@@ -33,8 +32,11 @@ def main():
     p.add_argument("--competition-id", required=True)
     p.add_argument("--max-events", type=int, default=45)
     p.add_argument("--interval", type=float, default=7.0)
+    p.add_argument("--key-env", default="API_FOOTBALL_KEY", help="env var holding the API-Football key")
     a = p.parse_args()
     assert a.season in (2022, 2023, 2024), "free tier seasons 2022-2024 only"
+    H = {"x-apisports-key": os.getenv(a.key_env) or ""}
+    assert H["x-apisports-key"], f"{a.key_env} not set"
     cache = ROOT / f"data/raw/api_football_{a.competition_id.lower()}"; cache.mkdir(parents=True, exist_ok=True)
 
     fxp = cache / "fixtures.json"
@@ -63,9 +65,12 @@ def main():
     mkt_path = ROOT / "data/processed/intl_market_sharp.csv"
     market = pd.read_csv(mkt_path) if mkt_path.exists() else None
     df = build_state_for_competition(cache, a.competition_id, elo, market_df=market)
+    if df.empty:
+        print(f"  no state rows built for {a.competition_id} (no events/fixtures returned — likely rate-limited or uncovered); skipping write")
+        return
     outp = ROOT / f"data/processed/inplay_state_{a.competition_id.lower()}.parquet"
     df.to_parquet(outp, index=False)
-    cov = df.groupby("match_id").p_home_market.first().notna().mean() if len(df) else 0
+    cov = df.groupby("match_id").p_home_market.first().notna().mean()
     print(f"  built {len(df)} state rows, {df.match_id.nunique()} matches, market coverage {cov:.0%} -> {outp.name}")
 
 
