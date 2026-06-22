@@ -1,8 +1,8 @@
 program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-21"
-current_major_phase: "A — consolidate current truth (-> B,C,D,F,G feasible subset)"
-current_task: "Phase A control files + current truth"
-next_task: "Phase B: re-verify API-Football direct + build read-only historical adapter (dry-run)"
+current_major_phase: "G — finalize/block (Phases A-F feasible work complete)"
+current_task: "EXTERNALLY BLOCKED — all unblocked V1 work done"
+next_task: "On approval of BLK-1 (StatsBomb open) or BLK-2 (API-Football Pro): ingest multi-competition events, re-run in-play ladder leave-one-competition-out"
 
 completed_tasks:
   - "Tier 1 (provenance, leakage, official 2026 standings)"
@@ -51,4 +51,5 @@ external_actions_required:
   - "Approve a multi-competition event source (StatsBomb open / paid xG feed / API-Football Pro)"
   - "Decide on API-Football Pro upgrade for live 2026 lineups/events"
 
-stop_reason: "pending — set only at V1 completion or full external block"
+stop_reason: "EXTERNALLY BLOCKED (stop-condition B): every remaining V1 task needs an approved data source / paid provider / multi-day quota authorization, or data too sparse. Tag worldcup-predictor-v1-blocked. See PROGRAM_V1_EXTERNAL_BLOCKERS.md."
+last_stable_commit_at_block: "e42f7e3"
