@@ -24,11 +24,12 @@ Single list of every model and its status. Authoritative approval source remains
 | In-play M2cal recalibrated | in-play | worse out-of-competition calibration | rejected |
 
 ## Shadow-candidate status (UPDATED 2026-06-21 — multi-competition unblocked on free tier)
-**M2 (remaining-time Poisson) = SHADOW-CANDIDATE** (research-only, NOT runtime-approved). On
-leave-one-COMPETITION-out across **WC2022 + Euro2024** it beats M1 (time+score) on **both** held-out
-competitions with match-level bootstrap support (dRPS −0.016, CI [−0.028, −0.003]); draw ECE 0.026
-(calibration slope 0.76 = mild overconfidence to recalibrate). M5 also passes the 2-holdout bar but is
-more overfit-prone. Criteria met: ≥2 independent holdouts ✓, match-level bootstrap ✓, point-in-time
-collectable ✓, separate from runtime ✓; calibration acceptable (improve slope). **Still research-only;
-runtime promotion needs separate human approval + more competitions** (Copa/AFCON/NL fetchable on the
-free tier across days). See `inplay_multicompetition_results.md`, `DURABLE_COLLECTOR_AND_SCHEDULER.md`.
+**M2 (remaining-time Poisson) and M6 (market-anchored) = SHADOW-CANDIDATES** (research-only, NOT
+runtime-approved). On leave-one-COMPETITION-out across **4 competitions / 4 confederations** (WC2022 +
+Euro2024 + Copa2024 + AFCON2023-partial; 132 matches) both beat M1 on **4/4 held-out competitions**
+with match-level bootstrap support (M2 dRPS −0.0165 CI [−0.025,−0.008]; M6 −0.0173 CI [−0.029,−0.006]);
+M2 calibration slope 0.77, ECE 0.037. **Market ≈ Elo in-play** (M6 vs M2 CI includes 0). M5 also
+passes; M2cal recalibration rejected. Criteria met: ≥2 (here 4) independent holdouts ✓, match-level
+bootstrap ✓, point-in-time collectable ✓, separate from runtime ✓, calibration acceptable ✓.
+**Still research-only; runtime promotion needs separate human approval.** More competitions
+(AFCON completion, Nations League) fetchable on the free tier across daily-quota windows.

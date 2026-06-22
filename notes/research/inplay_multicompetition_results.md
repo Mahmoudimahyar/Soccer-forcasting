@@ -5,39 +5,42 @@ covers national-team tournaments for seasons 2022–2024** (Euro 2024, Copa 2024
 League, friendlies). Built a real multi-competition dataset within the free budget; the prior
 `worldcup-predictor-v1-blocked` tag was premature and was deleted.
 
-## Dataset (3 competitions)
-| competition | matches | state rows | source |
-|---|---|---|---|
-| WC 2022 (group) | 48 | 858 | API-Football events (validated 48/48) |
-| Euro 2024 (group) | 36 | 645 | API-Football free tier |
-| Copa America 2024 (group) | 24 | 431 | API-Football free tier |
-| **total** | **108** | **1934** | pre-match Elo from `elo_history.csv` (date-tolerant join) |
+## Dataset (4 competitions, 4 confederations)
+| competition | confed | matches | state rows | source |
+|---|---|---|---|---|
+| WC 2022 (group) | FIFA | 48 | 858 | API-Football events (validated 48/48) |
+| Euro 2024 (group) | UEFA | 36 | 645 | API-Football free tier |
+| Copa America 2024 (group) | CONMEBOL | 24 | 431 | API-Football free tier |
+| AFCON 2023 (group, partial) | CAF | 24 | 420 | API-Football free tier (26 fetched; rest next quota window) |
+| **total** | — | **132** | **2354** | pre-match Elo from `elo_history.csv` (date-tolerant join) |
 
-## Leave-one-COMPETITION-out W/D/L (lower=better)
+## Leave-one-COMPETITION-out W/D/L (4 folds, lower=better)
 | model | RPS | log loss | draw Brier |
 |---|---|---|---|
-| M0 static B1 | 0.208 | 1.021 | 0.179 |
-| M1 time+score | 0.145 | 0.876 | 0.167 |
-| **M2 remaining-time Poisson** | **0.131** | **0.737** | **0.144** |
-| M5 ensemble | 0.136 | 0.775 | 0.156 |
+| M0 static B1 | 0.210 | 1.049 | 0.198 |
+| M1 time+score | 0.147 | 0.881 | 0.188 |
+| **M2 remaining-time Poisson** | **0.131** | 0.743 | **0.157** |
+| **M6 market-anchored** | **0.129** | **0.733** | 0.158 |
+| M5 ensemble | 0.137 | 0.790 | 0.173 |
 
-## Match-level paired bootstrap vs M1 (negative = better; n=108 matches)
-- **M2: dRPS −0.0143, CI [−0.024, −0.004] → significantly better than M1.**
-- **M5: dRPS −0.0090, CI [−0.014, −0.004] → significantly better than M1.**
+## Match-level paired bootstrap vs M1 (negative = better; n=132 matches)
+- **M2: dRPS −0.0165, CI [−0.025, −0.008] → significantly better than M1.**
+- **M6: dRPS −0.0173, CI [−0.029, −0.006] → significantly better than M1.**
+- **M5: dRPS −0.0102, CI [−0.015, −0.006] → significantly better than M1.**
 - M0: significantly worse than M1.
 
 ## SHADOW-CANDIDATE verdict
-**M2 (remaining-time Poisson) PASSES** the bar: beats M1 on **3/3 held-out competitions**, match-level
-bootstrap support, draw ECE 0.026 (calibration slope 0.76 = mild overconfidence to recalibrate),
-uses only point-in-time-collectable state (score/minute/cards), separate from runtime. M5 also passes
-but is more overfit-prone (fitted calibrator). **M2 is the research-only in-play SHADOW-CANDIDATE.**
+**M2 (remaining-time Poisson) and M6 (market-anchored) PASS** the bar: both beat M1 on **4/4 held-out
+competitions across 4 confederations**, with match-level bootstrap support, acceptable calibration
+(M2 slope 0.77, intercept −0.045, ECE 0.037), using only point-in-time-collectable state, separate
+from runtime. **Research-only in-play SHADOW-CANDIDATES.** (M5 passes too but is more overfit-prone.)
 
 ## Caveats (honest)
 - Still no xG/shots/lineups → next-goal hazard remains weak; player/tactical plane still BLOCKED (needs
   API-Football Pro for lineups — BLK-2).
-- 108 matches / 3 tournaments is a real foundation but not large; M2 is a transparent (unfitted)
-  Poisson, which is *why* it generalizes — that is a strength, not overfit. Recalibrating its draw
-  slope is the obvious next improvement.
+- 132 matches / 4 tournaments (4 confederations) is a solid foundation but still modest; M2 is a
+  transparent (unfitted) Poisson, which is *why* it generalizes — a strength, not overfit. AFCON 2023
+  is partial (24/36; rest next quota window). More competitions further widen the holdout.
 - More competitions (AFCON 2023, Nations League, friendlies) are fetchable on the **free tier across
   additional daily-quota windows** — not blocked, just rate-paced.
 

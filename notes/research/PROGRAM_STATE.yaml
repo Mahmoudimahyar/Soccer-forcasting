@@ -1,8 +1,8 @@
 program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-21"
 current_major_phase: "C/D/E — multi-competition in-play (UNBLOCKED via API-Football free tier 2022-2024)"
-current_task: "Ingest national-team tournaments (WC2022 + Euro2024 + Copa2024) -> cross-competition in-play eval"
-next_task: "Fetch AFCON2023 / Nations-League / friendlies (free tier, across daily quota) to widen leave-one-competition-out; recalibrate M2; player plane still needs lineups (BLK-2)"
+current_task: "4-competition in-play (WC2022+Euro2024+Copa2024+AFCON2023-partial); M2 & M6 beat M1 on 4/4 holdouts"
+next_task: "Next quota window: complete AFCON2023 (12 matches left) + add Nations League; then player plane needs lineups (BLK-2, paid Pro)"
 correction_note: "Prior `worldcup-predictor-v1-blocked` tag was PREMATURE/WRONG — the free tier covers Euro/Copa/AFCON/NL/friendlies (2022-2024). Tag deleted. Multi-competition in-play is feasible; V1 is in progress, not blocked."
 
 completed_tasks:
