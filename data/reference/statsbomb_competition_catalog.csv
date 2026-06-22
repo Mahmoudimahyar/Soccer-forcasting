@@ -1,0 +1,81 @@
+competition_id,season_id,competition_name,season_name,country,gender,youth,international,type,format,confederation,n_matches,events,lineups,shots_xg,cards,subs,player_ids,data_360,suit_intl_inplay_transfer,suit_player_state,domain_shift_risk
+81,275,Liga Profesional,1981,Argentina,male,False,False,club,league,CLUB/Argentina,1,True,True,True,True,True,True,False,low,high,high
+81,48,Liga Profesional,1997/1998,Argentina,male,False,False,club,league,CLUB/Argentina,1,True,True,True,True,True,True,False,low,high,high
+1238,108,Indian Super league,2021/2022,India,male,False,False,club,league,CLUB/India,115,True,True,True,True,True,True,False,low,high,high
+116,68,North American League,1977,North and Central America,male,False,False,club,league,CLUB/North and Central America,1,True,True,True,True,True,True,False,low,high,high
+49,3,NWSL,2018,United States of America,female,False,False,club,league,CLUB/United States of America,36,True,True,True,True,True,True,False,low,high,high
+44,107,Major League Soccer,2023,United States of America,male,False,False,club,league,CLUB/United States of America,6,True,True,True,True,True,True,True,low,high,high
+49,107,NWSL,2023,United States of America,female,False,False,club,league,CLUB/United States of America,137,True,True,True,True,True,True,False,low,high,high
+16,276,Champions League,1970/1971,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+16,71,Champions League,1971/1972,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+16,277,Champions League,1972/1973,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,278,La Liga,1973/1974,Spain,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+87,279,Copa del Rey,1977/1978,Spain,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+87,268,Copa del Rey,1982/1983,Spain,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+87,84,Copa del Rey,1983/1984,Spain,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+12,86,Serie A,1986/1987,Italy,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+35,75,UEFA Europa League,1988/1989,Europe,male,False,False,club,league,UEFA,3,True,True,True,True,True,True,False,low,high,high
+16,76,Champions League,1999/2000,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+16,44,Champions League,2003/2004,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+2,44,Premier League,2003/2004,England,male,False,False,club,league,UEFA,38,True,True,True,True,True,True,False,low,high,high
+16,37,Champions League,2004/2005,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,37,La Liga,2004/2005,Spain,male,False,False,club,league,UEFA,7,True,True,True,True,True,True,False,low,high,high
+11,38,La Liga,2005/2006,Spain,male,False,False,club,league,UEFA,17,True,True,True,True,True,True,False,low,high,high
+16,39,Champions League,2006/2007,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,39,La Liga,2006/2007,Spain,male,False,False,club,league,UEFA,26,True,True,True,True,True,True,False,low,high,high
+11,40,La Liga,2007/2008,Spain,male,False,False,club,league,UEFA,27,True,True,True,True,True,True,False,low,high,high
+16,41,Champions League,2008/2009,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,41,La Liga,2008/2009,Spain,male,False,False,club,league,UEFA,31,True,True,True,True,True,True,False,low,high,high
+16,21,Champions League,2009/2010,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,21,La Liga,2009/2010,Spain,male,False,False,club,league,UEFA,35,True,True,True,True,True,True,False,low,high,high
+16,22,Champions League,2010/2011,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,22,La Liga,2010/2011,Spain,male,False,False,club,league,UEFA,33,True,True,True,True,True,True,False,low,high,high
+16,23,Champions League,2011/2012,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,23,La Liga,2011/2012,Spain,male,False,False,club,league,UEFA,37,True,True,True,True,True,True,False,low,high,high
+16,24,Champions League,2012/2013,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,24,La Liga,2012/2013,Spain,male,False,False,club,league,UEFA,32,True,True,True,True,True,True,False,low,high,high
+16,25,Champions League,2013/2014,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,25,La Liga,2013/2014,Spain,male,False,False,club,league,UEFA,31,True,True,True,True,True,True,False,low,high,high
+16,26,Champions League,2014/2015,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,26,La Liga,2014/2015,Spain,male,False,False,club,league,UEFA,38,True,True,True,True,True,True,False,low,high,high
+9,27,1. Bundesliga,2015/2016,Germany,male,False,False,club,league,UEFA,34,True,True,True,True,True,True,False,low,high,high
+16,27,Champions League,2015/2016,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,27,La Liga,2015/2016,Spain,male,False,False,club,league,UEFA,380,True,True,True,True,True,True,False,low,high,high
+7,27,Ligue 1,2015/2016,France,male,False,False,club,league,UEFA,377,True,True,True,True,True,True,False,low,high,high
+2,27,Premier League,2015/2016,England,male,False,False,club,league,UEFA,380,True,True,True,True,True,True,False,low,high,high
+12,27,Serie A,2015/2016,Italy,male,False,False,club,league,UEFA,380,True,True,True,True,True,True,False,low,high,high
+16,2,Champions League,2016/2017,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,2,La Liga,2016/2017,Spain,male,False,False,club,league,UEFA,34,True,True,True,True,True,True,False,low,high,high
+16,1,Champions League,2017/2018,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+11,1,La Liga,2017/2018,Spain,male,False,False,club,league,UEFA,36,True,True,True,True,True,True,False,low,high,high
+16,4,Champions League,2018/2019,Europe,male,False,False,club,league,UEFA,1,True,True,True,True,True,True,False,low,high,high
+37,4,FA Women's Super League,2018/2019,England,female,False,False,club,league,UEFA,107,True,True,True,True,True,True,False,low,high,high
+11,4,La Liga,2018/2019,Spain,male,False,False,club,league,UEFA,34,True,True,True,True,True,True,False,low,high,high
+37,42,FA Women's Super League,2019/2020,England,female,False,False,club,league,UEFA,87,True,True,True,True,True,True,False,low,high,high
+11,42,La Liga,2019/2020,Spain,male,False,False,club,league,UEFA,33,True,True,True,True,True,True,False,low,high,high
+37,90,FA Women's Super League,2020/2021,England,female,False,False,club,league,UEFA,131,True,True,True,True,True,True,False,low,high,high
+11,90,La Liga,2020/2021,Spain,male,False,False,club,league,UEFA,35,True,True,True,True,True,True,True,low,high,high
+7,108,Ligue 1,2021/2022,France,male,False,False,club,league,UEFA,26,True,True,True,True,True,True,True,low,high,high
+7,235,Ligue 1,2022/2023,France,male,False,False,club,league,UEFA,32,True,True,True,True,True,True,True,low,high,high
+9,281,1. Bundesliga,2023/2024,Germany,male,False,False,club,league,UEFA,34,True,True,True,True,True,True,True,low,high,high
+37,281,FA Women's Super League,2023/2024,England,female,False,False,club,league,UEFA,132,True,True,True,True,True,True,False,low,high,high
+135,281,Frauen Bundesliga,2023/2024,Germany,female,False,False,club,league,UEFA,132,True,True,True,True,True,True,False,low,high,high
+182,281,Liga F,2023/2024,Spain,female,False,False,club,league,UEFA,240,True,True,True,True,True,True,False,low,high,high
+131,281,Serie A Women,2023/2024,Italy,female,False,False,club,league,UEFA,130,True,True,True,True,True,True,False,low,high,high
+1267,107,African Cup of Nations,2023,Africa,male,False,True,international,tournament,CAF,52,True,True,True,True,True,True,True,high,high,low
+223,282,Copa America,2024,South America,male,False,True,international,tournament,CONMEBOL,32,True,True,True,True,True,True,False,high,high,low
+43,269,FIFA World Cup,1958,International,male,False,True,international,tournament,FIFA,2,True,True,True,True,True,True,False,high,high,high
+43,270,FIFA World Cup,1962,International,male,False,True,international,tournament,FIFA,1,True,True,True,True,True,True,False,high,high,high
+43,272,FIFA World Cup,1970,International,male,False,True,international,tournament,FIFA,6,True,True,True,True,True,True,False,high,high,high
+43,51,FIFA World Cup,1974,International,male,False,True,international,tournament,FIFA,6,True,True,True,True,True,True,False,high,high,high
+1470,274,FIFA U20 World Cup,1979,International,male,True,True,international,tournament,FIFA,1,True,True,True,True,True,True,False,low,high,high
+43,54,FIFA World Cup,1986,International,male,False,True,international,tournament,FIFA,3,True,True,True,True,True,True,False,high,high,high
+43,55,FIFA World Cup,1990,International,male,False,True,international,tournament,FIFA,1,True,True,True,True,True,True,False,high,high,high
+43,3,FIFA World Cup,2018,International,male,False,True,international,tournament,FIFA,64,True,True,True,True,True,True,False,high,high,low
+72,30,Women's World Cup,2019,International,female,False,True,international,tournament,FIFA,52,True,True,True,True,True,True,False,low,high,high
+43,106,FIFA World Cup,2022,International,male,False,True,international,tournament,FIFA,64,True,True,True,True,True,True,True,high,high,low
+72,107,Women's World Cup,2023,International,female,False,True,international,tournament,FIFA,64,True,True,True,True,True,True,True,low,high,high
+55,43,UEFA Euro,2020,Europe,male,False,True,international,tournament,UEFA,51,True,True,True,True,True,True,True,high,high,low
+53,106,UEFA Women's Euro,2022,Europe,female,False,True,international,tournament,UEFA,31,True,True,True,True,True,True,True,low,high,high
+55,282,UEFA Euro,2024,Europe,male,False,True,international,tournament,UEFA,51,True,True,True,True,True,True,True,high,high,low
+53,315,UEFA Women's Euro,2025,Europe,female,False,True,international,tournament,UEFA,31,True,True,True,True,True,True,True,low,high,high

@@ -1,8 +1,8 @@
 program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-22"
 current_major_phase: "C/D/E — multi-competition in-play (UNBLOCKED via API-Football free tier 2022-2024)"
-current_task: "SPRINT phase 2 DONE: froze m2fit_temp (base=1.1372,k=0.1541,T=1.40) on 151 pre-2026 matches; deterministic prospective scorer + manifest + protocol; FREEZE_UTC 2026-06-22T21:24:39Z."
-next_task: "Phase 3: enumerate full StatsBomb competition catalogue + coverage audit; then Phase 4 multi-competition in-play dataset, Phase 5 nested CV, Phase 6 readiness, Phase 7 report+tag."
+current_task: "SPRINT phase 3 DONE: StatsBomb catalogue (80 comp-seasons) + coverage audit. Modern men's international = 6 tournaments/314 matches (WC2018,Euro2020,WC2022,AFCON2023,Copa2024,Euro2024) all with xG -> proper LOGO for xG re-eval."
+next_task: "Phase 4: download StatsBomb events+lineups for the 6 modern intl tournaments + bounded club sample; build international_only/club_auxiliary in-play state + player/next-goal/card/sub target tables + leakage tests."
 correction_note: "Prior `worldcup-predictor-v1-blocked` tag was PREMATURE/WRONG — the free tier covers Euro/Copa/AFCON/NL/friendlies (2022-2024). Tag deleted. Multi-competition in-play is feasible; V1 is in progress, not blocked."
 
 completed_tasks:
