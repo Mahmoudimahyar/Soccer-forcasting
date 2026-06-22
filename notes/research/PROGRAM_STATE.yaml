@@ -1,0 +1,54 @@
+program: "World Cup Predictor V1 — Continuous Research and Data Program"
+updated_utc: "2026-06-21"
+current_major_phase: "A — consolidate current truth (-> B,C,D,F,G feasible subset)"
+current_task: "Phase A control files + current truth"
+next_task: "Phase B: re-verify API-Football direct + build read-only historical adapter (dry-run)"
+
+completed_tasks:
+  - "Tier 1 (provenance, leakage, official 2026 standings)"
+  - "Tier 2 baseline gate (B0-B7; B1 approved; nothing beats it significantly)"
+  - "Model-state reconciliation + immutable approved-model registry (B1)"
+  - "Runtime governance (B1 sole approved; registry-bound risk gate)"
+  - "Data Enrichment Gate 1 (live-data contracts, reconciliation, ingestion scaffolding)"
+  - "Scoreline + in-play research layers; 2022 event replay validated (own-goal fix)"
+  - "Prospective live-2026 shadow eval + closed 5h supervisor session"
+  - "Tier 4 Sprint 1 (in-play state dataset, M0-M5, LOGO eval, failure analysis)"
+  - "Phase A program control files + PROGRAM_CURRENT_TRUTH"
+
+blocked_tasks:
+  - id: multi_competition_events
+    needs: "approved StatsBomb open sign-off OR paid event/xG feed OR authorization to spend API-Football quota across many days"
+  - id: player_tactical_plane
+    needs: "lineups / on-pitch player IDs / positions (absent from API-Football free events)"
+  - id: dev_fold_market
+    needs: "timestamp-valid pre-2020 WC odds (no legal/open source exists)"
+  - id: live_2026_events
+    needs: "API-Football Pro (~$25-30/mo) — free tier season-gated to 2022-2024"
+  - id: shadow_ready_inplay
+    needs: "an in-play model with multi-competition held-out evidence (depends on multi_competition_events)"
+
+dependencies:
+  player_tactical_plane: [multi_competition_events]
+  shadow_ready_inplay: [multi_competition_events]
+
+last_successful_test_command: "python -m pytest -q  # 151 passed"
+last_stable_commit: "cff737d"
+
+current_data_assets:
+  - "2022 WC group events (validated 48/48) + inplay_state_2022 (858 rows)"
+  - "research_modeling_table (369 WC group matches 1998-2026), elo_history, fifa_rankings"
+  - "market_features 2022/2026, intl odds 2020-26, live-2026 shadow predictions"
+
+current_approved_model: "B1 ternary-Elo (r=0.4) — pre-match 1X2 only"
+research_only_models: ["V8", "scoreline_poisson", "scoreline_dixon_coles", "M0-M5 in-play", "market_blends M2-M5"]
+
+data_limitations:
+  - "single-tournament in-play (2022) — too small for player/card/next-event models"
+  - "no xG/shots/lineups in available event feed"
+  - "no pre-2020 odds; red-card targets too sparse (7/858)"
+
+external_actions_required:
+  - "Approve a multi-competition event source (StatsBomb open / paid xG feed / API-Football Pro)"
+  - "Decide on API-Football Pro upgrade for live 2026 lineups/events"
+
+stop_reason: "pending — set only at V1 completion or full external block"
