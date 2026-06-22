@@ -1,0 +1,86 @@
+"""Multi-competition leave-one-COMPETITION-out evaluation of in-play baselines (research-only).
+Combines all available inplay_state_<comp>.parquet products and evaluates M0/M1/M2/M5 W/D/L with
+true cross-competition holdouts + match-level bootstrap. This is the SHADOW-CANDIDATE bar test.
+"""
+import glob
+import sys
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "src"))
+from wcdrawlab.research.inplay_models.models import (  # noqa: E402
+    M0_StaticB1, M1_TimeScore, M2_RemainingPoisson, M5_Ensemble)
+from wcdrawlab.research import inplay_eval as E  # noqa: E402
+
+OUT = ROOT / "outputs/research/inplay_multicomp"; OUT.mkdir(parents=True, exist_ok=True)
+
+# load all competition state products
+files = {"WC2022": ROOT / "data/processed/inplay_state_2022_group_stage.parquet"}
+for p in glob.glob(str(ROOT / "data/processed/inplay_state_*.parquet")):
+    name = Path(p).stem.replace("inplay_state_", "")
+    if "2022_group_stage" in p:
+        continue
+    files[name.upper()] = Path(p)
+
+frames = []
+for comp, p in files.items():
+    if Path(p).exists():
+        d = pd.read_parquet(p); d["competition"] = comp; frames.append(d)
+df = pd.concat(frames, ignore_index=True)
+comps = sorted(df.competition.unique())
+print(f"competitions: {comps} | rows: {len(df)} | matches: {df.match_id.nunique()}")
+if len(comps) < 2:
+    print("only one competition available -> cross-competition holdout NOT yet possible (need >=2)."); sys.exit(0)
+
+WLD = {"M0_static_b1": M0_StaticB1, "M1_time_score": M1_TimeScore,
+       "M2_remaining_poisson": M2_RemainingPoisson, "M5_ensemble": M5_Ensemble}
+Y = df.final_wld.map({"H": 0, "D": 1, "A": 2}).to_numpy()
+
+# leave-one-COMPETITION-out OOF predictions
+oof = {k: np.zeros((len(df), 3)) for k in WLD}
+for held in comps:
+    tr, te = df[df.competition != held], df[df.competition == held]
+    for k, M in WLD.items():
+        oof[k][te.index.to_numpy()] = M().fit(tr).predict_wld(te)
+
+rows = []
+for k, P in oof.items():
+    rows.append({"model": k, "rps": float(E.rps_per_row(P, Y).mean()),
+                 "log_loss": float(E.logloss_per_row(P, Y).mean()), "draw_brier": E.draw_brier(P, Y)})
+metrics = pd.DataFrame(rows); metrics.to_csv(OUT / "logo_competition_metrics.csv", index=False)
+print("\n=== leave-one-competition-out W/D/L ==="); print(metrics.to_string(index=False))
+
+# per-competition (held-out) breakdown
+per = []
+for held in comps:
+    m = (df.competition == held).to_numpy()
+    for k, P in oof.items():
+        per.append({"held_out": held, "model": k, "n": int(m.sum()),
+                    "rps": float(E.rps_per_row(P[m], Y[m]).mean())})
+pd.DataFrame(per).to_csv(OUT / "logo_competition_per_comp.csv", index=False)
+
+# match-level paired bootstrap vs M1 (each model), pooled across competitions
+base = E.rps_per_row(oof["M1_time_score"], Y)
+bt = []
+for k, P in oof.items():
+    if k == "M1_time_score":
+        continue
+    r = E.paired_match_bootstrap(E.rps_per_row(P, Y), base, df.match_id.to_numpy())
+    bt.append({"model": k, **r})
+boot = pd.DataFrame(bt); boot.to_csv(OUT / "logo_competition_bootstrap_vs_M1.csv", index=False)
+print("\n=== match-level bootstrap vs M1 (neg=better) ==="); print(boot.to_string(index=False))
+
+# does any model beat M1 on EACH held-out competition (the >=2-holdout SHADOW bar)?
+print("\n=== SHADOW-CANDIDATE check: beats M1 on every held-out competition? ===")
+pc = pd.DataFrame(per).pivot_table(index="model", columns="held_out", values="rps")
+m1 = pc.loc["M1_time_score"]
+for k in pc.index:
+    if k in ("M0_static_b1", "M1_time_score"):
+        continue
+    beats = (pc.loc[k] < m1)
+    print(f"  {k}: beats M1 on {int(beats.sum())}/{len(comps)} competitions -> "
+          f"{'PASS(>=2)' if beats.all() and len(comps)>=2 else 'not yet'}")
+print("\nwrote", OUT)

@@ -21,8 +21,12 @@ Single list of every model and its status. Authoritative approval source remains
 | In-play M4 competing-risk | next-goal team | LL 1.03 < base 1.08 | weak signal |
 | In-play M5 ensemble | in-play | beats M1 with match-level significance | research leader (not shadow-ready) |
 
-## Shadow-candidate status
-**None.** No model meets the SHADOW-CANDIDATE bar (≥2 independent competition/time holdouts +
-calibration + match-level bootstrap support + point-in-time collectable). See
-`DURABLE_COLLECTOR_AND_SCHEDULER.md`. Promotion to runtime requires separate human approval + a
-multi-tournament dataset.
+## Shadow-candidate status (UPDATED 2026-06-21 — multi-competition unblocked on free tier)
+**M2 (remaining-time Poisson) = SHADOW-CANDIDATE** (research-only, NOT runtime-approved). On
+leave-one-COMPETITION-out across **WC2022 + Euro2024** it beats M1 (time+score) on **both** held-out
+competitions with match-level bootstrap support (dRPS −0.016, CI [−0.028, −0.003]); draw ECE 0.026
+(calibration slope 0.76 = mild overconfidence to recalibrate). M5 also passes the 2-holdout bar but is
+more overfit-prone. Criteria met: ≥2 independent holdouts ✓, match-level bootstrap ✓, point-in-time
+collectable ✓, separate from runtime ✓; calibration acceptable (improve slope). **Still research-only;
+runtime promotion needs separate human approval + more competitions** (Copa/AFCON/NL fetchable on the
+free tier across days). See `inplay_multicompetition_results.md`, `DURABLE_COLLECTOR_AND_SCHEDULER.md`.

@@ -92,6 +92,86 @@ def _red_minutes(events, home, away):
     return sorted(out)
 
 
+def _elo_lookup_from_history(elo_history: pd.DataFrame) -> dict:
+    """(date 'YYYY-MM-DD', frozenset{canon teams}) -> (listed_team_a, elo_a_pre, elo_b_pre)."""
+    e = elo_history.copy()
+    e["dkey"] = pd.to_datetime(e["date"], errors="coerce", utc=True).dt.strftime("%Y-%m-%d")
+    out = {}
+    for r in e.itertuples():
+        key = (r.dkey, frozenset((canonical_team_name(r.team_a), canonical_team_name(r.team_b))))
+        out[key] = (canonical_team_name(r.team_a), float(r.elo_a_pre), float(r.elo_b_pre))
+    return out
+
+
+def build_state_for_competition(cache_dir: str | Path, competition_id: str,
+                                elo_history: pd.DataFrame) -> pd.DataFrame:
+    """Generalized in-play state builder for ANY cached competition (API-Football fixtures+events) +
+    pre-match Elo from elo_history. Same schema as build_state_table; group = competition_id (the
+    leave-one-COMPETITION-out fold unit); market columns NaN (optional). Research-only."""
+    cache = Path(cache_dir)
+    fixtures = {f["fixture"]["id"]: f for f in json.loads((cache / "fixtures.json").read_text(encoding="utf-8"))["response"]}
+    grp = {i: f for i, f in fixtures.items() if "group" in str(f.get("league", {}).get("round", "")).lower()}
+    elo = _elo_lookup_from_history(elo_history)
+    rows = []
+    for fid, f in sorted(grp.items()):
+        ev_path = cache / f"events_{fid}.json"
+        if not ev_path.exists():
+            continue
+        raw = ev_path.read_bytes()
+        events = json.loads(raw)["response"]
+        if not events:
+            continue
+        snap_hash = hashlib.sha256(raw).hexdigest()[:16]
+        home = canonical_team_name(f["teams"]["home"]["name"]); away = canonical_team_name(f["teams"]["away"]["name"])
+        rnd = str(f["league"]["round"]); matchday = int(rnd.split("-")[-1].strip()) if "-" in rnd else None
+        date = str(f["fixture"].get("date", ""))[:10]
+        fh, fa = f["goals"]["home"], f["goals"]["away"]
+        if fh is None or fa is None:
+            continue
+        final_out = "H" if fh > fa else ("D" if fh == fa else "A")
+        rec = elo.get((date, frozenset((home, away))))
+        if rec is None:
+            continue  # no pre-match Elo -> skip (fail closed, no imputation)
+        listed_a, ea, eb = rec
+        elo_delta_home = (ea - eb) if listed_a == home else (eb - ea)
+        ep = normalize_probs(ternary_elo_probs(np.array([elo_delta_home])))[0]
+        goals = _goal_minutes(events, home, away); reds = _red_minutes(events, home, away)
+        points = sorted(set(FIXED_MINUTES) | {(e.get("time") or {}).get("elapsed") for e in events
+                                              if (e.get("time") or {}).get("elapsed") is not None})
+        dtypes = {}
+        for e in events:
+            m = (e.get("time") or {}).get("elapsed")
+            if m is not None:
+                dtypes.setdefault(m, e.get("type"))
+        for seq, t in enumerate(points):
+            gh, ga = _score_at(events, home, away, t); cs = _cards_subs_state(events, home, away, t)
+            fut = [g for g in goals if g[0] > t]
+            def gw(h): return int(any(t < gm <= t + h for gm, _ in goals))
+            def rw(h): return int(any(t < rm <= t + h for rm in reds))
+            rows.append({"match_id": fid, "tournament": competition_id, "group": competition_id,
+                "matchday": matchday, "kickoff_utc": f["fixture"].get("date"), "decision_minute": t,
+                "event_sequence_number": seq, "decision_type": dtypes.get(t, "fixed"),
+                "source_snapshot_sha256": snap_hash, "replay_schema_version": SCHEMA_VERSION,
+                "home_team": home, "away_team": away, "neutral": True,
+                "score_home": gh, "score_away": ga, "score_diff": gh - ga, "remaining_minutes": max(0, 90 - t),
+                "wld_state": "H" if gh > ga else ("D" if gh == ga else "A"),
+                "yellow_home": cs["yellow_home"], "yellow_away": cs["yellow_away"],
+                "red_home": cs["red_home"], "red_away": cs["red_away"],
+                "secondyellow_home": cs["secondyellow_home"], "secondyellow_away": cs["secondyellow_away"],
+                "red_diff": cs["red_home"] - cs["red_away"], "subs_home": cs["subs_home"], "subs_away": cs["subs_away"],
+                "unknown_lineup_flag": 1, "unknown_substitution_detail_flag": 0,
+                "shots_available": 0, "xg_available": 0, "corners_available": 0, "setpieces_available": 0,
+                "elo_delta_home": elo_delta_home, "p_home_elo": ep[0], "p_draw_elo": ep[1], "p_away_elo": ep[2],
+                "p_home_market": np.nan, "p_draw_market": np.nan, "p_away_market": np.nan, "pregame_completeness": 0.5,
+                "final_wld": final_out, "final_score_home": fh, "final_score_away": fa, "final_gd": fh - fa,
+                "next_goal_team": fut[0][1] if fut else "none",
+                "goal_within_1": gw(1), "goal_within_3": gw(3), "goal_within_5": gw(5), "goal_within_10": gw(10),
+                "red_within_5": rw(5), "red_within_10": rw(10),
+                "remaining_goals_home": sum(1 for gm, sd in goals if gm > t and sd == "home"),
+                "remaining_goals_away": sum(1 for gm, sd in goals if gm > t and sd == "away")})
+    return pd.DataFrame(rows)
+
+
 def build_state_table(cache_dir: str | Path, research_table: str | Path,
                       market_csv: str | Path | None = None) -> pd.DataFrame:
     cache = Path(cache_dir)
