@@ -1,0 +1,39 @@
+# Tier-4 in-play enabler: event-level xG + shots + lineups feed (PLAN ONLY — nothing implemented).
+# Motivated by the 2022 in-play result: the next-goal hazard (M3) did NOT beat the base rate because
+# goals/cards/subs alone carry too little next-event signal. xG/shots/lineups are the key missing data.
+source_id: tier4_event_xg_feed
+status: needs_user_approval  # draft | needs_user_approval | approved | rejected
+requested_by: claude_code
+purpose: >
+  Provide event-level shots, shots-on-target, xG, and confirmed lineups/positions for in-play and
+  next-event modeling (Tier 4/5). Required to move beyond goals/cards/subs, which were shown
+  insufficient on the 2022 foundation.
+fields_requested:
+  - shots, shots_on_target, xg_per_shot, shot_location
+  - lineups (starting XI), positions, formations
+  - substitutions with player ids + minute
+  - possession / territory where available
+prediction_use: "in-play W/D/L sharpening, next-goal hazard (M3/M4), remaining-xG, sub-impact"
+historical_coverage:
+  - "StatsBomb Open Data: free, selected competitions incl. some World Cups (non-commercial license)"
+  - "API-Football free tier: seasons 2022-2024 events/lineups (no xG)"
+live_coverage:
+  - "API-Football Pro (~$25-30/mo): live 2026 events/lineups/stats (no xG on lower tiers)"
+  - "Opta / Sportradar / StatsBomb API: full xG + event detail (enterprise / paid)"
+account_required: true
+estimated_cost: "free historical (StatsBomb, NC) / paid for live xG (API-Football Pro or enterprise)"
+terms_url: "https://github.com/statsbomb/open-data ; https://www.api-football.com/documentation-v3"
+robots_checked: not_applicable
+rate_limit: "StatsBomb static repo n/a; API-Football per-plan"
+quality_risks:
+  - "StatsBomb non-commercial license; coverage gaps across tournaments; xG model differs by provider"
+leakage_risk: "Event xG/shots must be time-gated (event_time <= decision); lineups gated to official release time"
+implementation_plan:
+  - "Read-only loaders behind the existing provider interface; append-only raw store; schema (live_data_contracts I/B/C)"
+  - "Extend inplay_dataset with shots/xg/lineup columns; re-run M3/M4 with richer features"
+  - "Sanitized fixtures + leakage tests"
+user_action_required:
+  - "Decide source: (a) StatsBomb open historical (free, confirm NC license acceptable), and/or"
+  - "(b) approve API-Football Pro upgrade for live 2026 events/lineups, and/or"
+  - "(c) approve a paid xG event provider (Opta/Sportradar/StatsBomb API) — cost TBD."
+note: "No source implemented until approved. 2022 alone (48 matches) is too small regardless of features."
