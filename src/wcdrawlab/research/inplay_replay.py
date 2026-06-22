@@ -35,10 +35,12 @@ def lineup_eligible(published_utc, decision_utc) -> bool:
 
 
 def state_from_events(events: list[dict], decision_minute: int, team_a: str,
-                      home_team: str, away_team: str) -> dict:
+                      home_team: str, away_team: str, provider: str = "api_football") -> dict:
     """Leakage-safe match state oriented to team_a, using ONLY events with elapsed <= decision_minute.
-    events: API-Football-style [{time:{elapsed}, team:{name}, type, detail}]. Own goals credit the
-    opponent; missed penalties are ignored; red cards counted from Card/'Red' detail."""
+    Goals are interpreted via the PROVIDER-AWARE canonical layer (`event_semantics.interpret_event`)
+    so own goals are credited correctly per provider (no blind inversion; fail-closed on unknown
+    semantics). Missed penalties ignored; red cards counted from Card/'Red' detail."""
+    from wcdrawlab.research.event_semantics import interpret_event
     gA = gB = rA = rB = 0
     for e in events:
         elapsed = (e.get("time") or {}).get("elapsed")
@@ -47,12 +49,12 @@ def state_from_events(events: list[dict], decision_minute: int, team_a: str,
         etype = e.get("type"); det = str(e.get("detail") or "")
         eteam = (e.get("team") or {}).get("name", "")
         if etype == "Goal":
-            if "Missed" in det:
-                continue
-            scorer = (home_team if eteam == away_team else away_team) if det == "Own Goal" else eteam
-            if scorer == team_a:
+            c = interpret_event(e, home_team, away_team, provider)
+            if not c["is_goal"]:
+                continue  # missed penalty, or unknown own-goal semantics (fail-closed -> excluded)
+            if c["scoring_team_id"] == team_a:
                 gA += 1
-            else:
+            elif c["scoring_team_id"] is not None:
                 gB += 1
         elif etype == "Card" and "Red" in det:
             if eteam == team_a:

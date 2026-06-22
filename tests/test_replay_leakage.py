@@ -34,13 +34,15 @@ def test_substitution_time_leakage():
     assert event_known_by(70, 75) is True
 
 
-def test_own_goal_credits_opponent_and_missed_penalty_ignored():
+def test_own_goal_credits_beneficiary_and_missed_penalty_ignored():
+    # CORRECTED (own-goal remediation): API-Football's Own Goal `team` is the BENEFICIARY (the team
+    # credited the goal), NOT the scorer's team -> no inversion. (Was previously asserted backwards.)
     ev = [
-        {"time": {"elapsed": 20}, "team": {"name": "A"}, "type": "Goal", "detail": "Own Goal"},   # credits B
+        {"time": {"elapsed": 20}, "team": {"name": "A"}, "type": "Goal", "detail": "Own Goal"},   # credits A (beneficiary)
         {"time": {"elapsed": 30}, "team": {"name": "A"}, "type": "Goal", "detail": "Missed Penalty"},  # ignored
     ]
     s = state_from_events(ev, 90, team_a="A", home_team="A", away_team="B")
-    assert s["goals_b"] == 1 and s["goals_a"] == 0
+    assert s["goals_a"] == 1 and s["goals_b"] == 0
 
 
 def test_lineup_time_leakage():
