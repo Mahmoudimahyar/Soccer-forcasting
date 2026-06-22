@@ -1,6 +1,16 @@
 # StatsBomb Open Data — free historical event-level data (incl. some World Cups).
 source_id: statsbomb_open_data
-status: needs_user_account  # draft | needs_user_account | approved | rejected ; here: needs license sign-off
+status: APPROVED  # user chose option (a) on 2026-06-22; license verified non-commercial-research + attribution
+approved:
+  date: "2026-06-22"
+  by: user_choice_option_a
+  license_verified: "Free for NON-COMMERCIAL research/education; attribution required. Our lab is research_only/paper-only -> compliant."
+  attribution_required: 'Data provided by StatsBomb (https://statsbomb.com)'
+  coverage_used:
+    - "FIFA World Cup 2022 (comp 43 / season 106) — 64 matches, per-shot xG + 360"
+    - "Copa America 2024 (comp 223 / season 282) — per-shot xG"
+  implemented:
+    - "scripts/fetch_statsbomb_xg.py -> data/processed/statsbomb_shots_<tag>.parquet (shots only, raw events not retained)"
 requested_by: claude_code
 purpose: >
   Historical event-level data (shots+xG, passes, goals, cards, lineups) for past tournaments to

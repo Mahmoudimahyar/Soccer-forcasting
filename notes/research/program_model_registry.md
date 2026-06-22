@@ -24,6 +24,7 @@ Single list of every model and its status. Authoritative approval source remains
 | In-play M2cal recalibrated | in-play | multinomial recal; OK but bested by M2temp | superseded by M2temp |
 | In-play M2temp (temp-scaled M2) | in-play | 6-comp LOGO: log-loss 0.737, draw slope 1.02, RPS 0.131 | strong (research-only) |
 | **In-play M2fit_temp (fitted anchor + temp)** | in-play | **6-comp LOGO: best log-loss 0.7358, best draw-Brier 0.1582, RPS 0.1307; best 2026-OOS RPS 0.1429; beats M1 sig** | **BEST in-play model (research-only)** |
+| In-play live-xG (StatsBomb) | in-play | 2-comp LOGO (WC2022+Copa2024, 68 matches): no sig W/D/L gain; cumulative xG hurts next-goal | NEGATIVE (research-only) |
 | In-play M2fit (data-fitted goal-rate) | in-play | base 1.35→1.14, k 0.20→0.15 from actual goals; RPS 0.1306, beats M1 dRPS −0.013 | improves M2 anchor (research-only) |
 
 ## OUT-OF-SAMPLE on the LIVE 2026 World Cup (UPDATED 2026-06-22 — Pro plan)
