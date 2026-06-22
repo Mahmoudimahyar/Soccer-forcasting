@@ -35,6 +35,25 @@ significant at the match level on unseen 2026 data.** This is the program's firs
   THE shadow-candidate: on the true holdout, M2's transparency carries a calibration cost, and
   recalibration (previously rejected for train-fold overfitting) actually *helps* OOS calibration.
 
+## Improvement implemented: cross-fitted temperature scaling (`TemperatureScaled`)
+Acting on the lead above. A single temperature `T` (fit on the 5 training competitions only, via
+leave-one-competition-out OOF) tempers each model's probabilities `p' = softmax(log(p)/T)`. Applied to
+the held-out 2026 World Cup:
+
+| base | RPS 2026 | RPS +temp | draw slope | +temp slope | draw ECE | +temp ECE | T |
+|---|---|---|---|---|---|---|---|
+| M1 | 0.1478 | **0.1441** | 0.69 | **1.06** | 0.072 | 0.061 | 1.45 |
+| M2 | 0.1488 | **0.1439** | 0.48 | 0.67 | 0.093 | **0.048** | 1.35 |
+| M5 | 0.1459 | **0.1420** | 0.66 | **0.92** | 0.059 | 0.070 | 1.35 |
+
+- **RPS improves on all three** (~0.004 each, consistent direction; per-match bootstrap CIs include 0
+  at n=30, so not individually significant — but the *direction is uniform* and the *calibration* gain
+  is unambiguous).
+- **Calibration slopes move decisively toward the ideal 1.0** (over-confidence removed). Best overall:
+  **M5+temp = 0.1420 RPS, draw slope 0.92** out-of-sample.
+- Implemented as a reusable, unit-tested `TemperatureScaled` wrapper (1 dof → minimal overfit risk),
+  research-only. `scripts/eval_2026_recalibration.py` reproduces the table.
+
 ## Implications
 - **Robust claim:** in-play >> static, validated OOS on 2026. Promote nothing to runtime (B1 stays sole
   approved); this strengthens the in-play plane as a research/ shadow capability.

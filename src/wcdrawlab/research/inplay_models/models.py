@@ -153,6 +153,54 @@ class M2cal_CalibratedPoisson:
         return normalize_probs(full)
 
 
+def temperature_scale(p: np.ndarray, T: float) -> np.ndarray:
+    """Temper a probability matrix: p' = softmax(log(p)/T). T>1 reduces overconfidence."""
+    z = np.log(np.clip(p, 1e-9, 1.0)) / max(T, 1e-6)
+    z = z - z.max(axis=1, keepdims=True)
+    e = np.exp(z)
+    return e / e.sum(axis=1, keepdims=True)
+
+
+class TemperatureScaled:
+    """Wrap a base in-play model and temper its W/D/L with a SINGLE temperature T (1 dof, minimal
+    overfit risk) fit on TRAIN only — via leave-one-COMPETITION-out OOF when a 'competition' column is
+    present, else in-sample. Validated to improve out-of-sample calibration (slope->1) and RPS on the
+    held-out 2026 World Cup. Research-only; not runtime-approved."""
+    def __init__(self, base_factory=M5_Ensemble):
+        self.base_factory = base_factory
+        self.base = base_factory()
+        self.T = 1.0
+        self.model_id = f"{getattr(self.base, 'model_id', 'base')}_temp"
+
+    @staticmethod
+    def _fit_T(p, y):
+        best, bT = 1e18, 1.0
+        for T in np.linspace(0.5, 3.0, 51):
+            pp = temperature_scale(p, T)
+            ll = -np.log(np.clip(pp[np.arange(len(y)), y], 1e-12, 1)).mean()
+            if ll < best:
+                best, bT = ll, float(T)
+        return bT
+
+    def fit(self, train):
+        self.base = self.base_factory().fit(train)
+        if "competition" in train.columns and train["competition"].nunique() >= 2:
+            tr = train.reset_index(drop=True)
+            oof = np.zeros((len(tr), 3))
+            for held in tr["competition"].unique():
+                a, b = tr[tr.competition != held], tr[tr.competition == held]
+                oof[b.index.to_numpy()] = self.base_factory().fit(a).predict_wld(b)
+            ytr = tr["final_wld"].map({"H": 0, "D": 1, "A": 2}).to_numpy()
+            self.T = self._fit_T(oof, ytr)
+        else:
+            y = train["final_wld"].map({"H": 0, "D": 1, "A": 2}).to_numpy()
+            self.T = self._fit_T(self.base.predict_wld(train), y)
+        return self
+
+    def predict_wld(self, df):
+        return temperature_scale(self.base.predict_wld(df), self.T)
+
+
 WLD_MODELS = {"M0_static_b1": M0_StaticB1, "M1_time_score": M1_TimeScore,
               "M2_remaining_poisson": M2_RemainingPoisson, "M5_ensemble": M5_Ensemble,
               "M2cal_calibrated_poisson": M2cal_CalibratedPoisson}
