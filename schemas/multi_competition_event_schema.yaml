@@ -1,0 +1,38 @@
+# Canonical multi-competition event schema (Phase C, DESIGN ONLY — no multi-competition data ingested).
+# Extends schemas/live_data_contracts.yaml with a competition dimension so WC / continental / national
+# / (permitted) club event data share one leakage-safe, provenance-complete shape. Research-only.
+schema_version: "multi_competition_v1"
+
+competition:
+  competition_id: {type: string, required: true, note: "e.g. fifa_wc, uefa_euro, conmebol_copa, intl_friendly"}
+  competition_kind: {type: enum, values: [world_cup, continental, national_team, club], required: true}
+  season: {type: int, required: true}
+  provider: {type: string, required: true}
+  provider_semantics_version: {type: string, required: true, note: "own-goal etc., see event_semantics"}
+  terms_ok: {type: bool, required: true, note: "license/terms permit research use; club only if permitted"}
+
+# Every event/state row reuses the live_data_contracts raw_provenance_envelope PLUS:
+row_additions:
+  competition_id: {type: string, required: true}
+  competition_kind: {type: enum, required: true}
+  season: {type: int, required: true}
+  match_id: {type: string, required: true, note: "globally unique: competition_id + provider_match_id"}
+  feature_available_at: {type: timestamp, required: true, note: "leakage gate: <= decision_timestamp"}
+  raw_payload_sha256: {type: string, required: true}
+  source_disagreement_flag: {type: bool, default: false}
+  derived_state_quality_status: {type: enum, values: [ok, degraded, unknown_semantics], default: ok}
+
+# Reused normalized tables (from live_data_contracts.yaml): A fixtures, B lineups, C subs, D goals,
+# E/F/G cards, H penalties, I shots, J corners, K set-pieces, L status, M team-stats, N/O odds,
+# P weather, Q availability, R travel/rest. Each gains the competition columns above.
+
+leakage_rules:
+  - "feature_available_at <= decision_timestamp for every feature row."
+  - "Provider-specific own-goal semantics applied via event_semantics (versioned, fail-closed)."
+  - "Holdouts at competition-level and match-level; never random row splits within a match."
+  - "Targets may reference future events; features may not."
+
+ingestion_status:
+  world_cup_2022: "INGESTED + validated (events; no xG/lineups)"
+  other_competitions: "BLOCKED — needs approved source (StatsBomb open / paid feed / API-Football quota authorization)"
+  notes: "This file fixes the shape so approved multi-competition data drops in without rework."
