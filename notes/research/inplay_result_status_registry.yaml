@@ -1,0 +1,92 @@
+# In-play result status registry (Phase 1, 2026-06-22).
+# Classifies every reported in-play metric as exactly one status. Prior reports are PRESERVED;
+# this registry is the authoritative evaluation-validity label for each claim.
+# statuses: valid_nested_cross_validation | valid_leave_one_competition_out |
+#           exploratory_transfer_analysis | invalid_due_to_training_leakage |
+#           invalid_due_to_model_selection_on_test_set | historical_reference_only
+
+audit_date: "2026-06-22"
+audited_by: claude_code
+summary: >
+  No per-fold parameter leakage and no row-level bootstrap errors were found. The defect is
+  across-experiment MODEL SELECTION informed by repeatedly viewing 2026 results: M2fit was built and
+  M2fit_temp crowned partly because of 2026 numbers. All 2026-based model-ranking claims are therefore
+  downgraded to exploratory. Historical leave-one-competition-out claims and the pre-specified
+  in-play-vs-static 2026 comparison remain valid.
+
+results:
+  - id: m2_m6_beat_m1_5comp
+    claim: "M2 & M6 beat M1 on 5/5 pre-2026 competitions (151 matches); M2 dRPS -0.0145 CI[-0.021,-0.008]"
+    source: notes/research/inplay_multicompetition_results.md
+    status: valid_leave_one_competition_out
+    note: "Reported before 2026 data existed; no selection on 2026."
+
+  - id: market_approx_elo
+    claim: "Market-anchored (M6) ~= Elo-anchored (M2) in-play; M6 vs M2 CI includes 0"
+    source: notes/research/inplay_multicompetition_results.md
+    status: valid_leave_one_competition_out
+    note: "Comparison of two pre-specified anchors; holds across 5-6 competitions."
+
+  - id: inplay_vs_static_2026
+    claim: "In-play (M1) vs static-B1 (M0) on 2026: dRPS -0.0447 CI[-0.084,-0.005] (significant)"
+    source: notes/research/inplay_2026_holdout.md
+    status: valid_leave_one_competition_out
+    note: >
+      M0 and M1 are fixed baselines defined before any 2026 data; their comparison was not model-selected
+      on 2026. Legitimate OOS observation that in-play >> static. n=30 matches -> treat magnitude as
+      indicative.
+
+  - id: m2fit_temp_best_2026
+    claim: "M2fit_temp best on 2026 (RPS 0.1429); M2temp/M2fit also 'best on 2026'"
+    source: notes/research/inplay_2026_holdout.md
+    status: invalid_due_to_model_selection_on_test_set
+    relabel: exploratory_transfer_analysis
+    note: >
+      M2fit was BUILT and M2fit_temp CROWNED after repeatedly viewing 2026 results. Parameters were
+      train-only, but model selection used the test set. Numbers are real but EXPLORATORY, not final OOS.
+
+  - id: m2temp_best_calibration_2026
+    claim: "M2temp/M2cal best-calibrated OOS on 2026 (ECE)"
+    source: notes/research/inplay_2026_holdout.md
+    status: exploratory_transfer_analysis
+    note: >
+      Temperature scaling improving calibration is a robust general fact; the specific 'best on 2026'
+      ranking used 2026 peeking -> exploratory.
+
+  - id: m2fit_temp_best_logo
+    claim: "M2fit_temp best log-loss 0.7358 / best draw-Brier across 6-competition LOGO"
+    source: notes/research/program_model_registry.md
+    status: exploratory_transfer_analysis
+    note: >
+      Per-fold LOGO numbers are computed correctly, BUT the set of models compared (M2fit, *_temp) was
+      chosen after viewing 2026, and 2026 is one of the 6 folds. The 'best model' CONCLUSION is
+      selection-contaminated. Per-historical-fold metrics may be cited as descriptive only.
+
+  - id: temperature_scaling_calibration
+    claim: "TemperatureScaled improves draw calibration (slope -> ~1.0)"
+    source: notes/research/inplay_2026_holdout.md
+    status: valid_leave_one_competition_out
+    note: "Direction (tempering an overconfident model improves reliability) is robust; T fit train-only."
+
+  - id: player_plane_negative
+    claim: "Pre-match player features (XI strength, key availability) do NOT beat Elo (166 matches)"
+    source: notes/research/player_plane_results.md
+    status: valid_leave_one_competition_out
+    note: "Genuine negative; no selection pressure toward a positive."
+
+  - id: live_xg_negative
+    claim: "Live in-play xG does not beat score+Elo (WC2022+Copa2024, 68 matches)"
+    source: notes/research/inplay_xg_results.md
+    status: exploratory_transfer_analysis
+    note: "Only 2 competitions / 2 folds -> underpowered. Direction (no gain) reported honestly; 3 W/D/L variants all ns."
+
+  - id: m3_m4_next_goal
+    claim: "M3 goal-hazard / M4 competing-risk fail vs base rate"
+    source: notes/research/program_model_registry.md
+    status: historical_reference_only
+    note: "Early single-tournament results; superseded by data-readiness gating in Phase 6."
+
+remedies:
+  - "Phase 5: nested CV for model selection using ONLY historical competitions (2026 excluded from selection)."
+  - "Phase 2: freeze a single model version for genuine PROSPECTIVE 2026 scoring (no further peek-and-rebuild)."
+  - "Until then, no in-play model may be described as 'final out-of-sample validated'."

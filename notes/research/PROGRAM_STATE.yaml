@@ -1,8 +1,8 @@
 program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-22"
 current_major_phase: "C/D/E — multi-competition in-play (UNBLOCKED via API-Football free tier 2022-2024)"
-current_task: "PAID Pro plan: player-plane built (pre-match player features do NOT beat Elo, honest negative); in-play validated OUT-OF-SAMPLE on LIVE 2026 WC (in-play vs static SIGNIFICANT, RPS 0.190->0.146)"
-next_task: "DONE: shipped TemperatureScaled recalibration (M2temp best-calibrated in-play, 6-comp LOGO). Open leads: re-run 2026 holdout as more matches finish (more power); xG-as-rating-update; market for 2026 in-play."
+current_task: "SPRINT evaluation-reset-event-expansion. Phase 1 DONE: forensic eval audit -> 2026 model-selection was selection-on-test; M2fit_temp 2026 claims downgraded to exploratory. Historical LOGO + in-play-vs-static-2026 remain valid."
+next_task: "Phase 2: freeze final-holdout model + prospective 2026 scoring protocol (deterministic machinery only). Then Phases 3-7 (StatsBomb catalogue, multi-comp dataset, nested CV, readiness, report+tag)."
 correction_note: "Prior `worldcup-predictor-v1-blocked` tag was PREMATURE/WRONG — the free tier covers Euro/Copa/AFCON/NL/friendlies (2022-2024). Tag deleted. Multi-competition in-play is feasible; V1 is in progress, not blocked."
 
 completed_tasks:
