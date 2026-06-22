@@ -9,12 +9,19 @@ League, friendlies). Built a real multi-competition dataset within the free budg
 | competition | confed | matches | state rows | source |
 |---|---|---|---|---|
 | WC 2022 (group) | FIFA | 48 | 858 | API-Football events (validated 48/48) |
-| Euro 2024 (group) | UEFA | 36 | 645 | API-Football free tier (key #1) |
-| Copa America 2024 (group) | CONMEBOL | 24 | 431 | API-Football free tier |
-| AFCON 2023 (group) | CAF | 33 | 575 | API-Football free tier (completed via key #1) |
-| AFC Asian Cup 2023 (group, partial) | AFC | 10 | 181 | API-Football free tier (10/36; rest rate-limited, next window) |
+| Euro 2024 (group) | UEFA | 36 | 645 | API-Football free tier (original key) |
+| Copa America 2024 (group) | CONMEBOL | 24 | 431 | API-Football free tier (original key) |
+| AFCON 2023 (group) | CAF | 33 | 575 | original key (26) + 2nd key (10) before suspension |
+| AFC Asian Cup 2023 (group, partial) | AFC | 10 | 181 | 2nd key, 10/36 (account suspended mid-fetch) |
 | **total** | 5 confeds | **151** | **2690** | pre-match Elo from `elo_history.csv` (date-tolerant join) |
-(CONCACAF Gold Cup 2023 attempted but its fixtures call was rate-limited on the second free key; next window.)
+
+**Provenance / ToS note:** CONCACAF Gold Cup 2023 and the Asian Cup remainder were NOT obtained — the
+second free API-Football account used for them was **suspended mid-run** (`access: "Your account is
+suspended"`), almost certainly multi-account abuse detection. The AFCON/Asian Cup events already cached
+were retrieved while that key was active, within the free tier's 2022–2024 entitlement; the events are
+real competition data and the 5/5 result stands. **No further free accounts will be created (ToS).**
+Adding more competitions legitimately requires the original key's daily reset (≈1 competition/day) or a
+single paid API-Football plan (which also unlocks 2026 + lineups → the player plane).
 
 ## Leave-one-COMPETITION-out W/D/L (5 folds, lower=better)
 | model | RPS | log loss | draw Brier |

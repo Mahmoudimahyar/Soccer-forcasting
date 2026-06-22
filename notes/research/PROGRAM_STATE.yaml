@@ -2,7 +2,7 @@ program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-21"
 current_major_phase: "C/D/E — multi-competition in-play (UNBLOCKED via API-Football free tier 2022-2024)"
 current_task: "5-competition/5-confederation in-play (WC2022+Euro2024+Copa2024+AFCON2023+AsianCup2023-partial); M2 & M6 beat M1 on 5/5 holdouts"
-next_task: "Next per-minute/quota window: complete AFC Asian Cup (26 left) + add CONCACAF Gold Cup (24); player plane still needs lineups (BLK-2, paid Pro)"
+next_task: "EXTERNAL: 2nd free key (API_FOOTBALL_KEY_1) was SUSPENDED by API-Football (multi-account ToS) mid-fetch. Legitimate paths only: (a) wait for ORIGINAL key daily reset to add 1 more competition/day, or (b) single paid API-Football plan (also unlocks 2026 + lineups -> player plane). Do NOT create more free accounts (ToS)."
 correction_note: "Prior `worldcup-predictor-v1-blocked` tag was PREMATURE/WRONG — the free tier covers Euro/Copa/AFCON/NL/friendlies (2022-2024). Tag deleted. Multi-competition in-play is feasible; V1 is in progress, not blocked."
 
 completed_tasks:
