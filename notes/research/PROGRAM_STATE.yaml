@@ -1,8 +1,8 @@
 program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-22"
 current_major_phase: "C/D/E — multi-competition in-play (UNBLOCKED via API-Football free tier 2022-2024)"
-current_task: "SPRINT phases 4-6 DONE: StatsBomb multi-comp in-play dataset (314 intl + 60 club) + 6 target tables; NESTED CV -> plain M2 is reference, M2fit_temp/xG NOT selected (earlier best was selection-on-test); player/card/next-goal models data-BLOCKED (<thresholds)."
-next_task: "Phase 7: program completion report + pytest/git checks + commit + tag evaluation-reset-event-expansion."
+current_task: "SPRINT evaluation-reset-event-expansion COMPLETE (7 phases): eval reset, frozen 2026 holdout, StatsBomb catalogue+datasets, nested CV (M2 reference; M2fit_temp/xG not selected), readiness (player/card/next-goal blocked), report + tag."
+next_task: "Prospectively score the FROZEN model on the 30 untouched 2026 matches as they finish (paper/scoring only); adopt plain M2 as reference in-play model. More intl event data / club ratings = external/paid."
 correction_note: "Prior `worldcup-predictor-v1-blocked` tag was PREMATURE/WRONG — the free tier covers Euro/Copa/AFCON/NL/friendlies (2022-2024). Tag deleted. Multi-competition in-play is feasible; V1 is in progress, not blocked."
 
 completed_tasks:
