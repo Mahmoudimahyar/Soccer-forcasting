@@ -1,0 +1,31 @@
+sprint: "Commentary Intelligence Research V1 — minute-by-minute text, event alignment, legal use, live eligibility"
+worktree: "C:/Users/Mahyar/worldcup-commentary-intelligence"
+branch: commentary-intelligence-research-v1
+updated_utc: "2026-06-23"
+active_collector:
+  path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL"
+  branch: v1-5-prospective-operations
+  commit: dc73318
+  task_workdir: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL (MAIN; != worktree)"
+  isolation: PROVEN
+current_phase: "Phase 0 setup complete -> Phase 0 audit"
+active_task: "Phase 0: commentary_current_truth.md"
+next_task: "Phase 1: global source landscape + evidence catalogue"
+completed_tasks:
+  - "safety isolation: worktree + manifest (collector untouched)"
+blocked_tasks: []
+sources_under_review: []
+sources_approved_for_sample_acquisition: []
+sources_rejected: []
+sources_requiring_external_approval: []
+legal_licensing_status: "policy pending (Phase 2)"
+live_eligibility_status: "gate pending (Phase 6); default = not live-eligible until proven"
+historical_weak_supervision_status: "contract pending (Phase 3-5)"
+safety:
+  kalshi_live_trading: false
+  trading_mode: paper
+  labels: "research_only / experimental / not_runtime_approved / not_trade_eligible"
+last_successful_test_command: "n/a (worktree; tests added per phase)"
+last_stable_commit: "dc73318 (base)"
+resume_command: "cd C:/Users/Mahyar/worldcup-commentary-intelligence && see COMMENTARY_RESUME_NEXT_TASK.md"
+stop_reason: null

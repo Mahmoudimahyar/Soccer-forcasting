@@ -1,0 +1,11 @@
+# Commentary Sprint Backlog
+- [x] Safety isolation (worktree + manifest)
+- [ ] Phase 0: commentary_current_truth.md
+- [ ] Phase 1: source landscape + catalogue (csv/json/md)
+- [ ] Phase 2: licensing policy + rights schema + audit
+- [ ] Phase 3: canonical commentary contracts + module + synthetic tests
+- [ ] Phase 4: open-source sample acquisition gate (mostly blockers expected)
+- [ ] Phase 5: commentary-to-event alignment + weak-supervision tooling + tests
+- [ ] Phase 6: live causality + eligibility gate + import-isolation tests
+- [ ] Phase 7: provider decision package
+- [ ] Phase 8: final audit + completion report + commit + tag
