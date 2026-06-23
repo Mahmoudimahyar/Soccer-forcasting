@@ -8,8 +8,8 @@ active_collector:
   commit: dc73318
   task_workdir: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL (MAIN; != worktree)"
   isolation: PROVEN
-current_phase: "Phase 3 complete -> Phase 4 (open-source sample gate)"
-active_task: "Phase 4: open-source sample acquisition gate (expect mostly blockers)"
+current_phase: "Phase 4 complete -> Phase 5 (alignment toolchain)"
+active_task: "Phase 5: commentary-to-event alignment + weak-supervision tooling"
 next_task: "Phase 1: global source landscape + evidence catalogue"
 completed_tasks:
   - "safety isolation (worktree + manifest)"
@@ -17,7 +17,7 @@ completed_tasks:
   - "Phase 1: source catalogue (8 sources, csv/json) + landscape"
 blocked_tasks: []
 sources_under_review: [soccernet_echoes, soccerreplay_1988, sportmonks_commentary, official_match_centers, news_live_blogs]
-sources_approved_for_sample_acquisition: []
+sources_approved_for_sample_acquisition: [soccernet_echoes (open CC BY 4.0; historical-only)]
 sources_rejected: [news_live_blogs, yallashoot_arabic]
 sources_requiring_external_approval: [soccerreplay_1988(NDA), sportmonks_commentary(paid)]
 legal_licensing_status: "policy + per-source rights schema DONE; only SoccerNet-Echoes open (historical-only)"
