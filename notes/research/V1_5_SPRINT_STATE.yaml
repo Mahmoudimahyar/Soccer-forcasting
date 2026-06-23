@@ -1,11 +1,12 @@
 sprint: "World Cup Predictor V1.5 — Prospective Operations, Durable Collection, Data Acquisition Readiness"
 branch: v1-5-prospective-operations
 updated_utc: "2026-06-23"
-current_phase: "Phase 0 complete -> Phase 1 (API-Football diagnosis)"
+current_phase: "Phase 1 complete -> Phase 2 (durable collector)"
 
 completed_tasks:
-  - "Phase 0: reconcile state (v1_5_current_truth.md + this file)"
-active_task: "Phase 1: safe read-only direct API-Football diagnosis"
+  - "Phase 0: reconcile state"
+  - "Phase 1: API-Football direct diagnosis (compatible) + read-only rate-limited adapter + 6 tests"
+active_task: "Phase 2: durable prospective collector"
 next_task: "Phase 2: durable prospective collector (pre-match/in-play/post-match, idempotent, quota-aware)"
 
 blocked_tasks:
@@ -22,8 +23,8 @@ external_actions_required:
   - "Decide on a paid event provider for player/next-goal/card thresholds (Phase 5 decision package)."
   - "Manually install the scheduler when ready (scripts prepared, not auto-installed)."
 
-collector_readiness: "not yet built (Phase 2)"
-api_readiness: "API-Football PAID Pro active (7500/day, 2026 + lineups + events); direct-adapter diagnosis in Phase 1"
+collector_readiness: "adapter ready; collector in Phase 2"
+api_readiness: "DIRECT API-Football compatible (auth accepted; 2026 fixtures/standings/events/subs/cards/lineups all 2xx); read-only adapter built"
 frozen_model_version: "m2_frozen (M2_RemainingPoisson) v2 — research_only, parameter-free"
 future_fixture_pool: "30 not-started 2026 WC matches (NS) + knockouts to be scheduled; 41 finished are exploratory/seen"
 last_successful_test_command: "python -m pytest -q  # 185 passed"
