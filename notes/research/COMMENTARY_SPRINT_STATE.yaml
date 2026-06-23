@@ -8,8 +8,8 @@ active_collector:
   commit: dc73318
   task_workdir: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL (MAIN; != worktree)"
   isolation: PROVEN
-current_phase: "Phase 7 complete -> Phase 8 (final audit + tag)"
-active_task: "Phase 8: final audit + completion report + commit + tag"
+current_phase: "COMPLETE — Phases 0-8 done; tag commentary-intelligence-research-v1"
+active_task: "none — sprint complete"
 next_task: "Phase 1: global source landscape + evidence catalogue"
 completed_tasks:
   - "safety isolation (worktree + manifest)"
@@ -27,7 +27,7 @@ safety:
   kalshi_live_trading: false
   trading_mode: paper
   labels: "research_only / experimental / not_runtime_approved / not_trade_eligible"
-last_successful_test_command: "n/a (worktree; tests added per phase)"
+last_successful_test_command: "pytest commentary suites = 34 passed (contracts 10, adapter 1, live-eligibility 6, + prior phases)"
 last_stable_commit: "dc73318 (base)"
 resume_command: "cd C:/Users/Mahyar/worldcup-commentary-intelligence && see COMMENTARY_RESUME_NEXT_TASK.md"
-stop_reason: null
+stop_reason: "All feasible phases complete + tagged. Remaining = external: NDA (SoccerReplay-1988) / paid (Sportmonks) / rights decisions. No live-eligible source exists."
