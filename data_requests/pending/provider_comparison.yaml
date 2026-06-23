@@ -1,0 +1,67 @@
+# Phase 5 provider comparison (V1.5). Decision package only — nothing purchased/integrated.
+# Full analysis: notes/research/data_provider_decision_package.md
+status: awaiting_user_decision
+created: "2026-06-23"
+thresholds_to_clear:
+  lineup_substitution_matches: 500
+  event_timestamp_matches_next_goal: 500
+  direct_red_or_second_yellow_events: 150
+
+providers:
+  - id: statsbomb_commercial
+    name: "StatsBomb (Hudl StatsBomb) commercial / academic"
+    pricing: "quote-based (no public price); academic/research license possibly available"
+    coverage_mens_international: "extensive (multi-year)"
+    event_timestamps: yes
+    lineups_benches: yes
+    substitutions: yes
+    cards: yes
+    player_ids: yes
+    positions: yes
+    shots_xg: "best-in-class (+360 freeze-frames)"
+    injury_suspension: "limited"
+    live_latency: low
+    research_paper_eligibility: "open tier = non-commercial research; commercial = per contract"
+    export_api: "commercial API + bulk"
+    reuses_existing_pipeline: yes
+    meets_thresholds: "500/500 yes; 150 reds plausible across full catalogue"
+  - id: opta_stats_perform
+    name: "Opta / Stats Perform (enterprise)"
+    pricing: "enterprise quote (typically highest)"
+    coverage_mens_international: "gold-standard, decades"
+    event_timestamps: yes
+    lineups_benches: yes
+    substitutions: yes
+    cards: yes
+    player_ids: yes
+    positions: yes
+    shots_xg: "best-in-class"
+    injury_suspension: "available via additional feeds"
+    live_latency: lowest
+    research_paper_eligibility: "negotiated"
+    export_api: "enterprise API/feeds"
+    reuses_existing_pipeline: no
+    meets_thresholds: "all yes"
+  - id: sportmonks
+    name: "Sportmonks Football API"
+    pricing: "base ~EUR 29-34/mo; xG add-on EUR 19-99/mo; historical archive one-time fee"
+    coverage_mens_international: "broad (2500+ leagues incl internationals)"
+    event_timestamps: yes
+    lineups_benches: yes
+    substitutions: yes
+    cards: yes
+    player_ids: yes
+    positions: yes
+    shots_xg: "xG add-on (recent-leaning; older-international depth weaker)"
+    injury_suspension: "add-on feeds"
+    live_latency: low
+    research_paper_eligibility: "standard commercial terms (self-serve)"
+    export_api: "REST API"
+    reuses_existing_pipeline: no
+    meets_thresholds: "500/500 plausible via archive; xG depth marginal; 150 reds likely needs club pooling"
+
+recommendation:
+  primary: sportmonks
+  rationale: "lowest-cost, self-serve, published pricing; plausibly meets 500/500 via historical archive"
+  escalation_if_xg_insufficient: statsbomb_commercial
+  user_action: "create Sportmonks account; base plan + xG add-on + historical archive; key in .env as SPORTMONKS_KEY; approve as source"

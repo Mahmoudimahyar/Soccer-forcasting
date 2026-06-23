@@ -1,0 +1,41 @@
+# Minimum data requirements to unblock player/next-goal/card model classes (V1.5 Phase 5).
+status: specification
+created: "2026-06-23"
+purpose: "Define the exact minimum a provider must deliver before each blocked model class is built."
+
+required_fields_per_match:
+  - match_id
+  - competition_id + competition_type (international vs club) + confederation
+  - kickoff_utc
+  - event stream with per-event TIMESTAMP (minute+second or wall-clock)
+  - goals (incl own goals, with scorer team)
+  - cards (yellow / second-yellow / direct red, with team + minute)
+  - substitutions (with minute + players in/out)
+  - starting XI + bench with player_id + position
+  - shots with location + outcome + per-shot xG
+  - final result + final score
+
+model_class_thresholds:
+  player_substitution_model:
+    min_matches_complete_lineup_and_subs: 500
+    notes: "international-only ceiling on StatsBomb open is ~333 -> needs commercial provider or club pooling"
+  next_goal_model:
+    min_matches_with_event_timestamps: 500
+    needs_shot_xg: true
+    notes: "per-shot xG quality is the binding factor; recent-window features pre-registered (xg_features.py)"
+  card_model:
+    min_positive_red_or_second_yellow_events: 150
+    notes: "hardest threshold; ~75-100 reds expected from 500 internationals -> likely needs club pooling"
+
+leakage_and_governance:
+  - "feature_available_at <= decision_timestamp enforced (see operations/prospective.py)"
+  - "targets stored separately from features"
+  - "competition_type is a mandatory model feature; club and international never silently mixed"
+  - "competition-level (nested) holdouts only; no selection on 2026"
+  - "all resulting models research_only; B1 remains sole runtime model"
+
+start_immediately_after_approval:
+  - "read-only provider adapter (mirror api_football_adapter safety)"
+  - "extend the StatsBomb-style in-play + target-table builder to the licensed feed"
+  - "re-run readiness gate; build player/substitution + next-goal models if thresholds met"
+  - "pool club competitions (clearly labelled auxiliary) only if reds < 150"

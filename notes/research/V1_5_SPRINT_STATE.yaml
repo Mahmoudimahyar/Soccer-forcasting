@@ -1,15 +1,16 @@
 sprint: "World Cup Predictor V1.5 — Prospective Operations, Durable Collection, Data Acquisition Readiness"
 branch: v1-5-prospective-operations
 updated_utc: "2026-06-23"
-current_phase: "Phase 4 complete -> Phase 5 (data-provider decision package)"
+current_phase: "Phase 5 complete -> Phase 6 (final readiness audit + tag)"
 
 completed_tasks:
   - "Phase 0: reconcile state"
   - "Phase 1: API-Football diagnosis + read-only adapter (6 tests)"
   - "Phase 2: durable collector + 3 scripts + docs + 9 tests"
   - "Phase 3: scheduler/deployment materials (not auto-installed)"
-  - "Phase 4: future-2026 queue (28 eligible / 44 excluded) + dry-run verified (no pre-window requests, deterministic, missed-marking)"
-active_task: "Phase 5: data procurement decision package"
+  - "Phase 4: future-2026 queue (28 eligible) + dry-run verified"
+  - "Phase 5: data-provider decision package (StatsBomb commercial / Opta / Sportmonks); recommend Sportmonks lowest-cost; requirements YAMLs"
+active_task: "Phase 6: final V1.5 readiness audit + completion report + tag"
 next_task: "Phase 2: durable prospective collector (pre-match/in-play/post-match, idempotent, quota-aware)"
 
 blocked_tasks:
