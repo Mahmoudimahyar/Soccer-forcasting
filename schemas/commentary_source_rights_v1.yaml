@@ -1,0 +1,73 @@
+schema_version: commentary_source_rights_v1
+description: >
+  Per-source rights classification + a use-type matrix. Exactly one `classification` per source. The
+  matrix records what is permitted for EACH distinct use. Defaults are CONSERVATIVE (false) until an
+  explicit official term permits it. Used by scripts/validate_commentary_live_eligibility.py.
+classifications_enum:
+  - open_research_download_allowed
+  - attribution_required
+  - noncommercial_research_only
+  - NDA_or_manual_approval_required
+  - commercial_license_required
+  - API_account_required
+  - live_use_rights_unclear
+  - historical_only_rights_unclear
+  - scraping_not_permitted_or_not_verified
+  - rejected_for_project_use
+  - unavailable_or_unverified
+use_types:
+  - store_raw_text
+  - store_hashed_text
+  - store_derived_event_labels
+  - train_model_on_text
+  - evaluate_model_on_text
+  - show_text_in_product
+  - use_text_as_live_model_input
+  - redistribute_samples
+  - commercial_use
+sources:
+  soccernet_echoes:
+    classification: open_research_download_allowed   # CC BY 4.0
+    matrix: {store_raw_text: true, store_hashed_text: true, store_derived_event_labels: true,
+             train_model_on_text: true, evaluate_model_on_text: true, show_text_in_product: true,
+             use_text_as_live_model_input: false, redistribute_samples: true, commercial_use: true}
+    notes: "attribution required; broadcast-time only (no publication_time) -> live use blocked by causality, not rights"
+  soccerreplay_1988:
+    classification: NDA_or_manual_approval_required
+    matrix: {store_raw_text: false, store_hashed_text: false, store_derived_event_labels: false,
+             train_model_on_text: false, evaluate_model_on_text: false, show_text_in_product: false,
+             use_text_as_live_model_input: false, redistribute_samples: false, commercial_use: false}
+    notes: "all uses blocked until YOU accept the NDA; then non-commercial weak-supervision only"
+  sportmonks_commentary:
+    classification: commercial_license_required
+    matrix: {store_raw_text: false, store_hashed_text: false, store_derived_event_labels: false,
+             train_model_on_text: false, evaluate_model_on_text: false, show_text_in_product: false,
+             use_text_as_live_model_input: false, redistribute_samples: false, commercial_use: false}
+    notes: "all uses blocked until a paid license is purchased (your decision); live use also pending timestamp verification"
+  api_football:
+    classification: API_account_required
+    matrix: {store_raw_text: false, store_hashed_text: false, store_derived_event_labels: true,
+             train_model_on_text: false, evaluate_model_on_text: false, show_text_in_product: false,
+             use_text_as_live_model_input: false, redistribute_samples: false, commercial_use: false}
+    notes: "structured events only (no prose); already used by the collector; not a commentary-text source"
+  statsbomb_open:
+    classification: noncommercial_research_only
+    matrix: {store_raw_text: false, store_hashed_text: false, store_derived_event_labels: true,
+             train_model_on_text: false, evaluate_model_on_text: false, show_text_in_product: false,
+             use_text_as_live_model_input: false, redistribute_samples: false, commercial_use: false}
+    notes: "structured truth anchor for alignment; attribution required; non-commercial"
+  official_match_centers:
+    classification: scraping_not_permitted_or_not_verified
+    matrix: {store_raw_text: false, store_hashed_text: false, store_derived_event_labels: false,
+             train_model_on_text: false, evaluate_model_on_text: false, show_text_in_product: false,
+             use_text_as_live_model_input: false, redistribute_samples: false, commercial_use: false}
+  news_live_blogs:
+    classification: scraping_not_permitted_or_not_verified
+    matrix: {store_raw_text: false, store_hashed_text: false, store_derived_event_labels: false,
+             train_model_on_text: false, evaluate_model_on_text: false, show_text_in_product: false,
+             use_text_as_live_model_input: false, redistribute_samples: false, commercial_use: false}
+  yallashoot_arabic:
+    classification: rejected_for_project_use
+    matrix: {store_raw_text: false, store_hashed_text: false, store_derived_event_labels: false,
+             train_model_on_text: false, evaluate_model_on_text: false, show_text_in_product: false,
+             use_text_as_live_model_input: false, redistribute_samples: false, commercial_use: false}
