@@ -65,7 +65,9 @@ def assert_no_raw_text(records):
 
 def main():
     from wcdrawlab.research.commentary import soccernet_features as F
-    arrow = ROOT / "data/raw/commentary/soccernet_echoes/whisper_v1/1.0.0/soccer_net_echoes_hf_dataset-train.arrow"
+    import os
+    _v=os.environ.get("ECHOES_VARIANT","whisper_v1_en")
+    arrow = ROOT / f"data/raw/commentary/soccernet_echoes/{_v}/1.0.0/soccer_net_echoes_hf_dataset-train.arrow"
     labels = ROOT / "data/raw/soccernet_action_labels"
     events = F.load_label_events(labels)
     import pyarrow as pa

@@ -13,7 +13,9 @@ sys.path.insert(0, str(ROOT / "src"))
 from wcdrawlab.research.commentary import soccernet_features as F  # noqa: E402
 from wcdrawlab.research.commentary import soccernet_alignment as A  # noqa: E402
 
-ARROW = ROOT / "data/raw/commentary/soccernet_echoes/whisper_v1/1.0.0/soccer_net_echoes_hf_dataset-train.arrow"
+import os
+_VARIANT = os.environ.get("ECHOES_VARIANT", "whisper_v1")
+ARROW = ROOT / f"data/raw/commentary/soccernet_echoes/{_VARIANT}/1.0.0/soccer_net_echoes_hf_dataset-train.arrow"
 LABELS = ROOT / "data/raw/soccernet_action_labels"
 WINDOW = 45.0  # preregistered candidate window (s); chosen before evaluation
 

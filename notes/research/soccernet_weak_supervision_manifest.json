@@ -1,0 +1,21 @@
+{
+  "n_records": 7437,
+  "n_matched_games": 254,
+  "by_event": {
+    "corner": 1563,
+    "offside": 502,
+    "shot_on_target": 1188,
+    "goal": 659,
+    "foul": 1769,
+    "yellow_card": 479,
+    "penalty_awarded": 69,
+    "shot": 972,
+    "substitution": 194,
+    "red_card": 11,
+    "kickoff": 22,
+    "second_yellow": 9
+  },
+  "parser_version": "soccernet_ws_v1",
+  "causal_eligibility": "historical_weak_supervision_only",
+  "live_eligible": false
+}
