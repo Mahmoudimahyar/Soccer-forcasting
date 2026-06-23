@@ -1,12 +1,13 @@
 sprint: "World Cup Predictor V1.5 — Prospective Operations, Durable Collection, Data Acquisition Readiness"
 branch: v1-5-prospective-operations
 updated_utc: "2026-06-23"
-current_phase: "Phase 1 complete -> Phase 2 (durable collector)"
+current_phase: "Phase 2 complete -> Phase 3 (scheduler/deployment readiness)"
 
 completed_tasks:
   - "Phase 0: reconcile state"
-  - "Phase 1: API-Football direct diagnosis (compatible) + read-only rate-limited adapter + 6 tests"
-active_task: "Phase 2: durable prospective collector"
+  - "Phase 1: API-Football diagnosis + read-only adapter (6 tests)"
+  - "Phase 2: durable collector (ledger/predict/score/session/windows) + 3 scripts + runbook + dictionary + 9 tests"
+active_task: "Phase 3: scheduler + deployment readiness materials"
 next_task: "Phase 2: durable prospective collector (pre-match/in-play/post-match, idempotent, quota-aware)"
 
 blocked_tasks:
@@ -23,7 +24,7 @@ external_actions_required:
   - "Decide on a paid event provider for player/next-goal/card thresholds (Phase 5 decision package)."
   - "Manually install the scheduler when ready (scripts prepared, not auto-installed)."
 
-collector_readiness: "adapter ready; collector in Phase 2"
+collector_readiness: "BUILT (dry-run safe by default; first-write-wins ledger; leakage-guarded; quota-aware; integrity check) — scheduler in Phase 3; full dry-run vs queue in Phase 4"
 api_readiness: "DIRECT API-Football compatible (auth accepted; 2026 fixtures/standings/events/subs/cards/lineups all 2xx); read-only adapter built"
 frozen_model_version: "m2_frozen (M2_RemainingPoisson) v2 — research_only, parameter-free"
 future_fixture_pool: "30 not-started 2026 WC matches (NS) + knockouts to be scheduled; 41 finished are exploratory/seen"
