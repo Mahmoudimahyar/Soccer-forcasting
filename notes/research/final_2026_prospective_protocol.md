@@ -32,6 +32,16 @@ pre-match anchor (Elo), allowed data sources (API-Football Pro state + elo_histo
 - The manifest pins the git commit, `models.py` SHA-256, and scorer SHA-256 so the exact frozen code is
   recoverable.
 
+## v2 RE-FREEZE (2026-06-23) — operative model is now plain M2
+Phase 5 nested CV showed the v1 frozen model (`m2fit_temp`) does NOT survive selection (it was crowned
+via selection-on-test); plain **M2** is the reference. The operative prospective model is therefore
+**`m2_frozen`** (M2 = remaining-time Poisson, base=1.35, k=0.20, no temperature, no fitting):
+- config `configs/final_holdout_model_m2.yaml`; manifest `notes/research/final_holdout_freeze_manifest_v2.json`.
+- M2 is parameter-free, so **no 2026 result can change it** — the cleanest possible prospective baseline.
+- v1 (`m2fit_temp`, `configs/final_holdout_model.yaml`) is **retained as an immutable historical record**,
+  not used for prospective scoring.
+- Verified: `FrozenInPlayModel(1.35, 0.20, 1.0)` reproduces `M2_RemainingPoisson` exactly.
+
 ## This phase builds machinery only
 No live collector is launched here. A future phase may run a durable collector that, for each upcoming
 2026 fixture, writes frozen predictions to a ledger and scores them once finished — strictly paper,

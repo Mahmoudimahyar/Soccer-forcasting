@@ -1,0 +1,34 @@
+model_id: m2_frozen
+architecture: M2 = remaining-time Poisson anchored on Elo supremacy (pregame_lambdas
+  base=1.35, k=0.20); no fitting, no temperature
+supersedes: "m2fit_temp_frozen (v1) \u2014 discredited by Phase 5 nested CV (selection-on-test)"
+approval_status: research_only
+research_only: true
+experimental: true
+not_runtime_approved: true
+model_parameters:
+  base: 1.35
+  k: 0.2
+  temperature: 1.0
+selection_justification: Phase 5 nested LOGO selected plain M2 (4/6 folds); M2fit_temp/xG
+  never selected. See inplay_model_selection_report.md.
+trained_on: none (M2 is parameter-free / transparent)
+feature_schema_version: inplay_v1
+feature_schema:
+- elo_delta_home
+- decision_minute
+- score_home
+- score_away
+- red_home
+- red_away
+pre_match_anchor: elo_delta_home from elo_history.csv
+allowed_data_sources:
+- api_football_pro (fixtures/events for live state)
+- elo_history.csv
+output_schema:
+- p_home_win
+- p_draw
+- p_away_win
+scoring_only: true
+freeze_statement: No 2026 match may influence this model (it has no free parameters).
+  Future 2026 matches are scored by this frozen M2 only.

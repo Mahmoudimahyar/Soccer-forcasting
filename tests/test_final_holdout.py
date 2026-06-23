@@ -41,6 +41,18 @@ def test_frozen_config_loads_and_matches_manifest():
     assert abs(m.temperature - man["model_configuration"]["temperature"]) < 1e-12
 
 
+def test_frozen_m2_v2_reproduces_M2():
+    cfg = ROOT / "configs/final_holdout_model_m2.yaml"
+    if not cfg.exists():
+        return
+    import numpy as np
+    from wcdrawlab.research.inplay_models.models import M2_RemainingPoisson
+    rows = pd.DataFrame([_row(elo_delta_home=d, decision_minute=m, score_home=s).iloc[0]
+                         for d in (-100, 0, 150) for m in (15, 70) for s in (0, 1)])
+    frozen = load_frozen(cfg).predict_wld(rows)
+    assert np.allclose(frozen, M2_RemainingPoisson().predict_wld(rows), atol=1e-9)
+
+
 def test_frozen_model_does_no_fitting():
     # a single row with no 'competition'/'final_wld' columns must still score (no fit path)
     m = load_frozen(CFG) if CFG.exists() else FrozenInPlayModel(1.14, 0.15, 1.4)

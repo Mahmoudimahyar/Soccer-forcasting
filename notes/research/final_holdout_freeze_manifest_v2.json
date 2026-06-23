@@ -1,0 +1,35 @@
+{
+  "final_holdout_freeze_utc_v2": "2026-06-23T01:18:11.937794+00:00",
+  "version": 2,
+  "git_commit_hash": "5785a256aa076a24bbc703ea58dfd8a873cecdd5",
+  "model_code_sha256": "f1a6bbc4b9816a31cd4d58f14bcf9cdfe20f1d80e6627adae94b1a25a3034ab2",
+  "frozen_scorer_code_sha256": "d655facdc3cf926090ee20fe9ef586b86e130344c352f3190cd2c4ec695b86c1",
+  "model_id": "m2_frozen",
+  "model_configuration": {
+    "base": 1.35,
+    "k": 0.2,
+    "temperature": 1.0
+  },
+  "supersedes_v1": "m2fit_temp_frozen",
+  "reason": "Phase 5 nested LOGO selected plain M2 (4/6 folds); M2fit_temp/xG never selected. See inplay_model_selection_report.md.",
+  "feature_schema_version": "inplay_v1",
+  "feature_schema": [
+    "elo_delta_home",
+    "decision_minute",
+    "score_home",
+    "score_away",
+    "red_home",
+    "red_away"
+  ],
+  "allowed_data_sources": [
+    "api_football_pro (fixtures/events for live state)",
+    "elo_history.csv"
+  ],
+  "output_schema": [
+    "p_home_win",
+    "p_draw",
+    "p_away_win"
+  ],
+  "model_approval_status": "research_only",
+  "no_influence_statement": "M2 has no free parameters; no 2026 result can change it. Results used only for prospective scoring."
+}
