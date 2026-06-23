@@ -1,0 +1,21 @@
+{
+  "window_s": 45.0,
+  "language_comparison": {
+    "whisper_v1": {
+      "held_out": "spain_laliga",
+      "n_matched": 373,
+      "n_test": 70,
+      "goal_recall_L1": 0.0535,
+      "goal_precision_L1": 0.0988
+    },
+    "whisper_v1_en": {
+      "held_out": "spain_laliga",
+      "n_matched": 254,
+      "n_test": 60,
+      "goal_recall_L1": 0.8846,
+      "goal_precision_L1": 0.1578
+    }
+  },
+  "note": "no raw text; LOCO match-level splits",
+  "per_competition_rows": 18
+}

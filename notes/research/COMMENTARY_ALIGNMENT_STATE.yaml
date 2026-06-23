@@ -3,8 +3,8 @@ worktree: "C:/Users/Mahyar/worldcup-commentary-intelligence"
 branch: commentary-alignment-real-data-v1
 updated_utc: "2026-06-23"
 active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, isolation: PROVEN}
-current_phase: "Phase 4-6 engine+tests built+committed; awaiting train+valid label download to run REAL eval (Phase 5)"
-active_task: "Phase 5 run: real overlap + leakage-safe eval once labels finish downloading"
+current_phase: "COMPLETE — Phases 0-7 done; 5/5 adversarial audit PASS; tag soccernet-real-alignment-v1"
+active_task: "none — sprint complete"
 next_task: "Phase 2: bounded action-label acquisition (if rights permit)"
 completed_tasks: ["safety isolation","Phase 0 truth","Phase 1 label-source audit","Phase 2 label acquisition (100 games, no password)","Phase 3 mapping module+schemas+8 tests"]
 blocked_tasks: []
@@ -12,11 +12,11 @@ data_sources_under_review: [soccernet_action_spotting_labels]
 raw_data_location: "data/raw/ (gitignored): commentary/soccernet_echoes (have); soccernet_action_labels (pending Phase 2)"
 soccernet_echoes_sample: "10 games / 6552 segments (CC BY 4.0, historical_weak_supervision_only, no pub time)"
 action_label_match_counts: "100 games / 22551 events / 17 classes (test split, no NDA)"
-overlap_count: "unknown (Phase 3)"
-current_metrics: "engine+11 tests pass; real metrics pending download completion"
+overlap_count: "373 (whisper_v1) / 254 (whisper_v1_en primary), exact join, 0 collisions"
+current_metrics: "goal rec 0.62-0.88 / corner prec 0.64-0.82 LOCO; 35 tests pass; readiness=historical_weak_supervision_only"
 known_limitations: "SoccerNet-Echoes has NO publication_time -> never live; action labels not yet acquired"
 safety: {kalshi_live_trading: false, trading_mode: paper, labels: "research_only/historical_weak_supervision_only/not_live_eligible"}
 last_successful_test_command: "pytest commentary suites green (prior sprint)"
 last_stable_commit: "49e8f18"
 resume_command: "cd C:/Users/Mahyar/worldcup-commentary-intelligence; git switch commentary-alignment-real-data-v1; see COMMENTARY_ALIGNMENT_RESUME_NEXT_TASK.md"
-stop_reason: null
+stop_reason: "All 8 phases complete + 5/5 audit PASS + tag soccernet-real-alignment-v1. Remaining = source-intrinsic (no player IDs/VAR in SoccerNet v2) or external (paid live provider / NDA) — not blocking the historical result."

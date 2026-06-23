@@ -20,12 +20,16 @@ not_trade_eligible=true · not_live_eligible=true
   precision_L1 = correct within-window claims / all claims of that type; timing = |t_seg − (t_event+offset)|.
 
 ## Headline finding — language dependence (a real result)
-| variant | test comp | goal recall_L1 |
-|---|---|---|
-| `whisper_v1` (original lang) | spain_laliga (Spanish ASR) | **0.05** |
-| `whisper_v1_en` (English) | spain_laliga | **0.88** |
+| variant | test comp | goal recall_L1 | goal precision_L1 |
+|---|---|---|---|
+| `whisper_v1` (original lang) | spain_laliga (Spanish ASR) | **0.0535** | 0.099 |
+| `whisper_v1_en` (English) | spain_laliga | **0.8846** | 0.158 |
 
 English keyword rules fail on original-language ASR. All metrics below use `whisper_v1_en`.
+Reproduce both the language comparison and the 6-fold per-competition table:
+`python scripts/run_soccernet_folds.py` → `notes/research/soccernet_language_and_fold_comparison.json`
+(+ gitignored `data/processed/soccernet_alignment_per_competition.csv`). Primary single-fold run:
+`ECHOES_VARIANT=whisper_v1_en python scripts/run_soccernet_alignment.py`.
 
 ## Per-event-type (English, test = La Liga held out; offset 0.37 s)
 | event | n_events | recall_L1 | precision_L1 | timing MAE (s) |
@@ -54,15 +58,16 @@ English keyword rules fail on original-language ASR. All metrics below use `whis
 | spain_laliga | 60 | 0.88 | 0.75 | 0.82 |
 
 ## Reading the result (honest)
-- **High recall, salient events**: goals (0.63–0.88) and penalties are nearly always narrated; corners
+- **High recall, salient events**: goals (0.62–0.88 across folds; Bundesliga low = 0.625) and penalties are nearly always narrated; corners
   well-detected with **good precision (0.64–0.82)** — corner is the single best-aligned class.
 - **Good precision, ambiguous recall**: yellow_card / foul (precision 0.70–0.75) — distinctive language,
   but not every event is narrated.
 - **Low precision**: "goal" keyword fires on near-misses/goal-kick/chances → precision 0.16; shots similar.
 - **Poorly captured by keywords**: substitution (0.09) and kickoff (0.006) — rarely narrated with the
   pre-registered phrases. Rare events (red_card, second_yellow, n≤6) are statistically unreliable.
-- **Timing**: median/mean absolute error ≈ 4–18 s, reflecting ASR segment granularity + commentary
-  lead/lag; train offset is small (≈0.4–0.9 s) so calibration barely moves results.
+- **Timing**: median/mean absolute error ≈ 4–18 s for common events, rising to ~32 s for rare classes
+  (red_card/second_yellow, n≤6, where the few pairs are noisy), reflecting ASR segment granularity +
+  commentary lead/lag; train offset is small (≈0.4–0.9 s) so calibration barely moves results.
 - Results are **stable across all 6 leave-one-competition-out folds** → generalizes, not a single-split fluke.
 
 ## Allowed vs prohibited claims

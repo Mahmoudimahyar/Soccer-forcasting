@@ -3,7 +3,7 @@ research_only=true / historical_weak_supervision_only=true / not_live_eligible=t
 
 ## Decision: **ready_for_historical_weak_supervision_only**  (option 2 of 5)
 Rationale: deterministic keyword+time alignment yields usable NOISY labels for SALIENT events
-(goal recall 0.63-0.88; corner recall 0.40-0.75 at precision 0.64-0.82; yellow/foul precision 0.70-0.75),
+(goal recall 0.62-0.88; corner recall 0.40-0.75 at precision 0.64-0.82; yellow/foul precision 0.70-0.75),
 reproducibly across 6 leave-one-competition-out folds. This is sufficient for **historical weak
 supervision** (noisy distant labels for model pre-training / data augmentation), but NOT clean enough for
 **event_enrichment as ground truth** (option 1) without per-type precision filtering, because several
