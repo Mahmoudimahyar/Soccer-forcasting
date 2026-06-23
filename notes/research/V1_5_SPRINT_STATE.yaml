@@ -27,7 +27,7 @@ external_actions_required:
   - "Decide on a paid event provider for player/next-goal/card thresholds (Phase 5 decision package)."
   - "Manually install the scheduler when ready (scripts prepared, not auto-installed)."
 
-collector_readiness: "BUILT (dry-run safe by default; first-write-wins ledger; leakage-guarded; quota-aware; integrity check) — scheduler in Phase 3; full dry-run vs queue in Phase 4"
+collector_readiness: "ACTIVATED — WorldCupShadowCollector Task Scheduler task installed (5-min bounded cycle to 2026-07-04); baseline odds captured (1/500 credits); M1-M5 immutable predictions frozen; Section-7A integrity all_ok"
 api_readiness: "DIRECT API-Football compatible (auth accepted; 2026 fixtures/standings/events/subs/cards/lineups all 2xx); read-only adapter built"
 frozen_model_version: "m2_frozen (M2_RemainingPoisson) v2 — research_only, parameter-free"
 future_fixture_pool: "28 ELIGIBLE clean-prospective NS matches (queue built); 44 excluded (43 FT +1 live); knockouts add more once scheduled"

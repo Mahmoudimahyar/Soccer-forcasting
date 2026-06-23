@@ -1,8 +1,8 @@
 program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-22"
 current_major_phase: "C/D/E — multi-competition in-play (UNBLOCKED via API-Football free tier 2022-2024)"
-current_task: "V1.5 prospective-operations sprint COMPLETE + tagged (v1-5-prospective-readiness): read-only API adapter, durable collector, scheduler materials, 28-match future queue, data-provider decision package, readiness report. 200 tests pass; B1 sole runtime; paper-only."
-next_task: "Activate collector for 2026 prospective scoring (user: install scheduler + EXECUTE=1) and/or approve a paid event provider (Sportmonks) to unblock player/next-goal/card models. Both are external/time-gated."
+current_task: "PROSPECTIVE COLLECTION ACTIVATED: API-Football Pro confirmed; budget-guarded Odds API fetcher + bounded Windows cycle; WorldCupShadowCollector task INSTALLED (every 5min->2026-07-04); baseline captured (1/500 credits); M1-M5 immutable predictions frozen (28 matches); 203 tests; integrity all_ok."
+next_task: "Automatic: scheduler captures T-90/T-15 odds + freezes M1-M5 + scores finished matches. Offline: integrity checks (7A done), 2022 replay/simulator/weather hardening (7B-D). Paid provider still deferred (gating conditions unmet)."
 correction_note: "Prior `worldcup-predictor-v1-blocked` tag was PREMATURE/WRONG — the free tier covers Euro/Copa/AFCON/NL/friendlies (2022-2024). Tag deleted. Multi-competition in-play is feasible; V1 is in progress, not blocked."
 
 completed_tasks:
