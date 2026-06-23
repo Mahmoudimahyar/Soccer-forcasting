@@ -8,8 +8,8 @@ active_collector:
   commit: dc73318
   task_workdir: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL (MAIN; != worktree)"
   isolation: PROVEN
-current_phase: "Phase 6 complete -> Phase 7 (provider decision package)"
-active_task: "Phase 7: commentary provider decision package"
+current_phase: "Phase 7 complete -> Phase 8 (final audit + tag)"
+active_task: "Phase 8: final audit + completion report + commit + tag"
 next_task: "Phase 1: global source landscape + evidence catalogue"
 completed_tasks:
   - "safety isolation (worktree + manifest)"
