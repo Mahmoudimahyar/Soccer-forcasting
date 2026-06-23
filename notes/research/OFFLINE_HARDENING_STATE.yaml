@@ -9,14 +9,15 @@ active_collector:
   task: "WorldCupShadowCollector (Ready) -> main checkout (isolated)"
   isolation: "PROVEN — task workdir = main path != worktree; main checkout untouched"
 
-current_phase: "Phase 3 COMPLETE -> Phase 4 (prospective scorecard/review gate)"
+current_phase: "Phase 4 COMPLETE -> Phase 5 (final audit + tag)"
 completed:
   - "Phase 0 setup: isolation manifest + worktree (collector untouched, proven)"
   - "Phase 0: model identity namespace (7 tests); M2 collision disambiguated"
   - "Phase 1 (7B): 2022 replay semantics + quality (48/48 reconcile, 16 not_cached) + 9 tests + docs"
   - "Phase 2 (7C): simulator validation + 7 tests + validator + docs"
-  - "Phase 3 (7D): context-feature contract (schema + helpers extended) + 8 leakage tests + availability policy + readiness doc + quality CSV; no model fitting/no live weather"
-active_task: "Phase 4: deterministic prospective market scorecard + Tier A/B/C gate + sanitized-fixture tests"
+  - "Phase 3 (7D): context-feature contract + 8 leakage tests + policy + readiness doc"
+  - "Phase 4: deterministic prospective market scorecard (snapshot selection, RPS/ECE/bootstrap, Tier A/B/C) + 4 sanitized-fixture tests + protocol/review-gate docs"
+active_task: "Phase 5: final offline-hardening audit + completion report + commit + tag"
 next_task: "Phase 1 (7B 2022 full-tournament replay hardening)"
 
 safety:
