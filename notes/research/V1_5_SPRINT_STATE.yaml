@@ -1,7 +1,7 @@
 sprint: "World Cup Predictor V1.5 — Prospective Operations, Durable Collection, Data Acquisition Readiness"
 branch: v1-5-prospective-operations
 updated_utc: "2026-06-23"
-current_phase: "Phase 5 complete -> Phase 6 (final readiness audit + tag)"
+current_phase: "COMPLETE — all 6 phases done; tagged v1-5-prospective-readiness"
 
 completed_tasks:
   - "Phase 0: reconcile state"
@@ -10,7 +10,7 @@ completed_tasks:
   - "Phase 3: scheduler/deployment materials (not auto-installed)"
   - "Phase 4: future-2026 queue (28 eligible) + dry-run verified"
   - "Phase 5: data-provider decision package (StatsBomb commercial / Opta / Sportmonks); recommend Sportmonks lowest-cost; requirements YAMLs"
-active_task: "Phase 6: final V1.5 readiness audit + completion report + tag"
+active_task: "none — sprint complete"
 next_task: "Phase 2: durable prospective collector (pre-match/in-play/post-match, idempotent, quota-aware)"
 
 blocked_tasks:
@@ -31,7 +31,7 @@ collector_readiness: "BUILT (dry-run safe by default; first-write-wins ledger; l
 api_readiness: "DIRECT API-Football compatible (auth accepted; 2026 fixtures/standings/events/subs/cards/lineups all 2xx); read-only adapter built"
 frozen_model_version: "m2_frozen (M2_RemainingPoisson) v2 — research_only, parameter-free"
 future_fixture_pool: "28 ELIGIBLE clean-prospective NS matches (queue built); 44 excluded (43 FT +1 live); knockouts add more once scheduled"
-last_successful_test_command: "python -m pytest -q  # 185 passed"
+last_successful_test_command: "python -m pytest -q  # 200 passed"
 last_stable_commit: "e586a05"
 
-stop_reason: null  # sprint in progress
+stop_reason: "V1.5 sprint COMPLETE: collector + scheduler + queue + decision package + readiness report shipped, tagged. Remaining work = external (paid provider) or time-gated (future 2026 results)."
