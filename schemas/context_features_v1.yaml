@@ -1,0 +1,28 @@
+schema_version: context_features_v1
+description: >
+  Research-only context-feature contract (venue / travel / rest / timezone / weather). Each feature is
+  classified by WHEN it can be known and its leakage risk. NONE of these is fit, ranked, or added to B1
+  or any active model in this sprint. plane in {pre_match, in_play, retrospective, neither};
+  leakage_risk in {none, low, medium, high}.
+features:
+  venue_lat:               {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: true,  source: venue_reference, leakage_risk: none}
+  venue_lon:               {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: true,  source: venue_reference, leakage_risk: none}
+  venue_altitude_m:        {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: true,  source: venue_reference, leakage_risk: none}
+  roof_indoor:             {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: false, source: venue_reference, leakage_risk: none}
+  kickoff_utc:             {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: true,  source: fixtures, leakage_risk: none}
+  kickoff_local:           {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: true,  source: fixtures+venue_tz, leakage_risk: none}
+  home_travel_km:          {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: false, source: venue_coords+team_home, leakage_risk: none}
+  away_travel_km:          {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: false, source: venue_coords+team_home, leakage_risk: none}
+  timezone_displacement_h: {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: false, source: venue_tz+team_tz, leakage_risk: none}
+  rest_days:               {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: true,  source: fixtures(prev match), leakage_risk: none}
+  travel_days:             {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: false, source: fixtures+venue_coords, leakage_risk: low}
+  match_location_sequence: {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: true,  source: fixtures, leakage_risk: none}
+  weather_forecast:        {plane: pre_match, known_before_kickoff: true,  known_at_inplay: true,  retrospective_only: false, computable_now: false, source: weather_api(forecast), leakage_risk: medium, rule: "use only a forecast issued at/before the decision time; store issued_at_utc"}
+  weather_observed:        {plane: retrospective, known_before_kickoff: false, known_at_inplay: false, retrospective_only: true, computable_now: false, source: weather_api(observed), leakage_risk: high, rule: "NEVER a pre-match/in-play feature"}
+required_provenance_fields:
+  - source
+  - availability_timestamp
+  - weather_forecast_issued_at_utc
+  - weather_observation_time_utc
+  - missingness_flag
+  - leakage_eligibility
