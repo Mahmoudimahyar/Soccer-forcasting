@@ -1,8 +1,8 @@
 program: "World Cup Predictor V1 — Continuous Research and Data Program"
 updated_utc: "2026-06-22"
 current_major_phase: "C/D/E — multi-competition in-play (UNBLOCKED via API-Football free tier 2022-2024)"
-current_task: "Post-sprint: RE-FROZE prospective holdout to plain M2 (v2, m2_frozen) per nested-CV finding; v1 m2fit_temp retained as record. Sprint evaluation-reset-event-expansion complete + tagged."
-next_task: "Score frozen M2 on the 30 untouched future-2026 matches as they finish (time-gated, paper/scoring only). More intl event data / club ratings = external/paid (blocked)."
+current_task: "V1.5 sprint (branch v1-5-prospective-operations) Phase 0 done: reconciled state. Operative prospective model = m2_frozen (M2) v2. Building durable prospective collector next."
+next_task: "V1.5 Phases 1-6: API-Football diagnosis, durable collector, scheduler materials, future-2026 queue, data-provider decision package, readiness audit + tag."
 correction_note: "Prior `worldcup-predictor-v1-blocked` tag was PREMATURE/WRONG — the free tier covers Euro/Copa/AFCON/NL/friendlies (2022-2024). Tag deleted. Multi-competition in-play is feasible; V1 is in progress, not blocked."
 
 completed_tasks:

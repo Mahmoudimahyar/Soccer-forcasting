@@ -1,0 +1,32 @@
+sprint: "World Cup Predictor V1.5 — Prospective Operations, Durable Collection, Data Acquisition Readiness"
+branch: v1-5-prospective-operations
+updated_utc: "2026-06-23"
+current_phase: "Phase 0 complete -> Phase 1 (API-Football diagnosis)"
+
+completed_tasks:
+  - "Phase 0: reconcile state (v1_5_current_truth.md + this file)"
+active_task: "Phase 1: safe read-only direct API-Football diagnosis"
+next_task: "Phase 2: durable prospective collector (pre-match/in-play/post-match, idempotent, quota-aware)"
+
+blocked_tasks:
+  - id: player_next_goal_card_thresholds
+    needs: "paid event provider (StatsBomb commercial / Opta) — StatsBomb open men's-intl ceiling ~333 < 500; reds 50 < 150"
+  - id: club_to_international_transfer
+    needs: "club rating (Elo-equivalent) — elo_history is national-team only"
+  - id: prospective_2026_scores
+    needs: "future 2026 match results (time-gated; cannot be produced now)"
+  - id: dev_fold_odds
+    needs: "timestamp-valid pre-2020 WC odds (unavailable/open-licensed)"
+
+external_actions_required:
+  - "Decide on a paid event provider for player/next-goal/card thresholds (Phase 5 decision package)."
+  - "Manually install the scheduler when ready (scripts prepared, not auto-installed)."
+
+collector_readiness: "not yet built (Phase 2)"
+api_readiness: "API-Football PAID Pro active (7500/day, 2026 + lineups + events); direct-adapter diagnosis in Phase 1"
+frozen_model_version: "m2_frozen (M2_RemainingPoisson) v2 — research_only, parameter-free"
+future_fixture_pool: "30 not-started 2026 WC matches (NS) + knockouts to be scheduled; 41 finished are exploratory/seen"
+last_successful_test_command: "python -m pytest -q  # 185 passed"
+last_stable_commit: "e586a05"
+
+stop_reason: null  # sprint in progress
