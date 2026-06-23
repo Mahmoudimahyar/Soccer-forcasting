@@ -1,0 +1,24 @@
+sprint: "Offline Hardening Sprint (parallel to live shadow collector)"
+worktree: "C:/Users/Mahyar/worldcup-offline-hardening"
+branch: shadow-offline-hardening-v1
+updated_utc: "2026-06-23"
+active_collector:
+  path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL"
+  branch: v1-5-prospective-operations
+  commit: dc73318
+  task: "WorldCupShadowCollector (Ready) -> main checkout (isolated)"
+  isolation: "PROVEN — task workdir = main path != worktree; main checkout untouched"
+
+current_phase: "Phase 0 (model namespace reconciliation)"
+completed:
+  - "Phase 0 setup: isolation manifest + worktree + state"
+active_task: "Phase 0: namespaced canonical model registry + alias mapping + validator + tests"
+next_task: "Phase 1 (7B 2022 full-tournament replay hardening)"
+
+safety:
+  kalshi_live_trading: false
+  trading_mode: paper
+  new_work: "research_only / not_runtime_approved / not_trade_eligible"
+
+last_successful_test_command: "python -m pytest -q  # 203 passed (main checkout @ dc73318)"
+stop_reason: null
