@@ -1,0 +1,7 @@
+schema_version: soccernet_match_identity_v1
+description: SoccerNet game-path identity for joining SoccerNet-Echoes commentary to SoccerNet labels.
+key: "game path = championship/season/match-folder (shared by Echoes + Labels-v2.json)"
+join_strategy: [exact_game_path, normalized_game_path, manual_override]
+fields: [echoes_game, label_game, status, confidence, candidates, source_provenance]
+statuses: [exact, normalized, override, ambiguous, missing]
+no_fuzzy_without_confidence_and_audit: true

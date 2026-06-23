@@ -1,0 +1,3 @@
+# Append-only manual match-override manifest. Every override needs evidence + reason + author/time +
+# confidence + reversible status. Empty by default (exact game-path join handles SoccerNet).
+overrides: []
