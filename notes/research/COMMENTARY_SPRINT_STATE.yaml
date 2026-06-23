@@ -8,8 +8,8 @@ active_collector:
   commit: dc73318
   task_workdir: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL (MAIN; != worktree)"
   isolation: PROVEN
-current_phase: "Phase 1 complete -> Phase 2 (rights classification)"
-active_task: "Phase 2: licensing/rights policy + schema + audit"
+current_phase: "Phase 3 complete -> Phase 4 (open-source sample gate)"
+active_task: "Phase 4: open-source sample acquisition gate (expect mostly blockers)"
 next_task: "Phase 1: global source landscape + evidence catalogue"
 completed_tasks:
   - "safety isolation (worktree + manifest)"
@@ -20,9 +20,9 @@ sources_under_review: [soccernet_echoes, soccerreplay_1988, sportmonks_commentar
 sources_approved_for_sample_acquisition: []
 sources_rejected: [news_live_blogs, yallashoot_arabic]
 sources_requiring_external_approval: [soccerreplay_1988(NDA), sportmonks_commentary(paid)]
-legal_licensing_status: "policy pending (Phase 2)"
+legal_licensing_status: "policy + per-source rights schema DONE; only SoccerNet-Echoes open (historical-only)"
 live_eligibility_status: "gate pending (Phase 6); default = not live-eligible until proven"
-historical_weak_supervision_status: "contract pending (Phase 3-5)"
+historical_weak_supervision_status: "canonical contract + module + 10 tests DONE; alignment toolchain Phase 5"
 safety:
   kalshi_live_trading: false
   trading_mode: paper

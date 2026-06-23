@@ -1,0 +1,16 @@
+schema_version: commentary_record_v1
+description: provider-neutral canonical commentary record (research_only). Raw text never stored in git.
+identity: [canonical_commentary_id, source_id, provider_match_id, canonical_match_id, competition_id,
+  competition_name, season_id, home_team_id, away_team_id, language, source_url_or_reference,
+  source_content_hash, rights_classification, source_provenance_version]
+timing: [period, match_clock_minute, match_clock_second, event_time_utc_if_known,
+  commentary_time_as_reported, publication_time_utc_if_known, retrieval_time_utc,
+  source_latency_seconds_if_measured, safety_lag_seconds, causal_eligibility_status]
+text_and_structure: [raw_text_reference_only, normalized_text, language_confidence, text_quality_status,
+  linked_event_type, linked_event_team_id, linked_player_id, linked_player_name_raw,
+  linked_assistant_player_id, linked_event_id, event_link_confidence, entity_resolution_confidence,
+  event_alignment_confidence]
+audit: [is_duplicate, is_correction, correction_target_id, source_order_index, raw_snapshot_hash,
+  parser_version, schema_version, notes]
+causal_eligibility_enum: [live_eligible, delayed_live_eligible, historical_weak_supervision_only,
+  historical_alignment_only, source_time_unknown, rights_restricted, rejected]

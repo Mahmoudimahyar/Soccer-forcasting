@@ -1,0 +1,11 @@
+schema_version: commentary_alignment_v1
+description: commentary-to-structured-event alignment (research_only; not a live model)
+inputs: [commentary_event_type, commentary_team_id, commentary_clock_minute, structured_event_type,
+  structured_team_id, structured_event_minute, clock_tolerance_minutes]
+confidence_weights: {event_type: 0.4, team: 0.3, clock_within_tolerance: 0.3}
+alignment_classes: [high_confidence_event_alignment, medium_confidence_event_alignment,
+  low_confidence_event_alignment, unaligned, correction_or_duplicate, timing_not_safe_for_live_use]
+event_taxonomy: [goal, own_goal, penalty_scored, penalty_missed, penalty_awarded, yellow_card,
+  second_yellow, red_card, substitution, VAR_review, VAR_goal_cancelled, shot, shot_on_target, corner,
+  foul, offside, kickoff, halftime, fulltime, other, unknown]
+split_rule: "match-level or competition-level only; never random row split within a match"

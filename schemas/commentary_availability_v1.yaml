@@ -1,0 +1,10 @@
+schema_version: commentary_availability_v1
+description: causal availability + live-eligibility contract (research_only)
+non_negotiable_rules:
+  live: "publication_time <= prediction_decision_time"
+  delayed_live: "publication_time + measured_safety_lag <= prediction_decision_time"
+  unknown_publication_time: "historical labeling / weak supervision / alignment ONLY; never live; never relabeled as live"
+source_eligibility_enum: [live_eligible, delayed_live_eligible, historical_weak_supervision_only,
+  historical_alignment_only, source_time_unknown, rights_restricted, rejected]
+required_fields: [publication_time_utc_if_known, retrieval_time_utc, source_latency_seconds_if_measured,
+  safety_lag_seconds, rights_classification]
