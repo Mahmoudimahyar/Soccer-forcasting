@@ -1,3 +1,4 @@
 # Commentary Sprint Work Log (append-only)
 - 2026-06-23 Safety: created worktree commentary-intelligence-research-v1 off dc73318; isolation manifest written; active collector (main checkout, task workdir) untouched + alive (heartbeat 05:58Z). Control files created.
 - 2026-06-23 Phase 2: licensing policy + rights schema (use-type matrix) + audit. Phase 3: canonical commentary contract (contracts/availability/normalization/entity_resolution/alignment/quality/source_registry) + 3 schemas + 10 synthetic tests (causal rule, unknown pub time, safety lag, dup/correction, multilingual, entity uncertainty, hash, no-future-leak). All green.
+- 2026-06-23 REAL acquisition: SoccerNet-Echoes whisper_v1 (CC BY 4.0) -> bounded 10 games/6552 segments normalized via adapter; all historical_weak_supervision_only; raw+processed gitignored; manifest committed; no raw text in git. Real alignment precision/recall still pending matched event labels.
