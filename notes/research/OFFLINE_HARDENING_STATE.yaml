@@ -9,15 +9,16 @@ active_collector:
   task: "WorldCupShadowCollector (Ready) -> main checkout (isolated)"
   isolation: "PROVEN — task workdir = main path != worktree; main checkout untouched"
 
-current_phase: "Phase 4 COMPLETE -> Phase 5 (final audit + tag)"
+current_phase: "COMPLETE — Phases 0-5 done; tag shadow-offline-hardening-v1"
 completed:
   - "Phase 0 setup: isolation manifest + worktree (collector untouched, proven)"
   - "Phase 0: model identity namespace (7 tests); M2 collision disambiguated"
   - "Phase 1 (7B): 2022 replay semantics + quality (48/48 reconcile, 16 not_cached) + 9 tests + docs"
   - "Phase 2 (7C): simulator validation + 7 tests + validator + docs"
   - "Phase 3 (7D): context-feature contract + 8 leakage tests + policy + readiness doc"
-  - "Phase 4: deterministic prospective market scorecard (snapshot selection, RPS/ECE/bootstrap, Tier A/B/C) + 4 sanitized-fixture tests + protocol/review-gate docs"
-active_task: "Phase 5: final offline-hardening audit + completion report + commit + tag"
+  - "Phase 4: prospective market scorecard + Tier gate + 4 tests + docs"
+  - "Phase 5: final audit + completion report + tag"
+active_task: "none — sprint complete"
 next_task: "Phase 1 (7B 2022 full-tournament replay hardening)"
 
 safety:
@@ -25,5 +26,5 @@ safety:
   trading_mode: paper
   new_work: "research_only / not_runtime_approved / not_trade_eligible"
 
-last_successful_test_command: "python -m pytest -q  # 203 passed (main checkout @ dc73318)"
-stop_reason: null
+last_successful_test_command: "35 new offline-hardening tests pass; full worktree suite 222 passed/13 skipped/3 data-dependent-fail (gitignored data absent in worktree)"
+stop_reason: "Offline hardening Phases 0-5 COMPLETE + tagged. Remaining = time-gated (future 2026 results), data-availability (knockout cache, venue/weather refs), or paid provider."
