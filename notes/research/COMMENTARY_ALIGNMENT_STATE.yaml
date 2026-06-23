@@ -1,0 +1,22 @@
+sprint: "SoccerNet Real Commentary-to-Event Alignment and Weak-Supervision Validation V1"
+worktree: "C:/Users/Mahyar/worldcup-commentary-intelligence"
+branch: commentary-alignment-real-data-v1
+updated_utc: "2026-06-23"
+active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, isolation: PROVEN}
+current_phase: "Phase 0 done -> Phase 1 (action-label source audit)"
+active_task: "Phase 1: official SoccerNet action-label source + license audit"
+next_task: "Phase 2: bounded action-label acquisition (if rights permit)"
+completed_tasks: ["safety isolation (branch + note)", "Phase 0 current truth"]
+blocked_tasks: []
+data_sources_under_review: [soccernet_action_spotting_labels]
+raw_data_location: "data/raw/ (gitignored): commentary/soccernet_echoes (have); soccernet_action_labels (pending Phase 2)"
+soccernet_echoes_sample: "10 games / 6552 segments (CC BY 4.0, historical_weak_supervision_only, no pub time)"
+action_label_match_counts: "unknown (Phase 1)"
+overlap_count: "unknown (Phase 3)"
+current_metrics: "none yet"
+known_limitations: "SoccerNet-Echoes has NO publication_time -> never live; action labels not yet acquired"
+safety: {kalshi_live_trading: false, trading_mode: paper, labels: "research_only/historical_weak_supervision_only/not_live_eligible"}
+last_successful_test_command: "pytest commentary suites green (prior sprint)"
+last_stable_commit: "5752571"
+resume_command: "cd C:/Users/Mahyar/worldcup-commentary-intelligence; git switch commentary-alignment-real-data-v1; see COMMENTARY_ALIGNMENT_RESUME_NEXT_TASK.md"
+stop_reason: null
