@@ -9,10 +9,11 @@ active_collector:
   task: "WorldCupShadowCollector (Ready) -> main checkout (isolated)"
   isolation: "PROVEN — task workdir = main path != worktree; main checkout untouched"
 
-current_phase: "Phase 0 (model namespace reconciliation)"
+current_phase: "Phase 0 COMPLETE -> Phase 1 (7B 2022 full replay) next"
 completed:
-  - "Phase 0 setup: isolation manifest + worktree + state"
-active_task: "Phase 0: namespaced canonical model registry + alias mapping + validator + tests"
+  - "Phase 0 setup: isolation manifest + worktree (collector untouched, proven)"
+  - "Phase 0: model identity namespace (schema + alias registry + resolver + validator + 7 tests); M2 collision disambiguated"
+active_task: "Phase 1: 7B 2022 full-tournament replay coverage + event-semantics hardening + regression tests"
 next_task: "Phase 1 (7B 2022 full-tournament replay hardening)"
 
 safety:

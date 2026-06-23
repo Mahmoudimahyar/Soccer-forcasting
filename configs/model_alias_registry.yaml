@@ -1,0 +1,32 @@
+schema_version: model_alias_registry_v1
+description: >
+  APPEND-ONLY mapping from (context, legacy_alias) -> canonical_model_id. Context (namespace) is
+  REQUIRED because bare labels collide across namespaces (prematch M2 = market no-vig; inplay M2 =
+  remaining-time Poisson). Used to resolve legacy/immutable rows WITHOUT rewriting them. Never delete or
+  repoint an existing entry; only append.
+append_only: true
+aliases:
+  # prematch context (the live 2026 shadow study labels M1..M5)
+  - {context: prematch, legacy_alias: B1,        canonical_model_id: prematch.b1_elo}
+  - {context: prematch, legacy_alias: M1,        canonical_model_id: prematch.b1_elo}
+  - {context: prematch, legacy_alias: M1_B1,     canonical_model_id: prematch.b1_elo}
+  - {context: prematch, legacy_alias: M2,        canonical_model_id: prematch.market_novig}
+  - {context: prematch, legacy_alias: M2_market, canonical_model_id: prematch.market_novig}
+  - {context: prematch, legacy_alias: M3,        canonical_model_id: prematch.elo_market_blend_75_25}
+  - {context: prematch, legacy_alias: M3_75_25,  canonical_model_id: prematch.elo_market_blend_75_25}
+  - {context: prematch, legacy_alias: M4,        canonical_model_id: prematch.elo_market_blend_50_50}
+  - {context: prematch, legacy_alias: M4_50_50,  canonical_model_id: prematch.elo_market_blend_50_50}
+  - {context: prematch, legacy_alias: M5,        canonical_model_id: prematch.elo_market_blend_25_75}
+  - {context: prematch, legacy_alias: M5_25_75,  canonical_model_id: prematch.elo_market_blend_25_75}
+  # inplay context (the in-play ladder)
+  - {context: inplay, legacy_alias: M0,                   canonical_model_id: inplay.static_b1_m0}
+  - {context: inplay, legacy_alias: M0_static_b1,         canonical_model_id: inplay.static_b1_m0}
+  - {context: inplay, legacy_alias: M1,                   canonical_model_id: inplay.time_score_baseline_m1}
+  - {context: inplay, legacy_alias: M1_time_score,        canonical_model_id: inplay.time_score_baseline_m1}
+  - {context: inplay, legacy_alias: M2,                   canonical_model_id: inplay.remaining_time_poisson_m2}
+  - {context: inplay, legacy_alias: M2_remaining_poisson, canonical_model_id: inplay.remaining_time_poisson_m2}
+  - {context: inplay, legacy_alias: m2_frozen,            canonical_model_id: inplay.remaining_time_poisson_m2}
+  - {context: inplay, legacy_alias: M3_goal_hazard,       canonical_model_id: inplay.hazard_m3}
+  - {context: inplay, legacy_alias: M4_competing_risk,    canonical_model_id: inplay.competing_risk_m4}
+  - {context: inplay, legacy_alias: M5_ensemble,          canonical_model_id: inplay.ensemble_m5}
+  - {context: inplay, legacy_alias: M6_market_inplay,     canonical_model_id: inplay.market_inplay_m6}
