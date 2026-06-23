@@ -10,7 +10,7 @@ thresholds_to_clear:
 providers:
   - id: statsbomb_commercial
     name: "StatsBomb (Hudl StatsBomb) commercial / academic"
-    pricing: "quote-based (no public price); academic/research license possibly available"
+    pricing: "NO public price (sales quote only); premium tier; academic/research license possibly available (ask)"
     coverage_mens_international: "extensive (multi-year)"
     event_timestamps: yes
     lineups_benches: yes
@@ -27,7 +27,7 @@ providers:
     meets_thresholds: "500/500 yes; 150 reds plausible across full catalogue"
   - id: opta_stats_perform
     name: "Opta / Stats Perform (enterprise)"
-    pricing: "enterprise quote (typically highest)"
+    pricing: "NO public price (custom enterprise quote only; licensed by competition/country/data-level; typically highest)"
     coverage_mens_international: "gold-standard, decades"
     event_timestamps: yes
     lineups_benches: yes
@@ -44,7 +44,7 @@ providers:
     meets_thresholds: "all yes"
   - id: sportmonks
     name: "Sportmonks Football API"
-    pricing: "base ~EUR 29-34/mo; xG add-on EUR 19-99/mo; historical archive one-time fee"
+    pricing: "Starter EUR29/mo, Growth EUR99/mo, Pro EUR249/mo (yearly 23/79/199); xG add-on ~EUR19-99/mo; historical >3 seasons one-time add-on (quote); WC2026 plans ~EUR69/129/mo. Realistic intl config ~EUR100-200/mo + one-time history"
     coverage_mens_international: "broad (2500+ leagues incl internationals)"
     event_timestamps: yes
     lineups_benches: yes

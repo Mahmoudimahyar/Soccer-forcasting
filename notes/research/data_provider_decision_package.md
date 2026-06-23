@@ -26,9 +26,13 @@ matches (next-goal); 150 direct-red/second-yellow positive events.
   are the largest; new schema integration required (we have no Opta loader).
 
 ### C. Sportmonks — self-serve, PUBLISHED pricing (lowest-cost path)
-- Pricing (official): base plans ~**€29–34/mo**; World Cup plans €69–129/mo; **xG add-on €19–99/mo**;
-  **historical archive = one-time fee**. ([plans](https://www.sportmonks.com/football-api/plans-pricing/),
-  [xG coverage](https://docs.sportmonks.com/v3/tutorials-and-guides/tutorials/expected/coverage)).
+- Pricing (official, self-serve): **Starter €29/mo (€23 yearly, 5 leagues); Growth €99/mo (€79 yearly,
+  30 leagues); Pro €249/mo (€199 yearly, 120 leagues)**. **xG add-on extra (~€19–99/mo)**; **historical
+  data >3 seasons = one-time add-on (price on request)**; WC-2026 plans ~€69/€129/mo.
+  Realistic config for our need (internationals history + xG): **Growth (~€79–99/mo) + xG add-on +
+  one-time historical archive ≈ €100–200/mo + one-time fee**.
+  ([plans](https://www.sportmonks.com/football-api/plans-pricing/),
+  [pricing setup](https://www.sportmonks.com/blogs/introducing-our-new-pricing-setup/)).
 - Coverage: 2500+ leagues incl. internationals; events (timestamped), lineups/formations, subs, cards,
   player IDs/positions, squads; **xG via add-on (recent-leaning; older-international xG depth weaker
   than StatsBomb/Opta)**. Injury feeds available as add-ons.
