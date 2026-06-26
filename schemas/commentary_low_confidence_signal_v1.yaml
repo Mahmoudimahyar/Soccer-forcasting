@@ -1,0 +1,31 @@
+schema_version: commentary_low_confidence_signal_v1
+description: FLAGGED low-confidence historical event SIGNALS from SoccerNet-Echoes commentary. These are
+  explicitly NOT silver labels and NOT ground truth. Only classes the V2 gate marked
+  'usable_only_with_low_confidence_flag' (corner, foul, yellow_card) are eligible. NO raw commentary text.
+is_silver: false
+confidence_tier: low_confidence
+fields:
+  - canonical_match_id
+  - commentary_record_id
+  - commentary_content_hash
+  - source_id
+  - source_rights_classification
+  - competition
+  - season
+  - event_class                       # corner/foul/yellow_card only
+  - model_confidence_score
+  - confidence_tier                   # always "low_confidence"
+  - quality_estimate_precision_wilson_lb   # measured LOCO Wilson LB for the class (~0.73-0.77)
+  - event_time_s
+  - alignment_delta_s
+  - parser_model_version
+  - source_hash
+  - is_silver                         # always false
+  - causal_status                     # historical_weak_supervision_only
+  - live_eligibility                  # false
+  - runtime_eligibility               # false
+  - trading_eligibility               # false
+forbidden_fields: [text, normalized_text, norm, raw, commentary_text, utterance]
+prohibited_use: "live / delayed-live / point-in-time / predictive / market-edge / trading / paper-trading /
+  runtime / B1 / frozen M2 / M1-M5 / Kalshi / risk / active collector. Historical research ONLY, and only
+  with the low-confidence flag surfaced."
