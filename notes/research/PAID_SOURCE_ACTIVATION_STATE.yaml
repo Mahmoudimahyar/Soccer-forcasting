@@ -1,0 +1,23 @@
+sprint: "Paid Source Activation and Historical Event Coverage V1"
+worktree: "C:/Users/Mahyar/worldcup-paid-source-activation"
+branch: paid-source-activation-v1
+updated_utc: "2026-06-26"
+active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, task: Ready, isolation: PROVEN}
+credentials: {API_FOOTBALL_KEY: SET, ODDS_API_KEY: SET}   # values never accessed/printed
+active_collector_usage: {odds_budget_used: 15, odds_budget_max: 500, reserved_for_collector: 485}
+research_budgets:
+  api_football: {phase1_max_requests: 30, phase3_max_requests: "min(300, 20% verified remaining) or 150", retries_max: 2, workers_max: 2}
+  odds_api: {phase4_max_credits: 30}
+planned_calls: {phase1_af: "<=30", phase3_af: "<=150-300", phase4_odds: "<=30 credits"}
+completed_calls: {phase1_af: 0, phase3_af: 0, phase4_odds_credits: 0}
+current_data_assets: "odds (collector), national-team Elo, in-play state dataset + frozen M2, prior SoccerNet research; API-Football Pro configured (2026 fixtures/events/subs/cards/lineups verified 2xx in V1.5)"
+target_competitions: [FIFA_WC_2022, UEFA_Euro_2024, Copa_America_2024, AFCON_2023, AFC_Asian_Cup_2023, UCL, EPL, LaLiga, Bundesliga, SerieA, Ligue1]
+target_seasons: "tournament editions above + recent club seasons"
+coverage_status: "unverified (Phase 1 empirical audit pending)"
+remaining_limitations: "xG/shot-location depth + rights (training/retention) unknown_requires_vendor_confirmation"
+current_phase: "Phase 0 (current truth + budget reconciliation)"
+next_task: "Phase 1 API-Football empirical capability audit (<=30 requests)"
+safety: {kalshi_live_trading: false, trading_mode: paper, labels: "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"}
+last_stable_commit: "dc73318 (base)"
+resume_command: "cd C:/Users/Mahyar/worldcup-paid-source-activation; git switch paid-source-activation-v1; see PAID_SOURCE_ACTIVATION_RESUME_NEXT_TASK.md"
+stop_reason: null
