@@ -1,0 +1,7 @@
+{
+  "reconciled_fixtures": 960,
+  "regulation_exact": 960,
+  "exact_rate": 1.0,
+  "canonical_sendings_off_total": 128,
+  "scope_note": "123=900-corpus, 176=1120(incl ext); this is the union across resolved roots"
+}

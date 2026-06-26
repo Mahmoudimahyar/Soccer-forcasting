@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from wcdrawlab.research import data_roots as DR  # noqa: E402
 from wcdrawlab.research import quota_policy as QP  # noqa: E402
+from wcdrawlab.research import corpus_coverage as CC  # noqa: E402
 from wcdrawlab.research.paid_source import safe_config  # noqa: E402
 from wcdrawlab.operations.api_football_adapter import ApiFootballReadOnly, QuotaExceeded  # noqa: E402
 
@@ -140,7 +141,10 @@ def main():
 
     rem_after, _, cur_after = _probe_quota(af)
     total_planned = man.get("n_selected", len(man["fixtures"]))
-    rate = round(len(done) / total_planned, 4)
+    # HONEST gate: measure completion by ACTUAL raw (events+lineups) backed across registered roots, NOT the
+    # done-list length (which can over-report if a done id lacks raw). Caught by adversarial audit 2026-06-26.
+    cov = CC.coverage(done)
+    rate = cov["coverage_rate"]; unbacked = len(cov["missing_ids"])
     state = ("FAILED_INTEGRITY" if auth else
              ("WAITING_FOR_API_QUOTA" if (budget_hit or rate_limited) else
               ("RUNNING" if rate < 0.95 else "RUNNING")))
@@ -155,6 +159,7 @@ def main():
     (raw / "quota_ledger.json").write_text(json.dumps(quota_ledger, indent=2), encoding="utf-8")
     print(json.dumps({"state": state, "pulled_this_run": pulled, "api_requests": af.stats.requests_made,
                       "done_total": len(done), "planned": total_planned, "completion_rate": rate,
+                      "raw_backed": cov["raw_backed_across_registered_roots"], "unbacked_done_ids": unbacked,
                       "gate_95pct": rate >= 0.95, "dynamic_reserve": reserve, "research_budget": budget,
                       "quota_remaining_after": rem_after, "next_unfinished": quota_ledger["first_unfinished_fixture_after"]}))
 

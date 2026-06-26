@@ -157,7 +157,14 @@ def main():
             en = _task_state(RESUME_TASK)
             wd["watchdog_state"] = "WAITING_FOR_API_QUOTA"
             wd["action"] = f"ensure daily resume enabled (resume_task={en}); do NOT force resume before quota window"
-        elif main_state != "Running" and (hb_age is not None and hb_age > 900) and run_state not in ("COMPLETE",):
+        elif run_state == "WAITING_FOR_SOURCE":
+            # API-Football corpus complete; a binding external source (e.g. StatsBomb) is incomplete. This is a
+            # legitimate non-running pause, NOT a crash -> do not restart. Downstream gates resume when the
+            # source is acquired (separate bounded official open-data fetch).
+            wd["watchdog_state"] = "WAITING_FOR_SOURCE"
+            wd["action"] = "observe: corpus complete, waiting on external source (StatsBomb); no restart"
+        elif main_state != "Running" and (hb_age is not None and hb_age > 900) and run_state not in (
+                "COMPLETE", "WAITING_FOR_SOURCE", "WAITING_FOR_API_QUOTA", "CANCELLED", "FAILED_INTEGRITY"):
             # crashed mid-run -> restart SAME run id, resume only unfinished jobs (idempotent; no re-pull)
             wd["watchdog_state"] = "RUNNING"; wd["action"] = "restart_same_run_id (resume unfinished jobs)"
             wd["restart_reason"] = "task not Running + heartbeat stale >15m + no lock + collector healthy"
