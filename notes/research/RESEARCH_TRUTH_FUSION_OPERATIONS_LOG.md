@@ -1,2 +1,6 @@
 - 2026-06-26T18:00:01.366663+00:00 state=RUNNING main_task=Running hb_age=629.0935523509979 collector=dc73318(ok) violations=none action=observe
 - 2026-06-26T18:01:02.854563+00:00 state=RUNNING main_task=Running hb_age=690.5881953239441 collector=dc73318(ok) violations=none action=healthy: do nothing (long job in progress; hb_age=690s)
+- 2026-06-26T18:16:05.871080+00:00 state=RUNNING main_task=Running hb_age=1593.4055199623108 collector=dc73318(ok) violations=none action=healthy: do nothing (long job in progress; hb_age=1593s)
+- 2026-06-26T18:31:05.662761+00:00 state=RUNNING main_task=Running hb_age=2493.379380464554 collector=dc73318(ok) violations=none action=healthy: do nothing (long job in progress; hb_age=2493s)
+- 2026-06-26T18:46:05.747534+00:00 state=RUNNING main_task=Running hb_age=3393.389327764511 collector=dc73318(ok) violations=none action=healthy: do nothing (long job in progress; hb_age=3393s)
+- 2026-06-26T19:01:05.913492+00:00 state=WAITING_FOR_API_QUOTA main_task=Ready hb_age=195.6418571472168 collector=dc73318(ok) violations=none action=ensure daily resume enabled (resume_task=Ready); do NOT force resume before quota window

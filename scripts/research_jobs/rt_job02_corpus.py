@@ -10,14 +10,22 @@ def main():
     for line in (p.stdout or "").splitlines():
         s=line.strip()
         if s.startswith("{") and s.endswith("}"):
-            try: last=json.loads(s)
+            try:
+                j=json.loads(s)
+                if "state" in j: last=j   # keep the final state-bearing line
             except Exception: pass
     last = last or {"state":"FAILED_INTEGRITY","api_requests":0,"completion_rate":0.0}
     (rd/"job02_corpus.json").write_text(json.dumps(last, indent=2), encoding="utf-8")
     run_state = last.get("state","RUNNING"); rate = last.get("completion_rate",0.0)
-    # bounded acquisition is a successful job step even when budget pauses it (WAITING_FOR_API_QUOTA)
     status = "failed" if run_state=="FAILED_INTEGRITY" else "complete"
-    _job.emit(status, reason=f"corpus state={run_state} rate={rate} (gate95={rate>=0.95}) pulled={last.get('pulled_this_run')}",
+    _job.emit(status,
+              reason=f"corpus state={run_state} rate={rate} gate95={rate>=0.95} pulled={last.get('pulled_this_run')} "
+                     f"reserve={last.get('dynamic_reserve')} research_budget={last.get('research_budget')} "
+                     f"remaining_after={last.get('quota_remaining_after')}",
               api_requests=last.get("api_requests",0),
-              state_updates={"run_state": run_state, "corpus_rate": rate, "corpus_gate95": rate>=0.95})
+              state_updates={"run_state": run_state, "corpus_rate": rate, "corpus_gate95": rate>=0.95,
+                             "dynamic_reserve": last.get("dynamic_reserve"),
+                             "research_budget": last.get("research_budget"),
+                             "quota_remaining_after": last.get("quota_remaining_after"),
+                             "next_unfinished_fixture": last.get("next_unfinished")})
 main()
