@@ -3,18 +3,18 @@ worktree: "C:/Users/Mahyar/worldcup-commentary-intelligence"
 branch: commentary-precision-weak-supervision-v2
 updated_utc: "2026-06-26"
 active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, isolation: PROVEN}
-current_phase: "Phase 0 (reconcile + preregistration)"
-active_task: "Phase 0 control files + preregistration"
+current_phase: "Phases 0-2,4,5 code+tests committed; Phase 3 LOCO eval RUNNING (bg, 2/6 folds)"
+active_task: "await LOCO eval -> Phase 3 report + Phase 4 gate + generate/release + Phase 5 run + Phase 6/7"
 next_task: "Phase 1 dataset/label quality audit"
-completed_tasks: ["safety isolation (branch + note)"]
+completed_tasks: ["safety isolation","Phase 0 preregistration","Phase 1 quality audit","Phase 2 R1-R4 models+policy+11 tests","Phase 4 scaffolding(schema/generate/release)+6 tests","Phase 5 recovery script"]
 blocked_tasks: []
 deps: {sklearn: "1.7.0", numpy: "2.3.5", scipy: "1.15.3"}
 data: {echoes_en_arrow: present, label_games: 385, prior_overlap_en: 254}
 model_ladder: [R0_time_only, R1_rules, R2_tfidf_logreg, R3_hybrid, R4_abstention]
 preregistered_thresholds: "see COMMENTARY_PRECISION_PREREGISTRATION.md (FROZEN before fitting)"
-current_metrics: "none yet"
+current_metrics: "17 new tests pass (11 models + 6 silver); LOCO metrics pending"
 safety: {kalshi_live_trading: false, trading_mode: paper, labels: "research_only/historical_weak_supervision_only/not_live_eligible"}
 last_successful_test_command: "prior sprint 35 passed"
-last_stable_commit: "80ef15c (soccernet-real-alignment-v1)"
+last_stable_commit: "9c51ade"
 resume_command: "cd C:/Users/Mahyar/worldcup-commentary-intelligence; git switch commentary-precision-weak-supervision-v2; see COMMENTARY_PRECISION_RESUME_NEXT_TASK.md"
 stop_reason: null
