@@ -4,7 +4,7 @@ branch: research-truth-full-corpus-xg-fusion-v1
 base: "tag player-impact-xg-fusion-v1 @ b30e623"
 updated_utc: "2026-06-26"
 active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, task: Ready, isolation: PROVEN}
-current_phase: "INCOMPLETE — Phase 0-1 done (truth registry + execution manifest); corpus/StatsBomb/join/eval OUTSTANDING (quota-bounded multi-day)"
+current_phase: "RUNNING — durable controller WorldCupResearchTruthFusionRun verified Running (Task Scheduler); JOB2 corpus backfill in progress (run_dir outputs/research_runs/truth_20260626_134931); daily quota-resume task registered. Terminal-for-window=WAITING_FOR_API_QUOTA. NOT complete (gates unmet)."
 truth_registry: {af_union_fixtures: 1180, sendings_off: "123(900)/176(1120) both correct by scope", player_history: "60/2000 = 3%", statsbomb: "258 bridge / 60 events / 0 joined"}
 hard_gates: {gate2_af_95pct: false, gate5_statsbomb_90pct: false, gate6_xg_join_nonzero: false, gate15_collector_unchanged: true}
 controller: "reuse deep_research_supervisor.py; config research_truth_full_corpus_xg_fusion_run_v1.yaml (16 jobs, <=10h)"
