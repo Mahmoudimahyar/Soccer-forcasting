@@ -1,27 +1,31 @@
-import sys, json
+import sys, json, subprocess
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent)); import _job
-ROOT = Path(__file__).resolve().parents[2]; sys.path.insert(0, str(ROOT/"src"))
-from wcdrawlab.research import data_roots as DR
+ROOT = Path(__file__).resolve().parents[2]
 def main():
-    rd = Path(_job.run_dir())
-    # canonical statsbomb root + prior; count cached event files; bridge total from manifest
-    cached = 0
-    for rn in ("statsbomb_raw","statsbomb_raw_prior"):
-        try:
-            ev = DR.get_root(rn)/"events"
-            if ev.exists(): cached += len(list(ev.glob("*.json")))
-        except Exception: pass
-    bridged = None
-    try:
-        bj = DR.manifest("statsbomb_bridge")
-        if bj.exists(): bridged = json.loads(bj.read_text(encoding="utf-8")).get("total_accepted")
+    rd = _job.run_dir()
+    # 1) official-source availability probe (deterministic) — fail closed to WAITING_FOR_SOURCE if unavailable
+    pr = subprocess.run([sys.executable, str(ROOT/"scripts/complete_statsbomb_event_cache.py"), "--probe", "3"],
+                        capture_output=True, text=True, cwd=str(ROOT))
+    avail = False
+    try: avail = json.loads(pr.stdout).get("official_source_available", False)
     except Exception: pass
-    rate = round(cached/bridged,4) if bridged else 0.0
-    res = {"bridged_exact": bridged, "cached_event_files": cached, "cache_completion_rate": rate, "gate_90pct": rate>=0.90}
-    (rd/"job04_statsbomb.json").write_text(json.dumps(res, indent=2), encoding="utf-8")
-    # acquisition of the missing ~198 official open-data files is bounded/multi-step; report honest rate
-    _job.emit("complete" if rate>=0.90 else "skipped",
-              reason=f"StatsBomb cache {cached}/{bridged} = {rate} (gate90={rate>=0.90}); missing files = bounded official-open-data acquisition",
-              state_updates={"statsbomb_rate": rate, "statsbomb_gate90": rate>=0.90})
+    if not avail:
+        _job.emit("skipped", reason="official StatsBomb source probe FAILED -> WAITING_FOR_SOURCE (verified block)",
+                  state_updates={"run_state":"WAITING_FOR_SOURCE"}); return
+    # 2) full bounded cache completion (<=4 concurrent, resumable, append-only)
+    subprocess.run([sys.executable, str(ROOT/"scripts/complete_statsbomb_event_cache.py"), "--run-dir", rd],
+                   capture_output=True, text=True, cwd=str(ROOT), timeout=7200)
+    # 3) audit -> valid exact-bridge completion rate (gate ceil(0.90*258)=233)
+    au = subprocess.run([sys.executable, str(ROOT/"scripts/audit_statsbomb_event_cache.py")],
+                        capture_output=True, text=True, cwd=str(ROOT))
+    a = {}
+    try: a = json.loads(au.stdout.strip().splitlines()[-1])
+    except Exception: a = {"completion_rate":0.0,"gate_90pct_met":False,"valid_cached":0}
+    rate = a.get("completion_rate",0.0)
+    _job.emit("complete" if a.get("gate_90pct_met") else "skipped",
+              reason=f"StatsBomb cache valid={a.get('valid_cached')}/{a.get('total_exact_bridge')} rate={rate} "
+                     f"gate90={a.get('gate_90pct_met')} xg_fields={a.get('xg_field_available')}",
+              state_updates={"statsbomb_rate":rate,"statsbomb_gate90":a.get("gate_90pct_met",False),
+                             "statsbomb_valid":a.get("valid_cached"),"run_state":"RUNNING"})
 main()
