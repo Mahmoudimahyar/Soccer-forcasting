@@ -7,18 +7,18 @@ credentials: {API_FOOTBALL_KEY: SET}   # value never accessed/printed
 api_football_plan: "Pro, 7500/day (verified prior sprint); /status re-checked in Phase 3"
 collector_reserve: "reserve_requests = max(1500, ceil(0.25*verified_remaining))"
 research_budget: "min(4200, verified_remaining - reserve); fallback 1800 if undeterminable"
-api_calls_used_this_sprint: 0
+api_calls_used_this_sprint: "~13 (Phase 2 lists/status) + backfill (running, cap 1800)"
 completed_fixtures: 0
 failed_fixtures: 0
 retry_count: 0
 existing_pilot_fixtures: "120 intl (prior sprint paid-source-activation-v1; raw in that worktree, gitignored)"
 target_cohorts: {A_international: [WC2018, WC2022, Euro2020, Euro2024, Copa2024, AFCON2023, AsianCup2023], B_major_leagues_2023: [EPL, LaLiga, SerieA, Bundesliga, Ligue1]}
-reconciliation_status: "prior pilot 90% exact -> Phase 1 remediation (regulation/ET/shootout separation) FIRST"
+reconciliation_status: "FIXED -> 120/120 regulation-exact (own_goal beneficiary fix); ET/shootout separated + tested"
 data_quality_status: "prior pilot dup 0.0005, 100% lineup/player-ID"
 model_readiness_counts: "TBD after corpus backfill"
-current_phase: "Phase 0"
-next_task: "Phase 1 reconciliation remediation (reuse prior raw; no new API calls)"
+current_phase: "Phases 0-2,4,6 done; Phase 3 backfill RUNNING (bg); Phase 5/7 pending"
+next_task: "await backfill -> build datasets + quality/readiness (Phase 5) -> audit+tag (Phase 7)"
 safety: {kalshi_live_trading: false, trading_mode: paper, odds_api: "NOT USED this sprint", labels: "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"}
-last_stable_commit: "dc73318 (base)"
+last_stable_commit: "b147118"
 resume_command: "cd C:/Users/Mahyar/worldcup-api-football-corpus; git switch api-football-historical-corpus-v1; see API_FOOTBALL_CORPUS_RESUME_NEXT_TASK.md"
 stop_reason: null
