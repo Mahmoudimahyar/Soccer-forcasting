@@ -1,2 +1,2 @@
 # Resume Next Task
-Worktree branch commentary-precision-weak-supervision-v2. Next: Phase 1 data/label quality audit (scripts/audit_soccernet_commentary_label_quality.py). Thresholds FROZEN in COMMENTARY_PRECISION_PREREGISTRATION.md.
+Sprint COMPLETE (tag commentary-precision-weak-supervision-v2). 0 silver classes approved under frozen bar. Next investment is EXTERNAL: paid structured event provider (player/next-goal/card) > paid live commentary feed (live use) > SoccerReplay-1988 NDA (historical richness). No further SoccerNet tuning recommended.
