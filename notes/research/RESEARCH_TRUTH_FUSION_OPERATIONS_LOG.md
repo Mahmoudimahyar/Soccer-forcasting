@@ -26,3 +26,29 @@ the gate.
   JOB4 StatsBomb skipped 23%<90%; JOB5-8 honest deferred skips; JOB9 ledger). run_state set to
   WAITING_FOR_SOURCE (StatsBomb is the binding incomplete source). Watchdog patched to treat WAITING_FOR_SOURCE
   as a legitimate non-running pause (NO restart-loop). No completion tag. Collector untouched.
+- 2026-06-26T20:01:05.952935+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=1469.8794958591461 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T20:16:05.938746+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=2369.871495962143 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T20:31:06.023715+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=3269.882489681244 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T20:46:05.954354+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=4169.88267159462 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T21:01:05.971394+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=5069.91042637825 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T21:16:06.009274+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=5969.943002939224 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T21:31:05.999555+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=6869.924413204193 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T21:46:06.073589+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=7769.9389526844025 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T22:01:06.029082+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=8669.955476284027 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T22:16:06.025463+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=9569.966787576675 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T22:31:06.019123+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=10469.956694364548 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T22:46:06.046123+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=11369.972790002823 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T23:01:06.138004+00:00 state=WAITING_FOR_SOURCE main_task=Ready hb_age=12269.985968589783 collector=dc73318(ok) violations=none action=observe: corpus complete, waiting on external source (StatsBomb); no restart
+- 2026-06-26T23:10:31.064470+00:00 state=RUNNING main_task=Ready hb_age=72.24049043655396 collector=dc73318(ok) violations=none action=observe
+
+## 2026-06-26 — StatsBomb source reactivated; cache + xG join COMPLETE (two named events)
+- Official-source availability probe (approved StatsBomb Open Data, no scrape/mirror/paid/video/360): 5/5 missing
+  exact-bridge matches resolved with xG fields -> WAITING_FOR_SOURCE -> RUNNING. Same run id truth_20260626_134931.
+- NAMED EVENT: StatsBomb cache 258/258 valid exact-bridge (100%, gate ceil(0.90*258)=233 MET), all xG fields.
+  <=4 concurrent, resumable, append-only manifest, canonical root via registry. Audit: statsbomb_cache_audit.json.
+- NAMED EVENT: xG snapshot join NONZERO (was 0): 4386 audited xG-eligible regulation international snapshots over
+  258 exact-bridged matches; causal, leakage-tested (5 tests). Audit: xg_snapshot_join_audit.json.
+- Verified: 0 API-Football calls, 0 Odds API calls, StatsBomb raw increased only under canonical gitignored root,
+  collector dc73318 untouched, 279 tests pass. Watchdog crash-detect hardened (requires a stuck 'running' job).
+- Remaining (modeling phase, buildable): dynamic dataset rebuild + preregistered evaluations. No model trained;
+  NO completion tag; no incomplete tag.
