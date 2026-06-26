@@ -1,0 +1,15 @@
+sprint: "Structured Event Data Procurement and Integration Readiness V1"
+worktree: "C:/Users/Mahyar/worldcup-structured-event-readiness"
+branch: structured-event-procurement-readiness-v1
+updated_utc: "2026-06-26"
+active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, task: Ready, isolation: PROVEN}
+current_phase: "Phase 0 (requirements reconciliation)"
+active_task: "Phase 0 control files + requirements"
+next_task: "Phase 1 official provider due diligence"
+completed_tasks: ["safety isolation (worktree + note)"]
+blocked_tasks: []
+constraints: "no purchase/trial/form/scrape/login/credential/provider-API-call; prep-only"
+safety: {kalshi_live_trading: false, trading_mode: paper, labels: "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"}
+last_stable_commit: "dc73318 (base)"
+resume_command: "cd C:/Users/Mahyar/worldcup-structured-event-readiness; git switch structured-event-procurement-readiness-v1; see STRUCTURED_EVENT_RESUME_NEXT_TASK.md"
+stop_reason: null
