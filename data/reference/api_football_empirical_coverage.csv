@@ -1,0 +1,12 @@
+label,league,season,ok,n_fixtures,n_finished,has_timestamp,has_score,event_types,n_events,has_goal,has_owngoal,has_card,has_red,has_subst,has_var,lineup_ok,has_formation,has_bench,has_player_id,has_position,stats_ok,has_shots,has_xg,players_ok,player_positions
+FIFA_WC_2022,1,2022,True,64,59,True,True,"card,goal,subst,var",15,True,False,True,False,True,True,True,True,True,True,True,True,True,False,True,True
+UEFA_Euro_2024,4,2024,True,51,46,True,True,"card,goal,subst,var",23,True,True,True,True,True,True,True,True,True,True,True,True,True,True,False,
+Copa_America_2024,9,2024,True,32,27,True,True,"card,goal,subst",15,True,False,True,False,True,False,True,True,True,True,True,False,,,False,
+AFCON_2023,6,2023,True,52,46,True,True,"card,goal,subst",14,True,False,True,False,True,False,True,True,True,True,True,False,,,False,
+AFC_Asian_Cup_2023,7,2023,True,51,46,True,True,"card,goal,subst",17,True,False,True,False,True,False,True,True,True,True,True,False,,,False,
+UCL_2023,2,2023,True,214,202,True,True,"card,goal,subst",15,True,False,True,False,True,False,True,True,True,True,True,False,,,False,
+EPL_2023,39,2023,True,380,380,True,True,,0,,,,,,,False,,,,,False,,,False,
+LaLiga_2023,140,2023,True,380,380,True,True,,0,,,,,,,False,,,,,False,,,False,
+Bundesliga_2023,78,2023,True,308,307,True,True,,0,,,,,,,False,,,,,False,,,False,
+SerieA_2023,135,2023,True,380,380,True,True,,0,,,,,,,False,,,,,False,,,False,
+Ligue1_2023,61,2023,True,308,307,True,True,,0,,,,,,,False,,,,,False,,,False,
