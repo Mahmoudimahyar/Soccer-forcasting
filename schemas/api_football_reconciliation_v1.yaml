@@ -1,0 +1,8 @@
+schema_version: api_football_reconciliation_v1
+description: Per-fixture reconciliation record (regulation event-derived vs official score.fulltime).
+fields: [canonical_match_id, provider_fixture_id, official_regulation_home_goals, official_regulation_away_goals,
+  official_after_extra_time_home_goals, official_after_extra_time_away_goals, penalty_shootout_home_goals,
+  penalty_shootout_away_goals, final_result_type, event_derived_regulation_home_goals,
+  event_derived_regulation_away_goals, reconciliation_status, reconciliation_exception_type, source_hash,
+  provider_semantics_version]
+release_rule: "fixture reconciles exactly OR is classified + EXCLUDED from affected datasets; never silently dropped"

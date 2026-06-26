@@ -1,0 +1,5 @@
+schema_version: api_football_match_state_v1
+description: Regulation in-play match state at decision minute t (regulation goals only, elapsed<=min(t,90)).
+fields: [canonical_match_id, comp_type, decision_minute, home_goals_reg, away_goals_reg, home_reds, away_reds,
+  home_subs_used, away_subs_used, final_result_type, source_hash, provider_semantics_version]
+rules: ["regulation only; ET/shootout NOT included", "all counts use elapsed<=t", "no final score / later events leak"]

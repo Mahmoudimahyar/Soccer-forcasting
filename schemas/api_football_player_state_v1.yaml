@@ -1,0 +1,5 @@
+schema_version: api_football_player_state_v1
+description: Player on-pitch state at decision minute t (uses only starting XI + subs with minute<=t).
+fields: [canonical_match_id, team_id, player_id, position, on_from_minute, off_at_minute, start_status(starter/bench/unused),
+  decision_minute, on_pitch(bool), source_hash, provider_semantics_version]
+rules: ["no future substitution may influence on_pitch at t", "player_id provider-supplied, never invented"]
