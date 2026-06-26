@@ -1,0 +1,17 @@
+schema_version: provider_acceptance_result_v1
+description: Result of running the licensed-event provider acceptance protocol against a provider's sample
+  data + declared terms. A provider must PASS all gating categories before the project stores or trains on
+  its data. Unknown/unconfirmed fields FAIL CLOSED.
+fields:
+  provider_name: string
+  evaluated_utc: string
+  categories:
+    rights:        {checks: list, pass: boolean, note: "unknown rights -> fail (must be confirmed in writing)"}
+    coverage:      {checks: list, pass: boolean, note: ">=500 lineup/sub, >=500 timestamped, >=150 red/2y"}
+    schema:        {checks: list, pass: boolean}
+    causal:        {checks: list, pass: boolean, note: "publication time + historical/live distinction; no relabel"}
+    quality:       {checks: list, pass: boolean}
+    operational:   {checks: list, pass: boolean}
+  overall_pass: {type: boolean, note: "true only if ALL categories pass"}
+  blocking_unknowns: {type: list, note: "fields still unknown_requires_vendor_confirmation"}
+  decision: {type: string, enum: [accept_for_storage_and_research, conditional_pending_vendor_confirmation, reject]}
