@@ -1,0 +1,20 @@
+sprint: "Commentary Precision and Historical Weak-Supervision Quality Gate V2"
+worktree: "C:/Users/Mahyar/worldcup-commentary-intelligence"
+branch: commentary-precision-weak-supervision-v2
+updated_utc: "2026-06-26"
+active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, isolation: PROVEN}
+current_phase: "Phase 0 (reconcile + preregistration)"
+active_task: "Phase 0 control files + preregistration"
+next_task: "Phase 1 dataset/label quality audit"
+completed_tasks: ["safety isolation (branch + note)"]
+blocked_tasks: []
+deps: {sklearn: "1.7.0", numpy: "2.3.5", scipy: "1.15.3"}
+data: {echoes_en_arrow: present, label_games: 385, prior_overlap_en: 254}
+model_ladder: [R0_time_only, R1_rules, R2_tfidf_logreg, R3_hybrid, R4_abstention]
+preregistered_thresholds: "see COMMENTARY_PRECISION_PREREGISTRATION.md (FROZEN before fitting)"
+current_metrics: "none yet"
+safety: {kalshi_live_trading: false, trading_mode: paper, labels: "research_only/historical_weak_supervision_only/not_live_eligible"}
+last_successful_test_command: "prior sprint 35 passed"
+last_stable_commit: "80ef15c (soccernet-real-alignment-v1)"
+resume_command: "cd C:/Users/Mahyar/worldcup-commentary-intelligence; git switch commentary-precision-weak-supervision-v2; see COMMENTARY_PRECISION_RESUME_NEXT_TASK.md"
+stop_reason: null
