@@ -1,0 +1,1559 @@
+{
+  "total_exact_bridge": 258,
+  "valid_cached": 258,
+  "xg_field_available": 258,
+  "completion_rate": 1.0,
+  "hard_gate_count": 233,
+  "gate_90pct_met": true,
+  "missing_or_invalid": 0,
+  "per_match": [
+    {
+      "sb_match_id": "3939969",
+      "status": "valid",
+      "events": 3619,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939970",
+      "status": "valid",
+      "events": 3212,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939972",
+      "status": "valid",
+      "events": 3038,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939971",
+      "status": "valid",
+      "events": 3308,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939974",
+      "status": "valid",
+      "events": 3398,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939973",
+      "status": "valid",
+      "events": 2995,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939975",
+      "status": "valid",
+      "events": 2994,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939976",
+      "status": "valid",
+      "events": 3697,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939977",
+      "status": "valid",
+      "events": 3653,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939979",
+      "status": "valid",
+      "events": 3264,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939982",
+      "status": "valid",
+      "events": 3293,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939983",
+      "status": "valid",
+      "events": 3436,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939986",
+      "status": "valid",
+      "events": 3175,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939985",
+      "status": "valid",
+      "events": 2903,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939987",
+      "status": "valid",
+      "events": 2866,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939988",
+      "status": "valid",
+      "events": 2938,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939989",
+      "status": "valid",
+      "events": 3237,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939990",
+      "status": "valid",
+      "events": 2583,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939991",
+      "status": "valid",
+      "events": 3213,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3939992",
+      "status": "valid",
+      "events": 3067,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942228",
+      "status": "valid",
+      "events": 2861,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942229",
+      "status": "valid",
+      "events": 3130,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942416",
+      "status": "valid",
+      "events": 2905,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942415",
+      "status": "valid",
+      "events": 2791,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942785",
+      "status": "valid",
+      "events": 3460,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942852",
+      "status": "valid",
+      "events": 2794,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3943076",
+      "status": "valid",
+      "events": 2862,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3943077",
+      "status": "valid",
+      "events": 4146,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7525",
+      "status": "valid",
+      "events": 3318,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7578",
+      "status": "valid",
+      "events": 3758,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7577",
+      "status": "valid",
+      "events": 2875,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7576",
+      "status": "valid",
+      "events": 4153,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7530",
+      "status": "valid",
+      "events": 3472,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7531",
+      "status": "valid",
+      "events": 3599,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7532",
+      "status": "valid",
+      "events": 3097,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7529",
+      "status": "valid",
+      "events": 3320,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7535",
+      "status": "valid",
+      "events": 3183,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7534",
+      "status": "valid",
+      "events": 3704,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7533",
+      "status": "valid",
+      "events": 4010,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7538",
+      "status": "valid",
+      "events": 3117,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7536",
+      "status": "valid",
+      "events": 3662,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7537",
+      "status": "valid",
+      "events": 3548,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7541",
+      "status": "valid",
+      "events": 3869,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7539",
+      "status": "valid",
+      "events": 3457,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7540",
+      "status": "valid",
+      "events": 3348,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7542",
+      "status": "valid",
+      "events": 3243,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7544",
+      "status": "valid",
+      "events": 3952,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7543",
+      "status": "valid",
+      "events": 3822,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7547",
+      "status": "valid",
+      "events": 3576,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7546",
+      "status": "valid",
+      "events": 3742,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7545",
+      "status": "valid",
+      "events": 3463,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7548",
+      "status": "valid",
+      "events": 3721,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7549",
+      "status": "valid",
+      "events": 3219,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7550",
+      "status": "valid",
+      "events": 3475,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7552",
+      "status": "valid",
+      "events": 3483,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7553",
+      "status": "valid",
+      "events": 3287,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7551",
+      "status": "valid",
+      "events": 3460,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7554",
+      "status": "valid",
+      "events": 3573,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7556",
+      "status": "valid",
+      "events": 3039,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7555",
+      "status": "valid",
+      "events": 3749,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7558",
+      "status": "valid",
+      "events": 3268,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7559",
+      "status": "valid",
+      "events": 3831,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7557",
+      "status": "valid",
+      "events": 3188,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7560",
+      "status": "valid",
+      "events": 3599,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7563",
+      "status": "valid",
+      "events": 3605,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7562",
+      "status": "valid",
+      "events": 3630,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7564",
+      "status": "valid",
+      "events": 3503,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7561",
+      "status": "valid",
+      "events": 3325,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7567",
+      "status": "valid",
+      "events": 3708,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7566",
+      "status": "valid",
+      "events": 2831,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7565",
+      "status": "valid",
+      "events": 4083,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7568",
+      "status": "valid",
+      "events": 3347,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7572",
+      "status": "valid",
+      "events": 3671,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7571",
+      "status": "valid",
+      "events": 2816,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7570",
+      "status": "valid",
+      "events": 3986,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7569",
+      "status": "valid",
+      "events": 3410,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7580",
+      "status": "valid",
+      "events": 3549,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7579",
+      "status": "valid",
+      "events": 3196,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7582",
+      "status": "valid",
+      "events": 5024,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7581",
+      "status": "valid",
+      "events": 4285,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7583",
+      "status": "valid",
+      "events": 3393,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7584",
+      "status": "valid",
+      "events": 3715,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7586",
+      "status": "valid",
+      "events": 3318,
+      "xg": true
+    },
+    {
+      "sb_match_id": "7585",
+      "status": "valid",
+      "events": 4019,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8649",
+      "status": "valid",
+      "events": 3375,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8650",
+      "status": "valid",
+      "events": 3589,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8651",
+      "status": "valid",
+      "events": 3303,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8652",
+      "status": "valid",
+      "events": 4041,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8655",
+      "status": "valid",
+      "events": 3354,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8656",
+      "status": "valid",
+      "events": 4165,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8657",
+      "status": "valid",
+      "events": 4426,
+      "xg": true
+    },
+    {
+      "sb_match_id": "8658",
+      "status": "valid",
+      "events": 2978,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857286",
+      "status": "valid",
+      "events": 3299,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857285",
+      "status": "valid",
+      "events": 3133,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857271",
+      "status": "valid",
+      "events": 3649,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857282",
+      "status": "valid",
+      "events": 3687,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857300",
+      "status": "valid",
+      "events": 3329,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857254",
+      "status": "valid",
+      "events": 3680,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857265",
+      "status": "valid",
+      "events": 3184,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857279",
+      "status": "valid",
+      "events": 3963,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857277",
+      "status": "valid",
+      "events": 3719,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857284",
+      "status": "valid",
+      "events": 3717,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857268",
+      "status": "valid",
+      "events": 3499,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857291",
+      "status": "valid",
+      "events": 4351,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857290",
+      "status": "valid",
+      "events": 3601,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857287",
+      "status": "valid",
+      "events": 3462,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857298",
+      "status": "valid",
+      "events": 3738,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857258",
+      "status": "valid",
+      "events": 3656,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857301",
+      "status": "valid",
+      "events": 3546,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857274",
+      "status": "valid",
+      "events": 3563,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857272",
+      "status": "valid",
+      "events": 3519,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857273",
+      "status": "valid",
+      "events": 3133,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857297",
+      "status": "valid",
+      "events": 3202,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857266",
+      "status": "valid",
+      "events": 3853,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857289",
+      "status": "valid",
+      "events": 3375,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857288",
+      "status": "valid",
+      "events": 3359,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857283",
+      "status": "valid",
+      "events": 3620,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857281",
+      "status": "valid",
+      "events": 3724,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857263",
+      "status": "valid",
+      "events": 3603,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857295",
+      "status": "valid",
+      "events": 3825,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857259",
+      "status": "valid",
+      "events": 3270,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857299",
+      "status": "valid",
+      "events": 3346,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857269",
+      "status": "valid",
+      "events": 3786,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857270",
+      "status": "valid",
+      "events": 3441,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857294",
+      "status": "valid",
+      "events": 4311,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857267",
+      "status": "valid",
+      "events": 2827,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857278",
+      "status": "valid",
+      "events": 3596,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857261",
+      "status": "valid",
+      "events": 3315,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857275",
+      "status": "valid",
+      "events": 3564,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857264",
+      "status": "valid",
+      "events": 4052,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857260",
+      "status": "valid",
+      "events": 2912,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857257",
+      "status": "valid",
+      "events": 3594,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857296",
+      "status": "valid",
+      "events": 4116,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857276",
+      "status": "valid",
+      "events": 3388,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857255",
+      "status": "valid",
+      "events": 4450,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857292",
+      "status": "valid",
+      "events": 3869,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857262",
+      "status": "valid",
+      "events": 3378,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857293",
+      "status": "valid",
+      "events": 3495,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857280",
+      "status": "valid",
+      "events": 3299,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3857256",
+      "status": "valid",
+      "events": 3210,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869117",
+      "status": "valid",
+      "events": 3582,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869151",
+      "status": "valid",
+      "events": 4150,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869118",
+      "status": "valid",
+      "events": 3505,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869152",
+      "status": "valid",
+      "events": 3618,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869219",
+      "status": "valid",
+      "events": 4559,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869253",
+      "status": "valid",
+      "events": 4046,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869220",
+      "status": "valid",
+      "events": 4750,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869254",
+      "status": "valid",
+      "events": 3422,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869321",
+      "status": "valid",
+      "events": 4708,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869420",
+      "status": "valid",
+      "events": 5145,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869354",
+      "status": "valid",
+      "events": 3239,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869486",
+      "status": "valid",
+      "events": 3381,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869519",
+      "status": "valid",
+      "events": 3806,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869552",
+      "status": "valid",
+      "events": 3551,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869684",
+      "status": "valid",
+      "events": 3560,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3869685",
+      "status": "valid",
+      "events": 4407,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788741",
+      "status": "valid",
+      "events": 3803,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788744",
+      "status": "valid",
+      "events": 2996,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788742",
+      "status": "valid",
+      "events": 3488,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788743",
+      "status": "valid",
+      "events": 3856,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788745",
+      "status": "valid",
+      "events": 3366,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788747",
+      "status": "valid",
+      "events": 3464,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788746",
+      "status": "valid",
+      "events": 3969,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788748",
+      "status": "valid",
+      "events": 3440,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788749",
+      "status": "valid",
+      "events": 3628,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788750",
+      "status": "valid",
+      "events": 3677,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788752",
+      "status": "valid",
+      "events": 3709,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788751",
+      "status": "valid",
+      "events": 4031,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788753",
+      "status": "valid",
+      "events": 3805,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788755",
+      "status": "valid",
+      "events": 3262,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788754",
+      "status": "valid",
+      "events": 3830,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788758",
+      "status": "valid",
+      "events": 3337,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788757",
+      "status": "valid",
+      "events": 3978,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788756",
+      "status": "valid",
+      "events": 3748,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788761",
+      "status": "valid",
+      "events": 3925,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788760",
+      "status": "valid",
+      "events": 3401,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788759",
+      "status": "valid",
+      "events": 3366,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788763",
+      "status": "valid",
+      "events": 3610,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788764",
+      "status": "valid",
+      "events": 3582,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788762",
+      "status": "valid",
+      "events": 3653,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788765",
+      "status": "valid",
+      "events": 3780,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788766",
+      "status": "valid",
+      "events": 3136,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788767",
+      "status": "valid",
+      "events": 3587,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788770",
+      "status": "valid",
+      "events": 3830,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788769",
+      "status": "valid",
+      "events": 3029,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788768",
+      "status": "valid",
+      "events": 4085,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788771",
+      "status": "valid",
+      "events": 3692,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788772",
+      "status": "valid",
+      "events": 3443,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788776",
+      "status": "valid",
+      "events": 2879,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788775",
+      "status": "valid",
+      "events": 3627,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788773",
+      "status": "valid",
+      "events": 3889,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3788774",
+      "status": "valid",
+      "events": 3675,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794689",
+      "status": "valid",
+      "events": 3117,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794685",
+      "status": "valid",
+      "events": 4882,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794690",
+      "status": "valid",
+      "events": 3099,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794687",
+      "status": "valid",
+      "events": 3793,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794686",
+      "status": "valid",
+      "events": 4858,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794691",
+      "status": "valid",
+      "events": 4569,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794688",
+      "status": "valid",
+      "events": 3454,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3794692",
+      "status": "valid",
+      "events": 4919,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3795107",
+      "status": "valid",
+      "events": 3616,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3795108",
+      "status": "valid",
+      "events": 4989,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3795109",
+      "status": "valid",
+      "events": 3217,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3795187",
+      "status": "valid",
+      "events": 4264,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3795220",
+      "status": "valid",
+      "events": 4824,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3795221",
+      "status": "valid",
+      "events": 4691,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3795506",
+      "status": "valid",
+      "events": 4796,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930158",
+      "status": "valid",
+      "events": 3372,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930159",
+      "status": "valid",
+      "events": 3370,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930160",
+      "status": "valid",
+      "events": 3793,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930161",
+      "status": "valid",
+      "events": 4066,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930162",
+      "status": "valid",
+      "events": 3509,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930163",
+      "status": "valid",
+      "events": 3920,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938637",
+      "status": "valid",
+      "events": 3409,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930165",
+      "status": "valid",
+      "events": 3718,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930164",
+      "status": "valid",
+      "events": 3543,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938638",
+      "status": "valid",
+      "events": 3169,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930166",
+      "status": "valid",
+      "events": 3610,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938639",
+      "status": "valid",
+      "events": 3837,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930169",
+      "status": "valid",
+      "events": 3130,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930168",
+      "status": "valid",
+      "events": 3880,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930167",
+      "status": "valid",
+      "events": 3719,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930172",
+      "status": "valid",
+      "events": 3982,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930171",
+      "status": "valid",
+      "events": 3881,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930170",
+      "status": "valid",
+      "events": 3552,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930173",
+      "status": "valid",
+      "events": 3681,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938640",
+      "status": "valid",
+      "events": 3512,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938641",
+      "status": "valid",
+      "events": 3400,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930175",
+      "status": "valid",
+      "events": 3203,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930174",
+      "status": "valid",
+      "events": 3781,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938642",
+      "status": "valid",
+      "events": 3332,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930176",
+      "status": "valid",
+      "events": 3727,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930177",
+      "status": "valid",
+      "events": 3386,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930178",
+      "status": "valid",
+      "events": 4008,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930179",
+      "status": "valid",
+      "events": 3776,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930181",
+      "status": "valid",
+      "events": 3688,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930182",
+      "status": "valid",
+      "events": 3787,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930180",
+      "status": "valid",
+      "events": 3206,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938643",
+      "status": "valid",
+      "events": 3767,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930183",
+      "status": "valid",
+      "events": 2880,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3930184",
+      "status": "valid",
+      "events": 2953,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938645",
+      "status": "valid",
+      "events": 3526,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3938644",
+      "status": "valid",
+      "events": 3659,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3940878",
+      "status": "valid",
+      "events": 3852,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3940983",
+      "status": "valid",
+      "events": 3640,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3941017",
+      "status": "valid",
+      "events": 4764,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3941018",
+      "status": "valid",
+      "events": 3948,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3941019",
+      "status": "valid",
+      "events": 3943,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3941020",
+      "status": "valid",
+      "events": 4225,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3941021",
+      "status": "valid",
+      "events": 2998,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3941022",
+      "status": "valid",
+      "events": 3720,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942226",
+      "status": "valid",
+      "events": 4463,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942349",
+      "status": "valid",
+      "events": 5195,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942227",
+      "status": "valid",
+      "events": 4890,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942382",
+      "status": "valid",
+      "events": 3417,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942752",
+      "status": "valid",
+      "events": 3330,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3942819",
+      "status": "valid",
+      "events": 3503,
+      "xg": true
+    },
+    {
+      "sb_match_id": "3943043",
+      "status": "valid",
+      "events": 3304,
+      "xg": true
+    }
+  ]
+}

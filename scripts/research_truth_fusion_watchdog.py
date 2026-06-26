@@ -163,11 +163,14 @@ def main():
             # source is acquired (separate bounded official open-data fetch).
             wd["watchdog_state"] = "WAITING_FOR_SOURCE"
             wd["action"] = "observe: corpus complete, waiting on external source (StatsBomb); no restart"
-        elif main_state != "Running" and (hb_age is not None and hb_age > 900) and run_state not in (
-                "COMPLETE", "WAITING_FOR_SOURCE", "WAITING_FOR_API_QUOTA", "CANCELLED", "FAILED_INTEGRITY"):
-            # crashed mid-run -> restart SAME run id, resume only unfinished jobs (idempotent; no re-pull)
+        elif (main_state != "Running" and (hb_age is not None and hb_age > 900)
+              and any(v.get("status") == "running" for v in (state.get("jobs") or {}).values())
+              and run_state not in ("COMPLETE", "WAITING_FOR_SOURCE", "WAITING_FOR_API_QUOTA", "CANCELLED", "FAILED_INTEGRITY")):
+            # CRASH = a job is stuck in 'running' while the task is stopped (mid-job death). A clean queue
+            # completion (all jobs terminal) is NOT a crash -> no restart-loop. Restart same run id; resume
+            # only unfinished jobs (idempotent; no re-pull).
             wd["watchdog_state"] = "RUNNING"; wd["action"] = "restart_same_run_id (resume unfinished jobs)"
-            wd["restart_reason"] = "task not Running + heartbeat stale >15m + no lock + collector healthy"
+            wd["restart_reason"] = "task not Running + heartbeat stale >15m + a job stuck 'running' + collector healthy"
         else:
             wd["watchdog_state"] = run_state; wd["action"] = "observe"
 
