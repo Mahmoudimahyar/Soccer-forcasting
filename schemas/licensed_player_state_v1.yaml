@@ -1,0 +1,20 @@
+schema_version: licensed_player_state_v1
+description: >
+  Provider-neutral per-player match-state (on-pitch interval, position, card/sub status). Derived; player_id
+  is provider-supplied and never invented by the adapter.
+fields:
+  provider_name: string
+  canonical_match_id: string
+  player_id: {type: string, required: true}
+  team_id: string
+  on_from_s: {type: [number, "null"]}
+  off_at_s: {type: [number, "null"]}
+  start_status: {type: string, enum: [starter, bench, unused, unknown]}
+  position: {type: [string, "null"]}
+  cards:
+    type: array
+    items: {card: {type: string, enum: [yellow, second_yellow, red]}, minute_s: {type: [number, "null"]}}
+  sub_event_ids: {type: array, items: string}
+  source_snapshot_hash: string
+  causal_eligibility: {type: string, enum: [historical_only, delayed_live_eligible, live_eligible, unknown_fail_closed]}
+  source_support: {type: object}

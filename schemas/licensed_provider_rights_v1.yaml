@@ -1,0 +1,17 @@
+schema_version: licensed_provider_rights_v1
+description: >
+  Per-provider rights matrix. Every field defaults to unknown_requires_vendor_confirmation until confirmed in
+  writing by the vendor. Conservative / fail-closed (raw redistribution defaults to prohibited).
+fields:
+  provider_name: string
+  licensing_model: {type: string, default: unknown_requires_vendor_confirmation}
+  local_retention_allowed: {type: string, enum: [yes, no, conditional, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  historical_research_use: {type: string, enum: [yes, no, conditional, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  model_training_on_derived: {type: string, enum: [yes, no, conditional, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  derived_label_publication: {type: string, enum: [yes, no, conditional, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  research_publication_of_aggregates: {type: string, enum: [yes, no, conditional, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  commercial_future_use: {type: string, enum: [yes, no, conditional, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  raw_redistribution: {type: string, enum: [prohibited, conditional, unknown_requires_vendor_confirmation], default: prohibited}
+  attribution_required: {type: string, enum: [yes, no, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  historical_export_allowed: {type: string, enum: [yes, no, conditional, unknown_requires_vendor_confirmation], default: unknown_requires_vendor_confirmation}
+  api_quota_terms: {type: string, default: unknown_requires_vendor_confirmation}

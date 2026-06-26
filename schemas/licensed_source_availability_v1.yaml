@@ -1,0 +1,17 @@
+schema_version: licensed_source_availability_v1
+description: >
+  Declares a provider/feed's timing + availability semantics. Adapters FAIL CLOSED if publication semantics
+  are unknown (causal_eligibility = unknown_fail_closed -> never live).
+fields:
+  provider_name: string
+  feed_name: string
+  has_event_time: {type: boolean}
+  has_match_clock: {type: boolean}
+  has_publication_time: {type: boolean, note: "required for live / delayed-live eligibility"}
+  has_provider_update_time: {type: boolean}
+  measured_latency_s: {type: [number, "null"], default: null}
+  historical_available: {type: boolean}
+  live_available: {type: boolean}
+  causal_eligibility: {type: string, enum: [historical_only, delayed_live_eligible, live_eligible, unknown_fail_closed], default: unknown_fail_closed}
+  corrections_supported: {type: [boolean, "null"]}
+  notes: {type: string, default: unknown_requires_vendor_confirmation}
