@@ -71,9 +71,8 @@ def gate_class(n_pred, k_correct, median_timing, p90_timing, stable_folds, compe
         fails.append(f"stable_folds={stable_folds} < {T5_MIN_STABLE_FOLDS}")
     if not fails:
         return "silver_label_approved_for_historical_research", [f"WilsonLB={wlb:.3f}", "all thresholds met"]
-    # distinguish precision failure from low-confidence-usable
-    if wlb < T2_WILSON_LB and (median_timing is not None and median_timing <= T3_MEDIAN_TIMING_S):
-        if wlb >= 0.60:
-            return "usable_only_with_low_confidence_flag", fails
+    # very low precision -> insufficient_precision regardless of timing
+    if wlb < 0.60:
         return "insufficient_precision", fails
+    # near-miss precision (0.60 <= WilsonLB < 0.80) or timing-only failure -> low-confidence usable
     return "usable_only_with_low_confidence_flag", fails

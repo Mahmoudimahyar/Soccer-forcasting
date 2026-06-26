@@ -1,0 +1,190 @@
+{
+  "thresholds": {
+    "min_pred": 50,
+    "wilson_lb": 0.8,
+    "median_s": 15.0,
+    "p90_s": 35.0,
+    "min_stable_folds": 4
+  },
+  "classes": {
+    "corner": {
+      "label": "usable_only_with_low_confidence_flag",
+      "n_pred": 2129,
+      "k_correct": 1673,
+      "precision": 0.7858,
+      "wilson_lb": 0.7679,
+      "timing_median_s": 14.521,
+      "timing_p90_s": 31.568,
+      "stable_folds": 1,
+      "competitions": 6,
+      "reasons": [
+        "WilsonLB=0.768 < 0.8",
+        "stable_folds=1 < 4"
+      ]
+    },
+    "foul": {
+      "label": "usable_only_with_low_confidence_flag",
+      "n_pred": 1737,
+      "k_correct": 1369,
+      "precision": 0.7881,
+      "wilson_lb": 0.7683,
+      "timing_median_s": 6.9671,
+      "timing_p90_s": 30.7831,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "WilsonLB=0.768 < 0.8",
+        "stable_folds=0 < 4"
+      ]
+    },
+    "goal": {
+      "label": "insufficient_precision",
+      "n_pred": 76,
+      "k_correct": 51,
+      "precision": 0.6711,
+      "wilson_lb": 0.5594,
+      "timing_median_s": 1.96,
+      "timing_p90_s": 24.0,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "WilsonLB=0.559 < 0.8",
+        "stable_folds=0 < 4"
+      ]
+    },
+    "kickoff": {
+      "label": "insufficient_coverage",
+      "n_pred": 24,
+      "k_correct": 14,
+      "precision": 0.5833,
+      "wilson_lb": 0.3883,
+      "timing_median_s": 0.024,
+      "timing_p90_s": 9.942,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "n_pred=24 < 50"
+      ]
+    },
+    "offside": {
+      "label": "insufficient_coverage",
+      "n_pred": 42,
+      "k_correct": 26,
+      "precision": 0.619,
+      "wilson_lb": 0.4681,
+      "timing_median_s": 2.047,
+      "timing_p90_s": 7.717,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "n_pred=42 < 50"
+      ]
+    },
+    "penalty_awarded": {
+      "label": "insufficient_precision",
+      "n_pred": 114,
+      "k_correct": 15,
+      "precision": 0.1316,
+      "wilson_lb": 0.0814,
+      "timing_median_s": 25.0269,
+      "timing_p90_s": 33.44,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "WilsonLB=0.081 < 0.8",
+        "median_timing=25.0269 > 15.0",
+        "stable_folds=0 < 4"
+      ]
+    },
+    "red_card": {
+      "label": "insufficient_coverage",
+      "n_pred": 30,
+      "k_correct": 8,
+      "precision": 0.2667,
+      "wilson_lb": 0.1418,
+      "timing_median_s": 8.66,
+      "timing_p90_s": 34.3751,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "n_pred=30 < 50"
+      ]
+    },
+    "second_yellow": {
+      "label": "insufficient_coverage",
+      "n_pred": 19,
+      "k_correct": 4,
+      "precision": 0.2105,
+      "wilson_lb": 0.0851,
+      "timing_median_s": 14.7575,
+      "timing_p90_s": 20.7,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "n_pred=19 < 50"
+      ]
+    },
+    "shot": {
+      "label": "insufficient_precision",
+      "n_pred": 108,
+      "k_correct": 65,
+      "precision": 0.6019,
+      "wilson_lb": 0.5076,
+      "timing_median_s": 2.139,
+      "timing_p90_s": 19.455,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "WilsonLB=0.508 < 0.8",
+        "stable_folds=0 < 4"
+      ]
+    },
+    "shot_on_target": {
+      "label": "insufficient_precision",
+      "n_pred": 81,
+      "k_correct": 46,
+      "precision": 0.5679,
+      "wilson_lb": 0.4594,
+      "timing_median_s": 3.9825,
+      "timing_p90_s": 31.744,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "WilsonLB=0.459 < 0.8",
+        "stable_folds=0 < 4"
+      ]
+    },
+    "substitution": {
+      "label": "insufficient_coverage",
+      "n_pred": 43,
+      "k_correct": 29,
+      "precision": 0.6744,
+      "wilson_lb": 0.5252,
+      "timing_median_s": 11.499,
+      "timing_p90_s": 31.722,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "n_pred=43 < 50"
+      ]
+    },
+    "yellow_card": {
+      "label": "usable_only_with_low_confidence_flag",
+      "n_pred": 217,
+      "k_correct": 171,
+      "precision": 0.788,
+      "wilson_lb": 0.7289,
+      "timing_median_s": 5.173,
+      "timing_p90_s": 21.6599,
+      "stable_folds": 0,
+      "competitions": 6,
+      "reasons": [
+        "WilsonLB=0.729 < 0.8",
+        "stable_folds=0 < 4"
+      ]
+    }
+  },
+  "approved_classes": [],
+  "n_approved": 0,
+  "all_outputs": "historical_weak_supervision_only / not_live_eligible"
+}
