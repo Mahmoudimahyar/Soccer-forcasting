@@ -108,7 +108,7 @@ class Supervisor:
             for k, v in (result.get("state_updates") or {}).items():
                 state["shared"][k] = v
             self._log({"ts": _utc(), "job": jid, **result})
-            self._checkpoint(state); self._heartbeat(state, f"done:{jid}")
+            self._checkpoint(state); self._heartbeat(state, f"done:{jid}"); self._artifact_manifest(jid)
             if result["status"] == "failed" and job.get("critical"):
                 stop_reason = f"critical_job_failed:{jid}"; self._block_remaining(state, jobs, jid, stop_reason, after=True); break
         self._write_summary(state, stop_reason)
@@ -160,6 +160,19 @@ class Supervisor:
     def _checkpoint(self, state):
         state["updated_utc"] = _utc()
         _atomic_write(self.state_path, state)
+
+    def _artifact_manifest(self, jid):
+        # append-only artifact manifest: list the JSON/MD artifacts present in the run dir after each job
+        mpath = self.run_dir / "artifact_manifest.json"
+        try:
+            cur = json.loads(mpath.read_text(encoding="utf-8")) if mpath.exists() else {"artifacts": []}
+        except Exception:
+            cur = {"artifacts": []}
+        seen = {a["file"] for a in cur["artifacts"]}
+        for f in sorted(self.run_dir.glob("*.json")) + sorted(self.run_dir.glob("*.md")):
+            if f.name not in seen and f.name != "artifact_manifest.json":
+                cur["artifacts"].append({"file": f.name, "after_job": jid, "ts": _utc()})
+        _atomic_write(mpath, cur)
 
     def _write_summary(self, state, stop_reason):
         counts = {}
