@@ -1,2 +1,2 @@
 # Resume Next Task
-Worktree paid-source-activation-v1. Next: Phase 1 API-Football empirical capability audit (<=30 read-only requests) via the existing operations/api_football_adapter using the main-root .env (read-only, key never printed). Then Phases 2-7.
+Sprint COMPLETE (tag paid-source-activation-v1). Next recommended: 'API-Football Historical Backfill to Threshold V1' (bounded backfill to >=500 lineup/sub + >=500 timestamped, push red/2Y toward 150, add major leagues; then leakage-safe research datasets + baseline player/sub/card/next-goal models, research-only). xG/shot-quality still needs a richer provider. Frozen models untouched.
