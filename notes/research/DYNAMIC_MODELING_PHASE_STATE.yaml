@@ -1,0 +1,7 @@
+run_id: truth_20260626_134931
+worktree: C:/Users/Mahyar/worldcup-research-truth-fusion
+run_state: RUNNING_MODEL_PHASE
+phase: "Phase 0 complete (preflight + current-truth); building real modeling queue (Phases 1-8)"
+data_gates: {corpus: 1.0, statsbomb_valid: 258, xg_snapshots: 4386}
+collector: {commit: dc73318, task: Ready, isolated: true, kalshi: false, trading: paper}
+completion_tag: WITHHELD_until_all_20_hard_gates_true
