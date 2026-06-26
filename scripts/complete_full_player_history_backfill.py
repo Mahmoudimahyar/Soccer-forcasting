@@ -109,6 +109,7 @@ def main():
         "first_unfinished_fixture_before": first_unfinished_before,
     }
     print(json.dumps({"quota_policy": quota_ledger}), flush=True)
+    (raw / "quota_ledger.json").write_text(json.dumps(quota_ledger, indent=2), encoding="utf-8")  # persist upfront
     if budget < 2:
         quota_ledger["state"] = "WAITING_FOR_API_QUOTA"; quota_ledger["reason"] = "remaining <= dynamic reserve"
         (raw / "quota_ledger.json").write_text(json.dumps(quota_ledger, indent=2), encoding="utf-8")
