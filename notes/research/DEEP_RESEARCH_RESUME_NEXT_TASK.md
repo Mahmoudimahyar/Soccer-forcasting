@@ -1,5 +1,2 @@
 # Resume Next Task
-Controller run_id night_main launched (finite queue, <=4h). If interrupted, resume idempotently:
-`python scripts/deep_research_supervisor.py --resume-run-id night_main` (skips complete jobs). After the queue
-completes -> Phase 8: read outputs/research_runs/night_main/run_summary.json, audit, remove the scheduled task,
-write completion report, commit, tag deep-research-inplay-foundation-v1 (or -blocked on critical data-integrity failure).
+Sprint COMPLETE (tag deep-research-inplay-foundation-v1). Controller + finite queue validated; in-play foundation done. Findings: W2 (remaining-time Poisson) is the in-play W/D/L leader; richer team-state/lineup features (W3/W4/N2) and club->intl transfer did NOT generalize; NO new model qualifies for shadow-candidate review. Next: revisit only with more international matches and/or a richer feature source (xG via a different provider). Frozen models untouched.

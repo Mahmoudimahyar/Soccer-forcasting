@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import math
 
-from . import _common as C
+import _common as C  # parent dir is on sys.path (job scripts insert it); absolute import works standalone
 
 WDL = ["H", "D", "A"]
 M2_BASE = 1.35  # goals per team per 90 (frozen prospective M2 reference; reimplemented, not imported)
