@@ -1,0 +1,11 @@
+# Backlog
+- [x] Phase 0 isolation + preregistration
+- [ ] Phase 1 player-history corpus manifest (predeclare, metadata-only) + backfill scripts
+- [ ] Phase 2 rolling player-impact features + exact-ID linkage + tests
+- [ ] Phase 3 StatsBomb open acquire + exact match bridge + xG event-state + tests
+- [ ] Phase 4 player-impact models (P1-P4/N0-N3/C0-C1)
+- [ ] Phase 5 xG fusion (X0-X3)
+- [ ] Phase 6 controller config + 13-job queue
+- [ ] Phase 7 evaluation + failure analysis
+- [ ] Phase 8 one-time scheduled run
+- [ ] Phase 9 audit + completion + tag
