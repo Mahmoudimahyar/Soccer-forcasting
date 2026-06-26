@@ -1,0 +1,2 @@
+- 2026-06-26T18:00:01.366663+00:00 state=RUNNING main_task=Running hb_age=629.0935523509979 collector=dc73318(ok) violations=none action=observe
+- 2026-06-26T18:01:02.854563+00:00 state=RUNNING main_task=Running hb_age=690.5881953239441 collector=dc73318(ok) violations=none action=healthy: do nothing (long job in progress; hb_age=690s)
