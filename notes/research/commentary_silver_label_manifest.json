@@ -1,0 +1,9 @@
+{
+  "approved_classes": [],
+  "n_records": 0,
+  "by_class": {},
+  "parser_model_version": "precision_v2",
+  "rights": "echoes=CC_BY_4.0;soccernet_labels=non_commercial_research",
+  "causal_status": "historical_weak_supervision_only",
+  "live_eligible": false
+}
