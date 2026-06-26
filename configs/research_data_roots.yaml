@@ -1,0 +1,37 @@
+# Canonical data-root registry. EVERY job resolves source locations through this (no hard-coded paths).
+# research_only. All raw roots are gitignored. The active collector checkout is NEVER a data source.
+schema_version: research_data_roots_v1
+roots:
+  api_football_corpus:        # read-only inherited 900-fixture corpus (events/lineups)
+    path: "C:/Users/Mahyar/worldcup-api-football-corpus/data/raw/api_football_historical_corpus"
+    mode: read_only
+    gitignored: true
+    owner: api-football-historical-corpus-v1
+  api_football_player_history: # CANONICAL writable player-history root (this worktree)
+    path: "data/raw/api_football_player_history"
+    mode: read_write
+    gitignored: true
+    owner: research-truth-full-corpus-xg-fusion-v1
+  api_football_player_history_prior: # read-only prior 60-fixture pull (avoid re-download)
+    path: "C:/Users/Mahyar/worldcup-player-impact-xg/data/raw/player_history_corpus"
+    mode: read_only
+    gitignored: true
+    owner: player-impact-xg-fusion-v1
+  statsbomb_raw:              # CANONICAL StatsBomb open-data root (events under /events)
+    path: "data/raw/statsbomb_open"
+    mode: read_write
+    gitignored: true
+    owner: research-truth-full-corpus-xg-fusion-v1
+  statsbomb_raw_prior:        # read-only prior StatsBomb pull (60 event files)
+    path: "C:/Users/Mahyar/worldcup-player-impact-xg/data/raw/statsbomb_open"
+    mode: read_only
+    gitignored: true
+    owner: player-impact-xg-fusion-v1
+  dynamic_snapshots_out: {path: "data/processed/dynamic_snapshots", mode: read_write, gitignored: true}
+  model_artifacts_out:   {path: "data/processed/model_artifacts", mode: read_write, gitignored: true}
+forbidden_roots:            # jobs MUST NOT read from these
+  - "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL"   # active collector checkout
+manifests:
+  execution: "data/reference/full_corpus_execution_manifest.json"
+  truth_registry: "data/reference/research_truth_registry.json"
+  statsbomb_bridge: "C:/Users/Mahyar/worldcup-player-impact-xg/data/processed/api_statsbomb_match_bridge_v1.audit.json"

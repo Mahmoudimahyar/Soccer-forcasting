@@ -1,0 +1,8 @@
+schema_version: research_asset_registry_v1
+assets:
+  - {id: af_corpus_900, type: api_football_raw, root: api_football_corpus, manifest: truth_registry, gitignored: true, status: complete}
+  - {id: af_player_history, type: api_football_raw, root: api_football_player_history, manifest: execution, gitignored: true, status: incomplete_3pct}
+  - {id: statsbomb_events, type: statsbomb_open_events, root: statsbomb_raw, manifest: statsbomb_bridge, gitignored: true, status: incomplete_23pct}
+  - {id: dynamic_snapshots, type: derived, root: dynamic_snapshots_out, gitignored: true, status: pending}
+  - {id: model_artifacts, type: derived, root: model_artifacts_out, gitignored: true, status: pending}
+validation_command: "python scripts/validate_research_asset_paths.py"

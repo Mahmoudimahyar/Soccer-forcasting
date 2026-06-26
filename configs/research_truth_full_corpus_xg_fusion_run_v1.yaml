@@ -1,31 +1,22 @@
-# Durable 10h research-truth + full-corpus + xG-fusion run config (reuses deep_research_supervisor.py).
-# research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible. Marks run INCOMPLETE
-# (not complete) if any Phase-10 hard gate is unmet.
+# Durable <=10h research-truth + full-corpus + xG-fusion run (reuses deep_research_supervisor.py).
+# research_only. Jobs resolve all paths through configs/research_data_roots.yaml. Marks the run state via
+# JOB2 (RUNNING / WAITING_FOR_API_QUOTA). Data-gated jobs skip with explicit reasons until gates are met.
 run:
   max_hours: 10.0
   max_workers: 2
-  max_api_requests: 3000          # bounded per-run; full corpus (1940 outstanding) is MULTI-DAY/quota-bounded -> resume across runs
+  max_api_requests: 3000
   heartbeat_interval_s: 120
   collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json"
   collector_stale_seconds: 5400
-  per_job_timeout_s: 14400
+  per_job_timeout_s: 36000
 safety: {kalshi_live_trading: false, trading_mode: paper, use_odds_api: false, labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"}
-# 16-job finite queue (JOB scripts: existing inherited backfill/statsbomb/snapshot/eval reused; the
-# completion-specific wrappers under scripts/research_jobs/rt_jobNN_*.py are the remaining build — see runbook).
 jobs:
-  - {id: JOB1,  title: "preflight: tests + isolation + registry + dry-run + budget", script: "scripts/research_jobs/rt_job01_preflight.py", critical: true}
-  - {id: JOB2,  title: "verify canonical truth registry", script: "scripts/research_jobs/rt_job02_registry.py", critical: true}
-  - {id: JOB3,  title: "lock execution manifest + outstanding work", script: "scripts/research_jobs/rt_job03_manifest.py", critical: true}
-  - {id: JOB4,  title: "complete API-Football events/lineups corpus (>=95% gate)", script: "scripts/research_jobs/rt_job04_backfill.py", critical: false}
-  - {id: JOB5,  title: "reconcile + integrity audit", script: "scripts/research_jobs/rt_job05_reconcile.py", critical: true}
-  - {id: JOB6,  title: "complete StatsBomb event cache (>=90% gate)", script: "scripts/research_jobs/rt_job06_statsbomb.py", critical: false}
-  - {id: JOB7,  title: "build complete dynamic snapshot datasets", script: "scripts/research_jobs/rt_job07_snapshots.py", critical: true}
-  - {id: JOB8,  title: "temporal player priors + substitution deltas", script: "scripts/research_jobs/rt_job08_priors.py", critical: true}
-  - {id: JOB9,  title: "xG snapshot join (nonzero gate)", script: "scripts/research_jobs/rt_job09_xg_join.py", critical: false}
-  - {id: JOB10, title: "primary forward-chaining W/D/L (R0-R2/P1-P5)", script: "scripts/research_jobs/rt_job10_wdl_primary.py", critical: false}
-  - {id: JOB11, title: "secondary LOCO W/D/L stress", script: "scripts/research_jobs/rt_job11_wdl_loco.py", critical: false}
-  - {id: JOB12, title: "next-goal (N0-N4)", script: "scripts/research_jobs/rt_job12_nextgoal.py", critical: false}
-  - {id: JOB13, title: "discipline (C0-C2)", script: "scripts/research_jobs/rt_job13_discipline.py", critical: false}
-  - {id: JOB14, title: "xG fusion (X0-X3)", script: "scripts/research_jobs/rt_job14_xg_fusion.py", critical: false}
-  - {id: JOB15, title: "ablations + calibration + bootstrap + decision ledger", script: "scripts/research_jobs/rt_job15_ablation.py", critical: false}
-  - {id: JOB16, title: "machine + human scientific report", script: "scripts/research_jobs/rt_job16_summary.py", critical: true}
+  - {id: JOB1, title: "path + manifest + isolation + budget integrity", script: "scripts/research_jobs/rt_job01_integrity.py", critical: true}
+  - {id: JOB2, title: "complete API-Football player-history corpus (>=95% gate)", script: "scripts/research_jobs/rt_job02_corpus.py", critical: false}
+  - {id: JOB3, title: "reconcile + canonical counts ledger", script: "scripts/research_jobs/rt_job03_reconcile.py", critical: true}
+  - {id: JOB4, title: "complete StatsBomb event cache (>=90% gate)", script: "scripts/research_jobs/rt_job04_statsbomb.py", critical: false}
+  - {id: JOB5, title: "dynamic snapshot datasets (gated on corpus>=95%)", script: "scripts/research_jobs/rt_job05_snapshots.py", critical: false}
+  - {id: JOB6, title: "temporal player priors + substitution deltas (gated)", script: "scripts/research_jobs/rt_job06_priors.py", critical: false}
+  - {id: JOB7, title: "xG snapshot join (gated on StatsBomb>=90%)", script: "scripts/research_jobs/rt_job07_xg_join.py", critical: false}
+  - {id: JOB8, title: "preregistered temporal evaluations (gated on data completion)", script: "scripts/research_jobs/rt_job08_evals.py", critical: false}
+  - {id: JOB9, title: "model decision ledger + scientific report", script: "scripts/research_jobs/rt_job09_ledger.py", critical: true}
