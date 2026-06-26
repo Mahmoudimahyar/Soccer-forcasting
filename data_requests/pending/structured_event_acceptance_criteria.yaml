@@ -1,0 +1,13 @@
+acceptance_criteria:
+  thresholds: {lineup_sub_matches: 500, timestamped_event_matches: 500, red_or_second_yellow_examples: 150}
+  schema_required: [unique_match_ids, stable_player_ids, per_event_timestamps, correction_support,
+    substitution_semantics, lineup_with_bench, card_classes_distinct, shots, shot_locations, xg,
+    positions, formation]
+  timing_required: [source_publication_time, provider_update_time, historical_vs_live_distinction,
+    no_retrospective_relabel_as_live]
+  reconciliation_required: [score_reconciliation, event_ordering, low_duplicate_rate, low_missingness,
+    cross_source_reconciliation]
+  rights_required_in_writing: [local_retention_allowed, historical_research_use, model_training_on_derived,
+    derived_label_publication, raw_redistribution_boundary, historical_export_allowed]
+  decision_rule: "accept_for_storage_and_research only if ALL categories pass; else conditional/reject"
+  fail_closed: "any unknown right or unknown timing semantic FAILS until confirmed in writing"
