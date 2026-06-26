@@ -1,0 +1,28 @@
+# Deep Research Controller — run config (research_only / experimental / not_runtime_approved /
+# not_trade_eligible / not_live_eligible). Finite, ordered job queue; bounded <=4h; fail-closed.
+run:
+  max_hours: 4.0
+  max_workers: 2
+  max_api_requests: 600          # whole-run API-Football cap (extension uses <=500); reserves collector quota
+  heartbeat_interval_s: 30
+  collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json"
+  collector_stale_seconds: 5400  # if collector heartbeat older than this -> fail closed
+  per_job_timeout_s: 3600
+safety:
+  kalshi_live_trading: false
+  trading_mode: paper
+  use_odds_api: false
+  labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+# Ordered finite job queue. skip_if conditions reference run state (e.g., sendings_off count).
+jobs:
+  - {id: JOB1, title: "unit tests + controller dry-run validation", script: "scripts/research_jobs/job01_validate.py", critical: true}
+  - {id: JOB2, title: "220-fixture API-Football extension backfill", script: "scripts/research_jobs/job02_extension_backfill.py", critical: false}
+  - {id: JOB3, title: "reconciliation + quality audit", script: "scripts/research_jobs/job03_reconcile_quality.py", critical: true}
+  - {id: JOB4, title: "build causal historical datasets", script: "scripts/research_jobs/job04_build_datasets.py", critical: true}
+  - {id: JOB5, title: "readiness + class-balance report", script: "scripts/research_jobs/job05_readiness.py", critical: true}
+  - {id: JOB6, title: "W0-W4 LOCO evaluation (international)", script: "scripts/research_jobs/job06_wdl_eval.py", critical: false}
+  - {id: JOB7, title: "N0-N2 LOCO evaluation (international)", script: "scripts/research_jobs/job07_nextgoal_eval.py", critical: false}
+  - {id: JOB8, title: "C0 (+C1 if >=150 sendings-off) evaluation", script: "scripts/research_jobs/job08_discipline_eval.py", critical: false, skip_if: "sendings_off<150_for_C1"}
+  - {id: JOB9, title: "club-to-international transfer feasibility", script: "scripts/research_jobs/job09_transfer.py", critical: false}
+  - {id: JOB10, title: "calibration + match-level bootstrap + failure analysis", script: "scripts/research_jobs/job10_calibration_failure.py", critical: false}
+  - {id: JOB11, title: "machine + human run summary", script: "scripts/research_jobs/job11_summary.py", critical: true}
