@@ -1,2 +1,2 @@
 # Resume Next Task
-Worktree structured-event-procurement-readiness-v1. Next: Phase 1 official provider due diligence (official docs only; no calls). Then Phases 2-7 (contracts, mock adapters, acceptance tests, procurement packet, day-one plans, audit+tag).
+Sprint COMPLETE (tag structured-event-procurement-readiness-v1). Next is EXTERNAL (user): choose provider + budget/quote/NDA + written rights confirmation + 20-match sample + credential in .env. Then day-one integration runs per structured_event_day_one_integration_plan.md (new real adapter -> acceptance protocol -> leakage-safe research datasets).
