@@ -4,13 +4,13 @@ branch: player-impact-xg-fusion-v1
 base: "tag deep-research-inplay-foundation-v1 @ 6136443"
 updated_utc: "2026-06-26"
 active_collector: {path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL", branch: v1-5-prospective-operations, commit: dc73318, task: Ready, isolation: PROVEN}
-credentials: {API_FOOTBALL_KEY: "to-probe (SET expected)"}
-current_phase: "Phase 0 (reconcile + preregister)"
+credentials: {API_FOOTBALL_KEY: SET}
+current_phase: "Phases 0-1 done; component build (player-history/statsbomb-xg/models/controller-wiring) RUNNING via workflow; integrate+launch next"
 controller: "reuse deep_research_supervisor.py; new config player_impact_xg_fusion_run_v1.yaml (<=6h, 13 jobs)"
 scheduled_task: "WorldCupPlayerImpactResearchRun (one-time, <=6h; registered + removed at Phase 9)"
 data: {corpus_inherited: "1120 fixtures (627 intl + 493 club)", statsbomb_open: "NOT local -> Phase 3 bounded acquire", xg_source: "StatsBomb open only (API-Football lacks per-shot xG)"}
 budget_policy: "reserve max(1500, 0.25*remaining); research min(4200, remaining-reserve); fixtures min(2000, floor((research-50)/2)); fallback 1500 fixtures/3000 reqs"
 safety: {kalshi_live_trading: false, trading_mode: paper, odds_api: NOT_USED, statsbomb: "open CC-licensed + attribution", labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"}
-last_stable_commit: "6136443 (base)"
+last_stable_commit: "f5f5b89"
 resume_command: "cd C:/Users/Mahyar/worldcup-player-impact-xg; see PLAYER_IMPACT_XG_RESUME_NEXT_TASK.md"
 stop_reason: null
