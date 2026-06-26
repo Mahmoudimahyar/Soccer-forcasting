@@ -1,0 +1,32 @@
+# Player-Impact + xG Fusion — durable run config (research_only / experimental / not_runtime_approved /
+# not_trade_eligible / not_live_eligible). Finite, ordered 13-job queue; bounded <=6h; fail-closed.
+# Phase 6/8. Reuses the inherited scripts/deep_research_supervisor.py (Supervisor class + dry-run path).
+# Each job is invoked as: python <script> --run-dir <dir> and must print a final JSON result line.
+run:
+  max_hours: 6.0
+  max_workers: 2
+  max_api_requests: 3500          # whole-run API-Football cap; player-history backfill is the only API spender
+  heartbeat_interval_s: 30
+  collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json"
+  collector_stale_seconds: 5400   # if the active shadow collector's heartbeat is older than this -> fail closed
+  per_job_timeout_s: 7200
+safety:
+  kalshi_live_trading: false
+  trading_mode: paper
+  use_odds_api: false
+  labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+# Ordered finite job queue. Skips emit an explicit reason when a preregistered data threshold is unmet.
+jobs:
+  - {id: JOB1,  title: "validate: config parses + all 13 job scripts present + controller dry-run", script: "scripts/research_jobs/pi_job01_validate.py", critical: true}
+  - {id: JOB2,  title: "build+commit player-history manifest (verify if it already exists)", script: "scripts/research_jobs/pi_job02_manifest.py", critical: true}
+  - {id: JOB3,  title: "player-history backfill (events+lineups via player_history_backfill.py)", script: "scripts/research_jobs/pi_job03_backfill.py", critical: false}
+  - {id: JOB4,  title: "reconcile + quality audit (exact result reconciliation, sendings-off)", script: "scripts/research_jobs/pi_job04_reconcile_quality.py", critical: true}
+  - {id: JOB5,  title: "player-history + linkage datasets (exact player-id linkage)", script: "scripts/research_jobs/pi_job05_player_linkage.py", critical: true}
+  - {id: JOB6,  title: "statsbomb bridge + xG features", script: "scripts/research_jobs/pi_job06_statsbomb_xg.py", critical: false}
+  - {id: JOB7,  title: "P1-P4 in-play W/D/L evaluation (LOCO + bootstrap)", script: "scripts/research_jobs/pi_job07_wdl.py", critical: false}
+  - {id: JOB8,  title: "N0-N3 next-goal evaluation", script: "scripts/research_jobs/pi_job08_nextgoal.py", critical: false}
+  - {id: JOB9,  title: "C0-C1 discipline evaluation (C1 only if >=150 sendings-off)", script: "scripts/research_jobs/pi_job09_discipline.py", critical: false, skip_if: "sendings_off<150_for_C1"}
+  - {id: JOB10, title: "X0-X3 xG-fusion evaluation", script: "scripts/research_jobs/pi_job10_xg_fusion.py", critical: false}
+  - {id: JOB11, title: "ablation (player-impact / xG family contribution)", script: "scripts/research_jobs/pi_job11_ablation.py", critical: false}
+  - {id: JOB12, title: "calibration + match-level bootstrap + failure analysis", script: "scripts/research_jobs/pi_job12_calibration.py", critical: false}
+  - {id: JOB13, title: "machine + human run summary", script: "scripts/research_jobs/pi_job13_summary.py", critical: true}

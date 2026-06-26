@@ -1,0 +1,31 @@
+schema_version: player_impact_prior_v1
+description: >
+  Leakage-safe ROLLING per-player prior as of a target match. Built ONLY from the player's appearances
+  dated strictly BEFORE the target match date, within the SAME comp_type (club vs international never
+  pooled). Regularized via shrinkage toward date/comp-filtered global means; thin histories shrink hard.
+fields:
+  - player_id            # API-Football integer player.id (EXACT linkage only; never fuzzy name matching)
+  - comp_type            # club | international (priors are partitioned and never mixed)
+  - prior_appearances    # count of strictly-earlier appearances (same comp_type)
+  - prior_minutes        # total causal on-pitch regulation minutes accrued before the target match
+  - minutes_per_appearance
+  - gd_contribution_per90   # shrunk team-adjusted on-pitch goal-difference per 90 (offensive-minus-defensive)
+  - off_contribution_per90  # shrunk regulation team goals FOR while on pitch, per 90
+  - def_contribution_per90  # shrunk regulation team goals AGAINST while on pitch, per 90
+  - wdl_contribution        # shrunk W=1 / D=0.5 / L=0 prior team-result share
+  - exposure             # minutes/(minutes+SHRINK_MINUTES) in [0,1]; how much own-signal dominates
+  - uncertainty          # SHRINK_APPEARANCES/(apps+SHRINK_APPEARANCES) in (0,1]; shrinks with history
+  - position_state       # dominant START position (G/D/M/F) | 'sub' | 'unknown'
+  - unknown_player       # bool: no strictly-earlier appearance -> returns shrinkage prior only
+  - insufficient_history # bool: prior_appearances < SHRINK_APPEARANCES
+  - prior_model_version  # player_history_prior_v1
+  - source_hashes        # list of raw source hashes (events+lineups) of the contributing appearances
+rules:
+  - "prior uses ONLY appearances with match_date STRICTLY < target match date (no equal-date, no future)"
+  - "NO post-match aggregate (rating, final score, later subs) ever enters a pre-match prior"
+  - "regulation only: extra-time (90<elapsed<=120) and shootout (official score) excluded from contributions"
+  - "club and international appearances never pooled into one prior (comp_type partition)"
+  - "EXACT integer player.id linkage only; unknown/unmatched is its own category (unknown_player=True)"
+  - "shrinkage constants fixed -> deterministic rebuild from identical raw"
+causal_status: historical_weak_supervision_only
+live_eligibility: false

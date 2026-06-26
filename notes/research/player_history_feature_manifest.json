@@ -1,0 +1,26 @@
+{
+  "prior_model_version": "player_history_prior_v1",
+  "parser_version": "player_history_parser_v1",
+  "n_appearances": 19943,
+  "n_player_prior_rows": 19800,
+  "n_lineup_aggregate_rows": 1800,
+  "n_substitution_delta_rows": 7178,
+  "by_comp_type": {
+    "international": {
+      "matches": 627,
+      "team_rows": 1254,
+      "unknown_players_in_xi": 3097,
+      "xi_player_priors": 13794,
+      "unknown_priors": 3097,
+      "substitution_deltas": 4687
+    },
+    "club": {
+      "matches": 273,
+      "team_rows": 546,
+      "unknown_players_in_xi": 1626,
+      "xi_player_priors": 6006,
+      "unknown_priors": 1626,
+      "substitution_deltas": 2491
+    }
+  }
+}
