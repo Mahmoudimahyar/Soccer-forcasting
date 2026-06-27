@@ -2,7 +2,7 @@
 # StatsBomb Open Data only (Phase 1), NO API-Football, NO Odds API, NO secrets.
 run: {max_hours: 10.0, max_workers: 2, max_api_requests: 100000000, heartbeat_interval_s: 120,
       collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json",
-      collector_stale_seconds: 100000}
+      collector_stale_seconds: 100000, per_job_timeout_s: 28800}
 safety: {kalshi_live_trading: false, trading_mode: paper, use_odds_api: false, use_api_football: false,
          labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"}
 jobs:
