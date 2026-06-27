@@ -1,0 +1,5 @@
+run_id: ep_20260627_run1
+worktree: C:/Users/Mahyar/worldcup-event-process-intelligence
+run_state: RUNNING
+phase: "Phase 0-1 (preflight+catalog+manifest done); acquisition + engine/snapshots/models/eval building"
+collector: {commit: dc73318, isolated: true, kalshi: false, trading: paper}

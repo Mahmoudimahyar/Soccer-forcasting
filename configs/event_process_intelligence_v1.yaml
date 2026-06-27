@@ -1,0 +1,24 @@
+# Durable <=10h event-process research run (reuses deep_research_supervisor.py). research_only. Offline:
+# StatsBomb Open Data only (Phase 1), NO API-Football, NO Odds API, NO secrets.
+run: {max_hours: 10.0, max_workers: 2, max_api_requests: 0, heartbeat_interval_s: 120,
+      collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json",
+      collector_stale_seconds: 100000}
+safety: {kalshi_live_trading: false, trading_mode: paper, use_odds_api: false, use_api_football: false,
+         labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"}
+jobs:
+  - {id: EPJOB1, title: "preflight + isolation", script: "scripts/event_process_jobs/ep_job01_preflight.py", critical: true}
+  - {id: EPJOB2, title: "official StatsBomb catalog", script: "scripts/event_process_jobs/ep_job02_catalog.py", critical: true}
+  - {id: EPJOB3, title: "deterministic auxiliary manifest", script: "scripts/event_process_jobs/ep_job03_manifest.py", critical: true}
+  - {id: EPJOB4, title: "acquire auxiliary event files (>=500 gate)", script: "scripts/event_process_jobs/ep_job04_acquire.py", critical: false}
+  - {id: EPJOB5, title: "possession/territory/transition engine", script: "scripts/event_process_jobs/ep_job05_engine.py", critical: false}
+  - {id: EPJOB6, title: "causal event-process snapshots", script: "scripts/event_process_jobs/ep_job06_snapshots.py", critical: false}
+  - {id: EPJOB7, title: "source-quality + leakage audit", script: "scripts/event_process_jobs/ep_job07_source_audit.py", critical: false}
+  - {id: EPJOB8, title: "fit E0-E9 models", script: "scripts/event_process_jobs/ep_job08_fit_models.py", critical: false}
+  - {id: EPJOB9, title: "primary forward-chain W/D/L", script: "scripts/event_process_jobs/ep_job09_wdl_primary.py", critical: false}
+  - {id: EPJOB10, title: "secondary LOCO W/D/L", script: "scripts/event_process_jobs/ep_job10_wdl_loco.py", critical: false}
+  - {id: EPJOB11, title: "next-goal Q0-Q4", script: "scripts/event_process_jobs/ep_job11_next_goal.py", critical: false}
+  - {id: EPJOB12, title: "near-term scoring H0-H3", script: "scripts/event_process_jobs/ep_job12_near_term.py", critical: false}
+  - {id: EPJOB13, title: "discipline Y0-Y2", script: "scripts/event_process_jobs/ep_job13_discipline.py", critical: false}
+  - {id: EPJOB14, title: "mandatory ablations", script: "scripts/event_process_jobs/ep_job14_ablations.py", critical: false}
+  - {id: EPJOB15, title: "calibration + match bootstrap + failure", script: "scripts/event_process_jobs/ep_job15_calibration_bootstrap.py", critical: false}
+  - {id: EPJOB16, title: "feature catalog + decision ledger + report", script: "scripts/event_process_jobs/ep_job16_catalog_ledger_report.py", critical: true}
