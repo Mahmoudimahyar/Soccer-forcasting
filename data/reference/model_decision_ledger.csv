@@ -1,19 +1,12 @@
-model,dataset_version,evals_run,conclusion,candidate_for_future_review,note
-R2,partial (corpus 100%),True,reference_only,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-P1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-P2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-P3,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-P4,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-P5,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-N0,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-N1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-N2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-N3,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-N4,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-C0,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-C1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-C2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-X0,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-X1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-X2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
-X3,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+model_id,dataset_version,source_manifest_version,rps,logloss,brier_draw,n_folds,reference,final_status,reason,promotion
+research.wdl.player_team_state_p5,dynamic_state_v1,api_football_result_v1,0.148867,0.831908,0.199198,4,research.wdl.remaining_time_poisson_r2,rejected,violates a safety rule (calibration degraded / club-test / xG-integrity),paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.player_composition_p4,dynamic_state_v1,api_football_result_v1,0.15167,0.842767,0.197189,4,research.wdl.remaining_time_poisson_r2,rejected,violates a safety rule (calibration degraded / club-test / xG-integrity),paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.player_substitution_delta_p3,dynamic_state_v1,api_football_result_v1,0.151319,0.842172,0.197068,4,research.wdl.remaining_time_poisson_r2,rejected,violates a safety rule (calibration degraded / club-test / xG-integrity),paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.player_on_pitch_p2,dynamic_state_v1,api_football_result_v1,0.150117,0.835824,0.195246,4,research.wdl.remaining_time_poisson_r2,rejected,violates a safety rule (calibration degraded / club-test / xG-integrity),paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.player_starting_xi_p1,dynamic_state_v1,api_football_result_v1,0.150121,0.835812,0.195241,4,research.wdl.remaining_time_poisson_r2,rejected,violates a safety rule (calibration degraded / club-test / xG-integrity),paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.xg_calibrated_hybrid_x3,dynamic_state_v1,api_football_result_v1,0.134639,0.793322,0.193231,2,research.wdl.remaining_time_poisson_r2,rejected,violates a safety rule (calibration degraded / club-test / xG-integrity),paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.xg_player_state_x2,dynamic_state_v1,api_football_result_v1,0.132735,0.765637,0.18907,2,research.wdl.remaining_time_poisson_r2,reference_only,does not beat the reference under the consistency/bootstrap rules -> keep reference,paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.xg_event_state_x1,dynamic_state_v1,api_football_result_v1,0.142918,0.821157,0.205499,2,research.wdl.remaining_time_poisson_r2,rejected,violates a safety rule (calibration degraded / club-test / xG-integrity),paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.static_b1_anchor_r0,dynamic_state_v1,api_football_result_v1,0.223503,1.101041,0.218658,4,n/a (reference baseline),reference_only,reference-tier baseline; not evaluated for promotion,paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.time_score_baseline_r1,dynamic_state_v1,api_football_result_v1,0.154959,0.844343,0.197096,4,n/a (reference baseline),reference_only,reference-tier baseline; not evaluated for promotion,paper-only; never auto-promoted to runtime/B1/approved_models
+research.wdl.remaining_time_poisson_r2,dynamic_state_v1,api_football_result_v1,0.152272,0.826423,0.188268,4,n/a (reference baseline),reference_only,reference-tier baseline; not evaluated for promotion,paper-only; never auto-promoted to runtime/B1/approved_models
