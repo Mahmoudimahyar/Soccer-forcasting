@@ -376,7 +376,7 @@
     }
   ],
   "n_models": 22,
-  "utc": "2026-06-27T09:06:01.008653+00:00",
+  "utc": "2026-06-27T09:25:00.085594+00:00",
   "reference_models": {
     "wdl": "research.event_process.e2",
     "next_goal": "research.next_goal.q0",
