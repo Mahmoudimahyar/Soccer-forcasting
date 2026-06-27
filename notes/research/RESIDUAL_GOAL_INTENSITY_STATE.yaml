@@ -1,0 +1,5 @@
+run_state: SCAFFOLDING
+base_tag: event-process-intelligence-v1 @ 8447f34
+worktree: C:/Users/Mahyar/worldcup-residual-goal-intensity
+phase: "Phase 0 (dependency gate passed; preflight + isolation done); building durable worker + pipeline"
+collector: {commit: dc73318, isolated: true, kalshi: false, trading: paper}
