@@ -52,3 +52,8 @@ the gate.
   collector dc73318 untouched, 279 tests pass. Watchdog crash-detect hardened (requires a stuck 'running' job).
 - Remaining (modeling phase, buildable): dynamic dataset rebuild + preregistered evaluations. No model trained;
   NO completion tag; no incomplete tag.
+- 2026-06-26T23:16:06.042700+00:00 state=RUNNING main_task=Ready hb_age=407.1927740573883 collector=dc73318(ok) violations=none action=observe
+- 2026-06-26T23:31:06.079604+00:00 state=RUNNING main_task=Ready hb_age=1307.2006149291992 collector=dc73318(ok) violations=none action=observe
+- 2026-06-26T23:46:06.103207+00:00 state=RUNNING main_task=Ready hb_age=2207.1986651420593 collector=dc73318(ok) violations=none action=observe
+- 2026-06-27T00:01:06.075842+00:00 state=RUNNING main_task=Ready hb_age=3107.2165060043335 collector=dc73318(ok) violations=none action=observe
+- 2026-06-27T00:16:06.079699+00:00 state=RUNNING_MODEL_PHASE main_task=Ready hb_age=94.0773663520813 collector=dc73318(ok) violations=none action=observe

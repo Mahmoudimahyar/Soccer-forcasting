@@ -1,0 +1,31 @@
+{
+  "dynamic_prior_model_version": "dynamic_player_prior_v1",
+  "parser_version": "player_history_parser_v1",
+  "raw_roots_resolved": [
+    "data\\raw\\api_football_player_history",
+    "C:\\Users\\Mahyar\\worldcup-player-impact-xg\\data\\raw\\player_history_corpus",
+    "C:\\Users\\Mahyar\\worldcup-api-football-corpus\\data\\raw\\api_football_historical_corpus"
+  ],
+  "n_appearances_total": 62357,
+  "n_appearances_international": 13931,
+  "n_appearances_club": 48426,
+  "n_intl_matches_with_lineups": 627,
+  "n_player_exposure_rows": 29186,
+  "n_player_contribution_rows": 29186,
+  "n_team_composition_rows": 6270,
+  "n_substitution_delta_rows": 4687,
+  "n_known_player_priors": 16521,
+  "n_player_prior_rows": 29186,
+  "distinct_intl_decision_snapshots": 6270,
+  "intl_decision_snapshots_with_player_prior_coverage": 5670,
+  "coverage_rate": 0.9043,
+  "decision_minutes": [
+    15,
+    30,
+    45,
+    60,
+    75
+  ],
+  "out_dir": "C:\\Users\\Mahyar\\worldcup-research-truth-fusion\\data\\processed\\dynamic_player_priors",
+  "status": "complete"
+}
