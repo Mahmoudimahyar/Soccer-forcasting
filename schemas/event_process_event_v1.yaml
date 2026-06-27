@@ -1,0 +1,60 @@
+schema_version: event_process_event_v1
+description: >
+  Provider-neutral CANONICAL event, the single normalized representation every event-process extractor
+  consumes (never raw provider JSON). Produced by canonical_events.from_statsbomb / load_statsbomb_match.
+  Timing is on the regulation match clock; locations are in the canonical 120x80 pitch frame; team
+  orientation is handled via attacking_x so downstream territory is direction-free. Raw provider bytes
+  are hashed for traceability and never embedded in tracked artifacts.
+fields:
+  - idx                    # provider event index (intra-match order)
+  - period                # 1 | 2 only used downstream (regulation); ET/shootout periods dropped at snapshot
+  - minute                # regulation match-clock minute (continuous across half boundary)
+  - second
+  - elapsed               # absolute regulation seconds from kickoff
+  - kind                  # canonical kind vocabulary (pass/carry/shot/pressure/ball_recovery/...)
+  - type_name             # provider-native type name (traceability)
+  - team_id               # acting team
+  - team_name
+  - player_id
+  - possession            # provider possession index (groups a spell on the ball)
+  - possession_team_id    # team in possession for this spell
+  - play_pattern          # Regular Play / From Corner / From Counter / ... (set-piece + counter origin)
+  - location              # (x,y) canonical frame or null (never invented)
+  - end_location          # (x,y) for pass/carry/shot or null
+  - under_pressure        # provider flag
+  - counterpress          # provider flag (counterpress within ~5s of a loss)
+  - duration              # seconds, or null
+  - source_sha256         # carried on SourceTrace, not the event row (raw bytes hash)
+kind_vocabulary:
+  - pass
+  - carry
+  - shot
+  - dribble
+  - pressure
+  - ball_recovery
+  - interception
+  - block
+  - clearance
+  - duel
+  - foul_committed
+  - foul_won
+  - goal_keeper
+  - miscontrol
+  - dispossessed
+  - dribbled_past
+  - ball_receipt
+  - substitution
+  - own_goal_against
+  - own_goal_for
+  - bad_behaviour
+  - half_start
+  - half_end
+  - starting_xi
+  - other
+rules:
+  - "locations are normalized into the canonical 120x80 frame; missing coordinates stay null, never 0"
+  - "attacking_x re-expresses x so each team attacks toward 120; requires a known attacking direction"
+  - "attacking direction is inferred from a team's own shot x-locations; null when no shots to disambiguate"
+  - "raw provider JSON is held in-memory only; only the source sha256 is persisted"
+causal_status: provider_neutral_normalization_only
+live_eligibility: false

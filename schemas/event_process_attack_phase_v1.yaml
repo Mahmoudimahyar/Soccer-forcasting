@@ -1,0 +1,54 @@
+schema_version: event_process_attack_phase_v1
+description: >
+  Per-team ATTACK-PHASE and chain summary over a (possibly truncated) canonical event stream: how a
+  team's possessions distribute across open-play / set-piece / counter phases and how often they convert
+  to a shot or a box entry. Produced by attacks.attack_chains_for_team (+ set_pieces, transitions).
+  Phase comes from the verified provider play_pattern; the sustained/counter/direct open-play split is a
+  documented proxy (available_partial).
+fields:
+  - team_id
+  - n_possessions
+  - possessions_to_shot       # possessions that ended in a shot (chain: possession -> shot)
+  - possessions_to_box        # possessions that entered the 18-yard box
+  - set_piece_shots           # shots originating from corner/free-kick/throw-in/penalty possessions
+  - open_play_shots
+  - counter_shots             # shots from possessions flagged counter/transition
+  - phase_counts              # map: canonical phase -> n possessions
+  - phase_shots               # map: canonical phase -> n shot-ending possessions
+  # transition layer (transitions.py)
+  - regains                   # ball recoveries + interceptions by the team
+  - turnovers                 # miscontrols + dispossessions conceded
+  - regains_def_third
+  - regains_mid_third
+  - regains_att_third
+  - counterpress_regains      # regains flagged counterpress
+  - fast_transitions          # possessions classified as fast transitions / counters
+  - fast_transition_shots
+  # set-piece layer (set_pieces.py)
+  - corners
+  - free_kicks
+  - throw_ins
+  - goal_kicks
+  - penalties
+  - corner_shots
+  - free_kick_shots
+phase_vocabulary:
+  - open_play
+  - open_play_sustained        # proxy: >= 6 on-ball actions or >= 12s build-up
+  - open_play_direct           # proxy: short possession that still reached a shot
+  - open_play_counter          # proxy: From Counter or quick regain-to-shot transition
+  - corner
+  - free_kick
+  - throw_in
+  - goal_kick
+  - penalty
+  - from_keeper
+  - kick_off
+  - other
+  - unknown
+rules:
+  - "phase base is the VERIFIED provider play_pattern; sustained/direct/counter refinement is a proxy"
+  - "set-piece origins come from verified pass.type / shot.type fields; none imputed"
+  - "counter_shots and fast_transitions are proxies flagged available_partial in source-quality"
+causal_status: process_phase_derivation_only
+live_eligibility: false

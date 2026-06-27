@@ -1,0 +1,45 @@
+schema_version: event_process_source_quality_v1
+description: >
+  Per-match SOURCE-QUALITY report classifying, for each canonical event-process capability, whether the
+  source actually supported it for THIS match. Evidence-based (inspects the canonical events present),
+  not a nominal provider capability list. This is the contract that prevents a missing/unsupported field
+  from being silently treated as 0 downstream: every derived value travels with its quality flag.
+  Produced by quality.assess_match.
+quality_flags:
+  available_verified: source provides the underlying field directly and unambiguously
+  available_partial:  usable proxy, or field present on only part of the population (e.g. xG newer only)
+  unavailable:        the source schema does not carry the field at all
+  unknown:            could not be determined for this row (e.g. null where normally populated)
+capabilities:
+  - possession_structure       # provider possession indices present
+  - territory_thirds           # attacking direction inferable for territory
+  - box_entries
+  - channels
+  - deep_progression
+  - field_tilt
+  - attack_phase               # play_pattern present
+  - counter_proxy              # always available_partial (play_pattern + heuristic; no verified flag)
+  - possession_to_shot_chain
+  - pressure                   # pressure events present
+  - counterpress_proxy         # verified when provider counterpress flag present, else partial
+  - recoveries
+  - turnovers
+  - blocks_clearances
+  - shot_events
+  - shot_xg                    # verified iff every shot carries xG; partial if some; unavailable if none
+  - shot_location
+  - shot_freeze_frame
+  - big_chance_proxy           # always available_partial (transparent xG/geometry rule)
+  - match_state
+  - cards                      # verified if cards occurred; partial if field supported but none in match
+fields:
+  - provider
+  - source_match_id
+  - capabilities               # map: capability -> {quality, note}
+rules:
+  - "classification inspects events actually present, not the provider's nominal feature list"
+  - "proxies (counter, big-chance) are NEVER reported as available_verified"
+  - "shot_xg downgrades to available_partial when xG covers only a subset of shots (newer-event coverage)"
+  - "consumers read the quality flag alongside the value; absence is unavailable/unknown, never 0"
+causal_status: source_capability_audit_only
+live_eligibility: false

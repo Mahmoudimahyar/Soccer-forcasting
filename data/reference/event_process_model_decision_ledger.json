@@ -1,0 +1,387 @@
+{
+  "models": [
+    {
+      "model_id": "research.event_process.e0",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.23697 vs e2=0.1496; bootstrap favors=None; fold_win_frac=None; cal_ok=True",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.23697,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": null
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e1",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.23697 vs e2=0.1496; bootstrap favors=None; fold_win_frac=None; cal_ok=True",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.23697,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": null
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "parameter-free remaining-time Poisson REFERENCE",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.1496,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e3",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.15982 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=False",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.15982,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": false,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.2
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e4",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.15121 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=True",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.15121,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.2
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e5",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.16982 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.0; cal_ok=True",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.16982,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e6",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.15834 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=True",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.15834,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.2
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e7",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.17638 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=False",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.17638,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": false,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.2
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e8",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.17639 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=False",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.17639,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": false,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.2
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.event_process.e9",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.16567 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.0; cal_ok=False",
+      "reference_oos_metric": 0.1496,
+      "model_oos_metric": 0.16567,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": false,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.next_goal.q0",
+      "verdict": "reference_only",
+      "reason": "TRAIN base-rate reference (0.30193)",
+      "reference_oos_metric": 0.21076,
+      "model_oos_metric": 0.21076,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.next_goal.q1",
+      "verdict": "reference_only",
+      "reason": "OOS brier=0.21314 vs ref=0.21076; bootstrap favors=False",
+      "reference_oos_metric": 0.21076,
+      "model_oos_metric": 0.21314,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.next_goal.q2",
+      "verdict": "reference_only",
+      "reason": "OOS brier=0.21295 vs ref=0.21076; bootstrap favors=False",
+      "reference_oos_metric": 0.21076,
+      "model_oos_metric": 0.21295,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.next_goal.q3",
+      "verdict": "reference_only",
+      "reason": "OOS brier=0.21676 vs ref=0.21076; bootstrap favors=False",
+      "reference_oos_metric": 0.21076,
+      "model_oos_metric": 0.21676,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.next_goal.q4",
+      "verdict": "reference_only",
+      "reason": "OOS brier=0.21922 vs ref=0.21076; bootstrap favors=False",
+      "reference_oos_metric": 0.21076,
+      "model_oos_metric": 0.21922,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.scoring.h0",
+      "verdict": "reference_only",
+      "reason": "TRAIN base-rate reference (0.22871)",
+      "reference_oos_metric": 0.17618,
+      "model_oos_metric": 0.17618,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.scoring.h1",
+      "verdict": "reference_only",
+      "reason": "OOS brier=0.18086 vs ref=0.17618; bootstrap favors=False",
+      "reference_oos_metric": 0.17618,
+      "model_oos_metric": 0.18086,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.scoring.h2",
+      "verdict": "reference_only",
+      "reason": "OOS brier=0.18248 vs ref=0.17618; bootstrap favors=False",
+      "reference_oos_metric": 0.17618,
+      "model_oos_metric": 0.18248,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.scoring.h3",
+      "verdict": "reference_only",
+      "reason": "OOS brier=0.18317 vs ref=0.17618; bootstrap favors=False",
+      "reference_oos_metric": 0.17618,
+      "model_oos_metric": 0.18317,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.discipline.y0",
+      "verdict": "reference_only",
+      "reason": "TRAIN base-rate reference (0.020065)",
+      "reference_oos_metric": 0.020313,
+      "model_oos_metric": 0.020313,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.discipline.y1",
+      "verdict": "data_insufficient",
+      "reason": "hazard GATED OFF (<150 positives)",
+      "reference_oos_metric": 0.020313,
+      "model_oos_metric": null,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.discipline.y2",
+      "verdict": "data_insufficient",
+      "reason": "hazard GATED OFF (<150 positives)",
+      "reference_oos_metric": 0.020313,
+      "model_oos_metric": null,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    }
+  ],
+  "n_models": 22,
+  "utc": "2026-06-27T09:06:01.008653+00:00",
+  "reference_models": {
+    "wdl": "research.event_process.e2",
+    "next_goal": "research.next_goal.q0",
+    "scoring": "research.scoring.h0",
+    "discipline": "research.discipline.y0"
+  },
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+}
