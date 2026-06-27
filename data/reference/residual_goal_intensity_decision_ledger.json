@@ -1,0 +1,266 @@
+{
+  "models": [
+    {
+      "model_id": "research.residual.w2_reference_r0",
+      "verdict": "reference_only",
+      "reason": "parameter-free W2 remaining-time Poisson REFERENCE",
+      "reference_oos_metric": 0.14906,
+      "model_oos_metric": 0.14906,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.residual.intensity_glm_r1",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.17193 / FC rps=0.19068 vs r0=0.14906; bootstrap_favors=False; fold_win_frac=0.2; cal_ok=False",
+      "reference_oos_metric": 0.14906,
+      "model_oos_metric": 0.17193,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": false,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.2
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.residual.competing_risk_r2",
+      "verdict": "data_insufficient",
+      "reason": "no out-of-sample RPS (no builder/artifact for this model in this run)",
+      "reference_oos_metric": 0.14906,
+      "model_oos_metric": null,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.residual.event_process_boost_r3",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.16356 / FC rps=0.16722 vs r0=0.14906; bootstrap_favors=False; fold_win_frac=0.4; cal_ok=False",
+      "reference_oos_metric": 0.14906,
+      "model_oos_metric": 0.16356,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": false,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.4
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.residual.selective_correction_r4",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.15394 / FC rps=0.15767 vs r0=0.14906; bootstrap_favors=False; fold_win_frac=0.0; cal_ok=True",
+      "reference_oos_metric": 0.14906,
+      "model_oos_metric": 0.15394,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.residual.calibrated_simulation_r5",
+      "verdict": "reference_only",
+      "reason": "OOS LOCO rps=0.17193 / FC rps=0.19059 vs r0=0.14906; bootstrap_favors=False; fold_win_frac=0.2; cal_ok=False",
+      "reference_oos_metric": 0.14906,
+      "model_oos_metric": 0.17193,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": false,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.2
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.residual.club_auxiliary_transfer_r6",
+      "verdict": "data_insufficient",
+      "reason": "no out-of-sample RPS (no builder/artifact for this model in this run)",
+      "reference_oos_metric": 0.14906,
+      "model_oos_metric": null,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.intensity.w2_home_away_i0",
+      "verdict": "reference_only",
+      "reason": "parameter-free W2 home/away REFERENCE intensities",
+      "reference_oos_metric": 0.97004,
+      "model_oos_metric": 0.97004,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.intensity.event_residual_home_away_i1",
+      "verdict": "rejected",
+      "reason": "OOS Poisson dev_mean=1.63447 vs i0=0.97004; beats_ref=False",
+      "reference_oos_metric": 0.97004,
+      "model_oos_metric": 1.63447,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.intensity.regime_specific_i2",
+      "verdict": "rejected",
+      "reason": "OOS Poisson dev_mean=0.97466 vs i0=0.97004; beats_ref=False",
+      "reference_oos_metric": 0.97004,
+      "model_oos_metric": 0.97466,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 7376,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.intensity.club_transfer_i3",
+      "verdict": "data_insufficient",
+      "reason": "no out-of-sample intensity deviance (no builder/club rows for this model)",
+      "reference_oos_metric": 0.97004,
+      "model_oos_metric": null,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.horizon.w2_implied_h0",
+      "verdict": "reference_only",
+      "reason": "parameter-free W2-implied near-term scoring REFERENCE",
+      "reference_oos_metric": 0.21614,
+      "model_oos_metric": 0.21614,
+      "evidence": {},
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.horizon.xg_residual_h1",
+      "verdict": "rejected",
+      "reason": "beats h0 on Brier in >=1 horizon=False; worst candidate Brier=0.22638 vs ref=0.21614",
+      "reference_oos_metric": 0.21614,
+      "model_oos_metric": 0.22638,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 22128,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.horizon.possession_transition_h2",
+      "verdict": "rejected",
+      "reason": "beats h0 on Brier in >=1 horizon=False; worst candidate Brier=0.22414 vs ref=0.21614",
+      "reference_oos_metric": 0.21614,
+      "model_oos_metric": 0.22414,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 22128,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.horizon.full_event_process_h3",
+      "verdict": "rejected",
+      "reason": "beats h0 on Brier in >=1 horizon=False; worst candidate Brier=0.24493 vs ref=0.21614",
+      "reference_oos_metric": 0.21614,
+      "model_oos_metric": 0.24493,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 22128,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "model_id": "research.horizon.selective_gate_h4",
+      "verdict": "rejected",
+      "reason": "beats h0 on Brier in >=1 horizon=False; worst candidate Brier=0.24493 vs ref=0.21614",
+      "reference_oos_metric": 0.21614,
+      "model_oos_metric": 0.24493,
+      "evidence": {
+        "rule1_beats_reference": false,
+        "rule2_fold_majority": false,
+        "rule3_bootstrap_favors": false,
+        "rule4_calibration_ok": true,
+        "rule6_all_test_intl": true,
+        "rule7_xg_subset_ok": true,
+        "rule8_completeness": true,
+        "n_matches": 58,
+        "n_test_rows": 22128,
+        "fold_win_fraction": 0.0
+      },
+      "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    }
+  ],
+  "n_models": 16,
+  "utc": "2026-06-27T19:47:03.616668+00:00",
+  "reference_models": {
+    "residual": "research.residual.w2_reference_r0",
+    "intensity": "research.intensity.w2_home_away_i0",
+    "horizon": "research.horizon.w2_implied_h0"
+  },
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+}
