@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "self_test": {
+    "ok": true,
+    "checks": {
+      "no_future_xg_home": true,
+      "no_future_xg_away_excluded": true,
+      "missing_xg_counts_not_summed": true,
+      "xg_completeness_tracks_missing": true,
+      "cum_xg_monotonic_nondecreasing": true,
+      "regulation_only_excludes_ET": true,
+      "extra_time_flagged": true,
+      "no_cross_match_leakage": true,
+      "acceleration_uses_only_past": true,
+      "big_chance_proxy_threshold": true,
+      "time_since_last_shot_causal": true
+    }
+  },
+  "structural_audit": {
+    "ok": true,
+    "checks": {
+      "nonzero_snapshots": true,
+      "nonzero_xg_eligible": true,
+      "regulation_only": true,
+      "all_regulation_eligible": true,
+      "completeness_in_range": true,
+      "source_hash_present": true,
+      "event_order_ok": true,
+      "one_match_per_row": true,
+      "xg_source_labeled": true,
+      "big_chance_is_proxy_flagged": true,
+      "per_minute_rate_consistent": true,
+      "prior_quality_nulls_have_zero_support": true,
+      "base_join_cumxg_consistent": true
+    },
+    "rows": 4386,
+    "xg_eligible_international_snapshots": 4386,
+    "distinct_matches": 258,
+    "rows_with_nonzero_xg": 4323,
+    "base_join_crosscheck": {
+      "checked": 4386,
+      "mismatch": 0
+    }
+  },
+  "status": "complete"
+}

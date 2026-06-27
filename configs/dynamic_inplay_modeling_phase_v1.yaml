@@ -1,0 +1,46 @@
+# Dynamic In-Play MODELING PHASE -- controller run config (Component 5 / Phase 7).
+# research_only / experimental / not_runtime_approved / not_trade_eligible / not_live_eligible.
+# Finite, ordered 16-job queue; bounded (<=8h); fail-closed; resume-safe via the durable supervisor
+# (scripts/deep_research_supervisor.py). This phase performs ZERO external API calls -- every source is a
+# local validated product resolved through the canonical data-root registry. max_api_requests is 0 so the
+# supervisor fails closed if any job ever reports an API request.
+run:
+  max_hours: 8.0
+  max_workers: 2
+  max_api_requests: 1            # offline phase: jobs NEVER consume budget (every job reports api_requests:0).
+                                 # The supervisor fail-closes when used >= cap; we keep a 1-unit headroom so the
+                                 # queue runs while remaining provably offline (api_used stays 0 end-to-end).
+                                 # If any job ever reported a real API request the queue would fail closed at once.
+  heartbeat_interval_s: 30
+  collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json"
+  collector_stale_seconds: 5400  # fail closed if the live collector heartbeat is older than 90 min
+  per_job_timeout_s: 3600        # generous per-job cap (the full LOCO/forward-chain evals are minutes)
+safety:
+  kalshi_live_trading: false
+  trading_mode: paper
+  use_odds_api: false
+  external_api: false
+  labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+# Ordered finite job queue. Each script imports scripts/research_jobs/_job.py and calls _job.emit(...).
+# A job may be skipped ONLY with an explicit source/threshold/integrity reason (honest data_insufficient /
+# threshold_blocked); a false stub-complete is forbidden. critical jobs stop the queue on failure.
+# Job ids are NAMESPACED (MJOB*) so they never collide with the prior research phase's JOB1..JOB11 ids that
+# already live (complete) in the shared run's state.json -- otherwise the supervisor's idempotent-restart skip
+# would wrongly treat those as this phase's jobs. The supervisor keys jobs by id; MJOB* are fresh.
+jobs:
+  - {id: MJOB1,  title: "preflight: collector isolation + run id + data-root registry + manifests + no-API",       script: "scripts/model_jobs/mj_job01_preflight.py",              critical: true}
+  - {id: MJOB2,  title: "rebuild canonical dynamic in-play snapshot datasets",                                      script: "scripts/model_jobs/mj_job02_rebuild_snapshots.py",      critical: true}
+  - {id: MJOB3,  title: "build + audit temporal player priors",                                                     script: "scripts/model_jobs/mj_job03_player_priors.py",          critical: false}
+  - {id: MJOB4,  title: "build + audit dynamic xG state",                                                           script: "scripts/model_jobs/mj_job04_xg_state.py",               critical: false}
+  - {id: MJOB5,  title: "data-completeness / leakage / source-quality audit",                                       script: "scripts/model_jobs/mj_job05_data_audit.py",            critical: true}
+  - {id: MJOB6,  title: "primary forward-chaining W/D/L (R0,R1,R2,P1-P5)",                                          script: "scripts/model_jobs/mj_job06_wdl_primary.py",           critical: false}
+  - {id: MJOB7,  title: "primary xG W/D/L (R2,X1,X2,X3) on exact-bridge subset",                                    script: "scripts/model_jobs/mj_job07_xg_primary.py",            critical: false}
+  - {id: MJOB8,  title: "secondary LOCO W/D/L",                                                                     script: "scripts/model_jobs/mj_job08_wdl_loco.py",              critical: false}
+  - {id: MJOB9,  title: "next-goal hazard (N0-N4)",                                                                 script: "scripts/model_jobs/mj_job09_nextgoal.py",              critical: false}
+  - {id: MJOB10, title: "discipline hazard (C0-C2, C1/C2 gated >=150 positives)",                                   script: "scripts/model_jobs/mj_job10_discipline.py",            critical: false}
+  - {id: MJOB11, title: "mandatory ablations",                                                                      script: "scripts/model_jobs/mj_job11_ablations.py",             critical: false}
+  - {id: MJOB12, title: "calibration + match-level bootstrap + reliability",                                        script: "scripts/model_jobs/mj_job12_calibration_bootstrap.py", critical: false}
+  - {id: MJOB13, title: "structured failure analysis",                                                              script: "scripts/model_jobs/mj_job13_failure_analysis.py",      critical: false}
+  - {id: MJOB14, title: "final decision ledger (8 promotion rules; paper-only)",                                    script: "scripts/model_jobs/mj_job14_decision_ledger.py",       critical: false}
+  - {id: MJOB15, title: "machine-readable model artifact registry",                                                 script: "scripts/model_jobs/mj_job15_artifact_registry.py",     critical: false}
+  - {id: MJOB16, title: "scientific report draft + completion audit",                                               script: "scripts/model_jobs/mj_job16_report_completion.py",     critical: false}

@@ -1,0 +1,19 @@
+model,dataset_version,evals_run,conclusion,candidate_for_future_review,note
+R2,partial (corpus 100%),True,reference_only,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+P1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+P2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+P3,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+P4,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+P5,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+N0,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+N1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+N2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+N3,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+N4,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+C0,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+C1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+C2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+X0,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+X1,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+X2,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join
+X3,partial (corpus 100%),True,rejected,False,no candidate from partial data; full eval gated on corpus>=95% + xG join

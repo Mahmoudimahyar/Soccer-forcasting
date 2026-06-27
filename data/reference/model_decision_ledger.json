@@ -1,0 +1,146 @@
+[
+  {
+    "model": "R2",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "reference_only",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "P1",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "P2",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "P3",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "P4",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "P5",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "N0",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "N1",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "N2",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "N3",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "N4",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "C0",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "C1",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "C2",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "X0",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "X1",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "X2",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  },
+  {
+    "model": "X3",
+    "dataset_version": "partial (corpus 100%)",
+    "evals_run": true,
+    "conclusion": "rejected",
+    "candidate_for_future_review": false,
+    "note": "no candidate from partial data; full eval gated on corpus>=95% + xG join"
+  }
+]

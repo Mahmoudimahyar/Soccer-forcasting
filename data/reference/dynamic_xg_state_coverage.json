@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "feature_builder_version": "dynamic_xg_state_v1",
+  "out_csv": "C:\\Users\\Mahyar\\worldcup-research-truth-fusion\\data\\processed\\dynamic_xg_state_v1.csv",
+  "exact_bridge_matches": 258,
+  "ambiguous_excluded": 0,
+  "matches_with_events": 258,
+  "matches_missing_events": 0,
+  "distinct_matches_in_output": 258,
+  "snapshots_built": 4386,
+  "xg_eligible_international_snapshots": 4386,
+  "rows_with_nonzero_xg": 4323,
+  "rows_with_prior_xg_quality": 4029,
+  "grid_minutes": [
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90
+  ],
+  "by_competition_rows": {
+    "Copa America 2024": 476,
+    "FIFA World Cup 2018": 1088,
+    "FIFA World Cup 2022": 1088,
+    "UEFA Euro 2020": 867,
+    "UEFA Euro 2024": 867
+  },
+  "xg_completeness_min": 1.0,
+  "xg_completeness_mean": 1.0,
+  "big_chance_proxy_threshold": 0.3,
+  "xg_source": "statsbomb_open",
+  "leakage_rules": [
+    "xG at t excludes shots after t (per-shot match-clock minute <= t)",
+    "per-match extraction; no cross-match leakage",
+    "regulation grid only (t<=90, period<=2); ET/shootout excluded from features",
+    "prior_xg_quality uses strictly-earlier matches only (kickoff-date ordered)",
+    "missing statsbomb_xg counted in shot COUNTS but contributes 0 to xG SUMS; never imputed",
+    "no fixture without a StatsBomb model receives an xG-state row"
+  ]
+}
