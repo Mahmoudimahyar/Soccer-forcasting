@@ -1,0 +1,1 @@
+Backlog: Phase0 registry; Phase1 cohort lineage; Phase2 58-match audit; Phase3 repair(if verified bug); Phase4 reproducibility; Phase5 match-level power; Phase6 live-readiness; Phase7 decision memo; 12-job durable queue + watchdog; self-finalize.
