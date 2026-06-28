@@ -1,0 +1,96 @@
+{
+  "schema_version": "feature_overlap_audit_v1",
+  "generated_ts": "2026-06-28T08:18:29Z",
+  "labels": [
+    "research_only",
+    "experimental",
+    "not_runtime_approved",
+    "not_trade_eligible",
+    "not_live_eligible"
+  ],
+  "profile_minutes": [
+    30,
+    45,
+    60,
+    75
+  ],
+  "international_profiling": {
+    "status": "complete",
+    "n_matches_profiled": 258,
+    "competitions": [
+      "Copa America 2024",
+      "FIFA World Cup 2018",
+      "FIFA World Cup 2022",
+      "UEFA Euro 2020",
+      "UEFA Euro 2024"
+    ],
+    "seasons": [
+      "2018",
+      "2020",
+      "2022",
+      "2024"
+    ],
+    "note": "international feature-family distributions computed from REAL lake event objects through the canonical snapshot engine; training population only; 2026 WC excluded"
+  },
+  "club_profiling": {
+    "status": "data_insufficient",
+    "events_materialized": 0,
+    "fixtures_declared": 669,
+    "reason": "club raw event objects absent in this worktree; no club feature distribution derivable"
+  },
+  "cross_domain_overlap": {
+    "status": "data_insufficient",
+    "reason": "club event corpus not materialized in this worktree (Phase-1: events_materialized=0); cross-domain SMD / variance-ratio / distribution-overlap / Wasserstein / out-of-support / transfer-risk all require a REAL club feature distribution and are NOT fabricated",
+    "statistics_requiring_both_domains": [
+      "missingness_diff",
+      "standardized_mean_diff",
+      "variance_ratio",
+      "distribution_overlap",
+      "wasserstein_distance",
+      "out_of_support_rate",
+      "club_to_intl_transfer_risk"
+    ]
+  },
+  "family_rollup": {
+    "score_time": {
+      "n_features": 5,
+      "classes": {
+        "insufficient_data": 5
+      }
+    },
+    "chance_quality": {
+      "n_features": 6,
+      "classes": {
+        "insufficient_data": 6
+      }
+    },
+    "possession_territory": {
+      "n_features": 5,
+      "classes": {
+        "insufficient_data": 5
+      }
+    },
+    "transition_disruption": {
+      "n_features": 2,
+      "classes": {
+        "insufficient_data": 2
+      }
+    },
+    "set_pieces": {
+      "n_features": 2,
+      "classes": {
+        "insufficient_data": 2
+      }
+    },
+    "data_quality": {
+      "n_features": 2,
+      "classes": {
+        "insufficient_data": 2
+      }
+    }
+  },
+  "n_features": 22,
+  "stable_transferable_count": 0,
+  "domain_shifted_features": [],
+  "insufficient_data_count": 22
+}

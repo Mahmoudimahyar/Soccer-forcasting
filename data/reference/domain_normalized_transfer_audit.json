@@ -1,0 +1,123 @@
+{
+  "schema_version": "domain_normalized_transfer_audit_v1",
+  "generated_ts": "2026-06-28T17:10:13Z",
+  "labels": [
+    "research_only",
+    "experimental",
+    "not_runtime_approved",
+    "not_trade_eligible",
+    "not_live_eligible"
+  ],
+  "reference_model": "research.transfer.w2_reference_t0",
+  "row_source": "materialised_real_dataset",
+  "n_rows": 93940,
+  "row_roles": {
+    "intl_train": 69850,
+    "intl_test": 24090
+  },
+  "n_folds": 4,
+  "folds": [
+    "Copa America 2024",
+    "FIFA World Cup 2022",
+    "UEFA Euro 2020",
+    "UEFA Euro 2024"
+  ],
+  "n_intl_test_matches": 194,
+  "n_club_train_matches": 0,
+  "stable_feature_subset_sizes": [
+    19
+  ],
+  "all_invariants_ok": true,
+  "checks": [
+    {
+      "check": "no_2026_world_cup_row",
+      "ok": true,
+      "detail": {
+        "n_violations": 0
+      }
+    },
+    {
+      "check": "train_rows_strictly_before_fold_cutoff",
+      "ok": true,
+      "detail": {
+        "n_violations": 0,
+        "examples": []
+      }
+    },
+    {
+      "check": "club_row_never_intl_test",
+      "ok": true,
+      "detail": {
+        "n_violations": 0
+      }
+    },
+    {
+      "check": "each_fold_test_is_single_intl_tournament",
+      "ok": true,
+      "detail": {
+        "n_folds_with_test": 4,
+        "multi_comp_folds": {},
+        "mismatched_folds": {}
+      }
+    },
+    {
+      "check": "intl_train_never_contains_held_tournament",
+      "ok": true,
+      "detail": {
+        "n_folds": 4,
+        "n_violations": 0,
+        "examples": []
+      }
+    },
+    {
+      "check": "excluded_columns_never_feat",
+      "ok": true,
+      "detail": {
+        "violations": []
+      }
+    },
+    {
+      "check": "transfer_residual_equals_obs_minus_domain_baseline",
+      "ok": true,
+      "detail": {
+        "n_checked": 93940,
+        "n_violations": 0,
+        "examples": []
+      }
+    },
+    {
+      "check": "match_level_grouping_consistent_per_fold",
+      "ok": true,
+      "detail": {
+        "n_keys": 749,
+        "n_violations": 0
+      }
+    },
+    {
+      "check": "every_row_has_source_sha_and_engine_version",
+      "ok": true,
+      "detail": {
+        "n_rows": 93940,
+        "n_missing": 0
+      }
+    },
+    {
+      "check": "eligibility_labels_present_on_every_row",
+      "ok": true,
+      "detail": {
+        "want": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+        "n_rows": 93940,
+        "n_bad": 0
+      }
+    },
+    {
+      "check": "deterministic_fold_recreation",
+      "ok": true,
+      "detail": {
+        "rows_identical": true,
+        "subsets_identical": true
+      }
+    }
+  ],
+  "build_manifest_status": "ok"
+}

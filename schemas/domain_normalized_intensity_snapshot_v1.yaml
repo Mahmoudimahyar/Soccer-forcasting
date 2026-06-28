@@ -1,0 +1,103 @@
+schema_version: domain_normalized_intensity_snapshot_v1
+description: >
+  Per-snapshot CAUSAL DOMAIN-NORMALIZED TRANSFER row. One row per leakage-safe event-process snapshot
+  (decision minute t, period in {1,2}, clock-minute <= 90) materialized by
+  scripts/build_domain_normalized_transfer_dataset.py via
+  wcdrawlab.research.transfer.domain_normalized_dataset.build_all_fold_rows. Each row belongs to exactly
+  ONE outer temporal fold (one held-out international tournament) and carries a row_role in
+  {intl_train, club_train, intl_test}. The row carries (a) the parameter-free T0 REFERENCE intensity +
+  T0 final-H/D/A probs (research.transfer.w2_reference_t0; the common domain-AGNOSTIC anchor), (b) the
+  per-DOMAIN reference-intensity BASELINE (fit on this fold's TRAIN rows only; a function of score-state /
+  time / remaining / orientation / numerical-state + a per-DOMAIN intercept), and (c) the TRANSFER TARGET
+  = the event-process RESIDUAL of observed remaining goals BEYOND that domain's own baseline. The kept
+  stable-feature subset (filter fit on TRAIN rows only) is exposed as feat_* columns. CLUB rows are
+  AUXILIARY TRAINING ONLY and NEVER appear as an international test row. No completed-2026-World-Cup match
+  participates in any domain or fold.
+labels: research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+reference_model: research.transfer.w2_reference_t0
+provenance_fields:
+  - dataset_version            # domain_normalized_transfer_dataset_v1 (the builder version)
+  - reference_model            # research.transfer.w2_reference_t0 (the anchor for every candidate)
+  - source_match_id            # StatsBomb match id (intl: via exact api<->statsbomb bridge) / club match id
+  - match_id                   # match-level GROUPING key (bootstrap unit = match)
+  - source_root                # international_event_lake_v1 | event_process_auxiliary | statsbomb_raw[_prior]
+  - source_sha256              # sha256 of the source event JSON (preserved verbatim; rebuild-stable trace)
+  - engine_version             # event_process snapshot-features engine version (preserved verbatim)
+  - eligibility                # research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+fold_fields:                   # the outer temporal fold this row belongs to (deterministic, recreatable)
+  - fold_held_tournament       # the single held-out international tournament (the test fold)
+  - fold_cutoff_kickoff        # the held-out tournament's FIRST kickoff date; training is strictly before it
+  - row_role                   # intl_train | club_train | intl_test  (club_train is auxiliary only)
+identity_fields:
+  - domain                     # international | club  (club is auxiliary training only)
+  - competition_label          # competition / tournament label (= LOCO key inside the intl population)
+  - season                     # season / edition identifier
+  - kickoff_date               # match kickoff date (temporal-cutoff key; intl_train + club_train < cutoff)
+state_fields:                  # decision-minute leakage-safe match clock + budget (events with minute<=t)
+  - snapshot_minute            # decision minute t (cutoff)
+  - snapshot_reason            # clock | box_entry | nonzero_xg_shot | substitution | goal | corner | sending_off
+  - remaining_regulation_min   # max(0, 90 - t)
+  - n_events_observed          # leakage budget (events with clock-minute <= t); provenance, NEVER a feature
+t0_reference_fields:           # the parameter-free, domain-AGNOSTIC remaining-time Poisson anchor (T0)
+  - t0_lam_home                # R2_BASE * remaining/90 (expected remaining home goals under T0)
+  - t0_lam_away                # symmetric to t0_lam_home by construction (T0 carries no domain knowledge)
+  - t0_lam_total               # t0_lam_home + t0_lam_away
+  - t0_prob_H | t0_prob_D | t0_prob_A   # P(final H/D/A) from r2_remaining_time_poisson(score_diff, remaining)
+domain_baseline_fields:        # per-DOMAIN reference intensity (fit on TRAIN rows only; residual baseline)
+  - domain_baseline_home       # domain baseline expected remaining HOME goals (T0 shape * exp(domain intercept) + numeric-state nudge)
+  - domain_baseline_away       # domain baseline expected remaining AWAY goals
+  - domain_baseline_total      # domain_baseline_home + domain_baseline_away
+transfer_target_fields:        # the TRANSFER TARGET = event-process residual beyond the DOMAIN's own baseline
+  - transfer_residual_home     # rem_goals_home - domain_baseline_home  (blank when the label is absent; never imputed)
+  - transfer_residual_away     # rem_goals_away - domain_baseline_away
+  - transfer_residual_total    # (rem_goals_home + rem_goals_away) - domain_baseline_total
+label_fields:                  # observed remaining-goal LABELS (kept for fitting/eval trace; NEVER a feature)
+  - rem_goals_home             # regulation-final home goals - home goals at cutoff (>= 0)
+  - rem_goals_away             # regulation-final away goals - away goals at cutoff (>= 0)
+  - target_wdl                 # regulation-final H | D | A
+derived_state_fields:          # domain-comparable CAUSAL state used by the baseline (orientation-aware)
+  - state_score_diff_signed    # orientation-aware current (home-away) regulation goal diff
+  - state_remaining_fraction   # (90 - t)/90 in [0,1]
+  - state_minute_fraction      # t/90 in [0,1]
+  - state_players_diff         # numerical-state (home - away on pitch), orientation-aware
+  - state_is_second_half       # 1.0 if period >= 2 else 0.0
+stable_feature_fields:         # the kept stable-feature subset (filter fit on TRAIN rows only) -> feat_<col>
+  - feat_goals_diff
+  - feat_players_diff
+  - feat_yellow_diff
+  - feat_sendoff_diff
+  - feat_subs_used_diff
+  - feat_poss_share_diff
+  - feat_field_tilt_home
+  - feat_final_third_actions_diff
+  - feat_box_entries_diff
+  - feat_recoveries_diff
+  - feat_turnovers_diff
+  - feat_corners_diff
+  - feat_att_free_kicks_diff
+  - feat_shots_diff
+  - feat_shots_on_target_diff
+  - feat_cum_xg_diff
+  - feat_cum_xg_total
+  - feat_xg_last5m_diff
+  - feat_xg_last10m_diff
+quality_fields:
+  - xg_present                 # whether xG was available for this match (provenance; drives availability)
+  - stable_feature_subset_size # number of kept stable features for this fold (per-fold, fit on TRAIN)
+  - domain_overlap_score       # fraction of candidate transfer features surviving the stable-feature gate [0,1]
+  - availability               # available_verified | available_partial | unavailable over the kept subset
+rules:
+  - "one row per leakage-safe event-process snapshot; each row belongs to exactly one outer temporal fold"
+  - "row_role in {intl_train, club_train, intl_test}; a CLUB row is NEVER row_role=intl_test"
+  - "intl_train + club_train rows have kickoff_date STRICTLY BEFORE fold_cutoff_kickoff (temporal cutoff)"
+  - "the held-out test fold is a SINGLE international tournament (fold_held_tournament); club rows excluded from test"
+  - "the per-domain baseline + the stable-feature filter are fit on the fold's TRAIN rows ONLY (no test leak)"
+  - "transfer_residual_* = observed remaining goals - this domain's baseline intensity (NOT relative to T0)"
+  - "t0_* is the parameter-free, domain-agnostic anchor; t0_lam_home == t0_lam_away by construction"
+  - "domain-shifted / source-incompatible columns (raw possession-action counts, n_events_observed) are NEVER feat_*"
+  - "missing source cells are preserved (blank), never imputed as 0"
+  - "source_sha256 + engine_version preserved verbatim so each row is traceable to its source event file"
+  - "no completed-2026-World-Cup match participates in any domain / fold (assert_no_2026)"
+  - "deterministic: identical inputs -> byte-identical rows/folds (no RNG in the dataset path)"
+causal_status: leakage_safe_domain_normalized_transfer_plane
+live_eligibility: false
