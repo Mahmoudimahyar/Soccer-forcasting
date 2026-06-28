@@ -1,0 +1,2283 @@
+{
+  "meta": {
+    "n_exclusions": 252,
+    "built_utc": "2026-06-28T02:27:09.564935+00:00",
+    "drop_reason_counts": {
+      "missing_statsbomb_events": 200,
+      "held_out_fold_rule": 12,
+      "ambiguous_bridge": 38,
+      "failed_reconciliation": 2
+    },
+    "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+  },
+  "exclusions": [
+    {
+      "sb_match_id": "3939982",
+      "api_fixture_id": "1146311",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-06-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939983",
+      "api_fixture_id": "1146312",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-06-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939986",
+      "api_fixture_id": "1146313",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-06-30",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939985",
+      "api_fixture_id": "1189124",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-06-30",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939987",
+      "api_fixture_id": "1146314",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939988",
+      "api_fixture_id": "1146315",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939989",
+      "api_fixture_id": "1146316",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939990",
+      "api_fixture_id": "1146317",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939991",
+      "api_fixture_id": "1146318",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3939992",
+      "api_fixture_id": "1189125",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942228",
+      "api_fixture_id": "1219957",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-05",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942229",
+      "api_fixture_id": "1219958",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942416",
+      "api_fixture_id": "1222459",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942415",
+      "api_fixture_id": "1222460",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-07",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942785",
+      "api_fixture_id": "1227537",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-10",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942852",
+      "api_fixture_id": "1227538",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-11",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3943076",
+      "api_fixture_id": "1234029",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-14",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3943077",
+      "api_fixture_id": "1234030",
+      "competition_label": "Copa America 2024",
+      "kickoff_date": "2024-07-15",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7525",
+      "api_fixture_id": "135777",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-14",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7578",
+      "api_fixture_id": "135778",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-15",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7577",
+      "api_fixture_id": "135779",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-15",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7576",
+      "api_fixture_id": "135780",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-15",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7530",
+      "api_fixture_id": "135781",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-16",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7531",
+      "api_fixture_id": "135782",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-16",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7532",
+      "api_fixture_id": "135783",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-16",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7529",
+      "api_fixture_id": "135784",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-16",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7535",
+      "api_fixture_id": "135785",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-17",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7534",
+      "api_fixture_id": "135786",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-17",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7533",
+      "api_fixture_id": "135787",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-17",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7538",
+      "api_fixture_id": "135788",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-18",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7536",
+      "api_fixture_id": "135789",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-18",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7537",
+      "api_fixture_id": "135790",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-18",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7541",
+      "api_fixture_id": "135791",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-19",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7539",
+      "api_fixture_id": "135792",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-19",
+      "dropped_at_stage": "primary_evaluation_population",
+      "drop_reason": "held_out_fold_rule",
+      "detail": "earliest competition 'FIFA World Cup 2018' is train-only in the forward chain (no earlier competition to train on); never a forward-chain test fold"
+    },
+    {
+      "sb_match_id": "7540",
+      "api_fixture_id": "135793",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-19",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7542",
+      "api_fixture_id": "135794",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7544",
+      "api_fixture_id": "135795",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7543",
+      "api_fixture_id": "135796",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7547",
+      "api_fixture_id": "135797",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7546",
+      "api_fixture_id": "135798",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7545",
+      "api_fixture_id": "135799",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7548",
+      "api_fixture_id": "135800",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7549",
+      "api_fixture_id": "135801",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7550",
+      "api_fixture_id": "135802",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7552",
+      "api_fixture_id": "135803",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7553",
+      "api_fixture_id": "135804",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7551",
+      "api_fixture_id": "135805",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7554",
+      "api_fixture_id": "135806",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7556",
+      "api_fixture_id": "135807",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7555",
+      "api_fixture_id": "135808",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7558",
+      "api_fixture_id": "135809",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7559",
+      "api_fixture_id": "135810",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7557",
+      "api_fixture_id": "135811",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7560",
+      "api_fixture_id": "135812",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7563",
+      "api_fixture_id": "135813",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7562",
+      "api_fixture_id": "135814",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7564",
+      "api_fixture_id": "135815",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7561",
+      "api_fixture_id": "135816",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7567",
+      "api_fixture_id": "135817",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7566",
+      "api_fixture_id": "135818",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7565",
+      "api_fixture_id": "135819",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7568",
+      "api_fixture_id": "135820",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7572",
+      "api_fixture_id": "135821",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7571",
+      "api_fixture_id": "135822",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7570",
+      "api_fixture_id": "135823",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7569",
+      "api_fixture_id": "135824",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7580",
+      "api_fixture_id": "135761",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-30",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7579",
+      "api_fixture_id": "135762",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-06-30",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7582",
+      "api_fixture_id": "135763",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7581",
+      "api_fixture_id": "135764",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7583",
+      "api_fixture_id": "135765",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7584",
+      "api_fixture_id": "135766",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7586",
+      "api_fixture_id": "135767",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "7585",
+      "api_fixture_id": "135768",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8649",
+      "api_fixture_id": "135769",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8650",
+      "api_fixture_id": "135770",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8651",
+      "api_fixture_id": "135771",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-07",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8652",
+      "api_fixture_id": "135772",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-07",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8655",
+      "api_fixture_id": "135773",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-10",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8656",
+      "api_fixture_id": "135774",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-11",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8657",
+      "api_fixture_id": "135775",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-14",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "8658",
+      "api_fixture_id": "135776",
+      "competition_label": "FIFA World Cup 2018",
+      "kickoff_date": "2018-07-15",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857286",
+      "api_fixture_id": "855736",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857285",
+      "api_fixture_id": "855734",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857271",
+      "api_fixture_id": "855735",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857282",
+      "api_fixture_id": "866681",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857300",
+      "api_fixture_id": "855737",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857279",
+      "api_fixture_id": "871850",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857277",
+      "api_fixture_id": "855740",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857284",
+      "api_fixture_id": "855741",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857268",
+      "api_fixture_id": "855742",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857291",
+      "api_fixture_id": "871851",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857290",
+      "api_fixture_id": "855743",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857287",
+      "api_fixture_id": "855744",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857298",
+      "api_fixture_id": "855745",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857301",
+      "api_fixture_id": "855747",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857274",
+      "api_fixture_id": "855748",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857272",
+      "api_fixture_id": "855749",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857273",
+      "api_fixture_id": "866682",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857297",
+      "api_fixture_id": "855750",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857266",
+      "api_fixture_id": "855751",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857289",
+      "api_fixture_id": "855752",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857288",
+      "api_fixture_id": "871852",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857283",
+      "api_fixture_id": "855753",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857281",
+      "api_fixture_id": "855754",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857295",
+      "api_fixture_id": "871853",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857299",
+      "api_fixture_id": "855757",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857269",
+      "api_fixture_id": "855758",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857270",
+      "api_fixture_id": "855759",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857294",
+      "api_fixture_id": "855760",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857267",
+      "api_fixture_id": "855761",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857278",
+      "api_fixture_id": "855762",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857275",
+      "api_fixture_id": "855763",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-11-30",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857296",
+      "api_fixture_id": "855766",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857276",
+      "api_fixture_id": "855767",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857292",
+      "api_fixture_id": "871855",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857293",
+      "api_fixture_id": "855770",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3857280",
+      "api_fixture_id": "855771",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869117",
+      "api_fixture_id": "976533",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869151",
+      "api_fixture_id": "976642",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869118",
+      "api_fixture_id": "976534",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-04",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869152",
+      "api_fixture_id": "976643",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-04",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869219",
+      "api_fixture_id": "977344",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-05",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869253",
+      "api_fixture_id": "977705",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-05",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869220",
+      "api_fixture_id": "977345",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869254",
+      "api_fixture_id": "977706",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869321",
+      "api_fixture_id": "977794",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-09",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869420",
+      "api_fixture_id": "978072",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-09",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869354",
+      "api_fixture_id": "978036",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-10",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869486",
+      "api_fixture_id": "978088",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-10",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869519",
+      "api_fixture_id": "978279",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-13",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869552",
+      "api_fixture_id": "978488",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-14",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869684",
+      "api_fixture_id": "979138",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-17",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3869685",
+      "api_fixture_id": "979139",
+      "competition_label": "FIFA World Cup 2022",
+      "kickoff_date": "2022-12-18",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788753",
+      "api_fixture_id": "657686",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-16",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788755",
+      "api_fixture_id": "657687",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-16",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788754",
+      "api_fixture_id": "657688",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-16",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788758",
+      "api_fixture_id": "657689",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-17",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788757",
+      "api_fixture_id": "657690",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-17",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788756",
+      "api_fixture_id": "657691",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-17",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788761",
+      "api_fixture_id": "657692",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-18",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788760",
+      "api_fixture_id": "657693",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-18",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788759",
+      "api_fixture_id": "657694",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-18",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788763",
+      "api_fixture_id": "657695",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-19",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788764",
+      "api_fixture_id": "657696",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-19",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788762",
+      "api_fixture_id": "657697",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-19",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788765",
+      "api_fixture_id": "657698",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788766",
+      "api_fixture_id": "657699",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788767",
+      "api_fixture_id": "657700",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788770",
+      "api_fixture_id": "657701",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788769",
+      "api_fixture_id": "657702",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788768",
+      "api_fixture_id": "657703",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788771",
+      "api_fixture_id": "657704",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788772",
+      "api_fixture_id": "657705",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788776",
+      "api_fixture_id": "657706",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788775",
+      "api_fixture_id": "657707",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788773",
+      "api_fixture_id": "657708",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3788774",
+      "api_fixture_id": "657709",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794689",
+      "api_fixture_id": "713160",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794685",
+      "api_fixture_id": "713161",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794690",
+      "api_fixture_id": "713471",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794687",
+      "api_fixture_id": "713473",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-27",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794686",
+      "api_fixture_id": "713472",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794691",
+      "api_fixture_id": "713474",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-28",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794688",
+      "api_fixture_id": "713475",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3794692",
+      "api_fixture_id": "713476",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-06-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3795107",
+      "api_fixture_id": "718242",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3795108",
+      "api_fixture_id": "718243",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3795109",
+      "api_fixture_id": "718186",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-07-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3795187",
+      "api_fixture_id": "718252",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-07-03",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3795220",
+      "api_fixture_id": "721122",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-07-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3795221",
+      "api_fixture_id": "721123",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-07-07",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3795506",
+      "api_fixture_id": "723370",
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2021-07-11",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938637",
+      "api_fixture_id": "1189846",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-16",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938638",
+      "api_fixture_id": "1189847",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-17",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938639",
+      "api_fixture_id": "1189848",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-18",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930172",
+      "api_fixture_id": "1145521",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930171",
+      "api_fixture_id": "1145522",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930170",
+      "api_fixture_id": "1145523",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-20",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930173",
+      "api_fixture_id": "1145524",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938640",
+      "api_fixture_id": "1189849",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938641",
+      "api_fixture_id": "1189850",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-21",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930175",
+      "api_fixture_id": "1145525",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930174",
+      "api_fixture_id": "1145526",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938642",
+      "api_fixture_id": "1189851",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-22",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930176",
+      "api_fixture_id": "1145527",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930177",
+      "api_fixture_id": "1145528",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-23",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930178",
+      "api_fixture_id": "1145529",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930179",
+      "api_fixture_id": "1145530",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-24",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930181",
+      "api_fixture_id": "1145531",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930182",
+      "api_fixture_id": "1145532",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930180",
+      "api_fixture_id": "1145533",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938643",
+      "api_fixture_id": "1189852",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-25",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930183",
+      "api_fixture_id": "1145534",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3930184",
+      "api_fixture_id": "1145535",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938645",
+      "api_fixture_id": "1189853",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3938644",
+      "api_fixture_id": "1189854",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-26",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3940878",
+      "api_fixture_id": "1212958",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3940983",
+      "api_fixture_id": "1214156",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-29",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3941017",
+      "api_fixture_id": "1215074",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-30",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3941018",
+      "api_fixture_id": "1215075",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-06-30",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3941019",
+      "api_fixture_id": "1215073",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3941020",
+      "api_fixture_id": "1215076",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-01",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3941021",
+      "api_fixture_id": "1215077",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3941022",
+      "api_fixture_id": "1215078",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-02",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942226",
+      "api_fixture_id": "1219688",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-05",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942349",
+      "api_fixture_id": "1219959",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-05",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942227",
+      "api_fixture_id": "1219689",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942382",
+      "api_fixture_id": "1220308",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-06",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942752",
+      "api_fixture_id": "1225853",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-09",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3942819",
+      "api_fixture_id": "1227539",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-10",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": "3943043",
+      "api_fixture_id": "1232551",
+      "competition_label": "UEFA Euro 2024",
+      "kickoff_date": "2024-07-14",
+      "dropped_at_stage": "event_process_population",
+      "drop_reason": "missing_statsbomb_events",
+      "detail": "exact intl bridge match has no StatsBomb event JSON in the on-disk read-only cache (prior pull pruned); cannot produce leakage-safe snapshots"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132759,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132760,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132768,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "failed_reconciliation",
+      "detail": "bridge rejected (date_mismatch); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132764,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132761,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132763,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132767,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132766,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132765,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132762,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-21",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132769,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-22",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132770,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-22",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "failed_reconciliation",
+      "detail": "bridge rejected (date_mismatch); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132771,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-22",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132775,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-22",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132772,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-22",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132774,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-22",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132773,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-22",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132776,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132778,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132777,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132779,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132780,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132782,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132781,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132783,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-23",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132784,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132785,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132786,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132788,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132787,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132792,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132789,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132791,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132793,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132790,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-24",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132794,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-25",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132799,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-25",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132797,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-25",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132798,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-25",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    },
+    {
+      "sb_match_id": null,
+      "api_fixture_id": 132795,
+      "competition_label": "UEFA Euro 2020",
+      "kickoff_date": "2019-03-25",
+      "dropped_at_stage": "exact_bridge_population",
+      "drop_reason": "ambiguous_bridge",
+      "detail": "bridge rejected (no_statsbomb_candidate); never entered the exact international population"
+    }
+  ]
+}

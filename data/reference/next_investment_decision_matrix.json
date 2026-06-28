@@ -1,0 +1,116 @@
+{
+  "title": "Next-investment decision matrix (evidence-power consolidation)",
+  "evidence_basis": {
+    "power_analysis": "data/reference/match_level_power_analysis.json (run evp_20260627_power1)",
+    "minimum_requirements": "data/reference/minimum_evidence_requirements.json",
+    "live_readiness": "data/reference/live_readiness_matrix.json",
+    "key_facts": [
+      "58 international matches gives 80-90% power only for a LARGE 0.0100 RPS edge that the eval showed is absent",
+      "a credible moderate-edge (0.0050) claim needs ~150 international matches (~13 tournaments)",
+      "more snapshots on the same 58 matches add ~no power (clustering ceiling)",
+      "258 exactly-reconciled international matches with verified xG ALREADY exist on disk (statsbomb_cache_audit.total_exact_bridge=258); only 58 were materialized into the snapshot panel",
+      "no feature family is live_eligible because no live event-publication latency has ever been measured",
+      "in-play xG and the player/lineup plane are prior honest NEGATIVES vs score+Elo"
+    ]
+  },
+  "ranking_method": "expected information gain per unit effort (qualitative tiers, evidence-anchored); higher = better",
+  "recommendations": [
+    {
+      "id": "A",
+      "title": "Materialize the 200 already-bridged international matches into the snapshot panel",
+      "expected_information_gain": "very_high",
+      "effort": "low",
+      "gain_per_effort_rank": 1,
+      "evidence_basis": "258 exact-bridge matches exist on disk but only 58 are in the panel; raising N from 58 toward ~258 is the ONLY lever the power analysis shows moves the needle, and it requires no new data purchase",
+      "what_it_unblocks": "power for a 0.0050 edge rises from 0.49 (58) toward >0.8 (~150-200 matches); first chance to actually detect (or rule out) a moderate in-play correction",
+      "go_no_go": "GO",
+      "falsifier": "if rebuilding the panel on all 258 bridged matches still yields no candidate beating the W2 reference at >=150 matches with a match-level CI excluding 0, the in-play residual-correction thesis is falsified at the moderate-effect scale",
+      "depends_on": [],
+      "labels": "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "id": "B",
+      "title": "Add more exact-international matches beyond the current 5 tournaments (AFCON/AsianCup/Gold Cup/qualifiers)",
+      "expected_information_gain": "high",
+      "effort": "medium",
+      "gain_per_effort_rank": 2,
+      "evidence_basis": "matches are the only power lever; reaching ~150-400 independent matches is required for 0.0050-0.0030 edges; broader confederation coverage also tests transfer",
+      "what_it_unblocks": "moves N past the ~150 credibility threshold and adds confederation diversity for LOCO generalization",
+      "go_no_go": "GO_AFTER_A",
+      "falsifier": "if added competitions do not reconcile EXACTLY (reconciliation_status!=exact) or lack full event timelines, they cannot enter the leakage-safe panel and the lever is blocked",
+      "depends_on": ["A"],
+      "labels": "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "id": "C",
+      "title": "Run a live event-publication LATENCY study on the cheapest 6 'potentially_live' families",
+      "expected_information_gain": "high",
+      "effort": "medium",
+      "gain_per_effort_rank": 3,
+      "evidence_basis": "live_readiness: 6 families (score/time/players/cards/subs/lineups) are potentially_live but gated ONLY by unmeasured live latency; this is the single blocker to live_eligible",
+      "what_it_unblocks": "converts research-ready in-play state into a defensible live-eligibility claim with a measured latency budget; necessary precondition for any live use",
+      "go_no_go": "GO",
+      "falsifier": "if measured live latency exceeds the per-family budget (e.g. cards >15s, score >15s) on >=20 live matches, those families are blocked_by_latency and live use is off the table",
+      "depends_on": [],
+      "labels": "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "id": "D",
+      "title": "Re-run the power analysis as a sequential/pre-registered acceptance gate at each new-N checkpoint",
+      "expected_information_gain": "medium_high",
+      "effort": "low",
+      "gain_per_effort_rank": 4,
+      "evidence_basis": "the power script is deterministic and cheap; rerunning it as N grows pre-commits the effect floor (0.0050) and stops p-hacking via post-hoc N choices",
+      "what_it_unblocks": "honest stopping rule; prevents over-claiming when a candidate squeaks past at small N",
+      "go_no_go": "GO",
+      "falsifier": "if checkpoints show the achieved power never reaches 0.8 for the pre-registered floor even at max attainable N, the program should declare the in-play edge undetectable rather than keep searching",
+      "depends_on": ["A"],
+      "labels": "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "id": "E",
+      "title": "Scope a club-football power curve as a separate track (NOT a substitute for international)",
+      "expected_information_gain": "medium",
+      "effort": "medium",
+      "gain_per_effort_rank": 5,
+      "evidence_basis": "club_only_effect is data_insufficient (zero club matches in the eval); club volume could reach 150+ matches fast, but international transfer is unproven",
+      "what_it_unblocks": "a high-volume sandbox to estimate variance/effect for in-play corrections, with an explicit transfer caveat",
+      "go_no_go": "CONDITIONAL_GO",
+      "falsifier": "if a club-trained correction shows zero or negative transfer to the held-out international matches, the club track does not advance the international claim",
+      "depends_on": [],
+      "labels": "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "id": "F",
+      "title": "Acquire a live xG / spatial feed (Opta/StatsBomb live) for the xG + chain families",
+      "expected_information_gain": "low",
+      "effort": "high",
+      "gain_per_effort_rank": 6,
+      "evidence_basis": "11 families are blocked_by_missing_provider_contract or no-point-in-time (xG, shot xy, pressure, chains); BUT in-play xG and richer features are prior honest NEGATIVES vs score+Elo",
+      "what_it_unblocks": "would convert the spatial/xG families from offline to potentially-live, but expected predictive payoff is unproven and historically null",
+      "go_no_go": "NO_GO_FOR_NOW",
+      "falsifier": "if a fresh power-gated re-test on the expanded match set (post A/B) shows an xG family beating the reference with a CI excluding 0, revisit; absent that, the spend is unjustified",
+      "depends_on": ["A", "B"],
+      "labels": "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    },
+    {
+      "id": "G",
+      "title": "Acquire in-play odds history + as-of weather to unblock those two no-point-in-time families",
+      "expected_information_gain": "low",
+      "effort": "high",
+      "gain_per_effort_rank": 7,
+      "evidence_basis": "market_inplay_odds and weather_venue_travel_rest are blocked_by_no_point_in_time_history; only pre-match odds and static venue/schedule exist locally",
+      "what_it_unblocks": "an in-play market feature and a weather feature would gain backtestable history; but no local evidence yet suggests either beats the existing in-play state",
+      "go_no_go": "NO_GO_FOR_NOW",
+      "falsifier": "if, after A/B raise N, a leakage-safe pre-match weather or in-play-odds feature beats the reference on a power-adequate sample, reconsider; otherwise deprioritize",
+      "depends_on": ["A", "B"],
+      "labels": "research_only/not_runtime_approved/not_trade_eligible/not_live_eligible"
+    }
+  ],
+  "top_recommendation": "A",
+  "one_line_verdict": "Spend effort on MATCHES not features: materialize the ~200 already-bridged international matches (A), then broaden tournaments (B) and measure live latency (C); defer all new-provider spend (F,G) until a power-adequate sample either finds an edge or falsifies the thesis.",
+  "no_market_claims": true,
+  "no_provider_purchase_recommendation": true,
+  "note_on_F_G": "F and G NAME providers only to describe what data class would be required; they are NO_GO_FOR_NOW and are not purchase recommendations.",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+}

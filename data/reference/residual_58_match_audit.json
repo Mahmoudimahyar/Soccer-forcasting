@@ -1,0 +1,247 @@
+{
+  "audit": "residual_58_match_cohort_reconstruction",
+  "utc": "2026-06-28T02:27:09.819347+00:00",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "sources": {
+    "bridge_csv": "C:\\Users\\Mahyar\\worldcup-player-impact-xg\\data\\processed\\api_statsbomb_match_bridge_v1.csv",
+    "bridge_audit": "C:\\Users\\Mahyar\\worldcup-player-impact-xg\\data\\processed\\api_statsbomb_match_bridge_v1.audit.json",
+    "event_process_manifest": "C:\\Users\\Mahyar\\worldcup-residual-goal-intensity\\data\\processed\\event_process_snapshots\\build_manifest.json",
+    "residual_build_manifest": "C:\\Users\\Mahyar\\worldcup-residual-goal-intensity\\data\\processed\\residual_goal_intensity\\build_manifest.json",
+    "reported_forward_chain": "C:\\Users\\Mahyar\\worldcup-residual-goal-intensity\\outputs\\research_runs\\rg_20260627_155623_run1\\residual_goal_intensity\\rg_wdl_forward_chain.json",
+    "reported_loco": "C:\\Users\\Mahyar\\worldcup-residual-goal-intensity\\outputs\\research_runs\\rg_20260627_155623_run1\\residual_goal_intensity\\rg_wdl_loco.json",
+    "reported_dataset_manifest": "C:\\Users\\Mahyar\\worldcup-residual-goal-intensity\\outputs\\research_runs\\rg_20260627_155623_run1\\residual_goal_intensity\\rg_dataset_manifest.json",
+    "statsbomb_event_dirs": [
+      "C:\\Users\\Mahyar\\worldcup-residual-goal-intensity\\data\\raw\\statsbomb_open\\events",
+      "C:\\Users\\Mahyar\\worldcup-player-impact-xg\\data\\raw\\statsbomb_open\\events"
+    ]
+  },
+  "funnel": {
+    "stages": [
+      {
+        "stage": "exact_international_bridge",
+        "n_matches": 258,
+        "by_competition": {
+          "Copa America 2024": 28,
+          "FIFA World Cup 2018": 64,
+          "FIFA World Cup 2022": 64,
+          "UEFA Euro 2020": 51,
+          "UEFA Euro 2024": 51
+        }
+      },
+      {
+        "stage": "statsbomb_events_cached_on_disk",
+        "n_matches": 58,
+        "by_competition": {
+          "Copa America 2024": 10,
+          "FIFA World Cup 2018": 12,
+          "FIFA World Cup 2022": 12,
+          "UEFA Euro 2020": 12,
+          "UEFA Euro 2024": 12
+        }
+      },
+      {
+        "stage": "residual_target_eligible_snapshots",
+        "n_matches": 58,
+        "n_snapshots": 7376,
+        "by_competition": {
+          "Copa America 2024": 10,
+          "FIFA World Cup 2018": 12,
+          "FIFA World Cup 2022": 12,
+          "UEFA Euro 2020": 12,
+          "UEFA Euro 2024": 12
+        }
+      }
+    ],
+    "by_competition": {
+      "bridge_exact": {
+        "Copa America 2024": 28,
+        "FIFA World Cup 2018": 64,
+        "FIFA World Cup 2022": 64,
+        "UEFA Euro 2020": 51,
+        "UEFA Euro 2024": 51
+      },
+      "cached": {
+        "Copa America 2024": 10,
+        "FIFA World Cup 2018": 12,
+        "FIFA World Cup 2022": 12,
+        "UEFA Euro 2020": 12,
+        "UEFA Euro 2024": 12
+      },
+      "eligible": {
+        "Copa America 2024": 10,
+        "FIFA World Cup 2018": 12,
+        "FIFA World Cup 2022": 12,
+        "UEFA Euro 2020": 12,
+        "UEFA Euro 2024": 12
+      }
+    },
+    "loss_by_reason": {
+      "bridge_exact_to_cached": {
+        "n_lost": 200,
+        "reason": "no StatsBomb event JSON present in any local cache (statsbomb_raw/events or prior pull); builder counts as n_matches_no_events_present",
+        "by_competition": {
+          "Copa America 2024": 18,
+          "FIFA World Cup 2018": 52,
+          "FIFA World Cup 2022": 52,
+          "UEFA Euro 2020": 39,
+          "UEFA Euro 2024": 39
+        }
+      },
+      "cached_to_eligible": {
+        "n_lost": 0,
+        "reason": "cached event file present but not in exact-intl bridge population (home/away unresolved or rejected by bridge) -> no snapshot/target row",
+        "cached_not_eligible_ids": []
+      }
+    }
+  },
+  "recompute_forward_chain": {
+    "competition_order": [
+      "FIFA World Cup 2018",
+      "UEFA Euro 2020",
+      "FIFA World Cup 2022",
+      "UEFA Euro 2024",
+      "Copa America 2024"
+    ],
+    "n_folds": 4,
+    "pooled": {
+      "rps": 0.15263,
+      "logloss": 0.78958,
+      "draw_brier": 0.15402,
+      "n_test_rows": 5789
+    },
+    "folds": [
+      {
+        "competition": "UEFA Euro 2020",
+        "n_train": 1587,
+        "n_test": 1463,
+        "r0_rps": 0.15408,
+        "r0_logloss": 0.76174
+      },
+      {
+        "competition": "FIFA World Cup 2022",
+        "n_train": 3050,
+        "n_test": 1498,
+        "r0_rps": 0.15713,
+        "r0_logloss": 0.86599
+      },
+      {
+        "competition": "UEFA Euro 2024",
+        "n_train": 4548,
+        "n_test": 1513,
+        "r0_rps": 0.13758,
+        "r0_logloss": 0.72694
+      },
+      {
+        "competition": "Copa America 2024",
+        "n_train": 6061,
+        "n_test": 1315,
+        "r0_rps": 0.16322,
+        "r0_logloss": 0.80557
+      }
+    ]
+  },
+  "recompute_loco_pooled": {
+    "rps": 0.14906,
+    "logloss": 0.77333,
+    "draw_brier": 0.15199,
+    "n_test_rows": 7376
+  },
+  "match_level": {
+    "n_matches_clustered": 58,
+    "mean_per_match_rps": 0.1479,
+    "match_bootstrap_ci_95": [
+      0.12706,
+      0.17055
+    ],
+    "note": "honest independent unit = MATCH; CI is cluster bootstrap over matches"
+  },
+  "comparison": {
+    "forward_chain_pooled_rps": {
+      "metric": "fc_pooled_rps_r0",
+      "recomputed": 0.15263,
+      "reported": 0.15263,
+      "abs_diff": 0.0,
+      "match": true
+    },
+    "forward_chain_pooled_n": {
+      "recomputed": 5789,
+      "reported": 5789
+    },
+    "forward_chain_pooled_logloss": {
+      "metric": "fc_pooled_logloss_r0",
+      "recomputed": 0.78958,
+      "reported": 0.78958,
+      "abs_diff": 0.0,
+      "match": true
+    },
+    "forward_chain_pooled_draw_brier": {
+      "metric": "fc_pooled_draw_brier_r0",
+      "recomputed": 0.15402,
+      "reported": 0.15402,
+      "abs_diff": 0.0,
+      "match": true
+    },
+    "loco_pooled_rps": {
+      "metric": "loco_pooled_rps_r0",
+      "recomputed": 0.14906,
+      "reported": 0.14906,
+      "abs_diff": 0.0,
+      "match": true
+    },
+    "loco_pooled_n": {
+      "recomputed": 7376,
+      "reported": 7376
+    },
+    "n_matches": {
+      "recomputed": 58,
+      "reported_dataset_manifest": 58,
+      "reported_fc": 58,
+      "reported_loco": 58
+    },
+    "n_rows": {
+      "recomputed": 7376,
+      "reported_dataset_manifest": 7376
+    }
+  },
+  "forward_chain_fold_comparison": [
+    {
+      "competition": "UEFA Euro 2020",
+      "recomputed_rps": 0.15408,
+      "reported_rps": 0.15408,
+      "abs_diff": 0.0,
+      "recomputed_n_test": 1463,
+      "reported_n_test": 1463
+    },
+    {
+      "competition": "FIFA World Cup 2022",
+      "recomputed_rps": 0.15713,
+      "reported_rps": 0.15713,
+      "abs_diff": 0.0,
+      "recomputed_n_test": 1498,
+      "reported_n_test": 1498
+    },
+    {
+      "competition": "UEFA Euro 2024",
+      "recomputed_rps": 0.13758,
+      "reported_rps": 0.13758,
+      "abs_diff": 0.0,
+      "recomputed_n_test": 1513,
+      "reported_n_test": 1513
+    },
+    {
+      "competition": "Copa America 2024",
+      "recomputed_rps": 0.16322,
+      "reported_rps": 0.16322,
+      "abs_diff": 0.0,
+      "recomputed_n_test": 1315,
+      "reported_n_test": 1315
+    }
+  ],
+  "verdict": {
+    "cohort_reconstructed_to_58": true,
+    "forward_chain_rps_reproduced": true,
+    "loco_rps_reproduced": true,
+    "all_folds_reproduced": true,
+    "status": "complete"
+  }
+}

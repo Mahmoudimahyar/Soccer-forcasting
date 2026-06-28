@@ -1,0 +1,25 @@
+# Durable <=8h Evidence-Power Consolidation run (reuses deep_research_supervisor.py). research_only.
+# LOCAL-ARTIFACT-ONLY: validated local artifacts already on disk. NO StatsBomb / API-Football / Odds /
+# external / scrape / credentials / browser. NEVER modifies the active collector (WorldCupShadowCollector,
+# worldcup_draw_model_lab_FINAL), B1, frozen M1-M5, candidate.py, approved_models.yaml, trading/Kalshi/risk,
+# or .env. paper-only. The independent unit is the MATCH, never a snapshot row; all power/bootstrap is
+# match-level clustered. No 2026 WC in any rerun.
+run: {max_hours: 8.0, max_workers: 2, max_api_requests: 100000000, heartbeat_interval_s: 120,
+      collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json",
+      collector_stale_seconds: 100000, per_job_timeout_s: 28800}
+safety: {kalshi_live_trading: false, trading_mode: paper, use_odds_api: false, use_api_football: false,
+         no_external_api: true, no_scrape: true, no_credentials: true,
+         labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"}
+jobs:
+  - {id: JOB1,  title: "preflight + dependency + isolation + test-baseline + dry-run note", script: "scripts/evidence_jobs/ev_job01_preflight.py", critical: true}
+  - {id: JOB2,  title: "research evidence registry", script: "scripts/evidence_jobs/ev_job02_evidence_registry.py", critical: false}
+  - {id: JOB3,  title: "cohort lineage + exclusion ledger (match-level funnel)", script: "scripts/evidence_jobs/ev_job03_cohort_lineage.py", critical: true}
+  - {id: JOB4,  title: "58-match audit + independent reconstruction", script: "scripts/evidence_jobs/ev_job04_58_match_audit.py", critical: true}
+  - {id: JOB5,  title: "reproducibility audit (7 evaluations)", script: "scripts/evidence_jobs/ev_job05_reproducibility_audit.py", critical: false}
+  - {id: JOB6,  title: "detect + repair VERIFIED bugs only (else no_repair_required)", script: "scripts/evidence_jobs/ev_job06_detect_repair_bugs.py", critical: false}
+  - {id: JOB7,  title: "rerun affected evals ONLY if a verified repair (else skip with reason)", script: "scripts/evidence_jobs/ev_job07_rerun_affected.py", critical: false}
+  - {id: JOB8,  title: "match-level statistical power", script: "scripts/evidence_jobs/ev_job08_match_level_power.py", critical: false}
+  - {id: JOB9,  title: "live-readiness matrix", script: "scripts/evidence_jobs/ev_job09_live_readiness.py", critical: false}
+  - {id: JOB10, title: "decision memo (next-investment)", script: "scripts/evidence_jobs/ev_job10_decision_memo.py", critical: false}
+  - {id: JOB11, title: "cross-artifact consistency audit", script: "scripts/evidence_jobs/ev_job11_consistency_audit.py", critical: false}
+  - {id: JOB12, title: "final report + decision memo + integrity audit", script: "scripts/evidence_jobs/ev_job12_final_report.py", critical: true}
