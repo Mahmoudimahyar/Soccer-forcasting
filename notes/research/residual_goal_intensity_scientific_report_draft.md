@@ -33,7 +33,7 @@ intensities themselves **beyond the parameter-free W2 reference**, out-of-sample
   selective gate correctly degenerates toward the pure-W2 fallback. Honest negative.
 
 ## Verdict summary
-- 
+- data_insufficient: 3 | reference_only: 7 | rejected: 6
 
 ## Limitations
 - Small international event corpus → wide bootstrap CIs; a true in-play edge below the reference's

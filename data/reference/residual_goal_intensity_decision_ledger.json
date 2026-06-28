@@ -256,7 +256,7 @@
     }
   ],
   "n_models": 16,
-  "utc": "2026-06-27T19:47:03.616668+00:00",
+  "utc": "2026-06-27T20:02:31.192383+00:00",
   "reference_models": {
     "residual": "research.residual.w2_reference_r0",
     "intensity": "research.intensity.w2_home_away_i0",
