@@ -1,7 +1,7 @@
 {
   "meta": {
     "n_exclusions": 252,
-    "built_utc": "2026-06-28T02:27:09.564935+00:00",
+    "built_utc": "2026-06-28T02:36:00.856126+00:00",
     "drop_reason_counts": {
       "missing_statsbomb_events": 200,
       "held_out_fold_rule": 12,

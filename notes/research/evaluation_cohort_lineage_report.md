@@ -2,7 +2,7 @@
 
 `research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible`
 
-Built 2026-06-28T02:27:09.564935+00:00. Match-level lineage for every fixture in the in-play residual pipeline. Independent unit = MATCH. Every present→absent stage transition carries exactly one allowed drop reason; no fixture disappears silently.
+Built 2026-06-28T02:36:00.856126+00:00. Match-level lineage for every fixture in the in-play residual pipeline. Independent unit = MATCH. Every present→absent stage transition carries exactly one allowed drop reason; no fixture disappears silently.
 
 ## Funnel (match-level)
 

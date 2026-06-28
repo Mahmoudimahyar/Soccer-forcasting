@@ -2,7 +2,7 @@
 
 `research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible`
 
-Built 2026-06-28T02:27:09.405627+00:00. 10 artifact records across the prior programs. Every count traces to a real local manifest/file; no fabricated numbers. The active collector checkout is never read.
+Built 2026-06-28T02:36:00.687853+00:00. 10 artifact records across the prior programs. Every count traces to a real local manifest/file; no fabricated numbers. The active collector checkout is never read.
 
 ## claim_status summary
 

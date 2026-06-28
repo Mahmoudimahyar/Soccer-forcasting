@@ -2,7 +2,7 @@
 
 `research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible`
 
-Built 2026-06-28T02:32:45.855055+00:00. Local-artifact-only consolidation: registry -> lineage -> 58-match audit -> reproducibility -> bug-detect/repair -> power -> live-readiness -> decision memo -> consistency -> integrity. No network/API/Odds/StatsBomb/scrape; the active collector (`dc73318`) is read-only.
+Built 2026-06-28T02:41:30.249787+00:00. Local-artifact-only consolidation: registry -> lineage -> 58-match audit -> reproducibility -> bug-detect/repair -> power -> live-readiness -> decision memo -> consistency -> integrity. No network/API/Odds/StatsBomb/scrape; the active collector (`dc73318`) is read-only.
 
 ## The WHY-58 funnel (match-level, independent unit = match)
 

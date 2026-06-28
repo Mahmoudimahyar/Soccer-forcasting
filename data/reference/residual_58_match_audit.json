@@ -1,6 +1,6 @@
 {
   "audit": "residual_58_match_cohort_reconstruction",
-  "utc": "2026-06-28T02:27:09.819347+00:00",
+  "utc": "2026-06-28T02:36:01.107657+00:00",
   "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
   "sources": {
     "bridge_csv": "C:\\Users\\Mahyar\\worldcup-player-impact-xg\\data\\processed\\api_statsbomb_match_bridge_v1.csv",
