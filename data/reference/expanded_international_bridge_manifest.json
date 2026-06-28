@@ -1,7 +1,7 @@
 {
  "schema_version": "expanded_international_bridge_v1",
- "run_id": "expanded_bridge_20260628T064822Z",
- "built_ts": "2026-06-28T06:48:22Z",
+ "run_id": "expanded_bridge_20260628T071042Z",
+ "built_ts": "2026-06-28T07:10:42Z",
  "official_catalog_matches": 333,
  "local_exact_fixtures": 258,
  "classification_counts": {

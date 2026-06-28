@@ -1,6 +1,6 @@
 # Official Modern International StatsBomb Catalog
 
-- run_id: `official_catalog_20260628T060129Z`  built_ts: 2026-06-28T06:01:31Z
+- run_id: `official_catalog_20260628T071031Z`  built_ts: 2026-06-28T07:10:33Z
 - source: https://raw.githubusercontent.com/statsbomb/open-data/master/data (official StatsBomb Open Data only)
 - admitted competitions: African Cup of Nations, Copa America, FIFA World Cup, UEFA Euro
 - historical cutoff: 2026 FIFA World Cup excluded (0 comp-season(s))

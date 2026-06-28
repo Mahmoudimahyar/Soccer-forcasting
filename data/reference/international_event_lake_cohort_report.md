@@ -2,7 +2,7 @@
 
 _research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible_
 
-- Built (UTC): 2026-06-28T06:55:35.642564+00:00
+- Built (UTC): 2026-06-28T07:16:00.092432+00:00
 - Lake root: `C:\Users\Mahyar\worldcup_data_lake\statsbomb_open\international_event_lake_v1`
 - Lake index objects: 258
 - Exact senior-men's-international bridge rows: 258

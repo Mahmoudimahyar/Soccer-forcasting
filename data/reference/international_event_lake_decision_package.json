@@ -10,8 +10,8 @@
     "deterministic": true,
     "recompute_hash": null,
     "cohort_lake_root": "C:\\Users\\Mahyar\\worldcup_data_lake\\statsbomb_open\\international_event_lake_v1",
-    "n_cohort_matches": 60,
-    "n_index_objects": 60
+    "n_cohort_matches": 258,
+    "n_index_objects": 258
   },
   "source_quality": {
     "lake_objects": 258,
@@ -36,9 +36,9 @@
     "official_host": "raw.githubusercontent.com/statsbomb/open-data"
   },
   "power": {
-    "observed_M_matches": 56,
+    "observed_M_matches": 231,
     "bootstrap_unit": "match_clustered"
   },
   "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
-  "utc": "2026-06-28T06:49:47.424769+00:00"
+  "utc": "2026-06-28T07:47:53.213126+00:00"
 }

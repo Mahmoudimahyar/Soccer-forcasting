@@ -12,57 +12,57 @@ db35331e117461e5,7537,FIFA World Cup 2018,2018-06-18,tunisia,england,away,C:\Use
 b2d4706294562d1d,7538,FIFA World Cup 2018,2018-06-18,sweden,south korea,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,ac684143ef2c246c1745a078d03e0c7ab31b96a7ea3863e42ea539b7c6d3383e,present,ac684143ef2c246c1745a078d03e0c7ab31b96a7ea3863e42ea539b7c6d3383e,copy_verified_local,already in lake (hash-verified)
 83021863c2dd398e,7539,FIFA World Cup 2018,2018-06-19,poland,senegal,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,ee7b02c0f464cbe4b525c974aadb086f3d3ceebbb96093e958c62613938b8d53,present,ee7b02c0f464cbe4b525c974aadb086f3d3ceebbb96093e958c62613938b8d53,copy_verified_local,already in lake (hash-verified)
 6e07b9c74f56f29b,7540,FIFA World Cup 2018,2018-06-19,russia,egypt,home,,absent,,present,f2bbcf6157a2f537c09f0423aa40940ec0ffcfa9f036c4b22ebd1eced8f0a1ab,copy_verified_local,already in lake (hash-verified)
-c5c9e3e18f7059c4,7541,FIFA World Cup 2018,2018-06-19,colombia,japan,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-420895e961137fae,7542,FIFA World Cup 2018,2018-06-20,portugal,morocco,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8977cdf712634365,7543,FIFA World Cup 2018,2018-06-20,iran,spain,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-412797e5b4bdb3c4,7544,FIFA World Cup 2018,2018-06-20,uruguay,saudi arabia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1a98b6655189d73e,7545,FIFA World Cup 2018,2018-06-21,argentina,croatia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-441351b0b4514309,7546,FIFA World Cup 2018,2018-06-21,france,peru,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-aa09afc193098b88,7547,FIFA World Cup 2018,2018-06-21,denmark,australia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3d0a422c8a1f2290,7548,FIFA World Cup 2018,2018-06-22,brazil,costa rica,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-975202267ca7c32a,7549,FIFA World Cup 2018,2018-06-22,nigeria,iceland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-0f2290227074ca48,7550,FIFA World Cup 2018,2018-06-22,serbia,switzerland,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-4b1928632b27457b,7551,FIFA World Cup 2018,2018-06-23,germany,sweden,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e387278cd2444a71,7552,FIFA World Cup 2018,2018-06-23,belgium,tunisia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a35916e7737bcfb0,7553,FIFA World Cup 2018,2018-06-23,south korea,mexico,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-6dc2dd9a2dfc0817,7554,FIFA World Cup 2018,2018-06-24,england,panama,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ccf27d0f02109418,7555,FIFA World Cup 2018,2018-06-24,poland,colombia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-67be4ec49ed58f04,7556,FIFA World Cup 2018,2018-06-24,japan,senegal,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-43a67733ee5afdc6,7557,FIFA World Cup 2018,2018-06-25,iran,portugal,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ad6ba991b03c214a,7558,FIFA World Cup 2018,2018-06-25,uruguay,russia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c50a844f4ec1baba,7559,FIFA World Cup 2018,2018-06-25,saudi arabia,egypt,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-6e2696e0d71b3951,7560,FIFA World Cup 2018,2018-06-25,spain,morocco,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-71eaaa5cfe6d560f,7561,FIFA World Cup 2018,2018-06-26,iceland,croatia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3dd4268c82d98634,7562,FIFA World Cup 2018,2018-06-26,australia,peru,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-cbad7b2d42a4efad,7563,FIFA World Cup 2018,2018-06-26,denmark,france,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-2f0d7b27f11d7b31,7564,FIFA World Cup 2018,2018-06-26,nigeria,argentina,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-2280285b491f0550,7565,FIFA World Cup 2018,2018-06-27,serbia,brazil,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-cd1d40a7249a6be6,7566,FIFA World Cup 2018,2018-06-27,mexico,sweden,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-5b60388ec70078a5,7567,FIFA World Cup 2018,2018-06-27,south korea,germany,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8e5fc30ead1a08c7,7568,FIFA World Cup 2018,2018-06-27,switzerland,costa rica,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-532976e6868bd263,7569,FIFA World Cup 2018,2018-06-28,panama,tunisia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-fddf2d295da8c1f0,7570,FIFA World Cup 2018,2018-06-28,england,belgium,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1bb2b14f977be084,7571,FIFA World Cup 2018,2018-06-28,senegal,colombia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ec646708dacef441,7572,FIFA World Cup 2018,2018-06-28,japan,poland,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a17a50b50f5f2954,7576,FIFA World Cup 2018,2018-06-15,portugal,spain,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e4ef7f1c119c402f,7577,FIFA World Cup 2018,2018-06-15,morocco,iran,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a429a0ba326ef338,7578,FIFA World Cup 2018,2018-06-15,egypt,uruguay,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f4230aa4f9bad997,7579,FIFA World Cup 2018,2018-06-30,uruguay,portugal,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9d7460a786442b70,7580,FIFA World Cup 2018,2018-06-30,france,argentina,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-23ce415808d5a705,7581,FIFA World Cup 2018,2018-07-01,croatia,denmark,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f4df68973baf40c1,7582,FIFA World Cup 2018,2018-07-01,spain,russia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8a49ccc81c7e5fa6,7583,FIFA World Cup 2018,2018-07-02,brazil,mexico,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-24250ad701243c6d,7584,FIFA World Cup 2018,2018-07-02,belgium,japan,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9ef3cd75f9404fc9,7585,FIFA World Cup 2018,2018-07-03,colombia,england,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-0a6b85c9e1a47b97,7586,FIFA World Cup 2018,2018-07-03,sweden,switzerland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-97ff7c9cf169612a,8649,FIFA World Cup 2018,2018-07-06,uruguay,france,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-51ad491d67cab6c6,8650,FIFA World Cup 2018,2018-07-06,brazil,belgium,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a9a64a22b2ffc08f,8651,FIFA World Cup 2018,2018-07-07,sweden,england,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f20ad45ae3ae286c,8652,FIFA World Cup 2018,2018-07-07,russia,croatia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-215789860f293ec9,8655,FIFA World Cup 2018,2018-07-10,france,belgium,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-03ed1fb199f84efc,8656,FIFA World Cup 2018,2018-07-11,croatia,england,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-17857e5a29cd6c34,8657,FIFA World Cup 2018,2018-07-14,belgium,england,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3f31d38173e6bc43,8658,FIFA World Cup 2018,2018-07-15,france,croatia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
+c5c9e3e18f7059c4,7541,FIFA World Cup 2018,2018-06-19,colombia,japan,away,,absent,,present,ed25888e92193f0394e121a9101c4d3a7607a225b4c7416c9b13a647b54b9584,copy_verified_local,already in lake (hash-verified)
+420895e961137fae,7542,FIFA World Cup 2018,2018-06-20,portugal,morocco,home,,absent,,present,bf413501a7245ad9f69dbfc51b038b92457345a47f363d594887d6987ccf5e90,copy_verified_local,already in lake (hash-verified)
+8977cdf712634365,7543,FIFA World Cup 2018,2018-06-20,iran,spain,away,,absent,,present,a71116f175234e1696cf28cc5e5123eceae8f224ae837226c01b785d552059e0,copy_verified_local,already in lake (hash-verified)
+412797e5b4bdb3c4,7544,FIFA World Cup 2018,2018-06-20,uruguay,saudi arabia,home,,absent,,present,c4309dfb9ad2a13b93f296fd98758fd0e1afae531b5580097fe21bbe9279cfb8,copy_verified_local,already in lake (hash-verified)
+1a98b6655189d73e,7545,FIFA World Cup 2018,2018-06-21,argentina,croatia,away,,absent,,present,f4512ba549a1c4704cf650e509d922284754b1ef51879eb91da24c6ba294d868,copy_verified_local,already in lake (hash-verified)
+441351b0b4514309,7546,FIFA World Cup 2018,2018-06-21,france,peru,home,,absent,,present,5fd54c82f9f84d9b2b1d3f198d5b1f82c6752574ea6533acc22f93f53c286879,copy_verified_local,already in lake (hash-verified)
+aa09afc193098b88,7547,FIFA World Cup 2018,2018-06-21,denmark,australia,draw,,absent,,present,c1cdb35444c8a353bc9e2663ea578821ef6499d593e1764f4bb34823e7a751b8,copy_verified_local,already in lake (hash-verified)
+3d0a422c8a1f2290,7548,FIFA World Cup 2018,2018-06-22,brazil,costa rica,home,,absent,,present,60f334286e04a6575ca8db14c7177abcc5bd2505d10070c1e36138f32def14a1,copy_verified_local,already in lake (hash-verified)
+975202267ca7c32a,7549,FIFA World Cup 2018,2018-06-22,nigeria,iceland,home,,absent,,present,92c978cd230d5ef10df7f843b3526f6ad6f4350b113d84d252b3e347df6ae253,copy_verified_local,already in lake (hash-verified)
+0f2290227074ca48,7550,FIFA World Cup 2018,2018-06-22,serbia,switzerland,away,,absent,,present,b15a39d3338316a7ef07902ae43261259e6865ae59b4f26d2f6516e58ff90226,copy_verified_local,already in lake (hash-verified)
+4b1928632b27457b,7551,FIFA World Cup 2018,2018-06-23,germany,sweden,home,,absent,,present,504191e8c993c96e4e1b69141a74e46b71266b9252f550a8aaf737048af4798f,copy_verified_local,already in lake (hash-verified)
+e387278cd2444a71,7552,FIFA World Cup 2018,2018-06-23,belgium,tunisia,home,,absent,,present,31cb3931c4ceb69bc6df24c68f4572229b57f751e813494f1fe109359e4b5439,copy_verified_local,already in lake (hash-verified)
+a35916e7737bcfb0,7553,FIFA World Cup 2018,2018-06-23,south korea,mexico,away,,absent,,present,20520d4bb5b6820dfe2c8ebb6fc651217721747638fe86647a9c4c8e772167ac,copy_verified_local,already in lake (hash-verified)
+6dc2dd9a2dfc0817,7554,FIFA World Cup 2018,2018-06-24,england,panama,home,,absent,,present,ea3aea09aa464da831487d412548fe033625fd913bbb918c76469d0c2b355acd,copy_verified_local,already in lake (hash-verified)
+ccf27d0f02109418,7555,FIFA World Cup 2018,2018-06-24,poland,colombia,away,,absent,,present,2eb87c884c49202ff395d0614444f2592efc84f6e3ae10a5634c18bc12fc2089,copy_verified_local,already in lake (hash-verified)
+67be4ec49ed58f04,7556,FIFA World Cup 2018,2018-06-24,japan,senegal,draw,,absent,,present,f2caf0325cf34afd47af2c8d0740a42bb3246b9f28069ed137b66da6fe781c8f,copy_verified_local,already in lake (hash-verified)
+43a67733ee5afdc6,7557,FIFA World Cup 2018,2018-06-25,iran,portugal,draw,,absent,,present,993a23a8652d8e78581831cfa5c291e55e60fda9058b3b7944441d5a8506439b,copy_verified_local,already in lake (hash-verified)
+ad6ba991b03c214a,7558,FIFA World Cup 2018,2018-06-25,uruguay,russia,home,,absent,,present,b863dad8dd9d75f136afccfd5b71160e3d73f0536962481b6a195c04cd7a2038,copy_verified_local,already in lake (hash-verified)
+c50a844f4ec1baba,7559,FIFA World Cup 2018,2018-06-25,saudi arabia,egypt,home,,absent,,present,1833d363a3d7839c38a87035d8be17574f79f2fcd4d7b1368716fdbe21c5d560,copy_verified_local,already in lake (hash-verified)
+6e2696e0d71b3951,7560,FIFA World Cup 2018,2018-06-25,spain,morocco,draw,,absent,,present,20b6ca18e502f55801e9d0de5a5e476886e53ccec71a7c5026bb901d931ad7e1,copy_verified_local,already in lake (hash-verified)
+71eaaa5cfe6d560f,7561,FIFA World Cup 2018,2018-06-26,iceland,croatia,away,,absent,,present,f95f4a023ca825311e94cefef5fdb00ccfc8cdd70672e9bd21aecbd5cb143761,copy_verified_local,already in lake (hash-verified)
+3dd4268c82d98634,7562,FIFA World Cup 2018,2018-06-26,australia,peru,away,,absent,,present,85b6e7448441d4843805091198cf0a07ac8c441e28058f4f7a91ae68409e6d0a,copy_verified_local,already in lake (hash-verified)
+cbad7b2d42a4efad,7563,FIFA World Cup 2018,2018-06-26,denmark,france,draw,,absent,,present,098b337d5fe5e0ab65acf3eb622f6b5b8c800ac8e2e89cc4ffd5614b1777c003,copy_verified_local,already in lake (hash-verified)
+2f0d7b27f11d7b31,7564,FIFA World Cup 2018,2018-06-26,nigeria,argentina,away,,absent,,present,24a91a7964cd9b75effb9181fb4287878d9d1749b99bdf0f3a749ab305a1a5a7,copy_verified_local,already in lake (hash-verified)
+2280285b491f0550,7565,FIFA World Cup 2018,2018-06-27,serbia,brazil,away,,absent,,present,e5b6946b810598b946b8263230e7a5464207fae423c351cf8f9244ea7882f16f,copy_verified_local,already in lake (hash-verified)
+cd1d40a7249a6be6,7566,FIFA World Cup 2018,2018-06-27,mexico,sweden,away,,absent,,present,2139ee5a437a66b53a23b5ad7522962dab41eb807fe6ac5926a9506fb14e6d0b,copy_verified_local,already in lake (hash-verified)
+5b60388ec70078a5,7567,FIFA World Cup 2018,2018-06-27,south korea,germany,home,,absent,,present,30ea0f1dff7bf66c4b2c58b2fd73ba4bf11eec66061c849333c3eaf780e0b553,copy_verified_local,already in lake (hash-verified)
+8e5fc30ead1a08c7,7568,FIFA World Cup 2018,2018-06-27,switzerland,costa rica,draw,,absent,,present,df6e2bc09e75526f8afa13f01c435aff16a21b5ce79e2e3480dcd7f076d8e23d,copy_verified_local,already in lake (hash-verified)
+532976e6868bd263,7569,FIFA World Cup 2018,2018-06-28,panama,tunisia,away,,absent,,present,22a4bc3f31e7a1d79bd8975ab9e6c2b4ae0798e64c8d6a194b6c9455747d0825,copy_verified_local,already in lake (hash-verified)
+fddf2d295da8c1f0,7570,FIFA World Cup 2018,2018-06-28,england,belgium,away,,absent,,present,b9e70d1891617c960d2212a63d7703d5a9418c275cc35634197249579548b5e8,copy_verified_local,already in lake (hash-verified)
+1bb2b14f977be084,7571,FIFA World Cup 2018,2018-06-28,senegal,colombia,away,,absent,,present,dea2396406e4fd1e72fbf7ad8eb1e3da666faf2555253a0e589ea1997e3eac84,copy_verified_local,already in lake (hash-verified)
+ec646708dacef441,7572,FIFA World Cup 2018,2018-06-28,japan,poland,away,,absent,,present,5e019e3e70721bb14b501dc75c05f8de47361084b8f3750708a3073d47d4852f,copy_verified_local,already in lake (hash-verified)
+a17a50b50f5f2954,7576,FIFA World Cup 2018,2018-06-15,portugal,spain,draw,,absent,,present,f1b386d53625b1c118cca037ef8dd39b100ce6eb3c6d4c839506cedfc401db79,copy_verified_local,already in lake (hash-verified)
+e4ef7f1c119c402f,7577,FIFA World Cup 2018,2018-06-15,morocco,iran,away,,absent,,present,12f628a05b12a15d0ed4721e9ef1ea0775db74fe8ad40ffeac0119644ee9ebf1,copy_verified_local,already in lake (hash-verified)
+a429a0ba326ef338,7578,FIFA World Cup 2018,2018-06-15,egypt,uruguay,away,,absent,,present,e2a7f8738cbfb20c83b7e49badaf45cdac565df2047fd77f95cf6a17d9caccef,copy_verified_local,already in lake (hash-verified)
+f4230aa4f9bad997,7579,FIFA World Cup 2018,2018-06-30,uruguay,portugal,home,,absent,,present,3c296f9f6588f85788b939c1f4503042c4986a25bec2648799c8dd4de06cc7a1,copy_verified_local,already in lake (hash-verified)
+9d7460a786442b70,7580,FIFA World Cup 2018,2018-06-30,france,argentina,home,,absent,,present,382dac9abfa4c3bb540e9599ad5f7fde5ec9675aab636452d3b1418a924d4321,copy_verified_local,already in lake (hash-verified)
+23ce415808d5a705,7581,FIFA World Cup 2018,2018-07-01,croatia,denmark,draw,,absent,,present,ac7cf56be3d394d49c9e864d427e2ea2e8927244544794ef4917e74d988a5104,copy_verified_local,already in lake (hash-verified)
+f4df68973baf40c1,7582,FIFA World Cup 2018,2018-07-01,spain,russia,draw,,absent,,present,57de09afe0fc3f570129210e1fe76b333cd312b70ce5af5fb81a2e537191c28f,copy_verified_local,already in lake (hash-verified)
+8a49ccc81c7e5fa6,7583,FIFA World Cup 2018,2018-07-02,brazil,mexico,home,,absent,,present,8c3293ec7bb9bd7754eccacfb1c2a6fe10e4d5983f11808fc5c4887d30a059fb,copy_verified_local,already in lake (hash-verified)
+24250ad701243c6d,7584,FIFA World Cup 2018,2018-07-02,belgium,japan,home,,absent,,present,42b2a15f88146e6f549d4339f671a3847c5d55f2005c2cc43c2e8547b6308ad2,copy_verified_local,already in lake (hash-verified)
+9ef3cd75f9404fc9,7585,FIFA World Cup 2018,2018-07-03,colombia,england,draw,,absent,,present,6a0c480fc22762a147f3b3996c21a7953c2a813a9ec9dc06bd516568bf874646,copy_verified_local,already in lake (hash-verified)
+0a6b85c9e1a47b97,7586,FIFA World Cup 2018,2018-07-03,sweden,switzerland,home,,absent,,present,8e959c90c20170e7fd50494dd66ebf70f402a9cef194b46ea6f7b22f60a0c91d,copy_verified_local,already in lake (hash-verified)
+97ff7c9cf169612a,8649,FIFA World Cup 2018,2018-07-06,uruguay,france,away,,absent,,present,4b0c3bfd013a2ae10c3d4132dd597e5808439e97dfa8d01e3c7584b3776c5524,copy_verified_local,already in lake (hash-verified)
+51ad491d67cab6c6,8650,FIFA World Cup 2018,2018-07-06,brazil,belgium,away,,absent,,present,1e45557a50b3f7333e0d962cc4d4678c9b3edf2f52ee06b77f29fc3837020af3,copy_verified_local,already in lake (hash-verified)
+a9a64a22b2ffc08f,8651,FIFA World Cup 2018,2018-07-07,sweden,england,away,,absent,,present,903fe28488c56cbd041375f94571824aff6a64361c72645e2c97a0bec6773384,copy_verified_local,already in lake (hash-verified)
+f20ad45ae3ae286c,8652,FIFA World Cup 2018,2018-07-07,russia,croatia,draw,,absent,,present,0c17c5424fef71cd74c10a67eca55007c2da5594d85af159cd384b3d974c56cd,copy_verified_local,already in lake (hash-verified)
+215789860f293ec9,8655,FIFA World Cup 2018,2018-07-10,france,belgium,home,,absent,,present,531f7db538d1026ddef77178b939ee28c38ae7a15a91d07826e97d352d26464a,copy_verified_local,already in lake (hash-verified)
+03ed1fb199f84efc,8656,FIFA World Cup 2018,2018-07-11,croatia,england,draw,,absent,,present,3f6b7f638235421f6b2ca1b4b38f3cfedb89572a847a6a4e06d8ee4f4c137c13,copy_verified_local,already in lake (hash-verified)
+17857e5a29cd6c34,8657,FIFA World Cup 2018,2018-07-14,belgium,england,home,,absent,,present,6cc79ec754303d65ca3f2cbc4bd29384a8d6e6492e168991159a07a0ba7c626e,copy_verified_local,already in lake (hash-verified)
+3f31d38173e6bc43,8658,FIFA World Cup 2018,2018-07-15,france,croatia,home,,absent,,present,a9aa72c042153fa351c3591ee11e7fba95b0c8841c4489da4aa6809de1edbdf5,copy_verified_local,already in lake (hash-verified)
 713283908dc54cb9,3788741,UEFA Euro 2020,2021-06-11,turkey,italy,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,b9ddce6bee771bdb1f3564c9ac0552619257e412d0767939f1e7f1500ace3062,present,b9ddce6bee771bdb1f3564c9ac0552619257e412d0767939f1e7f1500ace3062,copy_verified_local,already in lake (hash-verified)
 a020f406bb398cd2,3788742,UEFA Euro 2020,2021-06-12,denmark,finland,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,1408d239936cecb7235754f17d73717292eff58e8e09ad8d0552707925fdda08,present,1408d239936cecb7235754f17d73717292eff58e8e09ad8d0552707925fdda08,copy_verified_local,already in lake (hash-verified)
 f0aad4d64180fc25,3788743,UEFA Euro 2020,2021-06-12,belgium,russia,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,38cf62081036062f3ad640a5ba6a0d99148e8fb078de9eedd37ede323e4f4e8d,present,38cf62081036062f3ad640a5ba6a0d99148e8fb078de9eedd37ede323e4f4e8d,copy_verified_local,already in lake (hash-verified)
@@ -75,45 +75,45 @@ d666c699578bb19e,3788749,UEFA Euro 2020,2021-06-14,poland,slovakia,away,C:\Users
 a8c0589ec43e31a0,3788750,UEFA Euro 2020,2021-06-14,spain,sweden,draw,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,d580719d87a47a84f49be09af6e13f4ae592201fe51626bef9d479d76f2ab14f,present,d580719d87a47a84f49be09af6e13f4ae592201fe51626bef9d479d76f2ab14f,copy_verified_local,already in lake (hash-verified)
 61f7bbdfba875d80,3788751,UEFA Euro 2020,2021-06-15,france,germany,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,b8538cde72d2596c3eade9546a36edd2dfdc462cdfe836863dd2ad161ced2748,present,b8538cde72d2596c3eade9546a36edd2dfdc462cdfe836863dd2ad161ced2748,copy_verified_local,already in lake (hash-verified)
 29a98ad7047635aa,3788752,UEFA Euro 2020,2021-06-15,hungary,portugal,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,1fe3809da92ce4330e12e3b729f48d77174e481875d12737c90f04144cabf7cd,present,1fe3809da92ce4330e12e3b729f48d77174e481875d12737c90f04144cabf7cd,copy_verified_local,already in lake (hash-verified)
-675e684e7109a08b,3788753,UEFA Euro 2020,2021-06-16,finland,russia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8b9ab1401c13abe7,3788754,UEFA Euro 2020,2021-06-16,italy,switzerland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9a487d384135721f,3788755,UEFA Euro 2020,2021-06-16,turkey,wales,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a8e8ca9fde822f09,3788756,UEFA Euro 2020,2021-06-17,netherlands,austria,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1ab6a85d8bd3d52f,3788757,UEFA Euro 2020,2021-06-17,denmark,belgium,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-2dd372e227590dc3,3788758,UEFA Euro 2020,2021-06-17,ukraine,macedonia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-7ad788d39ca3e3d6,3788759,UEFA Euro 2020,2021-06-18,england,scotland,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-5d9fca44e1587076,3788760,UEFA Euro 2020,2021-06-18,croatia,czech republic,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-bcd9d53c8a9f9c2e,3788761,UEFA Euro 2020,2021-06-18,sweden,slovakia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-4068135b80819aa9,3788762,UEFA Euro 2020,2021-06-19,spain,poland,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-aae058f058d78442,3788763,UEFA Euro 2020,2021-06-19,hungary,france,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-32c22a692882cd2e,3788764,UEFA Euro 2020,2021-06-19,portugal,germany,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a8edbb863e184027,3788765,UEFA Euro 2020,2021-06-20,switzerland,turkey,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-76cc4b21c1b746c1,3788766,UEFA Euro 2020,2021-06-20,italy,wales,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-70f985c4d53263ea,3788767,UEFA Euro 2020,2021-06-21,ukraine,austria,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-95f4f003e9ce66e1,3788768,UEFA Euro 2020,2021-06-21,finland,belgium,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-aab7e4b216c336e8,3788769,UEFA Euro 2020,2021-06-21,russia,denmark,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-5d0ad83093084df7,3788770,UEFA Euro 2020,2021-06-21,macedonia,netherlands,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-0f19f991bfa7bc27,3788771,UEFA Euro 2020,2021-06-22,croatia,scotland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e876b316dd9ca391,3788772,UEFA Euro 2020,2021-06-22,czech republic,england,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a6c0c14b2875d2dc,3788773,UEFA Euro 2020,2021-06-23,portugal,france,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8c37b1c8b24bff7f,3788774,UEFA Euro 2020,2021-06-23,germany,hungary,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-33a9ce74d34679b1,3788775,UEFA Euro 2020,2021-06-23,slovakia,spain,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f519dcec2e6ee177,3788776,UEFA Euro 2020,2021-06-23,sweden,poland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-60817d316338ff11,3794685,UEFA Euro 2020,2021-06-26,italy,austria,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-39ab5b3554e9c0f1,3794686,UEFA Euro 2020,2021-06-28,croatia,spain,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-d7b6580a5161794e,3794687,UEFA Euro 2020,2021-06-27,belgium,portugal,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c6532bde2243b959,3794688,UEFA Euro 2020,2021-06-29,england,germany,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-52bde64edd0c751f,3794689,UEFA Euro 2020,2021-06-26,wales,denmark,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-fa98961ca33587bd,3794690,UEFA Euro 2020,2021-06-27,netherlands,czech republic,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f452030be32bff06,3794691,UEFA Euro 2020,2021-06-28,france,switzerland,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-091cae13554ef48f,3794692,UEFA Euro 2020,2021-06-29,sweden,ukraine,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-507f2c9ce4289c7a,3795107,UEFA Euro 2020,2021-07-02,belgium,italy,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a3127ec3e05a570c,3795108,UEFA Euro 2020,2021-07-02,switzerland,spain,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-7959adcbfba13231,3795109,UEFA Euro 2020,2021-07-03,czech republic,denmark,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e1f7315628101d97,3795187,UEFA Euro 2020,2021-07-03,ukraine,england,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3085eceb88cfe8f6,3795220,UEFA Euro 2020,2021-07-06,italy,spain,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-4414abe13948a00f,3795221,UEFA Euro 2020,2021-07-07,england,denmark,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-444446337442b94d,3795506,UEFA Euro 2020,2021-07-11,italy,england,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
+675e684e7109a08b,3788753,UEFA Euro 2020,2021-06-16,finland,russia,away,,absent,,present,0f25b7260cc4b7dab280a53b290c87a3c9c41b3629b4d8c8a509cb20ee7a2f7d,copy_verified_local,already in lake (hash-verified)
+8b9ab1401c13abe7,3788754,UEFA Euro 2020,2021-06-16,italy,switzerland,home,,absent,,present,9eee7a755c14758638de7d6e8f50c26021650da3128d2a99c7b4e1e9d1a2e1e6,copy_verified_local,already in lake (hash-verified)
+9a487d384135721f,3788755,UEFA Euro 2020,2021-06-16,turkey,wales,away,,absent,,present,4cd736b2ab37ec319086fb9f92f089ffe03e2d16629492e5ebebb17735790fbb,copy_verified_local,already in lake (hash-verified)
+a8e8ca9fde822f09,3788756,UEFA Euro 2020,2021-06-17,netherlands,austria,home,,absent,,present,120470b3f95d62c23307f60bf3cde62f92665124882cb77538abf8df29911bdb,copy_verified_local,already in lake (hash-verified)
+1ab6a85d8bd3d52f,3788757,UEFA Euro 2020,2021-06-17,denmark,belgium,away,,absent,,present,3d55557e05be42ec58423de4039c0090320d693330ae8c11db4193e7e0e1135a,copy_verified_local,already in lake (hash-verified)
+2dd372e227590dc3,3788758,UEFA Euro 2020,2021-06-17,ukraine,macedonia,home,,absent,,present,15cc8ed4221036b50de6ec0d1ccdb3f1f0b9ce1a92f7a0f5484228af0962b446,copy_verified_local,already in lake (hash-verified)
+7ad788d39ca3e3d6,3788759,UEFA Euro 2020,2021-06-18,england,scotland,draw,,absent,,present,6ee3af3dc9754aa344baee37ee694e4ac8f3e9b9a55bb2989bcf33265e4a8507,copy_verified_local,already in lake (hash-verified)
+5d9fca44e1587076,3788760,UEFA Euro 2020,2021-06-18,croatia,czech republic,draw,,absent,,present,d12a2f15af6fae5f41e29da9b2f47efdef9e5bb92c7a8ec50986040774bfd549,copy_verified_local,already in lake (hash-verified)
+bcd9d53c8a9f9c2e,3788761,UEFA Euro 2020,2021-06-18,sweden,slovakia,home,,absent,,present,d1bce34b562baed1ac8bff54cabefbe782022e6b378189f801280f5a1225910f,copy_verified_local,already in lake (hash-verified)
+4068135b80819aa9,3788762,UEFA Euro 2020,2021-06-19,spain,poland,draw,,absent,,present,88c276863f4cee1da4e1ff8e13513c3fedba02a4b599799630fe82125407b879,copy_verified_local,already in lake (hash-verified)
+aae058f058d78442,3788763,UEFA Euro 2020,2021-06-19,hungary,france,draw,,absent,,present,a02670d0c7bcf62e11bdf618b39d31ec47313d892e49be5c3bea9821b73282a5,copy_verified_local,already in lake (hash-verified)
+32c22a692882cd2e,3788764,UEFA Euro 2020,2021-06-19,portugal,germany,away,,absent,,present,9bc533cfc18494050135772f5b1379211e2356e81ad2706d3fadbcff8cd9cda6,copy_verified_local,already in lake (hash-verified)
+a8edbb863e184027,3788765,UEFA Euro 2020,2021-06-20,switzerland,turkey,home,,absent,,present,076df0798b3d857f4d799ce6b82dd58bbc9281be61f47f3bb4320bfc095af91b,copy_verified_local,already in lake (hash-verified)
+76cc4b21c1b746c1,3788766,UEFA Euro 2020,2021-06-20,italy,wales,home,,absent,,present,da68fbe5f0bdb7a35d1fcef155cc544280f258f0e3ecc8116708d6b64dbd2475,copy_verified_local,already in lake (hash-verified)
+70f985c4d53263ea,3788767,UEFA Euro 2020,2021-06-21,ukraine,austria,away,,absent,,present,7229a9916d9d42ebd6d303550befcf43f4decbbb135a17380d781e8ee70fa9c9,copy_verified_local,already in lake (hash-verified)
+95f4f003e9ce66e1,3788768,UEFA Euro 2020,2021-06-21,finland,belgium,away,,absent,,present,d0f9457bc52a7deb859badd7daf273956ba06be4345f7bc776c1c509a7f519d6,copy_verified_local,already in lake (hash-verified)
+aab7e4b216c336e8,3788769,UEFA Euro 2020,2021-06-21,russia,denmark,away,,absent,,present,8caba8bb79a925c77718409bf7574965fb83aada1c9f23910cdb5685ee632672,copy_verified_local,already in lake (hash-verified)
+5d0ad83093084df7,3788770,UEFA Euro 2020,2021-06-21,macedonia,netherlands,away,,absent,,present,992959102dd5d65a4aacf3c8c8850309eacbc281015329edb01e0ebc1026d11d,copy_verified_local,already in lake (hash-verified)
+0f19f991bfa7bc27,3788771,UEFA Euro 2020,2021-06-22,croatia,scotland,home,,absent,,present,795a80d7b40bc355a896b7153648a39ca01645f603b3a3f63e6d27ebf226bc1a,copy_verified_local,already in lake (hash-verified)
+e876b316dd9ca391,3788772,UEFA Euro 2020,2021-06-22,czech republic,england,away,,absent,,present,a58ea3424064268f22b715bef31c55a6b7729c5d39661c139d1cfe88864753d8,copy_verified_local,already in lake (hash-verified)
+a6c0c14b2875d2dc,3788773,UEFA Euro 2020,2021-06-23,portugal,france,draw,,absent,,present,245cfef3ac8813d07182b7f96dbdedf6c13b6e8aa3d5c255d4955cea2b77a2ca,copy_verified_local,already in lake (hash-verified)
+8c37b1c8b24bff7f,3788774,UEFA Euro 2020,2021-06-23,germany,hungary,draw,,absent,,present,25271f0d3a3442c2a1ab82d992a5dea8058368ebb94c932d02bd08e01ec10ebc,copy_verified_local,already in lake (hash-verified)
+33a9ce74d34679b1,3788775,UEFA Euro 2020,2021-06-23,slovakia,spain,away,,absent,,present,11e537fc89de74c3574c8c5d91df03a34b7e078d3edd7c4ea5834ebeb67ee2dd,copy_verified_local,already in lake (hash-verified)
+f519dcec2e6ee177,3788776,UEFA Euro 2020,2021-06-23,sweden,poland,home,,absent,,present,4c812b52ee1e805866f4d2b9d94d1e6914d01c4091704b1c348bc38f495670d8,copy_verified_local,already in lake (hash-verified)
+60817d316338ff11,3794685,UEFA Euro 2020,2021-06-26,italy,austria,draw,,absent,,present,9cf5bc17592edae0b3fd78364f304af8b67adb1d299e61d11f36967dbe42cb1c,copy_verified_local,already in lake (hash-verified)
+39ab5b3554e9c0f1,3794686,UEFA Euro 2020,2021-06-28,croatia,spain,draw,,absent,,present,dcba23892f0ff0244494c32096afccd21f5cf1e7295c3a9d31f53e131e61edb8,copy_verified_local,already in lake (hash-verified)
+d7b6580a5161794e,3794687,UEFA Euro 2020,2021-06-27,belgium,portugal,home,,absent,,present,805c8201bd26abb0c4bd70452c4a0a7548c197ba80994fab474f21adc4272138,copy_verified_local,already in lake (hash-verified)
+c6532bde2243b959,3794688,UEFA Euro 2020,2021-06-29,england,germany,home,,absent,,present,daad57d94b63665ee22463289499b0d5513dce7865eae9a9c14a719ae1ea8fc2,copy_verified_local,already in lake (hash-verified)
+52bde64edd0c751f,3794689,UEFA Euro 2020,2021-06-26,wales,denmark,away,,absent,,present,d27437dc4f6919552febf013c13321682e49caa9502eb81c2508ab01d0ea1d62,copy_verified_local,already in lake (hash-verified)
+fa98961ca33587bd,3794690,UEFA Euro 2020,2021-06-27,netherlands,czech republic,away,,absent,,present,ccd18c6308058c9554e522f28bfdfdb8ee3199f755eb0b8dc048afa0b6b7e1bd,copy_verified_local,already in lake (hash-verified)
+f452030be32bff06,3794691,UEFA Euro 2020,2021-06-28,france,switzerland,draw,,absent,,present,350032c156d4f41a47755d6c1b797367667a93aa05528e66a5433ab301501dcd,copy_verified_local,already in lake (hash-verified)
+091cae13554ef48f,3794692,UEFA Euro 2020,2021-06-29,sweden,ukraine,draw,,absent,,present,9e9bb259ef5c90ad146bac3e75ce9541c7a83f828b629647ab737df7ec80e8ce,copy_verified_local,already in lake (hash-verified)
+507f2c9ce4289c7a,3795107,UEFA Euro 2020,2021-07-02,belgium,italy,away,,absent,,present,d3ed3de173c7cd940e217851f871a0ca84d31d676855faf2aba8ec027426b731,copy_verified_local,already in lake (hash-verified)
+a3127ec3e05a570c,3795108,UEFA Euro 2020,2021-07-02,switzerland,spain,draw,,absent,,present,7cd286e364e7614d75176a8fbf9c442b3a7a7ba73511d6e6a91dcbfe7d9ff5cd,copy_verified_local,already in lake (hash-verified)
+7959adcbfba13231,3795109,UEFA Euro 2020,2021-07-03,czech republic,denmark,away,,absent,,present,4089e7e5ac0a3273f00645c3dce70a89065f884fe6fca8aa758e173f3c8627ed,copy_verified_local,already in lake (hash-verified)
+e1f7315628101d97,3795187,UEFA Euro 2020,2021-07-03,ukraine,england,away,,absent,,present,83e9ebffcac03aac530854f939b9aeaec845bb1fc482426db3dddf425d630aac,copy_verified_local,already in lake (hash-verified)
+3085eceb88cfe8f6,3795220,UEFA Euro 2020,2021-07-06,italy,spain,draw,,absent,,present,0f675fb093f0fe410bad61d131d85db305513a75c9b16375d38568bd0265a070,copy_verified_local,already in lake (hash-verified)
+4414abe13948a00f,3795221,UEFA Euro 2020,2021-07-07,england,denmark,draw,,absent,,present,f75e0e782f4abbedb2823051af32e959394d826f4e12e55e526b64ccc6eefb8d,copy_verified_local,already in lake (hash-verified)
+444446337442b94d,3795506,UEFA Euro 2020,2021-07-11,italy,england,draw,,absent,,present,662e5a13d9433abb6eb573a0a9a3bf95ada7b8df94da38ce47216cf58454f25b,copy_verified_local,already in lake (hash-verified)
 1ff62c6fe0126418,3857254,FIFA World Cup 2022,2022-11-22,denmark,tunisia,draw,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,05b8584eea49fb178102bc067ccb5dad82c1c1988ec971a875a9229e27badb5a,present,05b8584eea49fb178102bc067ccb5dad82c1c1988ec971a875a9229e27badb5a,copy_verified_local,already in lake (hash-verified)
 76205345820ac452,3857255,FIFA World Cup 2022,2022-12-01,japan,spain,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,dec08979312350b0c3910b5ed15c7e4f7c10f438b733be0231d47a487b74e7a0,present,dec08979312350b0c3910b5ed15c7e4f7c10f438b733be0231d47a487b74e7a0,copy_verified_local,already in lake (hash-verified)
 c5d9d0e9055c5252,3857256,FIFA World Cup 2022,2022-12-02,serbia,switzerland,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,e1c5c6d486cac99e336669951946b5d31983b28285089470943f42d16ced7337,present,e1c5c6d486cac99e336669951946b5d31983b28285089470943f42d16ced7337,copy_verified_local,already in lake (hash-verified)
@@ -126,58 +126,58 @@ bcf259d61d29600e,3857261,FIFA World Cup 2022,2022-11-29,wales,england,away,C:\Us
 845bbf9b43596ff5,3857263,FIFA World Cup 2022,2022-11-27,spain,germany,draw,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,16617ba95154db870ba833156348acfafa037730391ec0f8fe3f2635eba135ad,present,16617ba95154db870ba833156348acfafa037730391ec0f8fe3f2635eba135ad,copy_verified_local,already in lake (hash-verified)
 3e0f1e40949cb532,3857264,FIFA World Cup 2022,2022-11-30,poland,argentina,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,b5e2357a818badd8b294b854b2b327ea7a07cdf7a627973f20a81ebf98e494ce,present,b5e2357a818badd8b294b854b2b327ea7a07cdf7a627973f20a81ebf98e494ce,copy_verified_local,already in lake (hash-verified)
 b451525e9a5c557f,3857265,FIFA World Cup 2022,2022-11-22,mexico,poland,draw,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,ed76f94790148cc865622a26fd3d29df3d5253bd04bf053c0207dc0d15e6c0a6,present,ed76f94790148cc865622a26fd3d29df3d5253bd04bf053c0207dc0d15e6c0a6,copy_verified_local,already in lake (hash-verified)
-c84e0d8dd22a6f2a,3857266,FIFA World Cup 2022,2022-11-26,france,denmark,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ec4212818042a895,3857267,FIFA World Cup 2022,2022-11-29,ecuador,senegal,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-b476398ec95c6bac,3857268,FIFA World Cup 2022,2022-11-23,belgium,canada,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-38f2e70967b6b224,3857269,FIFA World Cup 2022,2022-11-28,brazil,switzerland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3642acd96c58e22e,3857270,FIFA World Cup 2022,2022-11-28,portugal,uruguay,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-cbd2fbd2b0095660,3857271,FIFA World Cup 2022,2022-11-21,england,iran,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-143ab97c0a953a8f,3857272,FIFA World Cup 2022,2022-11-25,england,united states,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-83a40ae62a6094e8,3857273,FIFA World Cup 2022,2022-11-25,wales,iran,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-4e0564f52b59cdcf,3857274,FIFA World Cup 2022,2022-11-25,netherlands,ecuador,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f908885ce28923d9,3857275,FIFA World Cup 2022,2022-11-30,tunisia,france,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-2acfb4344f2ac1b4,3857276,FIFA World Cup 2022,2022-12-01,canada,morocco,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e5df4d83e8919315,3857277,FIFA World Cup 2022,2022-11-23,morocco,croatia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3aed18b7e70f038c,3857278,FIFA World Cup 2022,2022-11-29,iran,united states,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3e109074d37f49a2,3857279,FIFA World Cup 2022,2022-11-22,france,australia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-7901496dfdd23c75,3857280,FIFA World Cup 2022,2022-12-02,cameroon,brazil,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-eb3ce474b07a3282,3857281,FIFA World Cup 2022,2022-11-27,croatia,canada,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e58f78b0f479249f,3857282,FIFA World Cup 2022,2022-11-21,united states,wales,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e55d9393b3f48252,3857283,FIFA World Cup 2022,2022-11-27,belgium,morocco,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a2d31b1a0b71a4ca,3857284,FIFA World Cup 2022,2022-11-23,germany,japan,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-cbd089198aa68af3,3857285,FIFA World Cup 2022,2022-11-21,senegal,netherlands,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-de8988933e0474bd,3857286,FIFA World Cup 2022,2022-11-20,qatar,ecuador,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f8fa710497924140,3857287,FIFA World Cup 2022,2022-11-24,uruguay,south korea,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-0d4cf8371837520a,3857288,FIFA World Cup 2022,2022-11-26,tunisia,australia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-6c346725cac56200,3857289,FIFA World Cup 2022,2022-11-26,argentina,mexico,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9e62e55b88dc258d,3857290,FIFA World Cup 2022,2022-11-24,switzerland,cameroon,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-bbc6b2cbe59ff3ea,3857291,FIFA World Cup 2022,2022-11-23,spain,costa rica,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-7daaee98475ec516,3857292,FIFA World Cup 2022,2022-12-01,costa rica,germany,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-2755607c4622d115,3857293,FIFA World Cup 2022,2022-12-02,ghana,uruguay,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f351e87c5d11d323,3857294,FIFA World Cup 2022,2022-11-29,netherlands,qatar,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-619f68a54810c4f6,3857295,FIFA World Cup 2022,2022-11-27,japan,costa rica,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1e8def55b3f1a21e,3857296,FIFA World Cup 2022,2022-12-01,croatia,belgium,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9a5351fee156e820,3857297,FIFA World Cup 2022,2022-11-26,poland,saudi arabia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-44075a9da90df0fa,3857298,FIFA World Cup 2022,2022-11-24,portugal,ghana,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-76fa3a7afcaeba4c,3857299,FIFA World Cup 2022,2022-11-28,south korea,ghana,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-27eb904ea4d0e17c,3857300,FIFA World Cup 2022,2022-11-22,argentina,saudi arabia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9d60e92a0461cd43,3857301,FIFA World Cup 2022,2022-11-25,qatar,senegal,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1ff1dc3521f64266,3869117,FIFA World Cup 2022,2022-12-03,netherlands,united states,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1f4cf880bf3deff1,3869118,FIFA World Cup 2022,2022-12-04,england,senegal,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-b7c98632d2a8eff1,3869151,FIFA World Cup 2022,2022-12-03,argentina,australia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-71e36dcf988e8c78,3869152,FIFA World Cup 2022,2022-12-04,france,poland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9a47ce1dfd478655,3869219,FIFA World Cup 2022,2022-12-05,japan,croatia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-09e73783a3424896,3869220,FIFA World Cup 2022,2022-12-06,morocco,spain,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-2704db125d63c82b,3869253,FIFA World Cup 2022,2022-12-05,brazil,south korea,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c6557c7ac49a9505,3869254,FIFA World Cup 2022,2022-12-06,portugal,switzerland,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8f3a95924b1c901e,3869321,FIFA World Cup 2022,2022-12-09,netherlands,argentina,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f152fa355729153e,3869354,FIFA World Cup 2022,2022-12-10,england,france,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-65ae6e636ad3df75,3869420,FIFA World Cup 2022,2022-12-09,croatia,brazil,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-7d8b5113f78d2a82,3869486,FIFA World Cup 2022,2022-12-10,morocco,portugal,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-0174b58c7498fc89,3869519,FIFA World Cup 2022,2022-12-13,argentina,croatia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-edf6fd456155659a,3869552,FIFA World Cup 2022,2022-12-14,france,morocco,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e95886d7fbb294c3,3869684,FIFA World Cup 2022,2022-12-17,croatia,morocco,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-791f1fcbd9b92a78,3869685,FIFA World Cup 2022,2022-12-18,argentina,france,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
+c84e0d8dd22a6f2a,3857266,FIFA World Cup 2022,2022-11-26,france,denmark,home,,absent,,present,f375137a64c13b2c22e456fae9394bc810ca2bb98a439d94da18fea1365a98a8,copy_verified_local,already in lake (hash-verified)
+ec4212818042a895,3857267,FIFA World Cup 2022,2022-11-29,ecuador,senegal,away,,absent,,present,7c05c6fa755649d4d882f98817944d6f90613ca424af061d0cfbc080585ac95d,copy_verified_local,already in lake (hash-verified)
+b476398ec95c6bac,3857268,FIFA World Cup 2022,2022-11-23,belgium,canada,home,,absent,,present,1e9c9f2cf8b229388e826a32bb04224ab9aadb91e5aa4614ecf66cc07c6caa48,copy_verified_local,already in lake (hash-verified)
+38f2e70967b6b224,3857269,FIFA World Cup 2022,2022-11-28,brazil,switzerland,home,,absent,,present,20c7d2dd0ca6ff6dbfb5ccebfd8dfb4483783de6afded86060aa0043943e258e,copy_verified_local,already in lake (hash-verified)
+3642acd96c58e22e,3857270,FIFA World Cup 2022,2022-11-28,portugal,uruguay,home,,absent,,present,29d7a2c5f589c6fe7ffbc97ca0738d0959e900d1f0f3f488d3ff7f91f94c30fb,copy_verified_local,already in lake (hash-verified)
+cbd2fbd2b0095660,3857271,FIFA World Cup 2022,2022-11-21,england,iran,home,,absent,,present,3195e45476b96c3257e15043ac4fe17bbb640c548a4edb74d2c3b3eb8b3519e3,copy_verified_local,already in lake (hash-verified)
+143ab97c0a953a8f,3857272,FIFA World Cup 2022,2022-11-25,england,united states,draw,,absent,,present,9d560f65771f71885fb97643240f0c858d7ddd66410d7fbc6e2783533eb6919b,copy_verified_local,already in lake (hash-verified)
+83a40ae62a6094e8,3857273,FIFA World Cup 2022,2022-11-25,wales,iran,away,,absent,,present,7bee8a23bbf5bf6db47d7668289e80cf8eb4f49cab46b449073f5839b15f450b,copy_verified_local,already in lake (hash-verified)
+4e0564f52b59cdcf,3857274,FIFA World Cup 2022,2022-11-25,netherlands,ecuador,draw,,absent,,present,40f8b9d5fe6e8e2cb9ea823a99485d142a67eba46b228d237774a687ab3a9d66,copy_verified_local,already in lake (hash-verified)
+f908885ce28923d9,3857275,FIFA World Cup 2022,2022-11-30,tunisia,france,home,,absent,,present,8531cc2ce4bfab163e2660f8e5dea4f88d97794423ef3d894f789602b1fab610,copy_verified_local,already in lake (hash-verified)
+2acfb4344f2ac1b4,3857276,FIFA World Cup 2022,2022-12-01,canada,morocco,away,,absent,,present,8320cf567b912bac1ff9f5a49deb1263ba5aa2610cf6f3dcf6db60f065bf1e99,copy_verified_local,already in lake (hash-verified)
+e5df4d83e8919315,3857277,FIFA World Cup 2022,2022-11-23,morocco,croatia,draw,,absent,,present,0bb3e4c8ad11587af05ca6734d50e6f7ea883db9ff73d79540c434bc50715a0f,copy_verified_local,already in lake (hash-verified)
+3aed18b7e70f038c,3857278,FIFA World Cup 2022,2022-11-29,iran,united states,away,,absent,,present,63962cc1cc2b6b0c7e9e12e3e9e9ee855ce7036b8f0aa123e3bdd297a99ec095,copy_verified_local,already in lake (hash-verified)
+3e109074d37f49a2,3857279,FIFA World Cup 2022,2022-11-22,france,australia,home,,absent,,present,6e35ec73c164565b99684ab534efed808f23f6cb2c75842c8f2b413501ec96fb,copy_verified_local,already in lake (hash-verified)
+7901496dfdd23c75,3857280,FIFA World Cup 2022,2022-12-02,cameroon,brazil,home,,absent,,present,78ea79b4145e6d694180fe8eef748531ea96b0d75d18c1f9ccebd0228c7bf017,copy_verified_local,already in lake (hash-verified)
+eb3ce474b07a3282,3857281,FIFA World Cup 2022,2022-11-27,croatia,canada,home,,absent,,present,f99ed7e0cb4f7a9c28b05ecae768bd10812f52987060f0edb324fb77ac610375,copy_verified_local,already in lake (hash-verified)
+e58f78b0f479249f,3857282,FIFA World Cup 2022,2022-11-21,united states,wales,draw,,absent,,present,2a6d3d04b6257bfc35a2e0c5a35f05a8997a089191ce27d0c2a5f02108f3b9db,copy_verified_local,already in lake (hash-verified)
+e55d9393b3f48252,3857283,FIFA World Cup 2022,2022-11-27,belgium,morocco,away,,absent,,present,9dd25252fdcfa200588ad3b8d66b618fa6a01633d34b0327776a006ffd6ba5a3,copy_verified_local,already in lake (hash-verified)
+a2d31b1a0b71a4ca,3857284,FIFA World Cup 2022,2022-11-23,germany,japan,away,,absent,,present,669bc6550cbe4dfb70305b04b2b8eacb0de676e576c69e4be209826bb425f0c6,copy_verified_local,already in lake (hash-verified)
+cbd089198aa68af3,3857285,FIFA World Cup 2022,2022-11-21,senegal,netherlands,away,,absent,,present,b97e53a23b76d1fd7b4895cf68820539e24300e7e0032e4cfe429fca7a95b0fa,copy_verified_local,already in lake (hash-verified)
+de8988933e0474bd,3857286,FIFA World Cup 2022,2022-11-20,qatar,ecuador,away,,absent,,present,27c12e2f24a7679d7bf60690c0832e61e04e56bdf1d62323c33b93829c673ea9,copy_verified_local,already in lake (hash-verified)
+f8fa710497924140,3857287,FIFA World Cup 2022,2022-11-24,uruguay,south korea,draw,,absent,,present,5cf5213afda5d31a431fb1dc26d8f5403aea0d7f9dec82a04fe4787ef0152f2c,copy_verified_local,already in lake (hash-verified)
+0d4cf8371837520a,3857288,FIFA World Cup 2022,2022-11-26,tunisia,australia,away,,absent,,present,850f40e36dfadd46ae4660e15558308b5855406821c32d477648272e3fd6be11,copy_verified_local,already in lake (hash-verified)
+6c346725cac56200,3857289,FIFA World Cup 2022,2022-11-26,argentina,mexico,home,,absent,,present,8c0d993f9e80602812ec0e73959a4a88a617d14414a2decd3ecfbfebdfab2e08,copy_verified_local,already in lake (hash-verified)
+9e62e55b88dc258d,3857290,FIFA World Cup 2022,2022-11-24,switzerland,cameroon,home,,absent,,present,eb446ea4a6227a31b589a2c9e4b3c557a15a763723326611e1c03ec90640e97c,copy_verified_local,already in lake (hash-verified)
+bbc6b2cbe59ff3ea,3857291,FIFA World Cup 2022,2022-11-23,spain,costa rica,home,,absent,,present,85918fc69760bc1b208f5cfb49ef4f44337673558b5d1e00909844e91810a570,copy_verified_local,already in lake (hash-verified)
+7daaee98475ec516,3857292,FIFA World Cup 2022,2022-12-01,costa rica,germany,away,,absent,,present,1836a8dbdd33472eb3f1e57a898abfd9a944870e45dce8a83984445281ac2fb0,copy_verified_local,already in lake (hash-verified)
+2755607c4622d115,3857293,FIFA World Cup 2022,2022-12-02,ghana,uruguay,away,,absent,,present,a995a7ced8343eb536cbfd8cd16a42f8613312672b3485baed1d573fc2c341f7,copy_verified_local,already in lake (hash-verified)
+f351e87c5d11d323,3857294,FIFA World Cup 2022,2022-11-29,netherlands,qatar,home,,absent,,present,a5f13d9cb976c9e695ccd4ef449ff63ae1c5a1f7da2ecfb00603f23d6dc65a56,copy_verified_local,already in lake (hash-verified)
+619f68a54810c4f6,3857295,FIFA World Cup 2022,2022-11-27,japan,costa rica,away,,absent,,present,a59119793b57b85db364f1c9148f2c8ba1243555c7a25972e947b4d0aa36bb37,copy_verified_local,already in lake (hash-verified)
+1e8def55b3f1a21e,3857296,FIFA World Cup 2022,2022-12-01,croatia,belgium,draw,,absent,,present,e86579ac60aa4fec884716d3cc438610cc1a61c8453cd339c9223098be665a7c,copy_verified_local,already in lake (hash-verified)
+9a5351fee156e820,3857297,FIFA World Cup 2022,2022-11-26,poland,saudi arabia,home,,absent,,present,ba51d6820d4b5e19e3dc858d4e111b9214696c5d5ccd78eae6eb97306d26a49d,copy_verified_local,already in lake (hash-verified)
+44075a9da90df0fa,3857298,FIFA World Cup 2022,2022-11-24,portugal,ghana,home,,absent,,present,1d83208ea85fbadbacf2a8886a62a14bb5202bd57b494606b0ccdbe10709ab51,copy_verified_local,already in lake (hash-verified)
+76fa3a7afcaeba4c,3857299,FIFA World Cup 2022,2022-11-28,south korea,ghana,away,,absent,,present,b5e3534f6838cba64bcc46dfbef5bc14b768f35ad5aea2038e2990fe19c989c0,copy_verified_local,already in lake (hash-verified)
+27eb904ea4d0e17c,3857300,FIFA World Cup 2022,2022-11-22,argentina,saudi arabia,away,,absent,,present,76fa92d3cc2d235a47eed0a7a722332a7c3ec5d3386a8785102eeec69db80ee8,copy_verified_local,already in lake (hash-verified)
+9d60e92a0461cd43,3857301,FIFA World Cup 2022,2022-11-25,qatar,senegal,away,,absent,,present,6a211a48871d386e146b6cd416d47d1e94244c5798feedce121e6d169286f0a3,copy_verified_local,already in lake (hash-verified)
+1ff1dc3521f64266,3869117,FIFA World Cup 2022,2022-12-03,netherlands,united states,home,,absent,,present,1b0e02160e25013b840c716b304ba1bc7b9254cb044e2ca216d582f0ede3eaf0,copy_verified_local,already in lake (hash-verified)
+1f4cf880bf3deff1,3869118,FIFA World Cup 2022,2022-12-04,england,senegal,home,,absent,,present,b9a98ce90b475f5308bca34d6dde87f332091e61fe78d45badbf3fed53dffc9f,copy_verified_local,already in lake (hash-verified)
+b7c98632d2a8eff1,3869151,FIFA World Cup 2022,2022-12-03,argentina,australia,home,,absent,,present,0157c399b6ff7ec46b265024b5a98ee878d73a8a1a0d5966de3a3d1cfb56a414,copy_verified_local,already in lake (hash-verified)
+71e36dcf988e8c78,3869152,FIFA World Cup 2022,2022-12-04,france,poland,home,,absent,,present,750ec4a0672adb8c85e89c7bc9e150b911d21a4d2172652273094c8aa7d4c095,copy_verified_local,already in lake (hash-verified)
+9a47ce1dfd478655,3869219,FIFA World Cup 2022,2022-12-05,japan,croatia,draw,,absent,,present,717f0a1e9923bc43528546c29267c5195e071fdc3f6d63563c0d58e58fb3ec40,copy_verified_local,already in lake (hash-verified)
+09e73783a3424896,3869220,FIFA World Cup 2022,2022-12-06,morocco,spain,draw,,absent,,present,ca1d27f3a1b2454bf9d0b0b5e44aedecf01f39dde8ee1f3b6198acad3f24f966,copy_verified_local,already in lake (hash-verified)
+2704db125d63c82b,3869253,FIFA World Cup 2022,2022-12-05,brazil,south korea,home,,absent,,present,c6081e65da563f21c7f902bcf2f70d4fe26f4ac7d34a867388c1d5e6f21091d5,copy_verified_local,already in lake (hash-verified)
+c6557c7ac49a9505,3869254,FIFA World Cup 2022,2022-12-06,portugal,switzerland,home,,absent,,present,8317fefc7c2c0e4e072064b844077849856860ef81ef29c97916fd1c19ba7d44,copy_verified_local,already in lake (hash-verified)
+8f3a95924b1c901e,3869321,FIFA World Cup 2022,2022-12-09,netherlands,argentina,draw,,absent,,present,dd0472e758207eea4dc1726c778f506e91c1f630b3020b101cf111267c2621ed,copy_verified_local,already in lake (hash-verified)
+f152fa355729153e,3869354,FIFA World Cup 2022,2022-12-10,england,france,away,,absent,,present,50c32503dc49d25430e9cbf254160bce7e1c7ee0975be826dbf4da413f4c280e,copy_verified_local,already in lake (hash-verified)
+65ae6e636ad3df75,3869420,FIFA World Cup 2022,2022-12-09,croatia,brazil,draw,,absent,,present,0936838f0a1a27df11352a4b96c6265b3ef89b164ff96817e46ae6619f0ab164,copy_verified_local,already in lake (hash-verified)
+7d8b5113f78d2a82,3869486,FIFA World Cup 2022,2022-12-10,morocco,portugal,home,,absent,,present,455127b456021593874476ee8b5dad01b0166b8da814c095300b6ed608a08993,copy_verified_local,already in lake (hash-verified)
+0174b58c7498fc89,3869519,FIFA World Cup 2022,2022-12-13,argentina,croatia,home,,absent,,present,4ee7a0a1484045f49d42e74b7ca1881446ca7245087c6b6d47e536d47d58da6d,copy_verified_local,already in lake (hash-verified)
+edf6fd456155659a,3869552,FIFA World Cup 2022,2022-12-14,france,morocco,home,,absent,,present,a8d0c4c65503004d6e12403815b21f65c101b394b7b42bd6c84fc26357d3868e,copy_verified_local,already in lake (hash-verified)
+e95886d7fbb294c3,3869684,FIFA World Cup 2022,2022-12-17,croatia,morocco,home,,absent,,present,2206de792571a821d762a34c63d189db62f7a9bdacab80ef497545f4191fdd28,copy_verified_local,already in lake (hash-verified)
+791f1fcbd9b92a78,3869685,FIFA World Cup 2022,2022-12-18,argentina,france,draw,,absent,,present,a0b0036d50c10a4c8879d1ee9f24a7502ec2cfb264a61951c8d500dfc897ec35,copy_verified_local,already in lake (hash-verified)
 901470bcd2563b2e,3930158,UEFA Euro 2024,2024-06-14,germany,scotland,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,4c7412bf2e4a25d7bdf9c0e5f78fbb55c8fc30a918c68a48eb7c7a434d3e91a9,present,4c7412bf2e4a25d7bdf9c0e5f78fbb55c8fc30a918c68a48eb7c7a434d3e91a9,copy_verified_local,already in lake (hash-verified)
 463b3347c07fbe29,3930159,UEFA Euro 2024,2024-06-15,hungary,switzerland,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,694c7c4422592ee3a38a1f6375004d23355d40f8918c705a9df967e063dcce40,present,694c7c4422592ee3a38a1f6375004d23355d40f8918c705a9df967e063dcce40,copy_verified_local,already in lake (hash-verified)
 e2262bef106494c2,3930160,UEFA Euro 2024,2024-06-15,spain,croatia,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,e04ef2100f09adeab65d8a63c389fbf9487323223f9027b12abbeb4b577b8790,present,e04ef2100f09adeab65d8a63c389fbf9487323223f9027b12abbeb4b577b8790,copy_verified_local,already in lake (hash-verified)
@@ -190,30 +190,30 @@ ecce8eda1ce69aec,3930164,UEFA Euro 2024,2024-06-17,belgium,slovakia,away,C:\User
 91d242e43b94a51b,3930167,UEFA Euro 2024,2024-06-19,croatia,albania,draw,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,4dbd82ba45e05f8b3ec16965f221fcbf6b788256ee49419c15bab3fbbf8048f8,present,4dbd82ba45e05f8b3ec16965f221fcbf6b788256ee49419c15bab3fbbf8048f8,copy_verified_local,already in lake (hash-verified)
 933ad0861319329a,3930168,UEFA Euro 2024,2024-06-19,germany,hungary,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,c125d9215805fbf285226b89e5de5b87376111a7a969eaf4de3d01be69bf6272,present,c125d9215805fbf285226b89e5de5b87376111a7a969eaf4de3d01be69bf6272,copy_verified_local,already in lake (hash-verified)
 05be85369a0fd426,3930169,UEFA Euro 2024,2024-06-19,scotland,switzerland,draw,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,07b490aeec4ea23dd77c05351f0d846e2ad8210d1cf40458b63d9a3c0aef137c,present,07b490aeec4ea23dd77c05351f0d846e2ad8210d1cf40458b63d9a3c0aef137c,copy_verified_local,already in lake (hash-verified)
-7cd23e47ce94ede9,3930170,UEFA Euro 2024,2024-06-20,slovenia,serbia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-7fa0c378b70468da,3930171,UEFA Euro 2024,2024-06-20,denmark,england,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-d022a76d1d941a6d,3930172,UEFA Euro 2024,2024-06-20,spain,italy,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c5e7b1a6415eafcb,3930173,UEFA Euro 2024,2024-06-21,netherlands,france,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-21521cc4602267c6,3930174,UEFA Euro 2024,2024-06-22,turkey,portugal,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e9f01f262d3852ff,3930175,UEFA Euro 2024,2024-06-22,belgium,romania,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-d5402ef8201e2882,3930176,UEFA Euro 2024,2024-06-23,switzerland,germany,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-bf32aee612717858,3930177,UEFA Euro 2024,2024-06-23,scotland,hungary,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-93958cb48d32258a,3930178,UEFA Euro 2024,2024-06-24,croatia,italy,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1eb022811b52b719,3930179,UEFA Euro 2024,2024-06-24,albania,spain,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-0b7a7d59ed708a05,3930180,UEFA Euro 2024,2024-06-25,netherlands,austria,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-49b432d62327a813,3930181,UEFA Euro 2024,2024-06-25,england,slovenia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3662a6c847f39b99,3930182,UEFA Euro 2024,2024-06-25,denmark,serbia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c9f12ac69e936693,3930183,UEFA Euro 2024,2024-06-26,slovakia,romania,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ee100a19ad574934,3930184,UEFA Euro 2024,2024-06-26,czech republic,turkey,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-553d4743abc853ef,3938637,UEFA Euro 2024,2024-06-16,poland,netherlands,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3e24f1d141195032,3938638,UEFA Euro 2024,2024-06-17,romania,ukraine,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-4f4128828d4243c9,3938639,UEFA Euro 2024,2024-06-18,turkey,georgia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e959fc425e0807f5,3938640,UEFA Euro 2024,2024-06-21,slovakia,ukraine,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-f8c09cb5d0ea353d,3938641,UEFA Euro 2024,2024-06-21,poland,austria,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c3ebf9bf43e16591,3938642,UEFA Euro 2024,2024-06-22,georgia,czech republic,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-79e24f7f956f698e,3938643,UEFA Euro 2024,2024-06-25,france,poland,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-d53171dd4f0dc302,3938644,UEFA Euro 2024,2024-06-26,georgia,portugal,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a063d666311122e1,3938645,UEFA Euro 2024,2024-06-26,ukraine,belgium,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
+7cd23e47ce94ede9,3930170,UEFA Euro 2024,2024-06-20,slovenia,serbia,draw,,absent,,present,3d0641d64fd8c76ef7797902405ef68178488c754518ad52d42597d09a05699c,copy_verified_local,already in lake (hash-verified)
+7fa0c378b70468da,3930171,UEFA Euro 2024,2024-06-20,denmark,england,draw,,absent,,present,d4f834a5c560f9af3095351aaaf5f308dde96fae230a00da788b468e18606d7f,copy_verified_local,already in lake (hash-verified)
+d022a76d1d941a6d,3930172,UEFA Euro 2024,2024-06-20,spain,italy,home,,absent,,present,abf0a997a0723ad593eee176d4dff387a1e72ce95093942dd47125a4d783b9c3,copy_verified_local,already in lake (hash-verified)
+c5e7b1a6415eafcb,3930173,UEFA Euro 2024,2024-06-21,netherlands,france,draw,,absent,,present,acf4f80fdf726920ccfed08359e8b6853da676abb9f5e9b8cc3b26c387d69f1a,copy_verified_local,already in lake (hash-verified)
+21521cc4602267c6,3930174,UEFA Euro 2024,2024-06-22,turkey,portugal,away,,absent,,present,eb07ab0fe87cd5ecf06863ecf4d1ff878d5b23dbdf808fb7742c14b7e5cc6a80,copy_verified_local,already in lake (hash-verified)
+e9f01f262d3852ff,3930175,UEFA Euro 2024,2024-06-22,belgium,romania,home,,absent,,present,47ca0ed1482c400b7cbb4abd8dbe00791f68f50a765f4019ee47080bcfda79f4,copy_verified_local,already in lake (hash-verified)
+d5402ef8201e2882,3930176,UEFA Euro 2024,2024-06-23,switzerland,germany,draw,,absent,,present,7f4043b0afe1a97ce5c47a674c56edf8cc9d02773a9b0cf38419b6c1cd423cdd,copy_verified_local,already in lake (hash-verified)
+bf32aee612717858,3930177,UEFA Euro 2024,2024-06-23,scotland,hungary,away,,absent,,present,3f996dc352237a3260abdc128099c554d49bdbf64e27250647b072ceaa370bb2,copy_verified_local,already in lake (hash-verified)
+93958cb48d32258a,3930178,UEFA Euro 2024,2024-06-24,croatia,italy,draw,,absent,,present,c30cf383f2c3f85ce28dff572cdc8d8d1a51217755a70a05090ef36e90ba801a,copy_verified_local,already in lake (hash-verified)
+1eb022811b52b719,3930179,UEFA Euro 2024,2024-06-24,albania,spain,away,,absent,,present,a65d0878381a7acdaebc74ad937f6451c4c1ddd6f47ae08abaf018867fdf47c6,copy_verified_local,already in lake (hash-verified)
+0b7a7d59ed708a05,3930180,UEFA Euro 2024,2024-06-25,netherlands,austria,away,,absent,,present,aff9750bc5b7223c89c805e048d412616e627f45378ded0ac79f642e498f5b3b,copy_verified_local,already in lake (hash-verified)
+49b432d62327a813,3930181,UEFA Euro 2024,2024-06-25,england,slovenia,draw,,absent,,present,3cf0b798289f035d0880f789126b1eee83cd947280d16488ba62978b69c294c7,copy_verified_local,already in lake (hash-verified)
+3662a6c847f39b99,3930182,UEFA Euro 2024,2024-06-25,denmark,serbia,draw,,absent,,present,48cd23ecd5e033fb3a5d3084757a833fe024d26ff02ee05ff206e2577027e768,copy_verified_local,already in lake (hash-verified)
+c9f12ac69e936693,3930183,UEFA Euro 2024,2024-06-26,slovakia,romania,draw,,absent,,present,d9127adb5f8ca29137912a8d30744496e011599fdfcdae41434a937ceb39ca80,copy_verified_local,already in lake (hash-verified)
+ee100a19ad574934,3930184,UEFA Euro 2024,2024-06-26,czech republic,turkey,away,,absent,,present,b32ec79b13e1a1606634f677bd7713ad272bbe38e9c7ef955d6237ac1b689765,copy_verified_local,already in lake (hash-verified)
+553d4743abc853ef,3938637,UEFA Euro 2024,2024-06-16,poland,netherlands,away,,absent,,present,031b6bcc24b43b9d5e0ef444f65db4dba2f7504391532eafe891ecd1e7ad6130,copy_verified_local,already in lake (hash-verified)
+3e24f1d141195032,3938638,UEFA Euro 2024,2024-06-17,romania,ukraine,home,,absent,,present,b642135a6ac4e0b10c5a96d26498eb1d9a7a3c00abc2cef989f873bbc4cccfef,copy_verified_local,already in lake (hash-verified)
+4f4128828d4243c9,3938639,UEFA Euro 2024,2024-06-18,turkey,georgia,home,,absent,,present,328aca7629193a2780f449d0026e8d356096fc20b47a0305219c192fe661c15f,copy_verified_local,already in lake (hash-verified)
+e959fc425e0807f5,3938640,UEFA Euro 2024,2024-06-21,slovakia,ukraine,away,,absent,,present,eb9e13650dcab1bc41738f5b9577377b5e3c55c9528fcfbaf947dd28a62d9975,copy_verified_local,already in lake (hash-verified)
+f8c09cb5d0ea353d,3938641,UEFA Euro 2024,2024-06-21,poland,austria,away,,absent,,present,6ca66b263f739a45abb783ea10f8d4ba7ca58e4634fbdde0fbbf557328e9ab48,copy_verified_local,already in lake (hash-verified)
+c3ebf9bf43e16591,3938642,UEFA Euro 2024,2024-06-22,georgia,czech republic,draw,,absent,,present,a370edcf9fc4d809314c3768579eee2926e7136a4e1a9eec618749fd1171766e,copy_verified_local,already in lake (hash-verified)
+79e24f7f956f698e,3938643,UEFA Euro 2024,2024-06-25,france,poland,draw,,absent,,present,6dfb69ed3be4797cb610756c07e72e81c86c211479b3ff16fa668d73141581ea,copy_verified_local,already in lake (hash-verified)
+d53171dd4f0dc302,3938644,UEFA Euro 2024,2024-06-26,georgia,portugal,home,,absent,,present,e3505f31e5ecb6ea6b94514dccdff7c63d82ec2e4244dff40b91dabe8f1b1494,copy_verified_local,already in lake (hash-verified)
+a063d666311122e1,3938645,UEFA Euro 2024,2024-06-26,ukraine,belgium,draw,,absent,,present,f93b68287bf0c334574d8331c8bf298db1ebb363b6e8d764f3872d64a0e9a1bf,copy_verified_local,already in lake (hash-verified)
 1ebe7b16da5e5531,3939969,Copa America 2024,2024-06-21,argentina,canada,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,eed071b6914cb1cffd6d0dc4ae55611ac06681c76f14c9cc711e614118f86cba,present,eed071b6914cb1cffd6d0dc4ae55611ac06681c76f14c9cc711e614118f86cba,copy_verified_local,already in lake (hash-verified)
 f1977ba28c990cde,3939970,Copa America 2024,2024-06-22,peru,chile,draw,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,3ff13c7e6a78f272d1d9af9dbad88c1607911a149b88b70c0464479bd72a6a27,present,3ff13c7e6a78f272d1d9af9dbad88c1607911a149b88b70c0464479bd72a6a27,copy_verified_local,already in lake (hash-verified)
 10936c18cfb16b02,3939971,Copa America 2024,2024-06-23,mexico,jamaica,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,91beb2897804fbd30457b8e99da404ef8797fa62c6af8d938868c229081cbb83,present,91beb2897804fbd30457b8e99da404ef8797fa62c6af8d938868c229081cbb83,copy_verified_local,already in lake (hash-verified)
@@ -225,35 +225,35 @@ ca8d6668edf96f72,3939973,Copa America 2024,2024-06-24,uruguay,panama,home,C:\Use
 4dcf1c7ae59a84d3,3939977,Copa America 2024,2024-06-26,chile,argentina,away,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,ad7a12a4efbaee99c291851648c36daf7c1fb97ada69ced7b60fdce102e15c14,present,ad7a12a4efbaee99c291851648c36daf7c1fb97ada69ced7b60fdce102e15c14,copy_verified_local,already in lake (hash-verified)
 5b2434fd8dc86d6f,3939979,Copa America 2024,2024-06-27,venezuela,mexico,home,C:\Users\Mahyar\worldcup-player-impact-xg\data\raw\statsbomb_open\events,valid,e5a22122a712640553dc25befa86f87a8b41ec5c509df717ee9b8e2bb15ccbcb,present,e5a22122a712640553dc25befa86f87a8b41ec5c509df717ee9b8e2bb15ccbcb,copy_verified_local,already in lake (hash-verified)
 df8a7eaa69b23a42,3939982,Copa America 2024,2024-06-28,uruguay,bolivia,home,,absent,,present,8814ca7746ff1dd8742df9cd672726a4dfaccbba068c06ff76bd9ba8218984a7,copy_verified_local,already in lake (hash-verified)
-afc42981d8a96b36,3939983,Copa America 2024,2024-06-29,paraguay,brazil,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ac1085e2a79d06d4,3939985,Copa America 2024,2024-06-30,canada,chile,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-54de3e7d0882d085,3939986,Copa America 2024,2024-06-30,argentina,peru,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-d6692947c2f3625b,3939987,Copa America 2024,2024-07-01,jamaica,venezuela,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3fc376fbaf125737,3939988,Copa America 2024,2024-07-01,mexico,ecuador,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-fe68285d6f64a140,3939989,Copa America 2024,2024-07-02,bolivia,panama,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9a33a8f0c533cfae,3939990,Copa America 2024,2024-07-02,united states,uruguay,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8e2dfdabd76452d2,3939991,Copa America 2024,2024-07-03,brazil,colombia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-a7b9945d76e65bf7,3939992,Copa America 2024,2024-07-03,costa rica,paraguay,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c9c9cbc3d831c631,3940878,UEFA Euro 2024,2024-06-29,switzerland,italy,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-687c691c2b8369f2,3940983,UEFA Euro 2024,2024-06-29,germany,denmark,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-b8eb5c3dcb2671fb,3941017,UEFA Euro 2024,2024-06-30,england,slovakia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-8773d0c64a2423f6,3941018,UEFA Euro 2024,2024-06-30,spain,georgia,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-e461f167bfc64cd0,3941019,UEFA Euro 2024,2024-07-01,france,belgium,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ac2bf4123937150d,3941020,UEFA Euro 2024,2024-07-01,portugal,slovenia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-594c5681ad2be2cf,3941021,UEFA Euro 2024,2024-07-02,romania,netherlands,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-fe591fc1e2718624,3941022,UEFA Euro 2024,2024-07-02,austria,turkey,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c1038f55c8611d63,3942226,UEFA Euro 2024,2024-07-05,spain,germany,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-9bd0a75a792cf0cd,3942227,UEFA Euro 2024,2024-07-06,england,switzerland,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-ad96917c0fc04ca3,3942228,Copa America 2024,2024-07-05,argentina,ecuador,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-3c90b05847d1900a,3942229,Copa America 2024,2024-07-06,venezuela,canada,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-36385acc74330aa7,3942349,UEFA Euro 2024,2024-07-05,portugal,france,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-b0b7f393b9c7481e,3942382,UEFA Euro 2024,2024-07-06,netherlands,turkey,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-d642fca9d1dbd9db,3942415,Copa America 2024,2024-07-07,uruguay,brazil,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-96bdddf68572d5ab,3942416,Copa America 2024,2024-07-06,colombia,panama,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-5bfd72b5714436b8,3942752,UEFA Euro 2024,2024-07-09,spain,france,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-1afca37c0f2ba701,3942785,Copa America 2024,2024-07-10,argentina,canada,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-b2988601384b49c0,3942819,UEFA Euro 2024,2024-07-10,netherlands,england,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-d7249cc880aec558,3942852,Copa America 2024,2024-07-11,uruguay,colombia,away,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-c8d894f5a38c804e,3943043,UEFA Euro 2024,2024-07-14,spain,england,home,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-6e79d8c8214586e3,3943076,Copa America 2024,2024-07-14,canada,uruguay,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
-fee5e18d7236022e,3943077,Copa America 2024,2024-07-15,argentina,colombia,draw,,absent,,absent,,retrieve_official,no valid local file; fetch from official open-data
+afc42981d8a96b36,3939983,Copa America 2024,2024-06-29,paraguay,brazil,away,,absent,,present,2ac8b0506266174bb0714b9f47af9bd4c7375341a91cefb9cb44afe47dbef90e,copy_verified_local,already in lake (hash-verified)
+ac1085e2a79d06d4,3939985,Copa America 2024,2024-06-30,canada,chile,draw,,absent,,present,acd1aa28c321c73376fb219bce851fc45be80e7011e5e85be5b3c18f1c838725,copy_verified_local,already in lake (hash-verified)
+54de3e7d0882d085,3939986,Copa America 2024,2024-06-30,argentina,peru,home,,absent,,present,22c6fc3e612c55c1ffb38aea6e2dcfcb082fe2f87f92c90e0b8e60b256b762c0,copy_verified_local,already in lake (hash-verified)
+d6692947c2f3625b,3939987,Copa America 2024,2024-07-01,jamaica,venezuela,away,,absent,,present,92dabf7ae0ca582f39de40e4722f1ad9c03bce5628c65daaefcc08beb643a96f,copy_verified_local,already in lake (hash-verified)
+3fc376fbaf125737,3939988,Copa America 2024,2024-07-01,mexico,ecuador,draw,,absent,,present,a976a32f41f8f834ed06fd0e60707839e025d6d7e762a326120c4da77e911dfe,copy_verified_local,already in lake (hash-verified)
+fe68285d6f64a140,3939989,Copa America 2024,2024-07-02,bolivia,panama,away,,absent,,present,27defc76db6f75e04a6af93bf263b68947c0cb39415ce68ce1a476d1e61af595,copy_verified_local,already in lake (hash-verified)
+9a33a8f0c533cfae,3939990,Copa America 2024,2024-07-02,united states,uruguay,away,,absent,,present,74c888c020433f4590214574232bfe1fc4b621271525a69abcb5e781bd5e11aa,copy_verified_local,already in lake (hash-verified)
+8e2dfdabd76452d2,3939991,Copa America 2024,2024-07-03,brazil,colombia,draw,,absent,,present,88a75f5a8987ffa7243f5c736f549365add9d97f15c84e72f6896e67a7c811ab,copy_verified_local,already in lake (hash-verified)
+a7b9945d76e65bf7,3939992,Copa America 2024,2024-07-03,costa rica,paraguay,home,,absent,,present,2a37e893081a5e62cb9ddc6e185698657d23cc41b6402fb9f2bb3b28bb1b000b,copy_verified_local,already in lake (hash-verified)
+c9c9cbc3d831c631,3940878,UEFA Euro 2024,2024-06-29,switzerland,italy,home,,absent,,present,3fcb21720b9df15390e996f76f2e8713e6756aeedd502b62a5ea5bd955351a60,copy_verified_local,already in lake (hash-verified)
+687c691c2b8369f2,3940983,UEFA Euro 2024,2024-06-29,germany,denmark,home,,absent,,present,e46855568db36550730428cbdf0251716d8e6768639482ad9c56ce0c1d5c377f,copy_verified_local,already in lake (hash-verified)
+b8eb5c3dcb2671fb,3941017,UEFA Euro 2024,2024-06-30,england,slovakia,draw,,absent,,present,45b618a2b04258310bb696370b83251ec79846783eac7c0e9ac9e2be7f90c07e,copy_verified_local,already in lake (hash-verified)
+8773d0c64a2423f6,3941018,UEFA Euro 2024,2024-06-30,spain,georgia,home,,absent,,present,62f65d56f69ce4ed8e9d7950d0c8897acbcac9db318e7abbe469c1f77f698aad,copy_verified_local,already in lake (hash-verified)
+e461f167bfc64cd0,3941019,UEFA Euro 2024,2024-07-01,france,belgium,home,,absent,,present,3d2e6e72f95bf7c4aca447f8e8c082ada20f5fc78a64a4ea50456a8159f29428,copy_verified_local,already in lake (hash-verified)
+ac2bf4123937150d,3941020,UEFA Euro 2024,2024-07-01,portugal,slovenia,draw,,absent,,present,fed12f03582eb53308e6f831130e81924d17023f29b199e28e3672812f5cb696,copy_verified_local,already in lake (hash-verified)
+594c5681ad2be2cf,3941021,UEFA Euro 2024,2024-07-02,romania,netherlands,away,,absent,,present,63913270d365347be4367a699cf6c8e77225cb4fd8e5cb4d8a33063244f6fe9e,copy_verified_local,already in lake (hash-verified)
+fe591fc1e2718624,3941022,UEFA Euro 2024,2024-07-02,austria,turkey,away,,absent,,present,6d8a1604a6db456e98279f1cb31cd4f556bb55bd6534bed18e293ca7e70246a5,copy_verified_local,already in lake (hash-verified)
+c1038f55c8611d63,3942226,UEFA Euro 2024,2024-07-05,spain,germany,draw,,absent,,present,e4e0aba5eecdc7d136a54173fc5a3a51b3f179efc5e815be3aa8291e0ae5437c,copy_verified_local,already in lake (hash-verified)
+9bd0a75a792cf0cd,3942227,UEFA Euro 2024,2024-07-06,england,switzerland,draw,,absent,,present,b0bc13e5fa3b548afe8a8435ca932f304fd9d8bb994df51882d54ddaa766a6be,copy_verified_local,already in lake (hash-verified)
+ad96917c0fc04ca3,3942228,Copa America 2024,2024-07-05,argentina,ecuador,draw,,absent,,present,c4351fa3dc66fc0598d13a49f0a29fb421695ae0c8c84f872b9666b96fcac6c2,copy_verified_local,already in lake (hash-verified)
+3c90b05847d1900a,3942229,Copa America 2024,2024-07-06,venezuela,canada,draw,,absent,,present,fdc8e3adddc944113ceb96e3306d484c79da63be70afc4a44cbdaf3b9c2c7916,copy_verified_local,already in lake (hash-verified)
+36385acc74330aa7,3942349,UEFA Euro 2024,2024-07-05,portugal,france,draw,,absent,,present,331477f8fb6adc208588a20bc7329ba00396ae3f711bd91b441feaacf96e626a,copy_verified_local,already in lake (hash-verified)
+b0b7f393b9c7481e,3942382,UEFA Euro 2024,2024-07-06,netherlands,turkey,home,,absent,,present,31a3da99f63c52f83d69e5cdf2b26c14851da6d51765320d95f80b85b50a0a5f,copy_verified_local,already in lake (hash-verified)
+d642fca9d1dbd9db,3942415,Copa America 2024,2024-07-07,uruguay,brazil,draw,,absent,,present,78089410909caae6c1276552bc2edc9cad0d6b2c72fdee5bec8e81065324fe2e,copy_verified_local,already in lake (hash-verified)
+96bdddf68572d5ab,3942416,Copa America 2024,2024-07-06,colombia,panama,home,,absent,,present,b3fdfb80cf3b823dc107936813c10cf9d11b599effbeba5e3cb4a0ed1b86f6d6,copy_verified_local,already in lake (hash-verified)
+5bfd72b5714436b8,3942752,UEFA Euro 2024,2024-07-09,spain,france,home,,absent,,present,2422cf9024265c773c1002e51a707db15d2b890c3851a9321ffbeb0c23c5b72d,copy_verified_local,already in lake (hash-verified)
+1afca37c0f2ba701,3942785,Copa America 2024,2024-07-10,argentina,canada,home,,absent,,present,8a56b1dde37647e5d7a1d5002c4cde562792af3d9be2dbc754925095dc86d7c8,copy_verified_local,already in lake (hash-verified)
+b2988601384b49c0,3942819,UEFA Euro 2024,2024-07-10,netherlands,england,away,,absent,,present,5bf91f83b4ea6e5fa6fd3207c347b65ccce5124ae2040689509895ef5c0ab1b5,copy_verified_local,already in lake (hash-verified)
+d7249cc880aec558,3942852,Copa America 2024,2024-07-11,uruguay,colombia,away,,absent,,present,ddebbd268782a200f9a34eb12c81b25d47b0743dbd8be3ebbb6ef970b6eeff83,copy_verified_local,already in lake (hash-verified)
+c8d894f5a38c804e,3943043,UEFA Euro 2024,2024-07-14,spain,england,home,,absent,,present,cd6ab2cf6c129cdc35d43242006582f69f6419d9041dd417405171f91ab26989,copy_verified_local,already in lake (hash-verified)
+6e79d8c8214586e3,3943076,Copa America 2024,2024-07-14,canada,uruguay,draw,,absent,,present,e0429cc38678af4367f3ad31804bf21a3d80e9103aedaa7d95724784ced8a05e,copy_verified_local,already in lake (hash-verified)
+fee5e18d7236022e,3943077,Copa America 2024,2024-07-15,argentina,colombia,draw,,absent,,present,5da668d7a7c199f59dfa30c3d32c076957b89b890d4b67907a8e60b7f833a677,copy_verified_local,already in lake (hash-verified)

@@ -3,21 +3,21 @@
 _research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible_
 
 - Independent unit: **MATCH** (snapshot-clustered)
-- Observed matches (M): 56  |  tournaments: 5  |  matches/tournament: 11.2
+- Observed matches (M): 231  |  tournaments: 5  |  matches/tournament: 46.2
 - Reference R0: `research.event_process.e2`  |  candidate template: `research.event_process.e7`
-- Observed mean paired delta (e7 - e2): 0.02190  (sd 0.10000)
-- R0 mean per-match RPS: 0.14180178353219738  |  candidate mean per-match RPS: 0.16370586931875897
+- Observed mean paired delta (e7 - e2): -0.00275  (sd 0.05933)
+- R0 mean per-match RPS: 0.1415583980287633  |  candidate mean per-match RPS: 0.13880670595984546
 
 ## Current power at observed M (per absolute RPS gain)
 
 | abs RPS gain | power @ M |
 |---|---|
-| 0.0005 | 0.033 |
-| 0.0010 | 0.027 |
-| 0.0020 | 0.047 |
-| 0.0030 | 0.047 |
-| 0.0050 | 0.093 |
-| 0.0100 | 0.127 |
+| 0.0005 | 0.040 |
+| 0.0010 | 0.052 |
+| 0.0020 | 0.100 |
+| 0.0030 | 0.133 |
+| 0.0050 | 0.280 |
+| 0.0100 | 0.705 |
 
 ## Matches needed for target power
 
@@ -26,9 +26,9 @@ _research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eli
 | 0.0005 | None | None | None |
 | 0.0010 | None | None | None |
 | 0.0020 | None | None | None |
-| 0.0030 | None | None | None |
-| 0.0050 | 2000 | None | None |
-| 0.0100 | 500 | 800 | 1200 |
+| 0.0030 | 2000 | None | None |
+| 0.0050 | 800 | 1200 | 2000 |
+| 0.0100 | 200 | 500 | 500 |
 
 ## Tournaments needed for target power (at observed matches/tournament)
 
@@ -37,26 +37,26 @@ _research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eli
 | 0.0005 | None | None | None |
 | 0.0010 | None | None | None |
 | 0.0020 | None | None | None |
-| 0.0030 | None | None | None |
-| 0.0050 | 178.57 | None | None |
-| 0.0100 | 44.64 | 71.43 | 107.14 |
+| 0.0030 | 43.29 | None | None |
+| 0.0050 | 17.32 | 25.97 | 43.29 |
+| 0.0100 | 4.33 | 10.82 | 10.82 |
 
 ## Lever: more snapshots, SAME matches (clustering ceiling)
-- gain 0.0010: power 0.043 -> 0.043 (delta +0.000) — adding snapshots to the same matches does not add power
-- gain 0.0030: power 0.060 -> 0.060 (delta +0.000) — adding snapshots to the same matches does not add power
+- gain 0.0010: power 0.058 -> 0.058 (delta +0.000) — adding snapshots to the same matches does not add power
+- gain 0.0030: power 0.140 -> 0.140 (delta +0.000) — adding snapshots to the same matches does not add power
 
 ## Lever: coverage / imbalance (drop to 60% coverage floor)
-- gain 0.0005: power 0.033 (M=56) -> 0.053 (M=34)
-- gain 0.001: power 0.027 (M=56) -> 0.030 (M=34)
-- gain 0.002: power 0.047 (M=56) -> 0.030 (M=34)
-- gain 0.003: power 0.047 (M=56) -> 0.060 (M=34)
-- gain 0.005: power 0.093 (M=56) -> 0.093 (M=34)
-- gain 0.01: power 0.127 (M=56) -> 0.107 (M=34)
+- gain 0.0005: power 0.040 (M=231) -> 0.040 (M=139)
+- gain 0.001: power 0.052 (M=231) -> 0.050 (M=139)
+- gain 0.002: power 0.100 (M=231) -> 0.068 (M=139)
+- gain 0.003: power 0.133 (M=231) -> 0.135 (M=139)
+- gain 0.005: power 0.280 (M=231) -> 0.198 (M=139)
+- gain 0.01: power 0.705 (M=231) -> 0.492 (M=139)
 
 ## Power-estimate uncertainty (independent RNG streams)
-- gain 0.0010: mean 0.037 [0.030, 0.047] over 5 streams
-- gain 0.0030: mean 0.049 [0.043, 0.060] over 5 streams
-- gain 0.0050: mean 0.067 [0.050, 0.077] over 5 streams
+- gain 0.0010: mean 0.057 [0.048, 0.077] over 5 streams
+- gain 0.0030: mean 0.135 [0.110, 0.175] over 5 streams
+- gain 0.0050: mean 0.268 [0.215, 0.300] over 5 streams
 
-_Deterministic; master_seed=20260628, n_outer=300, b_inner=300._
+_Deterministic; master_seed=20260628, n_outer=400, b_inner=400._
 

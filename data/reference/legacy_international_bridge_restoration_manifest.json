@@ -1,12 +1,11 @@
 {
  "schema_version": "legacy_international_bridge_restoration_v1",
- "run_id": "legacy_restoration_20260628T064434Z",
- "built_ts": "2026-06-28T06:44:35Z",
+ "run_id": "legacy_restoration_20260628T071033Z",
+ "built_ts": "2026-06-28T07:10:35Z",
  "legacy_bridge_rows": 258,
- "lake_objects_present": 60,
+ "lake_objects_present": 258,
  "decision_counts": {
-  "copy_verified_local": 60,
-  "retrieve_official": 198
+  "copy_verified_local": 258
  },
  "rows": [
   {
@@ -228,10 +227,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "ed25888e92193f0394e121a9101c4d3a7607a225b4c7416c9b13a647b54b9584",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "420895e961137fae",
@@ -244,10 +243,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "bf413501a7245ad9f69dbfc51b038b92457345a47f363d594887d6987ccf5e90",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8977cdf712634365",
@@ -260,10 +259,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a71116f175234e1696cf28cc5e5123eceae8f224ae837226c01b785d552059e0",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "412797e5b4bdb3c4",
@@ -276,10 +275,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "c4309dfb9ad2a13b93f296fd98758fd0e1afae531b5580097fe21bbe9279cfb8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1a98b6655189d73e",
@@ -292,10 +291,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f4512ba549a1c4704cf650e509d922284754b1ef51879eb91da24c6ba294d868",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "441351b0b4514309",
@@ -308,10 +307,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "5fd54c82f9f84d9b2b1d3f198d5b1f82c6752574ea6533acc22f93f53c286879",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "aa09afc193098b88",
@@ -324,10 +323,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "c1cdb35444c8a353bc9e2663ea578821ef6499d593e1764f4bb34823e7a751b8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3d0a422c8a1f2290",
@@ -340,10 +339,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "60f334286e04a6575ca8db14c7177abcc5bd2505d10070c1e36138f32def14a1",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "975202267ca7c32a",
@@ -356,10 +355,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "92c978cd230d5ef10df7f843b3526f6ad6f4350b113d84d252b3e347df6ae253",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "0f2290227074ca48",
@@ -372,10 +371,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b15a39d3338316a7ef07902ae43261259e6865ae59b4f26d2f6516e58ff90226",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "4b1928632b27457b",
@@ -388,10 +387,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "504191e8c993c96e4e1b69141a74e46b71266b9252f550a8aaf737048af4798f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e387278cd2444a71",
@@ -404,10 +403,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "31cb3931c4ceb69bc6df24c68f4572229b57f751e813494f1fe109359e4b5439",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a35916e7737bcfb0",
@@ -420,10 +419,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "20520d4bb5b6820dfe2c8ebb6fc651217721747638fe86647a9c4c8e772167ac",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "6dc2dd9a2dfc0817",
@@ -436,10 +435,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "ea3aea09aa464da831487d412548fe033625fd913bbb918c76469d0c2b355acd",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ccf27d0f02109418",
@@ -452,10 +451,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "2eb87c884c49202ff395d0614444f2592efc84f6e3ae10a5634c18bc12fc2089",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "67be4ec49ed58f04",
@@ -468,10 +467,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f2caf0325cf34afd47af2c8d0740a42bb3246b9f28069ed137b66da6fe781c8f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "43a67733ee5afdc6",
@@ -484,10 +483,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "993a23a8652d8e78581831cfa5c291e55e60fda9058b3b7944441d5a8506439b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ad6ba991b03c214a",
@@ -500,10 +499,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b863dad8dd9d75f136afccfd5b71160e3d73f0536962481b6a195c04cd7a2038",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c50a844f4ec1baba",
@@ -516,10 +515,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "1833d363a3d7839c38a87035d8be17574f79f2fcd4d7b1368716fdbe21c5d560",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "6e2696e0d71b3951",
@@ -532,10 +531,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "20b6ca18e502f55801e9d0de5a5e476886e53ccec71a7c5026bb901d931ad7e1",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "71eaaa5cfe6d560f",
@@ -548,10 +547,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f95f4a023ca825311e94cefef5fdb00ccfc8cdd70672e9bd21aecbd5cb143761",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3dd4268c82d98634",
@@ -564,10 +563,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "85b6e7448441d4843805091198cf0a07ac8c441e28058f4f7a91ae68409e6d0a",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "cbad7b2d42a4efad",
@@ -580,10 +579,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "098b337d5fe5e0ab65acf3eb622f6b5b8c800ac8e2e89cc4ffd5614b1777c003",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "2f0d7b27f11d7b31",
@@ -596,10 +595,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "24a91a7964cd9b75effb9181fb4287878d9d1749b99bdf0f3a749ab305a1a5a7",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "2280285b491f0550",
@@ -612,10 +611,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "e5b6946b810598b946b8263230e7a5464207fae423c351cf8f9244ea7882f16f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "cd1d40a7249a6be6",
@@ -628,10 +627,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "2139ee5a437a66b53a23b5ad7522962dab41eb807fe6ac5926a9506fb14e6d0b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "5b60388ec70078a5",
@@ -644,10 +643,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "30ea0f1dff7bf66c4b2c58b2fd73ba4bf11eec66061c849333c3eaf780e0b553",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8e5fc30ead1a08c7",
@@ -660,10 +659,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "df6e2bc09e75526f8afa13f01c435aff16a21b5ce79e2e3480dcd7f076d8e23d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "532976e6868bd263",
@@ -676,10 +675,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "22a4bc3f31e7a1d79bd8975ab9e6c2b4ae0798e64c8d6a194b6c9455747d0825",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "fddf2d295da8c1f0",
@@ -692,10 +691,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b9e70d1891617c960d2212a63d7703d5a9418c275cc35634197249579548b5e8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1bb2b14f977be084",
@@ -708,10 +707,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "dea2396406e4fd1e72fbf7ad8eb1e3da666faf2555253a0e589ea1997e3eac84",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ec646708dacef441",
@@ -724,10 +723,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "5e019e3e70721bb14b501dc75c05f8de47361084b8f3750708a3073d47d4852f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a17a50b50f5f2954",
@@ -740,10 +739,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f1b386d53625b1c118cca037ef8dd39b100ce6eb3c6d4c839506cedfc401db79",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e4ef7f1c119c402f",
@@ -756,10 +755,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "12f628a05b12a15d0ed4721e9ef1ea0775db74fe8ad40ffeac0119644ee9ebf1",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a429a0ba326ef338",
@@ -772,10 +771,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "e2a7f8738cbfb20c83b7e49badaf45cdac565df2047fd77f95cf6a17d9caccef",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f4230aa4f9bad997",
@@ -788,10 +787,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3c296f9f6588f85788b939c1f4503042c4986a25bec2648799c8dd4de06cc7a1",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9d7460a786442b70",
@@ -804,10 +803,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "382dac9abfa4c3bb540e9599ad5f7fde5ec9675aab636452d3b1418a924d4321",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "23ce415808d5a705",
@@ -820,10 +819,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "ac7cf56be3d394d49c9e864d427e2ea2e8927244544794ef4917e74d988a5104",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f4df68973baf40c1",
@@ -836,10 +835,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "57de09afe0fc3f570129210e1fe76b333cd312b70ce5af5fb81a2e537191c28f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8a49ccc81c7e5fa6",
@@ -852,10 +851,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8c3293ec7bb9bd7754eccacfb1c2a6fe10e4d5983f11808fc5c4887d30a059fb",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "24250ad701243c6d",
@@ -868,10 +867,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "42b2a15f88146e6f549d4339f671a3847c5d55f2005c2cc43c2e8547b6308ad2",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9ef3cd75f9404fc9",
@@ -884,10 +883,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6a0c480fc22762a147f3b3996c21a7953c2a813a9ec9dc06bd516568bf874646",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "0a6b85c9e1a47b97",
@@ -900,10 +899,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8e959c90c20170e7fd50494dd66ebf70f402a9cef194b46ea6f7b22f60a0c91d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "97ff7c9cf169612a",
@@ -916,10 +915,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "4b0c3bfd013a2ae10c3d4132dd597e5808439e97dfa8d01e3c7584b3776c5524",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "51ad491d67cab6c6",
@@ -932,10 +931,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "1e45557a50b3f7333e0d962cc4d4678c9b3edf2f52ee06b77f29fc3837020af3",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a9a64a22b2ffc08f",
@@ -948,10 +947,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "903fe28488c56cbd041375f94571824aff6a64361c72645e2c97a0bec6773384",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f20ad45ae3ae286c",
@@ -964,10 +963,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "0c17c5424fef71cd74c10a67eca55007c2da5594d85af159cd384b3d974c56cd",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "215789860f293ec9",
@@ -980,10 +979,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "531f7db538d1026ddef77178b939ee28c38ae7a15a91d07826e97d352d26464a",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "03ed1fb199f84efc",
@@ -996,10 +995,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3f6b7f638235421f6b2ca1b4b38f3cfedb89572a847a6a4e06d8ee4f4c137c13",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "17857e5a29cd6c34",
@@ -1012,10 +1011,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6cc79ec754303d65ca3f2cbc4bd29384a8d6e6492e168991159a07a0ba7c626e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3f31d38173e6bc43",
@@ -1028,10 +1027,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a9aa72c042153fa351c3591ee11e7fba95b0c8841c4489da4aa6809de1edbdf5",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "713283908dc54cb9",
@@ -1236,10 +1235,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "0f25b7260cc4b7dab280a53b290c87a3c9c41b3629b4d8c8a509cb20ee7a2f7d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8b9ab1401c13abe7",
@@ -1252,10 +1251,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "9eee7a755c14758638de7d6e8f50c26021650da3128d2a99c7b4e1e9d1a2e1e6",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9a487d384135721f",
@@ -1268,10 +1267,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "4cd736b2ab37ec319086fb9f92f089ffe03e2d16629492e5ebebb17735790fbb",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a8e8ca9fde822f09",
@@ -1284,10 +1283,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "120470b3f95d62c23307f60bf3cde62f92665124882cb77538abf8df29911bdb",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1ab6a85d8bd3d52f",
@@ -1300,10 +1299,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3d55557e05be42ec58423de4039c0090320d693330ae8c11db4193e7e0e1135a",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "2dd372e227590dc3",
@@ -1316,10 +1315,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "15cc8ed4221036b50de6ec0d1ccdb3f1f0b9ce1a92f7a0f5484228af0962b446",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "7ad788d39ca3e3d6",
@@ -1332,10 +1331,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6ee3af3dc9754aa344baee37ee694e4ac8f3e9b9a55bb2989bcf33265e4a8507",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "5d9fca44e1587076",
@@ -1348,10 +1347,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "d12a2f15af6fae5f41e29da9b2f47efdef9e5bb92c7a8ec50986040774bfd549",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "bcd9d53c8a9f9c2e",
@@ -1364,10 +1363,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "d1bce34b562baed1ac8bff54cabefbe782022e6b378189f801280f5a1225910f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "4068135b80819aa9",
@@ -1380,10 +1379,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "88c276863f4cee1da4e1ff8e13513c3fedba02a4b599799630fe82125407b879",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "aae058f058d78442",
@@ -1396,10 +1395,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a02670d0c7bcf62e11bdf618b39d31ec47313d892e49be5c3bea9821b73282a5",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "32c22a692882cd2e",
@@ -1412,10 +1411,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "9bc533cfc18494050135772f5b1379211e2356e81ad2706d3fadbcff8cd9cda6",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a8edbb863e184027",
@@ -1428,10 +1427,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "076df0798b3d857f4d799ce6b82dd58bbc9281be61f47f3bb4320bfc095af91b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "76cc4b21c1b746c1",
@@ -1444,10 +1443,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "da68fbe5f0bdb7a35d1fcef155cc544280f258f0e3ecc8116708d6b64dbd2475",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "70f985c4d53263ea",
@@ -1460,10 +1459,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "7229a9916d9d42ebd6d303550befcf43f4decbbb135a17380d781e8ee70fa9c9",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "95f4f003e9ce66e1",
@@ -1476,10 +1475,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "d0f9457bc52a7deb859badd7daf273956ba06be4345f7bc776c1c509a7f519d6",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "aab7e4b216c336e8",
@@ -1492,10 +1491,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8caba8bb79a925c77718409bf7574965fb83aada1c9f23910cdb5685ee632672",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "5d0ad83093084df7",
@@ -1508,10 +1507,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "992959102dd5d65a4aacf3c8c8850309eacbc281015329edb01e0ebc1026d11d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "0f19f991bfa7bc27",
@@ -1524,10 +1523,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "795a80d7b40bc355a896b7153648a39ca01645f603b3a3f63e6d27ebf226bc1a",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e876b316dd9ca391",
@@ -1540,10 +1539,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a58ea3424064268f22b715bef31c55a6b7729c5d39661c139d1cfe88864753d8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a6c0c14b2875d2dc",
@@ -1556,10 +1555,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "245cfef3ac8813d07182b7f96dbdedf6c13b6e8aa3d5c255d4955cea2b77a2ca",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8c37b1c8b24bff7f",
@@ -1572,10 +1571,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "25271f0d3a3442c2a1ab82d992a5dea8058368ebb94c932d02bd08e01ec10ebc",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "33a9ce74d34679b1",
@@ -1588,10 +1587,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "11e537fc89de74c3574c8c5d91df03a34b7e078d3edd7c4ea5834ebeb67ee2dd",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f519dcec2e6ee177",
@@ -1604,10 +1603,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "4c812b52ee1e805866f4d2b9d94d1e6914d01c4091704b1c348bc38f495670d8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "60817d316338ff11",
@@ -1620,10 +1619,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "9cf5bc17592edae0b3fd78364f304af8b67adb1d299e61d11f36967dbe42cb1c",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "39ab5b3554e9c0f1",
@@ -1636,10 +1635,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "dcba23892f0ff0244494c32096afccd21f5cf1e7295c3a9d31f53e131e61edb8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "d7b6580a5161794e",
@@ -1652,10 +1651,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "805c8201bd26abb0c4bd70452c4a0a7548c197ba80994fab474f21adc4272138",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c6532bde2243b959",
@@ -1668,10 +1667,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "daad57d94b63665ee22463289499b0d5513dce7865eae9a9c14a719ae1ea8fc2",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "52bde64edd0c751f",
@@ -1684,10 +1683,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "d27437dc4f6919552febf013c13321682e49caa9502eb81c2508ab01d0ea1d62",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "fa98961ca33587bd",
@@ -1700,10 +1699,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "ccd18c6308058c9554e522f28bfdfdb8ee3199f755eb0b8dc048afa0b6b7e1bd",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f452030be32bff06",
@@ -1716,10 +1715,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "350032c156d4f41a47755d6c1b797367667a93aa05528e66a5433ab301501dcd",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "091cae13554ef48f",
@@ -1732,10 +1731,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "9e9bb259ef5c90ad146bac3e75ce9541c7a83f828b629647ab737df7ec80e8ce",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "507f2c9ce4289c7a",
@@ -1748,10 +1747,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "d3ed3de173c7cd940e217851f871a0ca84d31d676855faf2aba8ec027426b731",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a3127ec3e05a570c",
@@ -1764,10 +1763,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "7cd286e364e7614d75176a8fbf9c442b3a7a7ba73511d6e6a91dcbfe7d9ff5cd",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "7959adcbfba13231",
@@ -1780,10 +1779,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "4089e7e5ac0a3273f00645c3dce70a89065f884fe6fca8aa758e173f3c8627ed",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e1f7315628101d97",
@@ -1796,10 +1795,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "83e9ebffcac03aac530854f939b9aeaec845bb1fc482426db3dddf425d630aac",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3085eceb88cfe8f6",
@@ -1812,10 +1811,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "0f675fb093f0fe410bad61d131d85db305513a75c9b16375d38568bd0265a070",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "4414abe13948a00f",
@@ -1828,10 +1827,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f75e0e782f4abbedb2823051af32e959394d826f4e12e55e526b64ccc6eefb8d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "444446337442b94d",
@@ -1844,10 +1843,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "662e5a13d9433abb6eb573a0a9a3bf95ada7b8df94da38ce47216cf58454f25b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1ff62c6fe0126418",
@@ -2052,10 +2051,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f375137a64c13b2c22e456fae9394bc810ca2bb98a439d94da18fea1365a98a8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ec4212818042a895",
@@ -2068,10 +2067,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "7c05c6fa755649d4d882f98817944d6f90613ca424af061d0cfbc080585ac95d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "b476398ec95c6bac",
@@ -2084,10 +2083,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "1e9c9f2cf8b229388e826a32bb04224ab9aadb91e5aa4614ecf66cc07c6caa48",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "38f2e70967b6b224",
@@ -2100,10 +2099,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "20c7d2dd0ca6ff6dbfb5ccebfd8dfb4483783de6afded86060aa0043943e258e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3642acd96c58e22e",
@@ -2116,10 +2115,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "29d7a2c5f589c6fe7ffbc97ca0738d0959e900d1f0f3f488d3ff7f91f94c30fb",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "cbd2fbd2b0095660",
@@ -2132,10 +2131,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3195e45476b96c3257e15043ac4fe17bbb640c548a4edb74d2c3b3eb8b3519e3",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "143ab97c0a953a8f",
@@ -2148,10 +2147,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "9d560f65771f71885fb97643240f0c858d7ddd66410d7fbc6e2783533eb6919b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "83a40ae62a6094e8",
@@ -2164,10 +2163,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "7bee8a23bbf5bf6db47d7668289e80cf8eb4f49cab46b449073f5839b15f450b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "4e0564f52b59cdcf",
@@ -2180,10 +2179,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "40f8b9d5fe6e8e2cb9ea823a99485d142a67eba46b228d237774a687ab3a9d66",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f908885ce28923d9",
@@ -2196,10 +2195,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8531cc2ce4bfab163e2660f8e5dea4f88d97794423ef3d894f789602b1fab610",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "2acfb4344f2ac1b4",
@@ -2212,10 +2211,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8320cf567b912bac1ff9f5a49deb1263ba5aa2610cf6f3dcf6db60f065bf1e99",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e5df4d83e8919315",
@@ -2228,10 +2227,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "0bb3e4c8ad11587af05ca6734d50e6f7ea883db9ff73d79540c434bc50715a0f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3aed18b7e70f038c",
@@ -2244,10 +2243,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "63962cc1cc2b6b0c7e9e12e3e9e9ee855ce7036b8f0aa123e3bdd297a99ec095",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3e109074d37f49a2",
@@ -2260,10 +2259,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6e35ec73c164565b99684ab534efed808f23f6cb2c75842c8f2b413501ec96fb",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "7901496dfdd23c75",
@@ -2276,10 +2275,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "78ea79b4145e6d694180fe8eef748531ea96b0d75d18c1f9ccebd0228c7bf017",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "eb3ce474b07a3282",
@@ -2292,10 +2291,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f99ed7e0cb4f7a9c28b05ecae768bd10812f52987060f0edb324fb77ac610375",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e58f78b0f479249f",
@@ -2308,10 +2307,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "2a6d3d04b6257bfc35a2e0c5a35f05a8997a089191ce27d0c2a5f02108f3b9db",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e55d9393b3f48252",
@@ -2324,10 +2323,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "9dd25252fdcfa200588ad3b8d66b618fa6a01633d34b0327776a006ffd6ba5a3",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a2d31b1a0b71a4ca",
@@ -2340,10 +2339,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "669bc6550cbe4dfb70305b04b2b8eacb0de676e576c69e4be209826bb425f0c6",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "cbd089198aa68af3",
@@ -2356,10 +2355,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b97e53a23b76d1fd7b4895cf68820539e24300e7e0032e4cfe429fca7a95b0fa",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "de8988933e0474bd",
@@ -2372,10 +2371,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "27c12e2f24a7679d7bf60690c0832e61e04e56bdf1d62323c33b93829c673ea9",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f8fa710497924140",
@@ -2388,10 +2387,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "5cf5213afda5d31a431fb1dc26d8f5403aea0d7f9dec82a04fe4787ef0152f2c",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "0d4cf8371837520a",
@@ -2404,10 +2403,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "850f40e36dfadd46ae4660e15558308b5855406821c32d477648272e3fd6be11",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "6c346725cac56200",
@@ -2420,10 +2419,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8c0d993f9e80602812ec0e73959a4a88a617d14414a2decd3ecfbfebdfab2e08",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9e62e55b88dc258d",
@@ -2436,10 +2435,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "eb446ea4a6227a31b589a2c9e4b3c557a15a763723326611e1c03ec90640e97c",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "bbc6b2cbe59ff3ea",
@@ -2452,10 +2451,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "85918fc69760bc1b208f5cfb49ef4f44337673558b5d1e00909844e91810a570",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "7daaee98475ec516",
@@ -2468,10 +2467,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "1836a8dbdd33472eb3f1e57a898abfd9a944870e45dce8a83984445281ac2fb0",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "2755607c4622d115",
@@ -2484,10 +2483,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a995a7ced8343eb536cbfd8cd16a42f8613312672b3485baed1d573fc2c341f7",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f351e87c5d11d323",
@@ -2500,10 +2499,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a5f13d9cb976c9e695ccd4ef449ff63ae1c5a1f7da2ecfb00603f23d6dc65a56",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "619f68a54810c4f6",
@@ -2516,10 +2515,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a59119793b57b85db364f1c9148f2c8ba1243555c7a25972e947b4d0aa36bb37",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1e8def55b3f1a21e",
@@ -2532,10 +2531,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "e86579ac60aa4fec884716d3cc438610cc1a61c8453cd339c9223098be665a7c",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9a5351fee156e820",
@@ -2548,10 +2547,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "ba51d6820d4b5e19e3dc858d4e111b9214696c5d5ccd78eae6eb97306d26a49d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "44075a9da90df0fa",
@@ -2564,10 +2563,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "1d83208ea85fbadbacf2a8886a62a14bb5202bd57b494606b0ccdbe10709ab51",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "76fa3a7afcaeba4c",
@@ -2580,10 +2579,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b5e3534f6838cba64bcc46dfbef5bc14b768f35ad5aea2038e2990fe19c989c0",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "27eb904ea4d0e17c",
@@ -2596,10 +2595,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "76fa92d3cc2d235a47eed0a7a722332a7c3ec5d3386a8785102eeec69db80ee8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9d60e92a0461cd43",
@@ -2612,10 +2611,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6a211a48871d386e146b6cd416d47d1e94244c5798feedce121e6d169286f0a3",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1ff1dc3521f64266",
@@ -2628,10 +2627,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "1b0e02160e25013b840c716b304ba1bc7b9254cb044e2ca216d582f0ede3eaf0",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1f4cf880bf3deff1",
@@ -2644,10 +2643,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b9a98ce90b475f5308bca34d6dde87f332091e61fe78d45badbf3fed53dffc9f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "b7c98632d2a8eff1",
@@ -2660,10 +2659,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "0157c399b6ff7ec46b265024b5a98ee878d73a8a1a0d5966de3a3d1cfb56a414",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "71e36dcf988e8c78",
@@ -2676,10 +2675,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "750ec4a0672adb8c85e89c7bc9e150b911d21a4d2172652273094c8aa7d4c095",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9a47ce1dfd478655",
@@ -2692,10 +2691,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "717f0a1e9923bc43528546c29267c5195e071fdc3f6d63563c0d58e58fb3ec40",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "09e73783a3424896",
@@ -2708,10 +2707,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "ca1d27f3a1b2454bf9d0b0b5e44aedecf01f39dde8ee1f3b6198acad3f24f966",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "2704db125d63c82b",
@@ -2724,10 +2723,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "c6081e65da563f21c7f902bcf2f70d4fe26f4ac7d34a867388c1d5e6f21091d5",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c6557c7ac49a9505",
@@ -2740,10 +2739,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8317fefc7c2c0e4e072064b844077849856860ef81ef29c97916fd1c19ba7d44",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8f3a95924b1c901e",
@@ -2756,10 +2755,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "dd0472e758207eea4dc1726c778f506e91c1f630b3020b101cf111267c2621ed",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f152fa355729153e",
@@ -2772,10 +2771,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "50c32503dc49d25430e9cbf254160bce7e1c7ee0975be826dbf4da413f4c280e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "65ae6e636ad3df75",
@@ -2788,10 +2787,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "0936838f0a1a27df11352a4b96c6265b3ef89b164ff96817e46ae6619f0ab164",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "7d8b5113f78d2a82",
@@ -2804,10 +2803,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "455127b456021593874476ee8b5dad01b0166b8da814c095300b6ed608a08993",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "0174b58c7498fc89",
@@ -2820,10 +2819,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "4ee7a0a1484045f49d42e74b7ca1881446ca7245087c6b6d47e536d47d58da6d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "edf6fd456155659a",
@@ -2836,10 +2835,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a8d0c4c65503004d6e12403815b21f65c101b394b7b42bd6c84fc26357d3868e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e95886d7fbb294c3",
@@ -2852,10 +2851,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "2206de792571a821d762a34c63d189db62f7a9bdacab80ef497545f4191fdd28",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "791f1fcbd9b92a78",
@@ -2868,10 +2867,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a0b0036d50c10a4c8879d1ee9f24a7502ec2cfb264a61951c8d500dfc897ec35",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "901470bcd2563b2e",
@@ -3076,10 +3075,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3d0641d64fd8c76ef7797902405ef68178488c754518ad52d42597d09a05699c",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "7fa0c378b70468da",
@@ -3092,10 +3091,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "d4f834a5c560f9af3095351aaaf5f308dde96fae230a00da788b468e18606d7f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "d022a76d1d941a6d",
@@ -3108,10 +3107,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "abf0a997a0723ad593eee176d4dff387a1e72ce95093942dd47125a4d783b9c3",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c5e7b1a6415eafcb",
@@ -3124,10 +3123,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "acf4f80fdf726920ccfed08359e8b6853da676abb9f5e9b8cc3b26c387d69f1a",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "21521cc4602267c6",
@@ -3140,10 +3139,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "eb07ab0fe87cd5ecf06863ecf4d1ff878d5b23dbdf808fb7742c14b7e5cc6a80",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e9f01f262d3852ff",
@@ -3156,10 +3155,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "47ca0ed1482c400b7cbb4abd8dbe00791f68f50a765f4019ee47080bcfda79f4",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "d5402ef8201e2882",
@@ -3172,10 +3171,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "7f4043b0afe1a97ce5c47a674c56edf8cc9d02773a9b0cf38419b6c1cd423cdd",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "bf32aee612717858",
@@ -3188,10 +3187,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3f996dc352237a3260abdc128099c554d49bdbf64e27250647b072ceaa370bb2",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "93958cb48d32258a",
@@ -3204,10 +3203,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "c30cf383f2c3f85ce28dff572cdc8d8d1a51217755a70a05090ef36e90ba801a",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1eb022811b52b719",
@@ -3220,10 +3219,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a65d0878381a7acdaebc74ad937f6451c4c1ddd6f47ae08abaf018867fdf47c6",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "0b7a7d59ed708a05",
@@ -3236,10 +3235,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "aff9750bc5b7223c89c805e048d412616e627f45378ded0ac79f642e498f5b3b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "49b432d62327a813",
@@ -3252,10 +3251,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3cf0b798289f035d0880f789126b1eee83cd947280d16488ba62978b69c294c7",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3662a6c847f39b99",
@@ -3268,10 +3267,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "48cd23ecd5e033fb3a5d3084757a833fe024d26ff02ee05ff206e2577027e768",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c9f12ac69e936693",
@@ -3284,10 +3283,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "d9127adb5f8ca29137912a8d30744496e011599fdfcdae41434a937ceb39ca80",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ee100a19ad574934",
@@ -3300,10 +3299,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b32ec79b13e1a1606634f677bd7713ad272bbe38e9c7ef955d6237ac1b689765",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "553d4743abc853ef",
@@ -3316,10 +3315,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "031b6bcc24b43b9d5e0ef444f65db4dba2f7504391532eafe891ecd1e7ad6130",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3e24f1d141195032",
@@ -3332,10 +3331,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b642135a6ac4e0b10c5a96d26498eb1d9a7a3c00abc2cef989f873bbc4cccfef",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "4f4128828d4243c9",
@@ -3348,10 +3347,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "328aca7629193a2780f449d0026e8d356096fc20b47a0305219c192fe661c15f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e959fc425e0807f5",
@@ -3364,10 +3363,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "eb9e13650dcab1bc41738f5b9577377b5e3c55c9528fcfbaf947dd28a62d9975",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "f8c09cb5d0ea353d",
@@ -3380,10 +3379,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6ca66b263f739a45abb783ea10f8d4ba7ca58e4634fbdde0fbbf557328e9ab48",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c3ebf9bf43e16591",
@@ -3396,10 +3395,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a370edcf9fc4d809314c3768579eee2926e7136a4e1a9eec618749fd1171766e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "79e24f7f956f698e",
@@ -3412,10 +3411,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6dfb69ed3be4797cb610756c07e72e81c86c211479b3ff16fa668d73141581ea",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "d53171dd4f0dc302",
@@ -3428,10 +3427,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "e3505f31e5ecb6ea6b94514dccdff7c63d82ec2e4244dff40b91dabe8f1b1494",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a063d666311122e1",
@@ -3444,10 +3443,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "f93b68287bf0c334574d8331c8bf298db1ebb363b6e8d764f3872d64a0e9a1bf",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1ebe7b16da5e5531",
@@ -3636,10 +3635,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "2ac8b0506266174bb0714b9f47af9bd4c7375341a91cefb9cb44afe47dbef90e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ac1085e2a79d06d4",
@@ -3652,10 +3651,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "acd1aa28c321c73376fb219bce851fc45be80e7011e5e85be5b3c18f1c838725",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "54de3e7d0882d085",
@@ -3668,10 +3667,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "22c6fc3e612c55c1ffb38aea6e2dcfcb082fe2f87f92c90e0b8e60b256b762c0",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "d6692947c2f3625b",
@@ -3684,10 +3683,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "92dabf7ae0ca582f39de40e4722f1ad9c03bce5628c65daaefcc08beb643a96f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3fc376fbaf125737",
@@ -3700,10 +3699,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "a976a32f41f8f834ed06fd0e60707839e025d6d7e762a326120c4da77e911dfe",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "fe68285d6f64a140",
@@ -3716,10 +3715,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "27defc76db6f75e04a6af93bf263b68947c0cb39415ce68ce1a476d1e61af595",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9a33a8f0c533cfae",
@@ -3732,10 +3731,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "74c888c020433f4590214574232bfe1fc4b621271525a69abcb5e781bd5e11aa",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8e2dfdabd76452d2",
@@ -3748,10 +3747,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "88a75f5a8987ffa7243f5c736f549365add9d97f15c84e72f6896e67a7c811ab",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "a7b9945d76e65bf7",
@@ -3764,10 +3763,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "2a37e893081a5e62cb9ddc6e185698657d23cc41b6402fb9f2bb3b28bb1b000b",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c9c9cbc3d831c631",
@@ -3780,10 +3779,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3fcb21720b9df15390e996f76f2e8713e6756aeedd502b62a5ea5bd955351a60",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "687c691c2b8369f2",
@@ -3796,10 +3795,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "e46855568db36550730428cbdf0251716d8e6768639482ad9c56ce0c1d5c377f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "b8eb5c3dcb2671fb",
@@ -3812,10 +3811,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "45b618a2b04258310bb696370b83251ec79846783eac7c0e9ac9e2be7f90c07e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "8773d0c64a2423f6",
@@ -3828,10 +3827,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "62f65d56f69ce4ed8e9d7950d0c8897acbcac9db318e7abbe469c1f77f698aad",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "e461f167bfc64cd0",
@@ -3844,10 +3843,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "3d2e6e72f95bf7c4aca447f8e8c082ada20f5fc78a64a4ea50456a8159f29428",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ac2bf4123937150d",
@@ -3860,10 +3859,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "fed12f03582eb53308e6f831130e81924d17023f29b199e28e3672812f5cb696",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "594c5681ad2be2cf",
@@ -3876,10 +3875,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "63913270d365347be4367a699cf6c8e77225cb4fd8e5cb4d8a33063244f6fe9e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "fe591fc1e2718624",
@@ -3892,10 +3891,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "6d8a1604a6db456e98279f1cb31cd4f556bb55bd6534bed18e293ca7e70246a5",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c1038f55c8611d63",
@@ -3908,10 +3907,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "e4e0aba5eecdc7d136a54173fc5a3a51b3f179efc5e815be3aa8291e0ae5437c",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "9bd0a75a792cf0cd",
@@ -3924,10 +3923,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b0bc13e5fa3b548afe8a8435ca932f304fd9d8bb994df51882d54ddaa766a6be",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "ad96917c0fc04ca3",
@@ -3940,10 +3939,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "c4351fa3dc66fc0598d13a49f0a29fb421695ae0c8c84f872b9666b96fcac6c2",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "3c90b05847d1900a",
@@ -3956,10 +3955,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "fdc8e3adddc944113ceb96e3306d484c79da63be70afc4a44cbdaf3b9c2c7916",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "36385acc74330aa7",
@@ -3972,10 +3971,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "331477f8fb6adc208588a20bc7329ba00396ae3f711bd91b441feaacf96e626a",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "b0b7f393b9c7481e",
@@ -3988,10 +3987,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "31a3da99f63c52f83d69e5cdf2b26c14851da6d51765320d95f80b85b50a0a5f",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "d642fca9d1dbd9db",
@@ -4004,10 +4003,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "78089410909caae6c1276552bc2edc9cad0d6b2c72fdee5bec8e81065324fe2e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "96bdddf68572d5ab",
@@ -4020,10 +4019,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "b3fdfb80cf3b823dc107936813c10cf9d11b599effbeba5e3cb4a0ed1b86f6d6",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "5bfd72b5714436b8",
@@ -4036,10 +4035,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "2422cf9024265c773c1002e51a707db15d2b890c3851a9321ffbeb0c23c5b72d",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "1afca37c0f2ba701",
@@ -4052,10 +4051,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "8a56b1dde37647e5d7a1d5002c4cde562792af3d9be2dbc754925095dc86d7c8",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "b2988601384b49c0",
@@ -4068,10 +4067,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "5bf91f83b4ea6e5fa6fd3207c347b65ccce5124ae2040689509895ef5c0ab1b5",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "d7249cc880aec558",
@@ -4084,10 +4083,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "ddebbd268782a200f9a34eb12c81b25d47b0743dbd8be3ebbb6ef970b6eeff83",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "c8d894f5a38c804e",
@@ -4100,10 +4099,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "cd6ab2cf6c129cdc35d43242006582f69f6419d9041dd417405171f91ab26989",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "6e79d8c8214586e3",
@@ -4116,10 +4115,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "e0429cc38678af4367f3ad31804bf21a3d80e9103aedaa7d95724784ced8a05e",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   },
   {
    "bridge_id": "fee5e18d7236022e",
@@ -4132,10 +4131,10 @@
    "old_cache_root": "",
    "local_file_status": "absent",
    "local_sha256": "",
-   "lake_status": "absent",
-   "lake_sha256": "",
-   "retrieval_decision": "retrieve_official",
-   "reason": "no valid local file; fetch from official open-data"
+   "lake_status": "present",
+   "lake_sha256": "5da668d7a7c199f59dfa30c3d32c076957b89b890d4b67907a8e60b7f833a677",
+   "retrieval_decision": "copy_verified_local",
+   "reason": "already in lake (hash-verified)"
   }
  ]
 }

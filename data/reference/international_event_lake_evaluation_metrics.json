@@ -4,116 +4,116 @@
   "reference_model_R0": "research.event_process.e2",
   "metrics": {
     "research.event_process.e0": {
-      "loco_rps": 0.2427726265756207,
-      "loco_logloss": 1.0899947519543454,
-      "loco_brier_draw": 0.17662867537429688,
-      "forward_chain_rps": 0.2401236868801136
+      "loco_rps": 0.2346974452547151,
+      "loco_logloss": 1.097863874145221,
+      "loco_brier_draw": 0.19710651602171114,
+      "forward_chain_rps": 0.23259586763399093
     },
     "research.event_process.e1": {
-      "loco_rps": 0.24277052497781484,
-      "loco_logloss": 1.089988995401184,
-      "loco_brier_draw": 0.17662861699717142,
-      "forward_chain_rps": 0.2401251752685201
+      "loco_rps": 0.23469695149265674,
+      "loco_logloss": 1.0978622598888217,
+      "loco_brier_draw": 0.19710632415761098,
+      "forward_chain_rps": 0.23259470880073044
     },
     "research.event_process.e2": {
-      "loco_rps": 0.14052742579049018,
-      "loco_logloss": 0.7215901978494915,
-      "loco_brier_draw": 0.13908167559162904,
-      "forward_chain_rps": 0.14066788729036522
+      "loco_rps": 0.1403355892025293,
+      "loco_logloss": 0.7462998145996254,
+      "loco_brier_draw": 0.1540586909377005,
+      "forward_chain_rps": 0.13952316559456734
     },
     "research.event_process.e3": {
-      "loco_rps": 0.14509364990487458,
-      "loco_logloss": 1.0026921701888383,
-      "loco_brier_draw": 0.1482186119215323,
-      "forward_chain_rps": 0.15055579501732133
+      "loco_rps": 0.1404869355497583,
+      "loco_logloss": 0.8085300346730847,
+      "loco_brier_draw": 0.16327156241373278,
+      "forward_chain_rps": 0.14311525127760805
     },
     "research.event_process.e4": {
-      "loco_rps": 0.13514792466415232,
-      "loco_logloss": 0.8461369109992457,
-      "loco_brier_draw": 0.14456779806517842,
-      "forward_chain_rps": 0.1392896661413097
+      "loco_rps": 0.1346525491632644,
+      "loco_logloss": 0.809375291647218,
+      "loco_brier_draw": 0.16103376599675048,
+      "forward_chain_rps": 0.13872572158496618
     },
     "research.event_process.e5": {
-      "loco_rps": 0.15471039857883584,
-      "loco_logloss": 1.1594026497414198,
-      "loco_brier_draw": 0.15756071631312954,
-      "forward_chain_rps": 0.17741362052143633
+      "loco_rps": 0.14231751492334138,
+      "loco_logloss": 0.8354157026344631,
+      "loco_brier_draw": 0.16256785725079267,
+      "forward_chain_rps": 0.14391632019383527
     },
     "research.event_process.e6": {
-      "loco_rps": 0.14221053966652678,
-      "loco_logloss": 1.0311439613932594,
-      "loco_brier_draw": 0.13441393724969355,
-      "forward_chain_rps": 0.1523587615669761
+      "loco_rps": 0.13954899805155957,
+      "loco_logloss": 0.7843576006527408,
+      "loco_brier_draw": 0.15803365939505956,
+      "forward_chain_rps": 0.14164164478694577
     },
     "research.event_process.e7": {
-      "loco_rps": 0.16341005168101705,
-      "loco_logloss": 1.395367948451312,
-      "loco_brier_draw": 0.15247968175483217,
-      "forward_chain_rps": 0.1955376358121753
+      "loco_rps": 0.13420204147355397,
+      "loco_logloss": 0.7950452986046356,
+      "loco_brier_draw": 0.15933332384707258,
+      "forward_chain_rps": 0.14138234035802896
     },
     "research.event_process.e8": {
-      "loco_rps": 0.16341005168101705,
-      "loco_logloss": 1.395367948451312,
-      "loco_brier_draw": 0.15247968175483217,
-      "forward_chain_rps": 0.1955376358121753
+      "loco_rps": 0.13420204147355397,
+      "loco_logloss": 0.7950452986046356,
+      "loco_brier_draw": 0.15933332384707258,
+      "forward_chain_rps": 0.14138234035802896
     },
     "research.event_process.e9": {
-      "loco_rps": 0.15365731202397187,
-      "loco_logloss": 1.4307005711223066,
-      "loco_brier_draw": 0.14857888752722972,
-      "forward_chain_rps": 0.17533814209254167
+      "loco_rps": 0.13357787641057578,
+      "loco_logloss": 0.8225954548136876,
+      "loco_brier_draw": 0.15801170662280456,
+      "forward_chain_rps": 0.13960756759979448
     }
   },
   "forward_chain_pooled": {
     "research.event_process.e0": {
-      "rps": 0.2401236868801136,
-      "logloss": 1.091453999401478,
-      "brier_draw": 0.18174925591528115
+      "rps": 0.23259586763399093,
+      "logloss": 1.110121933504597,
+      "brier_draw": 0.20815631861925754
     },
     "research.event_process.e1": {
-      "rps": 0.2401251752685201,
-      "logloss": 1.0914719344183024,
-      "brier_draw": 0.1817545823129804
+      "rps": 0.23259470880073044,
+      "logloss": 1.1101174902654831,
+      "brier_draw": 0.2081555660768316
     },
     "research.event_process.e2": {
-      "rps": 0.14066788729036522,
-      "logloss": 0.7286842488922748,
-      "brier_draw": 0.14307894373805935
+      "rps": 0.13952316559456734,
+      "logloss": 0.7512527770718143,
+      "brier_draw": 0.15860414050636465
     },
     "research.event_process.e3": {
-      "rps": 0.15055579501732133,
-      "logloss": 1.3301543660351491,
-      "brier_draw": 0.15825109111222635
+      "rps": 0.14311525127760805,
+      "logloss": 0.8810762004324959,
+      "brier_draw": 0.17301502244360997
     },
     "research.event_process.e4": {
-      "rps": 0.1392896661413097,
-      "logloss": 1.2232405069581918,
-      "brier_draw": 0.15089354005663164
+      "rps": 0.13872572158496618,
+      "logloss": 0.8641847559640383,
+      "brier_draw": 0.169798656978051
     },
     "research.event_process.e5": {
-      "rps": 0.17741362052143633,
-      "logloss": 2.1058282574457627,
-      "brier_draw": 0.18174321513993988
+      "rps": 0.14391632019383527,
+      "logloss": 0.8921624218120157,
+      "brier_draw": 0.16913815013677025
     },
     "research.event_process.e6": {
-      "rps": 0.1523587615669761,
-      "logloss": 1.6318532773756198,
-      "brier_draw": 0.13327520351858935
+      "rps": 0.14164164478694577,
+      "logloss": 0.9765135283746558,
+      "brier_draw": 0.16374905856548505
     },
     "research.event_process.e7": {
-      "rps": 0.1955376358121753,
-      "logloss": 2.399522267190082,
-      "brier_draw": 0.17849584387826056
+      "rps": 0.14138234035802896,
+      "logloss": 1.0701906727088766,
+      "brier_draw": 0.17244655532290246
     },
     "research.event_process.e8": {
-      "rps": 0.1955376358121753,
-      "logloss": 2.399522267190082,
-      "brier_draw": 0.17849584387826056
+      "rps": 0.14138234035802896,
+      "logloss": 1.0701906727088766,
+      "brier_draw": 0.17244655532290246
     },
     "research.event_process.e9": {
-      "rps": 0.17533814209254167,
-      "logloss": 2.4937799561742096,
-      "brier_draw": 0.170456746575921
+      "rps": 0.13960756759979448,
+      "logloss": 1.121354315565782,
+      "brier_draw": 0.16812101201483448
     }
   },
   "competition_order": [
@@ -123,7 +123,53 @@
     "UEFA Euro 2024",
     "Copa America 2024"
   ],
-  "ablations": {},
-  "n_eligible_matches": 56,
-  "n_eval_rows": 7125
+  "ablations": {
+    "reference_e2_rps": 0.1403355892025293,
+    "reference_vs_xg_e3": {
+      "e2": 0.1403355892025293,
+      "e3": 0.1404869355497583,
+      "delta_e3_minus_e2": 0.0001513463472289922
+    },
+    "reference_vs_event_process_e7": {
+      "e2": 0.1403355892025293,
+      "e7": 0.13420204147355397,
+      "delta_e7_minus_e2": -0.0061335477289753415
+    },
+    "xg_only_vs_event_only": {
+      "e3_xg": 0.1404869355497583,
+      "e4_poss_terr": 0.1346525491632644,
+      "e5_trans_press": 0.14231751492334138
+    },
+    "per_tournament_removal": {
+      "Copa America 2024": {
+        "e2": 0.1441154540509379,
+        "e7": 0.14438349682315332
+      },
+      "FIFA World Cup 2018": {
+        "e2": 0.13952316559456734,
+        "e7": 0.13140810217099558
+      },
+      "FIFA World Cup 2022": {
+        "e2": 0.13723300764464064,
+        "e7": 0.12747980777734164
+      },
+      "UEFA Euro 2020": {
+        "e2": 0.1401016611986896,
+        "e7": 0.1386574976346992
+      },
+      "UEFA Euro 2024": {
+        "e2": 0.140704657523811,
+        "e7": 0.14005077664452228
+      }
+    },
+    "high_vs_low_completeness": {
+      "median_match_xg_fraction": 0.9615,
+      "high_n_rows": 15021,
+      "low_n_rows": 13752,
+      "high_e2_rps": 0.13261231631177683,
+      "high_e7_rps": 0.13276207283311606
+    }
+  },
+  "n_eligible_matches": 231,
+  "n_eval_rows": 28773
 }

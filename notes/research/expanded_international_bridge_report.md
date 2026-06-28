@@ -1,6 +1,6 @@
 # Expanded International Bridge (STRICT, official -> local exact fixtures)
 
-- run_id: `expanded_bridge_20260628T064822Z`  built_ts: 2026-06-28T06:48:22Z
+- run_id: `expanded_bridge_20260628T071042Z`  built_ts: 2026-06-28T07:10:42Z
 - official catalog matches: **333**
 - local exact international fixtures: **258**
 - **exact bridge count: 250**

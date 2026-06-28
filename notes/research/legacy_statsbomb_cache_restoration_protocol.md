@@ -1,6 +1,6 @@
 # Legacy StatsBomb Cache Restoration Protocol
 
-run_id: `legacy_restoration_20260628T064434Z`  built_ts: 2026-06-28T06:44:35Z
+run_id: `legacy_restoration_20260628T071033Z`  built_ts: 2026-06-28T07:10:35Z
 
 ## Purpose
 Restore the durable event lake for the legacy exact international bridge (258 rows) without
@@ -27,8 +27,8 @@ non-event-list, ambiguous id, filename/hash disagreement, or an object under an 
 
 ## Current state
 - legacy bridge rows: **258**
-- objects already in lake (hash-verified): **60**
-- decisions: {"copy_verified_local": 60, "retrieve_official": 198}
+- objects already in lake (hash-verified): **258**
+- decisions: {"copy_verified_local": 258}
 
 ## Cohort discipline
 Senior men's international only; historical cutoff before the 2026 World Cup; no completed-2026-WC
