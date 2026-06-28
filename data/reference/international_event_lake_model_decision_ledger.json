@@ -1,0 +1,1039 @@
+{
+  "schema_version": "international_event_lake_model_rerun_v1",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "built_utc": "2026-06-28T06:17:01.714903+00:00",
+  "reference_model_R0": "research.event_process.e2",
+  "verdict_counts": {
+    "reference_only": 10
+  },
+  "ledger": [
+    {
+      "model_id": "research.event_process.e0",
+      "is_reference": false,
+      "loco_rps": 0.2427726265756207,
+      "loco_logloss": 1.0899947519543454,
+      "loco_brier_draw": 0.17662867537429688,
+      "forward_chain_rps": 0.2401236868801136,
+      "rps_delta_vs_R0": 0.10224520078513052,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e1",
+      "is_reference": false,
+      "loco_rps": 0.24277052497781484,
+      "loco_logloss": 1.089988995401184,
+      "loco_brier_draw": 0.17662861699717142,
+      "forward_chain_rps": 0.2401251752685201,
+      "rps_delta_vs_R0": 0.10224309918732466,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e2",
+      "is_reference": true,
+      "loco_rps": 0.14052742579049018,
+      "loco_logloss": 0.7215901978494915,
+      "loco_brier_draw": 0.13908167559162904,
+      "forward_chain_rps": 0.14066788729036522,
+      "rps_delta_vs_R0": 0.0,
+      "bootstrap_favors": null,
+      "coverage_fraction": null,
+      "verdict": "reference_only",
+      "reason": "this IS the R0 remaining-time Poisson reference"
+    },
+    {
+      "model_id": "research.event_process.e3",
+      "is_reference": false,
+      "loco_rps": 0.14509364990487458,
+      "loco_logloss": 1.0026921701888383,
+      "loco_brier_draw": 0.1482186119215323,
+      "forward_chain_rps": 0.15055579501732133,
+      "rps_delta_vs_R0": 0.0045662241143843985,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e4",
+      "is_reference": false,
+      "loco_rps": 0.13514792466415232,
+      "loco_logloss": 0.8461369109992457,
+      "loco_brier_draw": 0.14456779806517842,
+      "forward_chain_rps": 0.1392896661413097,
+      "rps_delta_vs_R0": -0.005379501126337866,
+      "bootstrap_favors": true,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e5",
+      "is_reference": false,
+      "loco_rps": 0.15471039857883584,
+      "loco_logloss": 1.1594026497414198,
+      "loco_brier_draw": 0.15756071631312954,
+      "forward_chain_rps": 0.17741362052143633,
+      "rps_delta_vs_R0": 0.014182972788345655,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e6",
+      "is_reference": false,
+      "loco_rps": 0.14221053966652678,
+      "loco_logloss": 1.0311439613932594,
+      "loco_brier_draw": 0.13441393724969355,
+      "forward_chain_rps": 0.1523587615669761,
+      "rps_delta_vs_R0": 0.0016831138760365905,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e7",
+      "is_reference": false,
+      "loco_rps": 0.16341005168101705,
+      "loco_logloss": 1.395367948451312,
+      "loco_brier_draw": 0.15247968175483217,
+      "forward_chain_rps": 0.1955376358121753,
+      "rps_delta_vs_R0": 0.022882625890526864,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e8",
+      "is_reference": false,
+      "loco_rps": 0.16341005168101705,
+      "loco_logloss": 1.395367948451312,
+      "loco_brier_draw": 0.15247968175483217,
+      "forward_chain_rps": 0.1955376358121753,
+      "rps_delta_vs_R0": 0.022882625890526864,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    },
+    {
+      "model_id": "research.event_process.e9",
+      "is_reference": false,
+      "loco_rps": 0.15365731202397187,
+      "loco_logloss": 1.4307005711223066,
+      "loco_brier_draw": 0.14857888752722972,
+      "forward_chain_rps": 0.17533814209254167,
+      "rps_delta_vs_R0": 0.013129886233481686,
+      "bootstrap_favors": false,
+      "coverage_fraction": 1.0,
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference"
+    }
+  ],
+  "verdicts": {
+    "research.event_process.e0": {
+      "candidate": "research.event_process.e0",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.2427726265756207,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.10224520078513052
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 0,
+          "n_folds": 5,
+          "fraction": 0.0,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": 0.0936843628245817
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": 0.09907428036569232
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.07262318270582899
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.10060032764450652
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": 0.14524385038504303
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": 0.10032927121661664,
+          "ci95": [
+            0.1003,
+            0.1424
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.0692792472675888,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "FIFA World Cup 2022",
+          "mean_delta_without_best": 0.10965070530495591
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.0899947519543454,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.2401236868801136,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e1": {
+      "candidate": "research.event_process.e1",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.24277052497781484,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.10224309918732466
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 0,
+          "n_folds": 5,
+          "fraction": 0.0,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": 0.09368440518986085
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": 0.09907569697372468
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.07261671264773387
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.1005966771648503
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": 0.14524200396045342
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": 0.10032788241248795,
+          "ci95": [
+            0.1003,
+            0.1424
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.06930084121058791,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "FIFA World Cup 2022",
+          "mean_delta_without_best": 0.10964969582222231
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.089988995401184,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.2401251752685201,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e2": {
+      "candidate": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "this IS the R0 remaining-time Poisson reference"
+    },
+    "research.event_process.e3": {
+      "candidate": "research.event_process.e3",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.14509364990487458,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.0045662241143843985
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 1,
+          "n_folds": 5,
+          "fraction": 0.2,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": 0.0032865582780330638
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": -0.014115412489815127
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.01889523762816936
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.0036306130004979953
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": 0.011134124155036618
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": 0.001966336647428731,
+          "ci95": [
+            0.002,
+            0.0202
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.06347568737086061,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "FIFA World Cup 2018",
+          "mean_delta_without_best": 0.009236633265434259
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.0026921701888383,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.15055579501732133,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e4": {
+      "candidate": "research.event_process.e4",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": true,
+          "candidate_rps": 0.13514792466415232,
+          "reference_rps": 0.14052742579049018,
+          "delta": -0.005379501126337866
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 2,
+          "n_folds": 5,
+          "fraction": 0.4,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": -0.031043550190397493
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": 0.0008217862718463143
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.006246047104862679
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.0022527384944557305
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": -0.005174527312456614
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": true,
+          "n_matches": 56,
+          "mean_delta": -0.005556242436851114,
+          "ci95": [
+            -0.0299,
+            -0.0056
+          ],
+          "favors_candidate": true
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.037364395042923396,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "Copa America 2024",
+          "mean_delta_without_best": 0.0010365111396770273
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 0.8461369109992457,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": true,
+          "candidate_fc_rps": 0.1392896661413097,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e5": {
+      "candidate": "research.event_process.e5",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.15471039857883584,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.014182972788345655
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 1,
+          "n_folds": 5,
+          "fraction": 0.2,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": -0.0016329028572164006
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": 0.003111012500549709
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.04538194115167726
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.02261007737850254
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": 0.0014447357682151468
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": 0.01268913581952769,
+          "ci95": [
+            0.0127,
+            0.0419
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.05667600771187803,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "Copa America 2024",
+          "mean_delta_without_best": 0.018136941699736165
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.1594026497414198,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.17741362052143633,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e6": {
+      "candidate": "research.event_process.e6",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.14221053966652678,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.0016831138760365905
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 2,
+          "n_folds": 5,
+          "fraction": 0.4,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": 0.000365900473031866
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": -0.0010073694956953538
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.014882559564486392
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": -0.01650698350533572
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": 0.01068146234369563
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": -0.00015108984661693463,
+          "ci95": [
+            -0.0002,
+            0.0077
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.02298389170332175,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "UEFA Euro 2020",
+          "mean_delta_without_best": 0.0062306382213796335
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.0311439613932596,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.1523587615669761,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e7": {
+      "candidate": "research.event_process.e7",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.16341005168101705,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.022882625890526864
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 1,
+          "n_folds": 5,
+          "fraction": 0.2,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": -0.005445994190091258
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": 0.039419079041911
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.0633553387595143
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.007497638680961205
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": 0.009587067160339122
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": 0.02190408578656159,
+          "ci95": [
+            0.0219,
+            0.0312
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.06309719149465337,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "Copa America 2024",
+          "mean_delta_without_best": 0.029964780910681405
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.395367948451312,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.1955376358121753,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e8": {
+      "candidate": "research.event_process.e8",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.16341005168101705,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.022882625890526864
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 1,
+          "n_folds": 5,
+          "fraction": 0.2,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": -0.005445994190091258
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": 0.039419079041911
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.0633553387595143
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.007497638680961205
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": 0.009587067160339122
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": 0.02190408578656159,
+          "ci95": [
+            0.0219,
+            0.0312
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.06309719149465337,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "Copa America 2024",
+          "mean_delta_without_best": 0.029964780910681405
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.395367948451312,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.1955376358121753,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    },
+    "research.event_process.e9": {
+      "candidate": "research.event_process.e9",
+      "reference": "research.event_process.e2",
+      "verdict": "reference_only",
+      "reason": "does not beat the e2 reference under the consistency/bootstrap rules -> keep reference",
+      "rules": {
+        "gate_enough_data": {
+          "ok": true,
+          "n_matches": 56,
+          "n_test_rows": 7125,
+          "n_folds": 5,
+          "min_matches": 30,
+          "min_test_rows": 200
+        },
+        "r1_improves_reference": {
+          "ok": false,
+          "candidate_rps": 0.15365731202397187,
+          "reference_rps": 0.14052742579049018,
+          "delta": 0.013129886233481686
+        },
+        "r2_fold_consistency": {
+          "ok": false,
+          "n_favorable": 1,
+          "n_folds": 5,
+          "fraction": 0.2,
+          "per_fold": [
+            {
+              "fold": "Copa America 2024",
+              "delta": 0.0036759548561270394
+            },
+            {
+              "fold": "FIFA World Cup 2018",
+              "delta": 0.009401307252638408
+            },
+            {
+              "fold": "FIFA World Cup 2022",
+              "delta": 0.05088832064943971
+            },
+            {
+              "fold": "UEFA Euro 2020",
+              "delta": 0.002240804875987157
+            },
+            {
+              "fold": "UEFA Euro 2024",
+              "delta": -0.0005569564667839838
+            }
+          ]
+        },
+        "r3_bootstrap_favors_candidate": {
+          "ok": false,
+          "n_matches": 56,
+          "mean_delta": 0.011830352318957339,
+          "ci95": [
+            0.0118,
+            0.0166
+          ],
+          "favors_candidate": false
+        },
+        "r4_calibration_not_degraded": {
+          "ok": true,
+          "candidate_ece": 0.053282231366951344,
+          "reference_ece": 0.05309906288882386,
+          "tol": 0.02
+        },
+        "r5_not_one_tournament_driven": {
+          "ok": false,
+          "dropped_fold": "UEFA Euro 2024",
+          "mean_delta_without_best": 0.01655159690854808
+        },
+        "r6_not_club_only": {
+          "ok": true,
+          "note": "international test rows enforced by load_eval_rows()"
+        },
+        "r7_source_completeness_adequate": {
+          "ok": true,
+          "n_rows": 7125,
+          "n_xg_present": 6784,
+          "xg_present_fraction": 0.9521,
+          "adequate": true
+        },
+        "r8_logloss_not_worse": {
+          "ok": false,
+          "candidate_logloss": 1.4307005711223069,
+          "reference_logloss": 0.7215901978494916
+        },
+        "r9_coverage_adequate": {
+          "n_scored_matches": 56,
+          "n_eligible_matches": 56,
+          "coverage_fraction": 1.0,
+          "ok": true
+        },
+        "r10_forward_chain_consistent": {
+          "ok": false,
+          "candidate_fc_rps": 0.17533814209254167,
+          "reference_fc_rps": 0.14066788729036522
+        }
+      },
+      "notes": []
+    }
+  }
+}

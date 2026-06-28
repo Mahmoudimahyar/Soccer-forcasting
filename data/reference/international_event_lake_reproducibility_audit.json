@@ -1,0 +1,26 @@
+{
+  "rerun_version": "international_event_lake_model_rerun_v1",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "reference_model_R0": "research.event_process.e2",
+  "n_eligible_matches": 56,
+  "n_eval_rows": 7125,
+  "n_competitions": 5,
+  "all_inputs_lake_hash_backed": true,
+  "n_distinct_lake_source_hashes": 56,
+  "bootstrap_unit": "match",
+  "n_bootstrap": 500,
+  "deterministic": true,
+  "no_2026_world_cup": true,
+  "model_families": [
+    "research.event_process.e0",
+    "research.event_process.e1",
+    "research.event_process.e2",
+    "research.event_process.e3",
+    "research.event_process.e4",
+    "research.event_process.e5",
+    "research.event_process.e6",
+    "research.event_process.e7",
+    "research.event_process.e8",
+    "research.event_process.e9"
+  ]
+}

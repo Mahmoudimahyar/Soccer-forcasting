@@ -1,0 +1,25 @@
+{
+  "schema_version": "international_event_lake_power_v1",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "bootstrap_unit": "match",
+  "observed_M_matches": 56,
+  "matches_per_tournament": 11.2,
+  "minimum_matches_for_80pct_power": {
+    "0.0005": null,
+    "0.0010": null,
+    "0.0020": null,
+    "0.0030": null,
+    "0.0050": null,
+    "0.0100": 800
+  },
+  "minimum_tournaments_for_80pct_power": {
+    "0.0005": null,
+    "0.0010": null,
+    "0.0020": null,
+    "0.0030": null,
+    "0.0050": null,
+    "0.0100": 71.43
+  },
+  "current_cohort_detectable_at_80pct": [],
+  "headline": "the lake cohort is match-limited: only LARGE absolute RPS gains are detectable at 80% power with the current match count; smaller gains require many more INDEPENDENT international matches (adding snapshots to the same matches does not help)."
+}

@@ -1,0 +1,70 @@
+# International Event Lake — manifest / index record schema (v1).
+# The lake index maps sb_match_id -> object record. The manifest is an append-only JSONL log
+# (one record per stored object). Both share the same record shape below.
+# research_only. StatsBomb Open Data only.
+schema_version: international_event_lake_manifest_v1
+
+record:
+  primary_key: [sb_match_id]
+  fields:
+    sb_match_id:
+      type: integer
+      required: true
+      description: StatsBomb open-data match id (unique, exact-bridge-resolved).
+    local_path:
+      type: string
+      required: true
+      description: Object path inside the lake, relative to lake_root (objects/<aa>/<sha256>.json).
+    sha256:
+      type: string
+      required: true
+      description: sha256 hex digest of the raw object bytes (also the object filename stem).
+    event_count:
+      type: integer
+      required: true
+      description: Number of top-level events in the JSON list.
+    xg_available:
+      type: boolean
+      required: true
+      description: True if any event carries shot.statsbomb_xg.
+    possession_available:
+      type: boolean
+      required: true
+      description: True if events carry the possession field.
+    location_available:
+      type: boolean
+      required: true
+      description: True if any event carries a location field.
+    source_url:
+      type: string
+      required: true
+      description: Official StatsBomb open-data event URL this object corresponds to.
+    retrieval_ts:
+      type: string
+      required: true
+      description: UTC ISO-8601 timestamp the object was retrieved or copied into the lake.
+    validation_status:
+      type: enum
+      required: true
+      values: [valid, quarantined]
+      description: valid objects may enter evaluation; quarantined never do.
+    source_schema_version:
+      type: string
+      required: true
+      description: Source schema label (statsbomb_open_event_v1) — provenance of the event shape.
+
+  # Provenance / lineage fields (also recorded; aid restore vs download distinction).
+  provenance_fields:
+    bridge_id:           {type: string,  required: false}
+    competition_label:   {type: string,  required: false}
+    kickoff_date:        {type: string,  required: false}
+    norm_home:           {type: string,  required: false}
+    norm_away:           {type: string,  required: false}
+    ingestion_mode:      {type: enum,    required: true,  values: [copied_local, downloaded_official]}
+    ingestion_run_id:    {type: string,  required: true}
+    copied_from:         {type: string,  required: false, description: Absolute path the object was copied from (copied_local only).}
+
+manifest:
+  format: jsonl
+  append_only: true
+  immutable_lines: true   # a manifest line, once written, is never edited or removed

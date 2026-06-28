@@ -1,0 +1,44 @@
+{
+  "decision_ledger": {
+    "verdict": "data_insufficient",
+    "reference_model": null,
+    "candidate_model": null,
+    "rules": null,
+    "reason": null
+  },
+  "reproducibility": {
+    "deterministic": true,
+    "recompute_hash": null,
+    "cohort_lake_root": "C:\\Users\\Mahyar\\worldcup_data_lake\\statsbomb_open\\international_event_lake_v1",
+    "n_cohort_matches": 60,
+    "n_index_objects": 60
+  },
+  "source_quality": {
+    "lake_objects": 258,
+    "total_events": 931888,
+    "objects_with_xg": 258,
+    "objects_with_possession": 258,
+    "objects_with_location": 258,
+    "xg_fraction": 1.0,
+    "ingestion_modes": {
+      "copied_local": 58,
+      "retrieved_official": 200
+    },
+    "competition_mix": {
+      "FIFA World Cup 2018": 64,
+      "UEFA Euro 2020": 51,
+      "FIFA World Cup 2022": 64,
+      "UEFA Euro 2024": 51,
+      "Copa America 2024": 28
+    },
+    "non_official_source_objects": [],
+    "official_source_only": true,
+    "official_host": "raw.githubusercontent.com/statsbomb/open-data"
+  },
+  "power": {
+    "observed_M_matches": 56,
+    "bootstrap_unit": "match_clustered"
+  },
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "utc": "2026-06-28T06:49:47.424769+00:00"
+}

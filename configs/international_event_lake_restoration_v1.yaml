@@ -1,0 +1,47 @@
+# Durable <=10h International Event Lake Restoration v1 run (reuses deep_research_supervisor.py).
+# research_only / experimental / not_runtime_approved / not_trade_eligible / not_live_eligible.
+#
+# EXTERNAL retrieval = OFFICIAL StatsBomb Open Data ONLY (raw.githubusercontent.com/statsbomb/open-data),
+# and ONLY in JOB6 acquisition (engine-owned: <=4 concurrent, exp backoff, <=2 retries, atomic, sha256,
+# immutable manifest). NO API-Football / Odds / paid / scrape / mirror / browser / 360 / video /
+# credentials. Raw event JSON lives ONLY in the EXTERNAL content-addressed lake (0 git-tracked here).
+# NEVER modifies the active collector (WorldCupShadowCollector / worldcup_draw_model_lab_FINAL), B1,
+# frozen M1-M5, candidate.py, approved_models.yaml, trading/Kalshi/risk, .env, or existing raw/manifests.
+# Strict EXACT international bridge only; ambiguous never enters evaluation; NO completed-2026-WC match in
+# any cohort/fit/calibration/selection. The independent unit is the MATCH, never a snapshot row.
+run:
+  max_hours: 10.0
+  max_workers: 2
+  max_api_requests: 100000000
+  heartbeat_interval_s: 120
+  collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json"
+  collector_stale_seconds: 100000
+  per_job_timeout_s: 36000
+safety:
+  kalshi_live_trading: false
+  trading_mode: paper
+  use_odds_api: false
+  use_api_football: false
+  no_api_football: true
+  no_odds: true
+  official_statsbomb_open_data_only: true
+  no_scrape: true
+  no_mirror: true
+  no_browser: true
+  no_credentials: true
+  raw_only_in_external_lake: true
+  labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+jobs:
+  - {id: JOB1,  title: "preflight + dependency + isolation + test-baseline + dry-run note",            script: "scripts/lake_jobs/lk_job01_preflight.py",                 critical: true}
+  - {id: JOB2,  title: "init persistent external lake + retention contract",                          script: "scripts/lake_jobs/lk_job02_init_lake.py",                 critical: true}
+  - {id: JOB3,  title: "official senior men's international catalog + selection manifest",            script: "scripts/lake_jobs/lk_job03_official_catalog.py",          critical: false}
+  - {id: JOB4,  title: "legacy restoration manifest + restore legacy events INTO LAKE",              script: "scripts/lake_jobs/lk_job04_legacy_restore.py",            critical: true}
+  - {id: JOB5,  title: "expanded strict EXACT bridge (official -> local exact fixtures)",            script: "scripts/lake_jobs/lk_job05_strict_bridge.py",             critical: false}
+  - {id: JOB6,  title: "acquire + validate MISSING official events INTO LAKE (official-source-only)", script: "scripts/lake_jobs/lk_job06_acquire_official.py",           critical: false}
+  - {id: JOB7,  title: "event-lake quality + retention audit (FAIL CLOSED)",                          script: "scripts/lake_jobs/lk_job07_quality_retention_audit.py",   critical: true}
+  - {id: JOB8,  title: "frozen cohort + exclusion + causal datasets (raw-backed)",                    script: "scripts/lake_jobs/lk_job08_cohort.py",                    critical: true}
+  - {id: JOB9,  title: "match-level statistical power",                                               script: "scripts/lake_jobs/lk_job09_power.py",                     critical: false}
+  - {id: JOB10, title: "strict forward-chain evaluation (preregistered families; locked rule)",       script: "scripts/lake_jobs/lk_job10_forward_chain_eval.py",        critical: false}
+  - {id: JOB11, title: "LOCO + calibration + bootstrap + ablations",                                  script: "scripts/lake_jobs/lk_job11_loco_calibration_bootstrap.py", critical: false}
+  - {id: JOB12, title: "decision ledger + reproducibility + source-quality",                          script: "scripts/lake_jobs/lk_job12_decision_ledger.py",           critical: false}
+  - {id: JOB13, title: "completion report + final integrity audit",                                   script: "scripts/lake_jobs/lk_job13_completion_report.py",         critical: true}

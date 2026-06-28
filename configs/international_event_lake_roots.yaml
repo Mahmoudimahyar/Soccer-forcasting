@@ -1,0 +1,46 @@
+# International Event Lake — root registry (content-addressed, fail-closed).
+# The PERSISTENT lake lives OUTSIDE every git worktree (gitignored/external). Raw event JSON is
+# stored ONLY in the lake. Nothing here resolves into the active collector checkout.
+# research_only. StatsBomb Open Data (non-commercial research, attribution).
+schema_version: international_event_lake_roots_v1
+
+# Single persistent lake root (absolute, external to all worktrees).
+lake_root: "C:/Users/Mahyar/worldcup_data_lake/statsbomb_open/international_event_lake_v1"
+
+# Sub-trees under lake_root (created by init; never git-cleaned, never deleted by audit).
+subdirs:
+  objects:    objects      # content-addressed raw event JSON: objects/<aa>/<sha256>.json
+  indexes:    indexes      # lake index (sb_match_id -> object record), JSON + JSONL
+  manifests:  manifests    # append-only immutable manifest (one line per stored object)
+  quarantine: quarantine   # rejected / corrupt / ambiguous payloads (never enter evaluation)
+  integrity:  integrity    # sentinel reports
+  logs:       logs         # restore / audit / retention run logs
+
+# Index + manifest filenames (under their subdirs).
+index_json:   international_event_lake_index_v1.json
+index_jsonl:  international_event_lake_index_v1.jsonl
+manifest_jsonl: international_event_lake_manifest_v1.jsonl
+
+# READ-ONLY local sources the restore step may COPY valid objects FROM (never re-download a
+# locally valid + hash-verified file). Resolved relative to the worktree when not absolute.
+local_source_roots:
+  statsbomb_raw:        "data/raw/statsbomb_open"                                   # canonical (this worktree)
+  statsbomb_raw_prior:  "C:/Users/Mahyar/worldcup-player-impact-xg/data/raw/statsbomb_open"  # ~60 surviving event files
+
+# Exact international bridge (read-only). Strict EXACT rows only — no fuzzy / forced bridge.
+exact_bridge_csv: "C:/Users/Mahyar/worldcup-player-impact-xg/data/processed/api_statsbomb_match_bridge_v1.csv"
+
+# Official StatsBomb Open Data event URL template (the ONLY permitted external source).
+official_event_url_template: "https://raw.githubusercontent.com/statsbomb/open-data/master/data/events/{sb_match_id}.json"
+
+# Senior MEN'S INTERNATIONAL competitions allowed into the lake (from the official catalog).
+# Historical cutoff is strictly before the 2026 World Cup. No completed-2026-WC match in any cohort.
+allowed_competitions:
+  - "FIFA World Cup"
+  - "UEFA Euro"
+  - "Copa America"
+  - "African Cup of Nations"
+
+# Roots jobs MUST NOT read from or write into.
+forbidden_roots:
+  - "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL"   # active collector checkout (B1 / frozen models / live)

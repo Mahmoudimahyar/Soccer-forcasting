@@ -1,0 +1,13 @@
+competition,season,competition_id,season_id,country,matches_status,n_matches,matches_sha256,matches_url
+African Cup of Nations,2023,1267,107,Africa,ok,52,0c5a7fdd63c969916c078f89fbd8257c834a2cdb486e56ec64c08354ea3c87de,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/1267/107.json
+Copa America,2024,223,282,South America,ok,32,058380b9fe90a51f4a15beb35db08cb6e7f925c840d4d7b5ceb7103da878c857,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/223/282.json
+FIFA World Cup,2022,43,106,International,ok,64,b9d7516dc9919a825f04c204ca85487958c8a2431e84140a48e944934661efc7,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/106.json
+FIFA World Cup,2018,43,3,International,ok,64,f89dbd4aedcaf9c9e4ec9d8e745d5d54596500ec357d7489c914a2f126805adf,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/3.json
+FIFA World Cup,1990,43,55,International,ok,1,dfebe4b357c03af5e12a91988f9231d43b9bf8d052b31bbdb65bcb995a5341f9,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/55.json
+FIFA World Cup,1986,43,54,International,ok,3,c5ddb2b7899417e5b1b80ba91ed15dac32a9f03a00358b392daa3dfd168bde50,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/54.json
+FIFA World Cup,1974,43,51,International,ok,6,5bf18dca74e0de7440ba2b5ff8562059a09c0f5950c9fefaf1278bc37191c77c,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/51.json
+FIFA World Cup,1970,43,272,International,ok,6,39b5beeb3a7424b3d09c0778a23cbe7cd96673516e5de39ab3742d6e37c51e78,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/272.json
+FIFA World Cup,1962,43,270,International,ok,1,c6ef9598ced247d79cf5b0cbceca57d39b71cb0ba461251362c659549d95de2b,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/270.json
+FIFA World Cup,1958,43,269,International,ok,2,4d0cf1a1a667c43f96afed244848a8b379ac4ebe633c4bc7ef666d05c51ee3c4,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/269.json
+UEFA Euro,2024,55,282,Europe,ok,51,70aa07d8a73e899d501c3edcd39b4bea0d4ae1d48bce7b59c4619869a13adc1b,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/55/282.json
+UEFA Euro,2020,55,43,Europe,ok,51,6467df80bd2abd7698ab84a6409523c573d2aad25462f1cbae90efdeb29831b6,https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/55/43.json

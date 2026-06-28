@@ -1,0 +1,99 @@
+# International Event Lake — data contract (fail-closed rules + retrieval policy).
+# Defines what a VALID lake object is, the fail-closed sentinel conditions, and the
+# external retrieval policy. research_only. StatsBomb Open Data only.
+schema_version: international_event_lake_contract_v1
+
+# ---------------------------------------------------------------------------
+# Content addressing & immutability
+# ---------------------------------------------------------------------------
+content_addressing:
+  hash_algorithm: sha256
+  # Object path under objects/ is sharded by the first 2 hex chars of the sha256:
+  #   objects/<sha256[:2]>/<sha256>.json
+  shard_prefix_len: 2
+  immutable: true            # an existing object is NEVER overwritten; identical bytes are idempotent
+  first_write_wins: true
+
+# ---------------------------------------------------------------------------
+# What makes a lake object VALID (every condition must hold)
+# ---------------------------------------------------------------------------
+validity:
+  must_be_valid_json: true
+  must_be_event_list: true        # top-level JSON must be a non-empty list of event objects
+  min_event_count: 1
+  event_object_required_keys:     # each element must look like a StatsBomb event
+    - id
+    - index
+    - type
+  reject_html_or_error_body: true # bodies starting with '<' or containing error markers are rejected
+  reject_empty_file: true
+  # sb_match_id must resolve UNAMBIGUOUSLY to exactly one EXACT international bridge row.
+  require_exact_bridge_row: true
+  forbid_ambiguous_match_id: true
+
+# ---------------------------------------------------------------------------
+# Lake index record — fields stored per sb_match_id
+# (mirrors schemas/international_event_lake_manifest_v1.yaml)
+# ---------------------------------------------------------------------------
+index_record_fields:
+  - sb_match_id
+  - local_path              # object path inside the lake (relative to lake_root)
+  - sha256
+  - event_count
+  - xg_available
+  - possession_available
+  - location_available
+  - source_url
+  - retrieval_ts
+  - validation_status       # valid | quarantined
+  - source_schema_version
+
+# ---------------------------------------------------------------------------
+# FAIL-CLOSED sentinel conditions (audit/sentinel must FAIL on ANY of these)
+# ---------------------------------------------------------------------------
+fail_closed_conditions:
+  manifest_present_but_object_absent: true   # index/manifest references an object that does not exist
+  hash_mismatch: true                        # on-disk bytes do not hash to the recorded sha256
+  empty_file: true                           # zero-byte object
+  html_or_error_body: true                   # object body is HTML / provider error
+  invalid_json: true                         # object is not parseable JSON
+  not_event_list: true                       # parsed object is not a non-empty list of events
+  ambiguous_match_id: true                   # sb_match_id maps to >1 exact bridge row
+  object_under_unregistered_root: true       # object path is outside the registered lake objects/ tree
+  filename_hash_disagreement: true           # object filename != sha256 of its bytes
+
+retention:
+  never_delete_valid_object: true
+  never_git_clean_the_lake: true
+  # Restore/audit may COPY valid local files in; they must NEVER mutate or remove a valid object.
+
+# ---------------------------------------------------------------------------
+# External retrieval policy (ONLY used if a file is not already locally valid)
+# ---------------------------------------------------------------------------
+retrieval:
+  official_source_only: true
+  base_url: "https://raw.githubusercontent.com/statsbomb/open-data/master/data"
+  event_path_template: "/events/{sb_match_id}.json"
+  user_agent: "wcdrawlab-research/1.0 (StatsBomb open-data, non-commercial research)"
+  max_concurrency: 4
+  max_retries: 2
+  backoff: exponential
+  write_protocol: atomic_tmp_then_rename     # tmp -> JSON-validate -> sha256 -> atomic rename -> manifest append
+  record_source_url: true
+  record_retrieval_ts: true
+  forbidden_sources:                          # NEVER permitted
+    - api_football
+    - odds_api
+    - paid_provider
+    - scrape
+    - mirror
+    - browser
+    - statsbomb_360
+    - statsbomb_video
+
+cohort_policy:
+  level: senior_mens_international
+  historical_cutoff: before_2026_world_cup
+  forbid_completed_2026_wc_match: true
+  bootstrap_unit: match            # independent unit = MATCH (not snapshot)
+  bridge_policy: exact_only        # no fuzzy / forced / ambiguous bridge ever enters evaluation

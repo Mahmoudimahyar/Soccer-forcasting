@@ -1,0 +1,90 @@
+{
+  "schema_version": "international_event_lake_model_rerun_v1",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "bootstrap_unit": "match",
+  "reference_model_R0": "research.event_process.e2",
+  "n_bootstrap": 500,
+  "paired_delta_vs_R0": {
+    "research.event_process.e0": {
+      "n_matches": 56,
+      "mean_delta": 0.10032927121661664,
+      "ci95": [
+        0.1003,
+        0.1424
+      ],
+      "favors_candidate": false
+    },
+    "research.event_process.e1": {
+      "n_matches": 56,
+      "mean_delta": 0.10032788241248795,
+      "ci95": [
+        0.1003,
+        0.1424
+      ],
+      "favors_candidate": false
+    },
+    "research.event_process.e3": {
+      "n_matches": 56,
+      "mean_delta": 0.001966336647428731,
+      "ci95": [
+        0.002,
+        0.0202
+      ],
+      "favors_candidate": false
+    },
+    "research.event_process.e4": {
+      "n_matches": 56,
+      "mean_delta": -0.005556242436851114,
+      "ci95": [
+        -0.0299,
+        -0.0056
+      ],
+      "favors_candidate": true
+    },
+    "research.event_process.e5": {
+      "n_matches": 56,
+      "mean_delta": 0.01268913581952769,
+      "ci95": [
+        0.0127,
+        0.0419
+      ],
+      "favors_candidate": false
+    },
+    "research.event_process.e6": {
+      "n_matches": 56,
+      "mean_delta": -0.00015108984661693463,
+      "ci95": [
+        -0.0002,
+        0.0077
+      ],
+      "favors_candidate": false
+    },
+    "research.event_process.e7": {
+      "n_matches": 56,
+      "mean_delta": 0.02190408578656159,
+      "ci95": [
+        0.0219,
+        0.0312
+      ],
+      "favors_candidate": false
+    },
+    "research.event_process.e8": {
+      "n_matches": 56,
+      "mean_delta": 0.02190408578656159,
+      "ci95": [
+        0.0219,
+        0.0312
+      ],
+      "favors_candidate": false
+    },
+    "research.event_process.e9": {
+      "n_matches": 56,
+      "mean_delta": 0.011830352318957339,
+      "ci95": [
+        0.0118,
+        0.0166
+      ],
+      "favors_candidate": false
+    }
+  }
+}

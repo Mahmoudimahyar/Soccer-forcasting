@@ -1,0 +1,147 @@
+{
+ "schema_version": "official_modern_international_catalog_v1",
+ "run_id": "official_catalog_20260628T060129Z",
+ "built_ts": "2026-06-28T06:01:31Z",
+ "source_base": "https://raw.githubusercontent.com/statsbomb/open-data/master/data",
+ "admitted_competitions": [
+  "African Cup of Nations",
+  "Copa America",
+  "FIFA World Cup",
+  "UEFA Euro"
+ ],
+ "excluded_for_cutoff": [],
+ "competition_seasons": [
+  {
+   "competition": "African Cup of Nations",
+   "season": "2023",
+   "competition_id": 1267,
+   "season_id": 107,
+   "country": "Africa",
+   "matches_status": "ok",
+   "n_matches": 52,
+   "matches_sha256": "0c5a7fdd63c969916c078f89fbd8257c834a2cdb486e56ec64c08354ea3c87de",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/1267/107.json"
+  },
+  {
+   "competition": "Copa America",
+   "season": "2024",
+   "competition_id": 223,
+   "season_id": 282,
+   "country": "South America",
+   "matches_status": "ok",
+   "n_matches": 32,
+   "matches_sha256": "058380b9fe90a51f4a15beb35db08cb6e7f925c840d4d7b5ceb7103da878c857",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/223/282.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "2022",
+   "competition_id": 43,
+   "season_id": 106,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 64,
+   "matches_sha256": "b9d7516dc9919a825f04c204ca85487958c8a2431e84140a48e944934661efc7",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/106.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "2018",
+   "competition_id": 43,
+   "season_id": 3,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 64,
+   "matches_sha256": "f89dbd4aedcaf9c9e4ec9d8e745d5d54596500ec357d7489c914a2f126805adf",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/3.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "1990",
+   "competition_id": 43,
+   "season_id": 55,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 1,
+   "matches_sha256": "dfebe4b357c03af5e12a91988f9231d43b9bf8d052b31bbdb65bcb995a5341f9",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/55.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "1986",
+   "competition_id": 43,
+   "season_id": 54,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 3,
+   "matches_sha256": "c5ddb2b7899417e5b1b80ba91ed15dac32a9f03a00358b392daa3dfd168bde50",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/54.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "1974",
+   "competition_id": 43,
+   "season_id": 51,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 6,
+   "matches_sha256": "5bf18dca74e0de7440ba2b5ff8562059a09c0f5950c9fefaf1278bc37191c77c",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/51.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "1970",
+   "competition_id": 43,
+   "season_id": 272,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 6,
+   "matches_sha256": "39b5beeb3a7424b3d09c0778a23cbe7cd96673516e5de39ab3742d6e37c51e78",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/272.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "1962",
+   "competition_id": 43,
+   "season_id": 270,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 1,
+   "matches_sha256": "c6ef9598ced247d79cf5b0cbceca57d39b71cb0ba461251362c659549d95de2b",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/270.json"
+  },
+  {
+   "competition": "FIFA World Cup",
+   "season": "1958",
+   "competition_id": 43,
+   "season_id": 269,
+   "country": "International",
+   "matches_status": "ok",
+   "n_matches": 2,
+   "matches_sha256": "4d0cf1a1a667c43f96afed244848a8b379ac4ebe633c4bc7ef666d05c51ee3c4",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/43/269.json"
+  },
+  {
+   "competition": "UEFA Euro",
+   "season": "2024",
+   "competition_id": 55,
+   "season_id": 282,
+   "country": "Europe",
+   "matches_status": "ok",
+   "n_matches": 51,
+   "matches_sha256": "70aa07d8a73e899d501c3edcd39b4bea0d4ae1d48bce7b59c4619869a13adc1b",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/55/282.json"
+  },
+  {
+   "competition": "UEFA Euro",
+   "season": "2020",
+   "competition_id": 55,
+   "season_id": 43,
+   "country": "Europe",
+   "matches_status": "ok",
+   "n_matches": 51,
+   "matches_sha256": "6467df80bd2abd7698ab84a6409523c573d2aad25462f1cbae90efdeb29831b6",
+   "matches_url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data/matches/55/43.json"
+  }
+ ]
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": "international_event_lake_power_v1",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "built_utc": "2026-06-28T06:24:32.849532+00:00",
+  "bootstrap_unit": "match",
+  "template_info": {
+    "n_matches": 56,
+    "observed_mean_delta_e7_minus_e2": 0.02190408578656159,
+    "observed_sd_delta": 0.099996667373431,
+    "reference_model": "research.event_process.e2",
+    "candidate_model": "research.event_process.e7",
+    "n_competitions": 5,
+    "cross_model_per_match_rps_spread_mean": 0.06382149689326526,
+    "ref_rps_mean": 0.14180178353219738,
+    "cand_rps_mean": 0.16370586931875897
+  },
+  "observed_M_matches": 56,
+  "matches_per_tournament": 11.2,
+  "abs_rps_gain_grid": [
+    0.0005,
+    0.001,
+    0.002,
+    0.003,
+    0.005,
+    0.01
+  ],
+  "current_power_at_observed_M": {
+    "0.0005": 0.0333,
+    "0.0010": 0.0267,
+    "0.0020": 0.0467,
+    "0.0030": 0.0467,
+    "0.0050": 0.0933,
+    "0.0100": 0.1267
+  },
+  "matches_needed_for_power": {
+    "0.0005": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0010": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0020": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0030": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0050": {
+      "60pct": 2000,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0100": {
+      "60pct": 500,
+      "80pct": 800,
+      "90pct": 1200
+    }
+  },
+  "tournaments_needed_for_power": {
+    "0.0005": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0010": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0020": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0030": {
+      "60pct": null,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0050": {
+      "60pct": 178.57,
+      "80pct": null,
+      "90pct": null
+    },
+    "0.0100": {
+      "60pct": 44.64,
+      "80pct": 71.43,
+      "90pct": 107.14
+    }
+  },
+  "more_snapshots_same_matches": {
+    "0.0010": {
+      "power_M_obs": 0.0433,
+      "power_M_obs_more_snapshots_same_matches": 0.0433,
+      "delta_from_more_snapshots": 0.0
+    },
+    "0.0030": {
+      "power_M_obs": 0.06,
+      "power_M_obs_more_snapshots_same_matches": 0.06,
+      "delta_from_more_snapshots": 0.0
+    }
+  },
+  "coverage_imbalance_effect": {
+    "0.0005": {
+      "power_full_cohort": 0.0333,
+      "power_at_60pct_coverage": 0.0533,
+      "M_full": 56,
+      "M_at_60pct": 34
+    },
+    "0.0010": {
+      "power_full_cohort": 0.0267,
+      "power_at_60pct_coverage": 0.03,
+      "M_full": 56,
+      "M_at_60pct": 34
+    },
+    "0.0020": {
+      "power_full_cohort": 0.0467,
+      "power_at_60pct_coverage": 0.03,
+      "M_full": 56,
+      "M_at_60pct": 34
+    },
+    "0.0030": {
+      "power_full_cohort": 0.0467,
+      "power_at_60pct_coverage": 0.06,
+      "M_full": 56,
+      "M_at_60pct": 34
+    },
+    "0.0050": {
+      "power_full_cohort": 0.0933,
+      "power_at_60pct_coverage": 0.0933,
+      "M_full": 56,
+      "M_at_60pct": 34
+    },
+    "0.0100": {
+      "power_full_cohort": 0.1267,
+      "power_at_60pct_coverage": 0.1067,
+      "M_full": 56,
+      "M_at_60pct": 34
+    }
+  },
+  "power_estimate_uncertainty": {
+    "0.0010": {
+      "mean": 0.0373,
+      "min": 0.03,
+      "max": 0.0467,
+      "k_streams": 5
+    },
+    "0.0030": {
+      "mean": 0.0487,
+      "min": 0.0433,
+      "max": 0.06,
+      "k_streams": 5
+    },
+    "0.0050": {
+      "mean": 0.0673,
+      "min": 0.05,
+      "max": 0.0767,
+      "k_streams": 5
+    }
+  },
+  "seeds": {
+    "master_seed": 20260628,
+    "n_outer": 300,
+    "b_inner": 300
+  },
+  "deterministic": true
+}

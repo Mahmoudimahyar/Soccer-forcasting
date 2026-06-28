@@ -1,0 +1,129 @@
+{
+  "schema_version": "international_event_lake_model_rerun_v1",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "reference_model_R0": "research.event_process.e2",
+  "metrics": {
+    "research.event_process.e0": {
+      "loco_rps": 0.2427726265756207,
+      "loco_logloss": 1.0899947519543454,
+      "loco_brier_draw": 0.17662867537429688,
+      "forward_chain_rps": 0.2401236868801136
+    },
+    "research.event_process.e1": {
+      "loco_rps": 0.24277052497781484,
+      "loco_logloss": 1.089988995401184,
+      "loco_brier_draw": 0.17662861699717142,
+      "forward_chain_rps": 0.2401251752685201
+    },
+    "research.event_process.e2": {
+      "loco_rps": 0.14052742579049018,
+      "loco_logloss": 0.7215901978494915,
+      "loco_brier_draw": 0.13908167559162904,
+      "forward_chain_rps": 0.14066788729036522
+    },
+    "research.event_process.e3": {
+      "loco_rps": 0.14509364990487458,
+      "loco_logloss": 1.0026921701888383,
+      "loco_brier_draw": 0.1482186119215323,
+      "forward_chain_rps": 0.15055579501732133
+    },
+    "research.event_process.e4": {
+      "loco_rps": 0.13514792466415232,
+      "loco_logloss": 0.8461369109992457,
+      "loco_brier_draw": 0.14456779806517842,
+      "forward_chain_rps": 0.1392896661413097
+    },
+    "research.event_process.e5": {
+      "loco_rps": 0.15471039857883584,
+      "loco_logloss": 1.1594026497414198,
+      "loco_brier_draw": 0.15756071631312954,
+      "forward_chain_rps": 0.17741362052143633
+    },
+    "research.event_process.e6": {
+      "loco_rps": 0.14221053966652678,
+      "loco_logloss": 1.0311439613932594,
+      "loco_brier_draw": 0.13441393724969355,
+      "forward_chain_rps": 0.1523587615669761
+    },
+    "research.event_process.e7": {
+      "loco_rps": 0.16341005168101705,
+      "loco_logloss": 1.395367948451312,
+      "loco_brier_draw": 0.15247968175483217,
+      "forward_chain_rps": 0.1955376358121753
+    },
+    "research.event_process.e8": {
+      "loco_rps": 0.16341005168101705,
+      "loco_logloss": 1.395367948451312,
+      "loco_brier_draw": 0.15247968175483217,
+      "forward_chain_rps": 0.1955376358121753
+    },
+    "research.event_process.e9": {
+      "loco_rps": 0.15365731202397187,
+      "loco_logloss": 1.4307005711223066,
+      "loco_brier_draw": 0.14857888752722972,
+      "forward_chain_rps": 0.17533814209254167
+    }
+  },
+  "forward_chain_pooled": {
+    "research.event_process.e0": {
+      "rps": 0.2401236868801136,
+      "logloss": 1.091453999401478,
+      "brier_draw": 0.18174925591528115
+    },
+    "research.event_process.e1": {
+      "rps": 0.2401251752685201,
+      "logloss": 1.0914719344183024,
+      "brier_draw": 0.1817545823129804
+    },
+    "research.event_process.e2": {
+      "rps": 0.14066788729036522,
+      "logloss": 0.7286842488922748,
+      "brier_draw": 0.14307894373805935
+    },
+    "research.event_process.e3": {
+      "rps": 0.15055579501732133,
+      "logloss": 1.3301543660351491,
+      "brier_draw": 0.15825109111222635
+    },
+    "research.event_process.e4": {
+      "rps": 0.1392896661413097,
+      "logloss": 1.2232405069581918,
+      "brier_draw": 0.15089354005663164
+    },
+    "research.event_process.e5": {
+      "rps": 0.17741362052143633,
+      "logloss": 2.1058282574457627,
+      "brier_draw": 0.18174321513993988
+    },
+    "research.event_process.e6": {
+      "rps": 0.1523587615669761,
+      "logloss": 1.6318532773756198,
+      "brier_draw": 0.13327520351858935
+    },
+    "research.event_process.e7": {
+      "rps": 0.1955376358121753,
+      "logloss": 2.399522267190082,
+      "brier_draw": 0.17849584387826056
+    },
+    "research.event_process.e8": {
+      "rps": 0.1955376358121753,
+      "logloss": 2.399522267190082,
+      "brier_draw": 0.17849584387826056
+    },
+    "research.event_process.e9": {
+      "rps": 0.17533814209254167,
+      "logloss": 2.4937799561742096,
+      "brier_draw": 0.170456746575921
+    }
+  },
+  "competition_order": [
+    "FIFA World Cup 2018",
+    "UEFA Euro 2020",
+    "FIFA World Cup 2022",
+    "UEFA Euro 2024",
+    "Copa America 2024"
+  ],
+  "ablations": {},
+  "n_eligible_matches": 56,
+  "n_eval_rows": 7125
+}
