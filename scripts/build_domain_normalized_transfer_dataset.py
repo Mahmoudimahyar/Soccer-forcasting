@@ -175,6 +175,7 @@ def _find_club_event_file(match_id: str):
     (path, root_name) or (None, None). Never downloads."""
     candidates = []
     try:
+        candidates.append((DR.get_root("statsbomb_raw_event_process") / "event_process_auxiliary" / f"{match_id}.json", "event_process_aux_root"))
         candidates.append((DR.get_root("statsbomb_raw") / "event_process_auxiliary" / f"{match_id}.json",
                            "event_process_auxiliary"))
         candidates.append((DR.get_root("statsbomb_raw") / "events" / f"{match_id}.json", "statsbomb_raw"))

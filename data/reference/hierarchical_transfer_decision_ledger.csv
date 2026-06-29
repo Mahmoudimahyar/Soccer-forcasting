@@ -1,0 +1,5 @@
+fold_held_tournament,n_intl_train,n_club_train,overlap_score,selective_gate_passed,selective_gate_reason,selected_model_via_t6,t6_rps,t6_rps_t0,t6_rps_delta_vs_t0,decision,accept_for_runtime,eligibility
+Copa America 2024,24605,0,1.0,False,insufficient_club_rows(0<200),research.transfer.international_only_t1,0.244381,0.248466,-0.004085,fallback_intl_only,False,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+FIFA World Cup 2022,14681,0,1.0,False,insufficient_club_rows(0<200),research.transfer.international_only_t1,0.252982,0.252127,0.000855,fallback_intl_only,False,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+UEFA Euro 2020,8269,0,1.0,False,insufficient_club_rows(0<200),research.transfer.international_only_t1,0.243572,0.241682,0.00189,fallback_intl_only,False,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+UEFA Euro 2024,22295,0,1.0,False,insufficient_club_rows(0<200),research.transfer.international_only_t1,0.241271,0.23664,0.004631,fallback_intl_only,False,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible

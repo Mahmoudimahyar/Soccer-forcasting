@@ -1,0 +1,19 @@
+{
+  "defect": "club event root not registered; builders resolved club events only from this worktree's empty statsbomb_raw/event_process_auxiliary -> club_materialized=0",
+  "old_incorrect_path": "<hierarchical-worktree>/data/raw/statsbomb_open/event_process_auxiliary (empty)",
+  "corrected_registered_path": "C:/Users/Mahyar/worldcup-event-process-intelligence/data/raw/statsbomb_open/event_process_auxiliary",
+  "root_owner": "event-process-intelligence-v1",
+  "before_count": 0,
+  "after_count": 669,
+  "raw_files_changed": 0,
+  "external_source_called": false,
+  "affected_builders": [
+    "build_domain_event_process_inventory.py",
+    "audit_domain_feature_overlap.py",
+    "build_domain_normalized_transfer_dataset.py"
+  ],
+  "fix": "registered data_roots root 'statsbomb_raw_event_process' + added candidate in club resolution; verified build_club_rows(5)->726 rows",
+  "regression_tests_added": "tests/test_club_root_repair.py (club root resolves, materialized nonzero, fail-closed on absent root, club not in intl test)",
+  "manifest_count": 669,
+  "id_overlap_manifest_vs_files": "669/669"
+}

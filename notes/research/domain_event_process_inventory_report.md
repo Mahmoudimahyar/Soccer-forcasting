@@ -2,7 +2,7 @@
 
 _research_only / experimental / not_runtime_approved / not_trade_eligible / not_live_eligible_
 
-Generated: 2026-06-28T08:14:34Z
+Generated: 2026-06-28T19:03:22Z
 
 ## Scope
 
@@ -30,35 +30,35 @@ Per-competition (international):
 ### Club (event-process auxiliary corpus)
 
 - fixtures declared in aux manifest: **669**
-- club event objects materialized in this worktree: **0**
-- note: club raw event objects are NOT materialized in this worktree; event-level completeness flagged raw_absent (manifest-level inventory only)
+- club event objects materialized in this worktree: **669**
+- note: 669/669 club event objects materialized
 
 Per-competition (club, manifest-level):
 
 | competition | matches | seasons | event objects present |
 |---|---:|---:|---:|
-| La Liga | 150 | 18 | 0 |
-| Ligue 1 | 138 | 3 | 0 |
-| Premier League | 118 | 2 | 0 |
-| Serie A | 81 | 2 | 0 |
-| Indian Super league | 80 | 1 | 0 |
-| 1. Bundesliga | 68 | 2 | 0 |
-| Champions League | 18 | 18 | 0 |
-| Major League Soccer | 6 | 1 | 0 |
-| Copa del Rey | 3 | 3 | 0 |
-| UEFA Europa League | 3 | 1 | 0 |
-| Liga Profesional | 2 | 2 | 0 |
-| FIFA U20 World Cup | 1 | 1 | 0 |
-| North American League | 1 | 1 | 0 |
+| La Liga | 150 | 18 | 150 |
+| Ligue 1 | 138 | 3 | 138 |
+| Premier League | 118 | 2 | 118 |
+| Serie A | 81 | 2 | 81 |
+| Indian Super league | 80 | 1 | 80 |
+| 1. Bundesliga | 68 | 2 | 68 |
+| Champions League | 18 | 18 | 18 |
+| Major League Soccer | 6 | 1 | 6 |
+| Copa del Rey | 3 | 3 | 3 |
+| UEFA Europa League | 3 | 1 | 3 |
+| Liga Profesional | 2 | 2 | 2 |
+| FIFA U20 World Cup | 1 | 1 | 1 |
+| North American League | 1 | 1 | 1 |
 
 ## Quality-grade distribution
 
 | grade | international | club | meaning |
 |---|---:|---:|---|
-| A | 258 | 0 | full clock + XI + verified xG + rich stream + snapshots |
+| A | 258 | 669 | full clock + XI + verified xG + rich stream + snapshots |
 | B | 0 | 0 | full clock + XI, partial xG or thinner stream |
 | C | 0 | 0 | usable but missing clock/XI or very thin |
-| D | 0 | 669 | event-level completeness not derivable here (raw absent) |
+| D | 0 | 0 | event-level completeness not derivable here (raw absent) |
 
 ## Stable-completeness headline (international)
 

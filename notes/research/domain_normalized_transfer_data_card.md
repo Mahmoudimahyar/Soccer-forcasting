@@ -100,8 +100,8 @@ Always excluded from the model space (domain-shifted / source-incompatible): `po
   materialised 93,940-row real dataset (4 folds, 194 intl test matches, 0 club train matches, subset 19).
   Writes `data/reference/domain_normalized_transfer_audit.json` +
   `notes/research/domain_normalized_transfer_audit_report.md`.
-- `pytest tests/test_domain_normalized_transfer_dataset.py -q` → **38 passed** (33 always-run synthetic +
-  5 integration on the real CSV).
+- `pytest tests/test_domain_normalized_transfer_dataset.py -q` → **38 passed** (32 always-run synthetic +
+  6 integration on the real CSV; integration tests SKIP cleanly when the CSV is absent).
 
 ## Reported metrics (build contract)
 

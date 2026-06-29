@@ -27,6 +27,11 @@ roots:
     mode: read_only
     gitignored: true
     owner: player-impact-xg-fusion-v1
+  statsbomb_raw_event_process:   # read-only club event-process auxiliary corpus (669 files, event-process worktree); existing local data
+    path: "C:/Users/Mahyar/worldcup-event-process-intelligence/data/raw/statsbomb_open"
+    mode: read_only
+    gitignored: true
+    owner: event-process-intelligence-v1
   dynamic_snapshots_out: {path: "data/processed/dynamic_snapshots", mode: read_write, gitignored: true}
   model_artifacts_out:   {path: "data/processed/model_artifacts", mode: read_write, gitignored: true}
 forbidden_roots:            # jobs MUST NOT read from these

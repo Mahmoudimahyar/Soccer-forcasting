@@ -2,7 +2,7 @@
 
 _research_only / experimental / not_runtime_approved / not_trade_eligible / not_live_eligible_
 
-Generated: 2026-06-28T17:10:13Z
+Generated: 2026-06-28T18:21:42Z
 Row source: **materialised_real_dataset**  (reference model: `research.transfer.w2_reference_t0`)
 
 ## Summary

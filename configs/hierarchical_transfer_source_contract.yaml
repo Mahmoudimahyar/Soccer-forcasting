@@ -1,0 +1,7 @@
+schema_version: hierarchical_transfer_source_contract_v1
+rules:
+  - raw event JSON is read-only; never copied into git; never mutated; never re-downloaded
+  - club root resolves via data_roots 'statsbomb_raw_event_process'; builders FAIL CLOSED if absent (no silent empty fallback)
+  - club rows are auxiliary training only; international exact-bridge matches are the only test rows
+  - no external API / Odds / paid / scrape / credentials; no 2026 WC in fit/calibration/selection
+  - every transfer row records source_root + source sha256

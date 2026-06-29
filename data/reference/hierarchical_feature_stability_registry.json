@@ -1,0 +1,189 @@
+{
+  "schema_version": "hierarchical_feature_stability_registry_v1",
+  "generated_ts": "2026-06-28T18:21:40.110968+00:00",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "reference_model": "research.transfer.w2_reference_t0",
+  "single_domain_train": true,
+  "n_transfer_eligible": 19,
+  "n_always_excluded": 3,
+  "n_insufficient_data": 0,
+  "kept_subset": [
+    "goals_diff",
+    "players_diff",
+    "yellow_diff",
+    "sendoff_diff",
+    "subs_used_diff",
+    "poss_share_diff",
+    "field_tilt_home",
+    "final_third_actions_diff",
+    "box_entries_diff",
+    "recoveries_diff",
+    "turnovers_diff",
+    "corners_diff",
+    "att_free_kicks_diff",
+    "shots_diff",
+    "shots_on_target_diff",
+    "cum_xg_diff",
+    "cum_xg_total",
+    "xg_last5m_diff",
+    "xg_last10m_diff"
+  ],
+  "kept_subset_size": 19,
+  "features": [
+    {
+      "feature": "goals_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "players_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "yellow_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "sendoff_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "subs_used_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "poss_share_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "field_tilt_home",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "final_third_actions_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "box_entries_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "recoveries_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "turnovers_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "corners_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "att_free_kicks_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "shots_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "shots_on_target_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "cum_xg_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "cum_xg_total",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "xg_last5m_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "xg_last10m_diff",
+      "class": "transfer_eligible",
+      "reason": "kept_single_domain_availability_gate",
+      "transfer_eligible": true,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "poss_actions_home",
+      "class": "always_excluded",
+      "reason": "domain_shifted_logging_density_or_provenance",
+      "transfer_eligible": false,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "poss_actions_away",
+      "class": "always_excluded",
+      "reason": "domain_shifted_logging_density_or_provenance",
+      "transfer_eligible": false,
+      "single_domain_gate": true
+    },
+    {
+      "feature": "n_events_observed",
+      "class": "always_excluded",
+      "reason": "domain_shifted_logging_density_or_provenance",
+      "transfer_eligible": false,
+      "single_domain_gate": true
+    }
+  ],
+  "dataset_sha256": "1e47e7fa925e6f00c68cd2de5854bc366e5492bcc3010a8eb73fae4c6845268d"
+}

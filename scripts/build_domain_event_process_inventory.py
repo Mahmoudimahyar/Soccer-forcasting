@@ -262,7 +262,7 @@ def _find_club_event_file(match_id: str) -> Path | None:
     """Resolve a club event JSON from the aux roots IF materialized. Never downloads. Returns None
     when the corpus is not present in this worktree (the honest, common case)."""
     candidates: list[Path] = []
-    for root_name in ("statsbomb_raw", "statsbomb_raw_prior"):
+    for root_name in ("statsbomb_raw", "statsbomb_raw_prior", "statsbomb_raw_event_process"):
         try:
             base = DR.get_root(root_name)
         except Exception:
