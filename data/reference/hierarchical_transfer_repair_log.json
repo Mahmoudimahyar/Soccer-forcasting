@@ -15,5 +15,17 @@
   "fix": "registered data_roots root 'statsbomb_raw_event_process' + added candidate in club resolution; verified build_club_rows(5)->726 rows",
   "regression_tests_added": "tests/test_club_root_repair.py (club root resolves, materialized nonzero, fail-closed on absent root, club not in intl test)",
   "manifest_count": 669,
-  "id_overlap_manifest_vs_files": "669/669"
+  "id_overlap_manifest_vs_files": "669/669",
+  "second_defect": {
+    "component": "audit_domain_feature_overlap.py",
+    "kind": "recoverable_code_gap",
+    "detail": "club feature-profiling not implemented; audit reads inventory events_materialized flag but never profiles club distributions -> all features insufficient_data -> 0 club training rows downstream",
+    "status": "diagnosed_not_yet_repaired",
+    "cascade": [
+      "JOB3 data_insufficient",
+      "JOB4 data_insufficient",
+      "JOB5 club rows=0"
+    ],
+    "exact_repair": "implement club profiling via DR statsbomb_raw_event_process through the engine; compute real SMD/Wasserstein/overlap; retain stable_transferable club rows; reset JOB3-14; re-run durable task"
+  }
 }
