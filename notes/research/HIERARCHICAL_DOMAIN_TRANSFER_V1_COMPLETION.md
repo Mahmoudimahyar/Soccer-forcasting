@@ -2,8 +2,8 @@
 
 research_only / experimental / not_runtime_approved / not_trade_eligible / not_live_eligible
 
-- Generated: 2026-06-28T18:23:38.311201+00:00
-- Run id: ht_fullrun
+- Generated: 2026-06-29T07:50:07.970714+00:00
+- Run id: ht_20260629_034743_run1
 - Reference model (anchor): `research.transfer.w2_reference_t0`
 - Collector commit (independent system): dc73318 (unchanged=True)
 

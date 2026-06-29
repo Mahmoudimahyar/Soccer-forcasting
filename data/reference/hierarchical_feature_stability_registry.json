@@ -1,6 +1,6 @@
 {
   "schema_version": "hierarchical_feature_stability_registry_v1",
-  "generated_ts": "2026-06-28T18:21:40.110968+00:00",
+  "generated_ts": "2026-06-29T07:48:01.529929+00:00",
   "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
   "reference_model": "research.transfer.w2_reference_t0",
   "single_domain_train": true,
