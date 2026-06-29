@@ -1,0 +1,31 @@
+schema: prospective_final_result_v1
+description: >-
+  Canonical, read-only final-result record for a 2026 World Cup fixture, used to score frozen prospective
+  predictions. Built from official-grade result sources (football-data.org WC endpoint primary;
+  API-Football Pro fallback). No market/odds data. No outcome is recorded unless verified final.
+labels: [research_only, prospective_evaluation_only, not_runtime_approved, not_trade_eligible, not_live_eligible]
+fields:
+  canonical_fixture_id: {type: string, desc: "ledger match_id resolved via canonical team-pair (e.g. 2026_A_0625_CzeMex)"}
+  provider_fixture_id: {type: [integer, "null"], desc: "provider's fixture id"}
+  normalized_home_team: {type: string}
+  normalized_away_team: {type: string}
+  team_a: {type: string, desc: "from forecast_targets (prediction orientation)"}
+  team_b: {type: string}
+  kickoff_utc: {type: string, format: date-time}
+  competition: {type: string, const: WC}
+  matchday: {type: [integer, "null"]}
+  final_status: {type: string, enum: [FINISHED, AET, PEN, TIMED, SCHEDULED, IN_PLAY, PAUSED, POSTPONED, CANCELLED, SUSPENDED, AWARDED]}
+  home_regulation_goals: {type: [integer, "null"]}
+  away_regulation_goals: {type: [integer, "null"]}
+  extra_time_home: {type: [integer, "null"]}
+  extra_time_away: {type: [integer, "null"]}
+  shootout_home: {type: [integer, "null"]}
+  shootout_away: {type: [integer, "null"]}
+  final_1x2_outcome_home_orientation: {type: [string, "null"], enum: [HOME, DRAW, AWAY, null]}
+  final_1x2_outcome_team_a_orientation: {type: [string, "null"], enum: [A, D, B, null]}
+  source_provider: {type: string, enum: [football_data_org, api_football_pro]}
+  source_retrieval_timestamp: {type: string, format: date-time}
+  source_payload_hash: {type: string}
+  reconciliation_status: {type: string, enum: [verified_final, awaiting_final, fixture_cancelled, fixture_postponed, unresolved_identity, provider_conflict]}
+  cross_check_status: {type: string, enum: [official_single_source, cross_checked_agree, cross_checked_conflict, not_cross_checked]}
+  discrepancy_reason: {type: [string, "null"]}

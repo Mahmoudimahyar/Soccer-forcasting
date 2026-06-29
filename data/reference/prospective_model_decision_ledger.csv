@@ -1,0 +1,6 @@
+model,classification,tier,n_fixtures,rps,log_loss,draw_brier,note,runtime_ready,trade_eligible
+M1_B1,reference_only,C_exploratory,34,0.13035533846259353,0.7754476608023166,0.18327811035215183,"Approved runtime baseline; evaluated as the reference, not promotable here.",False,False
+M2_market,market_comparator_only,C_exploratory,34,0.1360410660660359,0.773988633175942,0.17645806396514907,"No-vig market is the read-only benchmark, not a candidate.",False,False
+M3_75_25,no_evidence_of_improvement,C_exploratory,34,0.13043775411906566,0.7712117512436545,0.18117620357675718,No fixture-level paired delta vs B1 AND vs market excludes zero at this n.,False,False
+M4_50_50,no_evidence_of_improvement,C_exploratory,34,0.1314128472717967,0.7697385353166775,0.17933889358712515,No fixture-level paired delta vs B1 AND vs market excludes zero at this n.,False,False
+M5_25_75,no_evidence_of_improvement,C_exploratory,34,0.13328061792078683,0.7707208802119684,0.17776618038325576,No fixture-level paired delta vs B1 AND vs market excludes zero at this n.,False,False

@@ -1,0 +1,69 @@
+program: Prospective Shadow Score Harvest, Result Reconciliation, and Market Benchmark Integrity V1
+status: COMPLETE
+terminal_state: COMPLETE
+completed_utc: 2026-06-29
+labels:
+  research_only: true
+  prospective_evaluation_only: true
+  not_runtime_approved: true
+  not_trade_eligible: true
+  not_live_eligible: true
+worktree: C:/Users/Mahyar/worldcup-prospective-score-harvest
+branch: prospective-score-harvest-v1
+base_commit: dc73318
+collector_root: C:/Users/Mahyar/worldcup_draw_model_lab_FINAL
+collector_isolated: true
+collector_untouched_and_healthy: true
+hierarchical_transfer_untouched: true
+root_cause: result_source_never_refreshed_inside_score_path (failure #12 + silent empty write #8)
+fix: independent idempotent append-only harvester + read-only result reconciliation (no Odds API)
+results:
+  frozen_predictions: 680
+  unique_fixtures: 35
+  completed_fixtures_verified_final: 35
+  primary_scored_fixtures: 34
+  excluded_fixtures: 1
+  exclusion_reason: no_common_market_snapshot
+  sample_size_tier: C_exploratory
+  paired_deltas_excluding_zero: 0
+  decision: no model promoted; B1 reference_only; market comparator_only; M3-M5 no_evidence_of_improvement
+phases:
+  phase0_forensic_freeze: done
+  phase1_root_cause_audit: done
+  phase2_result_reconciliation: done
+  phase3_snapshot_preregistration: done
+  phase4_independent_harvester: done
+  phase5_backfill: done
+  phase6_benchmark: done
+  phase7_deployment_decision: done_deferred_collector_patch
+  phase8_durable_scheduled_harvester: done_installed_proven_disabled
+  phase9_final_audit_completion: done
+hard_gates:
+  collector_isolation_proven: true
+  hierarchical_transfer_untouched: true
+  frozen_input_manifest_exists: true
+  frozen_hashes_unchanged_meaning: append_only_growth_only
+  root_cause_audit_exists: true
+  result_reconciliation_exists: true
+  result_records_hash_traceable: true
+  preregistration_before_metrics: true
+  one_primary_snapshot_per_fixture: true
+  no_future_odds_snapshot: true
+  no_post_kickoff_prediction_scored: true
+  no_score_without_verified_final: true
+  every_completed_fixture_scored_or_excluded: true
+  scores_idempotent_append_only: true
+  metrics_nonempty_when_eligible: true
+  uncertainty_fixture_or_match_level: true
+  market_read_only_comparator: true
+  no_2026_outcome_in_fit_or_selection: true
+  no_runtime_model_changed: true
+  no_trading_kalshi_risk_execution_changed: true
+  no_odds_api_call_by_harvester: true
+  no_secret_exposed: true
+  full_test_suite_passes: true_except_2_files_needing_gitignored_data_absent_in_fresh_worktree_pass_in_main
+  git_integrity_fsck: pending_final_run
+  collector_healthy_after: true
+  decision_ledger_exists: true
+  benchmark_report_exists: true
+  scorer_watchdog_disabled: true

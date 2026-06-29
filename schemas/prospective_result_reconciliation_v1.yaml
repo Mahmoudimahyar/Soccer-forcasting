@@ -1,0 +1,23 @@
+schema: prospective_result_reconciliation_v1
+description: >-
+  Run manifest for a result-reconciliation refresh: which provider(s) were queried, when, the payload
+  hash, and per-fixture reconciliation outcomes. Read-only; never writes the collector's results file.
+labels: [research_only, prospective_evaluation_only, not_runtime_approved, not_trade_eligible, not_live_eligible]
+fields:
+  reconciliation_version: {type: string}
+  source_retrieval_timestamp: {type: string, format: date-time}
+  primary_provider: {type: string, const: football_data_org}
+  fallback_provider: {type: string, const: api_football_pro}
+  odds_api_called: {type: boolean, const: false}
+  raw_payload_path: {type: string}
+  raw_payload_sha256: {type: string}
+  counts:
+    n_provider_fixtures: integer
+    n_verified_final: integer
+    n_awaiting_final: integer
+    n_excluded: integer
+    n_resolved_to_ledger_fixture: integer
+  per_fixture: {type: array, desc: "canonical_fixture_id + reconciliation_status + outcome"}
+outputs:
+  canonical_results_csv: outputs/live_shadow/scoring_v1/results/prospective_final_results.csv
+  reconciliation_manifest_json: outputs/live_shadow/scoring_v1/results/prospective_result_reconciliation.json

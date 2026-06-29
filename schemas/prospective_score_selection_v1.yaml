@@ -1,0 +1,28 @@
+schema: prospective_score_selection_v1
+description: >-
+  Primary one-snapshot-per-fixture selection registry. Deterministic, outcome-independent. Selects the
+  latest common valid pre-kickoff snapshot covering all five compared models + the no-vig market.
+labels: [research_only, prospective_evaluation_only, not_runtime_approved, not_trade_eligible, not_live_eligible]
+compared_models: [M1_B1, M2_market, M3_75_25, M4_50_50, M5_25_75]
+selection:
+  unit: fixture
+  rule: latest_common_valid_pre_kickoff_snapshot_all_models_and_market
+  window_preference: [T-15, T-90, baseline]
+  exclude_reason_if_none: no_common_market_snapshot
+primary_registry_fields:
+  canonical_fixture_id: string
+  selected_source_snapshot_timestamp: date-time
+  selected_window: {type: string, enum: [T-15, T-90, baseline, final_pre_kickoff, unknown]}
+  model_version: string
+  prediction_timestamp: date-time
+  kickoff_utc: date-time
+  p_team_a_win: float
+  p_draw: float
+  p_team_b_win: float
+  p_a_market: float
+  p_draw_market: float
+  p_b_market: float
+  n_books: integer
+exclusion_fields:
+  canonical_fixture_id: string
+  reason: string
