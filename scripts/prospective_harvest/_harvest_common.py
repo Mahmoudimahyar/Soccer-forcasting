@@ -14,7 +14,12 @@ from pathlib import Path
 
 # --- roots -----------------------------------------------------------------------------------------
 WORKTREE_ROOT = Path(__file__).resolve().parents[2]
-COLLECTOR_ROOT = Path(os.environ.get("PSH_COLLECTOR_ROOT", r"C:/Users/Mahyar/worldcup_draw_model_lab_FINAL")).resolve()
+# Where the collector's immutable inputs (predictions / queue / forecast targets / raw odds) live.
+# Single-clone default = this repo itself, so a downloader who runs the collector and the harvester in the
+# same checkout needs no configuration. For a SPLIT setup (collector in a separate checkout or git
+# worktree), set the env var PSH_COLLECTOR_ROOT to that checkout's absolute path.
+_psh_collector = os.environ.get("PSH_COLLECTOR_ROOT")
+COLLECTOR_ROOT = Path(_psh_collector).resolve() if _psh_collector else WORKTREE_ROOT
 
 # wcdrawlab (identical between worktree and collector — same base commit). Use the worktree's own src.
 sys.path.insert(0, str(WORKTREE_ROOT / "src"))

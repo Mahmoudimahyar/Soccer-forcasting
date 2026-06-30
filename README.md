@@ -4,6 +4,13 @@ A runnable Python project for testing World Cup group-stage draw-prediction idea
 
 This is a **testing lab**, not a black-box betting bot. Every idea must survive backtesting and calibration checks before it is trusted.
 
+## ▶ Operating the live processes — start here
+
+To clone and run the two background processes (the **Shadow Collector** and the **Prospective Score
+Harvester**), follow **[`QUICKSTART.md`](QUICKSTART.md)** — env setup, secrets, one-time data bootstrap,
+starting/stopping each process, and reading results, end to end. Harvester deep dive:
+[`docs/SCORE_HARVEST_GUIDE.md`](docs/SCORE_HARVEST_GUIDE.md). Everything is **paper-only and research-only**.
+
 ## What is now built
 
 - public-data downloader/registry for open datasets
