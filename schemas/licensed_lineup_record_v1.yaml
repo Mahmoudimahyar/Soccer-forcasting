@@ -1,0 +1,27 @@
+schema_version: licensed_lineup_record_v1
+description: Provider-neutral starting-lineup + bench record. Nullable; source_support flags per field.
+identity:
+  provider_name: string
+  provider_match_id: string
+  canonical_match_id: string
+  team_id: string
+  source_snapshot_hash: string
+  rights_classification: string
+  retrieval_time_utc: string
+content:
+  formation: {type: [string, "null"]}
+  starters:
+    type: array
+    items: {player_id: string, position: {type: [string, "null"]}, shirt_number: {type: [integer, "null"]}}
+  bench:
+    type: array
+    items: {player_id: string, position: {type: [string, "null"]}}
+  captain_player_id: {type: [string, "null"]}
+  lineup_confirmed: {type: string, enum: [confirmed, predicted, unknown], note: "predicted lineups are NOT a confirmed source"}
+timing:
+  source_publication_time_utc: {type: [string, "null"]}
+  causal_eligibility: {type: string, enum: [historical_only, delayed_live_eligible, live_eligible, unknown_fail_closed]}
+quality:
+  completeness: {type: [number, "null"]}
+  player_ids_present: {type: boolean}
+  source_support: {type: object}

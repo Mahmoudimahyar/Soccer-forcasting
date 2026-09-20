@@ -1,0 +1,19 @@
+schema_version: licensed_match_state_v1
+description: Provider-neutral in-play match-state snapshot (score, time, cards, subs used) with causal timing.
+fields:
+  provider_name: string
+  canonical_match_id: string
+  as_of_match_clock_s: {type: [number, "null"]}
+  period: {type: string, enum: [first_half, second_half, et_first, et_second, shootout, pre, post, unknown]}
+  home_goals: {type: [integer, "null"]}
+  away_goals: {type: [integer, "null"]}
+  home_reds: {type: [integer, "null"]}
+  away_reds: {type: [integer, "null"]}
+  home_subs_used: {type: [integer, "null"]}
+  away_subs_used: {type: [integer, "null"]}
+  shootout_separate: {type: boolean, note: "shootout goals kept separate from regulation/ET"}
+  source_publication_time_utc: {type: [string, "null"]}
+  provider_update_time_utc: {type: [string, "null"]}
+  retrieval_time_utc: string
+  causal_eligibility: {type: string, enum: [historical_only, delayed_live_eligible, live_eligible, unknown_fail_closed]}
+  source_support: {type: object}

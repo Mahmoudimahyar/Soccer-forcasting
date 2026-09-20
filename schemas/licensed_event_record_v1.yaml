@@ -1,0 +1,52 @@
+schema_version: licensed_event_record_v1
+description: >
+  Provider-neutral structured event record. Explicit nullability + per-field source_support flags; no vendor
+  is assumed to populate every field. research_only / not_runtime_approved / not_trade_eligible /
+  not_live_eligible until a provider passes the acceptance protocol AND a rights/runtime decision is made.
+identity:
+  provider_name: {type: string, required: true}
+  provider_schema_version: {type: string, required: true}
+  provider_match_id: {type: string, required: true}
+  canonical_match_id: {type: string, required: true}
+  competition: {type: string, required: true}
+  season: {type: string, required: true}
+  home_team_id: {type: string, required: true}
+  away_team_id: {type: string, required: true}
+  team_id: {type: [string, "null"]}
+  player_id: {type: [string, "null"], note: "provider player id; NEVER invented by the adapter"}
+  referee_id: {type: [string, "null"]}
+  source_snapshot_hash: {type: string, required: true}
+  rights_classification: {type: string, required: true}
+timing:
+  event_time_utc: {type: [string, "null"]}
+  match_clock_s: {type: [number, "null"]}
+  period: {type: string, enum: [first_half, second_half, et_first, et_second, shootout, pre, post, unknown]}
+  source_publication_time_utc: {type: [string, "null"], note: "required for any live use (causal gate)"}
+  provider_update_time_utc: {type: [string, "null"]}
+  retrieval_time_utc: {type: string, required: true}
+  correction_time_utc: {type: [string, "null"]}
+  causal_eligibility: {type: string, enum: [historical_only, delayed_live_eligible, live_eligible, unknown_fail_closed]}
+  source_delay_quality: {type: [string, "null"]}
+content:
+  event_type:
+    type: string
+    enum: [goal, own_goal, penalty_scored, penalty_missed, penalty_awarded, shot, shot_on_target, assist,
+      yellow_card, second_yellow, red_card, substitution, lineup, formation, var_event, var_goal_cancelled,
+      corner, foul, offside, kickoff, halftime, fulltime, other, unknown]
+  shot_location: {type: [object, "null"], properties: {x: {type: [number, "null"]}, y: {type: [number, "null"]}}}
+  shot_outcome: {type: [string, "null"]}
+  xg: {type: [number, "null"]}
+  assist_player_id: {type: [string, "null"]}
+  card_player_id: {type: [string, "null"]}
+  sub_in_player_id: {type: [string, "null"]}
+  sub_out_player_id: {type: [string, "null"]}
+  position: {type: [string, "null"]}
+  formation: {type: [string, "null"]}
+quality:
+  source_completeness: {type: [number, "null"]}
+  event_confidence: {type: [number, "null"]}
+  correction_status: {type: string, enum: [original, corrected, retracted, unknown]}
+  duplicate_status: {type: string, enum: [unique, duplicate, unknown]}
+  reconciliation_status: {type: string, enum: [reconciled, conflict, unreconciled, unknown]}
+  availability_status: {type: string, enum: [historical, live, both, unknown]}
+  source_support: {type: object, note: "per-field boolean: does THIS provider populate the field?"}
