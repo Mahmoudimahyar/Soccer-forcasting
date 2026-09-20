@@ -58,7 +58,10 @@ def load_latest_snapshot():
     if not files:
         return None, None
     snap = json.loads(Path(files[-1]).read_text(encoding="utf-8"))
-    ts = snap.get("snapshot_utc"); data = snap.get("data", [])
+    # The one-off 2026-06-21 supervisor wrote the payload under "data"; the budget-guarded fetcher
+    # (scripts/fetch_odds_live_2026.py) writes it under "events". Reading only "data" silently ignored
+    # every snapshot from the durable collector - see docs/ERRATA.md, E2. Accept both (fixed 2026-09-20).
+    ts = snap.get("snapshot_utc"); data = snap.get("data") or snap.get("events") or []
     by_pair = {}
     for ev in data:
         nv = _novig(ev)

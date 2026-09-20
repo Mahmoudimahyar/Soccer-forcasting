@@ -340,19 +340,42 @@ def test_cohort_load_raw_from_lake_hash_mismatch_fails_closed(synth_lake):
 # =====================================================================================================
 # supervisor dry-run (queue_complete with 13 jobs) — the real harness, no work
 # =====================================================================================================
-def test_supervisor_dry_run_queue_complete():
-    p = subprocess.run(
-        [sys.executable, str(SUPERVISOR), "--dry-run", "--config",
-         "configs/international_event_lake_restoration_v1.yaml"],
-        capture_output=True, text=True, cwd=str(ROOT), timeout=300)
-    last = None
-    for line in (p.stdout or "").splitlines():
-        s = line.strip()
-        if s.startswith("{") and s.endswith("}"):
-            last = json.loads(s)
-    assert last is not None, p.stdout + p.stderr
-    assert last["stop_reason"] == "queue_complete"
-    assert last["counts"].get("complete") == 13
+def _load_supervisor():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("lk_supervisor", SUPERVISOR)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def _real_config_dry_run(tmp_path, heartbeat_ts):
+    """Real Supervisor + real 13-job config. ONLY the machine-specific collector heartbeat path and the
+    run dir are redirected into tmp_path, so nothing is read from / written to an absolute machine path
+    or the repo. heartbeat_ts=None -> no heartbeat file (the interlock must then fail closed)."""
+    sup = _load_supervisor()
+    run_cfg = yaml.safe_load(CONFIG.read_text(encoding="utf-8"))
+    hb = tmp_path / "collector_heartbeat.json"
+    if heartbeat_ts is not None:
+        hb.write_text(json.dumps({"ts": heartbeat_ts}), encoding="utf-8")
+    run_cfg["run"] = dict(run_cfg["run"], collector_heartbeat=str(hb))
+    run_dir = tmp_path / "dryrun"
+    sup.Supervisor(run_cfg, run_dir, run_cfg["run"]["max_hours"], run_cfg["run"]["max_api_requests"],
+                   run_cfg["run"]["max_workers"], dry_run=True).run()
+    return json.loads((run_dir / "run_summary.json").read_text(encoding="utf-8"))
+
+
+def test_supervisor_dry_run_queue_complete(tmp_path):
+    from datetime import datetime, timezone
+    summ = _real_config_dry_run(tmp_path, datetime.now(timezone.utc).isoformat())
+    assert summ["stop_reason"] == "queue_complete"
+    assert summ["job_status_counts"].get("complete") == 13
+
+
+def test_supervisor_dry_run_fails_closed_without_collector_heartbeat(tmp_path):
+    # the safety interlock stays covered for THIS config: no collector heartbeat -> all 13 jobs blocked
+    summ = _real_config_dry_run(tmp_path, None)
+    assert summ["stop_reason"] == "collector_health:collector heartbeat missing"
+    assert summ["job_status_counts"].get("blocked") == 13
 
 
 # =====================================================================================================

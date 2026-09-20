@@ -36,14 +36,19 @@ def main():
 
     targets = df[df["is2026"] & df["goals_a"].notna() & df["goals_b"].notna()].copy()
     rows = []
-    for _, m in targets.iterrows():
+    for idx, m in targets.iterrows():
         train = df[df["kickoff_utc"] < m["kickoff_utc"]].copy()
         if len(train) < 100:
             continue
+        # One-row frame that PRESERVES column dtypes. (`m.to_frame().T` is all-object dtype, which made
+        # leakage_safe_feature_frame() return zero columns and zero-filled every candidate feature -
+        # see docs/ERRATA.md, E1. Fixed 2026-09-20; earlier V8 prequential figures are invalid.)
+        row = targets.loc[[idx]]
         Xtr = leakage_safe_feature_frame(train, config)
-        Xte = leakage_safe_feature_frame(m.to_frame().T, config).reindex(columns=Xtr.columns, fill_value=0.0)
+        Xte = leakage_safe_feature_frame(row, config).reindex(columns=Xtr.columns, fill_value=0.0)
+        assert Xte.shape[1] > 0 and float(Xte.abs().to_numpy().sum()) > 0.0, "candidate feature row is empty/zero"
         cand = CandidateModel().fit(Xtr, train["outcome"]).predict_proba(Xte)[0]
-        elo = TernaryEloModel(r=0.4).predict_proba(m.to_frame().T)[0]
+        elo = TernaryEloModel(r=0.4).predict_proba(row)[0]
         prior = HistoricalPriorModel().fit(train["outcome"]).predict_proba(1)[0]
         rows.append({
             "match_id": m["match_id"], "matchday": m["matchday"],

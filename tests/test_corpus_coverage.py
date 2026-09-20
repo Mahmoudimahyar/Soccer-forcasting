@@ -2,6 +2,10 @@
 registered roots. Regression test for the 2026-06-26 audit finding (60 done ids unbacked in canonical)."""
 import json, sys
 from pathlib import Path
+
+import pytest
+
+_NO_CORPUS = "needs the gitignored API-Football player-history corpus (data/raw/...); see docs/TESTING_AND_DATA_DEPENDENCIES.md"
 ROOT = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(ROOT / "src"))
 from wcdrawlab.research import corpus_coverage as CC  # noqa: E402
 from wcdrawlab.research import data_roots as DR  # noqa: E402
@@ -13,7 +17,7 @@ def _done():
 def test_done_corpus_is_fully_raw_backed():
     done = _done()
     if not done:
-        return  # nothing acquired in this checkout
+        pytest.skip(_NO_CORPUS)  # a bare return would count as a (vacuous) pass
     cov = CC.coverage(done)
     assert cov["missing_ids"] == [], f"{len(cov['missing_ids'])} done ids lack events+lineups raw"
     assert cov["coverage_rate"] == 1.0
@@ -21,7 +25,7 @@ def test_done_corpus_is_fully_raw_backed():
 def test_canonical_root_is_self_contained():
     done = _done()
     if not done:
-        return
+        pytest.skip(_NO_CORPUS)
     cov = CC.coverage(done)
     assert cov["per_root_full_events_and_lineups"]["canonical"] >= len(done)
 

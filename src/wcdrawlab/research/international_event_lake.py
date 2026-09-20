@@ -19,7 +19,7 @@ import os
 import tempfile
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 from typing import Any
 
 import yaml
@@ -52,6 +52,21 @@ def _resolve(path_str: str) -> Path:
     if not p.is_absolute():
         p = _WORKTREE / p
     return p
+
+
+def _inside_this_checkout(root: Path) -> bool:
+    """True when `root` is, or lies under, the checkout this module was imported from.
+
+    Portable replacement for directory-NAME matching: compares resolved paths against the actual
+    repo root (`_WORKTREE`). A relative root resolves against the worktree (same rule as
+    `_resolve`), so it is always inside. A Windows drive-absolute root read on a POSIX host is
+    not a path on this filesystem and therefore cannot be this checkout.
+    """
+    if not root.is_absolute():
+        if PureWindowsPath(str(root)).is_absolute():
+            return False
+        root = _WORKTREE / root
+    return root.resolve().is_relative_to(_WORKTREE)
 
 
 def _utc_now() -> str:
@@ -90,6 +105,11 @@ class Lake:
                 raise LakeError(f"lake_root resolves under forbidden root {f!r}")
         if "worldcup-international-event-lake" in norm or "worldcup_draw_model_lab_FINAL" in norm:
             raise LakeError(f"lake_root {root} must live OUTSIDE every git worktree")
+        # The literals above only name the original development checkouts. Portable guard: refuse any
+        # root that resolves inside the checkout this module actually lives in (wherever it is cloned).
+        if _inside_this_checkout(root):
+            raise LakeError(f"lake_root {root} must live OUTSIDE every git worktree "
+                            f"(resolves inside this checkout: {_WORKTREE})")
         sd = cfg["subdirs"]
         return cls(
             root=root,

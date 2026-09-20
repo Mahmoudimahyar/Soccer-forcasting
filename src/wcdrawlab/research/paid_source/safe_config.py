@@ -7,7 +7,9 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-MAIN_ROOT = Path("C:/Users/Mahyar/worldcup_draw_model_lab_FINAL")
+# Root whose .env holds the keys. Default = this repository. In a split setup (research run from a
+# separate git worktree that has no .env of its own) point WCLAB_MAIN_ROOT at the checkout that does.
+MAIN_ROOT = Path(os.environ.get("WCLAB_MAIN_ROOT") or Path(__file__).resolve().parents[4])
 KEYS = ("API_FOOTBALL_KEY", "ODDS_API_KEY")
 
 
