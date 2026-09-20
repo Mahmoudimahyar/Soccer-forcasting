@@ -17,11 +17,11 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # The suite was developed and verified on Windows / Python 3.13 -> that job is required.
+          # Developed on Windows / Python 3.13. All three configurations were observed green on
+          # 2026-09-20 (py3.13 resolves pandas 3.x; py3.10 resolves pandas 2.x), so all are required.
           - { os: windows-latest, python: "3.13", experimental: false }
-          # Informational until observed green: nothing else has been verified on Linux or 3.10.
-          - { os: ubuntu-latest, python: "3.13", experimental: true }
-          - { os: ubuntu-latest, python: "3.10", experimental: true }
+          - { os: ubuntu-latest, python: "3.13", experimental: false }
+          - { os: ubuntu-latest, python: "3.10", experimental: false }
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6

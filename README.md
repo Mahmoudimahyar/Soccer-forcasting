@@ -30,7 +30,7 @@ itself, including several found only while preparing this release.
 |---|---|
 | **Status** | Research window 2026-06-20 → 2026-06-29; consolidated and published 2026-09-20. **Group stage only** — knockout rounds were never collected or scored. |
 | **Approved model** | One: **B1**, a "ternary Elo" — a plain Elo rating gap turned into win/draw/loss probabilities by a fixed formula, with one hand-set draw parameter and nothing fitted. Everything else is research or *shadow*: logged and scored for comparison, never used. |
-| **Tests** | **817 passed, 51 skipped, 0 failed** on a fresh clone (Python 3.13). The skips are integration tests that need datasets this repo does not redistribute. |
+| **Tests** | **817 passed, 51 skipped, 0 failed** on a fresh clone (Windows, Python 3.13). CI is also green on Linux with Python 3.10 and 3.13 — which covers both pandas 2.x and pandas 3.x. The skips are integration tests that need datasets this repo does not redistribute. |
 | **Size** | ~18.5K lines in `src/` (153 modules), ~33.5K in `scripts/`, ~8.4K in `tests/` (82 modules) · 46 schemas · 86 machine-readable ledgers and manifests · ~295 research notes · 26 milestone tags |
 | **How it was built** | Human-directed; most of the code, experiments and notes were produced by an AI coding agent (Claude Code) working under a written governance contract. The "audits" in the notes are internal agent audits, not third-party review. [Details](#how-this-was-built) |
 
