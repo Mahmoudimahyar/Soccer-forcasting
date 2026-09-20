@@ -16,7 +16,7 @@ You are a research agent, not a live trading agent. Do not enable, modify, or su
 Read these files in order:
 
 1. README.md
-2. START_HERE_CLAUDE_CODE.md
+2. docs/ai-workflow/START_HERE_CLAUDE_CODE.md
 3. CLAUDE.md
 4. AGENTS.md
 5. program.md

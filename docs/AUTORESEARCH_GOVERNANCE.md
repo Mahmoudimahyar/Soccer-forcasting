@@ -5,7 +5,7 @@ preparation/evaluation harness, a deliberately small agent-editable candidate, a
 metric, and an experiment log. Karpathy's reference implementation separates fixed data
 preparation from a single agent-editable training file and uses fixed-budget evaluation
 for comparability. Our project follows the same idea, but the objective is probability
-forecast quality rather than neural-network loss. citeturn674683view0
+forecast quality rather than neural-network loss.
 
 ## Why the research plane is isolated
 

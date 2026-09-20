@@ -22,3 +22,21 @@ data/raw/private/
 
 # Generated prediction outputs
 outputs/
+
+# NOTE: data/processed/source_provenance.json is intentionally tracked (metadata-only ledger: URLs,
+# licences, byte sizes, sha256) although data/processed/ is otherwise ignored.
+
+# Build artifacts, logs, tool caches, editor/agent folders
+*.egg-info/
+build/
+dist/
+*.log
+*.out
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.claude/

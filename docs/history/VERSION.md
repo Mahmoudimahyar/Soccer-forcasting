@@ -1,3 +1,14 @@
+> [!WARNING]
+> **SUPERSEDED — historical Tier-1 snapshot (2026-06-20). Do not cite.** Kept unedited below as part of
+> the audit trail. It is wrong on four counts today: (1) the repository *is* under git; (2) the test count is
+> stale; (3) the "active accepted model" it names (`candidate.py`, V8) was **never approved** — the sole
+> approved runtime model is **B1 ternary-Elo** (`configs/approved_models.yaml`); (4) its "validated finding"
+> that a market+Elo blend *beats the no-vig market and Pinnacle close by ~4–7% RPS* is an **early
+> retrospective point estimate with no confidence interval**, later reclassified as auxiliary
+> (`notes/research/model_state_reconciliation.md`) and **not confirmed prospectively**: on 34 frozen 2026
+> fixtures no model was distinguishable from the market
+> (`notes/research/PROSPECTIVE_MARKET_BENCHMARK_V1.md`). See [`../ERRATA.md`](../ERRATA.md).
+
 # Version Manifest
 
 The repository is not under git in this environment, so the "exact data/model version" is

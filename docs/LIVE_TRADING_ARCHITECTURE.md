@@ -21,7 +21,7 @@ until its environment and confirmation switches are deliberately armed.
 
 Kalshi exposes REST and WebSocket APIs for real-time market data and trade execution,
 with separate demo and production environments. Credentials are environment-specific.
-Use the demo environment first. citeturn674683view1turn510325view0
+Use the demo environment first.
 
 ## Required modes
 
@@ -60,7 +60,7 @@ A `TradeIntent` must satisfy all of these before it reaches a gateway:
 
 The trade engine uses **limit orders**. Kalshi's V2 endpoint accepts bid/ask order sides
 and fixed-point dollar prices; its API recommends client order IDs to prevent accidental
-duplicate orders. citeturn917783view1turn409936view1
+duplicate orders.
 
 ## In-play model
 
@@ -87,13 +87,13 @@ KALSHI_LIVE_TRADING_ACK
 ```
 
 Kalshi authenticates requests with an API key ID, millisecond timestamp, and an
-RSA-PSS/SHA-256 signature over `timestamp + HTTP method + request path`. citeturn917783view0
+RSA-PSS/SHA-256 signature over `timestamp + HTTP method + request path`.
 
 ## WebSocket use
 
 Use the Kalshi WebSocket for market/order-book/fill updates, with reconnect backoff and
 raw-message snapshots. Kalshi documents channels for ticker updates, order-book deltas,
-trades, market lifecycle, and fill notifications. citeturn917783view2
+trades, market lifecycle, and fill notifications.
 
 ## Kill switches
 

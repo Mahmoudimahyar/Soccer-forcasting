@@ -1,3 +1,6 @@
+> [!NOTE]
+> **Historical** — validation record of the original v0.1 package (27 tests). The current suite is reported in the root `README.md` and enforced by CI.
+
 # Build Validation
 
 Validated locally for this package revision:
