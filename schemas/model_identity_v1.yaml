@@ -1,0 +1,122 @@
+schema_version: model_identity_v1
+description: >
+  Canonical, namespaced model identity registry. Generic M1..M6 labels are NOT durable identifiers;
+  the same label means different models in the prematch vs inplay namespaces (e.g. prematch M2 = market
+  no-vig; inplay M2 = remaining-time Poisson). This registry is the authoritative mapping. Immutable
+  historical prediction rows are NEVER rewritten; legacy labels are resolved via configs/model_alias_registry.yaml.
+namespaces: [prematch, inplay]
+invariants:
+  - "exactly one model has runtime_eligible: true -> prematch.b1_elo (B1)"
+  - "no model has trade_eligible: true (paper-only; trading disabled)"
+  - "every research/shadow model has runtime_eligible: false"
+models:
+  # ---- prematch namespace ----
+  - canonical_model_id: prematch.b1_elo
+    model_namespace: prematch
+    model_family: elo
+    canonical_model_version: "1.0"
+    legacy_model_alias: [B1, M1, M1_B1]
+    approval_status: approved
+    research_status: production
+    runtime_eligible: true
+    trade_eligible: false
+  - canonical_model_id: prematch.market_novig
+    model_namespace: prematch
+    model_family: market
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M2, M2_market]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: prematch.elo_market_blend_75_25
+    model_namespace: prematch
+    model_family: elo_market_blend
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M3, M3_75_25]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: prematch.elo_market_blend_50_50
+    model_namespace: prematch
+    model_family: elo_market_blend
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M4, M4_50_50]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: prematch.elo_market_blend_25_75
+    model_namespace: prematch
+    model_family: elo_market_blend
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M5, M5_25_75]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  # ---- inplay namespace (research only) ----
+  - canonical_model_id: inplay.static_b1_m0
+    model_namespace: inplay
+    model_family: static
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M0, M0_static_b1]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: inplay.time_score_baseline_m1
+    model_namespace: inplay
+    model_family: logistic
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M1_time_score]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: inplay.remaining_time_poisson_m2
+    model_namespace: inplay
+    model_family: poisson
+    canonical_model_version: "2.0"
+    legacy_model_alias: [M2_remaining_poisson, m2_frozen, M2_RemainingPoisson]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: inplay.hazard_m3
+    model_namespace: inplay
+    model_family: hazard
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M3_goal_hazard]
+    approval_status: rejected
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: inplay.competing_risk_m4
+    model_namespace: inplay
+    model_family: competing_risk
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M4_competing_risk]
+    approval_status: rejected
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: inplay.ensemble_m5
+    model_namespace: inplay
+    model_family: ensemble
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M5_ensemble]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false
+  - canonical_model_id: inplay.market_inplay_m6
+    model_namespace: inplay
+    model_family: market_anchored
+    canonical_model_version: "1.0"
+    legacy_model_alias: [M6_market_inplay]
+    approval_status: shadow
+    research_status: research_only
+    runtime_eligible: false
+    trade_eligible: false

@@ -62,3 +62,57 @@ def build_context_features(matches: pd.DataFrame, venues: pd.DataFrame | None = 
                         "prev_venue": prev_venue, "travel_km": travel, "altitude_m": alt})
             prev_ko, prev_venue = row.kickoff_utc, row.venue
     return pd.DataFrame(out)
+
+
+# ---- Phase 3 / 7D additions: standalone helpers + availability contract ----
+def rest_days(prev_kickoff_iso, this_kickoff_iso) -> float:
+    if not prev_kickoff_iso or not this_kickoff_iso:
+        return float("nan")
+    return (pd.Timestamp(this_kickoff_iso) - pd.Timestamp(prev_kickoff_iso)).total_seconds() / 86400.0
+
+
+def timezone_displacement_hours(home_utc_offset_h, venue_utc_offset_h) -> float:
+    if home_utc_offset_h is None or venue_utc_offset_h is None:
+        return float("nan")
+    return abs(float(venue_utc_offset_h) - float(home_utc_offset_h))
+
+
+def travel_distance_km(team_home_lat, team_home_lon, venue_lat, venue_lon) -> float:
+    """Distance a team travels to the venue. Neutral-site tournaments -> compute for BOTH teams."""
+    if None in (team_home_lat, team_home_lon, venue_lat, venue_lon):
+        return float("nan")
+    return haversine_km(team_home_lat, team_home_lon, venue_lat, venue_lon)
+
+
+def weather_feature_eligible(kind: str, issued_at_utc, decision_timestamp_utc) -> bool:
+    """forecast issued at/before decision -> eligible; observed (post-hoc) -> NEVER a pre-match feature."""
+    if kind == "observed":
+        return False
+    if kind != "forecast" or issued_at_utc is None or decision_timestamp_utc is None:
+        return False
+    return weather_forecast_eligible(issued_at_utc, decision_timestamp_utc)
+
+
+# plane in {pre_match, in_play, retrospective, neither}; leakage_risk in {none, low, medium, high}
+CONTEXT_FEATURE_CONTRACT = {
+    "venue_lat":               {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "venue_lon":               {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "venue_altitude_m":        {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "roof_indoor":             {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "kickoff_utc":             {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "kickoff_local":           {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "home_travel_km":          {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "away_travel_km":          {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "timezone_displacement_h": {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "rest_days":               {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "travel_days":             {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "low"},
+    "match_location_sequence": {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "none"},
+    "weather_forecast":        {"plane": "pre_match", "known_before_kickoff": True,  "leakage_risk": "medium",
+                                "rule": "use only a forecast issued at/before the decision time"},
+    "weather_observed":        {"plane": "retrospective", "known_before_kickoff": False, "leakage_risk": "high",
+                                "rule": "never a pre-match/in-play feature"},
+}
+
+
+def feature_plane(name: str) -> str:
+    return CONTEXT_FEATURE_CONTRACT.get(name, {}).get("plane", "neither")
