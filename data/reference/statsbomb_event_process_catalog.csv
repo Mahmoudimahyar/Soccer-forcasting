@@ -1,0 +1,2652 @@
+match_id,competition_id,season_id,competition,season,match_date,home,away
+3895292,9,281,1. Bundesliga,2023/2024,2024-04-06,Union Berlin,Bayer Leverkusen
+3895320,9,281,1. Bundesliga,2023/2024,2024-04-27,Bayer Leverkusen,VfB Stuttgart
+3895158,9,281,1. Bundesliga,2023/2024,2023-12-03,Bayer Leverkusen,Borussia Dortmund
+3895107,9,281,1. Bundesliga,2023/2024,2023-10-08,Bayer Leverkusen,FC Köln
+3895340,9,281,1. Bundesliga,2023/2024,2024-05-12,Bochum,Bayer Leverkusen
+3895286,9,281,1. Bundesliga,2023/2024,2024-03-30,Bayer Leverkusen,Hoffenheim
+3895302,9,281,1. Bundesliga,2023/2024,2024-04-14,Bayer Leverkusen,Werder Bremen
+3895333,9,281,1. Bundesliga,2023/2024,2024-05-05,Eintracht Frankfurt,Bayer Leverkusen
+3895348,9,281,1. Bundesliga,2023/2024,2024-05-18,Bayer Leverkusen,Augsburg
+3895220,9,281,1. Bundesliga,2023/2024,2024-02-03,Darmstadt 98,Bayer Leverkusen
+3895250,9,281,1. Bundesliga,2023/2024,2024-02-23,Bayer Leverkusen,FSV Mainz 05
+3895266,9,281,1. Bundesliga,2023/2024,2024-03-10,Bayer Leverkusen,Wolfsburg
+3895275,9,281,1. Bundesliga,2023/2024,2024-03-17,Freiburg,Bayer Leverkusen
+3895180,9,281,1. Bundesliga,2023/2024,2023-12-17,Bayer Leverkusen,Eintracht Frankfurt
+3895134,9,281,1. Bundesliga,2023/2024,2023-11-04,Hoffenheim,Bayer Leverkusen
+3895121,9,281,1. Bundesliga,2023/2024,2023-10-29,Bayer Leverkusen,Freiburg
+3895074,9,281,1. Bundesliga,2023/2024,2023-09-15,Bayern Munich,Bayer Leverkusen
+3895139,9,281,1. Bundesliga,2023/2024,2023-11-12,Bayer Leverkusen,Union Berlin
+3895086,9,281,1. Bundesliga,2023/2024,2023-09-24,Bayer Leverkusen,FC Heidenheim
+3895309,9,281,1. Bundesliga,2023/2024,2024-04-21,Borussia Dortmund,Bayer Leverkusen
+3895258,9,281,1. Bundesliga,2023/2024,2024-03-03,FC Köln,Bayer Leverkusen
+3895244,9,281,1. Bundesliga,2023/2024,2024-02-17,FC Heidenheim,Bayer Leverkusen
+3895232,9,281,1. Bundesliga,2023/2024,2024-02-10,Bayer Leverkusen,Bayern Munich
+3895210,9,281,1. Bundesliga,2023/2024,2024-01-27,Bayer Leverkusen,Borussia Mönchengladbach
+3895202,9,281,1. Bundesliga,2023/2024,2024-01-20,RB Leipzig,Bayer Leverkusen
+3895194,9,281,1. Bundesliga,2023/2024,2024-01-13,Augsburg,Bayer Leverkusen
+3895182,9,281,1. Bundesliga,2023/2024,2023-12-20,Bayer Leverkusen,Bochum
+3895167,9,281,1. Bundesliga,2023/2024,2023-12-10,VfB Stuttgart,Bayer Leverkusen
+3895153,9,281,1. Bundesliga,2023/2024,2023-11-25,Werder Bremen,Bayer Leverkusen
+3895113,9,281,1. Bundesliga,2023/2024,2023-10-21,Wolfsburg,Bayer Leverkusen
+3895095,9,281,1. Bundesliga,2023/2024,2023-09-30,FSV Mainz 05,Bayer Leverkusen
+3895067,9,281,1. Bundesliga,2023/2024,2023-09-02,Bayer Leverkusen,Darmstadt 98
+3895060,9,281,1. Bundesliga,2023/2024,2023-08-26,Borussia Mönchengladbach,Bayer Leverkusen
+3895052,9,281,1. Bundesliga,2023/2024,2023-08-19,Bayer Leverkusen,RB Leipzig
+3890563,9,27,1. Bundesliga,2015/2016,2016-05-14,Bayer Leverkusen,Ingolstadt
+3890550,9,27,1. Bundesliga,2015/2016,2016-05-07,Borussia Mönchengladbach,Bayer Leverkusen
+3890540,9,27,1. Bundesliga,2015/2016,2016-04-30,Bayer Leverkusen,Hertha Berlin
+3890534,9,27,1. Bundesliga,2015/2016,2016-04-23,Schalke 04,Bayer Leverkusen
+3890521,9,27,1. Bundesliga,2015/2016,2016-04-16,Bayer Leverkusen,Eintracht Frankfurt
+3890519,9,27,1. Bundesliga,2015/2016,2016-04-10,FC Köln,Bayer Leverkusen
+3890502,9,27,1. Bundesliga,2015/2016,2016-04-01,Bayer Leverkusen,Wolfsburg
+3890500,9,27,1. Bundesliga,2015/2016,2016-03-20,VfB Stuttgart,Bayer Leverkusen
+3890492,9,27,1. Bundesliga,2015/2016,2016-03-13,Bayer Leverkusen,Hamburger SV
+3890477,9,27,1. Bundesliga,2015/2016,2016-03-05,Augsburg,Bayer Leverkusen
+3890472,9,27,1. Bundesliga,2015/2016,2016-03-02,Bayer Leverkusen,Werder Bremen
+3890463,9,27,1. Bundesliga,2015/2016,2016-02-28,FSV Mainz 05,Bayer Leverkusen
+3890456,9,27,1. Bundesliga,2015/2016,2016-02-21,Bayer Leverkusen,Borussia Dortmund
+3890444,9,27,1. Bundesliga,2015/2016,2016-02-13,Darmstadt 98,Bayer Leverkusen
+3890431,9,27,1. Bundesliga,2015/2016,2016-02-06,Bayer Leverkusen,Bayern Munich
+3890427,9,27,1. Bundesliga,2015/2016,2016-01-30,Bayer Leverkusen,Hannover 96
+3890415,9,27,1. Bundesliga,2015/2016,2016-01-23,Hoffenheim,Bayer Leverkusen
+3890409,9,27,1. Bundesliga,2015/2016,2015-12-19,Ingolstadt,Bayer Leverkusen
+3890395,9,27,1. Bundesliga,2015/2016,2015-12-12,Bayer Leverkusen,Borussia Mönchengladbach
+3890390,9,27,1. Bundesliga,2015/2016,2015-12-05,Hertha Berlin,Bayer Leverkusen
+3890382,9,27,1. Bundesliga,2015/2016,2015-11-29,Bayer Leverkusen,Schalke 04
+3890370,9,27,1. Bundesliga,2015/2016,2015-11-21,Eintracht Frankfurt,Bayer Leverkusen
+3890359,9,27,1. Bundesliga,2015/2016,2015-11-07,Bayer Leverkusen,FC Köln
+3890350,9,27,1. Bundesliga,2015/2016,2015-10-31,Wolfsburg,Bayer Leverkusen
+3890346,9,27,1. Bundesliga,2015/2016,2015-10-24,Bayer Leverkusen,VfB Stuttgart
+3890337,9,27,1. Bundesliga,2015/2016,2015-10-17,Hamburger SV,Bayer Leverkusen
+3890330,9,27,1. Bundesliga,2015/2016,2015-10-04,Bayer Leverkusen,Augsburg
+3890315,9,27,1. Bundesliga,2015/2016,2015-09-26,Werder Bremen,Bayer Leverkusen
+3890312,9,27,1. Bundesliga,2015/2016,2015-09-23,Bayer Leverkusen,FSV Mainz 05
+3890301,9,27,1. Bundesliga,2015/2016,2015-09-20,Borussia Dortmund,Bayer Leverkusen
+3890288,9,27,1. Bundesliga,2015/2016,2015-09-12,Bayer Leverkusen,Darmstadt 98
+3890278,9,27,1. Bundesliga,2015/2016,2015-08-29,Bayern Munich,Bayer Leverkusen
+3890273,9,27,1. Bundesliga,2015/2016,2015-08-22,Hannover 96,Bayer Leverkusen
+3890260,9,27,1. Bundesliga,2015/2016,2015-08-15,Bayer Leverkusen,Hoffenheim
+3922240,1267,107,African Cup of Nations,2023,2024-01-28,Egypt,Congo DR
+3920399,1267,107,African Cup of Nations,2023,2024-01-19,Cape Verde Islands,Mozambique
+3920413,1267,107,African Cup of Nations,2023,2024-01-23,Gambia,Cameroon
+3920400,1267,107,African Cup of Nations,2023,2024-01-19,Senegal,Cameroon
+3920409,1267,107,African Cup of Nations,2023,2024-01-22,Guinea-Bissau,Nigeria
+3920417,1267,107,African Cup of Nations,2023,2024-01-24,Namibia,Mali
+3920395,1267,107,African Cup of Nations,2023,2024-01-17,Congo DR,Zambia
+3920407,1267,107,African Cup of Nations,2023,2024-01-21,South Africa,Namibia
+3920412,1267,107,African Cup of Nations,2023,2024-01-23,Guinea,Senegal
+3920415,1267,107,African Cup of Nations,2023,2024-01-23,Mauritania,Algeria
+3920404,1267,107,African Cup of Nations,2023,2024-01-20,Tunisia,Mali
+3920389,1267,107,African Cup of Nations,2023,2024-01-15,Cameroon,Guinea
+3920393,1267,107,African Cup of Nations,2023,2024-01-16,Tunisia,Namibia
+3920403,1267,107,African Cup of Nations,2023,2024-01-20,Mauritania,Angola
+3920394,1267,107,African Cup of Nations,2023,2024-01-17,Morocco,Tanzania
+3920402,1267,107,African Cup of Nations,2023,2024-01-20,Algeria,Burkina Faso
+3920414,1267,107,African Cup of Nations,2023,2024-01-23,Angola,Burkina Faso
+3920405,1267,107,African Cup of Nations,2023,2024-01-21,Morocco,Congo DR
+3920416,1267,107,African Cup of Nations,2023,2024-01-24,South Africa,Tunisia
+3922658,1267,107,African Cup of Nations,2023,2024-02-03,Cape Verde Islands,South Africa
+3920386,1267,107,African Cup of Nations,2023,2024-01-14,Nigeria,Equatorial Guinea
+3920408,1267,107,African Cup of Nations,2023,2024-01-22,Equatorial Guinea,Côte d'Ivoire
+3920397,1267,107,African Cup of Nations,2023,2024-01-18,Equatorial Guinea,Guinea-Bissau
+3920410,1267,107,African Cup of Nations,2023,2024-01-22,Mozambique,Ghana
+3923881,1267,107,African Cup of Nations,2023,2024-02-11,Nigeria,Côte d'Ivoire
+3923880,1267,107,African Cup of Nations,2023,2024-02-10,South Africa,Congo DR
+3922838,1267,107,African Cup of Nations,2023,2024-02-07,Côte d'Ivoire,Congo DR
+3922837,1267,107,African Cup of Nations,2023,2024-02-07,Nigeria,South Africa
+3922242,1267,107,African Cup of Nations,2023,2024-01-29,Senegal,Côte d'Ivoire
+3922239,1267,107,African Cup of Nations,2023,2024-01-28,Equatorial Guinea,Guinea
+3922659,1267,107,African Cup of Nations,2023,2024-02-03,Mali,Côte d'Ivoire
+3922244,1267,107,African Cup of Nations,2023,2024-01-30,Mali,Burkina Faso
+3922356,1267,107,African Cup of Nations,2023,2024-02-02,Congo DR,Guinea
+3922321,1267,107,African Cup of Nations,2023,2024-02-02,Nigeria,Angola
+3922237,1267,107,African Cup of Nations,2023,2024-01-27,Angola,Namibia
+3922243,1267,107,African Cup of Nations,2023,2024-01-30,Morocco,South Africa
+3922241,1267,107,African Cup of Nations,2023,2024-01-29,Cape Verde Islands,Mauritania
+3922238,1267,107,African Cup of Nations,2023,2024-01-27,Nigeria,Cameroon
+3920396,1267,107,African Cup of Nations,2023,2024-01-18,Egypt,Ghana
+3920385,1267,107,African Cup of Nations,2023,2024-01-14,Egypt,Mozambique
+3920387,1267,107,African Cup of Nations,2023,2024-01-14,Ghana,Cape Verde Islands
+3920419,1267,107,African Cup of Nations,2023,2024-01-24,Zambia,Morocco
+3920418,1267,107,African Cup of Nations,2023,2024-01-24,Tanzania,Congo DR
+3920411,1267,107,African Cup of Nations,2023,2024-01-22,Cape Verde Islands,Egypt
+3920406,1267,107,African Cup of Nations,2023,2024-01-21,Zambia,Tanzania
+3920401,1267,107,African Cup of Nations,2023,2024-01-19,Guinea,Gambia
+3920398,1267,107,African Cup of Nations,2023,2024-01-18,Côte d'Ivoire,Nigeria
+3920392,1267,107,African Cup of Nations,2023,2024-01-16,Burkina Faso,Mauritania
+3920391,1267,107,African Cup of Nations,2023,2024-01-16,Mali,South Africa
+3920390,1267,107,African Cup of Nations,2023,2024-01-15,Algeria,Angola
+3920388,1267,107,African Cup of Nations,2023,2024-01-15,Senegal,Gambia
+3920384,1267,107,African Cup of Nations,2023,2024-01-13,Côte d'Ivoire,Guinea-Bissau
+22912,16,4,Champions League,2018/2019,2019-06-01,Tottenham Hotspur,Liverpool
+18245,16,1,Champions League,2017/2018,2018-05-26,Real Madrid,Liverpool
+18244,16,2,Champions League,2016/2017,2017-06-03,Juventus,Real Madrid
+18243,16,27,Champions League,2015/2016,2016-05-28,Real Madrid,Atlético Madrid
+18242,16,26,Champions League,2014/2015,2015-06-06,Juventus,Barcelona
+18241,16,25,Champions League,2013/2014,2014-05-24,Real Madrid,Atlético Madrid
+18240,16,24,Champions League,2012/2013,2013-05-25,Borussia Dortmund,Bayern Munich
+18237,16,23,Champions League,2011/2012,2012-05-19,Bayern Munich,Chelsea
+18236,16,22,Champions League,2010/2011,2011-05-28,Barcelona,Manchester United
+18235,16,21,Champions League,2009/2010,2010-05-22,Bayern Munich,Inter Milan
+3750201,16,41,Champions League,2008/2009,2009-05-27,Barcelona,Manchester United
+3750200,16,39,Champions League,2006/2007,2007-05-23,AC Milan,Liverpool
+2302764,16,37,Champions League,2004/2005,2005-05-25,AC Milan,Liverpool
+3752619,16,44,Champions League,2003/2004,2004-05-26,AS Monaco,FC Porto
+3750240,16,76,Champions League,1999/2000,1999-11-23,Fiorentina,Manchester United
+3888706,16,277,Champions League,1972/1973,1973-05-30,Ajax,Juventus
+3750235,16,71,Champions League,1971/1972,1972-05-31,Ajax,Inter Milan
+3888711,16,276,Champions League,1970/1971,1971-06-02,Ajax,Panathinaikos
+3939991,223,282,Copa America,2024,2024-07-03,Brazil,Colombia
+3939987,223,282,Copa America,2024,2024-07-01,Jamaica,Venezuela
+3939982,223,282,Copa America,2024,2024-06-28,Uruguay,Bolivia
+3939970,223,282,Copa America,2024,2024-06-22,Peru,Chile
+3939980,223,282,Copa America,2024,2024-06-26,Ecuador,Jamaica
+3939977,223,282,Copa America,2024,2024-06-26,Chile,Argentina
+3939975,223,282,Copa America,2024,2024-06-24,Colombia,Paraguay
+3939974,223,282,Copa America,2024,2024-06-23,United States,Bolivia
+3939986,223,282,Copa America,2024,2024-06-30,Argentina,Peru
+3939971,223,282,Copa America,2024,2024-06-23,Mexico,Jamaica
+3939979,223,282,Copa America,2024,2024-06-27,Venezuela,Mexico
+3939988,223,282,Copa America,2024,2024-07-01,Mexico,Ecuador
+3939990,223,282,Copa America,2024,2024-07-02,United States,Uruguay
+3939983,223,282,Copa America,2024,2024-06-29,Paraguay,Brazil
+3939972,223,282,Copa America,2024,2024-06-22,Ecuador,Venezuela
+3939978,223,282,Copa America,2024,2024-06-25,Peru,Canada
+3939976,223,282,Copa America,2024,2024-06-25,Brazil,Costa Rica
+3939992,223,282,Copa America,2024,2024-07-03,Costa Rica,Paraguay
+3942416,223,282,Copa America,2024,2024-07-06,Colombia,Panama
+3943077,223,282,Copa America,2024,2024-07-15,Argentina,Colombia
+3943076,223,282,Copa America,2024,2024-07-14,Canada,Uruguay
+3942852,223,282,Copa America,2024,2024-07-11,Uruguay,Colombia
+3942785,223,282,Copa America,2024,2024-07-10,Argentina,Canada
+3942415,223,282,Copa America,2024,2024-07-07,Uruguay,Brazil
+3939973,223,282,Copa America,2024,2024-06-24,Uruguay,Panama
+3942229,223,282,Copa America,2024,2024-07-06,Venezuela,Canada
+3942228,223,282,Copa America,2024,2024-07-05,Argentina,Ecuador
+3939985,223,282,Copa America,2024,2024-06-30,Canada,Chile
+3939984,223,282,Copa America,2024,2024-06-28,Colombia,Costa Rica
+3939981,223,282,Copa America,2024,2024-06-27,Panama,United States
+3939989,223,282,Copa America,2024,2024-07-02,Bolivia,Panama
+3939969,223,282,Copa America,2024,2024-06-21,Argentina,Canada
+3750248,87,84,Copa del Rey,1983/1984,1984-05-05,Athletic Club,Barcelona
+3888721,87,268,Copa del Rey,1982/1983,1983-06-04,Barcelona,Real Madrid
+3888754,87,279,Copa del Rey,1977/1978,1978-04-19,Barcelona,Las Palmas
+3888787,1470,274,FIFA U20 World Cup,1979,1979-09-07,Argentina U20,Soviet Union U20
+3857276,43,106,FIFA World Cup,2022,2022-12-01,Canada,Morocco
+3857271,43,106,FIFA World Cup,2022,2022-11-21,England,Iran
+3857296,43,106,FIFA World Cup,2022,2022-12-01,Croatia,Belgium
+3857274,43,106,FIFA World Cup,2022,2022-11-25,Netherlands,Ecuador
+3857255,43,106,FIFA World Cup,2022,2022-12-01,Japan,Spain
+3857272,43,106,FIFA World Cup,2022,2022-11-25,England,United States
+3857278,43,106,FIFA World Cup,2022,2022-11-29,Iran,United States
+3857277,43,106,FIFA World Cup,2022,2022-11-23,Morocco,Croatia
+3857273,43,106,FIFA World Cup,2022,2022-11-25,Wales,Iran
+3857275,43,106,FIFA World Cup,2022,2022-11-30,Tunisia,France
+3857261,43,106,FIFA World Cup,2022,2022-11-29,Wales,England
+3857290,43,106,FIFA World Cup,2022,2022-11-24,Switzerland,Cameroon
+3857298,43,106,FIFA World Cup,2022,2022-11-24,Portugal,Ghana
+3857285,43,106,FIFA World Cup,2022,2022-11-21,Senegal,Netherlands
+3857282,43,106,FIFA World Cup,2022,2022-11-21,United States,Wales
+3857297,43,106,FIFA World Cup,2022,2022-11-26,Poland,Saudi Arabia
+3857294,43,106,FIFA World Cup,2022,2022-11-29,Netherlands,Qatar
+3857266,43,106,FIFA World Cup,2022,2022-11-26,France,Denmark
+3857284,43,106,FIFA World Cup,2022,2022-11-23,Germany,Japan
+3857254,43,106,FIFA World Cup,2022,2022-11-22,Denmark,Tunisia
+3857265,43,106,FIFA World Cup,2022,2022-11-22,Mexico,Poland
+3857301,43,106,FIFA World Cup,2022,2022-11-25,Qatar,Senegal
+3857268,43,106,FIFA World Cup,2022,2022-11-23,Belgium,Canada
+3857269,43,106,FIFA World Cup,2022,2022-11-28,Brazil,Switzerland
+3869321,43,106,FIFA World Cup,2022,2022-12-09,Netherlands,Argentina
+3857292,43,106,FIFA World Cup,2022,2022-12-01,Costa Rica,Germany
+3857295,43,106,FIFA World Cup,2022,2022-11-27,Japan,Costa Rica
+3869685,43,106,FIFA World Cup,2022,2022-12-18,Argentina,France
+3869684,43,106,FIFA World Cup,2022,2022-12-17,Croatia,Morocco
+3857256,43,106,FIFA World Cup,2022,2022-12-02,Serbia,Switzerland
+3869151,43,106,FIFA World Cup,2022,2022-12-03,Argentina,Australia
+3857257,43,106,FIFA World Cup,2022,2022-11-30,Australia,Denmark
+3857258,43,106,FIFA World Cup,2022,2022-11-24,Brazil,Serbia
+3857288,43,106,FIFA World Cup,2022,2022-11-26,Tunisia,Australia
+3857267,43,106,FIFA World Cup,2022,2022-11-29,Ecuador,Senegal
+3857287,43,106,FIFA World Cup,2022,2022-11-24,Uruguay,South Korea
+3869486,43,106,FIFA World Cup,2022,2022-12-10,Morocco,Portugal
+3857260,43,106,FIFA World Cup,2022,2022-11-30,Saudi Arabia,Mexico
+3857264,43,106,FIFA World Cup,2022,2022-11-30,Poland,Argentina
+3857289,43,106,FIFA World Cup,2022,2022-11-26,Argentina,Mexico
+3869254,43,106,FIFA World Cup,2022,2022-12-06,Portugal,Switzerland
+3869118,43,106,FIFA World Cup,2022,2022-12-04,England,Senegal
+3869519,43,106,FIFA World Cup,2022,2022-12-13,Argentina,Croatia
+3869354,43,106,FIFA World Cup,2022,2022-12-10,England,France
+3869552,43,106,FIFA World Cup,2022,2022-12-14,France,Morocco
+3869420,43,106,FIFA World Cup,2022,2022-12-09,Croatia,Brazil
+3869220,43,106,FIFA World Cup,2022,2022-12-06,Morocco,Spain
+3869219,43,106,FIFA World Cup,2022,2022-12-05,Japan,Croatia
+3869253,43,106,FIFA World Cup,2022,2022-12-05,Brazil,South Korea
+3869152,43,106,FIFA World Cup,2022,2022-12-04,France,Poland
+3869117,43,106,FIFA World Cup,2022,2022-12-03,Netherlands,United States
+3857270,43,106,FIFA World Cup,2022,2022-11-28,Portugal,Uruguay
+3857263,43,106,FIFA World Cup,2022,2022-11-27,Spain,Germany
+3857259,43,106,FIFA World Cup,2022,2022-11-28,Cameroon,Serbia
+3857283,43,106,FIFA World Cup,2022,2022-11-27,Belgium,Morocco
+3857286,43,106,FIFA World Cup,2022,2022-11-20,Qatar,Ecuador
+3857300,43,106,FIFA World Cup,2022,2022-11-22,Argentina,Saudi Arabia
+3857299,43,106,FIFA World Cup,2022,2022-11-28,South Korea,Ghana
+3857293,43,106,FIFA World Cup,2022,2022-12-02,Ghana,Uruguay
+3857291,43,106,FIFA World Cup,2022,2022-11-23,Spain,Costa Rica
+3857281,43,106,FIFA World Cup,2022,2022-11-27,Croatia,Canada
+3857280,43,106,FIFA World Cup,2022,2022-12-02,Cameroon,Brazil
+3857279,43,106,FIFA World Cup,2022,2022-11-22,France,Australia
+3857262,43,106,FIFA World Cup,2022,2022-12-02,South Korea,Portugal
+8650,43,3,FIFA World Cup,2018,2018-07-06,Brazil,Belgium
+7584,43,3,FIFA World Cup,2018,2018-07-02,Belgium,Japan
+7554,43,3,FIFA World Cup,2018,2018-06-24,England,Panama
+7539,43,3,FIFA World Cup,2018,2018-06-19,Poland,Senegal
+7550,43,3,FIFA World Cup,2018,2018-06-22,Serbia,Switzerland
+7538,43,3,FIFA World Cup,2018,2018-06-18,Sweden,South Korea
+7534,43,3,FIFA World Cup,2018,2018-06-17,Germany,Mexico
+7543,43,3,FIFA World Cup,2018,2018-06-20,Iran,Spain
+7544,43,3,FIFA World Cup,2018,2018-06-20,Uruguay,Saudi Arabia
+7546,43,3,FIFA World Cup,2018,2018-06-21,France,Peru
+7545,43,3,FIFA World Cup,2018,2018-06-21,Argentina,Croatia
+7585,43,3,FIFA World Cup,2018,2018-07-03,Colombia,England
+7569,43,3,FIFA World Cup,2018,2018-06-28,Panama,Tunisia
+7572,43,3,FIFA World Cup,2018,2018-06-28,Japan,Poland
+7561,43,3,FIFA World Cup,2018,2018-06-26,Iceland,Croatia
+7540,43,3,FIFA World Cup,2018,2018-06-19,Russia,Egypt
+7531,43,3,FIFA World Cup,2018,2018-06-16,Argentina,Iceland
+7570,43,3,FIFA World Cup,2018,2018-06-28,England,Belgium
+7586,43,3,FIFA World Cup,2018,2018-07-03,Sweden,Switzerland
+7557,43,3,FIFA World Cup,2018,2018-06-25,Iran,Portugal
+7542,43,3,FIFA World Cup,2018,2018-06-20,Portugal,Morocco
+8656,43,3,FIFA World Cup,2018,2018-07-11,Croatia,England
+7548,43,3,FIFA World Cup,2018,2018-06-22,Brazil,Costa Rica
+7578,43,3,FIFA World Cup,2018,2018-06-15,Egypt,Uruguay
+7553,43,3,FIFA World Cup,2018,2018-06-23,South Korea,Mexico
+7536,43,3,FIFA World Cup,2018,2018-06-18,Belgium,Panama
+7555,43,3,FIFA World Cup,2018,2018-06-24,Poland,Colombia
+7576,43,3,FIFA World Cup,2018,2018-06-15,Portugal,Spain
+7565,43,3,FIFA World Cup,2018,2018-06-27,Serbia,Brazil
+7551,43,3,FIFA World Cup,2018,2018-06-23,Germany,Sweden
+7537,43,3,FIFA World Cup,2018,2018-06-18,Tunisia,England
+7580,43,3,FIFA World Cup,2018,2018-06-30,France,Argentina
+7581,43,3,FIFA World Cup,2018,2018-07-01,Croatia,Denmark
+7549,43,3,FIFA World Cup,2018,2018-06-22,Nigeria,Iceland
+7529,43,3,FIFA World Cup,2018,2018-06-16,Croatia,Nigeria
+7562,43,3,FIFA World Cup,2018,2018-06-26,Australia,Peru
+7571,43,3,FIFA World Cup,2018,2018-06-28,Senegal,Colombia
+7568,43,3,FIFA World Cup,2018,2018-06-27,Switzerland,Costa Rica
+7530,43,3,FIFA World Cup,2018,2018-06-16,France,Australia
+7558,43,3,FIFA World Cup,2018,2018-06-25,Uruguay,Russia
+7583,43,3,FIFA World Cup,2018,2018-07-02,Brazil,Mexico
+7547,43,3,FIFA World Cup,2018,2018-06-21,Denmark,Australia
+7535,43,3,FIFA World Cup,2018,2018-06-17,Costa Rica,Serbia
+8649,43,3,FIFA World Cup,2018,2018-07-06,Uruguay,France
+8658,43,3,FIFA World Cup,2018,2018-07-15,France,Croatia
+7582,43,3,FIFA World Cup,2018,2018-07-01,Spain,Russia
+7552,43,3,FIFA World Cup,2018,2018-06-23,Belgium,Tunisia
+7532,43,3,FIFA World Cup,2018,2018-06-16,Peru,Denmark
+7560,43,3,FIFA World Cup,2018,2018-06-25,Spain,Morocco
+7533,43,3,FIFA World Cup,2018,2018-06-17,Brazil,Switzerland
+7564,43,3,FIFA World Cup,2018,2018-06-26,Nigeria,Argentina
+7579,43,3,FIFA World Cup,2018,2018-06-30,Uruguay,Portugal
+7577,43,3,FIFA World Cup,2018,2018-06-15,Morocco,Iran
+7525,43,3,FIFA World Cup,2018,2018-06-14,Russia,Saudi Arabia
+7566,43,3,FIFA World Cup,2018,2018-06-27,Mexico,Sweden
+8651,43,3,FIFA World Cup,2018,2018-07-07,Sweden,England
+7567,43,3,FIFA World Cup,2018,2018-06-27,South Korea,Germany
+7541,43,3,FIFA World Cup,2018,2018-06-19,Colombia,Japan
+8655,43,3,FIFA World Cup,2018,2018-07-10,France,Belgium
+8657,43,3,FIFA World Cup,2018,2018-07-14,Belgium,England
+8652,43,3,FIFA World Cup,2018,2018-07-07,Russia,Croatia
+7563,43,3,FIFA World Cup,2018,2018-06-26,Denmark,France
+7556,43,3,FIFA World Cup,2018,2018-06-24,Japan,Senegal
+7559,43,3,FIFA World Cup,2018,2018-06-25,Saudi Arabia,Egypt
+3793185,43,55,FIFA World Cup,1990,1990-06-24,Brazil,Argentina
+3889148,43,54,FIFA World Cup,1986,1986-06-25,Argentina,Belgium
+3889149,43,54,FIFA World Cup,1986,1986-06-29,Argentina,Germany
+3750191,43,54,FIFA World Cup,1986,1986-06-22,Argentina,England
+3888718,43,51,FIFA World Cup,1974,1974-06-30,German DR,Netherlands
+3888720,43,51,FIFA World Cup,1974,1974-07-07,Netherlands,Germany
+3888719,43,51,FIFA World Cup,1974,1974-07-03,Netherlands,Brazil
+3888717,43,51,FIFA World Cup,1974,1974-06-26,Netherlands,Argentina
+3888716,43,51,FIFA World Cup,1974,1974-06-19,Netherlands,Sweden
+3750180,43,51,FIFA World Cup,1974,1974-06-22,German DR,Germany
+3888700,43,272,FIFA World Cup,1970,1970-06-07,Brazil,England
+3889218,43,272,FIFA World Cup,1970,1970-06-14,Brazil,Peru
+3889217,43,272,FIFA World Cup,1970,1970-06-09,Brazil,Romania
+3888702,43,272,FIFA World Cup,1970,1970-06-21,Brazil,Italy
+3888701,43,272,FIFA World Cup,1970,1970-06-17,Brazil,Uruguay
+3888699,43,272,FIFA World Cup,1970,1970-06-03,Brazil,Czechoslovakia
+3888854,43,270,FIFA World Cup,1962,1962-05-30,Brazil,Mexico
+3888705,43,269,FIFA World Cup,1958,1958-06-29,Brazil,Sweden
+3888704,43,269,FIFA World Cup,1958,1958-06-24,Brazil,France
+3827336,1238,108,Indian Super league,2021/2022,2022-03-16,Mohun Bagan Super Giant,SC Delhi
+3813314,1238,108,Indian Super league,2021/2022,2021-11-19,Mohun Bagan Super Giant,Kerala Blasters
+3817877,1238,108,Indian Super league,2021/2022,2022-02-18,NorthEast United,Bengaluru
+3827767,1238,108,Indian Super league,2021/2022,2022-03-20,SC Delhi,Kerala Blasters
+3827335,1238,108,Indian Super league,2021/2022,2022-03-15,Kerala Blasters,Jamshedpur
+3827338,1238,108,Indian Super league,2021/2022,2022-03-12,SC Delhi,Mohun Bagan Super Giant
+3827337,1238,108,Indian Super league,2021/2022,2022-03-11,Jamshedpur,Kerala Blasters
+3817856,1238,108,Indian Super league,2021/2022,2022-03-07,Mohun Bagan Super Giant,Jamshedpur
+3817891,1238,108,Indian Super league,2021/2022,2022-03-05,East Bengal,Bengaluru
+3817870,1238,108,Indian Super league,2021/2022,2022-03-06,Goa,Kerala Blasters
+3817899,1238,108,Indian Super league,2021/2022,2022-03-04,Jamshedpur,Odisha
+3817866,1238,108,Indian Super league,2021/2022,2022-03-02,Kerala Blasters,Mumbai City
+3817889,1238,108,Indian Super league,2021/2022,2022-03-03,Chennaiyin,Mohun Bagan Super Giant
+3817887,1238,108,Indian Super league,2021/2022,2022-03-05,SC Delhi,Mumbai City
+3817872,1238,108,Indian Super league,2021/2022,2022-02-21,Bengaluru,Odisha
+3817900,1238,108,Indian Super league,2021/2022,2022-02-20,Chennaiyin,Jamshedpur
+3817855,1238,108,Indian Super league,2021/2022,2022-02-19,Kerala Blasters,Mohun Bagan Super Giant
+3817863,1238,108,Indian Super league,2021/2022,2022-02-19,SC Delhi,Goa
+3817901,1238,108,Indian Super league,2021/2022,2022-02-17,Jamshedpur,Mumbai City
+3817880,1238,108,Indian Super league,2021/2022,2022-02-16,Odisha,Chennaiyin
+3817902,1238,108,Indian Super league,2021/2022,2022-02-14,Kerala Blasters,East Bengal
+3817862,1238,108,Indian Super league,2021/2022,2022-02-13,Mumbai City,Odisha
+3817873,1238,108,Indian Super league,2021/2022,2022-02-12,Mohun Bagan Super Giant,NorthEast United
+3817869,1238,108,Indian Super league,2021/2022,2022-02-11,Bengaluru,SC Delhi
+3817881,1238,108,Indian Super league,2021/2022,2022-02-10,Jamshedpur,Kerala Blasters
+3817895,1238,108,Indian Super league,2021/2022,2022-02-09,Chennaiyin,Goa
+3817884,1238,108,Indian Super league,2021/2022,2022-02-08,SC Delhi,Mohun Bagan Super Giant
+3817896,1238,108,Indian Super league,2021/2022,2022-02-07,East Bengal,Odisha
+3817852,1238,108,Indian Super league,2021/2022,2022-02-06,Chennaiyin,Mumbai City
+3817883,1238,108,Indian Super league,2021/2022,2022-02-05,Bengaluru,Jamshedpur
+3817886,1238,108,Indian Super league,2021/2022,2022-02-04,Kerala Blasters,NorthEast United
+3817864,1238,108,Indian Super league,2021/2022,2022-02-03,Mumbai City,Mohun Bagan Super Giant
+3817882,1238,108,Indian Super league,2021/2022,2022-02-02,East Bengal,Chennaiyin
+3817894,1238,108,Indian Super league,2021/2022,2022-02-01,Goa,Odisha
+3817871,1238,108,Indian Super league,2021/2022,2022-01-31,NorthEast United,SC Delhi
+3817861,1238,108,Indian Super league,2021/2022,2022-01-30,Kerala Blasters,Bengaluru
+3817888,1238,108,Indian Super league,2021/2022,2022-01-29,Mohun Bagan Super Giant,East Bengal
+3817875,1238,108,Indian Super league,2021/2022,2022-01-28,Jamshedpur,Goa
+3817868,1238,108,Indian Super league,2021/2022,2022-01-26,Bengaluru,Chennaiyin
+3817867,1238,108,Indian Super league,2021/2022,2022-01-25,Mumbai City,NorthEast United
+3813313,1238,108,Indian Super league,2021/2022,2022-01-23,Mohun Bagan Super Giant,Odisha
+3817890,1238,108,Indian Super league,2021/2022,2022-01-14,Goa,NorthEast United
+3813302,1238,108,Indian Super league,2021/2022,2022-01-06,Jamshedpur,NorthEast United
+3817857,1238,108,Indian Super league,2021/2022,2022-03-01,SC Delhi,Jamshedpur
+3817898,1238,108,Indian Super league,2021/2022,2022-02-26,Goa,Mumbai City
+3817893,1238,108,Indian Super league,2021/2022,2022-02-28,East Bengal,NorthEast United
+3817854,1238,108,Indian Super league,2021/2022,2022-02-27,Mohun Bagan Super Giant,Bengaluru
+3817892,1238,108,Indian Super league,2021/2022,2022-02-24,Odisha,Mohun Bagan Super Giant
+3817859,1238,108,Indian Super league,2021/2022,2022-02-25,NorthEast United,Jamshedpur
+3817858,1238,108,Indian Super league,2021/2022,2022-02-26,Kerala Blasters,Chennaiyin
+3817897,1238,108,Indian Super league,2021/2022,2022-02-23,SC Delhi,Kerala Blasters
+3817885,1238,108,Indian Super league,2021/2022,2022-02-22,Mumbai City,East Bengal
+3817878,1238,108,Indian Super league,2021/2022,2022-01-24,East Bengal,SC Delhi
+3817876,1238,108,Indian Super league,2021/2022,2022-01-22,Chennaiyin,NorthEast United
+3813305,1238,108,Indian Super league,2021/2022,2022-01-09,Kerala Blasters,SC Delhi
+3813266,1238,108,Indian Super league,2021/2022,2022-01-08,Goa,Chennaiyin
+3813271,1238,108,Indian Super league,2021/2022,2022-01-02,Kerala Blasters,Goa
+3813311,1238,108,Indian Super league,2021/2022,2022-01-02,Jamshedpur,Chennaiyin
+3813303,1238,108,Indian Super league,2021/2022,2021-12-29,Mohun Bagan Super Giant,Goa
+3813304,1238,108,Indian Super league,2021/2022,2021-12-23,SC Delhi,East Bengal
+3813306,1238,108,Indian Super league,2021/2022,2021-12-21,NorthEast United,Mohun Bagan Super Giant
+3813283,1238,108,Indian Super league,2021/2022,2021-12-30,Chennaiyin,Bengaluru
+3813275,1238,108,Indian Super league,2021/2022,2021-12-26,Kerala Blasters,Jamshedpur
+3813278,1238,108,Indian Super league,2021/2022,2021-12-22,Chennaiyin,Kerala Blasters
+3813295,1238,108,Indian Super league,2021/2022,2021-12-28,SC Delhi,Odisha
+3813296,1238,108,Indian Super league,2021/2022,2021-11-25,NorthEast United,Kerala Blasters
+3813282,1238,108,Indian Super league,2021/2022,2021-12-19,Mumbai City,Kerala Blasters
+3813269,1238,108,Indian Super league,2021/2022,2021-12-14,Odisha,Jamshedpur
+3817879,1238,108,Indian Super league,2021/2022,2022-01-13,Chennaiyin,SC Delhi
+3817874,1238,108,Indian Super league,2021/2022,2022-01-23,Bengaluru,Goa
+3817865,1238,108,Indian Super league,2021/2022,2022-01-18,NorthEast United,Odisha
+3817860,1238,108,Indian Super league,2021/2022,2022-01-27,Odisha,SC Delhi
+3817853,1238,108,Indian Super league,2021/2022,2022-01-19,Goa,East Bengal
+3817851,1238,108,Indian Super league,2021/2022,2022-01-12,Odisha,Kerala Blasters
+3817850,1238,108,Indian Super league,2021/2022,2022-01-11,Jamshedpur,East Bengal
+3817849,1238,108,Indian Super league,2021/2022,2022-01-10,Mumbai City,Bengaluru
+3817848,1238,108,Indian Super league,2021/2022,2022-02-15,Goa,Mohun Bagan Super Giant
+3813318,1238,108,Indian Super league,2021/2022,2021-12-27,NorthEast United,Mumbai City
+3813287,1238,108,Indian Super league,2021/2022,2021-12-16,Bengaluru,Mohun Bagan Super Giant
+3813270,1238,108,Indian Super league,2021/2022,2021-11-22,Mumbai City,Goa
+3813307,1238,108,Indian Super league,2021/2022,2021-12-20,Jamshedpur,Bengaluru
+3813279,1238,108,Indian Super league,2021/2022,2021-12-18,Chennaiyin,Odisha
+3813281,1238,108,Indian Super league,2021/2022,2021-12-11,Mohun Bagan Super Giant,Chennaiyin
+3813274,1238,108,Indian Super league,2021/2022,2021-12-04,Bengaluru,Mumbai City
+3813285,1238,108,Indian Super league,2021/2022,2021-12-11,Goa,Bengaluru
+3813317,1238,108,Indian Super league,2021/2022,2021-11-30,Odisha,East Bengal
+3813316,1238,108,Indian Super league,2021/2022,2021-12-04,NorthEast United,Goa
+3813315,1238,108,Indian Super league,2021/2022,2021-11-26,Goa,Jamshedpur
+3813312,1238,108,Indian Super league,2021/2022,2021-12-01,Mohun Bagan Super Giant,Mumbai City
+3813310,1238,108,Indian Super league,2021/2022,2021-12-12,East Bengal,Kerala Blasters
+3813309,1238,108,Indian Super league,2021/2022,2021-11-23,SC Delhi,Chennaiyin
+3813308,1238,108,Indian Super league,2021/2022,2021-12-24,Odisha,Goa
+3813301,1238,108,Indian Super league,2021/2022,2021-12-10,Odisha,NorthEast United
+3813300,1238,108,Indian Super league,2021/2022,2021-12-05,Kerala Blasters,Odisha
+3813299,1238,108,Indian Super league,2021/2022,2021-12-08,SC Delhi,Bengaluru
+3813298,1238,108,Indian Super league,2021/2022,2021-11-21,East Bengal,Jamshedpur
+3813297,1238,108,Indian Super league,2021/2022,2021-11-20,Bengaluru,NorthEast United
+3813294,1238,108,Indian Super league,2021/2022,2021-11-29,NorthEast United,Chennaiyin
+3813293,1238,108,Indian Super league,2021/2022,2022-01-04,Bengaluru,East Bengal
+3813292,1238,108,Indian Super league,2021/2022,2021-11-28,Bengaluru,Kerala Blasters
+3813291,1238,108,Indian Super league,2021/2022,2021-11-27,East Bengal,Mohun Bagan Super Giant
+3813290,1238,108,Indian Super league,2021/2022,2021-12-13,SC Delhi,NorthEast United
+3813289,1238,108,Indian Super league,2021/2022,2021-11-24,Odisha,Bengaluru
+3813288,1238,108,Indian Super league,2021/2022,2021-12-02,Jamshedpur,SC Delhi
+3813286,1238,108,Indian Super league,2021/2022,2021-12-15,Mumbai City,Chennaiyin
+3813284,1238,108,Indian Super league,2021/2022,2021-12-09,Mumbai City,Jamshedpur
+3813280,1238,108,Indian Super league,2021/2022,2021-12-03,Chennaiyin,East Bengal
+3813277,1238,108,Indian Super league,2021/2022,2021-11-27,Mumbai City,SC Delhi
+3813276,1238,108,Indian Super league,2021/2022,2021-12-17,NorthEast United,East Bengal
+3813273,1238,108,Indian Super league,2021/2022,2022-01-03,Odisha,Mumbai City
+3813272,1238,108,Indian Super league,2021/2022,2021-12-18,Goa,SC Delhi
+3813268,1238,108,Indian Super league,2021/2022,2021-12-06,Jamshedpur,Mohun Bagan Super Giant
+3813267,1238,108,Indian Super league,2021/2022,2021-12-07,East Bengal,Goa
+3813265,1238,108,Indian Super league,2021/2022,2022-01-07,East Bengal,Mumbai City
+3813264,1238,108,Indian Super league,2021/2022,2022-01-05,Mohun Bagan Super Giant,SC Delhi
+3773386,11,90,La Liga,2020/2021,2020-10-31,Deportivo Alavés,Barcelona
+3773565,11,90,La Liga,2020/2021,2021-01-09,Granada,Barcelona
+3773457,11,90,La Liga,2020/2021,2021-05-16,Barcelona,Celta Vigo
+3773631,11,90,La Liga,2020/2021,2021-02-07,Real Betis,Barcelona
+3773665,11,90,La Liga,2020/2021,2021-03-06,Osasuna,Barcelona
+3773497,11,90,La Liga,2020/2021,2021-04-10,Real Madrid,Barcelona
+3773660,11,90,La Liga,2020/2021,2020-12-13,Barcelona,Levante UD
+3773593,11,90,La Liga,2020/2021,2020-09-27,Barcelona,Villarreal
+3773466,11,90,La Liga,2020/2021,2020-10-01,Celta Vigo,Barcelona
+3773585,11,90,La Liga,2020/2021,2020-10-24,Barcelona,Real Madrid
+3773552,11,90,La Liga,2020/2021,2021-01-03,Huesca,Barcelona
+3773672,11,90,La Liga,2020/2021,2020-10-04,Barcelona,Sevilla
+3773587,11,90,La Liga,2020/2021,2020-10-17,Getafe,Barcelona
+3773656,11,90,La Liga,2020/2021,2020-11-21,Atlético Madrid,Barcelona
+3773377,11,90,La Liga,2020/2021,2020-12-19,Barcelona,Valencia
+3773586,11,90,La Liga,2020/2021,2021-04-29,Barcelona,Granada
+3773372,11,90,La Liga,2020/2021,2021-05-08,Barcelona,Atlético Madrid
+3773387,11,90,La Liga,2020/2021,2021-05-11,Levante UD,Barcelona
+3773695,11,90,La Liga,2020/2021,2021-05-02,Valencia,Barcelona
+3773369,11,90,La Liga,2020/2021,2021-03-15,Barcelona,Huesca
+3773661,11,90,La Liga,2020/2021,2021-04-22,Barcelona,Getafe
+3773597,11,90,La Liga,2020/2021,2021-03-21,Real Sociedad,Barcelona
+3773523,11,90,La Liga,2020/2021,2020-12-16,Barcelona,Real Sociedad
+3773571,11,90,La Liga,2020/2021,2020-12-22,Real Valladolid,Barcelona
+3773428,11,90,La Liga,2020/2021,2020-12-05,Cádiz,Barcelona
+3764661,11,90,La Liga,2020/2021,2021-01-06,Athletic Club,Barcelona
+3773526,11,90,La Liga,2020/2021,2021-02-13,Barcelona,Deportivo Alavés
+3773474,11,90,La Liga,2020/2021,2021-04-05,Barcelona,Real Valladolid
+3773625,11,90,La Liga,2020/2021,2021-02-27,Sevilla,Barcelona
+3773403,11,90,La Liga,2020/2021,2021-01-31,Barcelona,Athletic Club
+3773547,11,90,La Liga,2020/2021,2020-11-29,Barcelona,Osasuna
+3773415,11,90,La Liga,2020/2021,2021-02-21,Barcelona,Cádiz
+3764440,11,90,La Liga,2020/2021,2021-02-24,Barcelona,Elche
+3773689,11,90,La Liga,2020/2021,2021-04-25,Villarreal,Barcelona
+3773477,11,90,La Liga,2020/2021,2020-11-07,Barcelona,Real Betis
+303731,11,42,La Liga,2019/2020,2020-02-22,Barcelona,Eibar
+303532,11,42,La Liga,2019/2020,2020-06-16,Barcelona,Leganés
+303516,11,42,La Liga,2019/2020,2020-06-27,Celta Vigo,Barcelona
+303596,11,42,La Liga,2019/2020,2019-12-18,Barcelona,Real Madrid
+303430,11,42,La Liga,2019/2020,2019-09-24,Barcelona,Villarreal
+303725,11,42,La Liga,2019/2020,2020-07-05,Villarreal,Barcelona
+303504,11,42,La Liga,2019/2020,2019-11-02,Levante UD,Barcelona
+303451,11,42,La Liga,2019/2020,2019-12-07,Barcelona,Mallorca
+303664,11,42,La Liga,2019/2020,2019-12-14,Real Sociedad,Barcelona
+303682,11,42,La Liga,2019/2020,2020-02-02,Barcelona,Levante UD
+303400,11,42,La Liga,2019/2020,2020-01-25,Valencia,Barcelona
+303634,11,42,La Liga,2019/2020,2020-07-16,Barcelona,Osasuna
+303421,11,42,La Liga,2019/2020,2020-07-19,Deportivo Alavés,Barcelona
+303493,11,42,La Liga,2019/2020,2020-06-23,Barcelona,Athletic Club
+303680,11,42,La Liga,2019/2020,2020-07-11,Real Valladolid,Barcelona
+303479,11,42,La Liga,2019/2020,2020-03-07,Barcelona,Real Sociedad
+303615,11,42,La Liga,2019/2020,2020-07-08,Barcelona,Espanyol
+303696,11,42,La Liga,2019/2020,2020-06-30,Barcelona,Atlético Madrid
+303487,11,42,La Liga,2019/2020,2019-11-09,Barcelona,Celta Vigo
+303600,11,42,La Liga,2019/2020,2019-10-29,Barcelona,Real Valladolid
+303548,11,42,La Liga,2019/2020,2020-06-13,Mallorca,Barcelona
+303652,11,42,La Liga,2019/2020,2020-01-04,Espanyol,Barcelona
+303674,11,42,La Liga,2019/2020,2020-06-19,Sevilla,Barcelona
+303470,11,42,La Liga,2019/2020,2020-03-01,Real Madrid,Barcelona
+303700,11,42,La Liga,2019/2020,2019-10-19,Eibar,Barcelona
+303707,11,42,La Liga,2019/2020,2020-02-09,Real Betis,Barcelona
+303666,11,42,La Liga,2019/2020,2019-09-21,Granada,Barcelona
+303715,11,42,La Liga,2019/2020,2019-11-23,Leganés,Barcelona
+303377,11,42,La Liga,2019/2020,2020-02-15,Barcelona,Getafe
+303524,11,42,La Liga,2019/2020,2019-12-01,Atlético Madrid,Barcelona
+303517,11,42,La Liga,2019/2020,2019-12-21,Barcelona,Deportivo Alavés
+303610,11,42,La Liga,2019/2020,2020-01-19,Barcelona,Granada
+303473,11,42,La Liga,2019/2020,2019-10-06,Barcelona,Sevilla
+15978,11,4,La Liga,2018/2019,2018-09-15,Real Sociedad,Barcelona
+15998,11,4,La Liga,2018/2019,2018-09-26,Leganés,Barcelona
+16029,11,4,La Liga,2018/2019,2018-10-20,Barcelona,Sevilla
+16073,11,4,La Liga,2018/2019,2018-11-24,Atlético Madrid,Barcelona
+16086,11,4,La Liga,2018/2019,2018-12-08,Espanyol,Barcelona
+16190,11,4,La Liga,2018/2019,2019-02-23,Sevilla,Barcelona
+16109,11,4,La Liga,2018/2019,2018-12-22,Barcelona,Celta Vigo
+16120,11,4,La Liga,2018/2019,2019-01-06,Getafe,Barcelona
+16182,11,4,La Liga,2018/2019,2019-02-16,Barcelona,Real Valladolid
+16215,11,4,La Liga,2018/2019,2019-03-17,Real Betis,Barcelona
+16173,11,4,La Liga,2018/2019,2019-02-10,Athletic Club,Barcelona
+16265,11,4,La Liga,2018/2019,2019-04-20,Barcelona,Real Sociedad
+15946,11,4,La Liga,2018/2019,2018-08-18,Barcelona,Deportivo Alavés
+16157,11,4,La Liga,2018/2019,2019-02-02,Barcelona,Valencia
+16136,11,4,La Liga,2018/2019,2019-01-20,Barcelona,Leganés
+16248,11,4,La Liga,2018/2019,2019-04-06,Barcelona,Atlético Madrid
+16056,11,4,La Liga,2018/2019,2018-11-11,Barcelona,Real Betis
+16289,11,4,La Liga,2018/2019,2019-04-27,Barcelona,Levante UD
+16079,11,4,La Liga,2018/2019,2018-12-02,Barcelona,Villarreal
+16149,11,4,La Liga,2018/2019,2019-01-27,Girona,Barcelona
+16275,11,4,La Liga,2018/2019,2019-04-23,Deportivo Alavés,Barcelona
+15973,11,4,La Liga,2018/2019,2018-09-02,Barcelona,Huesca
+16317,11,4,La Liga,2018/2019,2019-05-19,Eibar,Barcelona
+16131,11,4,La Liga,2018/2019,2019-01-13,Barcelona,Eibar
+16205,11,4,La Liga,2018/2019,2019-03-09,Barcelona,Rayo Vallecano
+16095,11,4,La Liga,2018/2019,2018-12-16,Levante UD,Barcelona
+16306,11,4,La Liga,2018/2019,2019-05-12,Barcelona,Getafe
+16010,11,4,La Liga,2018/2019,2018-09-29,Barcelona,Athletic Club
+15986,11,4,La Liga,2018/2019,2018-09-23,Barcelona,Girona
+16240,11,4,La Liga,2018/2019,2019-04-02,Villarreal,Barcelona
+16023,11,4,La Liga,2018/2019,2018-10-07,Valencia,Barcelona
+16196,11,4,La Liga,2018/2019,2019-03-02,Real Madrid,Barcelona
+15956,11,4,La Liga,2018/2019,2018-08-25,Real Valladolid,Barcelona
+16231,11,4,La Liga,2018/2019,2019-03-30,Barcelona,Espanyol
+9880,11,1,La Liga,2017/2018,2018-04-14,Barcelona,Valencia
+9912,11,1,La Liga,2017/2018,2018-04-29,RC Deportivo La Coruña,Barcelona
+9924,11,1,La Liga,2017/2018,2018-05-06,Barcelona,Real Madrid
+9855,11,1,La Liga,2017/2018,2018-03-18,Barcelona,Athletic Club
+9827,11,1,La Liga,2017/2018,2018-03-01,Las Palmas,Barcelona
+9799,11,1,La Liga,2017/2018,2018-02-17,Eibar,Barcelona
+9636,11,1,La Liga,2017/2018,2017-10-01,Barcelona,Las Palmas
+9609,11,1,La Liga,2017/2018,2017-09-19,Barcelona,Eibar
+9575,11,1,La Liga,2017/2018,2017-08-20,Barcelona,Real Betis
+9928,11,1,La Liga,2017/2018,2018-05-09,Barcelona,Villarreal
+9736,11,1,La Liga,2017/2018,2017-12-23,Real Madrid,Barcelona
+9742,11,1,La Liga,2017/2018,2018-01-07,Barcelona,Levante UD
+9765,11,1,La Liga,2017/2018,2018-01-21,Real Betis,Barcelona
+9661,11,1,La Liga,2017/2018,2017-10-28,Athletic Club,Barcelona
+9592,11,1,La Liga,2017/2018,2017-09-09,Barcelona,Espanyol
+9870,11,1,La Liga,2017/2018,2018-04-07,Barcelona,Leganés
+9783,11,1,La Liga,2017/2018,2018-02-04,Espanyol,Barcelona
+9700,11,1,La Liga,2017/2018,2017-12-02,Barcelona,Celta Vigo
+9860,11,1,La Liga,2017/2018,2018-03-31,Sevilla,Barcelona
+9695,11,1,La Liga,2017/2018,2017-11-26,Valencia,Barcelona
+9794,11,1,La Liga,2017/2018,2018-02-11,Barcelona,Getafe
+9717,11,1,La Liga,2017/2018,2017-12-10,Villarreal,Barcelona
+9673,11,1,La Liga,2017/2018,2017-11-04,Barcelona,Sevilla
+9650,11,1,La Liga,2017/2018,2017-10-21,Barcelona,Málaga
+9620,11,1,La Liga,2017/2018,2017-09-23,Girona,Barcelona
+9837,11,1,La Liga,2017/2018,2018-03-04,Barcelona,Atlético Madrid
+9811,11,1,La Liga,2017/2018,2018-02-24,Barcelona,Girona
+9642,11,1,La Liga,2017/2018,2017-10-14,Atlético Madrid,Barcelona
+9774,11,1,La Liga,2017/2018,2018-01-28,Barcelona,Deportivo Alavés
+9602,11,1,La Liga,2017/2018,2017-09-16,Getafe,Barcelona
+9948,11,1,La Liga,2017/2018,2018-05-20,Barcelona,Real Sociedad
+9682,11,1,La Liga,2017/2018,2017-11-18,Leganés,Barcelona
+9581,11,1,La Liga,2017/2018,2017-08-26,Deportivo Alavés,Barcelona
+9726,11,1,La Liga,2017/2018,2017-12-17,Barcelona,RC Deportivo La Coruña
+9754,11,1,La Liga,2017/2018,2018-01-14,Real Sociedad,Barcelona
+9889,11,1,La Liga,2017/2018,2018-04-17,Celta Vigo,Barcelona
+267569,11,2,La Liga,2016/2017,2017-04-23,Real Madrid,Barcelona
+266989,11,2,La Liga,2016/2017,2016-11-06,Sevilla,Barcelona
+266357,11,2,La Liga,2016/2017,2016-12-10,Osasuna,Barcelona
+267212,11,2,La Liga,2016/2017,2016-09-17,Leganés,Barcelona
+266669,11,2,La Liga,2016/2017,2016-09-10,Barcelona,Deportivo Alavés
+266892,11,2,La Liga,2016/2017,2016-08-28,Athletic Club,Barcelona
+267220,11,2,La Liga,2016/2017,2016-09-21,Barcelona,Atlético Madrid
+267670,11,2,La Liga,2016/2017,2016-08-20,Barcelona,Real Betis
+266516,11,2,La Liga,2016/2017,2017-01-29,Real Betis,Barcelona
+267039,11,2,La Liga,2016/2017,2017-05-14,Las Palmas,Barcelona
+266477,11,2,La Liga,2016/2017,2017-01-08,Villarreal,Barcelona
+267101,11,2,La Liga,2016/2017,2017-04-26,Barcelona,Osasuna
+266440,11,2,La Liga,2016/2017,2017-03-19,Barcelona,Valencia
+266033,11,2,La Liga,2016/2017,2016-10-22,Valencia,Barcelona
+267660,11,2,La Liga,2016/2017,2017-03-12,RC Deportivo La Coruña,Barcelona
+266273,11,2,La Liga,2016/2017,2017-02-11,Deportivo Alavés,Barcelona
+267395,11,2,La Liga,2016/2017,2017-01-14,Barcelona,Las Palmas
+266874,11,2,La Liga,2016/2017,2017-02-04,Barcelona,Athletic Club
+266731,11,2,La Liga,2016/2017,2017-01-22,Eibar,Barcelona
+266528,11,2,La Liga,2016/2017,2016-12-18,Barcelona,Espanyol
+266280,11,2,La Liga,2016/2017,2017-04-05,Barcelona,Sevilla
+267432,11,2,La Liga,2016/2017,2017-05-21,Barcelona,Eibar
+267076,11,2,La Liga,2016/2017,2016-12-03,Barcelona,Real Madrid
+267590,11,2,La Liga,2016/2017,2017-04-08,Málaga,Barcelona
+267373,11,2,La Liga,2016/2017,2017-04-15,Barcelona,Real Sociedad
+267077,11,2,La Liga,2016/2017,2017-04-29,Espanyol,Barcelona
+266952,11,2,La Liga,2016/2017,2017-05-06,Barcelona,Villarreal
+267464,11,2,La Liga,2016/2017,2017-02-26,Atlético Madrid,Barcelona
+266299,11,2,La Liga,2016/2017,2017-03-04,Barcelona,Celta Vigo
+266191,11,2,La Liga,2016/2017,2016-11-27,Real Sociedad,Barcelona
+265952,11,2,La Liga,2016/2017,2017-03-01,Barcelona,Sporting Gijón
+267492,11,2,La Liga,2016/2017,2016-10-15,Barcelona,RC Deportivo La Coruña
+267596,11,2,La Liga,2016/2017,2017-02-19,Barcelona,Leganés
+267058,11,2,La Liga,2016/2017,2016-10-29,Barcelona,Granada
+3825739,11,27,La Liga,2015/2016,2016-01-17,Real Madrid,Sporting Gijón
+3825848,11,27,La Liga,2015/2016,2015-09-23,Levante UD,Eibar
+3825895,11,27,La Liga,2015/2016,2015-09-23,Las Palmas,Sevilla
+3825894,11,27,La Liga,2015/2016,2016-05-01,RC Deportivo La Coruña,Getafe
+3825855,11,27,La Liga,2015/2016,2016-05-02,Málaga,Levante UD
+3825908,11,27,La Liga,2015/2016,2016-05-15,Espanyol,Eibar
+3825883,11,27,La Liga,2015/2016,2016-05-15,Málaga,Las Palmas
+3825900,11,27,La Liga,2015/2016,2016-05-15,Sporting Gijón,Villarreal
+3825902,11,27,La Liga,2015/2016,2016-05-15,Rayo Vallecano,Levante UD
+3825876,11,27,La Liga,2015/2016,2016-05-15,Real Betis,Getafe
+3825846,11,27,La Liga,2015/2016,2016-05-14,RC Deportivo La Coruña,Real Madrid
+3825869,11,27,La Liga,2015/2016,2016-05-14,Athletic Club,Sevilla
+3825882,11,27,La Liga,2015/2016,2016-05-14,Atlético Madrid,Celta Vigo
+3825849,11,27,La Liga,2015/2016,2016-05-13,Valencia,Real Sociedad
+3825860,11,27,La Liga,2015/2016,2016-05-08,Levante UD,Atlético Madrid
+3825847,11,27,La Liga,2015/2016,2016-04-23,Eibar,RC Deportivo La Coruña
+3825817,11,27,La Liga,2015/2016,2016-03-18,Getafe,Eibar
+3825778,11,27,La Liga,2015/2016,2016-02-20,Real Betis,Sporting Gijón
+3825777,11,27,La Liga,2015/2016,2016-02-19,Levante UD,Getafe
+3825740,11,27,La Liga,2015/2016,2016-01-18,Eibar,Granada
+3825875,11,27,La Liga,2015/2016,2016-04-24,Villarreal,Real Sociedad
+3825884,11,27,La Liga,2015/2016,2016-04-24,Sevilla,Real Betis
+3825842,11,27,La Liga,2015/2016,2016-04-24,Levante UD,Athletic Club
+3825890,11,27,La Liga,2015/2016,2016-04-23,Atlético Madrid,Málaga
+3825871,11,27,La Liga,2015/2016,2016-04-22,Las Palmas,Espanyol
+3825896,11,27,La Liga,2015/2016,2016-04-21,Granada,Levante UD
+3825841,11,27,La Liga,2015/2016,2016-04-21,Real Sociedad,Getafe
+3825843,11,27,La Liga,2015/2016,2016-04-20,Málaga,Rayo Vallecano
+3825839,11,27,La Liga,2015/2016,2016-04-20,Sporting Gijón,Sevilla
+3825838,11,27,La Liga,2015/2016,2016-04-20,Athletic Club,Atlético Madrid
+3825840,11,27,La Liga,2015/2016,2016-04-20,Valencia,Eibar
+3825837,11,27,La Liga,2015/2016,2016-04-19,Real Betis,Las Palmas
+3825836,11,27,La Liga,2015/2016,2016-04-17,Rayo Vallecano,Villarreal
+3825835,11,27,La Liga,2015/2016,2016-04-17,Málaga,Athletic Club
+3825834,11,27,La Liga,2015/2016,2016-04-17,Atlético Madrid,Granada
+3825906,11,27,La Liga,2015/2016,2016-04-17,Sevilla,RC Deportivo La Coruña
+3825897,11,27,La Liga,2015/2016,2016-04-16,Eibar,Real Sociedad
+3825889,11,27,La Liga,2015/2016,2016-04-16,Celta Vigo,Real Betis
+3825833,11,27,La Liga,2015/2016,2016-04-16,Getafe,Real Madrid
+3825857,11,27,La Liga,2015/2016,2016-04-15,Levante UD,Espanyol
+3825863,11,27,La Liga,2015/2016,2016-04-11,RC Deportivo La Coruña,Las Palmas
+3825829,11,27,La Liga,2015/2016,2016-04-10,Athletic Club,Rayo Vallecano
+3825830,11,27,La Liga,2015/2016,2016-04-10,Villarreal,Getafe
+3825832,11,27,La Liga,2015/2016,2016-04-10,Sporting Gijón,Celta Vigo
+3825831,11,27,La Liga,2015/2016,2016-04-10,Valencia,Sevilla
+3825828,11,27,La Liga,2015/2016,2016-04-09,Espanyol,Atlético Madrid
+3825827,11,27,La Liga,2015/2016,2016-04-09,Real Betis,Levante UD
+3825826,11,27,La Liga,2015/2016,2016-04-08,Granada,Málaga
+3825825,11,27,La Liga,2015/2016,2016-04-04,Levante UD,Sporting Gijón
+3825824,11,27,La Liga,2015/2016,2016-04-03,Eibar,Villarreal
+3825823,11,27,La Liga,2015/2016,2016-04-03,Sevilla,Real Sociedad
+3825905,11,27,La Liga,2015/2016,2016-04-03,Málaga,Espanyol
+3825822,11,27,La Liga,2015/2016,2016-04-02,Las Palmas,Valencia
+3825821,11,27,La Liga,2015/2016,2016-03-20,Espanyol,Athletic Club
+3825820,11,27,La Liga,2015/2016,2016-03-20,Real Madrid,Sevilla
+3825819,11,27,La Liga,2015/2016,2016-03-20,Valencia,Celta Vigo
+3825818,11,27,La Liga,2015/2016,2016-03-19,Real Sociedad,Las Palmas
+3825887,11,27,La Liga,2015/2016,2016-03-19,Granada,Rayo Vallecano
+3825907,11,27,La Liga,2015/2016,2016-03-19,Sporting Gijón,Atlético Madrid
+3825903,11,27,La Liga,2015/2016,2016-03-19,Real Betis,Málaga
+3825816,11,27,La Liga,2015/2016,2016-03-13,Sevilla,Villarreal
+3825815,11,27,La Liga,2015/2016,2016-03-13,Levante UD,Valencia
+3825858,11,27,La Liga,2015/2016,2016-03-12,Rayo Vallecano,Eibar
+3825813,11,27,La Liga,2015/2016,2016-03-12,Atlético Madrid,RC Deportivo La Coruña
+3825814,11,27,La Liga,2015/2016,2016-03-12,Celta Vigo,Real Sociedad
+3825812,11,27,La Liga,2015/2016,2016-03-11,Málaga,Sporting Gijón
+3825811,11,27,La Liga,2015/2016,2016-03-07,Espanyol,Rayo Vallecano
+3825807,11,27,La Liga,2015/2016,2016-03-06,Valencia,Atlético Madrid
+3825809,11,27,La Liga,2015/2016,2016-03-06,Real Betis,Granada
+3825810,11,27,La Liga,2015/2016,2016-03-06,Real Sociedad,Levante UD
+3825808,11,27,La Liga,2015/2016,2016-03-06,Sporting Gijón,Athletic Club
+3825804,11,27,La Liga,2015/2016,2016-03-05,RC Deportivo La Coruña,Málaga
+3825867,11,27,La Liga,2015/2016,2016-03-05,Getafe,Sevilla
+3825805,11,27,La Liga,2015/2016,2016-03-05,Villarreal,Las Palmas
+3825784,11,27,La Liga,2015/2016,2016-02-21,Atlético Madrid,Villarreal
+3825782,11,27,La Liga,2015/2016,2016-02-21,Granada,Valencia
+3825757,11,27,La Liga,2015/2016,2016-01-31,Real Madrid,Espanyol
+3825641,11,27,La Liga,2015/2016,2015-10-26,Athletic Club,Sporting Gijón
+3825803,11,27,La Liga,2015/2016,2016-03-03,Granada,Sporting Gijón
+3825800,11,27,La Liga,2015/2016,2016-03-02,Celta Vigo,Villarreal
+3825801,11,27,La Liga,2015/2016,2016-03-02,Sevilla,Eibar
+3825799,11,27,La Liga,2015/2016,2016-03-02,Málaga,Valencia
+3825797,11,27,La Liga,2015/2016,2016-03-02,Athletic Club,RC Deportivo La Coruña
+3825798,11,27,La Liga,2015/2016,2016-03-02,Levante UD,Real Madrid
+3825796,11,27,La Liga,2015/2016,2016-03-01,Las Palmas,Getafe
+3825795,11,27,La Liga,2015/2016,2016-03-01,Atlético Madrid,Real Sociedad
+3825793,11,27,La Liga,2015/2016,2016-02-28,Valencia,Athletic Club
+3825792,11,27,La Liga,2015/2016,2016-02-28,RC Deportivo La Coruña,Granada
+3825794,11,27,La Liga,2015/2016,2016-02-28,Villarreal,Levante UD
+3825788,11,27,La Liga,2015/2016,2016-02-27,Getafe,Celta Vigo
+3825791,11,27,La Liga,2015/2016,2016-02-27,Real Betis,Rayo Vallecano
+3825790,11,27,La Liga,2015/2016,2016-02-27,Sporting Gijón,Espanyol
+3825787,11,27,La Liga,2015/2016,2016-02-27,Real Madrid,Atlético Madrid
+3825789,11,27,La Liga,2015/2016,2016-02-27,Real Sociedad,Málaga
+3825786,11,27,La Liga,2015/2016,2016-02-26,Eibar,Las Palmas
+3825781,11,27,La Liga,2015/2016,2016-02-21,Rayo Vallecano,Sevilla
+3825785,11,27,La Liga,2015/2016,2016-02-21,Málaga,Real Madrid
+3825783,11,27,La Liga,2015/2016,2016-02-21,Athletic Club,Real Sociedad
+3825780,11,27,La Liga,2015/2016,2016-02-20,Espanyol,RC Deportivo La Coruña
+3825779,11,27,La Liga,2015/2016,2016-02-20,Celta Vigo,Eibar
+3825773,11,27,La Liga,2015/2016,2016-02-14,Eibar,Levante UD
+3825776,11,27,La Liga,2015/2016,2016-02-14,Sevilla,Las Palmas
+3825775,11,27,La Liga,2015/2016,2016-02-14,Real Sociedad,Granada
+3825769,11,27,La Liga,2015/2016,2016-02-13,Villarreal,Málaga
+3825770,11,27,La Liga,2015/2016,2016-02-13,Real Madrid,Athletic Club
+3825768,11,27,La Liga,2015/2016,2016-02-12,Sporting Gijón,Rayo Vallecano
+3825736,11,27,La Liga,2015/2016,2016-01-17,Valencia,Rayo Vallecano
+3825731,11,27,La Liga,2015/2016,2016-01-10,Las Palmas,Málaga
+3825685,11,27,La Liga,2015/2016,2015-12-06,Sporting Gijón,Las Palmas
+3825678,11,27,La Liga,2015/2016,2015-11-29,Eibar,Real Madrid
+3825643,11,27,La Liga,2015/2016,2015-10-31,Real Madrid,Las Palmas
+3825642,11,27,La Liga,2015/2016,2015-10-30,RC Deportivo La Coruña,Atlético Madrid
+3825638,11,27,La Liga,2015/2016,2015-10-25,Atlético Madrid,Valencia
+3825614,11,27,La Liga,2015/2016,2015-10-03,Granada,RC Deportivo La Coruña
+3825612,11,27,La Liga,2015/2016,2015-09-27,Getafe,Levante UD
+3825607,11,27,La Liga,2015/2016,2015-09-26,Villarreal,Atlético Madrid
+3825595,11,27,La Liga,2015/2016,2015-09-20,Villarreal,Athletic Club
+3825579,11,27,La Liga,2015/2016,2015-08-30,Sevilla,Atlético Madrid
+3825572,11,27,La Liga,2015/2016,2015-08-29,Real Madrid,Real Betis
+3825774,11,27,La Liga,2015/2016,2016-02-14,Getafe,Atlético Madrid
+3825772,11,27,La Liga,2015/2016,2016-02-13,Valencia,Espanyol
+3825771,11,27,La Liga,2015/2016,2016-02-13,RC Deportivo La Coruña,Real Betis
+3825767,11,27,La Liga,2015/2016,2016-02-08,Espanyol,Real Sociedad
+3825706,11,27,La Liga,2015/2016,2015-12-30,Celta Vigo,Athletic Club
+3825712,11,27,La Liga,2015/2016,2015-12-30,Getafe,RC Deportivo La Coruña
+3825708,11,27,La Liga,2015/2016,2015-12-30,Levante UD,Málaga
+3825707,11,27,La Liga,2015/2016,2015-12-30,Las Palmas,Granada
+3825705,11,27,La Liga,2015/2016,2015-12-30,Eibar,Sporting Gijón
+3825711,11,27,La Liga,2015/2016,2015-12-30,Rayo Vallecano,Atlético Madrid
+3825703,11,27,La Liga,2015/2016,2015-12-20,Athletic Club,Levante UD
+3825700,11,27,La Liga,2015/2016,2015-12-20,Real Madrid,Rayo Vallecano
+3825701,11,27,La Liga,2015/2016,2015-12-20,Málaga,Atlético Madrid
+3825702,11,27,La Liga,2015/2016,2015-12-20,Real Sociedad,Villarreal
+3825704,11,27,La Liga,2015/2016,2015-12-20,Granada,Celta Vigo
+3825891,11,27,La Liga,2015/2016,2015-12-19,Espanyol,Las Palmas
+3825699,11,27,La Liga,2015/2016,2015-12-19,Real Betis,Sevilla
+3825697,11,27,La Liga,2015/2016,2015-12-19,Valencia,Getafe
+3825698,11,27,La Liga,2015/2016,2015-12-19,RC Deportivo La Coruña,Eibar
+3825694,11,27,La Liga,2015/2016,2015-12-13,Eibar,Valencia
+3825693,11,27,La Liga,2015/2016,2015-12-13,Atlético Madrid,Athletic Club
+3825696,11,27,La Liga,2015/2016,2015-12-13,Rayo Vallecano,Málaga
+3825695,11,27,La Liga,2015/2016,2015-12-13,Villarreal,Real Madrid
+3825689,11,27,La Liga,2015/2016,2015-12-12,Celta Vigo,Espanyol
+3825690,11,27,La Liga,2015/2016,2015-12-12,Las Palmas,Real Betis
+3825692,11,27,La Liga,2015/2016,2015-12-12,Sevilla,Sporting Gijón
+3825691,11,27,La Liga,2015/2016,2015-12-12,Levante UD,Granada
+3825688,11,27,La Liga,2015/2016,2015-12-11,Getafe,Real Sociedad
+3825687,11,27,La Liga,2015/2016,2015-12-07,Espanyol,Levante UD
+3825683,11,27,La Liga,2015/2016,2015-12-06,Real Sociedad,Eibar
+3825686,11,27,La Liga,2015/2016,2015-12-06,Athletic Club,Málaga
+3825684,11,27,La Liga,2015/2016,2015-12-06,Villarreal,Rayo Vallecano
+3825681,11,27,La Liga,2015/2016,2015-12-05,Real Madrid,Getafe
+3825682,11,27,La Liga,2015/2016,2015-12-05,Granada,Atlético Madrid
+3825680,11,27,La Liga,2015/2016,2015-12-05,RC Deportivo La Coruña,Sevilla
+3825677,11,27,La Liga,2015/2016,2015-11-29,Sevilla,Valencia
+3825675,11,27,La Liga,2015/2016,2015-11-29,Rayo Vallecano,Athletic Club
+3825676,11,27,La Liga,2015/2016,2015-11-29,Getafe,Villarreal
+3825674,11,27,La Liga,2015/2016,2015-11-28,Atlético Madrid,Espanyol
+3825673,11,27,La Liga,2015/2016,2015-11-28,Las Palmas,RC Deportivo La Coruña
+3825671,11,27,La Liga,2015/2016,2015-11-28,Celta Vigo,Sporting Gijón
+3825672,11,27,La Liga,2015/2016,2015-11-28,Málaga,Granada
+3825670,11,27,La Liga,2015/2016,2015-11-27,Levante UD,Real Betis
+3825669,11,27,La Liga,2015/2016,2015-11-23,Getafe,Rayo Vallecano
+3825668,11,27,La Liga,2015/2016,2015-11-22,Sporting Gijón,Levante UD
+3825666,11,27,La Liga,2015/2016,2015-11-22,Real Betis,Atlético Madrid
+3825665,11,27,La Liga,2015/2016,2015-11-22,Granada,Athletic Club
+3825667,11,27,La Liga,2015/2016,2015-11-22,Villarreal,Eibar
+3825664,11,27,La Liga,2015/2016,2015-11-21,Real Sociedad,Sevilla
+3825662,11,27,La Liga,2015/2016,2015-11-21,RC Deportivo La Coruña,Celta Vigo
+3825888,11,27,La Liga,2015/2016,2015-11-21,Valencia,Las Palmas
+3825663,11,27,La Liga,2015/2016,2015-11-21,Espanyol,Málaga
+3825659,11,27,La Liga,2015/2016,2015-11-08,Athletic Club,Espanyol
+3825658,11,27,La Liga,2015/2016,2015-11-08,Atlético Madrid,Sporting Gijón
+3825660,11,27,La Liga,2015/2016,2015-11-08,Barcelona,Villarreal
+3825661,11,27,La Liga,2015/2016,2015-11-08,Sevilla,Real Madrid
+3825656,11,27,La Liga,2015/2016,2015-11-07,Levante UD,RC Deportivo La Coruña
+3825657,11,27,La Liga,2015/2016,2015-11-07,Málaga,Real Betis
+3825652,11,27,La Liga,2015/2016,2015-11-06,Las Palmas,Real Sociedad
+3825623,11,27,La Liga,2015/2016,2015-10-17,Valencia,Málaga
+3825626,11,27,La Liga,2015/2016,2015-10-17,Real Betis,Espanyol
+3825616,11,27,La Liga,2015/2016,2015-10-03,Málaga,Real Sociedad
+3825608,11,27,La Liga,2015/2016,2015-09-26,Eibar,Celta Vigo
+3825601,11,27,La Liga,2015/2016,2015-09-23,Rayo Vallecano,Sporting Gijón
+3825899,11,27,La Liga,2015/2016,2016-04-24,Getafe,Valencia
+3825852,11,27,La Liga,2015/2016,2016-04-16,Las Palmas,Sporting Gijón
+3825647,11,27,La Liga,2015/2016,2015-10-31,Valencia,Levante UD
+3825637,11,27,La Liga,2015/2016,2015-10-25,Barcelona,Eibar
+3825628,11,27,La Liga,2015/2016,2015-10-18,Getafe,Las Palmas
+3825619,11,27,La Liga,2015/2016,2015-10-04,Levante UD,Villarreal
+3825618,11,27,La Liga,2015/2016,2015-10-03,Las Palmas,Eibar
+3825611,11,27,La Liga,2015/2016,2015-09-27,RC Deportivo La Coruña,Espanyol
+3825609,11,27,La Liga,2015/2016,2015-09-27,Real Sociedad,Athletic Club
+3825598,11,27,La Liga,2015/2016,2015-09-22,Atlético Madrid,Getafe
+3825584,11,27,La Liga,2015/2016,2015-09-13,Granada,Villarreal
+3825570,11,27,La Liga,2015/2016,2015-08-24,Granada,Eibar
+3825562,11,27,La Liga,2015/2016,2015-08-21,Málaga,Sevilla
+3825904,11,27,La Liga,2015/2016,2016-05-08,Eibar,Real Betis
+3825901,11,27,La Liga,2015/2016,2016-05-08,Real Madrid,Valencia
+3825898,11,27,La Liga,2015/2016,2016-04-02,Celta Vigo,RC Deportivo La Coruña
+3825893,11,27,La Liga,2015/2016,2016-04-20,Real Madrid,Villarreal
+3825892,11,27,La Liga,2015/2016,2015-09-22,Granada,Real Sociedad
+3825886,11,27,La Liga,2015/2016,2016-04-23,Rayo Vallecano,Real Madrid
+3825885,11,27,La Liga,2015/2016,2016-04-01,Rayo Vallecano,Getafe
+3825881,11,27,La Liga,2015/2016,2016-03-14,Granada,Espanyol
+3825880,11,27,La Liga,2015/2016,2016-03-19,RC Deportivo La Coruña,Levante UD
+3825879,11,27,La Liga,2015/2016,2016-03-13,Las Palmas,Real Madrid
+3825878,11,27,La Liga,2015/2016,2016-04-30,Atlético Madrid,Rayo Vallecano
+3825877,11,27,La Liga,2015/2016,2016-04-03,Athletic Club,Granada
+3825874,11,27,La Liga,2015/2016,2015-10-24,Sevilla,Getafe
+3825873,11,27,La Liga,2015/2016,2016-05-01,Valencia,Villarreal
+3825872,11,27,La Liga,2015/2016,2016-04-02,Atlético Madrid,Real Betis
+3825870,11,27,La Liga,2015/2016,2016-05-01,Athletic Club,Celta Vigo
+3825868,11,27,La Liga,2015/2016,2016-04-25,Celta Vigo,Granada
+3825866,11,27,La Liga,2015/2016,2016-05-08,Las Palmas,Athletic Club
+3825865,11,27,La Liga,2015/2016,2016-05-08,Getafe,Sporting Gijón
+3825864,11,27,La Liga,2015/2016,2016-04-30,Real Sociedad,Real Madrid
+3825862,11,27,La Liga,2015/2016,2016-04-19,Espanyol,Celta Vigo
+3825861,11,27,La Liga,2015/2016,2016-05-08,Real Sociedad,Rayo Vallecano
+3825859,11,27,La Liga,2015/2016,2016-04-30,Granada,Las Palmas
+3825856,11,27,La Liga,2015/2016,2016-04-09,Real Madrid,Eibar
+3825854,11,27,La Liga,2015/2016,2016-04-29,Sporting Gijón,Eibar
+3825853,11,27,La Liga,2015/2016,2016-05-08,Sevilla,Granada
+3825851,11,27,La Liga,2015/2016,2016-05-08,Villarreal,RC Deportivo La Coruña
+3825850,11,27,La Liga,2015/2016,2016-05-08,Celta Vigo,Málaga
+3825845,11,27,La Liga,2015/2016,2016-05-01,Espanyol,Sevilla
+3825844,11,27,La Liga,2015/2016,2016-03-13,Athletic Club,Real Betis
+3825806,11,27,La Liga,2015/2016,2016-03-05,Real Madrid,Celta Vigo
+3825802,11,27,La Liga,2015/2016,2016-03-03,Espanyol,Real Betis
+3825679,11,27,La Liga,2015/2016,2015-12-05,Real Betis,Celta Vigo
+3825655,11,27,La Liga,2015/2016,2015-11-07,Rayo Vallecano,Granada
+3825654,11,27,La Liga,2015/2016,2015-11-07,Celta Vigo,Valencia
+3825653,11,27,La Liga,2015/2016,2015-11-07,Eibar,Getafe
+3825651,11,27,La Liga,2015/2016,2015-11-01,Espanyol,Granada
+3825650,11,27,La Liga,2015/2016,2015-11-01,Real Betis,Athletic Club
+3825649,11,27,La Liga,2015/2016,2015-11-01,Sporting Gijón,Málaga
+3825648,11,27,La Liga,2015/2016,2015-11-01,Eibar,Rayo Vallecano
+3825765,11,27,La Liga,2015/2016,2016-02-07,Celta Vigo,Sevilla
+3825766,11,27,La Liga,2015/2016,2016-02-07,Real Betis,Valencia
+3825764,11,27,La Liga,2015/2016,2016-02-07,Granada,Real Madrid
+3825760,11,27,La Liga,2015/2016,2016-02-06,Atlético Madrid,Eibar
+3825763,11,27,La Liga,2015/2016,2016-02-06,Rayo Vallecano,Las Palmas
+3825761,11,27,La Liga,2015/2016,2016-02-06,Athletic Club,Villarreal
+3825762,11,27,La Liga,2015/2016,2016-02-06,Sporting Gijón,RC Deportivo La Coruña
+3825759,11,27,La Liga,2015/2016,2016-02-05,Málaga,Getafe
+3825758,11,27,La Liga,2015/2016,2016-02-01,RC Deportivo La Coruña,Rayo Vallecano
+3825756,11,27,La Liga,2015/2016,2016-01-31,Sevilla,Levante UD
+3825755,11,27,La Liga,2015/2016,2016-01-31,Valencia,Sporting Gijón
+3825754,11,27,La Liga,2015/2016,2016-01-31,Las Palmas,Celta Vigo
+3825750,11,27,La Liga,2015/2016,2016-01-30,Real Sociedad,Real Betis
+3825752,11,27,La Liga,2015/2016,2016-01-30,Eibar,Málaga
+3825751,11,27,La Liga,2015/2016,2016-01-30,Getafe,Athletic Club
+3825753,11,27,La Liga,2015/2016,2016-01-30,Villarreal,Granada
+3825749,11,27,La Liga,2015/2016,2016-01-25,Levante UD,Las Palmas
+3825747,11,27,La Liga,2015/2016,2016-01-24,Athletic Club,Eibar
+3825748,11,27,La Liga,2015/2016,2016-01-24,Atlético Madrid,Sevilla
+3825745,11,27,La Liga,2015/2016,2016-01-24,RC Deportivo La Coruña,Valencia
+3825746,11,27,La Liga,2015/2016,2016-01-24,Real Betis,Real Madrid
+3825743,11,27,La Liga,2015/2016,2016-01-23,Rayo Vallecano,Celta Vigo
+3825744,11,27,La Liga,2015/2016,2016-01-23,Espanyol,Villarreal
+3825742,11,27,La Liga,2015/2016,2016-01-23,Granada,Getafe
+3825741,11,27,La Liga,2015/2016,2016-01-22,Sporting Gijón,Real Sociedad
+3825738,11,27,La Liga,2015/2016,2016-01-17,Las Palmas,Atlético Madrid
+3825737,11,27,La Liga,2015/2016,2016-01-17,Getafe,Espanyol
+3825734,11,27,La Liga,2015/2016,2016-01-16,Real Sociedad,RC Deportivo La Coruña
+3825733,11,27,La Liga,2015/2016,2016-01-16,Sevilla,Málaga
+3825732,11,27,La Liga,2015/2016,2016-01-16,Celta Vigo,Levante UD
+3825735,11,27,La Liga,2015/2016,2016-01-16,Villarreal,Real Betis
+3825729,11,27,La Liga,2015/2016,2016-01-10,Villarreal,Sporting Gijón
+3825728,11,27,La Liga,2015/2016,2016-01-10,Celta Vigo,Atlético Madrid
+3825730,11,27,La Liga,2015/2016,2016-01-10,Real Sociedad,Valencia
+3825727,11,27,La Liga,2015/2016,2016-01-10,Eibar,Espanyol
+3825723,11,27,La Liga,2015/2016,2016-01-09,Levante UD,Rayo Vallecano
+3825726,11,27,La Liga,2015/2016,2016-01-09,Sevilla,Athletic Club
+3825725,11,27,La Liga,2015/2016,2016-01-09,Getafe,Real Betis
+3825724,11,27,La Liga,2015/2016,2016-01-09,Real Madrid,RC Deportivo La Coruña
+3825722,11,27,La Liga,2015/2016,2016-01-04,Sporting Gijón,Getafe
+3825716,11,27,La Liga,2015/2016,2016-01-03,Rayo Vallecano,Real Sociedad
+3825719,11,27,La Liga,2015/2016,2016-01-03,Athletic Club,Las Palmas
+3825720,11,27,La Liga,2015/2016,2016-01-03,Real Betis,Eibar
+3825717,11,27,La Liga,2015/2016,2016-01-03,Granada,Sevilla
+3825721,11,27,La Liga,2015/2016,2016-01-03,RC Deportivo La Coruña,Villarreal
+3825718,11,27,La Liga,2015/2016,2016-01-03,Valencia,Real Madrid
+3825715,11,27,La Liga,2015/2016,2016-01-02,Málaga,Celta Vigo
+3825714,11,27,La Liga,2015/2016,2016-01-02,Atlético Madrid,Levante UD
+3825713,11,27,La Liga,2015/2016,2015-12-31,Villarreal,Valencia
+3825710,11,27,La Liga,2015/2016,2015-12-30,Real Madrid,Real Sociedad
+3825709,11,27,La Liga,2015/2016,2015-12-30,Sevilla,Espanyol
+3825646,11,27,La Liga,2015/2016,2015-10-31,Villarreal,Sevilla
+3825645,11,27,La Liga,2015/2016,2015-10-31,Getafe,Barcelona
+3825644,11,27,La Liga,2015/2016,2015-10-31,Real Sociedad,Celta Vigo
+3825640,11,27,La Liga,2015/2016,2015-10-25,Levante UD,Real Sociedad
+3825639,11,27,La Liga,2015/2016,2015-10-25,Las Palmas,Villarreal
+3825636,11,27,La Liga,2015/2016,2015-10-24,Málaga,RC Deportivo La Coruña
+3825635,11,27,La Liga,2015/2016,2015-10-24,Celta Vigo,Real Madrid
+3825634,11,27,La Liga,2015/2016,2015-10-24,Granada,Real Betis
+3825633,11,27,La Liga,2015/2016,2015-10-23,Rayo Vallecano,Espanyol
+3825632,11,27,La Liga,2015/2016,2015-10-19,Sporting Gijón,Granada
+3825631,11,27,La Liga,2015/2016,2015-10-18,Real Sociedad,Atlético Madrid
+3825630,11,27,La Liga,2015/2016,2015-10-18,RC Deportivo La Coruña,Athletic Club
+3825629,11,27,La Liga,2015/2016,2015-10-18,Villarreal,Celta Vigo
+3825627,11,27,La Liga,2015/2016,2015-10-17,Barcelona,Rayo Vallecano
+3825625,11,27,La Liga,2015/2016,2015-10-17,Real Madrid,Levante UD
+3825624,11,27,La Liga,2015/2016,2015-10-17,Eibar,Sevilla
+3825622,11,27,La Liga,2015/2016,2015-10-04,Athletic Club,Valencia
+3825621,11,27,La Liga,2015/2016,2015-10-04,Atlético Madrid,Real Madrid
+3825620,11,27,La Liga,2015/2016,2015-10-04,Rayo Vallecano,Real Betis
+3825617,11,27,La Liga,2015/2016,2015-10-03,Sevilla,Barcelona
+3825615,11,27,La Liga,2015/2016,2015-10-03,Espanyol,Sporting Gijón
+3825613,11,27,La Liga,2015/2016,2015-10-02,Celta Vigo,Getafe
+3825610,11,27,La Liga,2015/2016,2015-09-27,Sporting Gijón,Real Betis
+3825606,11,27,La Liga,2015/2016,2015-09-26,Real Madrid,Málaga
+3825605,11,27,La Liga,2015/2016,2015-09-26,Sevilla,Rayo Vallecano
+3825604,11,27,La Liga,2015/2016,2015-09-25,Valencia,Granada
+3825603,11,27,La Liga,2015/2016,2015-09-24,Real Betis,RC Deportivo La Coruña
+3825602,11,27,La Liga,2015/2016,2015-09-23,Athletic Club,Real Madrid
+3825600,11,27,La Liga,2015/2016,2015-09-23,Málaga,Villarreal
+3825599,11,27,La Liga,2015/2016,2015-09-22,Espanyol,Valencia
+3825597,11,27,La Liga,2015/2016,2015-09-20,Las Palmas,Rayo Vallecano
+3825596,11,27,La Liga,2015/2016,2015-09-20,RC Deportivo La Coruña,Sporting Gijón
+3825594,11,27,La Liga,2015/2016,2015-09-20,Sevilla,Celta Vigo
+3825593,11,27,La Liga,2015/2016,2015-09-19,Eibar,Atlético Madrid
+3825592,11,27,La Liga,2015/2016,2015-09-19,Real Sociedad,Espanyol
+3825591,11,27,La Liga,2015/2016,2015-09-19,Valencia,Real Betis
+3825590,11,27,La Liga,2015/2016,2015-09-19,Real Madrid,Granada
+3825589,11,27,La Liga,2015/2016,2015-09-18,Getafe,Málaga
+3825588,11,27,La Liga,2015/2016,2015-09-14,Rayo Vallecano,RC Deportivo La Coruña
+3825587,11,27,La Liga,2015/2016,2015-09-13,Athletic Club,Getafe
+3825586,11,27,La Liga,2015/2016,2015-09-13,Málaga,Eibar
+3825585,11,27,La Liga,2015/2016,2015-09-13,Celta Vigo,Las Palmas
+3825583,11,27,La Liga,2015/2016,2015-09-12,Sporting Gijón,Valencia
+3825582,11,27,La Liga,2015/2016,2015-09-12,Real Betis,Real Sociedad
+3825581,11,27,La Liga,2015/2016,2015-09-12,Espanyol,Real Madrid
+3825580,11,27,La Liga,2015/2016,2015-09-11,Levante UD,Sevilla
+3825578,11,27,La Liga,2015/2016,2015-08-30,Eibar,Athletic Club
+3825577,11,27,La Liga,2015/2016,2015-08-30,Getafe,Granada
+3825576,11,27,La Liga,2015/2016,2015-08-30,Valencia,RC Deportivo La Coruña
+3825575,11,27,La Liga,2015/2016,2015-08-30,Las Palmas,Levante UD
+3825574,11,27,La Liga,2015/2016,2015-08-29,Celta Vigo,Rayo Vallecano
+3825573,11,27,La Liga,2015/2016,2015-08-29,Real Sociedad,Sporting Gijón
+3825571,11,27,La Liga,2015/2016,2015-08-28,Villarreal,Espanyol
+3825569,11,27,La Liga,2015/2016,2015-08-23,Levante UD,Celta Vigo
+3825568,11,27,La Liga,2015/2016,2015-08-23,Real Betis,Villarreal
+3825567,11,27,La Liga,2015/2016,2015-08-23,Sporting Gijón,Real Madrid
+3825566,11,27,La Liga,2015/2016,2015-08-22,Rayo Vallecano,Valencia
+3825565,11,27,La Liga,2015/2016,2015-08-22,Espanyol,Getafe
+3825564,11,27,La Liga,2015/2016,2015-08-22,RC Deportivo La Coruña,Real Sociedad
+3825563,11,27,La Liga,2015/2016,2015-08-22,Atlético Madrid,Las Palmas
+266498,11,27,La Liga,2015/2016,2016-03-12,Barcelona,Getafe
+266986,11,27,La Liga,2015/2016,2016-04-30,Real Betis,Barcelona
+267533,11,27,La Liga,2015/2016,2016-04-02,Barcelona,Real Madrid
+266310,11,27,La Liga,2015/2016,2016-04-20,RC Deportivo La Coruña,Barcelona
+267576,11,27,La Liga,2015/2016,2016-01-30,Barcelona,Atlético Madrid
+266653,11,27,La Liga,2015/2016,2016-03-03,Rayo Vallecano,Barcelona
+265944,11,27,La Liga,2015/2016,2016-04-23,Barcelona,Sporting Gijón
+265894,11,27,La Liga,2015/2016,2016-01-23,Málaga,Barcelona
+265958,11,27,La Liga,2015/2016,2016-05-08,Barcelona,Espanyol
+267611,11,27,La Liga,2015/2016,2015-09-26,Barcelona,Las Palmas
+267422,11,27,La Liga,2015/2016,2015-08-29,Barcelona,Málaga
+266236,11,27,La Liga,2015/2016,2015-08-23,Athletic Club,Barcelona
+267274,11,27,La Liga,2015/2016,2015-12-05,Valencia,Barcelona
+266961,11,27,La Liga,2015/2016,2015-12-12,Barcelona,RC Deportivo La Coruña
+266885,11,27,La Liga,2015/2016,2015-11-28,Barcelona,Real Sociedad
+266815,11,27,La Liga,2015/2016,2016-02-17,Sporting Gijón,Barcelona
+267506,11,27,La Liga,2015/2016,2016-05-14,Granada,Barcelona
+266664,11,27,La Liga,2015/2016,2016-04-09,Real Sociedad,Barcelona
+266106,11,27,La Liga,2015/2016,2016-03-20,Villarreal,Barcelona
+266670,11,27,La Liga,2015/2016,2016-01-02,Espanyol,Barcelona
+266149,11,27,La Liga,2015/2016,2016-01-17,Barcelona,Athletic Club
+266620,11,27,La Liga,2015/2016,2016-01-09,Barcelona,Granada
+266056,11,27,La Liga,2015/2016,2016-03-06,Eibar,Barcelona
+267327,11,27,La Liga,2015/2016,2015-12-30,Barcelona,Real Betis
+266166,11,27,La Liga,2015/2016,2015-09-12,Atlético Madrid,Barcelona
+266160,11,27,La Liga,2015/2016,2016-02-07,Levante UD,Barcelona
+265839,11,27,La Liga,2015/2016,2016-02-28,Barcelona,Sevilla
+266424,11,27,La Liga,2015/2016,2015-11-21,Real Madrid,Barcelona
+266467,11,27,La Liga,2015/2016,2015-09-23,Celta Vigo,Barcelona
+267273,11,27,La Liga,2015/2016,2016-02-20,Las Palmas,Barcelona
+266490,11,27,La Liga,2015/2016,2015-09-20,Barcelona,Levante UD
+266254,11,27,La Liga,2015/2016,2016-02-14,Barcelona,Celta Vigo
+266557,11,27,La Liga,2015/2016,2016-04-17,Barcelona,Valencia
+267183,11,26,La Liga,2014/2015,2015-03-22,Barcelona,Real Madrid
+265835,11,26,La Liga,2014/2015,2014-11-22,Barcelona,Sevilla
+266838,11,26,La Liga,2014/2015,2014-09-24,Málaga,Barcelona
+265963,11,26,La Liga,2014/2015,2015-04-28,Barcelona,Getafe
+266117,11,26,La Liga,2014/2015,2014-09-27,Barcelona,Granada
+266916,11,26,La Liga,2014/2015,2015-03-08,Barcelona,Rayo Vallecano
+267197,11,26,La Liga,2014/2015,2015-05-23,Barcelona,RC Deportivo La Coruña
+70264,11,26,La Liga,2014/2015,2014-12-13,Getafe,Barcelona
+70273,11,26,La Liga,2014/2015,2014-09-13,Barcelona,Athletic Club
+267301,11,26,La Liga,2014/2015,2014-11-01,Barcelona,Celta Vigo
+265896,11,26,La Liga,2014/2015,2014-10-18,Barcelona,Eibar
+265866,11,26,La Liga,2014/2015,2015-05-02,Córdoba CF,Barcelona
+267400,11,26,La Liga,2014/2015,2015-04-08,Barcelona,Almería
+266406,11,26,La Liga,2014/2015,2014-08-31,Villarreal,Barcelona
+267085,11,26,La Liga,2014/2015,2014-10-25,Real Madrid,Barcelona
+267561,11,26,La Liga,2014/2015,2014-10-04,Rayo Vallecano,Barcelona
+266148,11,26,La Liga,2014/2015,2015-02-21,Barcelona,Málaga
+266045,11,26,La Liga,2014/2015,2015-05-09,Barcelona,Real Sociedad
+70303,11,26,La Liga,2014/2015,2015-01-11,Barcelona,Atlético Madrid
+266240,11,26,La Liga,2014/2015,2015-01-04,Real Sociedad,Barcelona
+267597,11,26,La Liga,2014/2015,2015-02-01,Barcelona,Villarreal
+266794,11,26,La Liga,2014/2015,2015-01-24,Elche,Barcelona
+267343,11,26,La Liga,2014/2015,2015-02-28,Granada,Barcelona
+266631,11,26,La Liga,2014/2015,2015-05-17,Atlético Madrid,Barcelona
+266320,11,26,La Liga,2014/2015,2014-12-07,Barcelona,Espanyol
+266230,11,26,La Liga,2014/2015,2015-01-18,RC Deportivo La Coruña,Barcelona
+266525,11,26,La Liga,2014/2015,2015-04-18,Barcelona,Valencia
+266560,11,26,La Liga,2014/2015,2014-11-30,Valencia,Barcelona
+266846,11,26,La Liga,2014/2015,2014-12-20,Barcelona,Córdoba CF
+266531,11,26,La Liga,2014/2015,2015-04-25,Espanyol,Barcelona
+266921,11,26,La Liga,2014/2015,2014-08-24,Barcelona,Elche
+267499,11,26,La Liga,2014/2015,2014-11-08,Almería,Barcelona
+266741,11,26,La Liga,2014/2015,2015-02-15,Barcelona,Levante UD
+266871,11,26,La Liga,2014/2015,2015-02-08,Athletic Club,Barcelona
+266967,11,26,La Liga,2014/2015,2015-03-14,Eibar,Barcelona
+266929,11,26,La Liga,2014/2015,2015-04-05,Celta Vigo,Barcelona
+266770,11,26,La Liga,2014/2015,2014-09-21,Levante UD,Barcelona
+266142,11,26,La Liga,2014/2015,2015-04-11,Sevilla,Barcelona
+266066,11,25,La Liga,2013/2014,2014-03-02,Barcelona,Almería
+267368,11,25,La Liga,2013/2014,2014-04-05,Barcelona,Real Betis
+70301,11,25,La Liga,2013/2014,2013-09-14,Barcelona,Sevilla
+70298,11,25,La Liga,2013/2014,2013-09-01,Valencia,Barcelona
+70302,11,25,La Liga,2013/2014,2013-09-21,Rayo Vallecano,Barcelona
+70291,11,25,La Liga,2013/2014,2014-01-26,Barcelona,Málaga
+267138,11,25,La Liga,2013/2014,2014-04-12,Granada,Barcelona
+267520,11,25,La Liga,2013/2014,2013-09-24,Barcelona,Real Sociedad
+70289,11,25,La Liga,2013/2014,2014-04-27,Villarreal,Barcelona
+267675,11,25,La Liga,2013/2014,2014-02-09,Sevilla,Barcelona
+70288,11,25,La Liga,2013/2014,2014-01-19,Levante UD,Barcelona
+266074,11,25,La Liga,2013/2014,2014-03-16,Barcelona,Osasuna
+267567,11,25,La Liga,2013/2014,2014-04-20,Barcelona,Athletic Club
+266201,11,25,La Liga,2013/2014,2014-05-11,Elche,Barcelona
+266274,11,25,La Liga,2013/2014,2014-03-26,Barcelona,Celta Vigo
+70293,11,25,La Liga,2013/2014,2013-10-26,Barcelona,Real Madrid
+265918,11,25,La Liga,2013/2014,2014-02-15,Barcelona,Rayo Vallecano
+70277,11,25,La Liga,2013/2014,2013-08-18,Barcelona,Levante UD
+70283,11,25,La Liga,2013/2014,2013-11-01,Barcelona,Espanyol
+70306,11,25,La Liga,2013/2014,2014-03-29,Espanyol,Barcelona
+266256,11,25,La Liga,2013/2014,2014-05-17,Barcelona,Atlético Madrid
+266613,11,25,La Liga,2013/2014,2014-02-01,Barcelona,Valencia
+266491,11,25,La Liga,2013/2014,2014-05-03,Barcelona,Getafe
+265830,11,25,La Liga,2013/2014,2014-01-11,Atlético Madrid,Barcelona
+265857,11,25,La Liga,2013/2014,2014-03-23,Real Madrid,Barcelona
+266883,11,25,La Liga,2013/2014,2013-11-10,Real Betis,Barcelona
+266603,11,25,La Liga,2013/2014,2014-03-08,Real Valladolid,Barcelona
+265837,11,25,La Liga,2013/2014,2014-02-22,Real Sociedad,Barcelona
+266462,11,25,La Liga,2013/2014,2013-10-19,Osasuna,Barcelona
+267192,11,25,La Liga,2013/2014,2013-10-29,Celta Vigo,Barcelona
+266420,11,25,La Liga,2013/2014,2013-09-28,Almería,Barcelona
+70263,11,24,La Liga,2012/2013,2012-12-01,Barcelona,Athletic Club
+266015,11,24,La Liga,2012/2013,2012-12-22,Real Valladolid,Barcelona
+70270,11,24,La Liga,2012/2013,2012-09-22,Barcelona,Granada
+70281,11,24,La Liga,2012/2013,2013-05-05,Barcelona,Real Betis
+70308,11,24,La Liga,2012/2013,2012-11-03,Barcelona,Celta Vigo
+70282,11,24,La Liga,2012/2013,2013-02-03,Valencia,Barcelona
+266724,11,24,La Liga,2012/2013,2012-11-11,Mallorca,Barcelona
+70272,11,24,La Liga,2012/2013,2013-03-02,Real Madrid,Barcelona
+70304,11,24,La Liga,2012/2013,2012-10-20,RC Deportivo La Coruña,Barcelona
+70280,11,24,La Liga,2012/2013,2012-11-25,Levante UD,Barcelona
+70296,11,24,La Liga,2012/2013,2012-12-16,Barcelona,Atlético Madrid
+70297,11,24,La Liga,2012/2013,2013-02-10,Barcelona,Getafe
+266433,11,24,La Liga,2012/2013,2013-01-06,Barcelona,Espanyol
+70256,11,24,La Liga,2012/2013,2013-03-30,Celta Vigo,Barcelona
+70259,11,24,La Liga,2012/2013,2012-08-19,Barcelona,Real Sociedad
+70260,11,24,La Liga,2012/2013,2013-01-27,Barcelona,Osasuna
+70276,11,24,La Liga,2012/2013,2012-10-27,Rayo Vallecano,Barcelona
+70287,11,24,La Liga,2012/2013,2013-01-19,Real Sociedad,Barcelona
+70284,11,24,La Liga,2012/2013,2013-05-12,Atlético Madrid,Barcelona
+70275,11,24,La Liga,2012/2013,2012-09-29,Sevilla,Barcelona
+70286,11,24,La Liga,2012/2013,2012-09-02,Barcelona,Valencia
+70309,11,24,La Liga,2012/2013,2012-11-17,Barcelona,Real Zaragoza
+70300,11,24,La Liga,2012/2013,2012-10-07,Barcelona,Real Madrid
+70295,11,24,La Liga,2012/2013,2012-12-09,Real Betis,Barcelona
+70307,11,24,La Liga,2012/2013,2013-03-17,Barcelona,Rayo Vallecano
+70305,11,24,La Liga,2012/2013,2013-03-09,Barcelona,RC Deportivo La Coruña
+266827,11,24,La Liga,2012/2013,2013-01-13,Málaga,Barcelona
+267502,11,24,La Liga,2012/2013,2013-04-27,Athletic Club,Barcelona
+70271,11,24,La Liga,2012/2013,2013-02-23,Barcelona,Sevilla
+70294,11,24,La Liga,2012/2013,2013-02-16,Granada,Barcelona
+70262,11,24,La Liga,2012/2013,2012-08-26,Osasuna,Barcelona
+70292,11,24,La Liga,2012/2013,2012-09-15,Getafe,Barcelona
+70220,11,23,La Liga,2011/2012,2011-09-17,Barcelona,Osasuna
+69328,11,23,La Liga,2011/2012,2012-02-19,Barcelona,Valencia
+69329,11,23,La Liga,2011/2012,2011-10-22,Barcelona,Sevilla
+70219,11,23,La Liga,2011/2012,2012-04-07,Real Zaragoza,Barcelona
+69331,11,23,La Liga,2011/2012,2011-11-19,Barcelona,Real Zaragoza
+69337,11,23,La Liga,2011/2012,2012-02-26,Atlético Madrid,Barcelona
+69322,11,23,La Liga,2011/2012,2012-03-11,Racing Santander,Barcelona
+69316,11,23,La Liga,2011/2012,2012-02-04,Barcelona,Real Sociedad
+69332,11,23,La Liga,2011/2012,2011-11-29,Barcelona,Rayo Vallecano
+69335,11,23,La Liga,2011/2012,2012-01-22,Málaga,Barcelona
+69330,11,23,La Liga,2011/2012,2011-11-06,Athletic Club,Barcelona
+69297,11,23,La Liga,2011/2012,2011-09-24,Barcelona,Atlético Madrid
+69325,11,23,La Liga,2011/2012,2012-03-24,Mallorca,Barcelona
+69324,11,23,La Liga,2011/2012,2012-04-21,Barcelona,Real Madrid
+70225,11,23,La Liga,2011/2012,2012-03-20,Barcelona,Granada
+69293,11,23,La Liga,2011/2012,2011-10-15,Barcelona,Racing Santander
+70223,11,23,La Liga,2011/2012,2011-09-21,Valencia,Barcelona
+69333,11,23,La Liga,2011/2012,2011-12-03,Barcelona,Levante UD
+69264,11,23,La Liga,2011/2012,2011-09-10,Real Sociedad,Barcelona
+69343,11,23,La Liga,2011/2012,2012-04-10,Barcelona,Getafe
+69340,11,23,La Liga,2011/2012,2012-05-02,Barcelona,Málaga
+69265,11,23,La Liga,2011/2012,2011-10-02,Sporting Gijón,Barcelona
+69319,11,23,La Liga,2011/2012,2012-05-12,Real Betis,Barcelona
+69334,11,23,La Liga,2011/2012,2011-12-10,Real Madrid,Barcelona
+69327,11,23,La Liga,2011/2012,2012-01-15,Barcelona,Real Betis
+69315,11,23,La Liga,2011/2012,2011-11-26,Getafe,Barcelona
+69336,11,23,La Liga,2011/2012,2012-02-11,Osasuna,Barcelona
+69326,11,23,La Liga,2011/2012,2012-03-17,Sevilla,Barcelona
+69268,11,23,La Liga,2011/2012,2011-08-29,Barcelona,Villarreal
+69320,11,23,La Liga,2011/2012,2012-05-05,Barcelona,Espanyol
+69312,11,23,La Liga,2011/2012,2012-01-08,Espanyol,Barcelona
+69314,11,23,La Liga,2011/2012,2011-10-29,Barcelona,Mallorca
+69318,11,23,La Liga,2011/2012,2011-10-25,Granada,Barcelona
+69338,11,23,La Liga,2011/2012,2012-01-28,Villarreal,Barcelona
+70224,11,23,La Liga,2011/2012,2012-04-29,Rayo Vallecano,Barcelona
+70221,11,23,La Liga,2011/2012,2012-04-14,Levante UD,Barcelona
+69323,11,23,La Liga,2011/2012,2012-03-31,Barcelona,Athletic Club
+69276,11,22,La Liga,2010/2011,2011-02-05,Barcelona,Atlético Madrid
+69304,11,22,La Liga,2010/2011,2011-04-02,Villarreal,Barcelona
+69307,11,22,La Liga,2010/2011,2010-12-04,Osasuna,Barcelona
+69271,11,22,La Liga,2010/2011,2011-04-23,Barcelona,Osasuna
+69305,11,22,La Liga,2010/2011,2011-04-09,Barcelona,Almería
+69278,11,22,La Liga,2010/2011,2011-01-16,Barcelona,Málaga
+69275,11,22,La Liga,2010/2011,2010-12-18,Espanyol,Barcelona
+69295,11,22,La Liga,2010/2011,2011-01-22,Barcelona,Racing Santander
+69270,11,22,La Liga,2010/2011,2010-11-07,Getafe,Barcelona
+69303,11,22,La Liga,2010/2011,2011-03-19,Barcelona,Getafe
+69245,11,22,La Liga,2010/2011,2011-04-16,Real Madrid,Barcelona
+69287,11,22,La Liga,2010/2011,2010-09-11,Barcelona,Hércules
+69296,11,22,La Liga,2010/2011,2011-01-29,Hércules,Barcelona
+69260,11,22,La Liga,2010/2011,2010-10-16,Barcelona,Valencia
+69269,11,22,La Liga,2010/2011,2010-09-19,Atlético Madrid,Barcelona
+69246,11,22,La Liga,2010/2011,2011-04-30,Real Sociedad,Barcelona
+69302,11,22,La Liga,2010/2011,2010-12-12,Barcelona,Real Sociedad
+69282,11,22,La Liga,2010/2011,2011-02-20,Barcelona,Athletic Club
+69274,11,22,La Liga,2010/2011,2011-03-02,Valencia,Barcelona
+69283,11,22,La Liga,2010/2011,2011-02-26,Mallorca,Barcelona
+69280,11,22,La Liga,2010/2011,2011-01-08,RC Deportivo La Coruña,Barcelona
+69286,11,22,La Liga,2010/2011,2010-08-29,Racing Santander,Barcelona
+69291,11,22,La Liga,2010/2011,2011-03-13,Sevilla,Barcelona
+69236,11,22,La Liga,2010/2011,2010-10-03,Barcelona,Mallorca
+69234,11,22,La Liga,2010/2011,2011-05-08,Barcelona,Espanyol
+69272,11,22,La Liga,2010/2011,2011-05-11,Levante UD,Barcelona
+69308,11,22,La Liga,2010/2011,2010-11-13,Barcelona,Villarreal
+69299,11,22,La Liga,2010/2011,2010-11-29,Barcelona,Real Madrid
+69300,11,22,La Liga,2010/2011,2011-03-05,Barcelona,Real Zaragoza
+69289,11,22,La Liga,2010/2011,2010-10-30,Barcelona,Sevilla
+69263,11,22,La Liga,2010/2011,2010-10-23,Real Zaragoza,Barcelona
+69306,11,22,La Liga,2010/2011,2010-11-20,Almería,Barcelona
+69248,11,22,La Liga,2010/2011,2011-02-12,Sporting Gijón,Barcelona
+69238,11,21,La Liga,2009/2010,2010-02-27,Barcelona,Málaga
+69243,11,21,La Liga,2009/2010,2010-01-16,Barcelona,Sevilla
+69241,11,21,La Liga,2009/2010,2010-05-04,Barcelona,Tenerife
+69239,11,21,La Liga,2009/2010,2010-05-08,Sevilla,Barcelona
+69257,11,21,La Liga,2009/2010,2010-03-24,Barcelona,Osasuna
+69253,11,21,La Liga,2009/2010,2009-10-25,Barcelona,Real Zaragoza
+69244,11,21,La Liga,2009/2010,2010-05-01,Villarreal,Barcelona
+69277,11,21,La Liga,2009/2010,2009-10-31,Osasuna,Barcelona
+69229,11,21,La Liga,2009/2010,2009-09-12,Getafe,Barcelona
+69219,11,21,La Liga,2009/2010,2010-01-10,Tenerife,Barcelona
+69218,11,21,La Liga,2009/2010,2009-12-05,RC Deportivo La Coruña,Barcelona
+69250,11,21,La Liga,2009/2010,2009-11-07,Barcelona,Mallorca
+69242,11,21,La Liga,2009/2010,2010-05-16,Barcelona,Real Valladolid
+69256,11,21,La Liga,2009/2010,2009-10-03,Barcelona,Almería
+69298,11,21,La Liga,2009/2010,2010-03-27,Mallorca,Barcelona
+69259,11,21,La Liga,2009/2010,2010-04-10,Real Madrid,Barcelona
+69224,11,21,La Liga,2009/2010,2010-03-14,Barcelona,Valencia
+69210,11,21,La Liga,2009/2010,2010-01-23,Real Valladolid,Barcelona
+69220,11,21,La Liga,2009/2010,2010-01-30,Sporting Gijón,Barcelona
+69237,11,21,La Liga,2009/2010,2010-02-14,Atlético Madrid,Barcelona
+69226,11,21,La Liga,2009/2010,2010-03-06,Almería,Barcelona
+69252,11,21,La Liga,2009/2010,2009-10-17,Valencia,Barcelona
+69255,11,21,La Liga,2009/2010,2009-09-26,Málaga,Barcelona
+69214,11,21,La Liga,2009/2010,2010-04-24,Barcelona,Xerez
+69262,11,21,La Liga,2009/2010,2009-11-29,Barcelona,Real Madrid
+69240,11,21,La Liga,2009/2010,2010-02-06,Barcelona,Getafe
+69233,11,21,La Liga,2009/2010,2010-02-20,Barcelona,Racing Santander
+69213,11,21,La Liga,2009/2010,2010-04-17,Espanyol,Barcelona
+69267,11,21,La Liga,2009/2010,2009-12-02,Xerez,Barcelona
+69288,11,21,La Liga,2009/2010,2009-11-21,Athletic Club,Barcelona
+69254,11,21,La Liga,2009/2010,2009-09-22,Racing Santander,Barcelona
+69292,11,21,La Liga,2009/2010,2009-09-19,Barcelona,Atlético Madrid
+69227,11,21,La Liga,2009/2010,2010-03-21,Real Zaragoza,Barcelona
+69247,11,21,La Liga,2009/2010,2010-04-03,Barcelona,Athletic Club
+69221,11,21,La Liga,2009/2010,2010-04-14,Barcelona,RC Deportivo La Coruña
+69222,11,41,La Liga,2008/2009,2009-04-11,Barcelona,Recreativo Huelva
+69225,11,41,La Liga,2008/2009,2008-12-13,Barcelona,Real Madrid
+69189,11,41,La Liga,2008/2009,2009-01-24,Barcelona,CD Numancia de Soria
+69211,11,41,La Liga,2008/2009,2008-09-27,Espanyol,Barcelona
+69138,11,41,La Liga,2008/2009,2008-09-21,Sporting Gijón,Barcelona
+69212,11,41,La Liga,2008/2009,2008-10-04,Barcelona,Atlético Madrid
+69235,11,41,La Liga,2008/2009,2008-11-01,Málaga,Barcelona
+69232,11,41,La Liga,2008/2009,2008-10-25,Barcelona,Almería
+69216,11,41,La Liga,2008/2009,2009-03-07,Barcelona,Athletic Club
+69209,11,41,La Liga,2008/2009,2009-02-01,Racing Santander,Barcelona
+69231,11,41,La Liga,2008/2009,2009-02-08,Barcelona,Sporting Gijón
+69217,11,41,La Liga,2008/2009,2009-05-10,Barcelona,Villarreal
+69273,11,41,La Liga,2008/2009,2009-04-04,Real Valladolid,Barcelona
+69223,11,41,La Liga,2008/2009,2009-04-18,Getafe,Barcelona
+69195,11,41,La Liga,2008/2009,2009-02-14,Real Betis,Barcelona
+69251,11,41,La Liga,2008/2009,2009-04-25,Valencia,Barcelona
+69185,11,41,La Liga,2008/2009,2009-03-01,Atlético Madrid,Barcelona
+69142,11,41,La Liga,2008/2009,2009-03-22,Barcelona,Málaga
+69139,11,41,La Liga,2008/2009,2009-02-21,Barcelona,Espanyol
+69171,11,41,La Liga,2008/2009,2008-11-29,Sevilla,Barcelona
+69249,11,41,La Liga,2008/2009,2009-05-02,Real Madrid,Barcelona
+69215,11,41,La Liga,2008/2009,2008-09-13,Barcelona,Racing Santander
+69147,11,41,La Liga,2008/2009,2008-08-31,CD Numancia de Soria,Barcelona
+69177,11,41,La Liga,2008/2009,2009-03-15,Almería,Barcelona
+69207,11,41,La Liga,2008/2009,2008-09-24,Barcelona,Real Betis
+69228,11,41,La Liga,2008/2009,2008-12-21,Villarreal,Barcelona
+69183,11,41,La Liga,2008/2009,2009-01-17,Barcelona,RC Deportivo La Coruña
+69279,11,41,La Liga,2008/2009,2008-11-08,Barcelona,Real Valladolid
+69285,11,41,La Liga,2008/2009,2008-11-16,Recreativo Huelva,Barcelona
+69230,11,41,La Liga,2008/2009,2009-01-11,Osasuna,Barcelona
+69149,11,41,La Liga,2008/2009,2008-12-06,Barcelona,Valencia
+69146,11,40,La Liga,2007/2008,2008-02-09,Sevilla,Barcelona
+69151,11,40,La Liga,2007/2008,2007-09-29,Levante UD,Barcelona
+69144,11,40,La Liga,2007/2008,2007-10-07,Barcelona,Atlético Madrid
+69169,11,40,La Liga,2007/2008,2007-09-02,Barcelona,Athletic Club
+68360,11,40,La Liga,2007/2008,2008-02-24,Barcelona,Levante UD
+69186,11,40,La Liga,2007/2008,2008-05-17,Real Murcia CF,Barcelona
+69180,11,40,La Liga,2007/2008,2007-08-26,Racing Santander,Barcelona
+69181,11,40,La Liga,2007/2008,2008-01-27,Athletic Club,Barcelona
+68365,11,40,La Liga,2007/2008,2008-03-01,Atlético Madrid,Barcelona
+69178,11,40,La Liga,2007/2008,2007-11-10,Getafe,Barcelona
+68364,11,40,La Liga,2007/2008,2007-10-20,Villarreal,Barcelona
+69170,11,40,La Liga,2007/2008,2007-12-09,Barcelona,RC Deportivo La Coruña
+68359,11,40,La Liga,2007/2008,2008-04-19,Barcelona,Espanyol
+68356,11,40,La Liga,2007/2008,2007-12-01,Espanyol,Barcelona
+69158,11,40,La Liga,2007/2008,2007-10-28,Barcelona,Almería
+69187,11,40,La Liga,2007/2008,2008-02-03,Barcelona,Osasuna
+68363,11,40,La Liga,2007/2008,2007-11-01,Real Valladolid,Barcelona
+69166,11,40,La Liga,2007/2008,2007-11-04,Barcelona,Real Betis
+68366,11,40,La Liga,2007/2008,2008-05-11,Barcelona,Mallorca
+69148,11,40,La Liga,2007/2008,2007-09-22,Barcelona,Sevilla
+69184,11,40,La Liga,2007/2008,2007-11-24,Barcelona,Recreativo Huelva
+69173,11,40,La Liga,2007/2008,2008-01-20,Barcelona,Racing Santander
+69182,11,40,La Liga,2007/2008,2008-02-16,Real Zaragoza,Barcelona
+68358,11,40,La Liga,2007/2008,2008-04-12,Recreativo Huelva,Barcelona
+68361,11,40,La Liga,2007/2008,2008-05-07,Real Madrid,Barcelona
+69141,11,40,La Liga,2007/2008,2008-05-04,Barcelona,Valencia
+69145,11,40,La Liga,2007/2008,2007-12-15,Valencia,Barcelona
+68336,11,39,La Liga,2006/2007,2007-06-17,Gimnàstic Tarragona,Barcelona
+69176,11,39,La Liga,2006/2007,2007-05-20,Atlético Madrid,Barcelona
+69179,11,39,La Liga,2006/2007,2007-04-07,Real Zaragoza,Barcelona
+68334,11,39,La Liga,2006/2007,2007-03-03,Sevilla,Barcelona
+68333,11,39,La Liga,2006/2007,2007-02-25,Barcelona,Athletic Club
+68326,11,39,La Liga,2006/2007,2006-08-28,Celta Vigo,Barcelona
+69162,11,39,La Liga,2006/2007,2007-05-13,Barcelona,Real Betis
+68335,11,39,La Liga,2006/2007,2007-03-10,Barcelona,Real Madrid
+68332,11,39,La Liga,2006/2007,2007-02-18,Valencia,Barcelona
+68330,11,39,La Liga,2006/2007,2006-10-22,Real Madrid,Barcelona
+68329,11,39,La Liga,2006/2007,2006-10-15,Barcelona,Sevilla
+68341,11,39,La Liga,2006/2007,2007-03-17,Recreativo Huelva,Barcelona
+69165,11,39,La Liga,2006/2007,2007-06-09,Barcelona,Espanyol
+69155,11,39,La Liga,2006/2007,2007-04-22,Villarreal,Barcelona
+69154,11,39,La Liga,2006/2007,2007-02-11,Barcelona,Racing Santander
+69156,11,39,La Liga,2006/2007,2007-04-29,Barcelona,Levante UD
+69159,11,39,La Liga,2006/2007,2007-04-15,Barcelona,Mallorca
+69175,11,39,La Liga,2006/2007,2007-03-31,Barcelona,RC Deportivo La Coruña
+69160,11,39,La Liga,2006/2007,2007-05-05,Real Sociedad,Barcelona
+68331,11,39,La Liga,2006/2007,2006-11-12,Barcelona,Real Zaragoza
+68328,11,39,La Liga,2006/2007,2006-09-24,Barcelona,Valencia
+68340,11,39,La Liga,2006/2007,2006-09-17,Racing Santander,Barcelona
+69174,11,39,La Liga,2006/2007,2006-11-04,RC Deportivo La Coruña,Barcelona
+68347,11,39,La Liga,2006/2007,2006-09-30,Athletic Club,Barcelona
+68327,11,39,La Liga,2006/2007,2006-09-09,Barcelona,Osasuna
+69157,11,39,La Liga,2006/2007,2007-05-26,Barcelona,Getafe
+68323,11,38,La Liga,2005/2006,2005-12-20,Barcelona,Celta Vigo
+68318,11,38,La Liga,2005/2006,2005-10-22,Barcelona,Osasuna
+69172,11,38,La Liga,2005/2006,2006-02-18,Barcelona,Real Betis
+68322,11,38,La Liga,2005/2006,2005-12-17,Cádiz,Barcelona
+69164,11,38,La Liga,2005/2006,2005-10-26,Barcelona,Málaga
+68324,11,38,La Liga,2005/2006,2006-01-22,Barcelona,Deportivo Alavés
+68320,11,38,La Liga,2005/2006,2005-12-04,Villarreal,Barcelona
+68339,11,38,La Liga,2005/2006,2005-11-06,Getafe,Barcelona
+68348,11,38,La Liga,2005/2006,2006-01-07,Espanyol,Barcelona
+68354,11,38,La Liga,2005/2006,2005-11-27,Barcelona,Racing Santander
+68351,11,38,La Liga,2005/2006,2006-02-25,Real Zaragoza,Barcelona
+68317,11,38,La Liga,2005/2006,2005-10-01,Barcelona,Real Zaragoza
+68350,11,38,La Liga,2005/2006,2006-02-05,Barcelona,Atlético Madrid
+68325,11,38,La Liga,2005/2006,2006-01-29,Mallorca,Barcelona
+68321,11,38,La Liga,2005/2006,2005-12-11,Barcelona,Sevilla
+68319,11,38,La Liga,2005/2006,2005-11-19,Real Madrid,Barcelona
+68342,11,38,La Liga,2005/2006,2006-01-15,Barcelona,Athletic Club
+68314,11,37,La Liga,2004/2005,2004-12-04,Barcelona,Málaga
+68353,11,37,La Liga,2004/2005,2004-10-16,Espanyol,Barcelona
+68316,11,37,La Liga,2004/2005,2005-05-01,Barcelona,Albacete
+68313,11,37,La Liga,2004/2005,2004-10-24,Barcelona,Osasuna
+68315,11,37,La Liga,2004/2005,2004-12-21,Barcelona,Levante UD
+69153,11,37,La Liga,2004/2005,2004-12-11,Albacete,Barcelona
+68352,11,37,La Liga,2004/2005,2005-04-17,Barcelona,Getafe
+3888713,11,278,La Liga,1973/1974,1974-02-17,Real Madrid,Barcelona
+3889115,81,48,Liga Profesional,1997/1998,1997-10-25,River Plate,Boca Juniors
+3889082,81,275,Liga Profesional,1981,1981-04-10,Boca Juniors,River Plate
+3838017,7,235,Ligue 1,2022/2023,2023-06-03,Paris Saint-Germain,Clermont Foot
+3837987,7,235,Ligue 1,2022/2023,2023-05-13,Paris Saint-Germain,AC Ajaccio
+3837928,7,235,Ligue 1,2022/2023,2023-04-02,Paris Saint-Germain,Lyon
+3837918,7,235,Ligue 1,2022/2023,2023-03-19,Paris Saint-Germain,Rennes
+3837902,7,235,Ligue 1,2022/2023,2023-03-11,Stade Brestois,Paris Saint-Germain
+3837885,7,235,Ligue 1,2022/2023,2023-02-26,Olympique de Marseille,Paris Saint-Germain
+3837876,7,235,Ligue 1,2022/2023,2023-02-19,Paris Saint-Germain,Lille
+3837839,7,235,Ligue 1,2022/2023,2023-01-29,Paris Saint-Germain,Stade de Reims
+3837827,7,235,Ligue 1,2022/2023,2023-01-15,Rennes,Paris Saint-Germain
+3837818,7,235,Ligue 1,2022/2023,2023-01-11,Paris Saint-Germain,Angers
+3837785,7,235,Ligue 1,2022/2023,2022-11-13,Paris Saint-Germain,Auxerre
+3837747,7,235,Ligue 1,2022/2023,2022-10-16,Paris Saint-Germain,Olympique de Marseille
+3837680,7,235,Ligue 1,2022/2023,2022-08-28,Paris Saint-Germain,AS Monaco
+3837659,7,235,Ligue 1,2022/2023,2022-08-13,Paris Saint-Germain,Montpellier
+3837650,7,235,Ligue 1,2022/2023,2022-08-06,Clermont Foot,Paris Saint-Germain
+3838004,7,235,Ligue 1,2022/2023,2023-05-27,Strasbourg,Paris Saint-Germain
+3837998,7,235,Ligue 1,2022/2023,2023-05-21,Auxerre,Paris Saint-Germain
+3837963,7,235,Ligue 1,2022/2023,2023-04-30,Paris Saint-Germain,Lorient
+3837954,7,235,Ligue 1,2022/2023,2023-04-21,Angers,Paris Saint-Germain
+3837947,7,235,Ligue 1,2022/2023,2023-04-15,Paris Saint-Germain,Lens
+3837938,7,235,Ligue 1,2022/2023,2023-04-08,OGC Nice,Paris Saint-Germain
+3837896,7,235,Ligue 1,2022/2023,2023-03-04,Paris Saint-Germain,Nantes
+3837859,7,235,Ligue 1,2022/2023,2023-02-04,Paris Saint-Germain,Toulouse
+3837844,7,235,Ligue 1,2022/2023,2023-02-01,Montpellier,Paris Saint-Germain
+3837771,7,235,Ligue 1,2022/2023,2022-10-29,Paris Saint-Germain,Troyes
+3837752,7,235,Ligue 1,2022/2023,2022-10-21,AC Ajaccio,Paris Saint-Germain
+3837727,7,235,Ligue 1,2022/2023,2022-10-01,Paris Saint-Germain,OGC Nice
+3837717,7,235,Ligue 1,2022/2023,2022-09-18,Lyon,Paris Saint-Germain
+3837706,7,235,Ligue 1,2022/2023,2022-09-10,Paris Saint-Germain,Stade Brestois
+3837695,7,235,Ligue 1,2022/2023,2022-09-03,Nantes,Paris Saint-Germain
+3837683,7,235,Ligue 1,2022/2023,2022-08-31,Toulouse,Paris Saint-Germain
+3837662,7,235,Ligue 1,2022/2023,2022-08-21,Lille,Paris Saint-Germain
+3802643,7,108,Ligue 1,2021/2022,2022-04-29,Strasbourg,Paris Saint-Germain
+3803000,7,108,Ligue 1,2021/2022,2022-04-09,Clermont Foot,Paris Saint-Germain
+3802802,7,108,Ligue 1,2021/2022,2022-01-23,Paris Saint-Germain,Stade de Reims
+3802696,7,108,Ligue 1,2021/2022,2021-08-29,Stade de Reims,Paris Saint-Germain
+3802699,7,108,Ligue 1,2021/2022,2021-10-29,Paris Saint-Germain,Lille
+3802685,7,108,Ligue 1,2021/2022,2021-12-04,Lens,Paris Saint-Germain
+3802665,7,108,Ligue 1,2021/2022,2022-05-14,Montpellier,Paris Saint-Germain
+3802752,7,108,Ligue 1,2021/2022,2021-09-19,Paris Saint-Germain,Lyon
+3802809,7,108,Ligue 1,2021/2022,2021-10-03,Rennes,Paris Saint-Germain
+3802676,7,108,Ligue 1,2021/2022,2022-04-23,Paris Saint-Germain,Lens
+3802983,7,108,Ligue 1,2021/2022,2022-04-17,Paris Saint-Germain,Olympique de Marseille
+3802907,7,108,Ligue 1,2021/2022,2022-02-06,Lille,Paris Saint-Germain
+3802902,7,108,Ligue 1,2021/2022,2021-10-24,Olympique de Marseille,Paris Saint-Germain
+3802818,7,108,Ligue 1,2021/2022,2022-04-03,Paris Saint-Germain,Lorient
+3802683,7,108,Ligue 1,2021/2022,2021-12-12,Paris Saint-Germain,AS Monaco
+3802690,7,108,Ligue 1,2021/2022,2021-12-22,Lorient,Paris Saint-Germain
+3802904,7,108,Ligue 1,2021/2022,2022-03-13,Paris Saint-Germain,Bordeaux
+3802837,7,108,Ligue 1,2021/2022,2021-11-28,Saint-Étienne,Paris Saint-Germain
+3802984,7,108,Ligue 1,2021/2022,2021-11-20,Paris Saint-Germain,Nantes
+3802805,7,108,Ligue 1,2021/2022,2022-03-05,OGC Nice,Paris Saint-Germain
+3802709,7,108,Ligue 1,2021/2022,2022-02-26,Paris Saint-Germain,Saint-Étienne
+3802948,7,108,Ligue 1,2021/2022,2022-05-21,Paris Saint-Germain,Metz
+3802930,7,108,Ligue 1,2021/2022,2022-05-08,Paris Saint-Germain,Troyes
+3802793,7,108,Ligue 1,2021/2022,2021-12-01,Paris Saint-Germain,OGC Nice
+3802839,7,108,Ligue 1,2021/2022,2022-02-19,Nantes,Paris Saint-Germain
+3802795,7,108,Ligue 1,2021/2022,2022-02-11,Paris Saint-Germain,Rennes
+3901259,7,27,Ligue 1,2015/2016,2016-05-14,Troyes,Olympique de Marseille
+3900533,7,27,Ligue 1,2015/2016,2015-12-02,AS Monaco,Stade Malherbe Caen
+3900528,7,27,Ligue 1,2015/2016,2015-11-29,Bordeaux,Stade Malherbe Caen
+3900629,7,27,Ligue 1,2015/2016,2016-02-07,Olympique de Marseille,Paris Saint-Germain
+3829509,7,27,Ligue 1,2015/2016,2015-10-18,Olympique de Marseille,Lorient
+3901251,7,27,Ligue 1,2015/2016,2016-05-07,Olympique de Marseille,Stade de Reims
+3829499,7,27,Ligue 1,2015/2016,2015-10-04,Stade Malherbe Caen,Saint-Étienne
+3900507,7,27,Ligue 1,2015/2016,2015-11-08,Olympique de Marseille,OGC Nice
+3900527,7,27,Ligue 1,2015/2016,2015-11-29,Olympique de Marseille,AS Monaco
+3901162,7,27,Ligue 1,2015/2016,2016-03-04,Stade Malherbe Caen,AS Monaco
+3900608,7,27,Ligue 1,2015/2016,2016-01-31,Stade Malherbe Caen,OGC Nice
+3900589,7,27,Ligue 1,2015/2016,2016-01-17,Stade Malherbe Caen,Olympique de Marseille
+3901169,7,27,Ligue 1,2015/2016,2016-03-06,Olympique de Marseille,Toulouse
+3901241,7,27,Ligue 1,2015/2016,2016-04-30,Stade Malherbe Caen,Bastia
+3900577,7,27,Ligue 1,2015/2016,2016-01-10,Olympique de Marseille,Guingamp
+3901152,7,27,Ligue 1,2015/2016,2016-02-21,Stade Malherbe Caen,Rennes
+3900559,7,27,Ligue 1,2015/2016,2015-12-13,Olympique de Marseille,Gazélec Ajaccio
+3900562,7,27,Ligue 1,2015/2016,2015-12-19,Stade Malherbe Caen,Paris Saint-Germain
+3829472,7,27,Ligue 1,2015/2016,2015-09-20,Olympique de Marseille,Lyon
+3829444,7,27,Ligue 1,2015/2016,2015-08-29,Stade Malherbe Caen,Lyon
+3829414,7,27,Ligue 1,2015/2016,2015-08-08,Olympique de Marseille,Stade Malherbe Caen
+3901190,7,27,Ligue 1,2015/2016,2016-03-19,Stade Malherbe Caen,Troyes
+3829441,7,27,Ligue 1,2015/2016,2015-08-23,Olympique de Marseille,Troyes
+3829461,7,27,Ligue 1,2015/2016,2015-09-13,Olympique de Marseille,Bastia
+3901150,7,27,Ligue 1,2015/2016,2016-02-21,Olympique de Marseille,Saint-Étienne
+3901199,7,27,Ligue 1,2015/2016,2016-04-02,Rennes,Stade de Reims
+3901178,7,27,Ligue 1,2015/2016,2016-03-12,Lorient,Olympique de Marseille
+3901260,7,27,Ligue 1,2015/2016,2016-05-14,Lorient,Gazélec Ajaccio
+3829470,7,27,Ligue 1,2015/2016,2015-09-20,Saint-Étienne,Nantes
+3901263,7,27,Ligue 1,2015/2016,2016-05-14,Rennes,Bastia
+3900594,7,27,Ligue 1,2015/2016,2016-01-23,Nantes,Bordeaux
+3900587,7,27,Ligue 1,2015/2016,2016-01-17,Saint-Étienne,Lyon
+3900541,7,27,Ligue 1,2015/2016,2015-12-05,Bastia,AS Monaco
+3900596,7,27,Ligue 1,2015/2016,2016-01-23,Guingamp,Bastia
+3900591,7,27,Ligue 1,2015/2016,2016-01-23,Paris Saint-Germain,Angers
+3901188,7,27,Ligue 1,2015/2016,2016-03-19,Saint-Étienne,Montpellier
+3901184,7,27,Ligue 1,2015/2016,2016-03-18,Olympique de Marseille,Rennes
+3901182,7,27,Ligue 1,2015/2016,2016-03-13,Nantes,Angers
+3901170,7,27,Ligue 1,2015/2016,2016-03-06,Rennes,Nantes
+3901166,7,27,Ligue 1,2015/2016,2016-03-05,Paris Saint-Germain,Montpellier
+3901168,7,27,Ligue 1,2015/2016,2016-03-05,Lille,Stade de Reims
+3900601,7,27,Ligue 1,2015/2016,2016-01-30,Gazélec Ajaccio,Montpellier
+3901262,7,27,Ligue 1,2015/2016,2016-05-14,Stade Malherbe Caen,Bordeaux
+3901261,7,27,Ligue 1,2015/2016,2016-05-14,Paris Saint-Germain,Nantes
+3901258,7,27,Ligue 1,2015/2016,2016-05-14,Guingamp,OGC Nice
+3901257,7,27,Ligue 1,2015/2016,2016-05-14,Saint-Étienne,Lille
+3901256,7,27,Ligue 1,2015/2016,2016-05-14,AS Monaco,Montpellier
+3901255,7,27,Ligue 1,2015/2016,2016-05-14,Angers,Toulouse
+3901254,7,27,Ligue 1,2015/2016,2016-05-14,Stade de Reims,Lyon
+3901253,7,27,Ligue 1,2015/2016,2016-05-11,Bordeaux,Paris Saint-Germain
+3901252,7,27,Ligue 1,2015/2016,2016-05-07,Lyon,AS Monaco
+3901250,7,27,Ligue 1,2015/2016,2016-05-07,OGC Nice,Saint-Étienne
+3901249,7,27,Ligue 1,2015/2016,2016-05-07,Montpellier,Rennes
+3901248,7,27,Ligue 1,2015/2016,2016-05-07,Lille,Guingamp
+3901247,7,27,Ligue 1,2015/2016,2016-05-07,Gazélec Ajaccio,Paris Saint-Germain
+3901246,7,27,Ligue 1,2015/2016,2016-05-07,Nantes,Stade Malherbe Caen
+3901245,7,27,Ligue 1,2015/2016,2016-05-07,Bordeaux,Lorient
+3901244,7,27,Ligue 1,2015/2016,2016-05-07,Toulouse,Troyes
+3901243,7,27,Ligue 1,2015/2016,2016-05-07,Bastia,Angers
+3901242,7,27,Ligue 1,2015/2016,2016-05-01,Angers,Olympique de Marseille
+3901240,7,27,Ligue 1,2015/2016,2016-04-30,Lorient,Lille
+3901238,7,27,Ligue 1,2015/2016,2016-04-30,AS Monaco,Guingamp
+3901237,7,27,Ligue 1,2015/2016,2016-04-30,Saint-Étienne,Toulouse
+3901236,7,27,Ligue 1,2015/2016,2016-04-30,Nantes,OGC Nice
+3901235,7,27,Ligue 1,2015/2016,2016-04-30,Lyon,Gazélec Ajaccio
+3901234,7,27,Ligue 1,2015/2016,2016-04-30,Stade de Reims,Montpellier
+3901233,7,27,Ligue 1,2015/2016,2016-04-29,Paris Saint-Germain,Rennes
+3901232,7,27,Ligue 1,2015/2016,2016-04-27,Lille,Angers
+3901231,7,27,Ligue 1,2015/2016,2016-04-24,Rennes,AS Monaco
+3901230,7,27,Ligue 1,2015/2016,2016-04-24,Gazélec Ajaccio,Bastia
+3901229,7,27,Ligue 1,2015/2016,2016-04-24,Guingamp,Stade Malherbe Caen
+3901228,7,27,Ligue 1,2015/2016,2016-04-24,Saint-Étienne,Lorient
+3901227,7,27,Ligue 1,2015/2016,2016-04-24,Olympique de Marseille,Nantes
+3901226,7,27,Ligue 1,2015/2016,2016-04-24,Montpellier,Troyes
+3901225,7,27,Ligue 1,2015/2016,2016-04-23,Toulouse,Lyon
+3901224,7,27,Ligue 1,2015/2016,2016-04-22,OGC Nice,Stade de Reims
+3901223,7,27,Ligue 1,2015/2016,2016-04-17,AS Monaco,Olympique de Marseille
+3901222,7,27,Ligue 1,2015/2016,2016-04-17,Nantes,Montpellier
+3901221,7,27,Ligue 1,2015/2016,2016-04-17,Rennes,Guingamp
+3901220,7,27,Ligue 1,2015/2016,2016-04-16,Bastia,Saint-Étienne
+3901219,7,27,Ligue 1,2015/2016,2016-04-16,Lorient,Toulouse
+3901218,7,27,Ligue 1,2015/2016,2016-04-16,Bordeaux,Angers
+3901217,7,27,Ligue 1,2015/2016,2016-04-16,Troyes,Stade de Reims
+3901216,7,27,Ligue 1,2015/2016,2016-04-16,Paris Saint-Germain,Stade Malherbe Caen
+3901215,7,27,Ligue 1,2015/2016,2016-04-16,Gazélec Ajaccio,Lille
+3901214,7,27,Ligue 1,2015/2016,2016-04-15,Lyon,OGC Nice
+3901213,7,27,Ligue 1,2015/2016,2016-04-10,OGC Nice,Rennes
+3901212,7,27,Ligue 1,2015/2016,2016-04-10,Lille,AS Monaco
+3901211,7,27,Ligue 1,2015/2016,2016-04-10,Olympique de Marseille,Bordeaux
+3901210,7,27,Ligue 1,2015/2016,2016-04-09,Saint-Étienne,Troyes
+3901209,7,27,Ligue 1,2015/2016,2016-04-09,Angers,Gazélec Ajaccio
+3901208,7,27,Ligue 1,2015/2016,2016-04-09,Guingamp,Paris Saint-Germain
+3901207,7,27,Ligue 1,2015/2016,2016-04-09,Stade de Reims,Nantes
+3901206,7,27,Ligue 1,2015/2016,2016-04-09,Toulouse,Bastia
+3901205,7,27,Ligue 1,2015/2016,2016-04-09,Stade Malherbe Caen,Lorient
+3901204,7,27,Ligue 1,2015/2016,2016-04-08,Montpellier,Lyon
+3901203,7,27,Ligue 1,2015/2016,2016-04-03,Nantes,Lille
+3901202,7,27,Ligue 1,2015/2016,2016-04-03,Lorient,Lyon
+3901201,7,27,Ligue 1,2015/2016,2016-04-03,Bastia,Olympique de Marseille
+3901200,7,27,Ligue 1,2015/2016,2016-04-02,Toulouse,Stade Malherbe Caen
+3901198,7,27,Ligue 1,2015/2016,2016-04-02,Troyes,Angers
+3901197,7,27,Ligue 1,2015/2016,2016-04-02,Guingamp,Montpellier
+3901196,7,27,Ligue 1,2015/2016,2016-04-02,Paris Saint-Germain,OGC Nice
+3901195,7,27,Ligue 1,2015/2016,2016-04-02,Gazélec Ajaccio,Saint-Étienne
+3901194,7,27,Ligue 1,2015/2016,2016-04-01,AS Monaco,Bordeaux
+3901193,7,27,Ligue 1,2015/2016,2016-03-20,Paris Saint-Germain,AS Monaco
+3901192,7,27,Ligue 1,2015/2016,2016-03-20,Bordeaux,Bastia
+3901191,7,27,Ligue 1,2015/2016,2016-03-20,OGC Nice,Gazélec Ajaccio
+3901189,7,27,Ligue 1,2015/2016,2016-03-19,Lille,Toulouse
+3901187,7,27,Ligue 1,2015/2016,2016-03-19,Angers,Lorient
+3901186,7,27,Ligue 1,2015/2016,2016-03-19,Lyon,Nantes
+3901185,7,27,Ligue 1,2015/2016,2016-03-19,Stade de Reims,Guingamp
+3901183,7,27,Ligue 1,2015/2016,2016-03-13,Troyes,Paris Saint-Germain
+3901181,7,27,Ligue 1,2015/2016,2016-03-13,Rennes,Lyon
+3901180,7,27,Ligue 1,2015/2016,2016-03-12,Guingamp,Saint-Étienne
+3901179,7,27,Ligue 1,2015/2016,2016-03-12,Gazélec Ajaccio,Stade Malherbe Caen
+3901177,7,27,Ligue 1,2015/2016,2016-03-12,Bastia,Lille
+3901176,7,27,Ligue 1,2015/2016,2016-03-12,Toulouse,Bordeaux
+3901175,7,27,Ligue 1,2015/2016,2016-03-12,Montpellier,OGC Nice
+3901174,7,27,Ligue 1,2015/2016,2016-03-11,AS Monaco,Stade de Reims
+3901173,7,27,Ligue 1,2015/2016,2016-03-09,Gazélec Ajaccio,Olympique de Marseille
+3901172,7,27,Ligue 1,2015/2016,2016-03-09,Bastia,Nantes
+3901171,7,27,Ligue 1,2015/2016,2016-03-06,Lyon,Guingamp
+3901167,7,27,Ligue 1,2015/2016,2016-03-05,Bastia,Lorient
+3901165,7,27,Ligue 1,2015/2016,2016-03-05,Bordeaux,Gazélec Ajaccio
+3901164,7,27,Ligue 1,2015/2016,2016-03-05,Angers,Saint-Étienne
+3901163,7,27,Ligue 1,2015/2016,2016-03-05,OGC Nice,Troyes
+3901161,7,27,Ligue 1,2015/2016,2016-02-28,Saint-Étienne,Stade Malherbe Caen
+3901160,7,27,Ligue 1,2015/2016,2016-02-28,Nantes,AS Monaco
+3901159,7,27,Ligue 1,2015/2016,2016-02-28,Lyon,Paris Saint-Germain
+3901158,7,27,Ligue 1,2015/2016,2016-02-27,Toulouse,Rennes
+3901157,7,27,Ligue 1,2015/2016,2016-02-27,Stade de Reims,Bordeaux
+3901156,7,27,Ligue 1,2015/2016,2016-02-27,Guingamp,Angers
+3901155,7,27,Ligue 1,2015/2016,2016-02-27,Montpellier,Lille
+3901154,7,27,Ligue 1,2015/2016,2016-02-27,Troyes,Lorient
+3901153,7,27,Ligue 1,2015/2016,2016-02-26,OGC Nice,Bastia
+3901151,7,27,Ligue 1,2015/2016,2016-02-21,Lille,Lyon
+3901149,7,27,Ligue 1,2015/2016,2016-02-20,AS Monaco,Troyes
+3901148,7,27,Ligue 1,2015/2016,2016-02-20,Lorient,Guingamp
+3901147,7,27,Ligue 1,2015/2016,2016-02-20,Toulouse,Gazélec Ajaccio
+3901146,7,27,Ligue 1,2015/2016,2016-02-20,Paris Saint-Germain,Stade de Reims
+3901145,7,27,Ligue 1,2015/2016,2016-02-20,Angers,Montpellier
+3901144,7,27,Ligue 1,2015/2016,2016-02-19,Bordeaux,OGC Nice
+3900602,7,27,Ligue 1,2015/2016,2016-01-30,Lorient,Stade de Reims
+3829518,7,27,Ligue 1,2015/2016,2015-10-25,Lille,Olympique de Marseille
+3829479,7,27,Ligue 1,2015/2016,2015-09-23,Lorient,Stade Malherbe Caen
+3829478,7,27,Ligue 1,2015/2016,2015-09-23,Gazélec Ajaccio,Rennes
+3829519,7,27,Ligue 1,2015/2016,2015-10-25,Paris Saint-Germain,Saint-Étienne
+3829416,7,27,Ligue 1,2015/2016,2015-08-08,OGC Nice,AS Monaco
+3829459,7,27,Ligue 1,2015/2016,2015-09-12,OGC Nice,Guingamp
+3900636,7,27,Ligue 1,2015/2016,2016-02-13,Nantes,Lorient
+3900633,7,27,Ligue 1,2015/2016,2016-02-13,Gazélec Ajaccio,Troyes
+3900628,7,27,Ligue 1,2015/2016,2016-02-07,Lille,Rennes
+3900627,7,27,Ligue 1,2015/2016,2016-02-07,Bordeaux,Saint-Étienne
+3900625,7,27,Ligue 1,2015/2016,2016-02-06,AS Monaco,OGC Nice
+3900624,7,27,Ligue 1,2015/2016,2016-02-06,Angers,Lyon
+3900616,7,27,Ligue 1,2015/2016,2016-02-03,Lyon,Bordeaux
+3900617,7,27,Ligue 1,2015/2016,2016-02-03,Stade de Reims,Angers
+3900609,7,27,Ligue 1,2015/2016,2016-01-31,Bordeaux,Rennes
+3900604,7,27,Ligue 1,2015/2016,2016-01-30,Angers,AS Monaco
+3900605,7,27,Ligue 1,2015/2016,2016-01-30,Bastia,Lyon
+3900603,7,27,Ligue 1,2015/2016,2016-01-30,Toulouse,Guingamp
+3900606,7,27,Ligue 1,2015/2016,2016-01-30,Troyes,Nantes
+3900600,7,27,Ligue 1,2015/2016,2016-01-29,Olympique de Marseille,Lille
+3900598,7,27,Ligue 1,2015/2016,2016-01-24,AS Monaco,Toulouse
+3900597,7,27,Ligue 1,2015/2016,2016-01-24,Lyon,Olympique de Marseille
+3900599,7,27,Ligue 1,2015/2016,2016-01-24,Stade de Reims,Saint-Étienne
+3900592,7,27,Ligue 1,2015/2016,2016-01-23,Montpellier,Stade Malherbe Caen
+3900595,7,27,Ligue 1,2015/2016,2016-01-23,OGC Nice,Lorient
+3900593,7,27,Ligue 1,2015/2016,2016-01-23,Lille,Troyes
+3900590,7,27,Ligue 1,2015/2016,2016-01-22,Rennes,Gazélec Ajaccio
+3900588,7,27,Ligue 1,2015/2016,2016-01-17,Lorient,AS Monaco
+3900586,7,27,Ligue 1,2015/2016,2016-01-16,Guingamp,Nantes
+3900584,7,27,Ligue 1,2015/2016,2016-01-16,Bastia,Montpellier
+3900582,7,27,Ligue 1,2015/2016,2016-01-16,Gazélec Ajaccio,Stade de Reims
+3900583,7,27,Ligue 1,2015/2016,2016-01-16,Troyes,Rennes
+3900585,7,27,Ligue 1,2015/2016,2016-01-16,Toulouse,Paris Saint-Germain
+3900570,7,27,Ligue 1,2015/2016,2016-01-08,Paris Saint-Germain,Bastia
+3900567,7,27,Ligue 1,2015/2016,2015-12-20,Bordeaux,Olympique de Marseille
+3900568,7,27,Ligue 1,2015/2016,2015-12-20,Gazélec Ajaccio,Lyon
+3900549,7,27,Ligue 1,2015/2016,2015-12-06,Saint-Étienne,Rennes
+3900548,7,27,Ligue 1,2015/2016,2015-12-06,Bordeaux,Guingamp
+3900547,7,27,Ligue 1,2015/2016,2015-12-06,Olympique de Marseille,Montpellier
+3900545,7,27,Ligue 1,2015/2016,2015-12-05,Lyon,Angers
+3900546,7,27,Ligue 1,2015/2016,2015-12-05,Gazélec Ajaccio,Nantes
+3900544,7,27,Ligue 1,2015/2016,2015-12-05,Toulouse,Lorient
+3900540,7,27,Ligue 1,2015/2016,2015-12-04,OGC Nice,Paris Saint-Germain
+3900539,7,27,Ligue 1,2015/2016,2015-12-03,Rennes,Olympique de Marseille
+3900538,7,27,Ligue 1,2015/2016,2015-12-02,Guingamp,Stade de Reims
+3900537,7,27,Ligue 1,2015/2016,2015-12-02,Troyes,Toulouse
+3900536,7,27,Ligue 1,2015/2016,2015-12-02,Montpellier,Gazélec Ajaccio
+3900534,7,27,Ligue 1,2015/2016,2015-12-02,Bastia,Bordeaux
+3900535,7,27,Ligue 1,2015/2016,2015-12-02,Lille,Saint-Étienne
+3900530,7,27,Ligue 1,2015/2016,2015-12-01,Nantes,Lyon
+3900532,7,27,Ligue 1,2015/2016,2015-12-01,Angers,Paris Saint-Germain
+3900531,7,27,Ligue 1,2015/2016,2015-12-01,Lorient,OGC Nice
+3900529,7,27,Ligue 1,2015/2016,2015-11-29,Saint-Étienne,Guingamp
+3900522,7,27,Ligue 1,2015/2016,2015-11-28,Toulouse,OGC Nice
+3900523,7,27,Ligue 1,2015/2016,2015-11-28,Stade de Reims,Rennes
+3900521,7,27,Ligue 1,2015/2016,2015-11-28,Paris Saint-Germain,Troyes
+3900518,7,27,Ligue 1,2015/2016,2015-11-22,Stade Malherbe Caen,Angers
+3900519,7,27,Ligue 1,2015/2016,2015-11-22,Rennes,Bordeaux
+3900511,7,27,Ligue 1,2015/2016,2015-11-21,Lorient,Paris Saint-Germain
+3900514,7,27,Ligue 1,2015/2016,2015-11-21,Guingamp,Toulouse
+3900515,7,27,Ligue 1,2015/2016,2015-11-21,AS Monaco,Nantes
+3829512,7,27,Ligue 1,2015/2016,2015-10-23,Lyon,Toulouse
+3829495,7,27,Ligue 1,2015/2016,2015-10-03,Lyon,Stade de Reims
+3900491,7,27,Ligue 1,2015/2016,2015-10-31,Saint-Étienne,Stade de Reims
+3900504,7,27,Ligue 1,2015/2016,2015-11-07,Montpellier,Nantes
+3900506,7,27,Ligue 1,2015/2016,2015-11-07,Stade de Reims,Gazélec Ajaccio
+3900505,7,27,Ligue 1,2015/2016,2015-11-07,Stade Malherbe Caen,Guingamp
+3829496,7,27,Ligue 1,2015/2016,2015-10-03,Angers,Bastia
+3829514,7,27,Ligue 1,2015/2016,2015-10-24,Angers,Guingamp
+3829469,7,27,Ligue 1,2015/2016,2015-09-20,AS Monaco,Lorient
+3829454,7,27,Ligue 1,2015/2016,2015-09-12,Lyon,Lille
+3829439,7,27,Ligue 1,2015/2016,2015-08-22,Toulouse,AS Monaco
+3829513,7,27,Ligue 1,2015/2016,2015-10-23,Stade Malherbe Caen,Nantes
+3829510,7,27,Ligue 1,2015/2016,2015-10-18,Rennes,OGC Nice
+3829445,7,27,Ligue 1,2015/2016,2015-08-29,Angers,OGC Nice
+3829433,7,27,Ligue 1,2015/2016,2015-08-21,Montpellier,Paris Saint-Germain
+3829466,7,27,Ligue 1,2015/2016,2015-09-19,Angers,Troyes
+3900639,7,27,Ligue 1,2015/2016,2016-02-14,Saint-Étienne,AS Monaco
+3900638,7,27,Ligue 1,2015/2016,2016-02-14,Lyon,Stade Malherbe Caen
+3900637,7,27,Ligue 1,2015/2016,2016-02-14,OGC Nice,Olympique de Marseille
+3900635,7,27,Ligue 1,2015/2016,2016-02-13,Stade de Reims,Bastia
+3900634,7,27,Ligue 1,2015/2016,2016-02-13,Paris Saint-Germain,Lille
+3900632,7,27,Ligue 1,2015/2016,2016-02-13,Guingamp,Bordeaux
+3900631,7,27,Ligue 1,2015/2016,2016-02-13,Montpellier,Toulouse
+3900630,7,27,Ligue 1,2015/2016,2016-02-12,Rennes,Angers
+3900626,7,27,Ligue 1,2015/2016,2016-02-06,Gazélec Ajaccio,Guingamp
+3900623,7,27,Ligue 1,2015/2016,2016-02-06,Lorient,Montpellier
+3900622,7,27,Ligue 1,2015/2016,2016-02-06,Bastia,Troyes
+3900621,7,27,Ligue 1,2015/2016,2016-02-06,Toulouse,Nantes
+3900620,7,27,Ligue 1,2015/2016,2016-02-06,Stade Malherbe Caen,Stade de Reims
+3900619,7,27,Ligue 1,2015/2016,2016-02-04,Rennes,Saint-Étienne
+3900618,7,27,Ligue 1,2015/2016,2016-02-03,Paris Saint-Germain,Lorient
+3900615,7,27,Ligue 1,2015/2016,2016-02-03,Nantes,Gazélec Ajaccio
+3900614,7,27,Ligue 1,2015/2016,2016-02-03,Lille,Stade Malherbe Caen
+3900613,7,27,Ligue 1,2015/2016,2016-02-03,OGC Nice,Toulouse
+3900612,7,27,Ligue 1,2015/2016,2016-02-03,Guingamp,Troyes
+3900611,7,27,Ligue 1,2015/2016,2016-02-02,AS Monaco,Bastia
+3900610,7,27,Ligue 1,2015/2016,2016-02-02,Montpellier,Olympique de Marseille
+3900581,7,27,Ligue 1,2015/2016,2016-01-16,Bordeaux,Lille
+3900580,7,27,Ligue 1,2015/2016,2016-01-15,OGC Nice,Angers
+3900579,7,27,Ligue 1,2015/2016,2016-01-10,Nantes,Saint-Étienne
+3900578,7,27,Ligue 1,2015/2016,2016-01-10,Lille,OGC Nice
+3900576,7,27,Ligue 1,2015/2016,2016-01-09,Montpellier,Bordeaux
+3900575,7,27,Ligue 1,2015/2016,2016-01-09,Stade de Reims,Toulouse
+3900574,7,27,Ligue 1,2015/2016,2016-01-09,Lyon,Troyes
+3900573,7,27,Ligue 1,2015/2016,2016-01-09,Angers,Stade Malherbe Caen
+3900572,7,27,Ligue 1,2015/2016,2016-01-09,AS Monaco,Gazélec Ajaccio
+3900571,7,27,Ligue 1,2015/2016,2016-01-09,Rennes,Lorient
+3900569,7,27,Ligue 1,2015/2016,2015-12-20,Saint-Étienne,Angers
+3900566,7,27,Ligue 1,2015/2016,2015-12-19,Bastia,Stade de Reims
+3900565,7,27,Ligue 1,2015/2016,2015-12-19,Lorient,Nantes
+3900564,7,27,Ligue 1,2015/2016,2015-12-19,Troyes,AS Monaco
+3900563,7,27,Ligue 1,2015/2016,2015-12-19,Guingamp,Rennes
+3900561,7,27,Ligue 1,2015/2016,2015-12-19,Toulouse,Lille
+3900560,7,27,Ligue 1,2015/2016,2015-12-18,OGC Nice,Montpellier
+3900558,7,27,Ligue 1,2015/2016,2015-12-13,AS Monaco,Saint-Étienne
+3900557,7,27,Ligue 1,2015/2016,2015-12-13,Paris Saint-Germain,Lyon
+3900556,7,27,Ligue 1,2015/2016,2015-12-13,Angers,Bordeaux
+3900555,7,27,Ligue 1,2015/2016,2015-12-12,Nantes,Toulouse
+3900554,7,27,Ligue 1,2015/2016,2015-12-12,Troyes,Bastia
+3900553,7,27,Ligue 1,2015/2016,2015-12-12,Stade de Reims,OGC Nice
+3900552,7,27,Ligue 1,2015/2016,2015-12-12,Montpellier,Guingamp
+3900551,7,27,Ligue 1,2015/2016,2015-12-12,Lille,Lorient
+3900550,7,27,Ligue 1,2015/2016,2015-12-11,Rennes,Stade Malherbe Caen
+3900543,7,27,Ligue 1,2015/2016,2015-12-05,Stade de Reims,Troyes
+3900542,7,27,Ligue 1,2015/2016,2015-12-05,Stade Malherbe Caen,Lille
+3900526,7,27,Ligue 1,2015/2016,2015-11-28,Angers,Lille
+3900525,7,27,Ligue 1,2015/2016,2015-11-28,Nantes,Bastia
+3900524,7,27,Ligue 1,2015/2016,2015-11-28,Gazélec Ajaccio,Lorient
+3900520,7,27,Ligue 1,2015/2016,2015-11-27,Lyon,Montpellier
+3900516,7,27,Ligue 1,2015/2016,2015-11-22,Saint-Étienne,Olympique de Marseille
+3900513,7,27,Ligue 1,2015/2016,2015-11-21,Troyes,Lille
+3900512,7,27,Ligue 1,2015/2016,2015-11-21,Montpellier,Stade de Reims
+3900510,7,27,Ligue 1,2015/2016,2015-11-20,OGC Nice,Lyon
+3900509,7,27,Ligue 1,2015/2016,2015-11-08,Lyon,Saint-Étienne
+3900508,7,27,Ligue 1,2015/2016,2015-11-08,Bordeaux,AS Monaco
+3900503,7,27,Ligue 1,2015/2016,2015-11-07,Lille,Bastia
+3900502,7,27,Ligue 1,2015/2016,2015-11-07,Lorient,Troyes
+3900501,7,27,Ligue 1,2015/2016,2015-11-07,Paris Saint-Germain,Toulouse
+3900500,7,27,Ligue 1,2015/2016,2015-11-06,Angers,Rennes
+3900499,7,27,Ligue 1,2015/2016,2015-11-01,Nantes,Olympique de Marseille
+3900498,7,27,Ligue 1,2015/2016,2015-11-01,AS Monaco,Angers
+3900497,7,27,Ligue 1,2015/2016,2015-11-01,OGC Nice,Lille
+3900496,7,27,Ligue 1,2015/2016,2015-10-31,Toulouse,Montpellier
+3900495,7,27,Ligue 1,2015/2016,2015-10-31,Bastia,Stade Malherbe Caen
+3900494,7,27,Ligue 1,2015/2016,2015-10-31,Gazélec Ajaccio,Bordeaux
+3900493,7,27,Ligue 1,2015/2016,2015-10-31,Troyes,Lyon
+3900492,7,27,Ligue 1,2015/2016,2015-10-31,Guingamp,Lorient
+3900490,7,27,Ligue 1,2015/2016,2015-10-30,Rennes,Paris Saint-Germain
+3829438,7,27,Ligue 1,2015/2016,2015-08-22,OGC Nice,Stade Malherbe Caen
+3829413,7,27,Ligue 1,2015/2016,2015-08-07,Lille,Paris Saint-Germain
+3829428,7,27,Ligue 1,2015/2016,2015-08-15,Stade Malherbe Caen,Toulouse
+3829522,7,27,Ligue 1,2015/2016,2015-11-04,OGC Nice,Nantes
+3829521,7,27,Ligue 1,2015/2016,2015-10-25,Bordeaux,Troyes
+3829520,7,27,Ligue 1,2015/2016,2015-10-25,Stade de Reims,AS Monaco
+3829517,7,27,Ligue 1,2015/2016,2015-10-24,Gazélec Ajaccio,OGC Nice
+3829516,7,27,Ligue 1,2015/2016,2015-10-24,Lorient,Rennes
+3829515,7,27,Ligue 1,2015/2016,2015-10-24,Montpellier,Bastia
+3829511,7,27,Ligue 1,2015/2016,2015-10-18,Bordeaux,Montpellier
+3829508,7,27,Ligue 1,2015/2016,2015-10-17,Stade de Reims,Stade Malherbe Caen
+3829507,7,27,Ligue 1,2015/2016,2015-10-17,Toulouse,Angers
+3829506,7,27,Ligue 1,2015/2016,2015-10-17,Guingamp,Lille
+3829505,7,27,Ligue 1,2015/2016,2015-10-17,Saint-Étienne,Gazélec Ajaccio
+3829504,7,27,Ligue 1,2015/2016,2015-10-17,Bastia,Paris Saint-Germain
+3829503,7,27,Ligue 1,2015/2016,2015-10-17,Nantes,Troyes
+3829502,7,27,Ligue 1,2015/2016,2015-10-16,AS Monaco,Lyon
+3829501,7,27,Ligue 1,2015/2016,2015-10-04,AS Monaco,Rennes
+3829500,7,27,Ligue 1,2015/2016,2015-10-04,Paris Saint-Germain,Olympique de Marseille
+3829498,7,27,Ligue 1,2015/2016,2015-10-04,Lorient,Bordeaux
+3829497,7,27,Ligue 1,2015/2016,2015-10-03,Troyes,Guingamp
+3829494,7,27,Ligue 1,2015/2016,2015-10-03,Gazélec Ajaccio,Toulouse
+3829493,7,27,Ligue 1,2015/2016,2015-10-02,Lille,Montpellier
+3829492,7,27,Ligue 1,2015/2016,2015-09-29,Lille,Nantes
+3829491,7,27,Ligue 1,2015/2016,2015-09-27,Olympique de Marseille,Angers
+3829490,7,27,Ligue 1,2015/2016,2015-09-27,Saint-Étienne,OGC Nice
+3829489,7,27,Ligue 1,2015/2016,2015-09-27,Montpellier,Lorient
+3829488,7,27,Ligue 1,2015/2016,2015-09-27,Guingamp,AS Monaco
+3829487,7,27,Ligue 1,2015/2016,2015-09-26,Stade Malherbe Caen,Gazélec Ajaccio
+3829486,7,27,Ligue 1,2015/2016,2015-09-26,Bastia,Toulouse
+3829485,7,27,Ligue 1,2015/2016,2015-09-26,Rennes,Troyes
+3829484,7,27,Ligue 1,2015/2016,2015-09-26,Bordeaux,Lyon
+3829483,7,27,Ligue 1,2015/2016,2015-09-26,Nantes,Paris Saint-Germain
+3829482,7,27,Ligue 1,2015/2016,2015-09-25,Stade de Reims,Lille
+3829481,7,27,Ligue 1,2015/2016,2015-09-24,Montpellier,AS Monaco
+3829480,7,27,Ligue 1,2015/2016,2015-09-23,Troyes,Saint-Étienne
+3829477,7,27,Ligue 1,2015/2016,2015-09-23,Toulouse,Olympique de Marseille
+3829476,7,27,Ligue 1,2015/2016,2015-09-23,Lyon,Bastia
+3829475,7,27,Ligue 1,2015/2016,2015-09-23,OGC Nice,Bordeaux
+3829474,7,27,Ligue 1,2015/2016,2015-09-22,Angers,Stade de Reims
+3829473,7,27,Ligue 1,2015/2016,2015-09-22,Paris Saint-Germain,Guingamp
+3829471,7,27,Ligue 1,2015/2016,2015-09-20,Bordeaux,Toulouse
+3829468,7,27,Ligue 1,2015/2016,2015-09-19,Guingamp,Gazélec Ajaccio
+3829467,7,27,Ligue 1,2015/2016,2015-09-19,Stade Malherbe Caen,Montpellier
+3829465,7,27,Ligue 1,2015/2016,2015-09-19,Stade de Reims,Paris Saint-Germain
+3829464,7,27,Ligue 1,2015/2016,2015-09-19,Bastia,OGC Nice
+3829463,7,27,Ligue 1,2015/2016,2015-09-18,Rennes,Lille
+3829462,7,27,Ligue 1,2015/2016,2015-09-13,Gazélec Ajaccio,AS Monaco
+3829460,7,27,Ligue 1,2015/2016,2015-09-13,Nantes,Rennes
+3829458,7,27,Ligue 1,2015/2016,2015-09-12,Toulouse,Stade de Reims
+3829457,7,27,Ligue 1,2015/2016,2015-09-12,Montpellier,Saint-Étienne
+3829456,7,27,Ligue 1,2015/2016,2015-09-12,Lorient,Angers
+3829455,7,27,Ligue 1,2015/2016,2015-09-12,Troyes,Stade Malherbe Caen
+3829453,7,27,Ligue 1,2015/2016,2015-09-11,Paris Saint-Germain,Bordeaux
+3829452,7,27,Ligue 1,2015/2016,2015-08-30,Bordeaux,Nantes
+3829451,7,27,Ligue 1,2015/2016,2015-08-30,Saint-Étienne,Bastia
+3829450,7,27,Ligue 1,2015/2016,2015-08-30,AS Monaco,Paris Saint-Germain
+3829449,7,27,Ligue 1,2015/2016,2015-08-29,Rennes,Toulouse
+3829448,7,27,Ligue 1,2015/2016,2015-08-29,Stade de Reims,Lorient
+3829447,7,27,Ligue 1,2015/2016,2015-08-29,Lille,Gazélec Ajaccio
+3829446,7,27,Ligue 1,2015/2016,2015-08-29,Troyes,Montpellier
+3829443,7,27,Ligue 1,2015/2016,2015-08-28,Guingamp,Olympique de Marseille
+3829442,7,27,Ligue 1,2015/2016,2015-08-23,Lille,Bordeaux
+3829440,7,27,Ligue 1,2015/2016,2015-08-23,Lorient,Saint-Étienne
+3829437,7,27,Ligue 1,2015/2016,2015-08-22,Gazélec Ajaccio,Angers
+3829436,7,27,Ligue 1,2015/2016,2015-08-22,Nantes,Stade de Reims
+3829435,7,27,Ligue 1,2015/2016,2015-08-22,Lyon,Rennes
+3829434,7,27,Ligue 1,2015/2016,2015-08-22,Bastia,Guingamp
+3829432,7,27,Ligue 1,2015/2016,2015-08-16,Paris Saint-Germain,Gazélec Ajaccio
+3829431,7,27,Ligue 1,2015/2016,2015-08-16,Lorient,Bastia
+3829430,7,27,Ligue 1,2015/2016,2015-08-16,Stade de Reims,Olympique de Marseille
+3829429,7,27,Ligue 1,2015/2016,2015-08-15,Rennes,Montpellier
+3829427,7,27,Ligue 1,2015/2016,2015-08-15,Troyes,OGC Nice
+3829426,7,27,Ligue 1,2015/2016,2015-08-15,Guingamp,Lyon
+3829425,7,27,Ligue 1,2015/2016,2015-08-15,Angers,Nantes
+3829424,7,27,Ligue 1,2015/2016,2015-08-15,Saint-Étienne,Bordeaux
+3829423,7,27,Ligue 1,2015/2016,2015-08-14,AS Monaco,Lille
+3829422,7,27,Ligue 1,2015/2016,2015-08-09,Lyon,Lorient
+3829421,7,27,Ligue 1,2015/2016,2015-08-09,Toulouse,Saint-Étienne
+3829420,7,27,Ligue 1,2015/2016,2015-08-09,Bordeaux,Stade de Reims
+3829419,7,27,Ligue 1,2015/2016,2015-08-08,Montpellier,Angers
+3829418,7,27,Ligue 1,2015/2016,2015-08-08,Nantes,Guingamp
+3829417,7,27,Ligue 1,2015/2016,2015-08-08,Troyes,Gazélec Ajaccio
+3829415,7,27,Ligue 1,2015/2016,2015-08-08,Bastia,Rennes
+3877115,44,107,Major League Soccer,2023,2023-09-21,Inter Miami,Toronto FC
+3877170,44,107,Major League Soccer,2023,2023-10-08,Inter Miami,Cincinnati
+3877060,44,107,Major League Soccer,2023,2023-08-27,New York Red Bulls,Inter Miami
+3877090,44,107,Major League Soccer,2023,2023-09-04,LAFC,Inter Miami
+3877194,44,107,Major League Soccer,2023,2023-10-22,Charlotte,Inter Miami
+3877072,44,107,Major League Soccer,2023,2023-08-31,Inter Miami,Nashville SC
+3750234,116,68,North American League,1977,1977-08-28,NY Cosmos,Seattle Sounders
+3754217,2,27,Premier League,2015/2016,2015-09-19,Chelsea,Arsenal
+3754117,2,27,Premier League,2015/2016,2015-12-13,Aston Villa,Arsenal
+3754296,2,27,Premier League,2015/2016,2015-12-21,Arsenal,Manchester City
+3753983,2,27,Premier League,2015/2016,2015-10-31,Swansea City,Arsenal
+3754160,2,27,Premier League,2015/2016,2015-12-05,Arsenal,Sunderland
+3754129,2,27,Premier League,2015/2016,2015-08-24,Arsenal,Liverpool
+3754309,2,27,Premier League,2015/2016,2015-12-26,Southampton,Arsenal
+3754047,2,27,Premier League,2015/2016,2015-11-29,Liverpool,Swansea City
+3754058,2,27,Premier League,2015/2016,2016-01-02,Leicester City,AFC Bournemouth
+3754245,2,27,Premier League,2015/2016,2015-10-17,West Bromwich Albion,Sunderland
+3754136,2,27,Premier League,2015/2016,2015-12-19,Newcastle United,Aston Villa
+3754037,2,27,Premier League,2015/2016,2016-04-30,Everton,AFC Bournemouth
+3754039,2,27,Premier League,2015/2016,2016-02-13,Crystal Palace,Watford
+3754041,2,27,Premier League,2015/2016,2016-05-15,Arsenal,Aston Villa
+3754042,2,27,Premier League,2015/2016,2016-05-15,West Bromwich Albion,Liverpool
+3754043,2,27,Premier League,2015/2016,2016-03-20,Tottenham Hotspur,AFC Bournemouth
+3754045,2,27,Premier League,2015/2016,2015-12-29,Leicester City,Manchester City
+3754048,2,27,Premier League,2015/2016,2016-04-13,Crystal Palace,Everton
+3754049,2,27,Premier League,2015/2016,2016-02-27,Leicester City,Norwich City
+3754050,2,27,Premier League,2015/2016,2016-03-01,Sunderland,Crystal Palace
+3754052,2,27,Premier League,2015/2016,2016-03-19,West Bromwich Albion,Norwich City
+3754053,2,27,Premier League,2015/2016,2016-03-13,Aston Villa,Tottenham Hotspur
+3754055,2,27,Premier League,2015/2016,2016-05-11,Liverpool,Chelsea
+3754226,2,27,Premier League,2015/2016,2015-12-30,Sunderland,Liverpool
+3754014,2,27,Premier League,2015/2016,2015-12-26,Stoke City,Manchester United
+3754091,2,27,Premier League,2015/2016,2015-10-24,Stoke City,Watford
+3754135,2,27,Premier League,2015/2016,2015-12-05,Stoke City,Manchester City
+3754293,2,27,Premier League,2015/2016,2015-11-07,Stoke City,Chelsea
+3754339,2,27,Premier League,2015/2016,2015-09-26,Stoke City,AFC Bournemouth
+3754146,2,27,Premier League,2015/2016,2015-09-19,Stoke City,Leicester City
+3754347,2,27,Premier League,2015/2016,2015-12-05,Manchester United,West Ham United
+3754255,2,27,Premier League,2015/2016,2015-12-13,Liverpool,West Bromwich Albion
+3754278,2,27,Premier League,2015/2016,2015-10-03,AFC Bournemouth,Watford
+3753979,2,27,Premier League,2015/2016,2015-11-23,Crystal Palace,Sunderland
+3753972,2,27,Premier League,2015/2016,2015-11-21,Swansea City,AFC Bournemouth
+3753978,2,27,Premier League,2015/2016,2015-09-26,Southampton,Swansea City
+3753974,2,27,Premier League,2015/2016,2015-12-26,Newcastle United,Everton
+3753993,2,27,Premier League,2015/2016,2015-08-15,Sunderland,Norwich City
+3754015,2,27,Premier League,2015/2016,2015-10-25,Manchester United,Manchester City
+3754038,2,27,Premier League,2015/2016,2015-11-29,Norwich City,Arsenal
+3754001,2,27,Premier League,2015/2016,2015-09-26,Newcastle United,Chelsea
+3754007,2,27,Premier League,2015/2016,2015-08-29,Stoke City,West Bromwich Albion
+3754008,2,27,Premier League,2015/2016,2015-09-26,Manchester United,Sunderland
+3754029,2,27,Premier League,2015/2016,2015-11-02,Tottenham Hotspur,Aston Villa
+3753995,2,27,Premier League,2015/2016,2015-10-03,Chelsea,Southampton
+3753999,2,27,Premier League,2015/2016,2015-10-17,Watford,Arsenal
+3754017,2,27,Premier League,2015/2016,2015-10-24,Aston Villa,Swansea City
+3754006,2,27,Premier League,2015/2016,2015-10-31,West Bromwich Albion,Leicester City
+3754023,2,27,Premier League,2015/2016,2015-08-29,AFC Bournemouth,Leicester City
+3753984,2,27,Premier League,2015/2016,2015-08-29,Liverpool,West Ham United
+3754011,2,27,Premier League,2015/2016,2015-09-20,Southampton,Manchester United
+3754010,2,27,Premier League,2015/2016,2015-09-19,Newcastle United,Watford
+3754028,2,27,Premier League,2015/2016,2015-11-28,Manchester City,Southampton
+3753996,2,27,Premier League,2015/2016,2015-11-21,Chelsea,Norwich City
+3754025,2,27,Premier League,2015/2016,2015-12-19,Chelsea,Sunderland
+3754068,2,27,Premier League,2015/2016,2015-09-19,Aston Villa,West Bromwich Albion
+3754056,2,27,Premier League,2015/2016,2015-12-28,Everton,Stoke City
+3754040,2,27,Premier League,2015/2016,2015-09-20,Liverpool,Norwich City
+3754074,2,27,Premier League,2015/2016,2015-10-04,Swansea City,Tottenham Hotspur
+3754076,2,27,Premier League,2015/2016,2015-10-03,Sunderland,West Ham United
+3754067,2,27,Premier League,2015/2016,2015-10-17,Crystal Palace,West Ham United
+3754079,2,27,Premier League,2015/2016,2015-10-03,Manchester City,Newcastle United
+3754090,2,27,Premier League,2015/2016,2015-10-31,Newcastle United,Stoke City
+3754083,2,27,Premier League,2015/2016,2015-08-29,Chelsea,Crystal Palace
+3754077,2,27,Premier League,2015/2016,2015-09-19,Manchester City,West Ham United
+3754060,2,27,Premier League,2015/2016,2015-10-04,Everton,Liverpool
+3754073,2,27,Premier League,2015/2016,2015-12-05,Chelsea,AFC Bournemouth
+3754085,2,27,Premier League,2015/2016,2015-12-05,Swansea City,Leicester City
+3754051,2,27,Premier League,2015/2016,2015-12-20,Watford,Liverpool
+3754093,2,27,Premier League,2015/2016,2015-11-29,Tottenham Hotspur,Chelsea
+3754046,2,27,Premier League,2015/2016,2015-12-07,Everton,Crystal Palace
+3754072,2,27,Premier League,2015/2016,2015-12-12,Sunderland,Watford
+3754082,2,27,Premier League,2015/2016,2015-11-01,Everton,Sunderland
+3754106,2,27,Premier League,2015/2016,2015-09-13,Leicester City,Aston Villa
+3754099,2,27,Premier League,2015/2016,2015-10-03,Crystal Palace,West Bromwich Albion
+3754098,2,27,Premier League,2015/2016,2015-10-31,Chelsea,Liverpool
+3754057,2,27,Premier League,2015/2016,2015-12-26,Tottenham Hotspur,Norwich City
+3754112,2,27,Premier League,2015/2016,2015-08-09,Newcastle United,Southampton
+3754104,2,27,Premier League,2015/2016,2015-08-22,Norwich City,Stoke City
+3754054,2,27,Premier League,2015/2016,2015-12-26,Manchester City,Sunderland
+3754113,2,27,Premier League,2015/2016,2015-12-05,Southampton,Aston Villa
+3754107,2,27,Premier League,2015/2016,2015-08-14,Aston Villa,Manchester United
+3754105,2,27,Premier League,2015/2016,2015-09-28,West Bromwich Albion,Everton
+3754097,2,27,Premier League,2015/2016,2015-08-08,Manchester United,Tottenham Hotspur
+3754102,2,27,Premier League,2015/2016,2015-10-18,Newcastle United,Norwich City
+3754115,2,27,Premier League,2015/2016,2015-10-17,Chelsea,Aston Villa
+3754148,2,27,Premier League,2015/2016,2015-09-13,Sunderland,Tottenham Hotspur
+3754169,2,27,Premier League,2015/2016,2015-09-19,AFC Bournemouth,Sunderland
+3754174,2,27,Premier League,2015/2016,2015-09-26,Leicester City,Arsenal
+3754185,2,27,Premier League,2015/2016,2015-11-21,Watford,Manchester United
+3754162,2,27,Premier League,2015/2016,2015-12-12,AFC Bournemouth,Manchester United
+3754096,2,27,Premier League,2015/2016,2015-12-12,West Ham United,Stoke City
+3754171,2,27,Premier League,2015/2016,2015-10-04,Arsenal,Manchester United
+3754119,2,27,Premier League,2015/2016,2015-10-25,Sunderland,Newcastle United
+3754126,2,27,Premier League,2015/2016,2015-10-24,Arsenal,Everton
+3754133,2,27,Premier League,2015/2016,2015-10-24,Norwich City,West Bromwich Albion
+3754167,2,27,Premier League,2015/2016,2015-10-31,Manchester City,Norwich City
+3754145,2,27,Premier League,2015/2016,2015-08-10,West Bromwich Albion,Manchester City
+3754153,2,27,Premier League,2015/2016,2015-12-19,Stoke City,Crystal Palace
+3754143,2,27,Premier League,2015/2016,2015-12-06,Newcastle United,Liverpool
+3754186,2,27,Premier League,2015/2016,2015-11-28,Leicester City,Manchester United
+3754130,2,27,Premier League,2015/2016,2015-12-28,Norwich City,Aston Villa
+3754188,2,27,Premier League,2015/2016,2015-12-19,Southampton,Tottenham Hotspur
+3754178,2,27,Premier League,2015/2016,2015-11-28,Aston Villa,Watford
+3754157,2,27,Premier League,2015/2016,2015-11-28,AFC Bournemouth,Everton
+3754166,2,27,Premier League,2015/2016,2015-12-19,Everton,Leicester City
+3754211,2,27,Premier League,2015/2016,2015-11-21,Newcastle United,Leicester City
+3754150,2,27,Premier League,2015/2016,2015-11-28,Sunderland,Stoke City
+3754218,2,27,Premier League,2015/2016,2015-12-12,Crystal Palace,Southampton
+3754205,2,27,Premier League,2015/2016,2015-08-29,Newcastle United,Arsenal
+3754221,2,27,Premier League,2015/2016,2015-08-30,Swansea City,Manchester United
+3754198,2,27,Premier League,2015/2016,2015-10-17,Tottenham Hotspur,Liverpool
+3754193,2,27,Premier League,2015/2016,2015-10-17,Manchester City,AFC Bournemouth
+3754222,2,27,Premier League,2015/2016,2015-09-20,Tottenham Hotspur,Crystal Palace
+3754213,2,27,Premier League,2015/2016,2015-09-12,Watford,Swansea City
+3754212,2,27,Premier League,2015/2016,2015-09-26,Liverpool,Aston Villa
+3754223,2,27,Premier League,2015/2016,2015-10-31,Crystal Palace,Manchester United
+3754197,2,27,Premier League,2015/2016,2015-09-26,Tottenham Hotspur,Manchester City
+3754208,2,27,Premier League,2015/2016,2015-11-21,Manchester City,Liverpool
+3754204,2,27,Premier League,2015/2016,2015-08-29,Aston Villa,Sunderland
+3754194,2,27,Premier League,2015/2016,2015-11-07,West Ham United,Everton
+3754219,2,27,Premier League,2015/2016,2015-12-19,West Bromwich Albion,AFC Bournemouth
+3754254,2,27,Premier League,2015/2016,2015-08-22,Manchester United,Newcastle United
+3754230,2,27,Premier League,2015/2016,2015-10-25,Liverpool,Southampton
+3754285,2,27,Premier League,2015/2016,2015-12-26,Aston Villa,West Ham United
+3754233,2,27,Premier League,2015/2016,2015-08-23,Everton,Manchester City
+3754270,2,27,Premier League,2015/2016,2015-08-15,Tottenham Hotspur,Stoke City
+3754237,2,27,Premier League,2015/2016,2015-08-08,Leicester City,Sunderland
+3754257,2,27,Premier League,2015/2016,2015-09-12,Crystal Palace,Manchester City
+3754266,2,27,Premier League,2015/2016,2015-09-27,Watford,Crystal Palace
+3754256,2,27,Premier League,2015/2016,2015-10-17,Everton,Manchester United
+3754288,2,27,Premier League,2015/2016,2015-10-24,West Ham United,Chelsea
+3754238,2,27,Premier League,2015/2016,2015-11-07,AFC Bournemouth,Newcastle United
+3754269,2,27,Premier League,2015/2016,2015-10-19,Swansea City,Stoke City
+3754234,2,27,Premier League,2015/2016,2015-10-25,AFC Bournemouth,Tottenham Hotspur
+3754246,2,27,Premier League,2015/2016,2015-08-29,Manchester City,Watford
+3754273,2,27,Premier League,2015/2016,2015-10-31,Watford,West Ham United
+3754263,2,27,Premier League,2015/2016,2015-10-24,Leicester City,Crystal Palace
+3754268,2,27,Premier League,2015/2016,2015-08-29,Tottenham Hotspur,Everton
+3754286,2,27,Premier League,2015/2016,2015-12-05,Watford,Norwich City
+3754291,2,27,Premier League,2015/2016,2015-12-28,Watford,Tottenham Hotspur
+3754283,2,27,Premier League,2015/2016,2015-11-21,Everton,Aston Villa
+3754235,2,27,Premier League,2015/2016,2015-11-29,West Ham United,West Bromwich Albion
+3754279,2,27,Premier League,2015/2016,2015-12-26,Swansea City,West Bromwich Albion
+3754276,2,27,Premier League,2015/2016,2015-12-13,Tottenham Hotspur,Newcastle United
+3754287,2,27,Premier League,2015/2016,2015-12-26,Chelsea,Watford
+3754259,2,27,Premier League,2015/2016,2015-12-20,Swansea City,West Ham United
+3754335,2,27,Premier League,2015/2016,2015-10-03,Norwich City,Leicester City
+3754298,2,27,Premier League,2015/2016,2015-09-19,Swansea City,Everton
+3754315,2,27,Premier League,2015/2016,2015-09-12,Norwich City,AFC Bournemouth
+3754330,2,27,Premier League,2015/2016,2015-10-03,Aston Villa,Stoke City
+3754337,2,27,Premier League,2015/2016,2015-08-30,Southampton,Norwich City
+3754297,2,27,Premier League,2015/2016,2015-11-07,Manchester United,West Bromwich Albion
+3754301,2,27,Premier League,2015/2016,2015-11-21,West Bromwich Albion,Arsenal
+3754323,2,27,Premier League,2015/2016,2015-09-26,West Ham United,Norwich City
+3754304,2,27,Premier League,2015/2016,2015-11-28,Crystal Palace,Newcastle United
+3754311,2,27,Premier League,2015/2016,2015-11-07,Norwich City,Swansea City
+3754328,2,27,Premier League,2015/2016,2015-12-12,Manchester City,Swansea City
+3754325,2,27,Premier League,2015/2016,2015-09-12,West Bromwich Albion,Southampton
+3754329,2,27,Premier League,2015/2016,2015-09-14,West Ham United,Newcastle United
+3754302,2,27,Premier League,2015/2016,2015-10-17,Southampton,Leicester City
+3754013,2,27,Premier League,2015/2016,2015-12-14,Leicester City,Chelsea
+3754044,2,27,Premier League,2015/2016,2015-12-19,Manchester United,Norwich City
+3754351,2,27,Premier League,2015/2016,2015-11-08,Liverpool,Crystal Palace
+3754343,2,27,Premier League,2015/2016,2015-12-26,Liverpool,Leicester City
+3754109,2,27,Premier League,2015/2016,2015-11-22,Tottenham Hotspur,West Ham United
+3754182,2,27,Premier League,2015/2016,2015-12-12,Norwich City,Everton
+3754240,2,27,Premier League,2015/2016,2015-09-12,Arsenal,Stoke City
+3754336,2,27,Premier League,2015/2016,2015-09-12,Everton,Chelsea
+3754247,2,27,Premier League,2015/2016,2015-11-21,Southampton,Stoke City
+3754156,2,27,Premier League,2015/2016,2015-11-07,Leicester City,Watford
+3754265,2,27,Premier League,2015/2016,2015-11-08,Arsenal,Tottenham Hotspur
+3754000,2,27,Premier League,2015/2016,2015-11-07,Sunderland,Southampton
+3754003,2,27,Premier League,2015/2016,2015-09-12,Manchester United,Liverpool
+3754344,2,27,Premier League,2015/2016,2015-08-15,Swansea City,Newcastle United
+3754131,2,27,Premier League,2015/2016,2015-08-22,West Ham United,AFC Bournemouth
+3754300,2,27,Premier League,2015/2016,2015-08-08,Everton,Watford
+3754312,2,27,Premier League,2015/2016,2015-08-16,Crystal Palace,Arsenal
+3754138,2,27,Premier League,2015/2016,2015-08-08,Norwich City,Crystal Palace
+3754203,2,27,Premier League,2015/2016,2015-08-15,West Ham United,Leicester City
+3754190,2,27,Premier League,2015/2016,2015-08-22,Crystal Palace,Aston Villa
+3754066,2,27,Premier League,2015/2016,2015-08-16,Manchester City,Chelsea
+3754034,2,27,Premier League,2015/2016,2015-08-15,Southampton,Everton
+3753985,2,27,Premier League,2015/2016,2015-08-09,Stoke City,Liverpool
+3753987,2,27,Premier League,2015/2016,2015-08-22,Leicester City,Tottenham Hotspur
+3754189,2,27,Premier League,2015/2016,2015-08-23,Watford,Southampton
+3754180,2,27,Premier League,2015/2016,2015-08-22,Sunderland,Swansea City
+3754059,2,27,Premier League,2015/2016,2015-08-23,West Bromwich Albion,Chelsea
+3754064,2,27,Premier League,2015/2016,2016-03-20,Southampton,Liverpool
+3754065,2,27,Premier League,2015/2016,2016-01-13,Tottenham Hotspur,Leicester City
+3754173,2,27,Premier League,2015/2016,2015-12-28,Arsenal,AFC Bournemouth
+3754175,2,27,Premier League,2015/2016,2016-04-02,Sunderland,West Bromwich Albion
+3753973,2,27,Premier League,2015/2016,2016-03-19,Chelsea,West Ham United
+3753975,2,27,Premier League,2015/2016,2016-01-23,Sunderland,AFC Bournemouth
+3753976,2,27,Premier League,2015/2016,2016-03-02,Arsenal,Swansea City
+3753977,2,27,Premier League,2015/2016,2016-03-19,Watford,Stoke City
+3753980,2,27,Premier League,2015/2016,2016-03-19,Everton,Arsenal
+3753981,2,27,Premier League,2015/2016,2016-01-12,Aston Villa,Crystal Palace
+3753982,2,27,Premier League,2015/2016,2016-04-03,Leicester City,Southampton
+3753986,2,27,Premier League,2015/2016,2016-04-10,Liverpool,Stoke City
+3753988,2,27,Premier League,2015/2016,2016-03-12,AFC Bournemouth,Swansea City
+3753989,2,27,Premier League,2015/2016,2016-05-11,Sunderland,Everton
+3753990,2,27,Premier League,2015/2016,2016-04-24,Sunderland,Arsenal
+3753991,2,27,Premier League,2015/2016,2016-03-02,Liverpool,Manchester City
+3753992,2,27,Premier League,2015/2016,2016-05-08,Tottenham Hotspur,Southampton
+3753994,2,27,Premier League,2015/2016,2016-05-15,Southampton,Crystal Palace
+3753997,2,27,Premier League,2015/2016,2016-02-02,West Ham United,Aston Villa
+3753998,2,27,Premier League,2015/2016,2015-12-28,West Ham United,Southampton
+3754002,2,27,Premier League,2015/2016,2016-03-14,Leicester City,Newcastle United
+3754004,2,27,Premier League,2015/2016,2016-01-16,AFC Bournemouth,Norwich City
+3754005,2,27,Premier League,2015/2016,2016-03-02,Stoke City,Newcastle United
+3754009,2,27,Premier League,2015/2016,2016-04-17,Arsenal,Crystal Palace
+3754012,2,27,Premier League,2015/2016,2016-02-27,Southampton,Chelsea
+3754016,2,27,Premier League,2015/2016,2016-04-09,Southampton,Newcastle United
+3754018,2,27,Premier League,2015/2016,2016-05-01,Swansea City,Liverpool
+3754019,2,27,Premier League,2015/2016,2015-12-28,Manchester United,Chelsea
+3754021,2,27,Premier League,2015/2016,2016-01-12,AFC Bournemouth,West Ham United
+3754022,2,27,Premier League,2015/2016,2016-04-09,Crystal Palace,Norwich City
+3754024,2,27,Premier League,2015/2016,2016-04-16,Newcastle United,Swansea City
+3754026,2,27,Premier League,2015/2016,2016-05-07,Crystal Palace,Stoke City
+3754027,2,27,Premier League,2015/2016,2016-01-16,Tottenham Hotspur,Sunderland
+3754030,2,27,Premier League,2015/2016,2016-04-09,Watford,Everton
+3754031,2,27,Premier League,2015/2016,2016-02-13,Sunderland,Manchester United
+3754032,2,27,Premier League,2015/2016,2016-01-13,Stoke City,Norwich City
+3754033,2,27,Premier League,2015/2016,2016-05-07,Leicester City,Everton
+3754035,2,27,Premier League,2015/2016,2016-04-09,Manchester City,West Bromwich Albion
+3754036,2,27,Premier League,2015/2016,2016-01-02,Sunderland,Aston Villa
+3754061,2,27,Premier League,2015/2016,2016-03-05,Chelsea,Stoke City
+3754062,2,27,Premier League,2015/2016,2016-01-13,Chelsea,West Bromwich Albion
+3754063,2,27,Premier League,2015/2016,2016-04-30,Watford,Aston Villa
+3754069,2,27,Premier League,2015/2016,2016-01-02,Arsenal,Newcastle United
+3754070,2,27,Premier League,2015/2016,2016-05-07,Aston Villa,Newcastle United
+3754071,2,27,Premier League,2015/2016,2016-01-13,Swansea City,Sunderland
+3754075,2,27,Premier League,2015/2016,2016-04-02,Aston Villa,Chelsea
+3754080,2,27,Premier League,2015/2016,2016-02-06,Tottenham Hotspur,Watford
+3754081,2,27,Premier League,2015/2016,2016-03-06,West Bromwich Albion,Manchester United
+3754084,2,27,Premier League,2015/2016,2016-01-23,West Bromwich Albion,Aston Villa
+3754086,2,27,Premier League,2015/2016,2016-04-20,West Ham United,Watford
+3754087,2,27,Premier League,2015/2016,2016-04-02,Liverpool,Tottenham Hotspur
+3754088,2,27,Premier League,2015/2016,2016-01-12,Newcastle United,Manchester United
+3754089,2,27,Premier League,2015/2016,2016-02-02,Crystal Palace,AFC Bournemouth
+3754092,2,27,Premier League,2015/2016,2016-05-02,Chelsea,Tottenham Hotspur
+3754094,2,27,Premier League,2015/2016,2016-02-02,Manchester United,Stoke City
+3754095,2,27,Premier League,2015/2016,2016-02-02,Sunderland,Manchester City
+3754100,2,27,Premier League,2015/2016,2016-03-20,Newcastle United,Sunderland
+3754101,2,27,Premier League,2015/2016,2016-01-02,Norwich City,Southampton
+3754103,2,27,Premier League,2015/2016,2016-02-03,Watford,Chelsea
+3754108,2,27,Premier League,2015/2016,2016-05-07,Sunderland,Chelsea
+3754110,2,27,Premier League,2015/2016,2016-01-23,West Ham United,Manchester City
+3754111,2,27,Premier League,2015/2016,2016-01-24,Arsenal,Chelsea
+3754114,2,27,Premier League,2015/2016,2016-01-03,Crystal Palace,Chelsea
+3754116,2,27,Premier League,2015/2016,2016-04-09,Swansea City,Chelsea
+3754118,2,27,Premier League,2015/2016,2016-04-02,Arsenal,Watford
+3754120,2,27,Premier League,2015/2016,2016-02-06,Southampton,West Ham United
+3754121,2,27,Premier League,2015/2016,2016-02-27,Watford,AFC Bournemouth
+3754122,2,27,Premier League,2015/2016,2016-01-02,West Bromwich Albion,Stoke City
+3754123,2,27,Premier League,2015/2016,2016-05-15,Everton,Norwich City
+3754124,2,27,Premier League,2015/2016,2016-03-20,Manchester City,Manchester United
+3754125,2,27,Premier League,2015/2016,2016-01-16,Chelsea,Everton
+3754127,2,27,Premier League,2015/2016,2016-02-06,Stoke City,Everton
+3754132,2,27,Premier League,2015/2016,2016-04-30,Stoke City,Sunderland
+3754134,2,27,Premier League,2015/2016,2016-05-10,West Ham United,Manchester United
+3754137,2,27,Premier League,2015/2016,2016-04-16,Everton,Southampton
+3754139,2,27,Premier League,2015/2016,2016-02-13,Swansea City,Southampton
+3754140,2,27,Premier League,2015/2016,2016-01-03,Everton,Tottenham Hotspur
+3754142,2,27,Premier League,2015/2016,2016-01-13,Manchester City,Everton
+3754144,2,27,Premier League,2015/2016,2016-04-02,AFC Bournemouth,Manchester City
+3754147,2,27,Premier League,2015/2016,2016-02-14,Manchester City,Tottenham Hotspur
+3754149,2,27,Premier League,2015/2016,2016-05-15,Swansea City,Manchester City
+3754151,2,27,Premier League,2015/2016,2016-03-05,Swansea City,Norwich City
+3754152,2,27,Premier League,2015/2016,2016-04-10,Sunderland,Leicester City
+3754154,2,27,Premier League,2015/2016,2016-04-23,Liverpool,Newcastle United
+3754155,2,27,Premier League,2015/2016,2016-04-16,West Bromwich Albion,Watford
+3754158,2,27,Premier League,2015/2016,2016-05-07,West Ham United,Swansea City
+3754159,2,27,Premier League,2015/2016,2016-05-17,Manchester United,AFC Bournemouth
+3754161,2,27,Premier League,2015/2016,2016-01-18,Swansea City,Watford
+3754163,2,27,Premier League,2015/2016,2016-01-24,Everton,Swansea City
+3754164,2,27,Premier League,2015/2016,2016-03-05,Southampton,Sunderland
+3754165,2,27,Premier League,2015/2016,2016-05-01,Manchester United,Leicester City
+3754168,2,27,Premier League,2015/2016,2016-01-16,Southampton,West Bromwich Albion
+3754170,2,27,Premier League,2015/2016,2016-04-30,Newcastle United,Crystal Palace
+3754172,2,27,Premier League,2015/2016,2016-04-16,Norwich City,Sunderland
+3754176,2,27,Premier League,2015/2016,2016-04-02,West Ham United,Crystal Palace
+3754177,2,27,Premier League,2015/2016,2016-03-05,Newcastle United,AFC Bournemouth
+3754179,2,27,Premier League,2015/2016,2016-01-23,Crystal Palace,Tottenham Hotspur
+3754181,2,27,Premier League,2015/2016,2016-03-19,Crystal Palace,Leicester City
+3754183,2,27,Premier League,2015/2016,2016-01-13,Southampton,Watford
+3754184,2,27,Premier League,2015/2016,2016-04-30,Arsenal,Norwich City
+3754187,2,27,Premier League,2015/2016,2016-04-18,Stoke City,Tottenham Hotspur
+3754191,2,27,Premier League,2015/2016,2015-11-01,Southampton,AFC Bournemouth
+3754192,2,27,Premier League,2015/2016,2016-04-30,West Bromwich Albion,West Ham United
+3754195,2,27,Premier League,2015/2016,2015-12-28,West Bromwich Albion,Newcastle United
+3754196,2,27,Premier League,2015/2016,2016-03-12,Stoke City,Southampton
+3754199,2,27,Premier League,2015/2016,2016-05-15,Stoke City,West Ham United
+3754200,2,27,Premier League,2015/2016,2016-01-23,Manchester United,Southampton
+3754201,2,27,Premier League,2015/2016,2016-02-02,Arsenal,Southampton
+3754202,2,27,Premier League,2015/2016,2016-01-17,Stoke City,Arsenal
+3754206,2,27,Premier League,2015/2016,2016-04-19,Newcastle United,Manchester City
+3754207,2,27,Premier League,2015/2016,2016-05-11,Norwich City,Watford
+3754209,2,27,Premier League,2015/2016,2016-04-10,Tottenham Hotspur,Manchester United
+3754210,2,27,Premier League,2015/2016,2016-05-07,Norwich City,Manchester United
+3754214,2,27,Premier League,2015/2016,2016-02-14,Aston Villa,Liverpool
+3754215,2,27,Premier League,2015/2016,2015-12-05,West Bromwich Albion,Tottenham Hotspur
+3754216,2,27,Premier League,2015/2016,2016-04-17,AFC Bournemouth,Liverpool
+3754220,2,27,Premier League,2015/2016,2016-03-06,Crystal Palace,Liverpool
+3754224,2,27,Premier League,2015/2016,2016-03-19,Swansea City,Aston Villa
+3754225,2,27,Premier League,2015/2016,2016-05-07,AFC Bournemouth,West Bromwich Albion
+3754227,2,27,Premier League,2015/2016,2016-04-17,Leicester City,West Ham United
+3754228,2,27,Premier League,2015/2016,2016-04-24,Leicester City,Swansea City
+3754229,2,27,Premier League,2015/2016,2016-05-15,Chelsea,Leicester City
+3754231,2,27,Premier League,2015/2016,2016-03-01,Leicester City,West Bromwich Albion
+3754232,2,27,Premier League,2015/2016,2016-03-02,Manchester United,Watford
+3754236,2,27,Premier League,2015/2016,2016-02-27,West Bromwich Albion,Crystal Palace
+3754239,2,27,Premier League,2015/2016,2016-02-28,Manchester United,Arsenal
+3754241,2,27,Premier League,2015/2016,2016-04-09,West Ham United,Arsenal
+3754242,2,27,Premier League,2015/2016,2016-04-23,AFC Bournemouth,Chelsea
+3754243,2,27,Premier League,2015/2016,2016-04-02,Norwich City,Newcastle United
+3754244,2,27,Premier League,2015/2016,2016-02-13,Norwich City,West Ham United
+3754249,2,27,Premier League,2015/2016,2016-03-05,Manchester City,Aston Villa
+3754250,2,27,Premier League,2015/2016,2016-01-16,Aston Villa,Leicester City
+3754251,2,27,Premier League,2015/2016,2016-01-02,West Ham United,Liverpool
+3754252,2,27,Premier League,2015/2016,2016-02-03,Everton,Newcastle United
+3754253,2,27,Premier League,2015/2016,2016-02-07,AFC Bournemouth,Arsenal
+3754260,2,27,Premier League,2015/2016,2016-01-16,Manchester City,Crystal Palace
+3754261,2,27,Premier League,2015/2016,2016-02-14,Arsenal,Leicester City
+3754262,2,27,Premier League,2015/2016,2016-04-09,Aston Villa,AFC Bournemouth
+3754264,2,27,Premier League,2015/2016,2016-02-13,Chelsea,Newcastle United
+3754295,2,27,Premier League,2015/2016,2016-04-16,Manchester United,Aston Villa
+3754271,2,27,Premier League,2015/2016,2016-01-23,Watford,Newcastle United
+3754272,2,27,Premier League,2015/2016,2016-04-02,Stoke City,Swansea City
+3754274,2,27,Premier League,2015/2016,2016-02-13,AFC Bournemouth,Stoke City
+3754275,2,27,Premier League,2015/2016,2016-02-02,Leicester City,Liverpool
+3754277,2,27,Premier League,2015/2016,2016-03-05,Everton,West Ham United
+3754280,2,27,Premier League,2015/2016,2016-03-01,Norwich City,Chelsea
+3754281,2,27,Premier League,2015/2016,2016-02-07,Chelsea,Manchester United
+3754282,2,27,Premier League,2015/2016,2016-04-23,Aston Villa,Southampton
+3754284,2,27,Premier League,2015/2016,2016-04-21,Arsenal,West Bromwich Albion
+3754289,2,27,Premier League,2015/2016,2016-03-05,Watford,Leicester City
+3754290,2,27,Premier League,2015/2016,2016-02-06,Manchester City,Leicester City
+3754292,2,27,Premier League,2015/2016,2016-02-06,Newcastle United,West Bromwich Albion
+3754294,2,27,Premier League,2015/2016,2016-04-20,Liverpool,Everton
+3754248,2,27,Premier League,2015/2016,2015-12-26,AFC Bournemouth,Crystal Palace
+3754299,2,27,Premier League,2015/2016,2016-04-03,Manchester United,Everton
+3754303,2,27,Premier League,2015/2016,2016-02-06,Swansea City,Crystal Palace
+3754305,2,27,Premier League,2015/2016,2016-01-13,Liverpool,Arsenal
+3754306,2,27,Premier League,2015/2016,2016-02-06,Aston Villa,Norwich City
+3754307,2,27,Premier League,2015/2016,2016-04-23,Manchester City,Stoke City
+3754308,2,27,Premier League,2015/2016,2016-05-15,Watford,Sunderland
+3754310,2,27,Premier League,2015/2016,2016-04-20,Manchester United,Crystal Palace
+3754313,2,27,Premier League,2015/2016,2016-03-12,Norwich City,Manchester City
+3754314,2,27,Premier League,2015/2016,2016-05-08,Manchester City,Arsenal
+3754316,2,27,Premier League,2015/2016,2016-02-06,Liverpool,Sunderland
+3754317,2,27,Premier League,2015/2016,2016-02-02,Norwich City,Tottenham Hotspur
+3754318,2,27,Premier League,2015/2016,2016-03-05,Tottenham Hotspur,Arsenal
+3754319,2,27,Premier League,2015/2016,2016-01-02,Manchester United,Swansea City
+3754320,2,27,Premier League,2015/2016,2016-05-01,Southampton,Manchester City
+3754321,2,27,Premier League,2015/2016,2016-02-27,Stoke City,Aston Villa
+3754322,2,27,Premier League,2015/2016,2016-04-16,Chelsea,Manchester City
+3754324,2,27,Premier League,2015/2016,2016-02-28,Tottenham Hotspur,Swansea City
+3754326,2,27,Premier League,2015/2016,2015-12-28,Crystal Palace,Swansea City
+3754327,2,27,Premier League,2015/2016,2016-03-01,Aston Villa,Everton
+3754331,2,27,Premier League,2015/2016,2016-02-27,West Ham United,Sunderland
+3754332,2,27,Premier League,2015/2016,2016-04-25,Tottenham Hotspur,West Bromwich Albion
+3754333,2,27,Premier League,2015/2016,2016-05-15,Newcastle United,Tottenham Hotspur
+3754334,2,27,Premier League,2015/2016,2016-03-01,AFC Bournemouth,Southampton
+3754338,2,27,Premier League,2015/2016,2016-01-16,Newcastle United,West Ham United
+3754340,2,27,Premier League,2015/2016,2016-02-02,West Bromwich Albion,Swansea City
+3754341,2,27,Premier League,2015/2016,2016-01-23,Leicester City,Stoke City
+3754342,2,27,Premier League,2015/2016,2016-05-08,Liverpool,Watford
+3754345,2,27,Premier League,2015/2016,2016-01-17,Liverpool,Manchester United
+3754346,2,27,Premier League,2015/2016,2016-01-02,Watford,Manchester City
+3754348,2,27,Premier League,2015/2016,2016-01-23,Norwich City,Liverpool
+3754349,2,27,Premier League,2015/2016,2016-03-02,West Ham United,Tottenham Hotspur
+3754350,2,27,Premier League,2015/2016,2016-02-13,Everton,West Bromwich Albion
+3754258,2,27,Premier League,2015/2016,2015-11-08,Aston Villa,Manchester City
+3754020,2,27,Premier League,2015/2016,2015-08-17,Liverpool,AFC Bournemouth
+3754267,2,27,Premier League,2015/2016,2015-08-15,Watford,West Bromwich Albion
+3754141,2,27,Premier League,2015/2016,2015-08-09,Arsenal,West Ham United
+3754128,2,27,Premier League,2015/2016,2015-08-08,AFC Bournemouth,Aston Villa
+3754078,2,27,Premier League,2015/2016,2015-08-08,Chelsea,Swansea City
+3749493,2,44,Premier League,2003/2004,2003-08-16,Arsenal,Everton
+3749448,2,44,Premier League,2003/2004,2004-04-09,Arsenal,Liverpool
+3749196,2,44,Premier League,2003/2004,2003-11-08,Arsenal,Tottenham Hotspur
+3749454,2,44,Premier League,2003/2004,2003-08-31,Manchester City,Arsenal
+3749603,2,44,Premier League,2003/2004,2004-05-09,Fulham,Arsenal
+3749052,2,44,Premier League,2003/2004,2004-02-07,Wolverhampton Wanderers,Arsenal
+3749296,2,44,Premier League,2003/2004,2003-09-13,Arsenal,Portsmouth
+3749522,2,44,Premier League,2003/2004,2003-12-26,Arsenal,Wolverhampton Wanderers
+3749246,2,44,Premier League,2003/2004,2004-03-28,Arsenal,Manchester United
+3749257,2,44,Premier League,2003/2004,2004-05-15,Arsenal,Leicester City
+3749642,2,44,Premier League,2003/2004,2004-02-28,Arsenal,Charlton Athletic
+3749358,2,44,Premier League,2003/2004,2003-08-24,Middlesbrough,Arsenal
+3749346,2,44,Premier League,2003/2004,2003-11-01,Leeds United,Arsenal
+3749253,2,44,Premier League,2003/2004,2003-10-04,Liverpool,Arsenal
+3749079,2,44,Premier League,2003/2004,2003-10-18,Arsenal,Chelsea
+3749465,2,44,Premier League,2003/2004,2004-03-13,Blackburn Rovers,Arsenal
+3749133,2,44,Premier League,2003/2004,2004-01-18,Aston Villa,Arsenal
+3749528,2,44,Premier League,2003/2004,2003-09-26,Arsenal,Newcastle United
+3749233,2,44,Premier League,2003/2004,2004-02-01,Arsenal,Manchester City
+3749462,2,44,Premier League,2003/2004,2004-05-01,Arsenal,Birmingham City
+3749552,2,44,Premier League,2003/2004,2003-09-21,Manchester United,Arsenal
+3749276,2,44,Premier League,2003/2004,2004-02-21,Chelsea,Arsenal
+3749068,2,44,Premier League,2003/2004,2004-04-25,Tottenham Hotspur,Arsenal
+3749310,2,44,Premier League,2003/2004,2003-12-29,Southampton,Arsenal
+3749434,2,44,Premier League,2003/2004,2003-11-22,Birmingham City,Arsenal
+3749192,2,44,Premier League,2003/2004,2003-11-30,Arsenal,Fulham
+3749360,2,44,Premier League,2003/2004,2003-12-14,Arsenal,Blackburn Rovers
+3749453,2,44,Premier League,2003/2004,2004-04-16,Arsenal,Leeds United
+3749278,2,44,Premier League,2003/2004,2003-12-20,Bolton Wanderers,Arsenal
+3749274,2,44,Premier League,2003/2004,2004-05-04,Portsmouth,Arsenal
+3749590,2,44,Premier League,2003/2004,2003-12-06,Leicester City,Arsenal
+3749631,2,44,Premier League,2003/2004,2004-02-10,Arsenal,Southampton
+3749117,2,44,Premier League,2003/2004,2004-01-07,Everton,Arsenal
+3749108,2,44,Premier League,2003/2004,2003-08-27,Arsenal,Aston Villa
+3749153,2,44,Premier League,2003/2004,2004-01-10,Arsenal,Middlesbrough
+3749403,2,44,Premier League,2003/2004,2004-03-20,Arsenal,Bolton Wanderers
+3749526,2,44,Premier League,2003/2004,2003-10-26,Charlton Athletic,Arsenal
+3749431,2,44,Premier League,2003/2004,2004-04-11,Newcastle United,Arsenal
+3879608,12,27,Serie A,2015/2016,2015-11-07,Hellas Verona,Bologna
+3879551,12,27,Serie A,2015/2016,2015-09-27,Hellas Verona,Lazio
+3879575,12,27,Serie A,2015/2016,2015-10-18,Hellas Verona,Udinese
+3879542,12,27,Serie A,2015/2016,2015-09-23,Inter Milan,Hellas Verona
+3879600,12,27,Serie A,2015/2016,2015-11-01,Carpi,Hellas Verona
+3879557,12,27,Serie A,2015/2016,2015-10-03,Chievo,Hellas Verona
+3879819,12,27,Serie A,2015/2016,2016-04-16,Carpi,Genoa
+3878541,12,27,Serie A,2015/2016,2015-08-22,Hellas Verona,AS Roma
+3879664,12,27,Serie A,2015/2016,2015-12-20,Sampdoria,Palermo
+3879863,12,27,Serie A,2015/2016,2016-05-08,Atalanta,Udinese
+3879773,12,27,Serie A,2015/2016,2016-03-06,Frosinone,Udinese
+3879847,12,27,Serie A,2015/2016,2016-04-30,Udinese,Torino
+3879862,12,27,Serie A,2015/2016,2016-05-08,Torino,Napoli
+3879817,12,27,Serie A,2015/2016,2016-04-16,Inter Milan,Napoli
+3879825,12,27,Serie A,2015/2016,2016-04-17,Lazio,Empoli
+3879750,12,27,Serie A,2015/2016,2016-02-21,Atalanta,Fiorentina
+3879567,12,27,Serie A,2015/2016,2015-10-17,AS Roma,Empoli
+3879785,12,27,Serie A,2015/2016,2016-03-13,Lazio,Atalanta
+3879705,12,27,Serie A,2015/2016,2016-01-24,Sassuolo,Bologna
+3879628,12,27,Serie A,2015/2016,2015-11-28,AC Milan,Sampdoria
+3879665,12,27,Serie A,2015/2016,2015-12-20,Frosinone,AC Milan
+3879699,12,27,Serie A,2015/2016,2016-01-24,Sampdoria,Napoli
+3879703,12,27,Serie A,2015/2016,2016-01-24,Lazio,Chievo
+3879609,12,27,Serie A,2015/2016,2015-11-08,Napoli,Udinese
+3879653,12,27,Serie A,2015/2016,2015-12-13,Juventus,Fiorentina
+3879632,12,27,Serie A,2015/2016,2015-11-29,AS Roma,Atalanta
+3879663,12,27,Serie A,2015/2016,2015-12-20,Hellas Verona,Sassuolo
+3879645,12,27,Serie A,2015/2016,2015-12-06,Bologna,Napoli
+3879579,12,27,Serie A,2015/2016,2015-10-24,Palermo,Inter Milan
+3879566,12,27,Serie A,2015/2016,2015-10-04,Udinese,Genoa
+3879587,12,27,Serie A,2015/2016,2015-10-27,Bologna,Inter Milan
+3879556,12,27,Serie A,2015/2016,2015-09-28,Frosinone,Empoli
+3879585,12,27,Serie A,2015/2016,2015-10-25,AC Milan,Sassuolo
+3879582,12,27,Serie A,2015/2016,2015-10-25,Lazio,Torino
+3879564,12,27,Serie A,2015/2016,2015-10-04,Palermo,AS Roma
+3879562,12,27,Serie A,2015/2016,2015-10-04,AC Milan,Napoli
+3879837,12,27,Serie A,2015/2016,2016-04-23,Inter Milan,Udinese
+3879838,12,27,Serie A,2015/2016,2016-04-24,Sampdoria,Lazio
+3879839,12,27,Serie A,2015/2016,2016-04-24,Fiorentina,Juventus
+3879840,12,27,Serie A,2015/2016,2016-04-24,Bologna,Genoa
+3879836,12,27,Serie A,2015/2016,2016-04-21,AC Milan,Carpi
+3879833,12,27,Serie A,2015/2016,2016-04-20,Juventus,Lazio
+3879828,12,27,Serie A,2015/2016,2016-04-20,AS Roma,Torino
+3879832,12,27,Serie A,2015/2016,2016-04-20,Palermo,Atalanta
+3879830,12,27,Serie A,2015/2016,2016-04-20,Genoa,Inter Milan
+3879792,12,27,Serie A,2015/2016,2016-03-20,Sampdoria,Chievo
+3879795,12,27,Serie A,2015/2016,2016-03-20,Hellas Verona,Carpi
+3879794,12,27,Serie A,2015/2016,2016-03-20,Atalanta,Bologna
+3879788,12,27,Serie A,2015/2016,2016-03-19,Empoli,Palermo
+3879787,12,27,Serie A,2015/2016,2016-03-19,AS Roma,Inter Milan
+3879786,12,27,Serie A,2015/2016,2016-03-13,Palermo,Napoli
+3879784,12,27,Serie A,2015/2016,2016-03-13,Genoa,Torino
+3879783,12,27,Serie A,2015/2016,2016-03-13,Udinese,AS Roma
+3879782,12,27,Serie A,2015/2016,2016-03-13,Carpi,Frosinone
+3879781,12,27,Serie A,2015/2016,2016-03-13,Chievo,AC Milan
+3879780,12,27,Serie A,2015/2016,2016-03-13,Fiorentina,Hellas Verona
+3879779,12,27,Serie A,2015/2016,2016-03-12,Inter Milan,Bologna
+3879778,12,27,Serie A,2015/2016,2016-03-12,Empoli,Sampdoria
+3879777,12,27,Serie A,2015/2016,2016-03-11,Juventus,Sassuolo
+3879774,12,27,Serie A,2015/2016,2016-03-06,Inter Milan,Palermo
+3879776,12,27,Serie A,2015/2016,2016-03-06,Bologna,Carpi
+3879771,12,27,Serie A,2015/2016,2016-03-06,Sassuolo,AC Milan
+3879772,12,27,Serie A,2015/2016,2016-03-06,Torino,Lazio
+3879756,12,27,Serie A,2015/2016,2016-02-22,Napoli,AC Milan
+3879754,12,27,Serie A,2015/2016,2016-02-21,Torino,Carpi
+3879748,12,27,Serie A,2015/2016,2016-02-20,Hellas Verona,Chievo
+3879749,12,27,Serie A,2015/2016,2016-02-20,Inter Milan,Sampdoria
+3879747,12,27,Serie A,2015/2016,2016-02-19,Bologna,Juventus
+3879742,12,27,Serie A,2015/2016,2016-02-14,AC Milan,Genoa
+3879746,12,27,Serie A,2015/2016,2016-02-14,Fiorentina,Inter Milan
+3879744,12,27,Serie A,2015/2016,2016-02-14,Sampdoria,Atalanta
+3879745,12,27,Serie A,2015/2016,2016-02-14,Palermo,Torino
+3879743,12,27,Serie A,2015/2016,2016-02-14,Udinese,Bologna
+3879739,12,27,Serie A,2015/2016,2016-02-13,Juventus,Napoli
+3879741,12,27,Serie A,2015/2016,2016-02-13,Chievo,Sassuolo
+3879740,12,27,Serie A,2015/2016,2016-02-13,Empoli,Frosinone
+3879738,12,27,Serie A,2015/2016,2016-02-12,Carpi,AS Roma
+3879737,12,27,Serie A,2015/2016,2016-02-11,Lazio,Hellas Verona
+3879732,12,27,Serie A,2015/2016,2016-02-07,Torino,Chievo
+3879707,12,27,Serie A,2015/2016,2016-01-30,AS Roma,Frosinone
+3879702,12,27,Serie A,2015/2016,2016-01-24,Hellas Verona,Genoa
+3879704,12,27,Serie A,2015/2016,2016-01-24,Inter Milan,Carpi
+3879701,12,27,Serie A,2015/2016,2016-01-24,Juventus,AS Roma
+3879700,12,27,Serie A,2015/2016,2016-01-24,Palermo,Udinese
+3879706,12,27,Serie A,2015/2016,2016-01-24,Fiorentina,Torino
+3878559,12,27,Serie A,2015/2016,2015-08-30,Atalanta,Frosinone
+3879636,12,27,Serie A,2015/2016,2015-11-30,Sassuolo,Fiorentina
+3879627,12,27,Serie A,2015/2016,2015-11-28,Torino,Bologna
+3879626,12,27,Serie A,2015/2016,2015-11-22,Inter Milan,Frosinone
+3879625,12,27,Serie A,2015/2016,2015-11-22,Udinese,Sampdoria
+3879624,12,27,Serie A,2015/2016,2015-11-22,Lazio,Palermo
+3879623,12,27,Serie A,2015/2016,2015-11-22,Fiorentina,Empoli
+3879622,12,27,Serie A,2015/2016,2015-11-22,Carpi,Chievo
+3879621,12,27,Serie A,2015/2016,2015-11-22,Atalanta,Torino
+3879620,12,27,Serie A,2015/2016,2015-11-22,Hellas Verona,Napoli
+3878611,12,27,Serie A,2015/2016,2015-09-20,Chievo,Inter Milan
+3878610,12,27,Serie A,2015/2016,2015-09-20,Atalanta,Hellas Verona
+3878608,12,27,Serie A,2015/2016,2015-09-20,Bologna,Frosinone
+3878607,12,27,Serie A,2015/2016,2015-09-20,AS Roma,Sassuolo
+3878606,12,27,Serie A,2015/2016,2015-09-20,Torino,Sampdoria
+3878605,12,27,Serie A,2015/2016,2015-09-20,Carpi,Fiorentina
+3879876,12,27,Serie A,2015/2016,2016-05-15,Genoa,Atalanta
+3879875,12,27,Serie A,2015/2016,2016-05-15,Palermo,Hellas Verona
+3879874,12,27,Serie A,2015/2016,2016-05-15,Lazio,Fiorentina
+3879873,12,27,Serie A,2015/2016,2016-05-15,Empoli,Torino
+3879872,12,27,Serie A,2015/2016,2016-05-15,Chievo,Bologna
+3879871,12,27,Serie A,2015/2016,2016-05-15,Udinese,Carpi
+3879870,12,27,Serie A,2015/2016,2016-05-14,Juventus,Sampdoria
+3879869,12,27,Serie A,2015/2016,2016-05-14,AC Milan,AS Roma
+3879868,12,27,Serie A,2015/2016,2016-05-14,Sassuolo,Inter Milan
+3879867,12,27,Serie A,2015/2016,2016-05-14,Napoli,Frosinone
+3879866,12,27,Serie A,2015/2016,2016-05-08,AS Roma,Chievo
+3879865,12,27,Serie A,2015/2016,2016-05-08,Sampdoria,Genoa
+3879864,12,27,Serie A,2015/2016,2016-05-08,Hellas Verona,Juventus
+3879861,12,27,Serie A,2015/2016,2016-05-08,Frosinone,Sassuolo
+3879860,12,27,Serie A,2015/2016,2016-05-08,Fiorentina,Palermo
+3879859,12,27,Serie A,2015/2016,2016-05-08,Carpi,Lazio
+3879858,12,27,Serie A,2015/2016,2016-05-07,Bologna,AC Milan
+3879857,12,27,Serie A,2015/2016,2016-05-07,Inter Milan,Empoli
+3879856,12,27,Serie A,2015/2016,2016-05-02,Genoa,AS Roma
+3879855,12,27,Serie A,2015/2016,2016-05-02,Napoli,Atalanta
+3879854,12,27,Serie A,2015/2016,2016-05-01,Sassuolo,Hellas Verona
+3879853,12,27,Serie A,2015/2016,2016-05-01,Lazio,Inter Milan
+3879852,12,27,Serie A,2015/2016,2016-05-01,Palermo,Sampdoria
+3879851,12,27,Serie A,2015/2016,2016-05-01,AC Milan,Frosinone
+3879850,12,27,Serie A,2015/2016,2016-05-01,Juventus,Carpi
+3879849,12,27,Serie A,2015/2016,2016-05-01,Empoli,Bologna
+3879848,12,27,Serie A,2015/2016,2016-04-30,Chievo,Fiorentina
+3879846,12,27,Serie A,2015/2016,2016-04-25,Hellas Verona,AC Milan
+3879845,12,27,Serie A,2015/2016,2016-04-25,AS Roma,Napoli
+3879844,12,27,Serie A,2015/2016,2016-04-25,Carpi,Empoli
+3879843,12,27,Serie A,2015/2016,2016-04-24,Torino,Sassuolo
+3879842,12,27,Serie A,2015/2016,2016-04-24,Atalanta,Chievo
+3879841,12,27,Serie A,2015/2016,2016-04-24,Frosinone,Palermo
+3879835,12,27,Serie A,2015/2016,2016-04-20,Chievo,Frosinone
+3879834,12,27,Serie A,2015/2016,2016-04-20,Udinese,Fiorentina
+3879831,12,27,Serie A,2015/2016,2016-04-20,Sassuolo,Sampdoria
+3879829,12,27,Serie A,2015/2016,2016-04-20,Empoli,Hellas Verona
+3879827,12,27,Serie A,2015/2016,2016-04-19,Napoli,Bologna
+3879826,12,27,Serie A,2015/2016,2016-04-17,Hellas Verona,Frosinone
+3879824,12,27,Serie A,2015/2016,2016-04-17,Sampdoria,AC Milan
+3879823,12,27,Serie A,2015/2016,2016-04-17,Atalanta,AS Roma
+3879822,12,27,Serie A,2015/2016,2016-04-17,Udinese,Chievo
+3879821,12,27,Serie A,2015/2016,2016-04-17,Fiorentina,Sassuolo
+3879820,12,27,Serie A,2015/2016,2016-04-17,Juventus,Palermo
+3879818,12,27,Serie A,2015/2016,2016-04-16,Bologna,Torino
+3879816,12,27,Serie A,2015/2016,2016-04-11,AS Roma,Bologna
+3879815,12,27,Serie A,2015/2016,2016-04-10,Torino,Atalanta
+3879814,12,27,Serie A,2015/2016,2016-04-10,Empoli,Fiorentina
+3879813,12,27,Serie A,2015/2016,2016-04-10,Sampdoria,Udinese
+3879812,12,27,Serie A,2015/2016,2016-04-10,Palermo,Lazio
+3879811,12,27,Serie A,2015/2016,2016-04-10,Napoli,Hellas Verona
+3879810,12,27,Serie A,2015/2016,2016-04-09,AC Milan,Juventus
+3879809,12,27,Serie A,2015/2016,2016-04-09,Sassuolo,Genoa
+3879808,12,27,Serie A,2015/2016,2016-04-09,Frosinone,Inter Milan
+3879807,12,27,Serie A,2015/2016,2016-04-09,Chievo,Carpi
+3879806,12,27,Serie A,2015/2016,2016-04-04,Bologna,Hellas Verona
+3879805,12,27,Serie A,2015/2016,2016-04-03,Atalanta,AC Milan
+3879804,12,27,Serie A,2015/2016,2016-04-03,Genoa,Frosinone
+3879803,12,27,Serie A,2015/2016,2016-04-03,Udinese,Napoli
+3879802,12,27,Serie A,2015/2016,2016-04-03,Chievo,Palermo
+3879801,12,27,Serie A,2015/2016,2016-04-03,Inter Milan,Torino
+3879800,12,27,Serie A,2015/2016,2016-04-03,Fiorentina,Sampdoria
+3879799,12,27,Serie A,2015/2016,2016-04-03,Lazio,AS Roma
+3879798,12,27,Serie A,2015/2016,2016-04-02,Juventus,Empoli
+3879797,12,27,Serie A,2015/2016,2016-04-02,Carpi,Sassuolo
+3879796,12,27,Serie A,2015/2016,2016-03-20,Napoli,Genoa
+3879793,12,27,Serie A,2015/2016,2016-03-20,Sassuolo,Udinese
+3879791,12,27,Serie A,2015/2016,2016-03-20,AC Milan,Lazio
+3879790,12,27,Serie A,2015/2016,2016-03-20,Torino,Juventus
+3879789,12,27,Serie A,2015/2016,2016-03-20,Frosinone,Fiorentina
+3879775,12,27,Serie A,2015/2016,2016-03-06,Genoa,Empoli
+3879770,12,27,Serie A,2015/2016,2016-03-06,Atalanta,Juventus
+3879769,12,27,Serie A,2015/2016,2016-03-05,Napoli,Chievo
+3879768,12,27,Serie A,2015/2016,2016-03-05,Hellas Verona,Sampdoria
+3879767,12,27,Serie A,2015/2016,2016-03-04,AS Roma,Fiorentina
+3879766,12,27,Serie A,2015/2016,2016-02-29,Lazio,Sassuolo
+3879765,12,27,Serie A,2015/2016,2016-02-29,Fiorentina,Napoli
+3879764,12,27,Serie A,2015/2016,2016-02-28,Chievo,Genoa
+3879763,12,27,Serie A,2015/2016,2016-02-28,Sampdoria,Frosinone
+3879762,12,27,Serie A,2015/2016,2016-02-28,Udinese,Hellas Verona
+3879761,12,27,Serie A,2015/2016,2016-02-28,Carpi,Atalanta
+3879760,12,27,Serie A,2015/2016,2016-02-28,Palermo,Bologna
+3879759,12,27,Serie A,2015/2016,2016-02-28,Juventus,Inter Milan
+3879758,12,27,Serie A,2015/2016,2016-02-27,AC Milan,Torino
+3879757,12,27,Serie A,2015/2016,2016-02-27,Empoli,AS Roma
+3879755,12,27,Serie A,2015/2016,2016-02-21,Frosinone,Lazio
+3879753,12,27,Serie A,2015/2016,2016-02-21,Sassuolo,Empoli
+3879752,12,27,Serie A,2015/2016,2016-02-21,Genoa,Udinese
+3879751,12,27,Serie A,2015/2016,2016-02-21,AS Roma,Palermo
+3879736,12,27,Serie A,2015/2016,2016-02-07,AS Roma,Sampdoria
+3879735,12,27,Serie A,2015/2016,2016-02-07,Atalanta,Empoli
+3879734,12,27,Serie A,2015/2016,2016-02-07,AC Milan,Udinese
+3879733,12,27,Serie A,2015/2016,2016-02-07,Frosinone,Juventus
+3879731,12,27,Serie A,2015/2016,2016-02-07,Napoli,Carpi
+3879730,12,27,Serie A,2015/2016,2016-02-07,Hellas Verona,Inter Milan
+3879729,12,27,Serie A,2015/2016,2016-02-07,Sassuolo,Palermo
+3879728,12,27,Serie A,2015/2016,2016-02-06,Bologna,Fiorentina
+3879727,12,27,Serie A,2015/2016,2016-02-06,Genoa,Lazio
+3879726,12,27,Serie A,2015/2016,2016-02-03,Juventus,Genoa
+3879725,12,27,Serie A,2015/2016,2016-02-03,Frosinone,Bologna
+3879724,12,27,Serie A,2015/2016,2016-02-03,Fiorentina,Carpi
+3879723,12,27,Serie A,2015/2016,2016-02-03,Inter Milan,Chievo
+3879722,12,27,Serie A,2015/2016,2016-02-03,Hellas Verona,Atalanta
+3879721,12,27,Serie A,2015/2016,2016-02-03,Palermo,AC Milan
+3879720,12,27,Serie A,2015/2016,2016-02-03,Lazio,Napoli
+3879719,12,27,Serie A,2015/2016,2016-02-03,Sampdoria,Torino
+3879718,12,27,Serie A,2015/2016,2016-02-03,Empoli,Udinese
+3879717,12,27,Serie A,2015/2016,2016-02-02,Sassuolo,AS Roma
+3879716,12,27,Serie A,2015/2016,2016-01-31,Genoa,Fiorentina
+3879715,12,27,Serie A,2015/2016,2016-01-31,Torino,Hellas Verona
+3879714,12,27,Serie A,2015/2016,2016-01-31,Napoli,Empoli
+3879713,12,27,Serie A,2015/2016,2016-01-31,Chievo,Juventus
+3879712,12,27,Serie A,2015/2016,2016-01-31,AC Milan,Inter Milan
+3879711,12,27,Serie A,2015/2016,2016-01-31,Udinese,Lazio
+3879710,12,27,Serie A,2015/2016,2016-01-31,Bologna,Sampdoria
+3879709,12,27,Serie A,2015/2016,2016-01-30,Carpi,Palermo
+3879708,12,27,Serie A,2015/2016,2016-01-30,Atalanta,Sassuolo
+3879698,12,27,Serie A,2015/2016,2016-01-23,Empoli,AC Milan
+3879697,12,27,Serie A,2015/2016,2016-01-23,Frosinone,Atalanta
+3879696,12,27,Serie A,2015/2016,2016-01-20,Sassuolo,Torino
+3879695,12,27,Serie A,2015/2016,2016-01-17,Genoa,Palermo
+3879694,12,27,Serie A,2015/2016,2016-01-17,Bologna,Lazio
+3879693,12,27,Serie A,2015/2016,2016-01-17,Udinese,Juventus
+3879692,12,27,Serie A,2015/2016,2016-01-17,Chievo,Empoli
+3879691,12,27,Serie A,2015/2016,2016-01-17,AS Roma,Hellas Verona
+3879690,12,27,Serie A,2015/2016,2016-01-17,AC Milan,Fiorentina
+3879689,12,27,Serie A,2015/2016,2016-01-17,Carpi,Sampdoria
+3879688,12,27,Serie A,2015/2016,2016-01-16,Atalanta,Inter Milan
+3879687,12,27,Serie A,2015/2016,2016-01-16,Torino,Frosinone
+3879686,12,27,Serie A,2015/2016,2016-01-16,Napoli,Sassuolo
+3879685,12,27,Serie A,2015/2016,2016-01-10,Atalanta,Genoa
+3879684,12,27,Serie A,2015/2016,2016-01-10,Sampdoria,Juventus
+3879683,12,27,Serie A,2015/2016,2016-01-10,Hellas Verona,Palermo
+3879682,12,27,Serie A,2015/2016,2016-01-10,Torino,Empoli
+3879681,12,27,Serie A,2015/2016,2016-01-10,Inter Milan,Sassuolo
+3879680,12,27,Serie A,2015/2016,2016-01-10,Bologna,Chievo
+3879679,12,27,Serie A,2015/2016,2016-01-10,Frosinone,Napoli
+3879678,12,27,Serie A,2015/2016,2016-01-09,Carpi,Udinese
+3879677,12,27,Serie A,2015/2016,2016-01-09,Fiorentina,Lazio
+3879676,12,27,Serie A,2015/2016,2016-01-09,AS Roma,AC Milan
+3879675,12,27,Serie A,2015/2016,2016-01-06,Lazio,Carpi
+3879674,12,27,Serie A,2015/2016,2016-01-06,AC Milan,Bologna
+3879673,12,27,Serie A,2015/2016,2016-01-06,Udinese,Atalanta
+3879672,12,27,Serie A,2015/2016,2016-01-06,Chievo,AS Roma
+3879671,12,27,Serie A,2015/2016,2016-01-06,Palermo,Fiorentina
+3879670,12,27,Serie A,2015/2016,2016-01-06,Juventus,Hellas Verona
+3879669,12,27,Serie A,2015/2016,2016-01-06,Napoli,Torino
+3879668,12,27,Serie A,2015/2016,2016-01-06,Empoli,Inter Milan
+3879667,12,27,Serie A,2015/2016,2016-01-06,Sassuolo,Frosinone
+3879666,12,27,Serie A,2015/2016,2016-01-05,Genoa,Sampdoria
+3879662,12,27,Serie A,2015/2016,2015-12-20,Fiorentina,Chievo
+3879661,12,27,Serie A,2015/2016,2015-12-20,Atalanta,Napoli
+3879660,12,27,Serie A,2015/2016,2015-12-20,Carpi,Juventus
+3879659,12,27,Serie A,2015/2016,2015-12-20,Inter Milan,Lazio
+3879658,12,27,Serie A,2015/2016,2015-12-20,Torino,Udinese
+3879657,12,27,Serie A,2015/2016,2015-12-20,AS Roma,Genoa
+3879656,12,27,Serie A,2015/2016,2015-12-19,Bologna,Empoli
+3879655,12,27,Serie A,2015/2016,2015-12-14,Lazio,Sampdoria
+3879654,12,27,Serie A,2015/2016,2015-12-13,Chievo,Atalanta
+3879652,12,27,Serie A,2015/2016,2015-12-13,AC Milan,Hellas Verona
+3879651,12,27,Serie A,2015/2016,2015-12-13,Napoli,AS Roma
+3879650,12,27,Serie A,2015/2016,2015-12-13,Empoli,Carpi
+3879649,12,27,Serie A,2015/2016,2015-12-12,Palermo,Frosinone
+3879648,12,27,Serie A,2015/2016,2015-12-12,Udinese,Inter Milan
+3879647,12,27,Serie A,2015/2016,2015-12-12,Genoa,Bologna
+3879646,12,27,Serie A,2015/2016,2015-12-06,Fiorentina,Udinese
+3879644,12,27,Serie A,2015/2016,2015-12-06,Atalanta,Palermo
+3879643,12,27,Serie A,2015/2016,2015-12-06,Sampdoria,Sassuolo
+3879642,12,27,Serie A,2015/2016,2015-12-06,Carpi,AC Milan
+3879641,12,27,Serie A,2015/2016,2015-12-06,Hellas Verona,Empoli
+3879640,12,27,Serie A,2015/2016,2015-12-06,Frosinone,Chievo
+3879639,12,27,Serie A,2015/2016,2015-12-05,Torino,AS Roma
+3879638,12,27,Serie A,2015/2016,2015-12-05,Inter Milan,Genoa
+3879637,12,27,Serie A,2015/2016,2015-12-04,Lazio,Juventus
+3879635,12,27,Serie A,2015/2016,2015-11-30,Napoli,Inter Milan
+3879634,12,27,Serie A,2015/2016,2015-11-29,Genoa,Carpi
+3879633,12,27,Serie A,2015/2016,2015-11-29,Empoli,Lazio
+3879631,12,27,Serie A,2015/2016,2015-11-29,Chievo,Udinese
+3879630,12,27,Serie A,2015/2016,2015-11-29,Palermo,Juventus
+3879629,12,27,Serie A,2015/2016,2015-11-29,Frosinone,Hellas Verona
+3879619,12,27,Serie A,2015/2016,2015-11-22,Genoa,Sassuolo
+3879618,12,27,Serie A,2015/2016,2015-11-21,Juventus,AC Milan
+3879617,12,27,Serie A,2015/2016,2015-11-21,Bologna,AS Roma
+3879616,12,27,Serie A,2015/2016,2015-11-08,Sampdoria,Fiorentina
+3879615,12,27,Serie A,2015/2016,2015-11-08,Sassuolo,Carpi
+3879614,12,27,Serie A,2015/2016,2015-11-08,Torino,Inter Milan
+3879613,12,27,Serie A,2015/2016,2015-11-08,Empoli,Juventus
+3879612,12,27,Serie A,2015/2016,2015-11-08,Frosinone,Genoa
+3879611,12,27,Serie A,2015/2016,2015-11-08,Palermo,Chievo
+3879610,12,27,Serie A,2015/2016,2015-11-08,AS Roma,Lazio
+3879607,12,27,Serie A,2015/2016,2015-11-07,AC Milan,Atalanta
+3879606,12,27,Serie A,2015/2016,2015-11-02,Chievo,Sampdoria
+3879605,12,27,Serie A,2015/2016,2015-11-02,Palermo,Empoli
+3879604,12,27,Serie A,2015/2016,2015-11-01,Genoa,Napoli
+3879603,12,27,Serie A,2015/2016,2015-11-01,Udinese,Sassuolo
+3879602,12,27,Serie A,2015/2016,2015-11-01,Fiorentina,Frosinone
+3879601,12,27,Serie A,2015/2016,2015-11-01,Bologna,Atalanta
+3879599,12,27,Serie A,2015/2016,2015-11-01,Lazio,AC Milan
+3879598,12,27,Serie A,2015/2016,2015-10-31,Inter Milan,AS Roma
+3879597,12,27,Serie A,2015/2016,2015-10-31,Juventus,Torino
+3879596,12,27,Serie A,2015/2016,2015-10-29,Sampdoria,Empoli
+3879595,12,27,Serie A,2015/2016,2015-10-28,Hellas Verona,Fiorentina
+3879594,12,27,Serie A,2015/2016,2015-10-28,AC Milan,Chievo
+3879593,12,27,Serie A,2015/2016,2015-10-28,Napoli,Palermo
+3879592,12,27,Serie A,2015/2016,2015-10-28,AS Roma,Udinese
+3879591,12,27,Serie A,2015/2016,2015-10-28,Sassuolo,Juventus
+3879590,12,27,Serie A,2015/2016,2015-10-28,Torino,Genoa
+3879589,12,27,Serie A,2015/2016,2015-10-28,Frosinone,Carpi
+3879588,12,27,Serie A,2015/2016,2015-10-28,Atalanta,Lazio
+3879586,12,27,Serie A,2015/2016,2015-10-25,Sampdoria,Hellas Verona
+3879584,12,27,Serie A,2015/2016,2015-10-25,Udinese,Frosinone
+3879583,12,27,Serie A,2015/2016,2015-10-25,Fiorentina,AS Roma
+3879581,12,27,Serie A,2015/2016,2015-10-25,Chievo,Napoli
+3879580,12,27,Serie A,2015/2016,2015-10-25,Juventus,Atalanta
+3879578,12,27,Serie A,2015/2016,2015-10-24,Carpi,Bologna
+3879577,12,27,Serie A,2015/2016,2015-10-24,Empoli,Genoa
+3879576,12,27,Serie A,2015/2016,2015-10-18,Frosinone,Sampdoria
+3879574,12,27,Serie A,2015/2016,2015-10-18,Inter Milan,Juventus
+3879573,12,27,Serie A,2015/2016,2015-10-18,Sassuolo,Lazio
+3879572,12,27,Serie A,2015/2016,2015-10-18,Napoli,Fiorentina
+3879571,12,27,Serie A,2015/2016,2015-10-18,Atalanta,Carpi
+3879570,12,27,Serie A,2015/2016,2015-10-18,Genoa,Chievo
+3879569,12,27,Serie A,2015/2016,2015-10-18,Bologna,Palermo
+3879568,12,27,Serie A,2015/2016,2015-10-17,Torino,AC Milan
+3879565,12,27,Serie A,2015/2016,2015-10-04,Sampdoria,Inter Milan
+3879563,12,27,Serie A,2015/2016,2015-10-04,Empoli,Sassuolo
+3879561,12,27,Serie A,2015/2016,2015-10-04,Fiorentina,Atalanta
+3879560,12,27,Serie A,2015/2016,2015-10-04,Lazio,Frosinone
+3879559,12,27,Serie A,2015/2016,2015-10-04,Juventus,Bologna
+3879558,12,27,Serie A,2015/2016,2015-10-03,Carpi,Torino
+3879555,12,27,Serie A,2015/2016,2015-09-28,Atalanta,Sampdoria
+3879554,12,27,Serie A,2015/2016,2015-09-27,Torino,Palermo
+3879553,12,27,Serie A,2015/2016,2015-09-27,Sassuolo,Chievo
+3879552,12,27,Serie A,2015/2016,2015-09-27,Bologna,Udinese
+3879550,12,27,Serie A,2015/2016,2015-09-27,Inter Milan,Fiorentina
+3879549,12,27,Serie A,2015/2016,2015-09-27,Genoa,AC Milan
+3879548,12,27,Serie A,2015/2016,2015-09-26,Napoli,Juventus
+3879547,12,27,Serie A,2015/2016,2015-09-26,AS Roma,Carpi
+3879546,12,27,Serie A,2015/2016,2015-09-24,Empoli,Atalanta
+3879545,12,27,Serie A,2015/2016,2015-09-23,Sampdoria,AS Roma
+3879544,12,27,Serie A,2015/2016,2015-09-23,Palermo,Sassuolo
+3879543,12,27,Serie A,2015/2016,2015-09-23,Juventus,Frosinone
+3879541,12,27,Serie A,2015/2016,2015-09-23,Fiorentina,Bologna
+3879540,12,27,Serie A,2015/2016,2015-09-23,Chievo,Torino
+3879539,12,27,Serie A,2015/2016,2015-09-23,Carpi,Napoli
+3879538,12,27,Serie A,2015/2016,2015-09-23,Lazio,Genoa
+3879537,12,27,Serie A,2015/2016,2015-09-22,Udinese,AC Milan
+3878609,12,27,Serie A,2015/2016,2015-09-20,Genoa,Juventus
+3878604,12,27,Serie A,2015/2016,2015-09-20,Napoli,Lazio
+3878603,12,27,Serie A,2015/2016,2015-09-19,Udinese,Empoli
+3878602,12,27,Serie A,2015/2016,2015-09-19,AC Milan,Palermo
+3878601,12,27,Serie A,2015/2016,2015-09-14,Sampdoria,Bologna
+3878600,12,27,Serie A,2015/2016,2015-09-13,Inter Milan,AC Milan
+3878599,12,27,Serie A,2015/2016,2015-09-13,Sassuolo,Atalanta
+3878598,12,27,Serie A,2015/2016,2015-09-13,Palermo,Carpi
+3878597,12,27,Serie A,2015/2016,2015-09-13,Empoli,Napoli
+3878596,12,27,Serie A,2015/2016,2015-09-13,Hellas Verona,Torino
+3878595,12,27,Serie A,2015/2016,2015-09-13,Lazio,Udinese
+3878594,12,27,Serie A,2015/2016,2015-09-12,Juventus,Chievo
+3878593,12,27,Serie A,2015/2016,2015-09-12,Frosinone,AS Roma
+3878592,12,27,Serie A,2015/2016,2015-09-12,Fiorentina,Genoa
+3878558,12,27,Serie A,2015/2016,2015-08-30,Napoli,Sampdoria
+3878557,12,27,Serie A,2015/2016,2015-08-30,Udinese,Palermo
+3878556,12,27,Serie A,2015/2016,2015-08-30,Torino,Fiorentina
+3878555,12,27,Serie A,2015/2016,2015-08-30,AS Roma,Juventus
+3878554,12,27,Serie A,2015/2016,2015-08-30,Genoa,Hellas Verona
+3878553,12,27,Serie A,2015/2016,2015-08-30,Chievo,Lazio
+3878552,12,27,Serie A,2015/2016,2015-08-30,Carpi,Inter Milan
+3878551,12,27,Serie A,2015/2016,2015-08-29,AC Milan,Empoli
+3878550,12,27,Serie A,2015/2016,2015-08-29,Bologna,Sassuolo
+3878549,12,27,Serie A,2015/2016,2015-08-23,Empoli,Chievo
+3878548,12,27,Serie A,2015/2016,2015-08-23,Juventus,Udinese
+3878547,12,27,Serie A,2015/2016,2015-08-23,Frosinone,Torino
+3878546,12,27,Serie A,2015/2016,2015-08-23,Sassuolo,Napoli
+3878545,12,27,Serie A,2015/2016,2015-08-23,Sampdoria,Carpi
+3878544,12,27,Serie A,2015/2016,2015-08-23,Palermo,Genoa
+3878543,12,27,Serie A,2015/2016,2015-08-23,Inter Milan,Atalanta
+3878542,12,27,Serie A,2015/2016,2015-08-23,Fiorentina,AC Milan
+3878540,12,27,Serie A,2015/2016,2015-08-22,Lazio,Bologna
+3889182,12,86,Serie A,1986/1987,1986-11-09,Juventus,Napoli
+3930166,55,282,UEFA Euro,2024,2024-06-18,Portugal,Czech Republic
+3930159,55,282,UEFA Euro,2024,2024-06-15,Hungary,Switzerland
+3930163,55,282,UEFA Euro,2024,2024-06-16,Serbia,England
+3930181,55,282,UEFA Euro,2024,2024-06-25,England,Slovenia
+3930178,55,282,UEFA Euro,2024,2024-06-24,Croatia,Italy
+3930160,55,282,UEFA Euro,2024,2024-06-15,Spain,Croatia
+3930170,55,282,UEFA Euro,2024,2024-06-20,Slovenia,Serbia
+3938643,55,282,UEFA Euro,2024,2024-06-25,France,Poland
+3938641,55,282,UEFA Euro,2024,2024-06-21,Poland,Austria
+3938642,55,282,UEFA Euro,2024,2024-06-22,Georgia,Czech Republic
+3938639,55,282,UEFA Euro,2024,2024-06-18,Turkey,Georgia
+3938638,55,282,UEFA Euro,2024,2024-06-17,Romania,Ukraine
+3938640,55,282,UEFA Euro,2024,2024-06-21,Slovakia,Ukraine
+3938637,55,282,UEFA Euro,2024,2024-06-16,Poland,Netherlands
+3938644,55,282,UEFA Euro,2024,2024-06-26,Georgia,Portugal
+3941019,55,282,UEFA Euro,2024,2024-07-01,France,Belgium
+3942227,55,282,UEFA Euro,2024,2024-07-06,England,Switzerland
+3930174,55,282,UEFA Euro,2024,2024-06-22,Turkey,Portugal
+3930162,55,282,UEFA Euro,2024,2024-06-16,Slovenia,Denmark
+3930176,55,282,UEFA Euro,2024,2024-06-23,Switzerland,Germany
+3930169,55,282,UEFA Euro,2024,2024-06-19,Scotland,Switzerland
+3942819,55,282,UEFA Euro,2024,2024-07-10,Netherlands,England
+3943043,55,282,UEFA Euro,2024,2024-07-14,Spain,England
+3942752,55,282,UEFA Euro,2024,2024-07-09,Spain,France
+3942382,55,282,UEFA Euro,2024,2024-07-06,Netherlands,Turkey
+3942349,55,282,UEFA Euro,2024,2024-07-05,Portugal,France
+3930180,55,282,UEFA Euro,2024,2024-06-25,Netherlands,Austria
+3930171,55,282,UEFA Euro,2024,2024-06-20,Denmark,England
+3942226,55,282,UEFA Euro,2024,2024-07-05,Spain,Germany
+3938645,55,282,UEFA Euro,2024,2024-06-26,Ukraine,Belgium
+3930184,55,282,UEFA Euro,2024,2024-06-26,Czech Republic,Turkey
+3941022,55,282,UEFA Euro,2024,2024-07-02,Austria,Turkey
+3941021,55,282,UEFA Euro,2024,2024-07-02,Romania,Netherlands
+3941020,55,282,UEFA Euro,2024,2024-07-01,Portugal,Slovenia
+3941018,55,282,UEFA Euro,2024,2024-06-30,Spain,Georgia
+3941017,55,282,UEFA Euro,2024,2024-06-30,England,Slovakia
+3930182,55,282,UEFA Euro,2024,2024-06-25,Denmark,Serbia
+3930179,55,282,UEFA Euro,2024,2024-06-24,Albania,Spain
+3940983,55,282,UEFA Euro,2024,2024-06-29,Germany,Denmark
+3940878,55,282,UEFA Euro,2024,2024-06-29,Switzerland,Italy
+3930177,55,282,UEFA Euro,2024,2024-06-23,Scotland,Hungary
+3930173,55,282,UEFA Euro,2024,2024-06-21,Netherlands,France
+3930172,55,282,UEFA Euro,2024,2024-06-20,Spain,Italy
+3930167,55,282,UEFA Euro,2024,2024-06-19,Croatia,Albania
+3930168,55,282,UEFA Euro,2024,2024-06-19,Germany,Hungary
+3930165,55,282,UEFA Euro,2024,2024-06-17,Austria,France
+3930164,55,282,UEFA Euro,2024,2024-06-17,Belgium,Slovakia
+3930161,55,282,UEFA Euro,2024,2024-06-15,Italy,Albania
+3930183,55,282,UEFA Euro,2024,2024-06-26,Slovakia,Romania
+3930175,55,282,UEFA Euro,2024,2024-06-22,Belgium,Romania
+3930158,55,282,UEFA Euro,2024,2024-06-14,Germany,Scotland
+3788758,55,43,UEFA Euro,2020,2021-06-17,Ukraine,North Macedonia
+3788773,55,43,UEFA Euro,2020,2021-06-23,Portugal,France
+3788765,55,43,UEFA Euro,2020,2021-06-20,Switzerland,Turkey
+3788761,55,43,UEFA Euro,2020,2021-06-18,Sweden,Slovakia
+3788760,55,43,UEFA Euro,2020,2021-06-18,Croatia,Czech Republic
+3795108,55,43,UEFA Euro,2020,2021-07-02,Switzerland,Spain
+3794687,55,43,UEFA Euro,2020,2021-06-27,Belgium,Portugal
+3794690,55,43,UEFA Euro,2020,2021-06-27,Netherlands,Czech Republic
+3794685,55,43,UEFA Euro,2020,2021-06-26,Italy,Austria
+3794692,55,43,UEFA Euro,2020,2021-06-29,Sweden,Ukraine
+3794689,55,43,UEFA Euro,2020,2021-06-26,Wales,Denmark
+3795107,55,43,UEFA Euro,2020,2021-07-02,Belgium,Italy
+3795187,55,43,UEFA Euro,2020,2021-07-03,Ukraine,England
+3795220,55,43,UEFA Euro,2020,2021-07-06,Italy,Spain
+3794686,55,43,UEFA Euro,2020,2021-06-28,Croatia,Spain
+3788763,55,43,UEFA Euro,2020,2021-06-19,Hungary,France
+3795506,55,43,UEFA Euro,2020,2021-07-11,Italy,England
+3788769,55,43,UEFA Euro,2020,2021-06-21,Russia,Denmark
+3788766,55,43,UEFA Euro,2020,2021-06-20,Italy,Wales
+3788764,55,43,UEFA Euro,2020,2021-06-19,Portugal,Germany
+3788755,55,43,UEFA Euro,2020,2021-06-16,Turkey,Wales
+3788754,55,43,UEFA Euro,2020,2021-06-16,Italy,Switzerland
+3788762,55,43,UEFA Euro,2020,2021-06-19,Spain,Poland
+3788747,55,43,UEFA Euro,2020,2021-06-13,Austria,North Macedonia
+3788741,55,43,UEFA Euro,2020,2021-06-11,Turkey,Italy
+3795109,55,43,UEFA Euro,2020,2021-07-03,Czech Republic,Denmark
+3788770,55,43,UEFA Euro,2020,2021-06-21,North Macedonia,Netherlands
+3794688,55,43,UEFA Euro,2020,2021-06-29,England,Germany
+3788774,55,43,UEFA Euro,2020,2021-06-23,Germany,Hungary
+3788771,55,43,UEFA Euro,2020,2021-06-22,Croatia,Scotland
+3788772,55,43,UEFA Euro,2020,2021-06-22,Czech Republic,England
+3788768,55,43,UEFA Euro,2020,2021-06-21,Finland,Belgium
+3788767,55,43,UEFA Euro,2020,2021-06-21,Ukraine,Austria
+3788753,55,43,UEFA Euro,2020,2021-06-16,Finland,Russia
+3788759,55,43,UEFA Euro,2020,2021-06-18,England,Scotland
+3788757,55,43,UEFA Euro,2020,2021-06-17,Denmark,Belgium
+3788745,55,43,UEFA Euro,2020,2021-06-13,England,Croatia
+3795221,55,43,UEFA Euro,2020,2021-07-07,England,Denmark
+3788746,55,43,UEFA Euro,2020,2021-06-13,Netherlands,Ukraine
+3794691,55,43,UEFA Euro,2020,2021-06-28,France,Switzerland
+3788756,55,43,UEFA Euro,2020,2021-06-17,Netherlands,Austria
+3788749,55,43,UEFA Euro,2020,2021-06-14,Poland,Slovakia
+3788750,55,43,UEFA Euro,2020,2021-06-14,Spain,Sweden
+3788748,55,43,UEFA Euro,2020,2021-06-14,Scotland,Czech Republic
+3788751,55,43,UEFA Euro,2020,2021-06-15,France,Germany
+3788752,55,43,UEFA Euro,2020,2021-06-15,Hungary,Portugal
+3788742,55,43,UEFA Euro,2020,2021-06-12,Denmark,Finland
+3788775,55,43,UEFA Euro,2020,2021-06-23,Slovakia,Spain
+3788776,55,43,UEFA Euro,2020,2021-06-23,Sweden,Poland
+3788743,55,43,UEFA Euro,2020,2021-06-12,Belgium,Russia
+3788744,55,43,UEFA Euro,2020,2021-06-12,Wales,Switzerland
+3887188,35,75,UEFA Europa League,1988/1989,1989-05-03,Napoli,VfB Stuttgart
+3750244,35,75,UEFA Europa League,1988/1989,1989-04-05,Napoli,Bayern Munich
+3750245,35,75,UEFA Europa League,1988/1989,1989-03-15,Napoli,Juventus W

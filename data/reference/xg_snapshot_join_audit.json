@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "checks": {
+    "nonzero_snapshots": true,
+    "nonzero_xg_eligible": true,
+    "regulation_only": true,
+    "all_regulation_eligible": true,
+    "completeness_in_range": true,
+    "source_hash_present": true,
+    "event_order_ok": true,
+    "one_match_per_row": true
+  },
+  "xg_eligible_international_snapshots": 4386,
+  "distinct_matches": 258,
+  "rows_nonzero_xg": 4323
+}

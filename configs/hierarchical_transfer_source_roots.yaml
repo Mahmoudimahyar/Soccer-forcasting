@@ -1,0 +1,23 @@
+# Explicit source-root registry for hierarchical cross-domain transfer. research_only. No external acquisition.
+schema_version: hierarchical_transfer_source_roots_v1
+roots:
+  international_event_lake:
+    path: "C:/Users/Mahyar/worldcup_data_lake/statsbomb_open/international_event_lake_v1"
+    owner: international-event-lake-restoration-v1
+    expected_objects: 258
+    naming: "objects/<sha[:2]>/<sha256>.json (indexed by sb_match_id)"
+    read_only: true
+    gitignored: true
+    allowed_consumers: [domain_inventory, transfer_dataset, eval]
+  club_event_process_auxiliary:
+    path: "C:/Users/Mahyar/worldcup-event-process-intelligence/data/raw/statsbomb_open"
+    subdir: "event_process_auxiliary"
+    owner: event-process-intelligence-v1
+    source_manifest: "/c/Users/Mahyar/worldcup-event-process-intelligence/data/reference/event_process_auxiliary_manifest.csv"
+    expected_objects: 669
+    naming: "event_process_auxiliary/<sb_match_id>.json"
+    read_only: true
+    gitignored: true
+    allowed_consumers: [domain_inventory, feature_overlap_audit, transfer_dataset]
+    note: "CLUB auxiliary training ONLY; never an international test row. Existing local data (event-process program); not re-acquired."
+validation_command: "python scripts/audit_domain_normalized_transfer_dataset.py"

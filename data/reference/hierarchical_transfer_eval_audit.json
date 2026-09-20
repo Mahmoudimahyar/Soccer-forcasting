@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "generated_ts": "2026-06-28T18:56:36Z",
+  "run_id": "ht_20260628T185635Z",
+  "dataset": "synthetic_self_test",
+  "eligibility": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "n_loco_folds": 2,
+  "n_forward_folds": 1,
+  "headline_pooled_rps": {
+    "T0": {
+      "pooled_rps": 0.0963644194424407
+    },
+    "T1": {
+      "pooled_rps": 0.08513649989201487
+    },
+    "T2": {
+      "pooled_rps": 0.09323019094710794
+    },
+    "T3": {
+      "pooled_rps": 0.09323019094710794
+    },
+    "T4": {
+      "pooled_rps": 0.07324508807625352
+    },
+    "T5": {
+      "pooled_rps": 0.0680900436866021
+    },
+    "T6": {
+      "pooled_rps": 0.08513649989201487
+    },
+    "T7": {
+      "pooled_rps": 0.11127437633367371
+    }
+  },
+  "candidate": "T7",
+  "candidate_verdict": "data_insufficient",
+  "candidate_reason": "insufficient matches/rows/folds to evaluate",
+  "out_dir": "C:\\Users\\Mahyar\\worldcup-hierarchical-transfer\\outputs\\research_runs\\ht_20260628T185635Z\\hierarchical_transfer"
+}

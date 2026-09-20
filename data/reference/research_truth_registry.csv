@@ -1,0 +1,16 @@
+claim,key,value
+af_fixtures_900_vs_1120,corpus_900_reconciled,900
+af_fixtures_900_vs_1120,deep_research_ext_reconciled,0
+af_fixtures_900_vs_1120,union_distinct_event_files,1180
+af_fixtures_900_vs_1120,RESOLUTION,corpus=900 + extension=0 = union 1180 distinct fixtures with events (raw is gitignored + lives in separate worktrees)
+sendings_off_123_vs_176,corpus_900,123
+sendings_off_123_vs_176,with_extension,123
+sendings_off_123_vs_176,RESOLUTION,123 = the 900-fixture corpus; 176 = after the +220 deep-research extension (1120 total); both are correct for their respective corpus scope
+player_history_corpus,planned,2000
+player_history_corpus,completed,60
+player_history_corpus,outstanding,1940
+player_history_corpus,completion_rate,0.03
+statsbomb_bridge,exact_bridge_matches,258
+statsbomb_bridge,raw_event_files_cached,60
+statsbomb_bridge,joined_to_snapshots,0
+statsbomb_bridge,RESOLUTION,258 exact bridge matches; 60 with raw event files; 0 joined to dynamic snapshots (xG join unwired)

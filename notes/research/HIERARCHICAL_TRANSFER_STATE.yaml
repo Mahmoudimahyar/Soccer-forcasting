@@ -1,0 +1,4 @@
+run_state: SCAFFOLDING
+base_tag: international-event-lake-restoration-v1 @ 7bba5c0
+phase: "deps met (event-lake terminal+tagged); building durable worker + domain-transfer pipeline"
+collector: {commit: dc73318, isolated: true, kalshi: false, trading: paper}

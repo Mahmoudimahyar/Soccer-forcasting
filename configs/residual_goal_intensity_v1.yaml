@@ -1,0 +1,27 @@
+# Durable <=8h residual goal-intensity research run (reuses deep_research_supervisor.py). research_only.
+# Offline: validated LOCAL data only (event-process snapshot panel already on disk). NO API-Football, NO
+# Odds API, NO download, NO secrets. NEVER modifies the active collector (WorldCupShadowCollector), B1,
+# frozen M1-M5, candidate.py, approved_models.yaml, or trading/Kalshi/risk. paper-only.
+# Treats the remaining-time Poisson model (W2) as a REFERENCE INTENSITY (home & away remaining-goal rates),
+# NOT a competing classifier; every residual/horizon/intensity model is expressed RELATIVE to its W2 anchor
+# and must beat it out-of-sample or fall back to it (selective correction permits alpha=0 = pure W2).
+run: {max_hours: 8.0, max_workers: 2, max_api_requests: 100000000, heartbeat_interval_s: 120,
+      collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json",
+      collector_stale_seconds: 100000, per_job_timeout_s: 28800}
+safety: {kalshi_live_trading: false, trading_mode: paper, use_odds_api: false, use_api_football: false,
+         labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"}
+jobs:
+  - {id: JOB1,  title: "preflight + dependency-verify (event-process terminal) + isolation + dry-run note", script: "scripts/residual_jobs/rg_job01_preflight.py", critical: true}
+  - {id: JOB2,  title: "build residual dataset + horizon targets", script: "scripts/residual_jobs/rg_job02_dataset.py", critical: true}
+  - {id: JOB3,  title: "availability gate + regimes + feature catalog", script: "scripts/residual_jobs/rg_job03_availability_regimes.py", critical: false}
+  - {id: JOB4,  title: "intensity family I0-I3 (side-specific remaining-goal rates)", script: "scripts/residual_jobs/rg_job04_intensity.py", critical: false}
+  - {id: JOB5,  title: "near-term horizon family H0-H4 (5/10/15min, right-censored)", script: "scripts/residual_jobs/rg_job05_horizon.py", critical: false}
+  - {id: JOB6,  title: "residual W/D/L family R0-R6", script: "scripts/residual_jobs/rg_job06_wdl.py", critical: false}
+  - {id: JOB7,  title: "primary forward-chain intl W/D/L", script: "scripts/residual_jobs/rg_job07_forward_chain.py", critical: false}
+  - {id: JOB8,  title: "secondary LOCO W/D/L", script: "scripts/residual_jobs/rg_job08_loco.py", critical: false}
+  - {id: JOB9,  title: "selective-gate coverage / fallback audit", script: "scripts/residual_jobs/rg_job09_selective_gate_audit.py", critical: false}
+  - {id: JOB10, title: "mandatory ablations", script: "scripts/residual_jobs/rg_job10_ablations.py", critical: false}
+  - {id: JOB11, title: "calibration + match-bootstrap + reliability + intensity diagnostics", script: "scripts/residual_jobs/rg_job11_calibration_bootstrap.py", critical: false}
+  - {id: JOB12, title: "failure analysis", script: "scripts/residual_jobs/rg_job12_failure_analysis.py", critical: false}
+  - {id: JOB13, title: "model registry + feature catalog + decision ledger", script: "scripts/residual_jobs/rg_job13_registry_ledger.py", critical: false}
+  - {id: JOB14, title: "scientific report + integrity audit", script: "scripts/residual_jobs/rg_job14_report_integrity.py", critical: true}

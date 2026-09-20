@@ -1,0 +1,11 @@
+# Backlog
+- [x] Phase 0 truth registry + claim ledger
+- [x] Phase 1 execution manifest (3%, 95% gate NOT met)
+- [x] durable controller config + runbook + task scripts
+- [ ] Phase 2 complete API-Football corpus to >=95% (1940 outstanding; multi-day quota-bounded)
+- [ ] Phase 3 complete StatsBomb event cache to >=90% (198 outstanding)
+- [ ] Phase 4 dynamic snapshot datasets + 30 tests
+- [ ] Phase 5 full temporal player priors + tests
+- [ ] Phase 6 xG snapshot JOIN (the key missing piece) + tests
+- [ ] Phase 7-9 preregistered temporal eval (R0-R2/P1-P5/N0-N4/C0-C2/X0-X3) + ablations
+- [ ] Phase 10 verify ALL hard gates -> Phase 11 tag complete (only if all true)

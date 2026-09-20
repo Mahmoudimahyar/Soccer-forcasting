@@ -1,0 +1,35 @@
+schema_version: event_process_possession_v1
+description: >
+  One POSSESSION (a contiguous spell on the ball, grouped by the provider possession index) with its
+  structure, territory reach, terminal outcome, and transition classification. Produced by
+  possession.extract_possessions over canonical events. Direction-dependent reach flags (final third /
+  box) require a known attacking direction; when unknown they remain False rather than guessed.
+fields:
+  - possession_id          # provider possession index
+  - team_id                # team in possession
+  - start_idx
+  - end_idx
+  - start_elapsed          # regulation seconds
+  - end_elapsed
+  - duration               # end_elapsed - start_elapsed (>=0)
+  - period                 # 1 | 2
+  - start_minute
+  - n_events               # all events within the possession (incl. opponent defensive actions)
+  - n_actions              # on-ball actions by the possessing team (pass/carry/dribble/shot)
+  - n_passes
+  - n_carries
+  - reached_final_third    # any own on-ball action with attacking_x >= 80
+  - reached_box            # any own on-ball action inside the 18-yard box
+  - ended_in_shot
+  - ended_in_goal
+  - outcome                # shot | goal | turnover | foul_won | foul_conceded | out_of_play | half_end | unknown
+  - started_by_recovery    # began with a recovery/interception (a regain) or From Counter
+  - is_transition          # From Counter, or own-half regain that reached the final third (counter proxy)
+  - play_pattern           # origin pattern (set-piece / open play / counter)
+rules:
+  - "possessions require a provider possession index; absent -> empty list and possession_structure=unavailable"
+  - "reached_final_third / reached_box use attacking_x; with unknown direction they stay False (not imputed)"
+  - "is_transition is a documented COUNTER PROXY (available_partial), not a verified provider field"
+  - "outcome is derived from the possessing team's terminal on-ball event; ambiguous -> unknown"
+causal_status: process_structure_derivation_only
+live_eligibility: false

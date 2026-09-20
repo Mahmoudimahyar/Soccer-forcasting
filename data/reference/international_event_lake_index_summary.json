@@ -1,0 +1,8 @@
+{
+ "schema_version": "international_event_lake_manifest_v1",
+ "lake_root": "C:\\Users\\Mahyar\\worldcup_data_lake\\statsbomb_open\\international_event_lake_v1",
+ "updated_ts": "2026-06-28T06:02:41Z",
+ "object_count": 60,
+ "hash_verified_objects": 60,
+ "integrity_all_ok": true
+}

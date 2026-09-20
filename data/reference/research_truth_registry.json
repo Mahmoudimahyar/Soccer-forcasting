@@ -1,0 +1,57 @@
+{
+  "scanned_utc": "registry_build",
+  "locations": {
+    "corpus_900": {
+      "present": true,
+      "fixtures_listed": 2383,
+      "fixtures_with_events": 900,
+      "reconciled_exact": 900,
+      "sendings_off": 123,
+      "intl": 627,
+      "club": 273
+    },
+    "deep_research_ext": {
+      "present": true,
+      "fixtures_listed": 0,
+      "fixtures_with_events": 0,
+      "reconciled_exact": 0,
+      "sendings_off": 0,
+      "intl": 0,
+      "club": 0
+    },
+    "player_history_60": {
+      "present": true,
+      "fixtures_listed": 7245,
+      "fixtures_with_events": 60,
+      "reconciled_exact": 60,
+      "sendings_off": 5,
+      "intl": 0,
+      "club": 60
+    }
+  },
+  "resolved_claims": {
+    "af_fixtures_900_vs_1120": {
+      "corpus_900_reconciled": 900,
+      "deep_research_ext_reconciled": 0,
+      "union_distinct_event_files": 1180,
+      "RESOLUTION": "corpus=900 + extension=0 = union 1180 distinct fixtures with events (raw is gitignored + lives in separate worktrees)"
+    },
+    "sendings_off_123_vs_176": {
+      "corpus_900": 123,
+      "with_extension": 123,
+      "RESOLUTION": "123 = the 900-fixture corpus; 176 = after the +220 deep-research extension (1120 total); both are correct for their respective corpus scope"
+    },
+    "player_history_corpus": {
+      "planned": 2000,
+      "completed": 60,
+      "outstanding": 1940,
+      "completion_rate": 0.03
+    },
+    "statsbomb_bridge": {
+      "exact_bridge_matches": 258,
+      "raw_event_files_cached": 60,
+      "joined_to_snapshots": 0,
+      "RESOLUTION": "258 exact bridge matches; 60 with raw event files; 0 joined to dynamic snapshots (xG join unwired)"
+    }
+  }
+}

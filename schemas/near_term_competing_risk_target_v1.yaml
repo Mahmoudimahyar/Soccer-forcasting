@@ -1,0 +1,47 @@
+schema_version: near_term_competing_risk_target_v1
+description: >
+  Near-term COMPETING-RISK targets + remaining-goal targets for each international residual snapshot.
+  Two target families, both regulation-only (period in {1,2}, minute <= 90), both right-censored at the
+  regulation boundary:
+    (A) REMAINING goals after the cutoff t: remaining_home_goals / remaining_away_goals / remaining_total_goals,
+        derived as regulation-final goals MINUS goals-at-cutoff (both leakage-safe; the final is a label only,
+        never fed back into a snapshot feature).
+    (B) COMPETING-RISK next 5/10/15 min: which side scores FIRST in the window (t, t+h], with three mutually
+        exclusive classes {home_goal, away_goal, no_goal}, plus the marginal "did side X score in the window"
+        labels. Right-censored: when t+h > 90 the effective horizon is min(h, 90 - t) and a censor flag is set.
+  Residuals (observed minus W2-expected) for both families live in selective_dynamic_correction_v1.
+  These are LABELS only: they never enter snapshot features. Join key is (source_match_id, snapshot_minute).
+labels: research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+key_fields:
+  - source_match_id
+  - snapshot_minute            # cutoff t; joins 1:1 to residual_goal_intensity_snapshot_v1
+  - snapshot_reason
+  - competition_label
+  - comp_type                  # international
+remaining_goal_targets:        # family (A)
+  - remaining_home_goals       # reg_home_goals - goals_home(cutoff)  (>= 0 by construction)
+  - remaining_away_goals       # reg_away_goals - goals_away(cutoff)
+  - remaining_total_goals      # remaining_home_goals + remaining_away_goals
+  - remaining_window_open      # bool: remaining_regulation_min > 0 (False only at minute-90 snapshots)
+competing_risk_targets:        # family (B); one block per horizon h in {5,10,15}
+  - next{h}_class              # 'home_goal' | 'away_goal' | 'no_goal'  (first goal in the window; no_goal if none)
+  - next{h}_home_goal          # 1 if home scored at least once in (t, t+h_eff]
+  - next{h}_away_goal          # 1 if away scored at least once in (t, t+h_eff]
+  - next{h}_any_goal           # 1 if any goal in (t, t+h_eff]
+  - next{h}_first_side         # 'home' | 'away' | 'none' (side of the first goal in the window)
+  - next{h}_first_goal_minute  # minute of the first goal in the window (null if none)
+  - next{h}_effective_horizon  # min(h, 90 - t)  (right-censored horizon actually used)
+  - next{h}_censored           # 1 if t + h > 90 (window truncated by regulation end)
+provenance_fields:
+  - reg_home_goals | reg_away_goals   # regulation-final goals (label source; cross-checks bridge provenance)
+  - goals_home_cutoff | goals_away_cutoff   # goals at cutoff (echoed from the snapshot for auditability)
+rules:
+  - "remaining_* goals = regulation-final MINUS goals-at-cutoff; both are leakage-safe counts at/<=90'"
+  - "competing-risk classes are mutually exclusive and exhaustive: exactly one of {home_goal,away_goal,no_goal}"
+  - "next{h}_class is decided by the FIRST goal in (t, t+h_eff]; no_goal when the window has no goal"
+  - "right-censoring: when t+h>90 use h_eff=min(h,90-t); a fully-closed window (t>=90) yields no_goal + censored"
+  - "extra-time and shootout goals NEVER count toward remaining or near-term targets (regulation only)"
+  - "own goals are credited to the BENEFITING side (handled upstream by the event-process goal attribution)"
+  - "no completed-2026-World-Cup match participates"
+causal_status: leakage_safe_right_censored_label
+live_eligibility: false

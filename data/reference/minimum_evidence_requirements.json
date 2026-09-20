@@ -1,0 +1,53 @@
+{
+  "title": "Minimum evidence requirements for an in-play residual-correction claim (match-level)",
+  "derived_from": "data/reference/match_level_power_analysis.json (run evp_20260627_power1)",
+  "unit_of_independence": "international match (all snapshots of a match form one cluster)",
+  "reference_model": "research.residual.w2_reference_r0 (parameter-free W2 remaining-time Poisson)",
+  "reference_pooled_rps_loco": 0.14906,
+  "observed_current_state": {
+    "n_independent_international_matches": 58,
+    "n_snapshots": 7376,
+    "n_competitions": 5,
+    "competitions": ["FIFA World Cup 2018", "UEFA Euro 2020", "FIFA World Cup 2022", "UEFA Euro 2024", "Copa America 2024"],
+    "matches_per_tournament_observed": 11.6,
+    "best_candidate_beat_reference": false,
+    "best_candidate_pooled_rps_loco": 0.15394,
+    "observed_match_level_paired_delta_sd_vs_reference": 0.0199
+  },
+  "minimum_matches_by_effect_size": [
+    {"abs_rps_improvement": 0.0005, "interpretation": "negligible (<0.4% of reference RPS)", "power_at_58": 0.10, "matches_for_80pct_power": "not reachable on >=3000-match grid", "tournaments_for_80pct_power": ">250", "verdict": "undetectable with realistic tournament volume"},
+    {"abs_rps_improvement": 0.0010, "interpretation": "very small (~0.7%)", "power_at_58": 0.14, "matches_for_80pct_power": "not reachable on grid (60% needs ~2000)", "tournaments_for_80pct_power": ">170 for 60%", "verdict": "practically undetectable"},
+    {"abs_rps_improvement": 0.0020, "interpretation": "small (~1.3%)", "power_at_58": 0.20, "matches_for_80pct_power": 1000, "tournaments_for_80pct_power": 86, "verdict": "needs hundreds of tournaments"},
+    {"abs_rps_improvement": 0.0030, "interpretation": "small-moderate (~2.0%)", "power_at_58": 0.28, "matches_for_80pct_power": 400, "tournaments_for_80pct_power": 35, "verdict": "needs tens of tournaments"},
+    {"abs_rps_improvement": 0.0050, "interpretation": "moderate (~3.4%)", "power_at_58": 0.49, "matches_for_80pct_power": 150, "tournaments_for_80pct_power": 13, "verdict": "credible with ~150 international matches"},
+    {"abs_rps_improvement": 0.0100, "interpretation": "large (~6.7%)", "power_at_58": 0.90, "matches_for_80pct_power": 58, "tournaments_for_80pct_power": 5, "verdict": "ALREADY detectable at 58 matches if it existed; the eval found no such effect"}
+  ],
+  "headline_answers": {
+    "is_58_enough": {
+      "answer": "no for the uplift that matters",
+      "detail": "58 matches has ~90% power only for a LARGE 0.0100 absolute RPS improvement. For the realistic small in-play corrections actually tested (best candidate was 0.0049 WORSE than reference), 58 matches has 10-28% power for 0.0005-0.0030 improvements. A null result at 58 matches cannot distinguish 'no edge' from 'small real edge we cannot see'. The eval correctly returned reference_only / no acceptance, not a positive claim."
+    },
+    "matches_for_credible_claim": {
+      "answer": "~150 independent international matches for a moderate 0.0050 RPS edge at 80% power; ~400 for a 0.0030 edge; ~1000 for a 0.0020 edge",
+      "smallest_practical_threshold": "150 international matches (~13 tournaments) is the smallest grid point reaching 80% power for any plausibly-real effect (0.0050).",
+      "caveat": "These assume the true effect equals the target; smaller true effects need far more matches and may be economically out of reach."
+    },
+    "more_snapshots_without_more_matches": {
+      "answer": "no useful power gain",
+      "detail": "Power at 58 matches is ~flat (0.27-0.30) across 1x/2x/4x/8x snapshot inflation at delta=0.0030. The independent unit is the match; extra snapshots of the same matches are within-cluster and do not add independent information. Densifying snapshots on the existing 58 matches is NOT a path to a credible claim."
+    }
+  },
+  "acceptance_protocol_recommendation": {
+    "pre_registered_effect_floor": 0.0050,
+    "min_independent_international_matches": 150,
+    "min_distinct_tournaments": 8,
+    "decision_rule": "match-level paired cluster bootstrap, candidate accepted iff two-sided 95% CI on mean(candidate-reference) RPS lies entirely below 0 AND calibration_ok AND fold majority",
+    "forbidden": ["counting snapshots as independent units", "tuning to 2026", "club matches substituted for international without a separate club power curve"],
+    "note": "This is a research evidence threshold, not a runtime/trade approval. All artifacts remain research_only/not_runtime_approved/not_trade_eligible/not_live_eligible."
+  },
+  "club_only_lever": {
+    "verdict": "data_insufficient",
+    "reason": "the residual eval contained zero club matches (club_transfer_active=false); no club per-match RPS exists to estimate a club-only power curve. Club football has far higher annual match volume and could reach 150+ matches quickly, but transfer to international in-play dynamics is unproven and would need its own validation."
+  },
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"
+}

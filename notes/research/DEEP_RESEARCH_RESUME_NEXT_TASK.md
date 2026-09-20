@@ -1,0 +1,2 @@
+# Resume Next Task
+Sprint COMPLETE (tag deep-research-inplay-foundation-v1). Controller + finite queue validated; in-play foundation done. Findings: W2 (remaining-time Poisson) is the in-play W/D/L leader; richer team-state/lineup features (W3/W4/N2) and club->intl transfer did NOT generalize; NO new model qualifies for shadow-candidate review. Next: revisit only with more international matches and/or a richer feature source (xG via a different provider). Frozen models untouched.

@@ -1,0 +1,22 @@
+# Durable <=10h research-truth + full-corpus + xG-fusion run (reuses deep_research_supervisor.py).
+# research_only. Jobs resolve all paths through configs/research_data_roots.yaml. Marks the run state via
+# JOB2 (RUNNING / WAITING_FOR_API_QUOTA). Data-gated jobs skip with explicit reasons until gates are met.
+run:
+  max_hours: 10.0
+  max_workers: 2
+  max_api_requests: 3000
+  heartbeat_interval_s: 120
+  collector_heartbeat: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL/outputs/live_shadow/collector_heartbeat.json"
+  collector_stale_seconds: 5400
+  per_job_timeout_s: 36000
+safety: {kalshi_live_trading: false, trading_mode: paper, use_odds_api: false, labels: "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible"}
+jobs:
+  - {id: JOB1, title: "path + manifest + isolation + budget integrity", script: "scripts/research_jobs/rt_job01_integrity.py", critical: true}
+  - {id: JOB2, title: "complete API-Football player-history corpus (>=95% gate)", script: "scripts/research_jobs/rt_job02_corpus.py", critical: false}
+  - {id: JOB3, title: "reconcile + canonical counts ledger", script: "scripts/research_jobs/rt_job03_reconcile.py", critical: true}
+  - {id: JOB4, title: "complete StatsBomb event cache (>=90% gate)", script: "scripts/research_jobs/rt_job04_statsbomb.py", critical: false}
+  - {id: JOB5, title: "dynamic snapshot datasets (gated on corpus>=95%)", script: "scripts/research_jobs/rt_job05_snapshots.py", critical: false}
+  - {id: JOB6, title: "temporal player priors + substitution deltas (gated)", script: "scripts/research_jobs/rt_job06_priors.py", critical: false}
+  - {id: JOB7, title: "xG snapshot join (gated on StatsBomb>=90%)", script: "scripts/research_jobs/rt_job07_xg_join.py", critical: false}
+  - {id: JOB8, title: "preregistered temporal evaluations (gated on data completion)", script: "scripts/research_jobs/rt_job08_evals.py", critical: false}
+  - {id: JOB9, title: "model decision ledger + scientific report", script: "scripts/research_jobs/rt_job09_ledger.py", critical: true}

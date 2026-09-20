@@ -1,0 +1,81 @@
+schema_version: residual_goal_intensity_snapshot_v1
+description: >
+  Per-snapshot RESIDUAL goal-intensity row. One row per eligible INTERNATIONAL event-process snapshot
+  (reuses data/processed/event_process_snapshots/intl_event_process_snapshots.csv). Each row carries the
+  leakage-safe match-process state at decision minute t (period in {1,2}, minute <= 90) ALONGSIDE the W2
+  REFERENCE remaining-goal intensities and W2 final-H/D/A probabilities, so that a downstream model can
+  learn a CORRECTION on top of W2 (research.intensity.w2_home_away_i0) rather than re-predict from scratch.
+  W2 here is the remaining-time Poisson reference (dynamic_models.r2_remaining_time_poisson / R2_BASE=1.35
+  goals per team per 90'); it is a REFERENCE INTENSITY (home & away remaining-goal rates), NOT a competing
+  classifier. No final score, no totals, no future xG/possession/card/sub enters a snapshot feature; the W2
+  reference is a parameter-free closed form of (score_diff, remaining) only. Targets and residuals live in
+  the companion target schemas; this row is the model INPUT plane plus the W2 anchor.
+labels: research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+key_fields:
+  - source_match_id            # StatsBomb match id (international population via exact api<->statsbomb bridge)
+  - bridge_id                  # api<->statsbomb bridge id
+  - api_fixture_id
+  - competition_label          # used as the LOCO fold key
+  - comp_type                  # always 'international' for this file (club rows are auxiliary, separate)
+  - kickoff_date
+  - home_team_id
+  - away_team_id
+  - snapshot_minute            # decision minute t (cutoff)
+  - snapshot_reason            # clock | box_entry | nonzero_xg_shot | substitution | goal | corner | sending_off
+  - snapshot_kind              # clock | event | pre_extra_time
+  - remaining_regulation_min   # max(0, 90 - t)
+  - n_events_observed          # leakage budget (events with clock-minute <= t)
+  - source_root                # statsbomb_raw | statsbomb_raw_prior (provenance, not a feature)
+  - source_sha256              # sha256 of the source event JSON (preserved verbatim; rebuild-stable)
+  - engine_version             # event_process_snapshot_features engine version (preserved)
+  - residual_builder_version   # this builder's version
+match_state_fields:            # leakage-safe state at cutoff (verbatim from event-process snapshot)
+  - goals_home | goals_away | goals_diff
+  - score_state                # H | A | level
+  - yellow_home | yellow_away | yellow_diff
+  - sendoff_home | sendoff_away | sendoff_diff
+  - players_home | players_away | players_diff
+  - subs_used_home | subs_used_away | subs_used_diff
+event_process_fields:          # verbatim event-process state at cutoff (possession/territory/transition/...)
+  - poss_actions_home | poss_actions_away | poss_share_home | poss_share_diff
+  - final_third_actions_home | final_third_actions_away | final_third_actions_diff | field_tilt_home
+  - box_entries_home | box_entries_away | box_entries_diff
+  - recoveries_home | recoveries_away | recoveries_diff | turnovers_home | turnovers_away | turnovers_diff
+  - corners_home | corners_away | corners_diff | att_free_kicks_home | att_free_kicks_away | att_free_kicks_diff
+  - shots_home | shots_away | shots_diff | shots_on_target_home | shots_on_target_away | shots_on_target_diff
+  - cum_xg_home | cum_xg_away | cum_xg_diff | cum_xg_total | xg_present
+  - min_since_last_shot_any | min_since_last_shot_home | min_since_last_shot_away | min_since_major_chance
+  - xg_last{1,2,5,10,15}m_home | xg_last{1,2,5,10,15}m_away | xg_last{1,2,5,10,15}m_diff
+  - shots_last{1,2,5,10,15}m_home | shots_last{1,2,5,10,15}m_away
+  - xg_current_half_home | xg_current_half_away | xg_current_half_diff
+  - xg_momentum_diff_10m | xg_acceleration_diff
+w2_reference_fields:           # the W2 reference INTENSITY + W2 final probs (parameter-free, leakage-free)
+  - w2_base_rate_per90         # R2_BASE constant (1.35 goals/team/90'); provenance of the reference
+  - w2_remaining_home_intensity   # R2_BASE * remaining/90  (expected remaining home goals under W2)
+  - w2_remaining_away_intensity   # R2_BASE * remaining/90  (expected remaining away goals under W2; symmetric)
+  - w2_remaining_total_intensity  # sum of the two (expected remaining total goals under W2)
+  - w2_prob_H | w2_prob_D | w2_prob_A   # P(final H/D/A) from r2_remaining_time_poisson(score_diff, remaining)
+  - w2_implied_home_score_next{5,10,15}m   # 1 - exp(-R2_BASE*h/90)  (W2-implied side scoring prob)
+  - w2_implied_away_score_next{5,10,15}m
+  - w2_implied_any_goal_next{5,10,15}m      # 1 - exp(-2*R2_BASE*h/90)
+  - w2_implied_home_first_next{5,10,15}m    # competing-risk: P(home scores first in window) under W2 (= away by symmetry)
+  - w2_implied_no_goal_next{5,10,15}m       # exp(-2*R2_BASE*h_eff/90) with right-censored effective horizon
+prematch_anchor_fields:
+  - prematch_anchor_available  # bool: a pre-match anchor (e.g. bridge final goals provenance) is attached
+  - bridge_reg_home | bridge_reg_away  # bridge-reported regulation goals (provenance cross-check ONLY, never a feature)
+source_completeness_fields:
+  - xg_complete                # bool: every shot in this match carried xG (shot_xg available_verified)
+  - source_quality_shot_xg     # available_verified | available_partial | unavailable | unknown
+  - source_quality_pressure    # capability flag for pressure
+  - source_quality_possession  # capability flag for possession_structure
+rules:
+  - "one row per eligible international event-process snapshot; club rows are NEVER emitted here"
+  - "every match-state / event-process field is taken VERBATIM from the leakage-safe event-process snapshot"
+  - "the W2 reference uses ONLY (score_diff=goals_diff, remaining=remaining_regulation_min): no future info"
+  - "w2_remaining_home_intensity == w2_remaining_away_intensity by construction (W2 reference is symmetric)"
+  - "w2 near-term implied probs use right-censored effective horizon min(h, 90 - t)"
+  - "missing source fields are flagged via source_quality_* / xg_complete, never imputed as 0"
+  - "source_sha256 + engine_version preserved verbatim so the row is traceable to its source event file"
+  - "no completed-2026-World-Cup data participates (this corpus is 2018/2020/2022/2024 only)"
+causal_status: leakage_safe_residual_input_plane
+live_eligibility: false

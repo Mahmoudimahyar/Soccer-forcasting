@@ -1,0 +1,126 @@
+{
+  "audit": "evaluation_reproducibility_audit",
+  "scope": "7 major out-of-sample evaluations across the research lab (dynamic-inplay WDL, player-state, xG-fusion, event-process, residual goal-intensity, near-term scoring horizon, discipline)",
+  "method": "An evaluation is classified by whether SIX traceability dimensions are independently reconstructible from local artifacts ONLY (no network/provider): (1) dataset manifest with counts; (2) the exact match cohort (ids); (3) the split protocol (forward-chain order / LOCO / fold defs); (4) a frozen reference model; (5) the reported metric file; (6) the stated bootstrap UNIT (match vs row). reproducible_verified = all six present AND at least one headline metric independently RECOMPUTED bit-close to reported. reproducible_with_limitations = manifests+cohort+metric present and recomputable in principle, but a parametric/fitted model or a row-level (non-clustered) bootstrap unit limits an exact cold rerun. needs_rerun = artifacts present but a metric was NOT recomputed here and a defect/ambiguity blocks confidence. cannot_reproduce = a required dimension (cohort ids / reference / metric) is absent.",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "bootstrap_unit_policy": "The statistically-honest independent unit is the MATCH, not the snapshot row. Evaluations that pool RPS/Brier over snapshot rows (many rows per match) overstate effective N; their pooled point estimate is reproducible but significance must use a match-level cluster bootstrap. This is recorded per evaluation.",
+  "evaluations": [
+    {
+      "id": "residual_goal_intensity_wdl",
+      "name": "Residual goal-intensity W/D/L (R0-R6)",
+      "classification": "reproducible_verified",
+      "reference_model": "research.residual.w2_reference_r0 (parameter-free W2 remaining-time Poisson -> exact convolution)",
+      "cohort": "58 international matches (12/12/12/12/10), 7376 snapshots, 5 tournaments",
+      "split_protocols": ["forward_chain (4 folds, ordered by first kickoff)", "LOCO (5 folds)"],
+      "headline_metric_reported": {"forward_chain_pooled_rps_r0": 0.15263, "loco_pooled_rps_r0": 0.14906},
+      "headline_metric_recomputed": {"forward_chain_pooled_rps_r0": 0.15263, "loco_pooled_rps_r0": 0.14906},
+      "recompute_independence": "R0 reimplemented from scratch from raw snapshot CSV columns (no residual_intensity import); per-fold RPS, pooled RPS, and the 58-value LOCO per-match RPS array all reproduce to 5 decimals (abs_diff 0.0).",
+      "dimensions_present": {"manifest": true, "cohort_ids": true, "split": true, "reference": true, "metric_file": true, "bootstrap_unit": "match (cluster bootstrap available)"},
+      "bootstrap_unit_used_in_run": "row-pooled for the point estimate; rg_wdl_loco_bootstrap.json carries match-level CIs",
+      "limitations": "R0 is verified bit-exact; the fitted candidates (r1/r3/r4/r5) are reproducible_with_limitations individually (require sklearn ridge/HGB + isotonic fit); none beats R0 so the scientific conclusion does not depend on them.",
+      "evidence_paths": [
+        "outputs/research_runs/rg_20260627_155623_run1/residual_goal_intensity/rg_wdl_forward_chain.json",
+        "outputs/research_runs/rg_20260627_155623_run1/residual_goal_intensity/rg_wdl_loco.json",
+        "data/reference/residual_58_match_audit.json (this audit)",
+        "data/reference/residual_58_match_cohort.csv"
+      ]
+    },
+    {
+      "id": "residual_near_term_scoring_horizon",
+      "name": "Near-term scoring horizon (H0-H4, next 5/10/15m)",
+      "classification": "reproducible_with_limitations",
+      "reference_model": "research.horizon.w2_implied_h0 (parameter-free P(>=1 goal)=1-exp(-(lam_h+lam_a)))",
+      "cohort": "same 58-match cohort; 22128 horizon test rows (7376 x 3 horizons)",
+      "split_protocols": ["LOCO (horizon)"],
+      "headline_metric_reported": {"h0_reference_brier": 0.21614, "best_candidate_worst_brier": 0.22414},
+      "headline_metric_recomputed": null,
+      "recompute_independence": "h0 is parameter-free and recomputable by the same engine; not recomputed in THIS pass (out of the residual-WDL primary scope). Right-censoring at 5/10/15m (4.7%/10.5%/17.0%) is documented in rg_dataset_manifest.json and must be handled identically on rerun.",
+      "dimensions_present": {"manifest": true, "cohort_ids": true, "split": true, "reference": true, "metric_file": true, "bootstrap_unit": "match"},
+      "limitations": "Metric not independently recomputed here; censoring handling is a reproducibility-sensitive choice. Conclusion (no candidate beats h0) is consistent with the residual-WDL finding.",
+      "evidence_paths": ["outputs/research_runs/rg_20260627_155623_run1/residual_goal_intensity/rg_horizon_loco.json"]
+    },
+    {
+      "id": "residual_intensity_poisson_deviance",
+      "name": "Remaining-goal intensity (I0-I3, Poisson deviance)",
+      "classification": "reproducible_with_limitations",
+      "reference_model": "research.intensity.w2_home_away_i0 (side-specific W2 intensities)",
+      "cohort": "same 58-match cohort; 7376 rows",
+      "split_protocols": ["LOCO (intensity)"],
+      "headline_metric_reported": {"i0_reference_dev_mean": 0.97004, "i1_dev_mean": 1.63447, "i2_dev_mean": 0.97466},
+      "headline_metric_recomputed": null,
+      "recompute_independence": "i0 is parameter-free; recomputable but not recomputed in this pass. i1/i2 require fitted ridge/regime heads.",
+      "dimensions_present": {"manifest": true, "cohort_ids": true, "split": true, "reference": true, "metric_file": true, "bootstrap_unit": "match"},
+      "limitations": "Fitted candidates limit an exact cold rerun; i0 reference is verifiable. No candidate beats i0.",
+      "evidence_paths": ["outputs/research_runs/rg_20260627_155623_run1/residual_goal_intensity/rg_intensity_loco.json"]
+    },
+    {
+      "id": "event_process_intelligence",
+      "name": "Event-process intelligence (e0-e9 WDL, q/h/y heads)",
+      "classification": "reproducible_with_limitations",
+      "reference_model": "e2 remaining-time Poisson reference (same 1.35/90 base rate as residual W2)",
+      "cohort": "shares the 258-exact-bridge intl population; effective fit/test population is the same 58 event-bearing matches (cohort identical to residual phase)",
+      "split_protocols": ["forward_chain", "LOCO", "match-level bootstrap"],
+      "headline_metric_reported": "see data/reference/event_process_model_decision_ledger.json (16 models, e2 reference)",
+      "headline_metric_recomputed": null,
+      "recompute_independence": "Snapshot builder + e2 reference are deterministic and local; the 58-match event-bearing limitation is the SAME root cause audited here. Leakage self-test (50 sampled rows) all_ok in build_manifest.json.",
+      "dimensions_present": {"manifest": true, "cohort_ids": true, "split": true, "reference": true, "metric_file": true, "bootstrap_unit": "match"},
+      "limitations": "Same 58-match data-availability ceiling; fitted e-heads need sklearn. Reference path verifiable.",
+      "evidence_paths": [
+        "data/reference/event_process_model_decision_ledger.json",
+        "data/processed/event_process_snapshots/build_manifest.json"
+      ]
+    },
+    {
+      "id": "dynamic_inplay_wdl",
+      "name": "Dynamic in-play W/D/L (M0-M5 / p4/p5 player-state)",
+      "classification": "reproducible_with_limitations",
+      "reference_model": "research.wdl.remaining_time_poisson_r2",
+      "cohort": "API-Football reconciled in-play snapshots (corpus 900 + ext); regulation-only, exact-reconciliation gate",
+      "split_protocols": ["LOCO (leave-one-competition-out)", "match-level bootstrap (match_bootstrap_ci in _common.py)"],
+      "headline_metric_reported": {"p5_rps": 0.148867, "r2_reference": "research.wdl.remaining_time_poisson_r2"},
+      "headline_metric_recomputed": null,
+      "recompute_independence": "Dataset manifest (model_decision_ledger.json: dataset_version dynamic_state_v1, source_manifest_version api_football_result_v1) + reference + metric present. Snapshots rebuild from the gitignored API-Football corpus; reference r2 is parameter-free. Not recomputed in this pass.",
+      "dimensions_present": {"manifest": true, "cohort_ids": "by manifest, not enumerated here", "split": true, "reference": true, "metric_file": true, "bootstrap_unit": "match (match_bootstrap_ci provided)"},
+      "limitations": "Cohort match-ids not re-enumerated in this audit; requires the corpus to rebuild snapshots. Fitted player-state heads (p4/p5) need refit. p5 rejected on a safety rule, so conclusion stands regardless.",
+      "evidence_paths": ["data/reference/model_decision_ledger.json", "data/reference/research_truth_registry.json"]
+    },
+    {
+      "id": "player_state_xg_fusion",
+      "name": "Player-state + xG-fusion WDL/next-goal",
+      "classification": "reproducible_with_limitations",
+      "reference_model": "remaining-time Poisson reference (r2 family)",
+      "cohort": "StatsBomb-bridged matches with xG; xg_snapshot_join_audit.json reports 4386 xG-eligible international snapshots across 258 distinct bridge matches (xG-bearing subset), 4323 nonzero-xG rows",
+      "split_protocols": ["LOCO", "match-level bootstrap", "nonzero-xG subset gate (rule 7)"],
+      "headline_metric_reported": "see data/reference/event_process / residual ledgers; xG models gated to nonzero-xG subset",
+      "headline_metric_recomputed": null,
+      "recompute_independence": "xG causal self-tests all pass (dynamic_xg_state_audit.json: no-future-xg, monotonic cum-xg, regulation-only, no cross-match leakage). The xG-fusion EVAL inherits the same 58 event-bearing matches for snapshot-level fusion; the 258 figure in the join audit counts bridge matches at the xG-field level, not event-bearing snapshot matches.",
+      "dimensions_present": {"manifest": true, "cohort_ids": "partial", "split": true, "reference": true, "metric_file": true, "bootstrap_unit": "match"},
+      "limitations": "xG models are fitted; the join-audit 258 vs snapshot 58 distinction (see residual audit) must be carried forward to avoid overstating xG eval N.",
+      "evidence_paths": ["data/reference/xg_snapshot_join_audit.json", "data/reference/dynamic_xg_state_audit.json"]
+    },
+    {
+      "id": "discipline_sendings_off",
+      "name": "Discipline / sendings-off (red-card threshold) eval",
+      "classification": "needs_rerun",
+      "reference_model": "base-rate / Poisson reference (discipline family)",
+      "cohort": "red-threshold extension manifest; canonical_counts_ledger reports 960 reconciled fixtures, 128 canonical sendings-off (union across resolved roots); note flags scope ambiguity (123=900-corpus, 176=1120 incl ext)",
+      "split_protocols": ["LOCO / forward-chain (discipline jobs)"],
+      "headline_metric_reported": "not consolidated into a single decision-ledger metric file in this workspace",
+      "headline_metric_recomputed": null,
+      "recompute_independence": "The canonical_counts_ledger explicitly records a SCOPE ambiguity in the sendings-off total (123 vs 128 vs 176 depending on resolved roots). Without a single frozen cohort+metric file the discipline eval cannot be reproduced cold with confidence.",
+      "dimensions_present": {"manifest": true, "cohort_ids": false, "split": "partial", "reference": "implicit", "metric_file": false, "bootstrap_unit": "match"},
+      "limitations": "Missing a frozen decision-ledger + enumerated cohort for the discipline eval; sendings-off count is root-dependent. Recommend freezing one cohort (declare resolved roots) and one metric file before any claim.",
+      "evidence_paths": [
+        "data/reference/canonical_counts_ledger.json",
+        "data/reference/api_football_red_threshold_extension_manifest.csv"
+      ]
+    }
+  ],
+  "summary": {
+    "reproducible_verified": ["residual_goal_intensity_wdl"],
+    "reproducible_with_limitations": ["residual_near_term_scoring_horizon", "residual_intensity_poisson_deviance", "event_process_intelligence", "dynamic_inplay_wdl", "player_state_xg_fusion"],
+    "needs_rerun": ["discipline_sendings_off"],
+    "cannot_reproduce": [],
+    "cross_cutting_finding": "Five of the seven evaluations (all event-bearing StatsBomb evals: residual WDL/intensity/horizon, event-process, xG-fusion) share ONE binding data-availability ceiling: only 58 of the 258 exact-bridge international matches have StatsBomb event JSONs cached on disk. statsbomb_cache_audit.json overstates this as 258 valid_cached; the snapshot builder and on-disk file count both confirm 58. The bootstrap UNIT across all of them must be the MATCH (58 clusters), not the snapshot row, when computing significance."
+  }
+}

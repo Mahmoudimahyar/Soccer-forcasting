@@ -1,0 +1,57 @@
+{
+  "schema_version": "international_event_lake_model_rerun_v1",
+  "labels": "research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible",
+  "reference_model_R0": "research.event_process.e2",
+  "draw_channel_reliability": {
+    "research.event_process.e0": {
+      "slope": -3.646100819706905,
+      "intercept": -4.875414658785966,
+      "ece": 0.0022434891986986005
+    },
+    "research.event_process.e1": {
+      "slope": -3.6467254913452574,
+      "intercept": -4.87595093836058,
+      "ece": 0.0022495511925973433
+    },
+    "research.event_process.e2": {
+      "slope": 1.061413159618494,
+      "intercept": -0.05655539740227842,
+      "ece": 0.02522998409664329
+    },
+    "research.event_process.e3": {
+      "slope": 0.7494341905633775,
+      "intercept": -0.22747544672793768,
+      "ece": 0.023445040775720884
+    },
+    "research.event_process.e4": {
+      "slope": 0.7799107083713195,
+      "intercept": -0.20450204822995904,
+      "ece": 0.02690487106715044
+    },
+    "research.event_process.e5": {
+      "slope": 0.5894257840633816,
+      "intercept": -0.34600592217134096,
+      "ece": 0.03651585053550361
+    },
+    "research.event_process.e6": {
+      "slope": 0.8425606588775728,
+      "intercept": -0.1421622691388977,
+      "ece": 0.021068032859931033
+    },
+    "research.event_process.e7": {
+      "slope": 0.7650710212667867,
+      "intercept": -0.18933479554084878,
+      "ece": 0.03180522769411623
+    },
+    "research.event_process.e8": {
+      "slope": 0.7650710212667867,
+      "intercept": -0.18933479554084878,
+      "ece": 0.03180522769411623
+    },
+    "research.event_process.e9": {
+      "slope": 0.6861139429733775,
+      "intercept": -0.2749079706575414,
+      "ece": 0.040722320260857876
+    }
+  }
+}

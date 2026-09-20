@@ -1,0 +1,73 @@
+schema: api_statsbomb_match_bridge
+version: v1
+status: research_only  # experimental / not_runtime_approved / not_trade_eligible / not_live_eligible
+description: >
+  EXACT 1:1 bridge between an API-Football corpus fixture and a StatsBomb OPEN-DATA match for senior
+  MEN'S INTERNATIONAL competitions present in BOTH sources (FIFA World Cup 2018 & 2022, UEFA Euro 2020 &
+  2024, Copa America 2024). A pair is accepted ONLY when ALL exact criteria agree; ANY ambiguity,
+  date mismatch, or score mismatch rejects the pair. No fuzzy / probabilistic name linking is used as a
+  tiebreaker — name agreement is on a normalized canonical name, but acceptance additionally requires
+  exact competition+season, exact kickoff-date agreement, and exact final-score agreement.
+
+provenance:
+  api_football_source: data/raw/api_football_historical_corpus (gitignored, corpus + extension worktrees)
+  statsbomb_source: github.com/statsbomb/open-data (raw -> data/raw/statsbomb_open/, gitignored, NEVER committed)
+  statsbomb_license: StatsBomb Open Data license (non-commercial research, attribution)
+  raw_committed: false   # only derived hashes/counts/metrics are tracked; raw external data is gitignored
+
+# exact-match acceptance criteria (ALL must hold; failing any -> reject with reason)
+acceptance_criteria:
+  - exact_competition: api_football league.id+season maps to the SAME tournament-season as StatsBomb competition_id+season_id
+  - exact_team_normalization: normalized(home) == normalized(home) AND normalized(away) == normalized(away)
+      (orientation-aware; a swapped-orientation candidate is reconsidered ONLY if score also swaps, else rejected)
+  - exact_kickoff_date: api_football fixture date (UTC calendar date) == StatsBomb match_date (YYYY-MM-DD)
+  - exact_score_agreement: StatsBomb (home_score, away_score) == API-Football after-90+ET cumulative score
+      where API-Football after-ET cumulative = score.fulltime + score.extratime_increment (shootout excluded);
+      StatsBomb scores exclude shootout by convention (regulation, or after-ET for knockout games)
+  - unambiguous: exactly ONE StatsBomb match in the same competition-season matches the API fixture
+      on (date AND normalized team pair); 0 -> unmatched, >1 -> ambiguous (rejected)
+
+rejection_reasons:
+  - no_statsbomb_candidate          # no SB match in same comp-season on that date+team-pair
+  - ambiguous_multiple_candidates   # >1 SB candidate (date/team collision) -> reject, never guess
+  - date_mismatch                   # team pair matches but calendar date differs
+  - score_mismatch                  # comp+date+teams match but final (90+ET) score disagrees
+  - team_unresolved                 # a team name could not be normalized to the shared canonical form
+
+fields:
+  bridge_id:               {type: string,  desc: "stable hash of (api_fixture_id, sb_match_id)"}
+  api_fixture_id:          {type: integer, desc: "API-Football fixture.id"}
+  sb_match_id:             {type: integer, desc: "StatsBomb match_id"}
+  competition_label:       {type: string,  desc: "e.g. 'FIFA World Cup 2022'"}
+  api_league_id:           {type: integer}
+  api_season:              {type: integer}
+  sb_competition_id:       {type: integer}
+  sb_season_id:            {type: integer}
+  comp_type:               {type: string,  enum: [international], desc: "senior men's international only"}
+  kickoff_date:            {type: string,  desc: "agreed UTC calendar date YYYY-MM-DD"}
+  api_home:                {type: string}
+  api_away:                {type: string}
+  sb_home:                 {type: string}
+  sb_away:                 {type: string}
+  norm_home:               {type: string,  desc: "shared canonical team name (home)"}
+  norm_away:               {type: string,  desc: "shared canonical team name (away)"}
+  orientation:             {type: string,  enum: [same, swapped], desc: "team-orientation alignment used"}
+  final_home_goals:        {type: integer, desc: "agreed final (90+ET, no shootout) home goals"}
+  final_away_goals:        {type: integer, desc: "agreed final (90+ET, no shootout) away goals"}
+  api_regulation_home:     {type: integer}
+  api_regulation_away:     {type: integer}
+  api_result_type:         {type: string,  enum: [regulation, after_extra_time, penalty_shootout]}
+  api_source_sha256:       {type: string,  desc: "sha256 of API-Football events JSON for the fixture"}
+  sb_match_sha256:         {type: string,  desc: "sha256 of the StatsBomb matches.json that holds this match row"}
+  bridge_confidence:       {type: string,  enum: [exact], desc: "only 'exact' rows are emitted; others go to rejected[]"}
+  bridge_builder_version:  {type: string}
+
+outputs:
+  accepted_table: data/processed/api_statsbomb_match_bridge_v1.csv   # gitignored (data/processed/)
+  audit_json:     data/processed/api_statsbomb_match_bridge_v1.audit.json  # counts, rejections, hashes
+  bridge_builder_version: api_statsbomb_bridge_v1
+
+causal_note: >
+  This bridge links MATCH IDENTITY only. Downstream xG event-state features are derived separately and
+  are strictly causal: features at minute t use ONLY StatsBomb events with minute <= t. StatsBomb event
+  timestamps are match-clock minutes, NOT live publication times, and must never be treated as such.

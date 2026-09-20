@@ -1,0 +1,109 @@
+schema_version: domain_transfer_feature_contract_v1
+description: >
+  The CONTRACT that governs which event-process columns may enter the cross-domain transfer model space
+  (T1..T7) and how the per-DOMAIN baseline + the stable-feature filter are fit WITHOUT leaking the held-out
+  international test tournament. This contract is the single source of truth for: the domain-comparable
+  causal STATE design columns the per-domain baseline uses; the CANDIDATE transfer features offered to the
+  stable-feature filter; the columns ALWAYS excluded because they are domain-shifted / source-incompatible;
+  and the gate thresholds (presence + standardized-mean-difference) decided on TRAIN rows only. It is the
+  contract enforced by wcdrawlab.research.transfer.domain_normalized_dataset and re-asserted by
+  scripts/audit_domain_normalized_transfer_dataset.py + tests/test_domain_normalized_transfer_dataset.py.
+labels: research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+reference_model: research.transfer.w2_reference_t0
+domains:
+  - international               # PRIMARY test population (held-out tournament is always international)
+  - club                       # AUXILIARY training only; club rows NEVER appear as an intl test row
+
+baseline_state_design_columns:  # the ONLY columns the per-domain reference-intensity baseline consumes.
+                                # Causal, domain-comparable, orientation-aware; a function of state + a
+                                # per-DOMAIN intercept ONLY. Never reads a test row or a future event.
+  - score_diff_signed          # orientation-aware current (home-away) regulation goal diff
+  - remaining_fraction         # (90 - t)/90 in [0,1]
+  - minute_fraction            # t/90 in [0,1]
+  - players_diff               # numerical-state (home - away on pitch), orientation-aware
+  - is_second_half             # 1.0 if period >= 2 else 0.0
+
+candidate_transfer_features:    # event-process state columns OFFERED to the stable-feature filter. Each is
+                                # domain-comparable & leakage-safe; it SURVIVES only if it passes the
+                                # presence + cross-domain-shift gate fit on TRAIN rows (both domains).
+  - goals_diff
+  - players_diff
+  - yellow_diff
+  - sendoff_diff
+  - subs_used_diff
+  - poss_share_diff
+  - field_tilt_home
+  - final_third_actions_diff
+  - box_entries_diff
+  - recoveries_diff
+  - turnovers_diff
+  - corners_diff
+  - att_free_kicks_diff
+  - shots_diff
+  - shots_on_target_diff
+  - cum_xg_diff
+  - cum_xg_total
+  - xg_last5m_diff
+  - xg_last10m_diff
+
+always_excluded_columns:        # KNOWN domain-incompatible / source-shifted; NEVER enter the model space,
+                                # regardless of any gate outcome (explicit, auditable exclusion list).
+  - col: poss_actions_home
+    reason: raw possession-action count scales with a league's event-logging density, not goal pressure
+  - col: poss_actions_away
+    reason: raw possession-action count scales with a league's event-logging density, not goal pressure
+  - col: n_events_observed
+    reason: leakage-budget proxy / provenance, not a football feature
+
+stable_feature_filter:          # fit on TRAIN rows ONLY (intl_train + club_train); applied to test rows.
+  presence_gate:
+    rule: >
+      a candidate is kept only if it is populated on >= min_present_frac of BOTH domains' TRAIN rows
+      (when both domains are present); when only one domain trains the fold (single_domain=True) the
+      presence test uses that domain alone and the cross-domain shift test is vacuous.
+    default_min_present_frac: 0.5
+  cross_domain_shift_gate:
+    rule: >
+      when both domains train the fold, a candidate is DROPPED as domain_shifted if the standardized mean
+      difference (SMD) between the international and club TRAIN distributions exceeds max_smd. SMD uses the
+      pooled within-domain standard deviation. Computed on TRAIN rows ONLY.
+    default_max_smd: 1.0
+  drop_reasons:
+    - always_excluded_domain_shifted
+    - insufficient_presence
+    - domain_shifted
+  kept_label: kept
+
+domain_baseline:                # per-DOMAIN reference intensity; the residual target is taken relative to it.
+  fit_population: train_rows_only           # intl_train + club_train for the fold; NEVER a test row
+  form: >
+    lambda_side(domain) = T0_intensity(state) * exp(beta_domain) + numerical_state_nudge, where
+    beta_domain is the closed-form log intercept that matches the domain baseline's MEAN total remaining
+    goals to the domain's TRAIN mean observed total remaining goals.
+  numerical_state_nudge: >
+    a side a player up gets a small positive shift (0.10 * man_advantage * remaining_fraction), so the
+    baseline already reflects the numerical state before the residual is taken.
+  transfer_target: >
+    transfer_residual_side = observed_remaining_goals(side) - domain_baseline_intensity(side | state).
+    The transfer ladder (T1..T7) models this residual; T0 (w2_reference_t0) is the anchor it must beat.
+
+outer_temporal_folds:
+  rule: >
+    one fold per held-out international tournament. Training = every match (intl + club aux) kicking off
+    STRICTLY BEFORE that tournament's first kickoff (temporal cutoff for the auxiliary domain too). The
+    held-out test fold is exactly that one international tournament. A tournament with no earlier
+    international training data is SKIPPED (no fold can be fit). Folds are deterministic (ordered by cutoff).
+  grouping_unit: match          # all bootstrap / evaluation grouping is match-level (unit = match)
+
+invariants:                     # re-asserted by the audit script + the deterministic test suite
+  - "no completed-2026-World-Cup match in any domain / fold (assert_no_2026)"
+  - "intl_train + club_train kickoff_date STRICTLY BEFORE fold_cutoff_kickoff"
+  - "club rows NEVER appear with row_role=intl_test"
+  - "the per-domain baseline + the stable-feature filter are fit on TRAIN rows ONLY"
+  - "always_excluded_columns never appear as a kept stable feature (no feat_<excluded> column)"
+  - "candidate transfer features are a subset of the snapshot columns; never a target or a label"
+  - "transfer_residual_* is taken relative to the DOMAIN baseline (not T0); blank when the label is absent"
+  - "deterministic fold recreation: identical inputs -> identical kept subset / folds / rows"
+  - "every row is traceable to its source via source_sha256 + engine_version"
+causal_status: leakage_safe_transfer_feature_contract
+live_eligibility: false

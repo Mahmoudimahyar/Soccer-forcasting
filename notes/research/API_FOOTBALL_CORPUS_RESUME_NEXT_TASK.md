@@ -1,0 +1,2 @@
+# Resume Next Task
+Sprint COMPLETE (tag api-football-historical-corpus-v1). 900 fixtures, 100% regulation reconciliation. Next: resume backfill (python scripts/api_football_corpus_resume.py) over the remaining 1,200 included fixtures to close red/2Y >=150, then 'API-Football In-Play Regulation Baselines V1' (leakage-safe baselines for player/sub, next-goal, in-play regulation W/D/L; competition holdouts; no promotion). xG/shot-quality needs a richer provider.

@@ -1,0 +1,24 @@
+schema_version: player_substitution_delta_v1
+description: >
+  Per-substitution delta = incoming player's prior MINUS outgoing player's prior, both leakage-safe
+  (strictly-before the match date, same comp_type). Captures the directional change in expected on-pitch
+  contribution when a coach makes a change. Positive gd_delta_per90 => incoming prior is stronger.
+fields:
+  - in_player_id         # API-Football player.id entering (null if unknown)
+  - out_player_id        # API-Football player.id leaving (null if unknown)
+  - comp_type            # club | international
+  - gd_delta_per90       # in.gd_contribution_per90 - out.gd_contribution_per90
+  - off_delta_per90      # in.off_contribution_per90 - out.off_contribution_per90
+  - def_delta_per90      # in.def_contribution_per90 - out.def_contribution_per90
+  - wdl_delta            # in.wdl_contribution - out.wdl_contribution
+  - exposure_delta       # in.exposure - out.exposure
+  - in_unknown           # bool: incoming player had no strictly-earlier history
+  - out_unknown          # bool: outgoing player had no strictly-earlier history
+  - prior_model_version  # player_history_prior_v1
+rules:
+  - "delta direction is incoming MINUS outgoing (per contract); never reversed"
+  - "both priors computed strictly-before the match date; no future appearance leaks"
+  - "comp_type of both priors matches the match's comp_type (no club<->international mixing)"
+  - "EXACT player.id linkage only"
+causal_status: historical_weak_supervision_only
+live_eligibility: false

@@ -1,0 +1,670 @@
+rank,match_id,competition_id,season_id,competition,season,match_date,home,away
+1,3890273,9,27,1. Bundesliga,2015/2016,2015-08-22,Hannover 96,Bayer Leverkusen
+2,3895302,9,281,1. Bundesliga,2023/2024,2024-04-14,Bayer Leverkusen,Werder Bremen
+3,3888711,16,276,Champions League,1970/1971,1971-06-02,Ajax,Panathinaikos
+4,3750235,16,71,Champions League,1971/1972,1972-05-31,Ajax,Inter Milan
+5,3888706,16,277,Champions League,1972/1973,1973-05-30,Ajax,Juventus
+6,3750240,16,76,Champions League,1999/2000,1999-11-23,Fiorentina,Manchester United
+7,3752619,16,44,Champions League,2003/2004,2004-05-26,AS Monaco,FC Porto
+8,2302764,16,37,Champions League,2004/2005,2005-05-25,AC Milan,Liverpool
+9,3750200,16,39,Champions League,2006/2007,2007-05-23,AC Milan,Liverpool
+10,3750201,16,41,Champions League,2008/2009,2009-05-27,Barcelona,Manchester United
+11,18235,16,21,Champions League,2009/2010,2010-05-22,Bayern Munich,Inter Milan
+12,18236,16,22,Champions League,2010/2011,2011-05-28,Barcelona,Manchester United
+13,18237,16,23,Champions League,2011/2012,2012-05-19,Bayern Munich,Chelsea
+14,18240,16,24,Champions League,2012/2013,2013-05-25,Borussia Dortmund,Bayern Munich
+15,18241,16,25,Champions League,2013/2014,2014-05-24,Real Madrid,Atlético Madrid
+16,18242,16,26,Champions League,2014/2015,2015-06-06,Juventus,Barcelona
+17,18243,16,27,Champions League,2015/2016,2016-05-28,Real Madrid,Atlético Madrid
+18,18244,16,2,Champions League,2016/2017,2017-06-03,Juventus,Real Madrid
+19,18245,16,1,Champions League,2017/2018,2018-05-26,Real Madrid,Liverpool
+20,22912,16,4,Champions League,2018/2019,2019-06-01,Tottenham Hotspur,Liverpool
+21,3888754,87,279,Copa del Rey,1977/1978,1978-04-19,Barcelona,Las Palmas
+22,3888721,87,268,Copa del Rey,1982/1983,1983-06-04,Barcelona,Real Madrid
+23,3750248,87,84,Copa del Rey,1983/1984,1984-05-05,Athletic Club,Barcelona
+24,3888787,1470,274,FIFA U20 World Cup,1979,1979-09-07,Argentina U20,Soviet Union U20
+25,3817871,1238,108,Indian Super league,2021/2022,2022-01-31,NorthEast United,SC Delhi
+26,3888713,11,278,La Liga,1973/1974,1974-02-17,Real Madrid,Barcelona
+27,68316,11,37,La Liga,2004/2005,2005-05-01,Barcelona,Albacete
+28,68339,11,38,La Liga,2005/2006,2005-11-06,Getafe,Barcelona
+29,68327,11,39,La Liga,2006/2007,2006-09-09,Barcelona,Osasuna
+30,69144,11,40,La Liga,2007/2008,2007-10-07,Barcelona,Atlético Madrid
+31,69231,11,41,La Liga,2008/2009,2009-02-08,Barcelona,Sporting Gijón
+32,69224,11,21,La Liga,2009/2010,2010-03-14,Barcelona,Valencia
+33,69303,11,22,La Liga,2010/2011,2011-03-19,Barcelona,Getafe
+34,69322,11,23,La Liga,2011/2012,2012-03-11,Racing Santander,Barcelona
+35,70262,11,24,La Liga,2012/2013,2012-08-26,Osasuna,Barcelona
+36,266420,11,25,La Liga,2013/2014,2013-09-28,Almería,Barcelona
+37,266741,11,26,La Liga,2014/2015,2015-02-15,Barcelona,Levante UD
+38,3825862,11,27,La Liga,2015/2016,2016-04-19,Espanyol,Celta Vigo
+39,267492,11,2,La Liga,2016/2017,2016-10-15,Barcelona,RC Deportivo La Coruña
+40,9642,11,1,La Liga,2017/2018,2017-10-14,Atlético Madrid,Barcelona
+41,16023,11,4,La Liga,2018/2019,2018-10-07,Valencia,Barcelona
+42,303479,11,42,La Liga,2019/2020,2020-03-07,Barcelona,Real Sociedad
+43,3764440,11,90,La Liga,2020/2021,2021-02-24,Barcelona,Elche
+44,3889082,81,275,Liga Profesional,1981,1981-04-10,Boca Juniors,River Plate
+45,3889115,81,48,Liga Profesional,1997/1998,1997-10-25,River Plate,Boca Juniors
+46,3829470,7,27,Ligue 1,2015/2016,2015-09-20,Saint-Étienne,Nantes
+47,3802665,7,108,Ligue 1,2021/2022,2022-05-14,Montpellier,Paris Saint-Germain
+48,3838017,7,235,Ligue 1,2022/2023,2023-06-03,Paris Saint-Germain,Clermont Foot
+49,3877072,44,107,Major League Soccer,2023,2023-08-31,Inter Miami,Nashville SC
+50,3750234,116,68,North American League,1977,1977-08-28,NY Cosmos,Seattle Sounders
+51,3749448,2,44,Premier League,2003/2004,2004-04-09,Arsenal,Liverpool
+52,3754186,2,27,Premier League,2015/2016,2015-11-28,Leicester City,Manchester United
+53,3889182,12,86,Serie A,1986/1987,1986-11-09,Juventus,Napoli
+54,3879761,12,27,Serie A,2015/2016,2016-02-28,Carpi,Atalanta
+55,3750245,35,75,UEFA Europa League,1988/1989,1989-03-15,Napoli,Juventus W
+56,3890370,9,27,1. Bundesliga,2015/2016,2015-11-21,Eintracht Frankfurt,Bayer Leverkusen
+57,3895340,9,281,1. Bundesliga,2023/2024,2024-05-12,Bochum,Bayer Leverkusen
+58,3813264,1238,108,Indian Super league,2021/2022,2022-01-05,Mohun Bagan Super Giant,SC Delhi
+59,69153,11,37,La Liga,2004/2005,2004-12-11,Albacete,Barcelona
+60,68323,11,38,La Liga,2005/2006,2005-12-20,Barcelona,Celta Vigo
+61,69154,11,39,La Liga,2006/2007,2007-02-11,Barcelona,Racing Santander
+62,69181,11,40,La Liga,2007/2008,2008-01-27,Athletic Club,Barcelona
+63,69216,11,41,La Liga,2008/2009,2009-03-07,Barcelona,Athletic Club
+64,69255,11,21,La Liga,2009/2010,2009-09-26,Málaga,Barcelona
+65,69302,11,22,La Liga,2010/2011,2010-12-12,Barcelona,Real Sociedad
+66,69293,11,23,La Liga,2011/2012,2011-10-15,Barcelona,Racing Santander
+67,70259,11,24,La Liga,2012/2013,2012-08-19,Barcelona,Real Sociedad
+68,70302,11,25,La Liga,2013/2014,2013-09-21,Rayo Vallecano,Barcelona
+69,266631,11,26,La Liga,2014/2015,2015-05-17,Atlético Madrid,Barcelona
+70,3825781,11,27,La Liga,2015/2016,2016-02-21,Rayo Vallecano,Sevilla
+71,266280,11,2,La Liga,2016/2017,2017-04-05,Barcelona,Sevilla
+72,9726,11,1,La Liga,2017/2018,2017-12-17,Barcelona,RC Deportivo La Coruña
+73,15946,11,4,La Liga,2018/2019,2018-08-18,Barcelona,Deportivo Alavés
+74,303596,11,42,La Liga,2019/2020,2019-12-18,Barcelona,Real Madrid
+75,3773656,11,90,La Liga,2020/2021,2020-11-21,Atlético Madrid,Barcelona
+76,3900507,7,27,Ligue 1,2015/2016,2015-11-08,Olympique de Marseille,OGC Nice
+77,3802805,7,108,Ligue 1,2021/2022,2022-03-05,OGC Nice,Paris Saint-Germain
+78,3837827,7,235,Ligue 1,2022/2023,2023-01-15,Rennes,Paris Saint-Germain
+79,3877194,44,107,Major League Soccer,2023,2023-10-22,Charlotte,Inter Miami
+80,3749431,2,44,Premier League,2003/2004,2004-04-11,Newcastle United,Arsenal
+81,3754158,2,27,Premier League,2015/2016,2016-05-07,West Ham United,Swansea City
+82,3879555,12,27,Serie A,2015/2016,2015-09-28,Atalanta,Sampdoria
+83,3750244,35,75,UEFA Europa League,1988/1989,1989-04-05,Napoli,Bayern Munich
+84,3890312,9,27,1. Bundesliga,2015/2016,2015-09-23,Bayer Leverkusen,FSV Mainz 05
+85,3895052,9,281,1. Bundesliga,2023/2024,2023-08-19,Bayer Leverkusen,RB Leipzig
+86,3817872,1238,108,Indian Super league,2021/2022,2022-02-21,Bengaluru,Odisha
+87,68315,11,37,La Liga,2004/2005,2004-12-21,Barcelona,Levante UD
+88,68350,11,38,La Liga,2005/2006,2006-02-05,Barcelona,Atlético Madrid
+89,68335,11,39,La Liga,2006/2007,2007-03-10,Barcelona,Real Madrid
+90,69184,11,40,La Liga,2007/2008,2007-11-24,Barcelona,Recreativo Huelva
+91,69251,11,41,La Liga,2008/2009,2009-04-25,Valencia,Barcelona
+92,69257,11,21,La Liga,2009/2010,2010-03-24,Barcelona,Osasuna
+93,69296,11,22,La Liga,2010/2011,2011-01-29,Hércules,Barcelona
+94,69312,11,23,La Liga,2011/2012,2012-01-08,Espanyol,Barcelona
+95,70260,11,24,La Liga,2012/2013,2013-01-27,Barcelona,Osasuna
+96,266074,11,25,La Liga,2013/2014,2014-03-16,Barcelona,Osasuna
+97,70264,11,26,La Liga,2014/2015,2014-12-13,Getafe,Barcelona
+98,3825905,11,27,La Liga,2015/2016,2016-04-03,Málaga,Espanyol
+99,267039,11,2,La Liga,2016/2017,2017-05-14,Las Palmas,Barcelona
+100,9636,11,1,La Liga,2017/2018,2017-10-01,Barcelona,Las Palmas
+101,16136,11,4,La Liga,2018/2019,2019-01-20,Barcelona,Leganés
+102,303652,11,42,La Liga,2019/2020,2020-01-04,Espanyol,Barcelona
+103,3773474,11,90,La Liga,2020/2021,2021-04-05,Barcelona,Real Valladolid
+104,3829498,7,27,Ligue 1,2015/2016,2015-10-04,Lorient,Bordeaux
+105,3803000,7,108,Ligue 1,2021/2022,2022-04-09,Clermont Foot,Paris Saint-Germain
+106,3837947,7,235,Ligue 1,2022/2023,2023-04-15,Paris Saint-Germain,Lens
+107,3877115,44,107,Major League Soccer,2023,2023-09-21,Inter Miami,Toronto FC
+108,3749196,2,44,Premier League,2003/2004,2003-11-08,Arsenal,Tottenham Hotspur
+109,3754215,2,27,Premier League,2015/2016,2015-12-05,West Bromwich Albion,Tottenham Hotspur
+110,3879611,12,27,Serie A,2015/2016,2015-11-08,Palermo,Chievo
+111,3887188,35,75,UEFA Europa League,1988/1989,1989-05-03,Napoli,VfB Stuttgart
+112,3890472,9,27,1. Bundesliga,2015/2016,2016-03-02,Bayer Leverkusen,Werder Bremen
+113,3895258,9,281,1. Bundesliga,2023/2024,2024-03-03,FC Köln,Bayer Leverkusen
+114,3813291,1238,108,Indian Super league,2021/2022,2021-11-27,East Bengal,Mohun Bagan Super Giant
+115,68352,11,37,La Liga,2004/2005,2005-04-17,Barcelona,Getafe
+116,68325,11,38,La Liga,2005/2006,2006-01-29,Mallorca,Barcelona
+117,69156,11,39,La Liga,2006/2007,2007-04-29,Barcelona,Levante UD
+118,68365,11,40,La Liga,2007/2008,2008-03-01,Atlético Madrid,Barcelona
+119,69142,11,41,La Liga,2008/2009,2009-03-22,Barcelona,Málaga
+120,69226,11,21,La Liga,2009/2010,2010-03-06,Almería,Barcelona
+121,69306,11,22,La Liga,2010/2011,2010-11-20,Almería,Barcelona
+122,69314,11,23,La Liga,2011/2012,2011-10-29,Barcelona,Mallorca
+123,70263,11,24,La Liga,2012/2013,2012-12-01,Barcelona,Athletic Club
+124,70277,11,25,La Liga,2013/2014,2013-08-18,Barcelona,Levante UD
+125,266117,11,26,La Liga,2014/2015,2014-09-27,Barcelona,Granada
+126,3825888,11,27,La Liga,2015/2016,2015-11-21,Valencia,Las Palmas
+127,266892,11,2,La Liga,2016/2017,2016-08-28,Athletic Club,Barcelona
+128,9811,11,1,La Liga,2017/2018,2018-02-24,Barcelona,Girona
+129,15998,11,4,La Liga,2018/2019,2018-09-26,Leganés,Barcelona
+130,303400,11,42,La Liga,2019/2020,2020-01-25,Valencia,Barcelona
+131,3773565,11,90,La Liga,2020/2021,2021-01-09,Granada,Barcelona
+132,3900510,7,27,Ligue 1,2015/2016,2015-11-20,OGC Nice,Lyon
+133,3802983,7,108,Ligue 1,2021/2022,2022-04-17,Paris Saint-Germain,Olympique de Marseille
+134,3837987,7,235,Ligue 1,2022/2023,2023-05-13,Paris Saint-Germain,AC Ajaccio
+135,3877090,44,107,Major League Soccer,2023,2023-09-04,LAFC,Inter Miami
+136,3749631,2,44,Premier League,2003/2004,2004-02-10,Arsenal,Southampton
+137,3754332,2,27,Premier League,2015/2016,2016-04-25,Tottenham Hotspur,West Bromwich Albion
+138,3879632,12,27,Serie A,2015/2016,2015-11-29,AS Roma,Atalanta
+139,3890395,9,27,1. Bundesliga,2015/2016,2015-12-12,Bayer Leverkusen,Borussia Mönchengladbach
+140,3895210,9,281,1. Bundesliga,2023/2024,2024-01-27,Bayer Leverkusen,Borussia Mönchengladbach
+141,3813311,1238,108,Indian Super league,2021/2022,2022-01-02,Jamshedpur,Chennaiyin
+142,68313,11,37,La Liga,2004/2005,2004-10-24,Barcelona,Osasuna
+143,68322,11,38,La Liga,2005/2006,2005-12-17,Cádiz,Barcelona
+144,69175,11,39,La Liga,2006/2007,2007-03-31,Barcelona,RC Deportivo La Coruña
+145,69151,11,40,La Liga,2007/2008,2007-09-29,Levante UD,Barcelona
+146,69139,11,41,La Liga,2008/2009,2009-02-21,Barcelona,Espanyol
+147,69256,11,21,La Liga,2009/2010,2009-10-03,Barcelona,Almería
+148,69305,11,22,La Liga,2010/2011,2011-04-09,Barcelona,Almería
+149,69340,11,23,La Liga,2011/2012,2012-05-02,Barcelona,Málaga
+150,70280,11,24,La Liga,2012/2013,2012-11-25,Levante UD,Barcelona
+151,70289,11,25,La Liga,2013/2014,2014-04-27,Villarreal,Barcelona
+152,266967,11,26,La Liga,2014/2015,2015-03-14,Eibar,Barcelona
+153,3825587,11,27,La Liga,2015/2016,2015-09-13,Athletic Club,Getafe
+154,267101,11,2,La Liga,2016/2017,2017-04-26,Barcelona,Osasuna
+155,9650,11,1,La Liga,2017/2018,2017-10-21,Barcelona,Málaga
+156,16205,11,4,La Liga,2018/2019,2019-03-09,Barcelona,Rayo Vallecano
+157,303421,11,42,La Liga,2019/2020,2020-07-19,Deportivo Alavés,Barcelona
+158,3773372,11,90,La Liga,2020/2021,2021-05-08,Barcelona,Atlético Madrid
+159,3900578,7,27,Ligue 1,2015/2016,2016-01-10,Lille,OGC Nice
+160,3802676,7,108,Ligue 1,2021/2022,2022-04-23,Paris Saint-Germain,Lens
+161,3837902,7,235,Ligue 1,2022/2023,2023-03-11,Stade Brestois,Paris Saint-Germain
+162,3877060,44,107,Major League Soccer,2023,2023-08-27,New York Red Bulls,Inter Miami
+163,3749253,2,44,Premier League,2003/2004,2003-10-04,Liverpool,Arsenal
+164,3753975,2,27,Premier League,2015/2016,2016-01-23,Sunderland,AFC Bournemouth
+165,3879810,12,27,Serie A,2015/2016,2016-04-09,AC Milan,Juventus
+166,3890500,9,27,1. Bundesliga,2015/2016,2016-03-20,VfB Stuttgart,Bayer Leverkusen
+167,3895167,9,281,1. Bundesliga,2023/2024,2023-12-10,VfB Stuttgart,Bayer Leverkusen
+168,3813278,1238,108,Indian Super league,2021/2022,2021-12-22,Chennaiyin,Kerala Blasters
+169,68353,11,37,La Liga,2004/2005,2004-10-16,Espanyol,Barcelona
+170,69172,11,38,La Liga,2005/2006,2006-02-18,Barcelona,Real Betis
+171,69162,11,39,La Liga,2006/2007,2007-05-13,Barcelona,Real Betis
+172,68360,11,40,La Liga,2007/2008,2008-02-24,Barcelona,Levante UD
+173,69215,11,41,La Liga,2008/2009,2008-09-13,Barcelona,Racing Santander
+174,69218,11,21,La Liga,2009/2010,2009-12-05,RC Deportivo La Coruña,Barcelona
+175,69270,11,22,La Liga,2010/2011,2010-11-07,Getafe,Barcelona
+176,70225,11,23,La Liga,2011/2012,2012-03-20,Barcelona,Granada
+177,70282,11,24,La Liga,2012/2013,2013-02-03,Valencia,Barcelona
+178,266462,11,25,La Liga,2013/2014,2013-10-19,Osasuna,Barcelona
+179,267597,11,26,La Liga,2014/2015,2015-02-01,Barcelona,Villarreal
+180,266498,11,27,La Liga,2015/2016,2016-03-12,Barcelona,Getafe
+181,266528,11,2,La Liga,2016/2017,2016-12-18,Barcelona,Espanyol
+182,9783,11,1,La Liga,2017/2018,2018-02-04,Espanyol,Barcelona
+183,16306,11,4,La Liga,2018/2019,2019-05-12,Barcelona,Getafe
+184,303682,11,42,La Liga,2019/2020,2020-02-02,Barcelona,Levante UD
+185,3773547,11,90,La Liga,2020/2021,2020-11-29,Barcelona,Osasuna
+186,3901248,7,27,Ligue 1,2015/2016,2016-05-07,Lille,Guingamp
+187,3802699,7,108,Ligue 1,2021/2022,2021-10-29,Paris Saint-Germain,Lille
+188,3837818,7,235,Ligue 1,2022/2023,2023-01-11,Paris Saint-Germain,Angers
+189,3877170,44,107,Major League Soccer,2023,2023-10-08,Inter Miami,Cincinnati
+190,3749278,2,44,Premier League,2003/2004,2003-12-20,Bolton Wanderers,Arsenal
+191,3753992,2,27,Premier League,2015/2016,2016-05-08,Tottenham Hotspur,Southampton
+192,3879756,12,27,Serie A,2015/2016,2016-02-22,Napoli,AC Milan
+193,3890463,9,27,1. Bundesliga,2015/2016,2016-02-28,FSV Mainz 05,Bayer Leverkusen
+194,3895180,9,281,1. Bundesliga,2023/2024,2023-12-17,Bayer Leverkusen,Eintracht Frankfurt
+195,3817865,1238,108,Indian Super league,2021/2022,2022-01-18,NorthEast United,Odisha
+196,68314,11,37,La Liga,2004/2005,2004-12-04,Barcelona,Málaga
+197,68342,11,38,La Liga,2005/2006,2006-01-15,Barcelona,Athletic Club
+198,68334,11,39,La Liga,2006/2007,2007-03-03,Sevilla,Barcelona
+199,68358,11,40,La Liga,2007/2008,2008-04-12,Recreativo Huelva,Barcelona
+200,69171,11,41,La Liga,2008/2009,2008-11-29,Sevilla,Barcelona
+201,69220,11,21,La Liga,2009/2010,2010-01-30,Sporting Gijón,Barcelona
+202,69287,11,22,La Liga,2010/2011,2010-09-11,Barcelona,Hércules
+203,69329,11,23,La Liga,2011/2012,2011-10-22,Barcelona,Sevilla
+204,70270,11,24,La Liga,2012/2013,2012-09-22,Barcelona,Granada
+205,266256,11,25,La Liga,2013/2014,2014-05-17,Barcelona,Atlético Madrid
+206,266929,11,26,La Liga,2014/2015,2015-04-05,Celta Vigo,Barcelona
+207,3825808,11,27,La Liga,2015/2016,2016-03-06,Sporting Gijón,Athletic Club
+208,267395,11,2,La Liga,2016/2017,2017-01-14,Barcelona,Las Palmas
+209,9765,11,1,La Liga,2017/2018,2018-01-21,Real Betis,Barcelona
+210,16275,11,4,La Liga,2018/2019,2019-04-23,Deportivo Alavés,Barcelona
+211,303430,11,42,La Liga,2019/2020,2019-09-24,Barcelona,Villarreal
+212,3773689,11,90,La Liga,2020/2021,2021-04-25,Villarreal,Barcelona
+213,3829450,7,27,Ligue 1,2015/2016,2015-08-30,AS Monaco,Paris Saint-Germain
+214,3802709,7,108,Ligue 1,2021/2022,2022-02-26,Paris Saint-Germain,Saint-Étienne
+215,3837938,7,235,Ligue 1,2022/2023,2023-04-08,OGC Nice,Paris Saint-Germain
+216,3749526,2,44,Premier League,2003/2004,2003-10-26,Charlton Athletic,Arsenal
+217,3753998,2,27,Premier League,2015/2016,2015-12-28,West Ham United,Southampton
+218,3879633,12,27,Serie A,2015/2016,2015-11-29,Empoli,Lazio
+219,3890350,9,27,1. Bundesliga,2015/2016,2015-10-31,Wolfsburg,Bayer Leverkusen
+220,3895275,9,281,1. Bundesliga,2023/2024,2024-03-17,Freiburg,Bayer Leverkusen
+221,3817895,1238,108,Indian Super league,2021/2022,2022-02-09,Chennaiyin,Goa
+222,69164,11,38,La Liga,2005/2006,2005-10-26,Barcelona,Málaga
+223,69165,11,39,La Liga,2006/2007,2007-06-09,Barcelona,Espanyol
+224,69145,11,40,La Liga,2007/2008,2007-12-15,Valencia,Barcelona
+225,69223,11,41,La Liga,2008/2009,2009-04-18,Getafe,Barcelona
+226,69250,11,21,La Liga,2009/2010,2009-11-07,Barcelona,Mallorca
+227,69283,11,22,La Liga,2010/2011,2011-02-26,Mallorca,Barcelona
+228,69297,11,23,La Liga,2011/2012,2011-09-24,Barcelona,Atlético Madrid
+229,70295,11,24,La Liga,2012/2013,2012-12-09,Real Betis,Barcelona
+230,266491,11,25,La Liga,2013/2014,2014-05-03,Barcelona,Getafe
+231,70273,11,26,La Liga,2014/2015,2014-09-13,Barcelona,Athletic Club
+232,3825729,11,27,La Liga,2015/2016,2016-01-10,Villarreal,Sporting Gijón
+233,267569,11,2,La Liga,2016/2017,2017-04-23,Real Madrid,Barcelona
+234,9754,11,1,La Liga,2017/2018,2018-01-14,Real Sociedad,Barcelona
+235,16196,11,4,La Liga,2018/2019,2019-03-02,Real Madrid,Barcelona
+236,303516,11,42,La Liga,2019/2020,2020-06-27,Celta Vigo,Barcelona
+237,3773587,11,90,La Liga,2020/2021,2020-10-17,Getafe,Barcelona
+238,3900523,7,27,Ligue 1,2015/2016,2015-11-28,Stade de Reims,Rennes
+239,3802685,7,108,Ligue 1,2021/2022,2021-12-04,Lens,Paris Saint-Germain
+240,3837928,7,235,Ligue 1,2022/2023,2023-04-02,Paris Saint-Germain,Lyon
+241,3749310,2,44,Premier League,2003/2004,2003-12-29,Southampton,Arsenal
+242,3754211,2,27,Premier League,2015/2016,2015-11-21,Newcastle United,Leicester City
+243,3879698,12,27,Serie A,2015/2016,2016-01-23,Empoli,AC Milan
+244,3890382,9,27,1. Bundesliga,2015/2016,2015-11-29,Bayer Leverkusen,Schalke 04
+245,3895139,9,281,1. Bundesliga,2023/2024,2023-11-12,Bayer Leverkusen,Union Berlin
+246,3817890,1238,108,Indian Super league,2021/2022,2022-01-14,Goa,NorthEast United
+247,68348,11,38,La Liga,2005/2006,2006-01-07,Espanyol,Barcelona
+248,69179,11,39,La Liga,2006/2007,2007-04-07,Real Zaragoza,Barcelona
+249,69158,11,40,La Liga,2007/2008,2007-10-28,Barcelona,Almería
+250,69177,11,41,La Liga,2008/2009,2009-03-15,Almería,Barcelona
+251,69267,11,21,La Liga,2009/2010,2009-12-02,Xerez,Barcelona
+252,69248,11,22,La Liga,2010/2011,2011-02-12,Sporting Gijón,Barcelona
+253,70224,11,23,La Liga,2011/2012,2012-04-29,Rayo Vallecano,Barcelona
+254,70296,11,24,La Liga,2012/2013,2012-12-16,Barcelona,Atlético Madrid
+255,267520,11,25,La Liga,2013/2014,2013-09-24,Barcelona,Real Sociedad
+256,267301,11,26,La Liga,2014/2015,2014-11-01,Barcelona,Celta Vigo
+257,3825769,11,27,La Liga,2015/2016,2016-02-13,Villarreal,Málaga
+258,266477,11,2,La Liga,2016/2017,2017-01-08,Villarreal,Barcelona
+259,9742,11,1,La Liga,2017/2018,2018-01-07,Barcelona,Levante UD
+260,16073,11,4,La Liga,2018/2019,2018-11-24,Atlético Madrid,Barcelona
+261,3901167,7,27,Ligue 1,2015/2016,2016-03-05,Bastia,Lorient
+262,3802795,7,108,Ligue 1,2021/2022,2022-02-11,Paris Saint-Germain,Rennes
+263,3837771,7,235,Ligue 1,2022/2023,2022-10-29,Paris Saint-Germain,Troyes
+264,3749117,2,44,Premier League,2003/2004,2004-01-07,Everton,Arsenal
+265,3754251,2,27,Premier League,2015/2016,2016-01-02,West Ham United,Liverpool
+266,3878544,12,27,Serie A,2015/2016,2015-08-23,Palermo,Genoa
+267,3890337,9,27,1. Bundesliga,2015/2016,2015-10-17,Hamburger SV,Bayer Leverkusen
+268,3895107,9,281,1. Bundesliga,2023/2024,2023-10-08,Bayer Leverkusen,FC Köln
+269,3817866,1238,108,Indian Super league,2021/2022,2022-03-02,Kerala Blasters,Mumbai City
+270,3901146,7,27,Ligue 1,2015/2016,2016-02-20,Paris Saint-Germain,Stade de Reims
+271,3802930,7,108,Ligue 1,2021/2022,2022-05-08,Paris Saint-Germain,Troyes
+272,3838004,7,235,Ligue 1,2022/2023,2023-05-27,Strasbourg,Paris Saint-Germain
+273,3749358,2,44,Premier League,2003/2004,2003-08-24,Middlesbrough,Arsenal
+274,3754264,2,27,Premier League,2015/2016,2016-02-13,Chelsea,Newcastle United
+275,3879720,12,27,Serie A,2015/2016,2016-02-03,Lazio,Napoli
+276,3890315,9,27,1. Bundesliga,2015/2016,2015-09-26,Werder Bremen,Bayer Leverkusen
+277,3895134,9,281,1. Bundesliga,2023/2024,2023-11-04,Hoffenheim,Bayer Leverkusen
+278,3813288,1238,108,Indian Super league,2021/2022,2021-12-02,Jamshedpur,SC Delhi
+279,3829430,7,27,Ligue 1,2015/2016,2015-08-16,Stade de Reims,Olympique de Marseille
+280,3802683,7,108,Ligue 1,2021/2022,2021-12-12,Paris Saint-Germain,AS Monaco
+281,3837659,7,235,Ligue 1,2022/2023,2022-08-13,Paris Saint-Germain,Montpellier
+282,3749590,2,44,Premier League,2003/2004,2003-12-06,Leicester City,Arsenal
+283,3754220,2,27,Premier League,2015/2016,2016-03-06,Crystal Palace,Liverpool
+284,3879854,12,27,Serie A,2015/2016,2016-05-01,Sassuolo,Hellas Verona
+285,3890519,9,27,1. Bundesliga,2015/2016,2016-04-10,FC Köln,Bayer Leverkusen
+286,3895348,9,281,1. Bundesliga,2023/2024,2024-05-18,Bayer Leverkusen,Augsburg
+287,3817860,1238,108,Indian Super league,2021/2022,2022-01-27,Odisha,SC Delhi
+288,3900548,7,27,Ligue 1,2015/2016,2015-12-06,Bordeaux,Guingamp
+289,3802837,7,108,Ligue 1,2021/2022,2021-11-28,Saint-Étienne,Paris Saint-Germain
+290,3837662,7,235,Ligue 1,2022/2023,2022-08-21,Lille,Paris Saint-Germain
+291,3749528,2,44,Premier League,2003/2004,2003-09-26,Arsenal,Newcastle United
+292,3754170,2,27,Premier League,2015/2016,2016-04-30,Newcastle United,Crystal Palace
+293,3879688,12,27,Serie A,2015/2016,2016-01-16,Atalanta,Inter Milan
+294,3890390,9,27,1. Bundesliga,2015/2016,2015-12-05,Hertha Berlin,Bayer Leverkusen
+295,3895095,9,281,1. Bundesliga,2023/2024,2023-09-30,FSV Mainz 05,Bayer Leverkusen
+296,3817851,1238,108,Indian Super league,2021/2022,2022-01-12,Odisha,Kerala Blasters
+297,3829431,7,27,Ligue 1,2015/2016,2015-08-16,Lorient,Bastia
+298,3802818,7,108,Ligue 1,2021/2022,2022-04-03,Paris Saint-Germain,Lorient
+299,3837727,7,235,Ligue 1,2022/2023,2022-10-01,Paris Saint-Germain,OGC Nice
+300,3749403,2,44,Premier League,2003/2004,2004-03-20,Arsenal,Bolton Wanderers
+301,3754139,2,27,Premier League,2015/2016,2016-02-13,Swansea City,Southampton
+302,3879641,12,27,Serie A,2015/2016,2015-12-06,Hellas Verona,Empoli
+303,3890534,9,27,1. Bundesliga,2015/2016,2016-04-23,Schalke 04,Bayer Leverkusen
+304,3895113,9,281,1. Bundesliga,2023/2024,2023-10-21,Wolfsburg,Bayer Leverkusen
+305,3813276,1238,108,Indian Super league,2021/2022,2021-12-17,NorthEast United,East Bengal
+306,3900560,7,27,Ligue 1,2015/2016,2015-12-18,OGC Nice,Montpellier
+307,3802643,7,108,Ligue 1,2021/2022,2022-04-29,Strasbourg,Paris Saint-Germain
+308,3837752,7,235,Ligue 1,2022/2023,2022-10-21,AC Ajaccio,Paris Saint-Germain
+309,3749603,2,44,Premier League,2003/2004,2004-05-09,Fulham,Arsenal
+310,3754213,2,27,Premier League,2015/2016,2015-09-12,Watford,Swansea City
+311,3879745,12,27,Serie A,2015/2016,2016-02-14,Palermo,Torino
+312,3890415,9,27,1. Bundesliga,2015/2016,2016-01-23,Hoffenheim,Bayer Leverkusen
+313,3895309,9,281,1. Bundesliga,2023/2024,2024-04-21,Borussia Dortmund,Bayer Leverkusen
+314,3817897,1238,108,Indian Super league,2021/2022,2022-02-23,SC Delhi,Kerala Blasters
+315,3829454,7,27,Ligue 1,2015/2016,2015-09-12,Lyon,Lille
+316,3802809,7,108,Ligue 1,2021/2022,2021-10-03,Rennes,Paris Saint-Germain
+317,3837844,7,235,Ligue 1,2022/2023,2023-02-01,Montpellier,Paris Saint-Germain
+318,3749153,2,44,Premier League,2003/2004,2004-01-10,Arsenal,Middlesbrough
+319,3754077,2,27,Premier League,2015/2016,2015-09-19,Manchester City,West Ham United
+320,3879545,12,27,Serie A,2015/2016,2015-09-23,Sampdoria,AS Roma
+321,3890477,9,27,1. Bundesliga,2015/2016,2016-03-05,Augsburg,Bayer Leverkusen
+322,3895194,9,281,1. Bundesliga,2023/2024,2024-01-13,Augsburg,Bayer Leverkusen
+323,3817864,1238,108,Indian Super league,2021/2022,2022-02-03,Mumbai City,Mohun Bagan Super Giant
+324,3829479,7,27,Ligue 1,2015/2016,2015-09-23,Lorient,Stade Malherbe Caen
+325,3802902,7,108,Ligue 1,2021/2022,2021-10-24,Olympique de Marseille,Paris Saint-Germain
+326,3837876,7,235,Ligue 1,2022/2023,2023-02-19,Paris Saint-Germain,Lille
+327,3749434,2,44,Premier League,2003/2004,2003-11-22,Birmingham City,Arsenal
+328,3754047,2,27,Premier League,2015/2016,2015-11-29,Liverpool,Swansea City
+329,3879661,12,27,Serie A,2015/2016,2015-12-20,Atalanta,Napoli
+330,3890288,9,27,1. Bundesliga,2015/2016,2015-09-12,Bayer Leverkusen,Darmstadt 98
+331,3895153,9,281,1. Bundesliga,2023/2024,2023-11-25,Werder Bremen,Bayer Leverkusen
+332,3817878,1238,108,Indian Super league,2021/2022,2022-01-24,East Bengal,SC Delhi
+333,3901197,7,27,Ligue 1,2015/2016,2016-04-02,Guingamp,Montpellier
+334,3802948,7,108,Ligue 1,2021/2022,2022-05-21,Paris Saint-Germain,Metz
+335,3837918,7,235,Ligue 1,2022/2023,2023-03-19,Paris Saint-Germain,Rennes
+336,3749493,2,44,Premier League,2003/2004,2003-08-16,Arsenal,Everton
+337,3754232,2,27,Premier League,2015/2016,2016-03-02,Manchester United,Watford
+338,3879719,12,27,Serie A,2015/2016,2016-02-03,Sampdoria,Torino
+339,3890330,9,27,1. Bundesliga,2015/2016,2015-10-04,Bayer Leverkusen,Augsburg
+340,3895060,9,281,1. Bundesliga,2023/2024,2023-08-26,Borussia Mönchengladbach,Bayer Leverkusen
+341,3813313,1238,108,Indian Super league,2021/2022,2022-01-23,Mohun Bagan Super Giant,Odisha
+342,3829474,7,27,Ligue 1,2015/2016,2015-09-22,Angers,Stade de Reims
+343,3802752,7,108,Ligue 1,2021/2022,2021-09-19,Paris Saint-Germain,Lyon
+344,3837963,7,235,Ligue 1,2022/2023,2023-04-30,Paris Saint-Germain,Lorient
+345,3749233,2,44,Premier League,2003/2004,2004-02-01,Arsenal,Manchester City
+346,3754118,2,27,Premier League,2015/2016,2016-04-02,Arsenal,Watford
+347,3879838,12,27,Serie A,2015/2016,2016-04-24,Sampdoria,Lazio
+348,3890550,9,27,1. Bundesliga,2015/2016,2016-05-07,Borussia Mönchengladbach,Bayer Leverkusen
+349,3895158,9,281,1. Bundesliga,2023/2024,2023-12-03,Bayer Leverkusen,Borussia Dortmund
+350,3827767,1238,108,Indian Super league,2021/2022,2022-03-20,SC Delhi,Kerala Blasters
+351,3900529,7,27,Ligue 1,2015/2016,2015-11-29,Saint-Étienne,Guingamp
+352,3802690,7,108,Ligue 1,2021/2022,2021-12-22,Lorient,Paris Saint-Germain
+353,3837998,7,235,Ligue 1,2022/2023,2023-05-21,Auxerre,Paris Saint-Germain
+354,3749360,2,44,Premier League,2003/2004,2003-12-14,Arsenal,Blackburn Rovers
+355,3754149,2,27,Premier League,2015/2016,2016-05-15,Swansea City,Manchester City
+356,3879542,12,27,Serie A,2015/2016,2015-09-23,Inter Milan,Hellas Verona
+357,3890427,9,27,1. Bundesliga,2015/2016,2016-01-30,Bayer Leverkusen,Hannover 96
+358,3895220,9,281,1. Bundesliga,2023/2024,2024-02-03,Darmstadt 98,Bayer Leverkusen
+359,3817901,1238,108,Indian Super league,2021/2022,2022-02-17,Jamshedpur,Mumbai City
+360,3829473,7,27,Ligue 1,2015/2016,2015-09-22,Paris Saint-Germain,Guingamp
+361,3802984,7,108,Ligue 1,2021/2022,2021-11-20,Paris Saint-Germain,Nantes
+362,3837683,7,235,Ligue 1,2022/2023,2022-08-31,Toulouse,Paris Saint-Germain
+363,3749276,2,44,Premier League,2003/2004,2004-02-21,Chelsea,Arsenal
+364,3754100,2,27,Premier League,2015/2016,2016-03-20,Newcastle United,Sunderland
+365,3879852,12,27,Serie A,2015/2016,2016-05-01,Palermo,Sampdoria
+366,3890502,9,27,1. Bundesliga,2015/2016,2016-04-01,Bayer Leverkusen,Wolfsburg
+367,3895074,9,281,1. Bundesliga,2023/2024,2023-09-15,Bayern Munich,Bayer Leverkusen
+368,3817880,1238,108,Indian Super league,2021/2022,2022-02-16,Odisha,Chennaiyin
+369,3829460,7,27,Ligue 1,2015/2016,2015-09-13,Nantes,Rennes
+370,3802793,7,108,Ligue 1,2021/2022,2021-12-01,Paris Saint-Germain,OGC Nice
+371,3837695,7,235,Ligue 1,2022/2023,2022-09-03,Nantes,Paris Saint-Germain
+372,3749465,2,44,Premier League,2003/2004,2004-03-13,Blackburn Rovers,Arsenal
+373,3754280,2,27,Premier League,2015/2016,2016-03-01,Norwich City,Chelsea
+374,3878609,12,27,Serie A,2015/2016,2015-09-20,Genoa,Juventus
+375,3890431,9,27,1. Bundesliga,2015/2016,2016-02-06,Bayer Leverkusen,Bayern Munich
+376,3895202,9,281,1. Bundesliga,2023/2024,2024-01-20,RB Leipzig,Bayer Leverkusen
+377,3817850,1238,108,Indian Super league,2021/2022,2022-01-11,Jamshedpur,East Bengal
+378,3901149,7,27,Ligue 1,2015/2016,2016-02-20,AS Monaco,Troyes
+379,3802839,7,108,Ligue 1,2021/2022,2022-02-19,Nantes,Paris Saint-Germain
+380,3837680,7,235,Ligue 1,2022/2023,2022-08-28,Paris Saint-Germain,AS Monaco
+381,3749462,2,44,Premier League,2003/2004,2004-05-01,Arsenal,Birmingham City
+382,3754327,2,27,Premier League,2015/2016,2016-03-01,Aston Villa,Everton
+383,3879864,12,27,Serie A,2015/2016,2016-05-08,Hellas Verona,Juventus
+384,3890456,9,27,1. Bundesliga,2015/2016,2016-02-21,Bayer Leverkusen,Borussia Dortmund
+385,3895067,9,281,1. Bundesliga,2023/2024,2023-09-02,Bayer Leverkusen,Darmstadt 98
+386,3813306,1238,108,Indian Super league,2021/2022,2021-12-21,NorthEast United,Mohun Bagan Super Giant
+387,3900519,7,27,Ligue 1,2015/2016,2015-11-22,Rennes,Bordeaux
+388,3802696,7,108,Ligue 1,2021/2022,2021-08-29,Stade de Reims,Paris Saint-Germain
+389,3837839,7,235,Ligue 1,2022/2023,2023-01-29,Paris Saint-Germain,Stade de Reims
+390,3749453,2,44,Premier League,2003/2004,2004-04-16,Arsenal,Leeds United
+391,3754039,2,27,Premier League,2015/2016,2016-02-13,Crystal Palace,Watford
+392,3879649,12,27,Serie A,2015/2016,2015-12-12,Palermo,Frosinone
+393,3890492,9,27,1. Bundesliga,2015/2016,2016-03-13,Bayer Leverkusen,Hamburger SV
+394,3895086,9,281,1. Bundesliga,2023/2024,2023-09-24,Bayer Leverkusen,FC Heidenheim
+395,3813277,1238,108,Indian Super league,2021/2022,2021-11-27,Mumbai City,SC Delhi
+396,3901164,7,27,Ligue 1,2015/2016,2016-03-05,Angers,Saint-Étienne
+397,3802907,7,108,Ligue 1,2021/2022,2022-02-06,Lille,Paris Saint-Germain
+398,3837859,7,235,Ligue 1,2022/2023,2023-02-04,Paris Saint-Germain,Toulouse
+399,3749257,2,44,Premier League,2003/2004,2004-05-15,Arsenal,Leicester City
+400,3754336,2,27,Premier League,2015/2016,2015-09-12,Everton,Chelsea
+401,3879775,12,27,Serie A,2015/2016,2016-03-06,Genoa,Empoli
+402,3890444,9,27,1. Bundesliga,2015/2016,2016-02-13,Darmstadt 98,Bayer Leverkusen
+403,3895292,9,281,1. Bundesliga,2023/2024,2024-04-06,Union Berlin,Bayer Leverkusen
+404,3817879,1238,108,Indian Super league,2021/2022,2022-01-13,Chennaiyin,SC Delhi
+405,3900590,7,27,Ligue 1,2015/2016,2016-01-22,Rennes,Gazélec Ajaccio
+406,3802802,7,108,Ligue 1,2021/2022,2022-01-23,Paris Saint-Germain,Stade de Reims
+407,3837706,7,235,Ligue 1,2022/2023,2022-09-10,Paris Saint-Germain,Stade Brestois
+408,3749052,2,44,Premier League,2003/2004,2004-02-07,Wolverhampton Wanderers,Arsenal
+409,3754159,2,27,Premier League,2015/2016,2016-05-17,Manchester United,AFC Bournemouth
+410,3879685,12,27,Serie A,2015/2016,2016-01-10,Atalanta,Genoa
+411,3890278,9,27,1. Bundesliga,2015/2016,2015-08-29,Bayern Munich,Bayer Leverkusen
+412,3895232,9,281,1. Bundesliga,2023/2024,2024-02-10,Bayer Leverkusen,Bayern Munich
+413,3813310,1238,108,Indian Super league,2021/2022,2021-12-12,East Bengal,Kerala Blasters
+414,3901157,7,27,Ligue 1,2015/2016,2016-02-27,Stade de Reims,Bordeaux
+415,3802904,7,108,Ligue 1,2021/2022,2022-03-13,Paris Saint-Germain,Bordeaux
+416,3837785,7,235,Ligue 1,2022/2023,2022-11-13,Paris Saint-Germain,Auxerre
+417,3749108,2,44,Premier League,2003/2004,2003-08-27,Arsenal,Aston Villa
+418,3754290,2,27,Premier League,2015/2016,2016-02-06,Manchester City,Leicester City
+419,3879839,12,27,Serie A,2015/2016,2016-04-24,Fiorentina,Juventus
+420,3890563,9,27,1. Bundesliga,2015/2016,2016-05-14,Bayer Leverkusen,Ingolstadt
+421,3895244,9,281,1. Bundesliga,2023/2024,2024-02-17,FC Heidenheim,Bayer Leverkusen
+422,3817868,1238,108,Indian Super league,2021/2022,2022-01-26,Bengaluru,Chennaiyin
+423,3901210,7,27,Ligue 1,2015/2016,2016-04-09,Saint-Étienne,Troyes
+424,3837954,7,235,Ligue 1,2022/2023,2023-04-21,Angers,Paris Saint-Germain
+425,3749133,2,44,Premier League,2003/2004,2004-01-18,Aston Villa,Arsenal
+426,3754042,2,27,Premier League,2015/2016,2016-05-15,West Bromwich Albion,Liverpool
+427,3879575,12,27,Serie A,2015/2016,2015-10-18,Hellas Verona,Udinese
+428,3890521,9,27,1. Bundesliga,2015/2016,2016-04-16,Bayer Leverkusen,Eintracht Frankfurt
+429,3895250,9,281,1. Bundesliga,2023/2024,2024-02-23,Bayer Leverkusen,FSV Mainz 05
+430,3817875,1238,108,Indian Super league,2021/2022,2022-01-28,Jamshedpur,Goa
+431,3901235,7,27,Ligue 1,2015/2016,2016-04-30,Lyon,Gazélec Ajaccio
+432,3837747,7,235,Ligue 1,2022/2023,2022-10-16,Paris Saint-Germain,Olympique de Marseille
+433,3749246,2,44,Premier League,2003/2004,2004-03-28,Arsenal,Manchester United
+434,3754110,2,27,Premier League,2015/2016,2016-01-23,West Ham United,Manchester City
+435,3879694,12,27,Serie A,2015/2016,2016-01-17,Bologna,Lazio
+436,3890346,9,27,1. Bundesliga,2015/2016,2015-10-24,Bayer Leverkusen,VfB Stuttgart
+437,3895286,9,281,1. Bundesliga,2023/2024,2024-03-30,Bayer Leverkusen,Hoffenheim
+438,3817889,1238,108,Indian Super league,2021/2022,2022-03-03,Chennaiyin,Mohun Bagan Super Giant
+439,3901211,7,27,Ligue 1,2015/2016,2016-04-10,Olympique de Marseille,Bordeaux
+440,3837717,7,235,Ligue 1,2022/2023,2022-09-18,Lyon,Paris Saint-Germain
+441,3749522,2,44,Premier League,2003/2004,2003-12-26,Arsenal,Wolverhampton Wanderers
+442,3754234,2,27,Premier League,2015/2016,2015-10-25,AFC Bournemouth,Tottenham Hotspur
+443,3879750,12,27,Serie A,2015/2016,2016-02-21,Atalanta,Fiorentina
+444,3890260,9,27,1. Bundesliga,2015/2016,2015-08-15,Bayer Leverkusen,Hoffenheim
+445,3895182,9,281,1. Bundesliga,2023/2024,2023-12-20,Bayer Leverkusen,Bochum
+446,3813316,1238,108,Indian Super league,2021/2022,2021-12-04,NorthEast United,Goa
+447,3900555,7,27,Ligue 1,2015/2016,2015-12-12,Nantes,Toulouse
+448,3837896,7,235,Ligue 1,2022/2023,2023-03-04,Paris Saint-Germain,Nantes
+449,3749642,2,44,Premier League,2003/2004,2004-02-28,Arsenal,Charlton Athletic
+450,3754322,2,27,Premier League,2015/2016,2016-04-16,Chelsea,Manchester City
+451,3879581,12,27,Serie A,2015/2016,2015-10-25,Chievo,Napoli
+452,3890409,9,27,1. Bundesliga,2015/2016,2015-12-19,Ingolstadt,Bayer Leverkusen
+453,3895320,9,281,1. Bundesliga,2023/2024,2024-04-27,Bayer Leverkusen,VfB Stuttgart
+454,3817876,1238,108,Indian Super league,2021/2022,2022-01-22,Chennaiyin,NorthEast United
+455,3901177,7,27,Ligue 1,2015/2016,2016-03-12,Bastia,Lille
+456,3837885,7,235,Ligue 1,2022/2023,2023-02-26,Olympique de Marseille,Paris Saint-Germain
+457,3749079,2,44,Premier League,2003/2004,2003-10-18,Arsenal,Chelsea
+458,3754167,2,27,Premier League,2015/2016,2015-10-31,Manchester City,Norwich City
+459,3879840,12,27,Serie A,2015/2016,2016-04-24,Bologna,Genoa
+460,3890540,9,27,1. Bundesliga,2015/2016,2016-04-30,Bayer Leverkusen,Hertha Berlin
+461,3895121,9,281,1. Bundesliga,2023/2024,2023-10-29,Bayer Leverkusen,Freiburg
+462,3813287,1238,108,Indian Super league,2021/2022,2021-12-16,Bengaluru,Mohun Bagan Super Giant
+463,3901196,7,27,Ligue 1,2015/2016,2016-04-02,Paris Saint-Germain,OGC Nice
+464,3837650,7,235,Ligue 1,2022/2023,2022-08-06,Clermont Foot,Paris Saint-Germain
+465,3749552,2,44,Premier League,2003/2004,2003-09-21,Manchester United,Arsenal
+466,3754273,2,27,Premier League,2015/2016,2015-10-31,Watford,West Ham United
+467,3879721,12,27,Serie A,2015/2016,2016-02-03,Palermo,AC Milan
+468,3890301,9,27,1. Bundesliga,2015/2016,2015-09-20,Borussia Dortmund,Bayer Leverkusen
+469,3895266,9,281,1. Bundesliga,2023/2024,2024-03-10,Bayer Leverkusen,Wolfsburg
+470,3817855,1238,108,Indian Super league,2021/2022,2022-02-19,Kerala Blasters,Mohun Bagan Super Giant
+471,3901189,7,27,Ligue 1,2015/2016,2016-03-19,Lille,Toulouse
+472,3749274,2,44,Premier League,2003/2004,2004-05-04,Portsmouth,Arsenal
+473,3754128,2,27,Premier League,2015/2016,2015-08-08,AFC Bournemouth,Aston Villa
+474,3879599,12,27,Serie A,2015/2016,2015-11-01,Lazio,AC Milan
+475,3890359,9,27,1. Bundesliga,2015/2016,2015-11-07,Bayer Leverkusen,FC Köln
+476,3895333,9,281,1. Bundesliga,2023/2024,2024-05-05,Eintracht Frankfurt,Bayer Leverkusen
+477,3813268,1238,108,Indian Super league,2021/2022,2021-12-06,Jamshedpur,Mohun Bagan Super Giant
+478,3900511,7,27,Ligue 1,2015/2016,2015-11-21,Lorient,Paris Saint-Germain
+479,3749346,2,44,Premier League,2003/2004,2003-11-01,Leeds United,Arsenal
+480,3754105,2,27,Premier League,2015/2016,2015-09-28,West Bromwich Albion,Everton
+481,3879703,12,27,Serie A,2015/2016,2016-01-24,Lazio,Chievo
+482,3813266,1238,108,Indian Super league,2021/2022,2022-01-08,Goa,Chennaiyin
+483,3829500,7,27,Ligue 1,2015/2016,2015-10-04,Paris Saint-Germain,Olympique de Marseille
+484,3749192,2,44,Premier League,2003/2004,2003-11-30,Arsenal,Fulham
+485,3754009,2,27,Premier League,2015/2016,2016-04-17,Arsenal,Crystal Palace
+486,3879681,12,27,Serie A,2015/2016,2016-01-10,Inter Milan,Sassuolo
+487,3813286,1238,108,Indian Super league,2021/2022,2021-12-15,Mumbai City,Chennaiyin
+488,3901147,7,27,Ligue 1,2015/2016,2016-02-20,Toulouse,Gazélec Ajaccio
+489,3749296,2,44,Premier League,2003/2004,2003-09-13,Arsenal,Portsmouth
+490,3754000,2,27,Premier League,2015/2016,2015-11-07,Sunderland,Southampton
+491,3879710,12,27,Serie A,2015/2016,2016-01-31,Bologna,Sampdoria
+492,3813300,1238,108,Indian Super league,2021/2022,2021-12-05,Kerala Blasters,Odisha
+493,3901236,7,27,Ligue 1,2015/2016,2016-04-30,Nantes,OGC Nice
+494,3749068,2,44,Premier League,2003/2004,2004-04-25,Tottenham Hotspur,Arsenal
+495,3754092,2,27,Premier League,2015/2016,2016-05-02,Chelsea,Tottenham Hotspur
+496,3878603,12,27,Serie A,2015/2016,2015-09-19,Udinese,Empoli
+497,3813314,1238,108,Indian Super league,2021/2022,2021-11-19,Mohun Bagan Super Giant,Kerala Blasters
+498,3901168,7,27,Ligue 1,2015/2016,2016-03-05,Lille,Stade de Reims
+499,3749454,2,44,Premier League,2003/2004,2003-08-31,Manchester City,Arsenal
+500,3754301,2,27,Premier League,2015/2016,2015-11-21,West Bromwich Albion,Arsenal
+501,3879739,12,27,Serie A,2015/2016,2016-02-13,Juventus,Napoli
+502,3817902,1238,108,Indian Super league,2021/2022,2022-02-14,Kerala Blasters,East Bengal
+503,3829439,7,27,Ligue 1,2015/2016,2015-08-22,Toulouse,AS Monaco
+504,3754030,2,27,Premier League,2015/2016,2016-04-09,Watford,Everton
+505,3879811,12,27,Serie A,2015/2016,2016-04-10,Napoli,Hellas Verona
+506,3817896,1238,108,Indian Super league,2021/2022,2022-02-07,East Bengal,Odisha
+507,3829462,7,27,Ligue 1,2015/2016,2015-09-13,Gazélec Ajaccio,AS Monaco
+508,3754178,2,27,Premier League,2015/2016,2015-11-28,Aston Villa,Watford
+509,3879835,12,27,Serie A,2015/2016,2016-04-20,Chievo,Frosinone
+510,3827337,1238,108,Indian Super league,2021/2022,2022-03-11,Jamshedpur,Kerala Blasters
+511,3900620,7,27,Ligue 1,2015/2016,2016-02-06,Stade Malherbe Caen,Stade de Reims
+512,3754153,2,27,Premier League,2015/2016,2015-12-19,Stoke City,Crystal Palace
+513,3879652,12,27,Serie A,2015/2016,2015-12-13,AC Milan,Hellas Verona
+514,3817888,1238,108,Indian Super league,2021/2022,2022-01-29,Mohun Bagan Super Giant,East Bengal
+515,3900623,7,27,Ligue 1,2015/2016,2016-02-06,Lorient,Montpellier
+516,3754241,2,27,Premier League,2015/2016,2016-04-09,West Ham United,Arsenal
+517,3879678,12,27,Serie A,2015/2016,2016-01-09,Carpi,Udinese
+518,3817852,1238,108,Indian Super league,2021/2022,2022-02-06,Chennaiyin,Mumbai City
+519,3901159,7,27,Ligue 1,2015/2016,2016-02-28,Lyon,Paris Saint-Germain
+520,3754194,2,27,Premier League,2015/2016,2015-11-07,West Ham United,Everton
+521,3879741,12,27,Serie A,2015/2016,2016-02-13,Chievo,Sassuolo
+522,3813301,1238,108,Indian Super league,2021/2022,2021-12-10,Odisha,NorthEast United
+523,3829503,7,27,Ligue 1,2015/2016,2015-10-17,Nantes,Troyes
+524,3754115,2,27,Premier League,2015/2016,2015-10-17,Chelsea,Aston Villa
+525,3879602,12,27,Serie A,2015/2016,2015-11-01,Fiorentina,Frosinone
+526,3817898,1238,108,Indian Super league,2021/2022,2022-02-26,Goa,Mumbai City
+527,3829511,7,27,Ligue 1,2015/2016,2015-10-18,Bordeaux,Montpellier
+528,3754179,2,27,Premier League,2015/2016,2016-01-23,Crystal Palace,Tottenham Hotspur
+529,3879776,12,27,Serie A,2015/2016,2016-03-06,Bologna,Carpi
+530,3817870,1238,108,Indian Super league,2021/2022,2022-03-06,Goa,Kerala Blasters
+531,3900505,7,27,Ligue 1,2015/2016,2015-11-07,Stade Malherbe Caen,Guingamp
+532,3754002,2,27,Premier League,2015/2016,2016-03-14,Leicester City,Newcastle United
+533,3879640,12,27,Serie A,2015/2016,2015-12-06,Frosinone,Chievo
+534,3817899,1238,108,Indian Super league,2021/2022,2022-03-04,Jamshedpur,Odisha
+535,3901243,7,27,Ligue 1,2015/2016,2016-05-07,Bastia,Angers
+536,3754104,2,27,Premier League,2015/2016,2015-08-22,Norwich City,Stoke City
+537,3879645,12,27,Serie A,2015/2016,2015-12-06,Bologna,Napoli
+538,3813298,1238,108,Indian Super league,2021/2022,2021-11-21,East Bengal,Jamshedpur
+539,3829507,7,27,Ligue 1,2015/2016,2015-10-17,Toulouse,Angers
+540,3754291,2,27,Premier League,2015/2016,2015-12-28,Watford,Tottenham Hotspur
+541,3879546,12,27,Serie A,2015/2016,2015-09-24,Empoli,Atalanta
+542,3813309,1238,108,Indian Super league,2021/2022,2021-11-23,SC Delhi,Chennaiyin
+543,3829435,7,27,Ligue 1,2015/2016,2015-08-22,Lyon,Rennes
+544,3754076,2,27,Premier League,2015/2016,2015-10-03,Sunderland,West Ham United
+545,3878545,12,27,Serie A,2015/2016,2015-08-23,Sampdoria,Carpi
+546,3817892,1238,108,Indian Super league,2021/2022,2022-02-24,Odisha,Mohun Bagan Super Giant
+547,3900586,7,27,Ligue 1,2015/2016,2016-01-16,Guingamp,Nantes
+548,3754005,2,27,Premier League,2015/2016,2016-03-02,Stoke City,Newcastle United
+549,3879755,12,27,Serie A,2015/2016,2016-02-21,Frosinone,Lazio
+550,3817856,1238,108,Indian Super league,2021/2022,2022-03-07,Mohun Bagan Super Giant,Jamshedpur
+551,3900617,7,27,Ligue 1,2015/2016,2016-02-03,Stade de Reims,Angers
+552,3754014,2,27,Premier League,2015/2016,2015-12-26,Stoke City,Manchester United
+553,3879561,12,27,Serie A,2015/2016,2015-10-04,Fiorentina,Atalanta
+554,3817884,1238,108,Indian Super league,2021/2022,2022-02-08,SC Delhi,Mohun Bagan Super Giant
+555,3900543,7,27,Ligue 1,2015/2016,2015-12-05,Stade de Reims,Troyes
+556,3754145,2,27,Premier League,2015/2016,2015-08-10,West Bromwich Albion,Manchester City
+557,3878559,12,27,Serie A,2015/2016,2015-08-30,Atalanta,Frosinone
+558,3813295,1238,108,Indian Super league,2021/2022,2021-12-28,SC Delhi,Odisha
+559,3829499,7,27,Ligue 1,2015/2016,2015-10-04,Stade Malherbe Caen,Saint-Étienne
+560,3754345,2,27,Premier League,2015/2016,2016-01-17,Liverpool,Manchester United
+561,3879550,12,27,Serie A,2015/2016,2015-09-27,Inter Milan,Fiorentina
+562,3813274,1238,108,Indian Super league,2021/2022,2021-12-04,Bengaluru,Mumbai City
+563,3901173,7,27,Ligue 1,2015/2016,2016-03-09,Gazélec Ajaccio,Olympique de Marseille
+564,3754088,2,27,Premier League,2015/2016,2016-01-12,Newcastle United,Manchester United
+565,3879792,12,27,Serie A,2015/2016,2016-03-20,Sampdoria,Chievo
+566,3813272,1238,108,Indian Super league,2021/2022,2021-12-18,Goa,SC Delhi
+567,3901252,7,27,Ligue 1,2015/2016,2016-05-07,Lyon,AS Monaco
+568,3754127,2,27,Premier League,2015/2016,2016-02-06,Stoke City,Everton
+569,3879809,12,27,Serie A,2015/2016,2016-04-09,Sassuolo,Genoa
+570,3813302,1238,108,Indian Super league,2021/2022,2022-01-06,Jamshedpur,NorthEast United
+571,3829414,7,27,Ligue 1,2015/2016,2015-08-08,Olympique de Marseille,Stade Malherbe Caen
+572,3754045,2,27,Premier League,2015/2016,2015-12-29,Leicester City,Manchester City
+573,3878604,12,27,Serie A,2015/2016,2015-09-20,Napoli,Lazio
+574,3813283,1238,108,Indian Super league,2021/2022,2021-12-30,Chennaiyin,Bengaluru
+575,3900554,7,27,Ligue 1,2015/2016,2015-12-12,Troyes,Bastia
+576,3754001,2,27,Premier League,2015/2016,2015-09-26,Newcastle United,Chelsea
+577,3879868,12,27,Serie A,2015/2016,2016-05-14,Sassuolo,Inter Milan
+578,3813303,1238,108,Indian Super league,2021/2022,2021-12-29,Mohun Bagan Super Giant,Goa
+579,3900522,7,27,Ligue 1,2015/2016,2015-11-28,Toulouse,OGC Nice
+580,3754064,2,27,Premier League,2015/2016,2016-03-20,Southampton,Liverpool
+581,3879631,12,27,Serie A,2015/2016,2015-11-29,Chievo,Udinese
+582,3817893,1238,108,Indian Super league,2021/2022,2022-02-28,East Bengal,NorthEast United
+583,3901234,7,27,Ligue 1,2015/2016,2016-04-30,Stade de Reims,Montpellier
+584,3754338,2,27,Premier League,2015/2016,2016-01-16,Newcastle United,West Ham United
+585,3879712,12,27,Serie A,2015/2016,2016-01-31,AC Milan,Inter Milan
+586,3813296,1238,108,Indian Super league,2021/2022,2021-11-25,NorthEast United,Kerala Blasters
+587,3901237,7,27,Ligue 1,2015/2016,2016-04-30,Saint-Étienne,Toulouse
+588,3754309,2,27,Premier League,2015/2016,2015-12-26,Southampton,Arsenal
+589,3879861,12,27,Serie A,2015/2016,2016-05-08,Frosinone,Sassuolo
+590,3817869,1238,108,Indian Super league,2021/2022,2022-02-11,Bengaluru,SC Delhi
+591,3901175,7,27,Ligue 1,2015/2016,2016-03-12,Montpellier,OGC Nice
+592,3754143,2,27,Premier League,2015/2016,2015-12-06,Newcastle United,Liverpool
+593,3879833,12,27,Serie A,2015/2016,2016-04-20,Juventus,Lazio
+594,3813294,1238,108,Indian Super league,2021/2022,2021-11-29,NorthEast United,Chennaiyin
+595,3901253,7,27,Ligue 1,2015/2016,2016-05-11,Bordeaux,Paris Saint-Germain
+596,3754038,2,27,Premier League,2015/2016,2015-11-29,Norwich City,Arsenal
+597,3879666,12,27,Serie A,2015/2016,2016-01-05,Genoa,Sampdoria
+598,3813267,1238,108,Indian Super league,2021/2022,2021-12-07,East Bengal,Goa
+599,3900614,7,27,Ligue 1,2015/2016,2016-02-03,Lille,Stade Malherbe Caen
+600,3754293,2,27,Premier League,2015/2016,2015-11-07,Stoke City,Chelsea
+601,3878546,12,27,Serie A,2015/2016,2015-08-23,Sassuolo,Napoli
+602,3813299,1238,108,Indian Super league,2021/2022,2021-12-08,SC Delhi,Bengaluru
+603,3900615,7,27,Ligue 1,2015/2016,2016-02-03,Nantes,Gazélec Ajaccio
+604,3754333,2,27,Premier League,2015/2016,2016-05-15,Newcastle United,Tottenham Hotspur
+605,3879670,12,27,Serie A,2015/2016,2016-01-06,Juventus,Hellas Verona
+606,3817858,1238,108,Indian Super league,2021/2022,2022-02-26,Kerala Blasters,Chennaiyin
+607,3829429,7,27,Ligue 1,2015/2016,2015-08-15,Rennes,Montpellier
+608,3754334,2,27,Premier League,2015/2016,2016-03-01,AFC Bournemouth,Southampton
+609,3879746,12,27,Serie A,2015/2016,2016-02-14,Fiorentina,Inter Milan
+610,3817881,1238,108,Indian Super league,2021/2022,2022-02-10,Jamshedpur,Kerala Blasters
+611,3900494,7,27,Ligue 1,2015/2016,2015-10-31,Gazélec Ajaccio,Bordeaux
+612,3753987,2,27,Premier League,2015/2016,2015-08-22,Leicester City,Tottenham Hotspur
+613,3879552,12,27,Serie A,2015/2016,2015-09-27,Bologna,Udinese
+614,3813285,1238,108,Indian Super league,2021/2022,2021-12-11,Goa,Bengaluru
+615,3901194,7,27,Ligue 1,2015/2016,2016-04-01,AS Monaco,Bordeaux
+616,3754049,2,27,Premier League,2015/2016,2016-02-27,Leicester City,Norwich City
+617,3879797,12,27,Serie A,2015/2016,2016-04-02,Carpi,Sassuolo
+618,3827336,1238,108,Indian Super league,2021/2022,2022-03-16,Mohun Bagan Super Giant,SC Delhi
+619,3900600,7,27,Ligue 1,2015/2016,2016-01-29,Olympique de Marseille,Lille
+620,3754024,2,27,Premier League,2015/2016,2016-04-16,Newcastle United,Swansea City
+621,3879612,12,27,Serie A,2015/2016,2015-11-08,Frosinone,Genoa
+622,3817894,1238,108,Indian Super league,2021/2022,2022-02-01,Goa,Odisha
+623,3900631,7,27,Ligue 1,2015/2016,2016-02-13,Montpellier,Toulouse
+624,3754248,2,27,Premier League,2015/2016,2015-12-26,AFC Bournemouth,Crystal Palace
+625,3879744,12,27,Serie A,2015/2016,2016-02-14,Sampdoria,Atalanta
+626,3813265,1238,108,Indian Super league,2021/2022,2022-01-07,East Bengal,Mumbai City
+627,3829426,7,27,Ligue 1,2015/2016,2015-08-15,Guingamp,Lyon
+628,3754217,2,27,Premier League,2015/2016,2015-09-19,Chelsea,Arsenal
+629,3878556,12,27,Serie A,2015/2016,2015-08-30,Torino,Fiorentina
+630,3817883,1238,108,Indian Super league,2021/2022,2022-02-05,Bengaluru,Jamshedpur
+631,3829413,7,27,Ligue 1,2015/2016,2015-08-07,Lille,Paris Saint-Germain
+632,3754079,2,27,Premier League,2015/2016,2015-10-03,Manchester City,Newcastle United
+633,3879826,12,27,Serie A,2015/2016,2016-04-17,Hellas Verona,Frosinone
+634,3813279,1238,108,Indian Super league,2021/2022,2021-12-18,Chennaiyin,Odisha
+635,3829421,7,27,Ligue 1,2015/2016,2015-08-09,Toulouse,Saint-Étienne
+636,3754261,2,27,Premier League,2015/2016,2016-02-14,Arsenal,Leicester City
+637,3879822,12,27,Serie A,2015/2016,2016-04-17,Udinese,Chievo
+638,3817882,1238,108,Indian Super league,2021/2022,2022-02-02,East Bengal,Chennaiyin
+639,3900622,7,27,Ligue 1,2015/2016,2016-02-06,Bastia,Troyes
+640,3754285,2,27,Premier League,2015/2016,2015-12-26,Aston Villa,West Ham United
+641,3879646,12,27,Serie A,2015/2016,2015-12-06,Fiorentina,Udinese
+642,3813315,1238,108,Indian Super league,2021/2022,2021-11-26,Goa,Jamshedpur
+643,3829493,7,27,Ligue 1,2015/2016,2015-10-02,Lille,Montpellier
+644,3754323,2,27,Premier League,2015/2016,2015-09-26,West Ham United,Norwich City
+645,3879828,12,27,Serie A,2015/2016,2016-04-20,AS Roma,Torino
+646,3817853,1238,108,Indian Super league,2021/2022,2022-01-19,Goa,East Bengal
+647,3900569,7,27,Ligue 1,2015/2016,2015-12-20,Saint-Étienne,Angers
+648,3754249,2,27,Premier League,2015/2016,2016-03-05,Manchester City,Aston Villa
+649,3879558,12,27,Serie A,2015/2016,2015-10-03,Carpi,Torino
+650,3817886,1238,108,Indian Super league,2021/2022,2022-02-04,Kerala Blasters,NorthEast United
+651,3900540,7,27,Ligue 1,2015/2016,2015-12-04,OGC Nice,Paris Saint-Germain
+652,3754177,2,27,Premier League,2015/2016,2016-03-05,Newcastle United,AFC Bournemouth
+653,3879794,12,27,Serie A,2015/2016,2016-03-20,Atalanta,Bologna
+654,3813308,1238,108,Indian Super league,2021/2022,2021-12-24,Odisha,Goa
+655,3901201,7,27,Ligue 1,2015/2016,2016-04-03,Bastia,Olympique de Marseille
+656,3753990,2,27,Premier League,2015/2016,2016-04-24,Sunderland,Arsenal
+657,3879566,12,27,Serie A,2015/2016,2015-10-04,Udinese,Genoa
+658,3817877,1238,108,Indian Super league,2021/2022,2022-02-18,NorthEast United,Bengaluru
+659,3829510,7,27,Ligue 1,2015/2016,2015-10-18,Rennes,OGC Nice
+660,3754311,2,27,Premier League,2015/2016,2015-11-07,Norwich City,Swansea City
+661,3879713,12,27,Serie A,2015/2016,2016-01-31,Chievo,Juventus
+662,3813281,1238,108,Indian Super league,2021/2022,2021-12-11,Mohun Bagan Super Giant,Chennaiyin
+663,3900598,7,27,Ligue 1,2015/2016,2016-01-24,AS Monaco,Toulouse
+664,3754017,2,27,Premier League,2015/2016,2015-10-24,Aston Villa,Swansea City
+665,3879759,12,27,Serie A,2015/2016,2016-02-28,Juventus,Inter Milan
+666,3817887,1238,108,Indian Super league,2021/2022,2022-03-05,SC Delhi,Mumbai City
+667,3901213,7,27,Ligue 1,2015/2016,2016-04-10,OGC Nice,Rennes
+668,3753999,2,27,Premier League,2015/2016,2015-10-17,Watford,Arsenal
+669,3879659,12,27,Serie A,2015/2016,2015-12-20,Inter Milan,Lazio

@@ -1,0 +1,5 @@
+run_state: SCAFFOLDING
+base_tag: residual-goal-intensity-v1 @ 075ba66
+worktree: C:/Users/Mahyar/worldcup-evidence-power-consolidation
+phase: "deps+isolation verified; building durable controller + 12-job audit/power/lineage pipeline"
+collector: {commit: dc73318, isolated: true, kalshi: false, trading: paper}

@@ -1,0 +1,7 @@
+schema_version: api_football_historical_event_v1
+description: Causal historical event row. event_time (elapsed minute) <= decision_time for any feature use.
+fields: [canonical_match_id, provider_fixture_id, cohort, comp_type, elapsed_minute, extra_minute, event_type,
+  detail, team_id, player_id, assist_player_id, period(regulation/extra_time), source_hash, provider_semantics_version,
+  causal_status(historical_weak_supervision_only), live_eligibility(false)]
+rules: ["regulation = elapsed<=90; extra_time = 90<elapsed<=120; shootout excluded (official score only)",
+  "own goals credited to team field (beneficiary)", "no future event may enter a state feature at minute t"]

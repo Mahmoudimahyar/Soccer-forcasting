@@ -1,0 +1,23 @@
+model_id,verdict,reason,reference_oos_metric,model_oos_metric,labels
+research.event_process.e0,reference_only,OOS LOCO rps=0.23697 vs e2=0.1496; bootstrap favors=None; fold_win_frac=None; cal_ok=True,0.1496,0.23697,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e1,reference_only,OOS LOCO rps=0.23697 vs e2=0.1496; bootstrap favors=None; fold_win_frac=None; cal_ok=True,0.1496,0.23697,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e2,reference_only,parameter-free remaining-time Poisson REFERENCE,0.1496,0.1496,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e3,reference_only,OOS LOCO rps=0.15982 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=False,0.1496,0.15982,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e4,reference_only,OOS LOCO rps=0.15121 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=True,0.1496,0.15121,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e5,reference_only,OOS LOCO rps=0.16982 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.0; cal_ok=True,0.1496,0.16982,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e6,reference_only,OOS LOCO rps=0.15834 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=True,0.1496,0.15834,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e7,reference_only,OOS LOCO rps=0.17638 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=False,0.1496,0.17638,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e8,reference_only,OOS LOCO rps=0.17639 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.2; cal_ok=False,0.1496,0.17639,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.event_process.e9,reference_only,OOS LOCO rps=0.16567 vs e2=0.1496; bootstrap favors=False; fold_win_frac=0.0; cal_ok=False,0.1496,0.16567,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.next_goal.q0,reference_only,TRAIN base-rate reference (0.30193),0.21076,0.21076,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.next_goal.q1,reference_only,OOS brier=0.21314 vs ref=0.21076; bootstrap favors=False,0.21076,0.21314,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.next_goal.q2,reference_only,OOS brier=0.21295 vs ref=0.21076; bootstrap favors=False,0.21076,0.21295,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.next_goal.q3,reference_only,OOS brier=0.21676 vs ref=0.21076; bootstrap favors=False,0.21076,0.21676,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.next_goal.q4,reference_only,OOS brier=0.21922 vs ref=0.21076; bootstrap favors=False,0.21076,0.21922,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.scoring.h0,reference_only,TRAIN base-rate reference (0.22871),0.17618,0.17618,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.scoring.h1,reference_only,OOS brier=0.18086 vs ref=0.17618; bootstrap favors=False,0.17618,0.18086,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.scoring.h2,reference_only,OOS brier=0.18248 vs ref=0.17618; bootstrap favors=False,0.17618,0.18248,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.scoring.h3,reference_only,OOS brier=0.18317 vs ref=0.17618; bootstrap favors=False,0.17618,0.18317,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.discipline.y0,reference_only,TRAIN base-rate reference (0.020065),0.020313,0.020313,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.discipline.y1,data_insufficient,hazard GATED OFF (<150 positives),0.020313,,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+research.discipline.y2,data_insufficient,hazard GATED OFF (<150 positives),0.020313,,research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible

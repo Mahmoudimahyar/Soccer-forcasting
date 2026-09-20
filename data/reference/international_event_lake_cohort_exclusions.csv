@@ -1,0 +1,28 @@
+sb_match_id,competition_label,kickoff_date,exclusion_reason
+7537,FIFA World Cup 2018,2018-06-18,wdl_target_conflict:wdl_target_conflict
+7548,FIFA World Cup 2018,2018-06-22,wdl_target_conflict:wdl_target_conflict
+7551,FIFA World Cup 2018,2018-06-23,wdl_target_conflict:wdl_target_conflict
+7557,FIFA World Cup 2018,2018-06-25,wdl_target_conflict:wdl_target_conflict
+7559,FIFA World Cup 2018,2018-06-25,wdl_target_conflict:wdl_target_conflict
+7560,FIFA World Cup 2018,2018-06-25,wdl_target_conflict:wdl_target_conflict
+7567,FIFA World Cup 2018,2018-06-27,wdl_target_conflict:wdl_target_conflict
+7568,FIFA World Cup 2018,2018-06-27,wdl_target_conflict:wdl_target_conflict
+7577,FIFA World Cup 2018,2018-06-15,wdl_target_conflict:wdl_target_conflict
+7584,FIFA World Cup 2018,2018-07-02,wdl_target_conflict:wdl_target_conflict
+7585,FIFA World Cup 2018,2018-07-03,wdl_target_conflict:wdl_target_conflict
+3788776,UEFA Euro 2020,2021-06-23,wdl_target_conflict:wdl_target_conflict
+3794686,UEFA Euro 2020,2021-06-28,wdl_target_conflict:wdl_target_conflict
+3857262,FIFA World Cup 2022,2022-12-02,wdl_target_conflict:wdl_target_conflict
+3857273,FIFA World Cup 2022,2022-11-25,wdl_target_conflict:wdl_target_conflict
+3857280,FIFA World Cup 2022,2022-12-02,wdl_target_conflict:wdl_target_conflict
+3869321,FIFA World Cup 2022,2022-12-09,wdl_target_conflict:wdl_target_conflict
+3930166,UEFA Euro 2024,2024-06-18,wdl_target_conflict:wdl_target_conflict
+3930167,UEFA Euro 2024,2024-06-19,wdl_target_conflict:wdl_target_conflict
+3930170,UEFA Euro 2024,2024-06-20,wdl_target_conflict:wdl_target_conflict
+3930176,UEFA Euro 2024,2024-06-23,wdl_target_conflict:wdl_target_conflict
+3930177,UEFA Euro 2024,2024-06-23,wdl_target_conflict:wdl_target_conflict
+3930178,UEFA Euro 2024,2024-06-24,wdl_target_conflict:wdl_target_conflict
+3930184,UEFA Euro 2024,2024-06-26,wdl_target_conflict:wdl_target_conflict
+3941017,UEFA Euro 2024,2024-06-30,wdl_target_conflict:wdl_target_conflict
+3942228,Copa America 2024,2024-07-05,wdl_target_conflict:wdl_target_conflict
+3943076,Copa America 2024,2024-07-14,wdl_target_conflict:wdl_target_conflict

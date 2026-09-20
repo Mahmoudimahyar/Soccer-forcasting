@@ -1,0 +1,28 @@
+schema_version: player_history_state_v1
+description: >
+  Pre-match starting-XI / bench AGGREGATE state for one team, built from leakage-safe per-player priors
+  (all strictly-before the match date, same comp_type). One row per team per match. Aggregates only;
+  the player-level rows live under player_impact_prior_v1.
+fields:
+  - comp_type                  # club | international
+  - xi_size                    # number of (non-null) starting-XI player ids used
+  - xi_mean_prior_gd90         # mean of XI per-player prior gd_contribution_per90
+  - xi_weighted_prior_gd90     # exposure-weighted mean (players with more prior minutes count more)
+  - xi_top3_prior_gd90         # mean of the top-3 XI priors (star concentration)
+  - xi_off_balance_per90       # mean XI offensive prior contribution per 90
+  - xi_def_balance_per90       # mean XI defensive prior contribution per 90 (goals conceded while on)
+  - bench_strength_prior_gd90  # mean bench prior gd_contribution_per90 (depth)
+  - history_completeness       # fraction of XI with any strictly-earlier appearance (1 - unknown share)
+  - n_unknown_players          # count of XI players with no prior history
+  - continuity_with_prior_xi   # fraction of today's XI that also started the team's immediately-prior XI
+  - mean_exposure              # mean XI exposure (data sufficiency proxy)
+  - mean_uncertainty           # mean XI uncertainty
+  - prior_model_version        # player_history_prior_v1
+  - source_hashes              # union of contributing raw source hashes
+rules:
+  - "every per-player prior used here is strictly-before the match date (no future appearance leak)"
+  - "continuity compares to the team's PRIOR XI only (a past fixture); the current XI is pre-match (legal)"
+  - "comp_type partition preserved; club and international aggregates never mixed"
+  - "history_completeness / n_unknown_players make thin-data matches explicit"
+causal_status: historical_weak_supervision_only
+live_eligibility: false

@@ -1,0 +1,27 @@
+{
+  "done": 2000,
+  "copied_from_prior_no_api": 120,
+  "coverage_before": {
+    "per_root_full_events_and_lineups": {
+      "canonical": 1940,
+      "prior": 60
+    },
+    "done": 2000,
+    "raw_backed_across_registered_roots": 2000,
+    "missing_ids": [],
+    "coverage_rate": 1.0
+  },
+  "coverage_after": {
+    "per_root_full_events_and_lineups": {
+      "canonical": 2000,
+      "prior": 60
+    },
+    "done": 2000,
+    "raw_backed_across_registered_roots": 2000,
+    "missing_ids": [],
+    "coverage_rate": 1.0
+  },
+  "gate_95pct_raw_backed": true,
+  "self_contained_canonical": true,
+  "note": "Corpus completion measured by ACTUAL raw (events+lineups) across registered roots, not done-list length. The 60 prior fixtures were copied locally (no API) so the canonical root is self-contained."
+}

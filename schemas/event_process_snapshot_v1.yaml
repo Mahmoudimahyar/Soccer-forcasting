@@ -1,0 +1,53 @@
+schema_version: event_process_snapshot_v1
+description: >
+  Leakage-safe CAUSAL in-play snapshot: the match-process state at decision minute t using ONLY events
+  with regulation match-clock minute <= t (period in {1,2}, minute <= 90; no ET, no shootout). One row
+  per (match, minute) with home_* / away_* feature blocks composing territory, transition, attack-phase,
+  set-piece, pressure and chance-quality layers, plus derived score/cards/field-tilt. Produced by
+  snapshots.build_snapshots. No final score / totals / later substitutions enter a snapshot.
+decision_minutes: [15, 30, 45, 60, 75]
+key_fields:
+  - match_id
+  - provider                  # statsbomb_open
+  - competition_label
+  - comp_type                 # international | club   (club rows never used as international TEST rows)
+  - bridge_id                 # api<->statsbomb bridge id when known
+  - api_fixture_id
+  - minute                    # decision minute t
+  - remaining                 # 90 - t
+  - n_events_le_t             # events used (leakage budget)
+  - leakage_verified          # True iff every used event has minute <= t and is regulation
+  - source_sha256
+match_state_fields:
+  - score_home                # regulation goals up to t (no final-score leak)
+  - score_away
+  - score_diff
+  - yellow_home
+  - yellow_away
+  - red_home
+  - red_away
+  - home_field_tilt           # share of final-third touches that are home's (null if neither located)
+  - direction_home_known      # attacking direction inferable (gates territory features)
+  - direction_away_known
+team_block_fields:            # emitted with home_ / away_ prefixes
+  - thirds_own | thirds_middle | thirds_attacking
+  - channel_left | channel_center | channel_right
+  - final_third_entries | box_entries | deep_progressions | final_third_touches
+  - regains | turnovers | regains_def_third | regains_mid_third | regains_att_third | counterpress_regains
+  - fast_transitions | fast_transition_shots
+  - n_possessions | possessions_to_shot | possessions_to_box
+  - set_piece_shots | open_play_shots | counter_shots
+  - corners | free_kicks | throw_ins | goal_kicks | penalties | corner_shots | free_kick_shots
+  - pressures | counterpress_flagged | blocks | clearances | interceptions | recoveries | duels | fouls_committed
+  - shots | shots_on_target | goals | xg_sum | xg_shots_covered | big_chances | shots_in_box
+  - direction_known
+embedded_quality:
+  - _source_quality           # map capability -> {available_verified|available_partial|unavailable|unknown}
+rules:
+  - "single truncation rule: regulation events with minute <= t (period in {1,2}, minute <= 90)"
+  - "xg_sum is summed only over shots that actually carry xG; xg_shots_covered makes coverage explicit"
+  - "score derived from goal-outcome shots + own goals up to t; never read from final result"
+  - "club snapshots are tagged comp_type=club and must not be used as international test rows by eval"
+  - "every row carries _source_quality so a model can gate per field-availability, never imputing 0"
+causal_status: leakage_safe_in_play_snapshot
+live_eligibility: false

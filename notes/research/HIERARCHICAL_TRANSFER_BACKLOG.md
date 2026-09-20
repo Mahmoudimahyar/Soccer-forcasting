@@ -1,0 +1,1 @@
+Backlog: Phase0 prereg; P1 domain inventory; P2 feature-overlap/domain-shift; P3 domain-normalized transfer datasets; P4 hierarchical partial-pooling T0-T7; P5-6 intl-only eval+ablations+candidate rule; 14-job durable queue + watchdog; self-finalize.

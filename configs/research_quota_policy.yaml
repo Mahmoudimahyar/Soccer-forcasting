@@ -1,0 +1,14 @@
+# Dynamic, collector-aware API-Football reserve policy (replaces the static 25% rule). research_only.
+# DETERMINATION (read-only, this session):
+#  - WorldCupShadowCollector runs run_shadow_collector.ps1 -> shadow_collector_cycle.py, which uses ONLY
+#    The Odds API (wcdrawlab.operations.odds_budget.OddsBudget + fetch_odds_live_2026.py). No api-sports /
+#    api_football imports exist on the collector code path -> collector makes ZERO API-Football requests.
+#  - The only other API-Football consumer is the research corpus worker itself (Run/Resume), which is the
+#    same single-consumer run (never concurrent) -> it is not a competing reserve demand.
+# Therefore collector_expected_requests = 0 and research_reserve = max(200, ceil(1.5*0)+50) = 200.
+schema_version: research_quota_policy_v1
+collector_expected_requests: 0
+collector_uses_api_football: false
+reserve_formula: "max(200, ceil(1.5 * collector_expected_requests) + 50)"
+hard_floor: 200
+note: "If the collector ever starts using API-Football, set collector_expected_requests to its projected calls-before-reset; the formula then preserves 1.5x + 50 headroom. Never use a generic 25% daily reserve."

@@ -1,0 +1,49 @@
+schema_version: selective_dynamic_correction_v1
+description: >
+  RESIDUAL + REGIME plane that defines the selective dynamic-correction problem on top of the W2 reference.
+  One row per international residual snapshot (joins (source_match_id, snapshot_minute) to both companion
+  tables). Carries:
+    (1) RESIDUALS = observed MINUS W2-expected, for remaining home/away/total goals and for near-term risk:
+        a downstream corrector (research.residual.selective_correction_r4) learns when/whether to nudge W2.
+    (2) Causal REGIME labels (time band, score state, player-count, advantage, recent pressure, set-piece,
+        completeness) that gate WHERE a correction may be applied. The selective corrector must allow
+        alpha=0 (fall back to W2) and choose alpha IN-TRAIN; this row is what the gate reads.
+  Residuals are the LEARNING SIGNAL, never an input feature (they embed the label). Phase 1 only BUILDS this
+  plane; it fits nothing. No completed-2026-World-Cup data participates.
+labels: research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible
+key_fields:
+  - source_match_id
+  - snapshot_minute
+  - competition_label          # LOCO fold key
+  - comp_type                  # international
+residual_fields:               # observed - W2-expected (label-derived; NEVER used as a model input feature)
+  - resid_remaining_home       # remaining_home_goals - w2_remaining_home_intensity
+  - resid_remaining_away       # remaining_away_goals - w2_remaining_away_intensity
+  - resid_remaining_total      # remaining_total_goals - w2_remaining_total_intensity
+  - resid_home_score_next{5,10,15}m   # observed home-scored(0/1) - w2_implied_home_score_next{h}m
+  - resid_away_score_next{5,10,15}m   # observed away-scored(0/1) - w2_implied_away_score_next{h}m
+  - resid_any_goal_next{5,10,15}m     # observed any-goal(0/1)    - w2_implied_any_goal_next{h}m
+regime_labels:                 # causal, leakage-safe (computed from cutoff state only)
+  - regime_time                # 'early' (t<30) | 'mid' (30<=t<60) | 'late' (t>=60)
+  - regime_score               # 'level' | 'one_goal' | 'two_plus'   (abs(goals_diff))
+  - regime_lead_side           # 'home' | 'away' | 'none' (who currently leads)
+  - regime_player_count        # 'even' | 'home_up' | 'away_up'  (from sendoffs -> players_diff)
+  - regime_advantage           # 'home' | 'away' | 'none'  (combined score+player advantage sign)
+  - regime_recent_pressure     # 'high' | 'normal'  (xg_last10m_total above corpus-free threshold, or recent shot)
+  - regime_recent_transition   # 'high' | 'normal'  (recent recoveries/turnovers burst -> transition pressure)
+  - regime_set_piece           # 'recent' | 'none'  (a corner/att-free-kick occurred in the last window)
+  - regime_high_xg_chance      # 'recent' | 'none'  (a nonzero-xg shot / major chance in the recent window)
+  - regime_completeness        # 'full' | 'partial' | 'sparse'  (source_quality roll-up bucket)
+  - regime_xg_complete         # bool: xg_complete (every shot carried xG)
+gate_support_fields:
+  - alpha_fallback_allowed     # always True: the corrector MUST be able to choose alpha=0 (pure W2)
+  - regime_cell                # tuple key (regime_time|regime_score|regime_player_count) for coverage reporting
+rules:
+  - "residual = observed(label) - W2-expected(reference); it is a TARGET/diagnostic, never an input feature"
+  - "all regime labels are computed from cutoff-state ONLY (leakage-safe); no future event informs a regime"
+  - "regime thresholds are fixed-form and corpus-free (no test-set tuning); documented in the data card"
+  - "selective correction must support alpha=0 fallback to W2; this plane exposes the gate inputs only"
+  - "Phase 1 builds this plane and reports residual distributions + regime coverage; it FITS nothing"
+  - "no completed-2026-World-Cup match participates"
+causal_status: leakage_safe_residual_and_regime_plane
+live_eligibility: false
