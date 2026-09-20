@@ -1,3 +1,23 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Do not cite the P1-P4 table below as a test of player-impact features.** The job script
+> (`scripts/research_jobs/pi_job07_wdl.py`, `P_MAP = {"P1": "W1", "P2": "W2", "P3": "W3", "P4": "W4"}`) mapped
+> P1-P4 onto the previous sprint's inherited W1-W4 predictors, and P2 is the remaining-time Poisson reference
+> itself. The table is therefore digit-for-digit identical to the earlier W1-W4 table, and "P2 ties W2" compares
+> the reference with itself.
+>
+> **What happened next:** the lab's truth registry found that this sprint had used only 60 of the 2,000
+> predeclared player-history fixtures (3%), and its claim-verification ledger downgraded the result to
+> `incomplete_or_partial` (needs rerun). The valid result is the later full-corpus rerun on 627 internationals,
+> where player candidates P1-P5 were all rejected and nothing was promoted.
+>
+> See [research_truth_registry_report.md](research_truth_registry_report.md),
+> [research_claim_verification_ledger.md](research_claim_verification_ledger.md),
+> [DEEP_RESEARCH_INPLAY_FOUNDATION_COMPLETION.md](DEEP_RESEARCH_INPLAY_FOUNDATION_COMPLETION.md) (the W1-W4
+> table), [DYNAMIC_INPLAY_MODELING_PHASE_V1_COMPLETION.md](DYNAMIC_INPLAY_MODELING_PHASE_V1_COMPLETION.md) (the
+> rerun) and the [glossary](../../docs/GLOSSARY.md).
+
 # Player-Impact, Substitution-Delta & xG Fusion Research V1 — Completion
 
 research_only=true · experimental=true · not_runtime_approved=true · not_trade_eligible=true ·

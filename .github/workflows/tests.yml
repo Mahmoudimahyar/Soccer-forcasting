@@ -1,0 +1,37 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    name: pytest (${{ matrix.os }}, py${{ matrix.python }})
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # The suite was developed and verified on Windows / Python 3.13 -> that job is required.
+          - { os: windows-latest, python: "3.13", experimental: false }
+          # Informational until observed green: nothing else has been verified on Linux or 3.10.
+          - { os: ubuntu-latest, python: "3.13", experimental: true }
+          - { os: ubuntu-latest, python: "3.10", experimental: true }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pip install -e . --no-deps
+      # Hard gate: .env.example must contain placeholders only (exits 1 on a suspected secret).
+      - run: python scripts/check_secret_hygiene.py
+      # -rs prints every skip reason, so the data-dependent skips are visible rather than hidden.
+      - run: python -m pytest tests -q -rs --strict-markers -p no:cacheprovider

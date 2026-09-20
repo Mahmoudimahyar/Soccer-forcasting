@@ -1,3 +1,19 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> Despite the title, this research line is incomplete and its result is null. The run had 0 club training rows,
+> so the transfer ladder T2-T6 collapsed to the international-only model T1 (hence the identical or
+> near-identical RPS values in the table). Cross-domain transfer lift is therefore untested, and no model scored
+> better than the T0 reference.
+>
+> The decision ledger cited below (`data/reference/hierarchical_transfer_decision_ledger.json` / `.csv`) is not
+> in the repository: it was cleared during an unfinished repair (commit `29db653`) and never regenerated. This
+> research line has no git tag.
+>
+> See [ERRATA E5](../../docs/ERRATA.md),
+> [hierarchical_transfer_repair_log.json](../../data/reference/hierarchical_transfer_repair_log.json) and the
+> [glossary](../../docs/GLOSSARY.md) (T0-T7).
+
 # Hierarchical Cross-Domain Transfer v1 -- Completion Report
 
 research_only / experimental / not_runtime_approved / not_trade_eligible / not_live_eligible

@@ -1,3 +1,17 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Wrong below:** the replay rule "own-goals credited to opponent". This report predates the own-goal fix made
+> later the same day. API-Football's own-goal `team` field already names the beneficiary, so the rule inverted
+> it: fixture 855767 (Canada 1-2 Morocco) was derived as 0-3, and only 47 of the 48 replayed matches reconciled.
+> The by-minute table below was computed on that pre-fix replay and was not re-issued here.
+>
+> **The fix:** a versioned, provider-aware event-semantics layer that fails closed on unknown providers brought
+> the rebuild to 48/48.
+>
+> See [event_replay_2022_remediation.md](event_replay_2022_remediation.md) and
+> [event_replay_2022_release_gate.md](event_replay_2022_release_gate.md).
+
 # API-Football 2022 WC Event Replay — Report (2026-06-21)
 
 Authenticated free plan, **2022 season only** (free plan covers 2022–2024; never used for 2026).

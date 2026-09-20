@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its evaluation protocol, please cite it as below."
+title: "World Cup Forecasting Lab: a leakage-tested, prospectively evaluated football forecasting research lab"
+type: software
+authors:
+  - name: "Mahmoudimahyar"
+    website: "https://github.com/Mahmoudimahyar"
+repository-code: "https://github.com/Mahmoudimahyar/Soccer-forcasting"
+license: MIT
+version: "0.3.0"
+date-released: "2026-09-20"
+keywords:
+  - probabilistic forecasting
+  - football
+  - calibration
+  - Elo rating
+  - prospective evaluation
+  - negative results
+abstract: >-
+  A research lab for probabilistic football forecasting (pre-match and in-play) with a fixed evaluator,
+  immutable prediction ledgers and machine-readable decision ledgers. Frozen models were scored
+  prospectively on 34 fixtures of the 2026 World Cup group stage; no model was statistically
+  distinguishable from the bookmaker consensus. Research-only and paper-only; no profitability is claimed.

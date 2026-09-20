@@ -1,3 +1,21 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Misleading below:** the "Model decision" block reports `Verdict: data_insufficient` and `Reference: None`.
+> That is a packaging default in the report, not the evaluated outcome.
+>
+> **What the run recorded:** the per-model decision ledger of the same run marks all 10 models (the
+> remaining-time Poisson reference `research.event_process.e2` plus nine others) as `reference_only`, with the
+> enough-data gate passed (231 matches). Both vocabularies describe one result: no candidate passed the locked
+> multi-rule gate, so the reference was kept. One model, e9, had a lower leave-one-competition-out RPS but failed
+> the log-loss and forward-chain rules, so it is not a positive result. The `pytest` count below is
+> point-in-time.
+>
+> See [ERRATA E6](../../docs/ERRATA.md),
+> [international_event_lake_model_decision_ledger.json](../../data/reference/international_event_lake_model_decision_ledger.json),
+> [international_event_lake_power_analysis.md](../../data/reference/international_event_lake_power_analysis.md)
+> and the [glossary](../../docs/GLOSSARY.md).
+
 # International Event Lake Restoration v1 — Completion Report
 
 _research_only/experimental/not_runtime_approved/not_trade_eligible/not_live_eligible_

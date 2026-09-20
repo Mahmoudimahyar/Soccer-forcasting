@@ -1,3 +1,18 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **What this file is:** despite its title, a 2026-06-21 snapshot, not the current state of the project. Its
+> provider, dataset and "missing data" lists are as of that date and were largely overtaken by later work
+> (API-Football Pro access, the StatsBomb event lake).
+>
+> **In-play line:** "M2 best W/D/L, M5 beats M1 significantly" is an early 48-match, single-tournament reading.
+> It predates the in-play evaluation reconciliation of 2026-06-22, which found that later in-play rankings had
+> been selected on the test set and rebuilt model selection as nested cross-validation. Plain M2 (remaining-time
+> Poisson; unfitted, hand-set constants) is the in-play reference model, and nothing was promoted.
+>
+> See the [notes index](README.md), [inplay_evaluation_reconciliation.md](inplay_evaluation_reconciliation.md),
+> [inplay_nested_evaluation.md](inplay_nested_evaluation.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Program Current Truth (consolidated, 2026-06-21)
 
 Single reconciled snapshot of what actually exists. Supersedes scattered prior notes for orientation.

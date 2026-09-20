@@ -1,3 +1,22 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **No longer holds (section 6):** the V8 prequential figures (RPS 0.225, log-loss 1.092, drawECE 0.004) and
+> the reading "B1 leads on RPS/log-loss; V8 leads on draw calibration". They were artifacts of a bug in
+> `scripts/prequential_2026.py` that zero-filled every candidate feature.
+>
+> **Corrected, same 33 matches:** V8 scores RPS 0.173 / log-loss 0.948 / draw-cal 0.175 against B1 0.174 /
+> 0.958 / 0.178 — a tie. B1's figures were unaffected, and the report's decisions (no model change, B1 remains
+> approved) stand.
+>
+> **Also overstated (sections 10-11):** the market signal as "the only thing shown to beat Elo". When written,
+> that rested on point estimates without confidence intervals. The later 2022 World Cup study (48 matches, one
+> tournament) is called suggestive only by the lab itself, and the 2026 prospective benchmark (34 fixtures, early
+> market line) found no evidence of a difference at that sample size.
+>
+> See [ERRATA E1 and E4](../../docs/ERRATA.md), [market_shadow_evaluation_2022.md](market_shadow_evaluation_2022.md),
+> [PROSPECTIVE_MARKET_BENCHMARK_V1.md](PROSPECTIVE_MARKET_BENCHMARK_V1.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Overnight Autoresearch — Final Report (2026-06-21)
 
 Honest scope note: this session executed **Cycle 1** of the autoresearch run on branch

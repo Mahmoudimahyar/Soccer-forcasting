@@ -1,3 +1,18 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **No longer holds:** one sentence in the final "Recommendation for the next tier" section, the one calling the
+> market+Elo blend "the strongest result". That early cycle 4-5 estimate (auxiliary 2021-2025 internationals, no
+> confidence intervals) was later reclassified as auxiliary/historical and was not confirmed prospectively. The
+> Tier-2 gate that followed found no baseline significantly better than plain Elo (B1) on the pooled dev folds.
+>
+> **Read with care:** the test counts are point-in-time, and the "Independent review" was an internal agent
+> audit, not a third-party review. The rest of this Tier-1 report is a point-in-time record and is not otherwise
+> corrected here.
+>
+> See [ERRATA E4](../../docs/ERRATA.md), [tier_2_baseline_gate.md](tier_2_baseline_gate.md),
+> [PROSPECTIVE_MARKET_BENCHMARK_V1.md](PROSPECTIVE_MARKET_BENCHMARK_V1.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Tier 1 Completion — Data, Provenance & Leakage Foundation
 
 Version: `tier1-2026-06-20`. Status: **COMPLETE** (+ remediation applied — see

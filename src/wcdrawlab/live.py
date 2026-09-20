@@ -446,9 +446,9 @@ def run_live_prediction_refresh(
         "advancement": advancement_path,
         "targets": targets_path,
     }
-    if updated_elo is not None:
-        paths["current_elo"] = elo_current_path
-        paths["elo_update_log"] = output / "elo_update_log.csv"
+    # (A refresh inserts no result, so there is no Elo update to report here. A stale block copied from
+    # run_after_match_update referenced undefined names and made `wcdrawlab predict-live` raise NameError
+    # after writing its outputs - fixed 2026-09-20; covered by test_run_live_prediction_refresh_*.)
     if not edges.empty:
         paths["edges"] = edges_path
     return LiveUpdateResult(matches, features, predictions, advancement, edges, paths)

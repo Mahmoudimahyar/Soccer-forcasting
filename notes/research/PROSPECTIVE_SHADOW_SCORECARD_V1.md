@@ -1,3 +1,19 @@
+> [!NOTE]
+> **CAVEAT ADDED (banner added 2026-09-20; original text and numbers kept unedited below).**
+>
+> The `M2_market` comparator in this scorecard is an **early market line, not a closing line**. For 31 of the 34
+> scored fixtures the primary snapshot is a 2026-06-21 baseline snapshot, a median of about 98 hours before
+> kickoff (the other three: 2 final-pre-kickoff, 1 T-90).
+>
+> The cause was a payload-key mismatch that made the prediction freezer ignore all 47 later collector snapshots
+> (fixed 2026-09-20; the immutable ledger and the numbers below are unchanged).
+>
+> The null conclusion stands — no evidence of a difference at this sample size — but it says nothing about B1
+> against a closing line.
+>
+> See [ERRATA E2](../../docs/ERRATA.md), [PROSPECTIVE_MARKET_BENCHMARK_V1.md](PROSPECTIVE_MARKET_BENCHMARK_V1.md) and the
+> [glossary](../../docs/GLOSSARY.md).
+
 # Prospective Shadow Scorecard V1
 
 **research_only=true · prospective_evaluation_only=true · not_runtime_approved=true · not_trade_eligible=true · not_live_eligible=true**

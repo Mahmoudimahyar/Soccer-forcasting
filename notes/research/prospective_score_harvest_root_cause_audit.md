@@ -1,3 +1,20 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Still stands:** the primary root cause below — the results file was never refreshed, masked by a silent
+> empty write with rc=0.
+>
+> **Incomplete:** the audit lists "snapshot parsing" among the causes that do not apply, and it missed a
+> separate snapshot defect on the prediction side. The budget-guarded odds fetcher wrote payloads under
+> `"events"` while the prediction freezer read only `"data"`, so all 47 durable-collector snapshots were silently
+> ignored and every market-bearing prediction comes from the 2026-06-21 session.
+>
+> **Consequence:** that did not block scoring, but it is why the benchmark's market comparator is an early line
+> (median about 98 hours before kickoff for 31 of 34 fixtures), not a closing line. It was fixed on 2026-09-20
+> with the historical ledger left unchanged. The collector's own score path was never patched.
+>
+> See [ERRATA E2 and E3](../../docs/ERRATA.md) and [`scripts/live_2026_shadow.py`](../../scripts/live_2026_shadow.py).
+
 # Prospective Score Harvest — Root-Cause Forensic Audit (Phase 1)
 
 **research_only=true · prospective_evaluation_only=true · not_runtime_approved=true · not_trade_eligible=true · not_live_eligible=true**

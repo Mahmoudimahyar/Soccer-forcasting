@@ -1,3 +1,19 @@
+> [!NOTE]
+> **CAVEAT ADDED (banner added 2026-09-20; original text and numbers kept unedited below).**
+>
+> The market comparator here is an **early line, not a closing line**. The strata line below
+> (`baseline: 31, final_pre_kickoff: 2, T-90: 1`) means that for 31 of 34 fixtures the market is a 2026-06-21
+> baseline snapshot, a median of about 98 hours before kickoff.
+>
+> The cause was a payload-key mismatch that made the prediction freezer ignore all 47 later collector snapshots
+> (fixed 2026-09-20; the immutable ledger and the numbers below are unchanged).
+>
+> The conclusion is unchanged — no evidence either way at this sample size, Tier C (the lab's own "exploratory"
+> label for 20-49 fixtures), nothing promoted — but it must not be read as a comparison against closing odds.
+>
+> See [ERRATA E2](../../docs/ERRATA.md), [PROSPECTIVE_SHADOW_SCORECARD_V1.md](PROSPECTIVE_SHADOW_SCORECARD_V1.md) and the
+> [glossary](../../docs/GLOSSARY.md).
+
 # Prospective Market Benchmark V1
 
 **research_only=true · prospective_evaluation_only=true · not_runtime_approved=true · not_trade_eligible=true · not_live_eligible=true**

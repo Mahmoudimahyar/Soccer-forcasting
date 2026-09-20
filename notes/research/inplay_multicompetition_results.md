@@ -1,3 +1,11 @@
+> [!WARNING]
+> **SUPERSEDED IN PART (banner added 2026-09-20; original text kept unedited below).** This note calls M2/M6
+> "shadow-candidates" that PASS. That status did not survive: the significant 151-match edge over the
+> time+score baseline (ΔRPS −0.0145 [−0.021, −0.008]) was **not confirmed at significance** on the later,
+> larger, overlapping 302-match nested evaluation (−0.0042 [−0.0083, +0.0002]), and no in-play model was ever
+> promoted. See [`inplay_nested_evaluation.md`](inplay_nested_evaluation.md) and
+> [`inplay_evaluation_reconciliation.md`](inplay_evaluation_reconciliation.md).
+
 # Multi-Competition In-Play Results (research-only, 2026-06-21)
 
 **Key correction:** the in-play multi-competition plane was NOT blocked — API-Football's **free tier

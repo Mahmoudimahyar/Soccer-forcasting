@@ -1,3 +1,9 @@
+> [!NOTE]
+> **Design-time document.** This describes the *intended* layered architecture from the original package.
+> Several layers it describes (a promoted draw-calibration layer, context modules) were tested and **not**
+> supported by the evidence. For the models that actually exist and their approval status, see
+> [`MODEL_CARD.md`](MODEL_CARD.md) and [`GLOSSARY.md`](GLOSSARY.md).
+
 # Model Architecture
 
 ## Core principle

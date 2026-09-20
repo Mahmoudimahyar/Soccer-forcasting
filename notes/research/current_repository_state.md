@@ -1,3 +1,18 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **What this file is:** despite its name, a 2026-06-20 snapshot taken before the project was under git. It does
+> not describe the current repository: its test count, model status, data gaps and blockers are as of that date.
+>
+> **No longer holds:** its "headline finding" — a market+Elo blend scoring ~4-7% better RPS than the no-vig
+> market and Pinnacle's close — was a point estimate without confidence intervals. The lab later reclassified it
+> as auxiliary/historical and did not confirm it prospectively. The "active accepted model" (V8) was never
+> runtime-approved: B1 (ternary Elo) is the sole approved model.
+>
+> See the [root README](../../README.md) for the current state, [ERRATA E4](../../docs/ERRATA.md),
+> [model_state_reconciliation.md](model_state_reconciliation.md),
+> [PROSPECTIVE_MARKET_BENCHMARK_V1.md](PROSPECTIVE_MARKET_BENCHMARK_V1.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Current Repository State (Tier-1 intake) — 2026-06-20
 
 Snapshot before continuing Tier-1 work. Commands run: `git status`, `pytest -q`,

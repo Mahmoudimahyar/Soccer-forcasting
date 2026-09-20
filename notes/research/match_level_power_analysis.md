@@ -1,3 +1,27 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Superseded:** the sample-size projection (about 150 matches for a 0.005 RPS gain at 80% power). It used an
+> optimistic noise template: the one candidate that matched the reference exactly on 46 of 58 matches, giving a
+> paired-delta sd of 0.0199.
+>
+> **Current estimate:** the rerun on the 231-match event lake (paired-delta sd 0.0593) gives power of only 0.28
+> for a 0.005 gain at 231 matches, with 80% power first reached at the 1,200-match grid point.
+>
+> **Also superseded:** the "Why 58?" statement that 58 is "a build-time cap" and that 258 bridged matches
+> "already exist on disk". The lab's evidence registry later marked the 258-file cache claim `contradicted`
+> (about 60 event files were on disk); the 58 matches were the ones whose event files were physically present.
+>
+> **Still stands:** the qualitative findings. The match, not the snapshot, is the independent unit, and adding
+> snapshots to the same matches does not add power. Where this note calls the W2 reference "parameter-free",
+> read "unfitted, hand-set constants".
+>
+> See
+> [international_event_lake_power_analysis.md](../../data/reference/international_event_lake_power_analysis.md),
+> [international_event_lake_minimum_evidence_requirements.json](../../data/reference/international_event_lake_minimum_evidence_requirements.json),
+> [research_evidence_registry_report.md](research_evidence_registry_report.md),
+> [residual_58_match_audit.md](residual_58_match_audit.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Match-level statistical power analysis — in-play residual WDL correction
 
 `research_only / experimental / not_runtime_approved / not_trade_eligible / not_live_eligible`

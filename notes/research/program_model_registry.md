@@ -1,3 +1,21 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Withdrawn:** the table row naming M2fit_temp the "BEST in-play model", and the M2temp / M2fit / M2cal rows
+> ranked around it. Those rankings were made after viewing 2026 results (selection on the test set), and the
+> lab's registry labels them invalid or exploratory; see this file's own "NESTED CV CORRECTION" section.
+>
+> **Current in-play status:** the reference model is plain M2 (remaining-time Poisson; unfitted, hand-set
+> constants). M2's advantage over M1 in the "Shadow-candidate status" section (151 matches) was not confirmed at
+> significance on the later 302-match set. The "validated out-of-sample" M1-vs-static reading rests on 30
+> matches that the lab labels exploratory, not pristine. No in-play model was ever scored prospectively.
+>
+> **V8 row:** its evidence ("worse than B1 on 2026 prequential") was an artifact of a bug. Corrected, V8 and B1
+> are tied on those 33 matches; V8 stays unpromoted for lack of a significant dev-fold gain.
+>
+> See [inplay_evaluation_reconciliation.md](inplay_evaluation_reconciliation.md),
+> [inplay_nested_evaluation.md](inplay_nested_evaluation.md), [ERRATA E1](../../docs/ERRATA.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Program Model Registry (V1)
 
 Single list of every model and its status. Authoritative approval source remains

@@ -1,3 +1,20 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **No longer holds:** the last sentence of "Honest conclusion", that the session's model improvement "remains
+> M2fit_temp". M2fit_temp was chosen after viewing 2026 results (selection on the test set), is labelled
+> `invalid_due_to_model_selection_on_test_set` in the lab's registry, and was never selected in the later nested
+> evaluation.
+>
+> **Still stands, with a caveat:** the negative xG result, which is underpowered (2 competitions, 68 matches;
+> registry status `exploratory_transfer_analysis`). It is superseded by the larger test of six xG feature
+> families fixed before testing, on 302 matches: all non-significant, that is, no evidence of improvement at
+> that sample size.
+>
+> See [inplay_evaluation_reconciliation.md](inplay_evaluation_reconciliation.md),
+> [inplay_nested_evaluation.md](inplay_nested_evaluation.md),
+> [inplay_xg_preregistered_results.md](inplay_xg_preregistered_results.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Live In-Play xG Results (research-only, 2026-06-22) — StatsBomb
 
 Data provided by **StatsBomb** (open data, non-commercial research). Tested whether **leakage-safe live

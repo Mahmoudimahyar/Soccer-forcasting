@@ -1,3 +1,20 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Wrong below:** one row of this audit — "Prequential 2026 — V8 ... reproduced within tolerance (now
+> 0.225/1.092/0.004 ...; B1>V8 ordering unchanged)" — and with it the second half of answer 5. The re-run
+> reproduced a bug, not a result: `scripts/prequential_2026.py` zero-filled every candidate feature, so both
+> sets of V8 figures are artifacts.
+>
+> **Corrected, same 33 matches:** V8 scores RPS 0.173 / log-loss 0.948 / draw-cal 0.175 against B1 0.174 /
+> 0.958 / 0.178 — a tie.
+>
+> **Unaffected:** the B1 reproduction, the git forensics and the claim classifications. Note that "valid but
+> auxiliary" for the cycle 4-5 market comparison means "not a World Cup-fold result"; it is not a confirmed
+> finding (no confidence intervals, not confirmed prospectively).
+>
+> See [ERRATA E1 and E4](../../docs/ERRATA.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Model-State Reconciliation Audit (forensic) — 2026-06-21
 
 Read-only audit. No model code, data builders, configs, providers, trading, risk, scraping,

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 514" width="900" height="514" role="img" aria-labelledby="fig-title fig-desc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<title id="fig-title">Prospective 2026 benchmark: paired RPS differences (n = 34 fixtures)</title>
+<desc id="fig-desc">Forest plot of 8 paired ranked-probability-score differences on 34 World Cup 2026 group fixtures. Every 95% bootstrap interval includes zero.</desc>
+<rect x="0.5" y="0.5" width="899" height="513" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="24" y="33" font-size="17" fill="#24292f" font-weight="600">Prospective 2026 benchmark: paired RPS differences (n = 34 fixtures)</text>
+<text x="24" y="53" font-size="12.5" fill="#57606a">Every 95% interval crosses zero &#8211; no model is distinguishable from B1 Elo or from the market at this sample size. Exploratory sample (the</text>
+<text x="24" y="70" font-size="12.5" fill="#57606a">lab's own tier C). Market = early line, not a closing line: snapshot taken a median of ~98 h before kickoff.</text>
+<line x1="290.64" y1="102" x2="320.64" y2="102" stroke="#57606a" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="290.64" y1="98" x2="290.64" y2="106" stroke="#57606a" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="320.64" y1="98" x2="320.64" y2="106" stroke="#57606a" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="305.64" cy="102" r="4" fill="#57606a" stroke="#ffffff" stroke-width="1.5"/>
+<text x="328.64" y="106" font-size="11" fill="#57606a">point = mean difference;  bar = 95% match-level bootstrap interval</text>
+<text x="876" y="106" font-size="11" fill="#57606a" text-anchor="end" font-weight="600">mean difference [95% CI]</text>
+<line x1="270.8" y1="114" x2="270.8" y2="358" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="341.92" y1="114" x2="341.92" y2="358" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="413.04" y1="114" x2="413.04" y2="358" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="555.27" y1="114" x2="555.27" y2="358" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="626.39" y1="114" x2="626.39" y2="358" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="697.51" y1="114" x2="697.51" y2="358" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="484.15" y1="114" x2="484.15" y2="358" stroke="#57606a" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="270.8" y1="358" x2="697.51" y2="358" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<line x1="270.8" y1="358" x2="270.8" y2="362" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="270.8" y="375" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">&#8722;0.03</text>
+<line x1="341.92" y1="358" x2="341.92" y2="362" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="341.92" y="375" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">&#8722;0.02</text>
+<line x1="413.04" y1="358" x2="413.04" y2="362" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="413.04" y="375" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">&#8722;0.01</text>
+<line x1="484.15" y1="358" x2="484.15" y2="362" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="484.15" y="375" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">0</text>
+<line x1="555.27" y1="358" x2="555.27" y2="362" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="555.27" y="375" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">0.01</text>
+<line x1="626.39" y1="358" x2="626.39" y2="362" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="626.39" y="375" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">0.02</text>
+<line x1="697.51" y1="358" x2="697.51" y2="362" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="697.51" y="375" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">0.03</text>
+<text x="24" y="130" font-size="12.5" fill="#24292f" font-weight="600">Reference: B1 Elo (M1_B1)</text>
+<text x="36" y="153" font-size="12.5" fill="#24292f">Market (early line) vs B1 Elo</text>
+<line x1="400.23" y1="148.5" x2="644.88" y2="148.5" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="400.23" y1="144" x2="400.23" y2="153" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="644.88" y1="144" x2="644.88" y2="153" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="524.69" cy="148.5" r="4.5" fill="#0969da" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="153" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">+0.0057  [&#8722;0.0118, +0.0226]</text>
+<text x="36" y="176" font-size="12.5" fill="#24292f">M3 (75% Elo / 25% market) vs B1 Elo</text>
+<line x1="452.86" y1="171.5" x2="514.02" y2="171.5" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="452.86" y1="167" x2="452.86" y2="176" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="514.02" y1="167" x2="514.02" y2="176" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="484.86" cy="171.5" r="4.5" fill="#0969da" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="176" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">+0.0001  [&#8722;0.0044, +0.0042]</text>
+<text x="36" y="199" font-size="12.5" fill="#24292f">M4 (50% Elo / 50% market) vs B1 Elo</text>
+<line x1="427.26" y1="194.5" x2="551" y2="194.5" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="427.26" y1="190" x2="427.26" y2="199" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="551" y1="190" x2="551" y2="199" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="491.98" cy="194.5" r="4.5" fill="#0969da" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="199" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">+0.0011  [&#8722;0.0080, +0.0094]</text>
+<text x="36" y="222" font-size="12.5" fill="#24292f">M5 (25% Elo / 75% market) vs B1 Elo</text>
+<line x1="413.04" y1="217.5" x2="597.23" y2="217.5" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="413.04" y1="213" x2="413.04" y2="222" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="597.23" y1="213" x2="597.23" y2="222" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="504.78" cy="217.5" r="4.5" fill="#0969da" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="222" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">+0.0029  [&#8722;0.0100, +0.0159]</text>
+<text x="24" y="253" font-size="12.5" fill="#24292f" font-weight="600">Reference: market (M2_market)</text>
+<text x="36" y="276" font-size="12.5" fill="#24292f">B1 Elo vs market</text>
+<line x1="326.27" y1="271.5" x2="569.5" y2="271.5" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="326.27" y1="267" x2="326.27" y2="276" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="569.5" y1="267" x2="569.5" y2="276" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="443.62" cy="271.5" r="4.5" fill="#9a6700" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="276" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">&#8722;0.0057  [&#8722;0.0222, +0.0120]</text>
+<text x="36" y="299" font-size="12.5" fill="#24292f">M3 (75% Elo / 25% market) vs market</text>
+<line x1="349.74" y1="294.5" x2="536.07" y2="294.5" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="349.74" y1="290" x2="349.74" y2="299" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="536.07" y1="290" x2="536.07" y2="299" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="444.33" cy="294.5" r="4.5" fill="#9a6700" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="299" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">&#8722;0.0056  [&#8722;0.0189, +0.0073]</text>
+<text x="36" y="322" font-size="12.5" fill="#24292f">M4 (50% Elo / 50% market) vs market</text>
+<line x1="390.28" y1="317.5" x2="513.31" y2="317.5" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="390.28" y1="313" x2="390.28" y2="322" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="513.31" y1="313" x2="513.31" y2="322" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="451.44" cy="317.5" r="4.5" fill="#9a6700" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="322" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">&#8722;0.0046  [&#8722;0.0132, +0.0041]</text>
+<text x="36" y="345" font-size="12.5" fill="#24292f">M5 (25% Elo / 75% market) vs market</text>
+<line x1="432.24" y1="340.5" x2="495.53" y2="340.5" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="432.24" y1="336" x2="432.24" y2="345" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<line x1="495.53" y1="336" x2="495.53" y2="345" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt"/>
+<circle cx="464.24" cy="340.5" r="4.5" fill="#9a6700" stroke="#ffffff" stroke-width="1.5"/>
+<text x="876" y="345" font-size="12" fill="#24292f" text-anchor="end" style="font-variant-numeric:tabular-nums">&#8722;0.0028  [&#8722;0.0073, +0.0016]</text>
+<text x="270.8" y="393" font-size="11" fill="#57606a">&#8592; row model better</text>
+<text x="697.51" y="393" font-size="11" fill="#57606a" text-anchor="end">reference better &#8594;</text>
+<text x="484.15" y="414" font-size="12" fill="#24292f" text-anchor="middle">RPS difference (negative = row model better)</text>
+<text x="24" y="438" font-size="11" fill="#57606a">B1 Elo = ternary-Elo model with no fitted parameters; market = no-vig bookmaker consensus; M3&#8211;M5 = fixed, untuned blends of the two. RPS = ranked</text>
+<text x="24" y="452.5" font-size="11" fill="#57606a">probability score (lower is better). Intervals: match-level percentile bootstrap, 5,000 resamples, fixture = unit of analysis. Across all metrics in the source table,</text>
+<text x="24" y="467" font-size="11" fill="#57606a">none of the 24 reported paired differences has an interval that excludes zero. Forecast-quality metrics only &#8211; research, not betting advice.</text>
+<text x="24" y="483.5" font-size="11" fill="#57606a">Source: notes/research/PROSPECTIVE_SHADOW_SCORECARD_V1.md (paired fixture-level deltas, RPS rows); lead time from</text>
+<text x="24" y="498" font-size="11" fill="#57606a">data/reference/prospective_frozen_input_manifest.csv. Regenerate: python scripts/make_readme_figures.py</text>
+</svg>

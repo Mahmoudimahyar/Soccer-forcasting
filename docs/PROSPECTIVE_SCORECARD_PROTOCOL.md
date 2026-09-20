@@ -1,3 +1,9 @@
+> [!NOTE]
+> **Status update (2026-09-20).** The status paragraph at the end of this protocol predates the scoring
+> run. The prospective benchmark was subsequently produced on **34 fixtures (tier C, exploratory)** — see
+> [`../notes/research/PROSPECTIVE_SHADOW_SCORECARD_V1.md`](../notes/research/PROSPECTIVE_SHADOW_SCORECARD_V1.md)
+> and the early-line caveat in [`ERRATA.md`](ERRATA.md) (E2). The protocol text itself is unchanged.
+
 # Prospective Scorecard Protocol (Phase 4)
 
 Deterministic scoring of the frozen prematch shadow models against finalized 2026 results. Reads ONLY

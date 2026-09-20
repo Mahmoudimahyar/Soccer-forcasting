@@ -1,3 +1,18 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **No longer holds:** this note's conclusion — that the Elo blend scores better than Pinnacle's closing line
+> and that the gain is a genuine signal rather than denoising. Do not cite it as a result. It rests on point
+> estimates from 253 auxiliary internationals (World Cup n=48), better in 3 of 4 temporal-CV folds, with no
+> confidence intervals.
+>
+> **What happened next:** the lab reclassified the result as auxiliary/historical, and it was not confirmed
+> prospectively. On the 2026 benchmark (34 fixtures; early market line, not a closing line) every paired 95% CI
+> includes zero: no evidence of a difference at that sample size. This is not betting or financial advice.
+>
+> See [ERRATA E4](../../docs/ERRATA.md), [model_state_reconciliation.md](model_state_reconciliation.md),
+> [PROSPECTIVE_MARKET_BENCHMARK_V1.md](PROSPECTIVE_MARKET_BENCHMARK_V1.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Cycle 5 — True alpha vs the sharp line, and the lineups/xG dead-end (2026-06-20)
 
 Two follow-ups to cycle 4: (1) is the Elo-blend edge real alpha or just denoising a soft

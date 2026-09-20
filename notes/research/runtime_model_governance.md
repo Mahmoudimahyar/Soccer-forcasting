@@ -1,3 +1,22 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Still stands:** the governance decision. B1 is the sole approved runtime model; V8 and the market blend are
+> shadow-only.
+>
+> **Correction 1 (V8 figures):** the 2026-prequential figures under "Why V8 is experimental" (RPS 0.225 vs
+> 0.174, log-loss 1.092 vs 0.958, "better only on draw calibration") were artifacts of a bug that zero-filled
+> every candidate feature. Corrected on the same 33 matches, V8 scores RPS 0.173 / log-loss 0.948 / draw-cal
+> 0.175 against B1 0.174 / 0.958 / 0.178 — a tie. The valid reason V8 stays shadow-only is the absence of a
+> significant dev-fold improvement.
+>
+> **Correction 2 (risk gate):** the risk gate checks the approved model only when a `TradeIntent` carries a
+> `model_id`, which is an optional field. The fail-closed guarantee therefore holds for the forecaster path, not
+> for the whole trading path. That trading path is a dormant, triple-gated paper/demo scaffold: never armed,
+> never given credentials, and no order was ever placed.
+>
+> See [ERRATA E1](../../docs/ERRATA.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Runtime Model Governance — approved forecasts route through B1/Elo (2026-06-21)
 
 Effective decision: **B1 / internal Elo is the sole approved runtime model of record.** V8 and the

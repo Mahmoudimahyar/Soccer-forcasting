@@ -47,3 +47,20 @@ def test_run_after_match_update_writes_outputs(tmp_path: Path, seed_root: Path):
     row = current_after.loc[current_after["match_id"] == "2026_A_03"].iloc[0]
     assert row["goals_a"] == 1 and row["goals_b"] == 1
     assert not result.predictions.empty
+
+
+def test_run_live_prediction_refresh_writes_outputs_and_returns(tmp_path: Path, seed_root: Path):
+    # Regression: this function used to raise NameError (undefined `updated_elo`) AFTER writing its files,
+    # so `wcdrawlab predict-live` always exited with an error. It was imported here but never called.
+    res = run_live_prediction_refresh(
+        matches_path=seed_root / "data" / "seed" / "worldcup_2026_seed_matches.csv",
+        elo_path=seed_root / "data" / "seed" / "seed_ratings_2026.csv",
+        odds_path=seed_root / "data" / "seed" / "sample_odds_2026.csv",
+        output_dir=tmp_path / "live",
+        config=LivePredictionConfig(n_sims=10, utility_sims=5, random_seed=3),
+    )
+    for key in ("features", "predictions", "advancement", "targets"):
+        assert Path(res.output_paths[key]).exists(), key
+    assert "current_elo" not in res.output_paths  # a refresh inserts no result -> no Elo update
+    assert not res.predictions.empty
+

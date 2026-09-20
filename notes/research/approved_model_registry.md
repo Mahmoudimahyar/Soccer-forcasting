@@ -1,3 +1,18 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Still stands:** the approval decision. B1 is the sole runtime-approved model, and V8 stays shadow-only
+> because it showed no significant dev-fold improvement.
+>
+> **No longer holds:** the two 2026-prequential comparisons quoted below — V8 "worse than B1 on RPS (0.225 vs
+> 0.174) and log-loss (1.092 vs 0.958)", and V8's draw-cal "0.004" against B1's 0.178. The V8 figures were
+> artifacts of a bug in `scripts/prequential_2026.py` that zero-filled every candidate feature.
+>
+> **Corrected, same 33 matches:** V8 scores RPS 0.173 / log-loss 0.948 / draw-cal 0.175 against B1 0.174 /
+> 0.958 / 0.178 — a tie.
+>
+> See [ERRATA E1](../../docs/ERRATA.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Approved Model Registry
 
 Single source of truth for which model is approved. Created by the reconciliation audit

@@ -1,3 +1,18 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Artifacts of a bug:** the "candidate V8" row of the scorecard (RPS 0.221 / log-loss 1.082 / draw-cal 0.022;
+> later re-run as 0.225 / 1.092 / 0.004) and every conclusion drawn from it — points 1, 2 and 4 and the
+> "Implication" section. In `scripts/prequential_2026.py` the candidate's one-row test frame had all-object
+> dtype, so every feature was zero-filled and the candidate produced near-constant forecasts.
+>
+> **Corrected (bug fixed 2026-09-20), same 33 matches:** V8 scores RPS 0.173 / log-loss 0.948 / draw-cal 0.175
+> against B1 0.174 / 0.958 / 0.178 — a tie. Neither "worse than Elo" nor "better draw calibration" holds. B1's
+> figures were never affected.
+>
+> See [ERRATA E1](../../docs/ERRATA.md), [`scripts/prequential_2026.py`](../../scripts/prequential_2026.py) and the
+> [glossary](../../docs/GLOSSARY.md).
+
 # Prequential Out-of-Sample Scorecard — 2026 (live test)
 
 `scripts/prequential_2026.py`. For each FINISHED 2026 group match in chronological order, every

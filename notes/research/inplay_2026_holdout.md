@@ -1,3 +1,26 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Not out-of-sample evidence:** the model-ranking claims in this note. The temperature-scaled and
+> fitted-anchor variants (the "+temp" models, M2fit, M2fit_temp) were built, and `M2fit_temp` was named "the best
+> in-play model", after repeatedly viewing these same 2026 results. That is selection on the test set, even
+> though model parameters were train-only. The lab's registry labels that claim
+> `invalid_due_to_model_selection_on_test_set` and downgrades the other 2026-based rankings here (including the
+> M2temp / M2cal calibration ranking) to exploratory.
+>
+> **What the clean rerun found:** nested leave-one-competition-out on 302 historical internationals (no 2026
+> data) never selected M2temp, M2fit or M2fit_temp; it chose plain M2 in 4 of 6 folds and M5 in 2.
+>
+> **Still stands, with a caveat:** the pre-specified M1 vs static M0 comparison (RPS 0.1478 vs 0.1897; dRPS
+> −0.0447, 95% CI [−0.084, −0.005]; 30 matches, 519 rows). The lab's prospective protocol labels those 30
+> matches exploratory, not pristine, so treat the magnitude as indicative only and read the headline's
+> "validated" wording in that light.
+>
+> See [inplay_evaluation_reconciliation.md](inplay_evaluation_reconciliation.md),
+> [inplay_nested_evaluation.md](inplay_nested_evaluation.md),
+> [inplay_result_status_registry.yaml](inplay_result_status_registry.yaml),
+> [final_2026_prospective_protocol.md](final_2026_prospective_protocol.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # In-Play Models on the LIVE 2026 World Cup — Out-of-Sample (research-only, 2026-06-22)
 
 The 2026 World Cup is underway. Using the paid API-Football Pro plan we built a leakage-safe in-play

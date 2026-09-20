@@ -1,3 +1,17 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **What this file is:** an agent session-state file last updated on 2026-06-21, not the project's current next
+> task. The tasks below were later carried out or overtaken by subsequent work.
+>
+> **In-play status line:** M2 as a "SHADOW-CANDIDATE (beats M1 on 3/3 held-out competitions)" is an early
+> 108-match reading. In the later nested evaluation on 302 matches, the selected model (plain M2 in 4 of 6
+> folds) did not differ significantly from M1 (dRPS −0.0042, 95% CI [−0.0083, +0.0002]). M2 is now simply the
+> unfitted reference model (hand-set constants), and no in-play model was ever scored prospectively.
+>
+> See [inplay_evaluation_reconciliation.md](inplay_evaluation_reconciliation.md),
+> [inplay_nested_evaluation.md](inplay_nested_evaluation.md), the [notes index](README.md) and the [glossary](../../docs/GLOSSARY.md).
+
 # Resume — exact next task
 
 **State: World Cup Predictor V1 IN PROGRESS (not blocked).** Multi-competition in-play is unblocked on

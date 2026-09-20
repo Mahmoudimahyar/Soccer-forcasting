@@ -44,7 +44,7 @@ def main():
     j["max_abs_edge"] = j[["edge_a", "edge_draw", "edge_b"]].abs().max(axis=1)
 
     # HEADLINE forecast = VALIDATED market+Elo blend where odds exist (beats raw market OOS by
-    # ~5% composite, 4/4 folds; see notes/research/20260620_cycle_4.md), else model fallback.
+    # ~5% composite, 4/4 folds; see notes/research/20260620_cycle_4.md), else model fallback.  [early retrospective point estimate, no CI; NOT confirmed prospectively - docs/ERRATA.md E4]
     from wcdrawlab.ratings import ternary_elo_probs
     Pe = ternary_elo_probs(j["elo_delta"].to_numpy())  # parameter-free Elo
     Pm = j[["p_a_market", "p_draw_market", "p_b_market"]].to_numpy()

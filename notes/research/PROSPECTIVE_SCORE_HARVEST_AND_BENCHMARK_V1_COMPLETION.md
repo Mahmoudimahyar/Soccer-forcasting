@@ -1,3 +1,22 @@
+> [!NOTE]
+> **CAVEAT ADDED (banner added 2026-09-20; original text and numbers kept unedited below).**
+>
+> 1. **Early line, not a closing line.** "Snapshot coverage: 31 baseline" means that for 31 of 34 fixtures the
+>    market comparator is a 2026-06-21 baseline snapshot, a median of about 98 hours before kickoff. An
+>    odds-payload key mismatch (`"events"` written, only `"data"` read) made the prediction freezer ignore all 47
+>    later collector snapshots. The root-cause work reported here did not find that fault (fixed 2026-09-20;
+>    ledger and numbers unchanged).
+> 2. **"Preregistered" here means pre-specified in the repository and self-attested.** The rule, the script and
+>    the results share one commit, made after the matches were played but, per the pre-specification file,
+>    before any model-vs-outcome metric was computed.
+> 3. **Follow-ups that never happened.** The knockout-stage re-run recommended at the end never took place, and
+>    the collector's own score path was never patched; the independent harvester is the only working scoring
+>    path.
+>
+> See [ERRATA E2 and E3](../../docs/ERRATA.md),
+> [prospective_score_harvest_preregistration.md](prospective_score_harvest_preregistration.md) and the
+> [glossary](../../docs/GLOSSARY.md).
+
 # Prospective Shadow Score Harvest, Result Reconciliation & Market Benchmark — V1 COMPLETION
 
 **research_only=true · prospective_evaluation_only=true · not_runtime_approved=true · not_trade_eligible=true · not_live_eligible=true**

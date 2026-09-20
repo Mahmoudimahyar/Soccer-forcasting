@@ -1,3 +1,17 @@
+> [!WARNING]
+> **SUPERSEDED / CORRECTED (banner added 2026-09-20; original text kept unedited below).**
+>
+> **Still stands:** the null result. Squad/player features gave no evidence of improvement over Elo at this
+> sample size (128 Copa America, AFCON and Asian Cup games; 5-fold CV log-loss 0.834 with squad features vs
+> 0.813 Elo-only).
+>
+> **No longer holds:** the last sentence of "Honest verdict", which repeats the cycle 4-5 claim that a
+> market+Elo blend scores ~4-7% better RPS than Pinnacle's close. That estimate had no confidence intervals, was
+> later reclassified as auxiliary/historical, and was not confirmed prospectively.
+>
+> See [ERRATA E4](../../docs/ERRATA.md), [PROSPECTIVE_MARKET_BENCHMARK_V1.md](PROSPECTIVE_MARKET_BENCHMARK_V1.md) and the
+> [glossary](../../docs/GLOSSARY.md).
+
 # Cycle 6 — Squad / player data (lineups, market value, age, league) — 2026-06-20
 
 User ask: extract minute-by-minute / lineup / individual-player data (age, league, value) and

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 513" width="900" height="513" role="img" aria-labelledby="fig-title fig-desc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+<title id="fig-title">How many matches would it take? Match-clustered power to detect an RPS improvement</title>
+<desc id="fig-desc">Power against number of matches on a log axis for 6 absolute RPS gains. With the 231 matches available, power for a 0.005 gain is 0.28.</desc>
+<rect x="0.5" y="0.5" width="899" height="512" rx="6" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
+<text x="24" y="33" font-size="17" fill="#24292f" font-weight="600">How many matches would it take? Match-clustered power to detect an RPS improvement</text>
+<text x="24" y="53" font-size="12.5" fill="#57606a">Noise template: the per-match paired RPS differences actually observed on the 231 eligible internationals (5 tournaments; event-process</text>
+<text x="24" y="70" font-size="12.5" fill="#57606a">model e7 minus the e2 remaining-time Poisson reference), centred to zero, SD 0.059. The independent unit is the match, not the in-play</text>
+<text x="24" y="87" font-size="12.5" fill="#57606a">snapshot: every simulated dataset is resampled by match. &quot;Detect&quot; = the match-level bootstrap 95% interval lies wholly below zero.</text>
+<rect x="72.62" y="107" width="728.35" height="282" rx="0" fill="none" stroke="#d0d7de" stroke-width="1"/>
+<text x="64.62" y="393" font-size="11.5" fill="#57606a" text-anchor="end" style="font-variant-numeric:tabular-nums">0.0</text>
+<line x1="72.62" y1="341.8" x2="800.97" y2="341.8" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<text x="64.62" y="345.8" font-size="11.5" fill="#57606a" text-anchor="end" style="font-variant-numeric:tabular-nums">0.2</text>
+<line x1="72.62" y1="294.6" x2="800.97" y2="294.6" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<text x="64.62" y="298.6" font-size="11.5" fill="#57606a" text-anchor="end" style="font-variant-numeric:tabular-nums">0.4</text>
+<line x1="72.62" y1="247.4" x2="800.97" y2="247.4" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<text x="64.62" y="251.4" font-size="11.5" fill="#57606a" text-anchor="end" style="font-variant-numeric:tabular-nums">0.6</text>
+<line x1="72.62" y1="200.2" x2="800.97" y2="200.2" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<text x="64.62" y="204.2" font-size="11.5" fill="#57606a" text-anchor="end" style="font-variant-numeric:tabular-nums">0.8</text>
+<line x1="72.62" y1="153" x2="800.97" y2="153" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<text x="64.62" y="157" font-size="11.5" fill="#57606a" text-anchor="end" style="font-variant-numeric:tabular-nums">1.0</text>
+<line x1="88.62" y1="153" x2="88.62" y2="389" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="88.62" y1="389" x2="88.62" y2="393" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="88.62" y="406" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">100</text>
+<line x1="249.74" y1="153" x2="249.74" y2="389" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="249.74" y1="389" x2="249.74" y2="393" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="249.74" y="406" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">200</text>
+<line x1="462.73" y1="153" x2="462.73" y2="389" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="462.73" y1="389" x2="462.73" y2="393" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="462.73" y="406" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">500</text>
+<line x1="623.85" y1="153" x2="623.85" y2="389" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="623.85" y1="389" x2="623.85" y2="393" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="623.85" y="406" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">1,000</text>
+<line x1="784.97" y1="153" x2="784.97" y2="389" stroke="#d0d7de" stroke-width="1" stroke-linecap="butt"/>
+<line x1="784.97" y1="389" x2="784.97" y2="393" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="784.97" y="406" font-size="11.5" fill="#57606a" text-anchor="middle" style="font-variant-numeric:tabular-nums">2,000</text>
+<line x1="72.62" y1="389" x2="800.97" y2="389" stroke="#8c959f" stroke-width="1" stroke-linecap="butt"/>
+<text x="34" y="271" font-size="12" fill="#24292f" text-anchor="middle" transform="rotate(-90 34 271)">Power (chance of detecting the gain)</text>
+<text x="436.8" y="427" font-size="12" fill="#24292f" text-anchor="middle">Number of independent matches (log scale)</text>
+<text x="124.67" y="128" font-size="11.5" fill="#24292f" font-weight="600">Absolute RPS gain to detect:</text>
+<line x1="306.11" y1="124" x2="332.11" y2="124" stroke="#0969da" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<circle cx="319.11" cy="124" r="4" fill="#0969da" stroke="#ffffff" stroke-width="1.5"/>
+<text x="337.11" y="128" font-size="11.5" fill="#24292f" style="font-variant-numeric:tabular-nums">0.010</text>
+<line x1="381.13" y1="124" x2="407.13" y2="124" stroke="#1a7f37" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<circle cx="394.13" cy="124" r="4" fill="#1a7f37" stroke="#ffffff" stroke-width="1.5"/>
+<text x="412.13" y="128" font-size="11.5" fill="#24292f" style="font-variant-numeric:tabular-nums">0.005</text>
+<line x1="456.15" y1="124" x2="482.15" y2="124" stroke="#8250df" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<circle cx="469.15" cy="124" r="4" fill="#8250df" stroke="#ffffff" stroke-width="1.5"/>
+<text x="487.15" y="128" font-size="11.5" fill="#24292f" style="font-variant-numeric:tabular-nums">0.003</text>
+<line x1="531.17" y1="124" x2="557.17" y2="124" stroke="#cf222e" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<circle cx="544.17" cy="124" r="4" fill="#cf222e" stroke="#ffffff" stroke-width="1.5"/>
+<text x="562.17" y="128" font-size="11.5" fill="#24292f" style="font-variant-numeric:tabular-nums">0.002</text>
+<line x1="606.19" y1="124" x2="632.19" y2="124" stroke="#57606a" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<circle cx="619.19" cy="124" r="4" fill="#57606a" stroke="#ffffff" stroke-width="1.5"/>
+<text x="637.19" y="128" font-size="11.5" fill="#24292f" style="font-variant-numeric:tabular-nums">0.001</text>
+<line x1="681.21" y1="124" x2="707.21" y2="124" stroke="#9a6700" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<circle cx="694.21" cy="124" r="4" fill="#9a6700" stroke="#ffffff" stroke-width="1.5"/>
+<text x="712.21" y="128" font-size="11.5" fill="#24292f" style="font-variant-numeric:tabular-nums">0.0005</text>
+<circle cx="104.79" cy="142" r="4" fill="#57606a" stroke="#ffffff" stroke-width="1.5"/>
+<text x="115.79" y="146" font-size="11" fill="#57606a">simulated power at that match count</text>
+<polygon points="337.2,137 342.42,146.46 331.97,146.46" fill="#ffffff" stroke="#57606a" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="348.7" y="146" font-size="11" fill="#57606a">first grid size whose estimate reached 0.60 / 0.80 / 0.90 (drawn at the threshold)</text>
+<line x1="72.62" y1="200.2" x2="800.97" y2="200.2" stroke="#57606a" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 4"/>
+<text x="80.62" y="194.2" font-size="11" fill="#57606a" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">0.80 power (conventional target)</text>
+<line x1="283.24" y1="153" x2="283.24" y2="389" stroke="#24292f" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="3 3"/>
+<text x="290.24" y="168" font-size="11.5" fill="#24292f" font-weight="600" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">231 matches available</text>
+<polyline points="165.17,272.77 249.74,247.4 283.24,222.62 462.73,176.6" fill="none" stroke="#0969da" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<polyline points="165.17,342.39 283.24,322.92 571.98,247.4 666.23,200.2 784.97,176.6" fill="none" stroke="#1a7f37" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<polyline points="165.17,357.14 283.24,357.73 784.97,247.4" fill="none" stroke="#8250df" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<polyline points="165.17,373.07 283.24,365.4" fill="none" stroke="#cf222e" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<polyline points="165.17,377.2 283.24,376.61" fill="none" stroke="#57606a" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<polyline points="165.17,379.56 283.24,379.56" fill="none" stroke="#9a6700" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="butt" stroke-dasharray="5 3"/>
+<circle cx="165.17" cy="272.77" r="4" fill="#0969da" stroke="#ffffff" stroke-width="1.5"/>
+<polygon points="249.74,242.4 254.97,251.86 244.52,251.86" fill="#ffffff" stroke="#0969da" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="283.24" cy="222.62" r="4" fill="#0969da" stroke="#ffffff" stroke-width="1.5"/>
+<polygon points="462.73,171.6 467.96,181.06 457.51,181.06" fill="#ffffff" stroke="#0969da" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="165.17" cy="342.39" r="4" fill="#1a7f37" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="283.24" cy="322.92" r="4" fill="#1a7f37" stroke="#ffffff" stroke-width="1.5"/>
+<polygon points="571.98,242.4 577.21,251.86 566.76,251.86" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="666.23,195.2 671.46,204.66 661.01,204.66" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="784.97,171.6 790.2,181.06 779.75,181.06" fill="#ffffff" stroke="#1a7f37" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="165.17" cy="357.14" r="4" fill="#8250df" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="283.24" cy="357.73" r="4" fill="#8250df" stroke="#ffffff" stroke-width="1.5"/>
+<polygon points="784.97,242.4 790.2,251.86 779.75,251.86" fill="#ffffff" stroke="#8250df" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="165.17" cy="373.07" r="4" fill="#cf222e" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="283.24" cy="365.4" r="4" fill="#cf222e" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="165.17" cy="377.2" r="4" fill="#57606a" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="283.24" cy="376.61" r="4" fill="#57606a" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="165.17" cy="379.56" r="4" fill="#9a6700" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="283.24" cy="379.56" r="4" fill="#9a6700" stroke="#ffffff" stroke-width="1.5"/>
+<text x="462.73" y="165.6" font-size="11.5" fill="#24292f" text-anchor="middle" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">gain 0.010</text>
+<text x="794.97" y="180.6" font-size="11.5" fill="#24292f">gain 0.005</text>
+<text x="794.97" y="251.4" font-size="11.5" fill="#24292f">gain 0.003</text>
+<text x="274.24" y="310.92" font-size="11.5" fill="#24292f" text-anchor="end" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">power 0.28 for a 0.005 gain</text>
+<text x="655.23" y="193.2" font-size="11.5" fill="#24292f" text-anchor="end" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke">0.80 first reached at 1,200</text>
+<text x="24" y="451" font-size="11" fill="#57606a">Dashed lines only join committed values: a visual guide, not simulated curves. Gains of 0.002 or smaller never reached 0.60 power on the grid (up to 2,000</text>
+<text x="24" y="465.5" font-size="11" fill="#57606a">matches). Each value is one Monte-Carlo estimate: 5 repeats at 231 matches ranged 0.215&#8211;0.300 for the 0.005 gain. 139 matches = the 60%-coverage scenario.</text>
+<text x="24" y="482" font-size="11" fill="#57606a">Source: data/reference/international_event_lake_power_analysis.json (400 simulated datasets &#215; 400 bootstrap resamples per estimate; grid sizes from</text>
+<text x="24" y="496.5" font-size="11" fill="#57606a">scripts/run_international_event_lake_power_analysis.py). Regenerate: python scripts/make_readme_figures.py</text>
+</svg>
