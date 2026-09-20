@@ -96,6 +96,10 @@ prepares it for public reading. No new modelling result was produced on this dat
 - **`wcdrawlab predict-live` crash.** `run_live_prediction_refresh()` ended with a block copied from the
   after-match path that referenced undefined names, so the command raised `NameError` *after* writing its
   outputs. The test module imported the function but never called it. Fixed, with a regression test.
+- **Crash under pandas 3 (found by the first CI run).** Under copy-on-write `to_numpy()` can return a
+  read-only view; `live.py` repaired invalid market rows in place and raised "assignment destination is
+  read-only". Python 3.13 resolves pandas 3, Python 3.10 cannot, so the 3.10 job passed while both 3.13
+  jobs failed. Fixed with an explicit copy; the suite passes on pandas 2.3 and 3.0.
 - **Vacuous passes → skips.** Two corpus-coverage tests passed via a bare `return` when the corpus was
   absent. They now skip with a reason.
 - `safe_config` no longer defaults to a fixed path on the author's machine (repo root by default,

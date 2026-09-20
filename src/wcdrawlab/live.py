@@ -145,7 +145,9 @@ def append_update_log(log_path: str | Path, match_id: str, goals_a: int, goals_b
 
 def _market_probs(features: pd.DataFrame) -> np.ndarray:
     if {"p_a_market", "p_draw_market", "p_b_market"}.issubset(features.columns):
-        arr = features[["p_a_market", "p_draw_market", "p_b_market"]].astype(float).to_numpy()
+        # copy=True: under pandas >= 3 (copy-on-write) to_numpy() can return a READ-ONLY view, and the
+        # in-place repair of invalid rows below would raise "assignment destination is read-only".
+        arr = features[["p_a_market", "p_draw_market", "p_b_market"]].astype(float).to_numpy(copy=True)
         bad = ~np.isfinite(arr).all(axis=1) | (arr.sum(axis=1) <= 0)
         arr[bad] = np.array([1 / 3, 1 / 3, 1 / 3])
         return normalize_probs(arr)

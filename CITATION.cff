@@ -18,6 +18,8 @@ keywords:
   - negative results
 abstract: >-
   A research lab for probabilistic football forecasting (pre-match and in-play) with a fixed evaluator,
-  immutable prediction ledgers and machine-readable decision ledgers. Frozen models were scored
-  prospectively on 34 fixtures of the 2026 World Cup group stage; no model was statistically
-  distinguishable from the bookmaker consensus. Research-only and paper-only; no profitability is claimed.
+  first-write-wins prediction ledgers and machine-readable decision ledgers. Frozen models were scored
+  prospectively on 34 fixtures of the 2026 World Cup group stage (an exploratory sample); no model could
+  be distinguished from the bookmaker consensus at that sample size, and the market comparator was an
+  early line captured a median of about 98 hours before kickoff, not a closing line. Research-only and
+  paper-only; no profitability is claimed.

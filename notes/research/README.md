@@ -2,7 +2,7 @@
 
 This directory is the lab's complete research record: 325 notes, registries and manifests written between 2026-06-20 and 2026-06-29.
 
-For the public release the notes were left exactly as they stood at the end of the research period. That includes claims that were later superseded, negative results, and the AI agent's own operating-state files. The git history shows no note ever deleted from this directory; later notes correct earlier ones. The only change to existing notes, made on 2026-09-20, was a dated banner (`SUPERSEDED / CORRECTED` or `CAVEAT ADDED`) placed above the original text of 25 of them. This index was added the same day.
+For the public release the notes were left exactly as they stood at the end of the research period. That includes claims that were later superseded, negative results, and the AI agent's own operating-state files. The git history shows no note ever deleted from this directory; later notes correct earlier ones. The only change to existing notes, made on 2026-09-20, was a dated banner (`SUPERSEDED / CORRECTED` or `CAVEAT ADDED`) placed above the original text of 26 of them. This index was added the same day.
 
 Read the ten documents in [Start here](#start-here) first, then use the per-line sections. Before quoting a number from an older note, check [Superseded or corrected claims](#superseded-or-corrected-claims) and the repo-level [errata](../../docs/ERRATA.md).
 
@@ -21,7 +21,7 @@ Read the ten documents in [Start here](#start-here) first, then use the per-line
 ## How to read this directory
 
 - **Notes are point-in-time snapshots.** When two notes disagree, the later one usually wins. The known cases are listed in [section 4](#superseded-or-corrected-claims).
-- **Banners mark the known problems.** 25 notes open with a dated `SUPERSEDED / CORRECTED` or `CAVEAT ADDED` block. The original text below each banner is unchanged. In this index, † after a file name means the note carries a banner.
+- **Banners mark the known problems.** 26 notes open with a dated `SUPERSEDED / CORRECTED` or `CAVEAT ADDED` block. The original text below each banner is unchanged. In this index, † after a file name means the note carries a banner.
 - **Model names collide.** There are two different models called "M2": `M2_market`, the no-vig bookmaker consensus in the pre-match shadow study, and in-play M2, a remaining-time Poisson model. The [glossary](../../docs/GLOSSARY.md#read-this-first-three-naming-traps) disambiguates them.
 - **One reference model, several labels.** The unfitted remaining-time Poisson reference appears as in-play M2, `m2_frozen`, W2, R2, e2, R0 and T0, depending on the research line. The later labels are re-implementations without the Elo term ([glossary](../../docs/GLOSSARY.md#one-reference-model-seven-labels)). **Do not compare RPS values across research lines**: the datasets, snapshot grids and variants differ.
 - **Filename conventions.** Files with `COMPLETION` (or `completion`) in the name are end-of-sprint reports (21 of them). Most other lowercase files are individual analyses, audits, data cards and protocols. `*_STATE.yaml`, `*_BACKLOG.md` and similar are agent control-loop state, not findings ([section 5](#operating-state-files)).

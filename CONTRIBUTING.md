@@ -17,8 +17,8 @@ broken, or a claim is stronger than its evidence, please open an issue — that 
    The evaluator hard-codes `promoted=False`.
 5. **Paper-only.** Do not add, arm or exercise any live order path. `KALSHI_ENABLE_LIVE_TRADING` stays
    `false` and `TRADING_MODE` stays `paper`.
-6. **No secrets, no raw third-party data.** `.env` is gitignored; `scripts/check_secret_hygiene.py` runs in
-   CI. Raw provider payloads and derived tables stay out of git (`data/raw/`, `data/processed/`, `outputs/`).
+6. **No secrets, no raw third-party data.** `.env` is gitignored; `scripts/check_secret_hygiene.py` (which checks
+   that `.env.example` holds placeholders only — it is not a repository-wide secret scanner) runs in CI. Raw provider payloads and derived tables stay out of git (`data/raw/`, `data/processed/`, `outputs/`).
    See [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) and [`docs/DATA_SOURCE_GOVERNANCE.md`](docs/DATA_SOURCE_GOVERNANCE.md);
    a new data source starts as a written request under `data_requests/`.
 

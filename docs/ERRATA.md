@@ -3,15 +3,16 @@
 This lab keeps its mistakes on the record. Superseded notes are **bannered, not deleted**, and every
 correction below links to the evidence. If you find another error, please open an issue.
 
-Most items here were found by a read-only audit of the consolidated repository on **2026-09-20**, in which
-every headline claim was re-checked against the file it came from. That audit corrected 25 claims, refuted
-one, and surfaced two latent bugs (E1, E2) that the original work had missed.
+Most items here were found on **2026-09-20** by an internal, agent-run, read-only audit of the consolidated
+repository (not a third-party review), which re-checked the headline claims against the files they came
+from. It corrected a number of claims in the documentation and surfaced two latent bugs (E1, E2) that the
+original work had missed for three months.
 
 | ID | What | Severity | Status |
 |---|---|---|---|
 | [E1](#e1--the-v8-worse-than-b1-on-2026-result-was-a-bug) | A recorded model comparison was produced by a bug | High — a published number was wrong | Code fixed; corrected number below; stale quotes bannered |
 | [E2](#e2--47-paid-odds-snapshots-never-reached-the-prediction-ledger) | 47 odds snapshots were silently ignored | High — changes how the headline benchmark must be read | Code fixed; historical ledger unchanged; caveat added everywhere |
-| [E3](#e3--the-collectors-own-scoring-step-was-never-repaired) | Collector's own scoring step never repaired | Medium | By design; independent harvester is the scoring path |
+| [E3](#e3--the-collectors-own-scoring-step-was-never-repaired) | Collector's own scoring step never repaired | Medium | Patch deliberately deferred; the independent harvester is the scoring path |
 | [E4](#e4--early-beats-the-market-notes-were-never-confirmed) | Early "beats the market" notes | High if repeated | Bannered; never confirmed prospectively |
 | [E5](#e5--the-hierarchical-transfer-decision-ledger-is-missing) | A null-result ledger is missing | Low | Documented; not fabricated |
 | [E6](#e6--two-vocabularies-for-the-same-event-lake-outcome) | Two verdict vocabularies for one outcome | Low | Documented |
@@ -24,7 +25,11 @@ one, and surfaced two latent bugs (E1, E2) that the original work had missed.
 **What was recorded.** On 33 finished 2026 group matches, scored prequentially, the autoresearch candidate
 V8 was reported as clearly worse than plain Elo (RPS 0.225 vs 0.174; log-loss 1.092 vs 0.958) but far
 better calibrated on draws (draw-calibration error 0.004 vs 0.178). This was cited as a reason V8 stayed
-shadow-only.
+shadow-only. The same artifact was also one of two stated motivations for raising V8's Elo blend weight from
+0.50 to 0.85 in cycle 3 (see the `candidate.py` docstring and `notes/research/20260620_cycle_3.md`, which
+describe a "2026 prequential signal"). The other motivation (the 2022 backtest) and the fold sweep did not
+depend on this script, and the weight was later re-established on development folds only
+(`notes/research/tier_2_existing_work_audit.md`).
 
 **What actually happened.** `scripts/prequential_2026.py` built the candidate's single test row with
 `m.to_frame().T`. In pandas that produces an **all-`object`-dtype** frame. The evaluator's
@@ -35,7 +40,10 @@ playing (for Mexico v South Africa: B1 0.808 / 0.132 / 0.060 vs "V8" 0.348 / 0.3
 
 Two consistency checks expose it without running anything: RPS is convex, so a genuine
 `0.85·B1 + 0.15·logit` blend could only reach 0.225 if the logit leg scored worse than a uniform forecast;
-and a draw-calibration error of ~0.02 is exactly what a single-bin constant forecast yields.
+and a draw-calibration error that small is exactly what a constant forecast yields: every prediction falls
+in one bin, so the metric collapses to |mean predicted draw − observed draw rate| — 0.022 in the first
+recorded run (0.325 vs 0.303, with the 0.50 blend: RPS 0.221 / log-loss 1.082) and 0.004 in the re-run
+quoted above (about 0.306 vs 0.303).
 
 **Corrected result** (same script, same 33 matches, fixed 2026-09-20):
 
@@ -50,9 +58,10 @@ shadow-only, for the valid reason: no significant improvement over B1 on the dev
 
 **Still quoting the wrong numbers:** `configs/approved_models.yaml` (`reason_not_approved`) — this file
 is governance-protected and was deliberately left unedited — plus `notes/research/prequential_2026.md`,
-`approved_model_registry.md`, `runtime_model_governance.md`, `OVERNIGHT_FINAL_REPORT.md` and
-`model_state_reconciliation.md` (whose "reproduced within tolerance" reproduced the bug). The notes carry
-correction banners.
+`approved_model_registry.md`, `runtime_model_governance.md`, `OVERNIGHT_FINAL_REPORT.md`,
+`model_state_reconciliation.md` (whose "reproduced within tolerance" reproduced the bug) and
+`20260620_cycle_3.md`, plus the cycle-3 docstring in `src/wcdrawlab/research/candidate.py` (left unedited:
+it is the frozen candidate file). The notes carry correction banners.
 
 ## E2 — 47 paid odds snapshots never reached the prediction ledger
 
@@ -66,8 +75,8 @@ froze Elo-only rows.
 ledger comes from the 9 snapshots of 2026-06-21.
 
 **Why it matters.** In the prospective benchmark, the primary snapshot for **31 of 34 fixtures** is an
-early "baseline" snapshot — a median of roughly **98 hours before kickoff** (2 are final-pre-kickoff, 1 is
-T-90). The "no-vig market" in that benchmark is therefore an **early line, not a closing line**, and B1's
+early "baseline" snapshot (2 are final-pre-kickoff, 1 is T-90); across all 34 scored fixtures the median
+lead time is roughly **98 hours before kickoff**. The "no-vig market" in that benchmark is therefore an **early line, not a closing line**, and B1's
 forecast is frozen at the same early time. The null result stands; the comparison it describes is weaker
 than "model versus closing market", and it is labelled that way throughout this repository.
 
@@ -88,12 +97,14 @@ metrics. See `notes/research/prospective_score_deployment_decision.md`.
 
 ## E4 — early "beats the market" notes were never confirmed
 
-`notes/research/20260620_cycle_4.md` and `20260620_cycle_5_true_alpha.md` report that a market + ~0.4·Elo
-blend "beats the no-vig market and Pinnacle's closing line by ~4–7% RPS". Those are **retrospective point
+`notes/research/20260620_cycle_4.md` reports that a market + ~0.4·Elo blend "robustly beats the no-vig
+consensus", and `20260620_cycle_5_true_alpha.md` that it "beats Pinnacle's closing line by ~4% composite /
++4–7% RPS". Those are **retrospective point
 estimates** on 253–341 auxiliary internationals, 3 of 4 folds, with **no confidence intervals**. The lab's
 own later documents reclassified them as auxiliary (`model_state_reconciliation.md`), the Tier-2 gate found
 nothing robustly beats Elo, the model registry places that blend under `no_performance_claims`, and the
-prospective benchmark found no separation between any model and the market. The claim is repeated in a few
+prospective benchmark found no separation between any model and the market — and that benchmark's market
+is an early line (E2), so it says nothing either way about a *closing* line. The claim is repeated in a few
 other early notes and in the archived [`history/VERSION.md`](history/VERSION.md); all carry banners.
 **This repository does not claim to beat any market.**
 
@@ -126,3 +137,21 @@ but failed the log-loss and forward-chain rules and stayed `reference_only`. It 
 - The match-level power projection from the 58-match cohort ("~150 matches for 80% power") used an
   optimistic noise template and is superseded by the 231-match analysis (power 0.28 for a 0.005 RPS gain;
   80% first reached near 1,200 matches).
+
+## Other defects fixed in the 0.3.0 release
+
+These did not change any recorded research result, but a visitor cloning the repository would have hit them.
+Details are in the [changelog](../CHANGELOG.md).
+
+- **`wcdrawlab predict-live` crashed** with a `NameError` *after* writing its outputs (a block copied from
+  another function referenced undefined names). The test module imported the function but never called it.
+- **The event-lake safety guard only worked on the author's machine**: it matched directory *names*, so on
+  any other clone a lake root inside the repository was silently accepted. It now checks real path containment.
+- **A crash under pandas 3**: under copy-on-write, `to_numpy()` can return a read-only view, and one
+  in-place repair of invalid market rows wrote into it. The very first CI run exposed this (Python 3.13 pulls
+  pandas 3; Python 3.10 cannot). The suite now passes on pandas 2.3 and pandas 3.0.
+- **A clean install ran zero tests**: three research scripts matched pytest's default globs and one imports
+  an undeclared package at module scope, aborting collection. Collection is now scoped to `tests/`.
+- **Two tests passed vacuously** (a bare `return` when local data was absent). They now skip with a reason,
+  so the pass count means what it says.
+
