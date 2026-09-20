@@ -1,0 +1,18 @@
+recommendation: "Stop investing in SoccerNet commentary as a high-precision silver source; retain only
+  corner/foul/yellow_card as low-confidence historical signals. Prioritize a paid structured event provider."
+frozen_gate_result: {approved_silver_classes: 0, closest: [corner, foul, yellow_card], best_wilson_lb: 0.768}
+soccernet_supports:
+  high_precision_silver: false
+  player_research: false           # no player IDs in v2 labels
+  substitution_research: false     # insufficient coverage + barely narrated
+  red_card_research: false         # n=29; insufficient coverage + precision
+  next_goal_research: false        # goal precision low; no publication_time -> not live
+  historical_taxonomy_alignment: true
+  low_confidence_historical_signals: [corner, foul, yellow_card]
+language: {english_translation_goal_recall: 0.88, original_language_goal_recall: 0.05, build_multilingual: false}
+external_routes_ranked:
+  1: "paid structured event provider (Sportmonks lowest-cost; StatsBomb/Opta richer) -> player/next-goal/card"
+  2: "paid live commentary feed w/ verified publication timestamps -> only path to any live use"
+  3: "SoccerReplay-1988 NDA -> richer HISTORICAL alignment only (no live, no precision-bar guarantee)"
+  4: "further SoccerNet tuning -> diminishing returns"
+constraints: {live_use: prohibited_without_paid_feed_and_causal_gate, all_outputs: historical_weak_supervision_only}

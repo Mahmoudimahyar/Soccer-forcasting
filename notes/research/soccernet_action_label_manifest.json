@@ -1,0 +1,36 @@
+{
+  "source": "SoccerNet action-spotting Labels-v2.json",
+  "split_downloaded": "test",
+  "license": "non-commercial research + attribution (videos NDA-gated; labels open)",
+  "n_games": 100,
+  "n_events": 22551,
+  "n_classes": 17,
+  "classes": {
+    "Kick-off": 514,
+    "Ball out of play": 6460,
+    "Throw-in": 3809,
+    "Shots off target": 1058,
+    "Clearance": 1631,
+    "Corner": 999,
+    "Shots on target": 1175,
+    "Offside": 416,
+    "Foul": 2414,
+    "Direct free-kick": 382,
+    "Goal": 337,
+    "Indirect free-kick": 2283,
+    "Substitution": 579,
+    "Yellow card": 431,
+    "Penalty": 41,
+    "Red card": 8,
+    "Yellow->red card": 14
+  },
+  "annotation_fields": [
+    "gameTime",
+    "label",
+    "position",
+    "team",
+    "visibility"
+  ],
+  "no_password_used": true,
+  "publication_time_present": false
+}

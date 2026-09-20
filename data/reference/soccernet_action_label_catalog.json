@@ -1,0 +1,30 @@
+[
+  {
+    "source": "soccernet_labels_v2",
+    "name": "SoccerNet Action-Spotting Labels (Labels-v2.json)",
+    "access": "SoccerNet pip package downloadGames(files=[Labels-v2.json])",
+    "ref": "pypi.org/project/SoccerNet ; github.com/SoccerNet/sn-spotting",
+    "classes": 17,
+    "player_ids": "no",
+    "event_time": "match clock (gameTime)",
+    "pub_time": "no",
+    "nda": "videos only (NOT labels)",
+    "license": "non-commercial research + attribution",
+    "game_ids": "SoccerNet game paths (== SN-echoes keys)",
+    "classification": "verified_open_research_download_pending_no_password_confirm"
+  },
+  {
+    "source": "soccernet_hf_repos",
+    "name": "SoccerNet HuggingFace repos",
+    "access": "huggingface.co/SoccerNet",
+    "ref": "huggingface.co/SoccerNet",
+    "classes": "varies",
+    "player_ids": "varies",
+    "event_time": "varies",
+    "pub_time": "no",
+    "nda": "varies",
+    "license": "per repo",
+    "game_ids": "SoccerNet paths",
+    "classification": "rights_unclear (per-repo verify)"
+  }
+]

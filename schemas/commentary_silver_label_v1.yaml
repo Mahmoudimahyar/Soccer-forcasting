@@ -1,0 +1,24 @@
+schema_version: commentary_silver_label_v1
+description: Derived high-precision historical "silver" event label from SoccerNet-Echoes commentary aligned
+  to SoccerNet action labels. ONLY for classes that pass the FROZEN preregistered gate. NO raw commentary text.
+fields:
+  - canonical_match_id
+  - commentary_record_id
+  - commentary_content_hash
+  - source_id
+  - source_rights_classification
+  - competition
+  - season
+  - event_class            # approved class only
+  - confidence_score
+  - confidence_tier        # high / (only high emitted)
+  - event_time_s
+  - alignment_delta_s
+  - parser_model_version
+  - source_hash
+  - causal_status          # historical_weak_supervision_only
+  - live_eligibility       # false
+  - runtime_eligibility    # false
+  - trading_eligibility    # false
+forbidden_fields: [text, normalized_text, norm, raw, commentary_text, utterance]
+gate: "class must be silver_label_approved_for_historical_research per COMMENTARY_PRECISION_PREREGISTRATION.md"

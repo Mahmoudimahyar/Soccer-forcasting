@@ -1,0 +1,23 @@
+schema_version: soccernet_event_taxonomy_v1
+description: Mapping official SoccerNet action-spotting (Labels-v2.json, 17 classes) -> canonical taxonomy.
+source_event_count: 17
+mapping:
+  Goal: {canonical: goal, support: supported}
+  Penalty: {canonical: penalty_awarded, support: supported}
+  Yellow card: {canonical: yellow_card, support: supported}
+  Red card: {canonical: red_card, support: supported}
+  "Yellow->red card": {canonical: second_yellow, support: supported}
+  Substitution: {canonical: substitution, support: supported}
+  Corner: {canonical: corner, support: supported}
+  Offside: {canonical: offside, support: supported}
+  Foul: {canonical: foul, support: supported}
+  Shots on target: {canonical: shot_on_target, support: supported}
+  Shots off target: {canonical: shot, support: supported}
+  Kick-off: {canonical: kickoff, support: supported}
+  Throw-in: {canonical: other, support: mapped_to_other}
+  Clearance: {canonical: other, support: mapped_to_other}
+  Ball out of play: {canonical: other, support: mapped_to_other}
+  Indirect free-kick: {canonical: other, support: mapped_to_other}
+  Direct free-kick: {canonical: other, support: mapped_to_other}
+canonical_unsupported_by_this_source: [own_goal, penalty_scored, penalty_missed, VAR_review, VAR_goal_cancelled, halftime, fulltime]
+notes: "SoccerNet v2 has no own-goal/VAR/penalty-outcome/half-full-time classes + no player IDs; live-use status = never (no publication_time)."

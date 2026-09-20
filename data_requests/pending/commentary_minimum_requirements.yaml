@@ -1,0 +1,13 @@
+status: specification
+created: "2026-06-23"
+purpose: "minimum a commentary source must provide before each use is unblocked"
+historical_weak_supervision:
+  needs: ["rights permit derived labels", "event_time or reliable match clock", "entity hints"]
+delayed_live_shadow:
+  needs: ["rights permit API use", "ORIGINAL publication_time", "measured update lag or defensible safety lag",
+          "reliable match/event IDs", "alignment quality >= threshold", "append-only capture with source hashes"]
+true_live:
+  needs: ["all delayed-live items", "publication_time <= decision_time verified", "live reliability adequate",
+          "no unsupported scraping"]
+player_sub_card_expansion:
+  needs: ["500+ matches lineup+sub", "150+ red/second-yellow events", "player IDs + positions"]

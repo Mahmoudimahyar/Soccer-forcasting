@@ -1,0 +1,10 @@
+status: awaiting_user_decision
+created: "2026-06-23"
+note: "decision package only; nothing purchased/scraped"
+providers:
+  soccernet_echoes: {rights: CC_BY_4_0, cost: free, pub_time: false, live: no, best_for: "multilingual weak-supervision/alignment (historical)"}
+  soccerreplay_1988: {rights: NDA_noncommercial, cost: free_with_NDA, pub_time: false, live: no, best_for: "rich academic alignment (needs NDA)"}
+  sportmonks_commentary: {rights: commercial_license, cost: "EUR29-249/mo + addons", pub_time: maybe_verify, live: maybe_after_gate, best_for: "delayed-live / live commentary (paid)"}
+  statsbomb_open: {rights: noncommercial_research, cost: free, pub_time: na_structured, live: no, best_for: "structured truth anchor"}
+  opta_stats_perform: {rights: enterprise_license, cost: quote, pub_time: yes, live: yes, best_for: "production-grade licensed feed (expensive)"}
+  rejected: [news_live_blogs, official_match_centers_scraping, yallashoot_arabic]

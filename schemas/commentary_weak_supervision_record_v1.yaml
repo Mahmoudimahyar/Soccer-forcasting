@@ -1,0 +1,23 @@
+schema_version: commentary_weak_supervision_record_v1
+description: Derived, rights-safe weak-supervision record aligning SoccerNet commentary to SoccerNet
+  action labels. NO raw commentary text. historical_weak_supervision_only / not_live_eligible.
+fields:
+  - canonical_match_id
+  - canonical_commentary_id
+  - commentary_content_hash
+  - source_id
+  - competition
+  - season
+  - match_clock_start_s
+  - match_clock_end_s
+  - event_label            # canonical taxonomy
+  - event_label_confidence
+  - event_time_s
+  - alignment_time_delta_s
+  - alignment_confidence
+  - source_timing_status   # broadcast_clock_only (no publication_time)
+  - causal_eligibility     # historical_weak_supervision_only
+  - rights_classification  # soccernet labels: non-commercial research; echoes: CC BY 4.0
+  - parser_version
+  - source_hash
+forbidden_fields: [text, normalized_text, raw, commentary_text]

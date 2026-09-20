@@ -1,0 +1,17 @@
+{
+  "source": "soccernet_echoes",
+  "license": "cc-by-4.0",
+  "attribution": "Data provided by SoccerNet (SN-echoes, CC BY 4.0)",
+  "file": "whisper_v1/1.0.0/soccer_net_echoes_hf_dataset-train.arrow",
+  "file_sha256": "3fc34c47c4bc460feb872140d4de92afc41556e1ea528d4b8e68d8f0b3306c03",
+  "retrieval_time_utc": "2026-06-23T16:08:17.263537+00:00",
+  "total_segments_in_corpus": 780160,
+  "games_sampled": 10,
+  "segments_sampled": 6552,
+  "publication_time_present": false,
+  "causal_eligibility": "historical_weak_supervision_only",
+  "quality_breakdown": {
+    "ok": 6552,
+    "historical_weak_supervision_only": 6552
+  }
+}

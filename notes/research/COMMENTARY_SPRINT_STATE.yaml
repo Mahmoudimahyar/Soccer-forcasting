@@ -1,0 +1,33 @@
+sprint: "Commentary Intelligence Research V1 — minute-by-minute text, event alignment, legal use, live eligibility"
+worktree: "C:/Users/Mahyar/worldcup-commentary-intelligence"
+branch: commentary-intelligence-research-v1
+updated_utc: "2026-06-23"
+active_collector:
+  path: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL"
+  branch: v1-5-prospective-operations
+  commit: dc73318
+  task_workdir: "C:/Users/Mahyar/worldcup_draw_model_lab_FINAL (MAIN; != worktree)"
+  isolation: PROVEN
+current_phase: "COMPLETE — Phases 0-8 done; tag commentary-intelligence-research-v1"
+active_task: "none — sprint complete"
+next_task: "Phase 1: global source landscape + evidence catalogue"
+completed_tasks:
+  - "safety isolation (worktree + manifest)"
+  - "Phase 0: commentary_current_truth.md"
+  - "Phase 1: source catalogue (8 sources, csv/json) + landscape"
+blocked_tasks: []
+sources_under_review: [soccernet_echoes, soccerreplay_1988, sportmonks_commentary, official_match_centers, news_live_blogs]
+sources_approved_for_sample_acquisition: [soccernet_echoes (ACQUIRED: 10 games/6552 segments, CC BY 4.0, historical_weak_supervision_only; raw gitignored)]
+sources_rejected: [news_live_blogs, yallashoot_arabic]
+sources_requiring_external_approval: [soccerreplay_1988(NDA), sportmonks_commentary(paid)]
+legal_licensing_status: "policy + per-source rights schema DONE; only SoccerNet-Echoes open (historical-only)"
+live_eligibility_status: "GATE BUILT; NO source live-eligible (all rights/timestamp blocked); runtime/trading import-isolation tested"
+historical_weak_supervision_status: "canonical contract + module + 10 tests DONE; alignment toolchain Phase 5"
+safety:
+  kalshi_live_trading: false
+  trading_mode: paper
+  labels: "research_only / experimental / not_runtime_approved / not_trade_eligible"
+last_successful_test_command: "pytest commentary suites = 34 passed (contracts 10, adapter 1, live-eligibility 6, + prior phases)"
+last_stable_commit: "dc73318 (base)"
+resume_command: "cd C:/Users/Mahyar/worldcup-commentary-intelligence && see COMMENTARY_RESUME_NEXT_TASK.md"
+stop_reason: "All feasible phases complete + tagged. Remaining = external: NDA (SoccerReplay-1988) / paid (Sportmonks) / rights decisions. No live-eligible source exists."

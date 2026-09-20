@@ -1,0 +1,24 @@
+{
+  "n_records": 2710,
+  "classes": [
+    "corner",
+    "foul",
+    "yellow_card"
+  ],
+  "quality_estimate_precision_wilson_lb": {
+    "corner": 0.7679,
+    "foul": 0.7683,
+    "yellow_card": 0.7289
+  },
+  "by_class": {
+    "corner": 1267,
+    "foul": 1242,
+    "yellow_card": 201
+  },
+  "is_silver": false,
+  "confidence_tier": "low_confidence",
+  "causal_status": "historical_weak_supervision_only",
+  "live_eligible": false,
+  "parser_model_version": "precision_v2_lowconf",
+  "rights": "echoes=CC_BY_4.0;soccernet_labels=non_commercial_research"
+}
